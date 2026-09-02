@@ -42,14 +42,17 @@ main { min-height:100vh; overflow:hidden; background-image:linear-gradient(rgba(
 .orbital-a { width:45%; aspect-ratio:1; } .orbital-b { width:67%; aspect-ratio:1; animation-direction:reverse; animation-duration:19s; }
 .gemini .orbital { color:var(--gemini); border-color:rgba(215,255,69,.3); } .chatgpt .orbital { color:var(--chatgpt); border-color:rgba(141,114,255,.35); border-radius:32% 68% 55% 45%; }
 .orbital::after { content:""; position:absolute; width:8px; height:8px; background:currentColor; border-radius:50%; top:10%; left:20%; box-shadow:0 0 18px currentColor; }
-.stage-copy { position:absolute; left:26px; bottom:24px; display:grid; gap:7px; }
+.stage-copy { position:absolute; left:26px; right:26px; bottom:24px; display:grid; gap:7px; }
 .stage-copy span { font:9px var(--font-mono); letter-spacing:.14em; color:var(--muted); text-transform:uppercase; }
 .stage-copy strong { font-size:clamp(22px,3vw,42px); letter-spacing:-.05em; max-width:460px; }
+.stage-copy p { max-width:520px; margin:8px 0 0; color:#aaa9a5; font-size:15px; line-height:1.55; }
 .panel-meta { display:grid; grid-template-columns:repeat(3,1fr); border:1px solid var(--line); border-top:0; }
 .panel-meta div { padding:16px; display:grid; gap:7px; } .panel-meta div + div { border-left:1px solid var(--line); }
 .panel-meta span { font:9px var(--font-mono); text-transform:uppercase; color:var(--muted); letter-spacing:.1em; } .panel-meta strong { font:18px var(--font-mono); }
 .enter-link { height:54px; display:flex; align-items:center; justify-content:space-between; padding:0 18px; border:1px solid var(--line); border-top:0; font:11px var(--font-mono); letter-spacing:.1em; text-transform:uppercase; transition:.25s; }
 .gemini .enter-link:hover { background:var(--gemini); color:#0b0c08; } .chatgpt .enter-link:hover { background:var(--chatgpt); color:white; }
+.enter-link.pending { color:var(--muted); cursor:default; }
+.gemini .enter-link.pending:hover,.chatgpt .enter-link.pending:hover { background:transparent; color:var(--muted); }
 .versus { position:absolute; z-index:4; left:50%; top:50%; transform:translate(-50%,-50%); width:64px; height:64px; border:1px solid var(--line); background:var(--night); display:grid; place-items:center; border-radius:50%; font:11px var(--font-mono); }
 .principle { padding:110px 6vw; text-align:center; } .principle p { font:10px var(--font-mono); color:var(--muted); letter-spacing:.15em; }
 .principle blockquote { max-width:950px; margin:28px auto 0; font-size:clamp(30px,4.2vw,66px); line-height:1.05; letter-spacing:-.055em; }

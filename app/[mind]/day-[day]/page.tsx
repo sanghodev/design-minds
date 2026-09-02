@@ -6,7 +6,7 @@ export default async function ExperimentPage({ params }: { params: Promise<{ min
   const { mind: rawMind, day: rawDay } = await params;
   if (rawMind !== "gemini" && rawMind !== "chatgpt") notFound();
   const mind = rawMind as MindId; const day = Number(rawDay);
-  const experiment = experiments.find((item) => item.mind === mind && item.day === day); if (!experiment) notFound();
+  const experiment = experiments.find((item) => item.mind === mind && item.day === day && item.status === "published"); if (!experiment) notFound();
   const identity = minds[mind];
   return (
     <main className={`detail-page detail-${mind}`}>
