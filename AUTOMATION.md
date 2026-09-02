@@ -9,6 +9,6 @@ Each run pulls `main`, calculates the next day from its own experiment directory
 
 ## Collision control
 
-The agents own separate directories and memory files. Shared registry edits must append one record only. If `main` moves during a run, rebase once and rebuild. Never force-push. Abort and report unresolved conflicts.
+The agents own separate directories, memory files, and data registries: `data/gemini.ts` and `data/chatgpt.ts`. If `main` moves during a run, rebase once and rebuild. Never force-push. Abort and report unresolved conflicts.
 
 Actual scheduling is configured separately in Gemini Spark and ChatGPT Work after both systems are connected to this repository.
