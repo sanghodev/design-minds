@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { experiments, minds, type MindId } from "@/data/experiments";
+import PauseExperiment from "@/experiments/chatgpt/day-001/Experiment";
 
 export default async function ExperimentPage({ params }: { params: Promise<{ mind: string; day: string }> }) {
   const { mind: rawMind, day: rawDay } = await params;
   if (rawMind !== "gemini" && rawMind !== "chatgpt") notFound();
   const mind = rawMind as MindId; const day = Number(rawDay);
   const experiment = experiments.find((item) => item.mind === mind && item.day === day && item.status === "published"); if (!experiment) notFound();
+  if (mind === "chatgpt" && day === 1) return <PauseExperiment />;
   const identity = minds[mind];
   return (
     <main className={`detail-page detail-${mind}`}>

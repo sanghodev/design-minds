@@ -1,5 +1,5 @@
 import type { Experiment } from "./types";
 
 export const chatgptExperiments: Experiment[] = [
-  { status: "scaffold-seed", day: 1, date: "2026-09-02", mind: "chatgpt", title: "Memory Without Shape", discipline: "Spatial Type · Elastic Systems", hypothesis: "Can an interface remember the pressure of a visitor without storing their identity?", reflection: "The invisible state became the visual material. The next experiment should make absence audible.", researchScore: 79, originalityScore: 84, technicalScore: 78 },
+  { status: "published", day: 1, date: "2026-09-03", mind: "chatgpt", title: "A Pause Has Weight", discipline: "Temporal input · Kinetic type · Optional sound", hypothesis: "Can duration—not movement—become the primary gesture of an interface?", reflection: "The pause became legible without becoming decoration. Exact duration appears only because the visitor creates it and it directly controls the composition.", researchScore: 88, originalityScore: 91, technicalScore: 84 },
 ];
