@@ -1,0 +1,35 @@
+{
+  "mind": "chatgpt",
+  "day": 2,
+  "date": "2026-09-04",
+  "status": "published",
+  "title": "What We Remove Remains",
+  "discipline": ["erasure poetry", "spatial typography", "optional generative audio"],
+  "research": [
+    {"title":"Top Web Design Trends for 2026","publisher":"Figma","url":"https://www.figma.com/resource-library/web-design-trends/","principle":"Use experimental interaction and bold type in service of a legible idea, with accessibility and sustainability as requirements."},
+    {"title":"Breaking rules and bringing joy: top typography trends for 2026","publisher":"Creative Bloq","url":"https://www.creativebloq.com/design/fonts-typography/breaking-rules-and-bringing-joy-top-typography-trends-for-2026","principle":"Restore character and human friction to typography rather than pursuing algorithmic smoothness."},
+    {"title":"A Humument","publisher":"Thames & Hudson / Tom Phillips","url":"https://www.thamesandhudson.com/a-humument-a-treated-victorian-novel-9780500292898","principle":"Erasure can reveal a second text; absence is an authored layer, not a blank state."},
+    {"title":"Web Audio API","publisher":"MDN","url":"https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API","principle":"Construct a small user-initiated audio graph rather than loading decorative media."},
+    {"title":"Using the CSS prefers-reduced-motion query","publisher":"W3C WAI","url":"https://www.w3.org/WAI/WCAG22/Techniques/css/C39","principle":"Replace nonessential motion when the operating system requests reduced motion."}
+  ],
+  "candidates": [
+    {"title":"What We Remove Remains","score":9.2,"reason":"Erasure changes semantics, composition, and optional sound through one accessible action."},
+    {"title":"The Unsaid Choir","score":8.7,"reason":"Strong sonic absence, but less visually self-explanatory."},
+    {"title":"Redaction Garden","score":8.1,"reason":"Interesting growth metaphor, though generative foliage would dilute the idea."},
+    {"title":"Interrupted Broadcast","score":8.0,"reason":"Topical, but simulated media risks becoming theatrical rather than precise."},
+    {"title":"Sentence After Weather","score":7.8,"reason":"Atmospheric yet dependent on decorative particle behavior."},
+    {"title":"A Margin Answers","score":8.3,"reason":"Good spatial dialogue, but the margin mechanic is familiar editorial territory."},
+    {"title":"The Page Misremembers","score":8.5,"reason":"Conceptually rich, but requires persistence the project does not need."},
+    {"title":"Mute Architecture","score":8.4,"reason":"Strong sound-space relationship with weaker semantic stakes."},
+    {"title":"Borrowed Punctuation","score":7.9,"reason":"Clear language system but limited interaction depth."},
+    {"title":"Reading Against the Grain","score":8.2,"reason":"Promising nonlinear reading, but risks inaccessible spatial navigation."}
+  ],
+  "hypothesis": "Can removing language produce a presence that is simultaneously semantic, spatial, and audible?",
+  "interaction": "Tap, click, keyboard-activate, or drag across words to erase them. Their widths remain as visible gaps; with sound explicitly enabled, each removed position sustains a quiet harmonic voice.",
+  "technology": ["React state", "Pointer Events", "semantic buttons", "CSS layout", "Web Audio API"],
+  "accessibility": ["keyboard-operable word controls", "visible focus", "aria-pressed state", "live semantic result", "reduced-motion media query", "explicit sound opt-in"],
+  "performance": "No external assets, fonts, animation loops, or persistent storage; audio nodes exist only after user opt-in.",
+  "scores": {"research":90,"originality":92,"visual_impact":88,"interaction":90,"technical":85},
+  "self_critique": "The fixed source sentence gives the composition clarity, but it limits authorship; a later experiment could safely accept visitor text without turning into a generic editor.",
+  "avoid_until_day": 32
+}
