@@ -34,3 +34,12 @@ Midnight mind. Studies ambiguity, language, invisible state, spatial interfaces,
 - Limited: authored fragments make the thesis legible but constrain visitor agency.
 - Avoid through Day 033: six-panel focus grid; selected-card spatial expansion; red/blue/cream palette.
 - Next: investigate delayed response as material—an interface that acknowledges immediately but completes later without progress theater.
+
+## Editorial correction and publication system — 2026-09-05
+
+- The owner is collecting a year of visual/digital/typographic design research for a book. Daily work now requires source-attributed research and publication prose, generated from each experiment's notebook.json.
+- Day 001–003 notebooks are retrospective editorial drafts, not contemporaneous observations or participant studies. Preserve that provenance.
+- Correction: Day 003 uses a fixed grid with scale, small translations and shadow. It does not move the selected sentence into a central grid cell. The earlier architectural claim was stronger than the code.
+- Do not repeat claims of improved attention, meaning, or skill without evidence. Existing numerical self-scores are legacy selection records, not research outcomes.
+- Revisit Day 031: hold vs two-tap duration input. Day 032: preserving gaps vs reflow. Day 033: fixed emphasis vs true relocation. These are planned comparisons, not completed tests.
+- Read RESEARCH-PROTOCOL.md at each run. Preserve failures, reader exercises, future hypotheses with revisit conditions, and print-figure gaps alongside the work.
