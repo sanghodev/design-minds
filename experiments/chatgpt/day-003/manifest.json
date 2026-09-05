@@ -1,0 +1,35 @@
+{
+  "mind": "chatgpt",
+  "day": 3,
+  "date": "2026-09-05",
+  "status": "published",
+  "title": "Focus Rearranges the Room",
+  "discipline": ["spatial interface", "attention choreography", "responsive typography"],
+  "research": [
+    {"title":"Top Web Design Trends for 2026","publisher":"Figma","url":"https://www.figma.com/resource-library/web-design-trends/","principle":"Transform spatial depth and experimental navigation into a readable interaction rather than decorative immersion."},
+    {"title":"Attention-centered Generative User Interfaces for All","publisher":"ACM","url":"https://dl.acm.org/doi/10.1145/3772363.3799191","principle":"Treat differing attention abilities as a first-order design concern."},
+    {"title":"Human attention and its implications for human–computer interaction","publisher":"Cambridge University Press","url":"https://www.cambridge.org/core/books/human-attention-in-digital-environments/human-attention-and-its-implications-for-humancomputer-interaction/8003CB955D95AC794EDA79318AA4214B","principle":"Support resumption after interruption by preserving contextual cues."},
+    {"title":"Understanding Success Criterion 2.5.1: Pointer Gestures","publisher":"W3C WAI","url":"https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures.html","principle":"Every spatial action must work with a single pointer without path-dependent gestures."},
+    {"title":"Understanding Success Criterion 2.4.11: Focus Not Obscured","publisher":"W3C WAI","url":"https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html","principle":"Keep the keyboard-focused component visible and identifiable as the composition changes."}
+  ],
+  "candidates": [
+    {"title":"Focus Rearranges the Room","score":9.3,"reason":"Makes attention a reversible spatial transformation while preserving every contextual cue."},
+    {"title":"The Interruption Door","score":8.7,"reason":"Strong architectural metaphor, but opening panels resembles familiar navigation."},
+    {"title":"Peripheral Sentence","score":8.5,"reason":"Useful attention model with less dramatic spatial consequence."},
+    {"title":"Return Path","score":8.8,"reason":"Excellent resumption premise, though closer to a productivity interface."},
+    {"title":"A Window Interrupts","score":8.1,"reason":"Clear occlusion study but risks looking like modal UI."},
+    {"title":"Context Has Walls","score":8.6,"reason":"Spatially strong but the content hierarchy is less immediately operable."},
+    {"title":"Six Ways Back","score":8.0,"reason":"Good keyboard structure with an overly literal navigation metaphor."},
+    {"title":"The Center Is Temporary","score":8.9,"reason":"Conceptually precise, but weaker as an interaction instruction."},
+    {"title":"Attention Without Capture","score":8.4,"reason":"Ethically meaningful, yet difficult to embody without explanatory copy."},
+    {"title":"Resume Here","score":8.3,"reason":"Strong accessibility principle with insufficient visual transformation."}
+  ],
+  "hypothesis": "Can an interface make focus spatially powerful without hiding or destroying its context?",
+  "interaction": "Choose one of six thoughts by tap, click, Tab, or arrow keys. The selected thought occupies the visual center while all others remain legible as surrounding context.",
+  "technology": ["React state", "semantic buttons", "CSS Grid", "CSS custom properties", "responsive layout"],
+  "accessibility": ["single-pointer operation", "arrow-key and Tab navigation", "visible focus", "aria-pressed selection", "live selected reading", "reduced-motion fallback"],
+  "performance": "No external assets, fonts, timers, animation frames, audio, or storage; transformations use CSS only.",
+  "scores": {"research":92,"originality":93,"visual_impact":90,"interaction":89,"technical":82},
+  "self_critique": "The room metaphor is visually clear, but the six authored thoughts constrain exploration; future spatial work should let content structure emerge from visitor input without becoming a generic canvas.",
+  "avoid_until_day": 33
+}

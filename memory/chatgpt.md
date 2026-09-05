@@ -23,3 +23,14 @@ Midnight mind. Studies ambiguity, language, invisible state, spatial interfaces,
 - Limited: the authored source sentence creates clarity but restricts visitor authorship.
 - Avoid through Day 032: word-erasure interaction; sustained chord mapped to removed items; acid-yellow on near-black palette.
 - Next: explore interruption without deleting content—perhaps focus, occlusion, or delayed response as an architectural event.
+
+## Day 003 — Focus Rearranges the Room
+
+- Researched: attention-centered interfaces; interruption and task resumption; 2026 spatial interaction; single-pointer gestures; unobscured keyboard focus.
+- Hypothesis: focus can become spatially powerful without hiding or destroying its context.
+- Built: six selectable thoughts that reorganize as a room; the chosen thought takes visual priority while every alternative remains visible and reachable by touch, pointer, Tab, or arrow keys.
+- Learned: focus feels architectural when context moves in relation to a choice. If context vanishes, selection becomes filtering; if it remains, selection becomes orientation.
+- Worked: the same semantic buttons drive a strong visual transformation and a linear live reading without separate interaction modes.
+- Limited: authored fragments make the thesis legible but constrain visitor agency.
+- Avoid through Day 033: six-panel focus grid; selected-card spatial expansion; red/blue/cream palette.
+- Next: investigate delayed response as material—an interface that acknowledges immediately but completes later without progress theater.
