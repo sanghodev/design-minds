@@ -17,7 +17,11 @@ for(const day of ["day-001","day-002","day-003"]){
     assert.ok(research.includes("/book#gemini-"+day));
     const work=await render("/gemini/"+day);
     const delivered=existsSync(new URL("../experiments/gemini/"+day+"/Experiment.tsx",import.meta.url));
-    if(delivered)assert.ok(!work.includes("실행 파일 대기"),"Delivered component must be integrated");
+    if(delivered){
+      assert.ok(!work.includes("실행 파일 대기"),"Delivered component must be integrated");
+      const markers={"day-001":"Kinetic Solar Typography","day-002":"Fragment 01","day-003":"Fluid Surface Tension Engine"};
+      assert.ok(work.includes(markers[day]),"Actual experiment must render");
+    }
     else {assert.ok(work.includes("실행 파일 대기"));assert.ok(work.includes("/research/gemini/"+day));}
   });
 }
@@ -25,6 +29,10 @@ test("archive and publication include both minds",async()=>{
   const home=await render("/");
   assert.ok(home.includes("/research/gemini/day-001"));
   assert.ok(home.includes("/chatgpt/day-001"));
+  for(const day of ["day-001","day-002","day-003"]){
+    assert.ok(home.includes('href="/gemini/'+day+'"'),"Landing must link to the experiment");
+    assert.ok(home.includes('src="/gemini/'+day+'"'),"Landing must show its live preview");
+  }
   const book=await render("/book");
   assert.ok(book.includes("gemini-day-003"));
   assert.ok(book.includes("chatgpt-day-003"));

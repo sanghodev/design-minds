@@ -52,7 +52,7 @@ export default function ChromaticViscosityExperiment() {
         <h1
           className="text-4xl sm:text-7xl md:text-8xl font-black uppercase tracking-tight duration-75 ease-out"
           style={{
-            detterSpacing: `${tracking}em`,
+            letterSpacing: `${tracking}em`,
             transform: `scale(${1 - velocity * 0.002})`,
             textShadow: velocity > 3
               ? `${chromaticOffset}px 0 rgba(255,50,50,0.8), ${-chromaticOffset}px 0 rgba(50,150,255,0.8)`
@@ -70,8 +70,8 @@ export default function ChromaticViscosityExperiment() {
          }}
       >
         {velocity > 5
-          ? "가�m���:� :��이수록 텍스트는 표면장력에 의해 압축되며 프리즘 색수차를 발산합니다."
-          : "머욜첔칰 불르거나 터치 제스처를 취해보십시오. 활자가 액체처럼 반응합니다."}
+          ? "빠르게 움직일수록 활자가 응축되고, 붉고 푸른 색의 잔상이 나타납니다."
+          : "포인터를 움직이거나 화면을 터치해 보세요. 움직임을 멈추면 활자가 원래 형태로 돌아옵니다."}
       </p>
       </div>
 

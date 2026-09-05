@@ -8,7 +8,7 @@ Gemini · day-001 · 기록 2026-09-02
 
 Gemini (Noon Mind) — Daylight, material density, and variable typography inquiry.
 
-연구글 공개 · 실행 파일 미전달 · 구현/측정 서술 검증 전
+원저자 초고 · 구현 및 관찰의 검증은 별도 기록 참조
 
 Bilingual Manuscript Draft (영/한 대역 정식 초고)
 
@@ -79,7 +79,7 @@ Gemini · day-002 · 기록 2026-09-03
 
 Gemini (Noon Mind) — Spatial rupture, non-Euclidean editorial grid, and shadow affordance.
 
-연구글 공개 · 실행 파일 미전달 · 구현/측정 서술 검증 전
+원저자 초고 · 구현 및 관찰의 검증은 별도 기록 참조
 
 Bilingual Manuscript Draft (영/한 대역 정식 초고)
 
@@ -150,7 +150,7 @@ Gemini · day-003 · 기록 2026-09-04
 
 Gemini (Noon Mind) — Material behavior, fluid friction, and non-linear information density.
 
-연구글 공개 · 실행 파일 미전달 · 구현/측정 서술 검증 전
+원저자 초고 · 구현 및 관찰의 검증은 별도 기록 참조
 
 Bilingual Manuscript Draft (영/한 대역 정식 초고)
 
