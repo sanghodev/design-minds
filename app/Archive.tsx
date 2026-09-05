@@ -24,7 +24,7 @@ export default function Archive({entries}: {entries:ArchiveEntry[]}) {
     <header className={s.hero}><p className={s.kicker}>A YEAR OF VISUAL INQUIRY · 독립된 두 개의 연구</p><h1>만들며 묻고,<br/><em>기록하며 발견하다.</em></h1><div className={s.heroBottom}><p>타이포그래피, 디지털 공간, 그리고 사람의 행동.<br/>매일 하나의 실험으로 탐구하는 시각디자인 연구 아카이브.</p><Link href="/research">이 연구가 책이 되기까지 ↗</Link></div></header>
     <section className={s.statement}><span>현재의 연구 단서</span><p>시간이 형태가 되고, 지워진 말이 공간으로 남는다. 집중은 그 사이의 관계를 어떻게 바꾸는가?</p><small>ChatGPT의 첫 세 연구에서 도출한 편집 질문 · 2026.09.05</small></section>
     <section id="archive" className={s.archive} aria-label="연구 작품 색인">
-      <div className={s.sectionHead}><h2>연구 작품 색인</h2><span aria-live="polite">{filtered.length}개의 공개 실험</span></div>
+      <div className={s.sectionHead}><h2>연구 작품 색인</h2><span aria-live="polite">{filtered.length}개의 연구 기록</span></div>
       <div className={s.filters}>
         <label>찾아보기<input type="search" value={query} onChange={e=>{setQuery(e.target.value);setLimit(6);}} placeholder="제목, 질문, 키워드, 날짜" /></label>
         <label>연구자<select value={mind} onChange={e=>{setMind(e.target.value);setLimit(6);}}><option value="all">모든 연구자</option><option value="chatgpt">ChatGPT · Midnight</option><option value="gemini">Gemini · Noon</option></select></label>
@@ -33,12 +33,14 @@ export default function Archive({entries}: {entries:ArchiveEntry[]}) {
       </div>
       <div className={s.grid}>{filtered.slice(0,limit).map(e=>{
         const path="/"+e.mind+"/day-"+pad(e.day);
+        const ready=e.status==="published";
+        const entryPath=ready ? path : "/research"+path;
         return <article className={s.card} key={e.mind+e.day}>
-          <Link className={s.preview} href={path} aria-label={e.title+" 실험 열기"}><div className={s.frame} aria-hidden="true" inert><iframe src={path} title={e.title+" 실제 페이지 미리보기"} loading="lazy" tabIndex={-1}/></div><span className={s.previewLabel}>실제 페이지 미리보기 ↗</span></Link>
+          {ready ? <Link className={s.preview} href={path} aria-label={e.title+" 실험 열기"}><div className={s.frame} aria-hidden="true" inert><iframe src={path} title={e.title+" 실제 페이지 미리보기"} loading="lazy" tabIndex={-1}/></div><span className={s.previewLabel}>실제 페이지 미리보기 ↗</span></Link> : <Link className={s.researchCover} href={entryPath}><span>GEMINI · RESEARCH NOTE</span><strong>{e.title}</strong><small>연구글 공개 · 실행 파일 대기</small></Link>}
           <div className={s.meta}><span>{minds[e.mind].name} · Day {pad(e.day)}</span><time dateTime={e.date}>{e.date}</time></div>
-          <p className={s.category}>{e.notebook?.category || e.discipline}</p><h3><Link href={path}>{e.title}</Link></h3><p className={s.summary}>{e.notebook?.summary || e.hypothesis}</p>
+          <p className={s.category}>{e.notebook?.category || e.discipline}</p><h3><Link href={entryPath}>{e.title}</Link></h3><p className={s.summary}>{e.notebook?.summary || e.hypothesis}</p>
           <div className={s.tags}>{e.notebook?.tags.map(t=><span key={t}>{t}</span>)}</div>
-          <div className={s.cardLinks}><Link href={path}>실험하기 ↗</Link>{e.notebook ? <Link href={"/research"+path}>연구노트 읽기 →</Link> : <span>연구노트 준비 전</span>}</div>
+          <div className={s.cardLinks}>{ready ? <Link href={path}>실험하기 ↗</Link> : <Link href={"/book#"+e.mind+"-day-"+pad(e.day)}>출판 초고 읽기 →</Link>}{e.notebook ? <Link href={"/research"+path}>연구노트 읽기 →</Link> : <span>연구노트 준비 전</span>}</div>
         </article>;
       })}</div>
       {!filtered.length && <div className={s.empty}><p>조건에 맞는 공개 연구가 없습니다.</p><button onClick={()=>{setQuery("");setMind("all");setCategory("all");}}>필터 초기화</button></div>}

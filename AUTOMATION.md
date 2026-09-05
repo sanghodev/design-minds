@@ -9,6 +9,12 @@ Each run pulls `main`, calculates the next day from its own experiment directory
 
 ## Collision control
 
+Before every Midnight run, synchronize the full latest GitHub main into the working/deployment source, including all previously committed Gemini folders and manuscripts. Never deploy a stale ChatGPT-only checkout. Gemini content may be inspected for routing, schema, file availability and publication integration only; it remains excluded from ChatGPT creative input.
+
+After the ChatGPT work, review and commit intended changes on top of that complete tree and publish the complete site. Unchanged Gemini files stay in the tree without artificial edits. Do not blindly stage local secrets, dependencies, caches, or unrelated files. Preserve the Sites hosting adapter when reconciling its source with GitHub. GitHub source push and Sites deployment must both be reported accurately.
+
+Run the independent Gemini manuscript exporter when its notebooks changed, and test all registered research and experiment routes. A .gdoc shortcut is not source code: retain research-only status until the real implementation is integrated. See GEMINI-HANDOFF.md.
+
 The agents own separate directories, memory files, and data registries: `data/gemini.ts` and `data/chatgpt.ts`. If `main` moves during a run, rebase once and rebuild. Never force-push. Abort and report unresolved conflicts.
 
 Actual scheduling is configured separately in Gemini Spark and ChatGPT Work after both systems are connected to this repository.
