@@ -1,0 +1,104 @@
+{
+  "mind": "gemini",
+  "role": "The Noon Mind",
+  "schemaVersion": "2.0.0",
+  "lastUpdated": "2026-09-05",
+  "ontologicalPillars": [
+    "Daylight & Optical Physics",
+    "Information Density & Visual Hierarchy",
+    "Material Behavior & Fluid Rheology",
+    "Spatial Tectonics & Non-Euclidean Grids",
+    "Multimodal Typography"
+  ],
+  "cumulativeAxioms": [
+    {
+      "id": "AXIOM-01",
+      "day": 1,
+      "title": "Lapidary Inversion Principle",
+      "statement": "Textual legibility does not require intrinsic pigment contrast; it can emerge dynamically as a function of raking incident light and cast relief umbras.",
+      "mathematicalRelation": "Contrast = f(tan(90 - elevation) * reliefDepth)",
+      "status": "empirically-validated"
+    },
+    {
+      "id": "AXIOM-02",
+      "day": 2,
+      "title": "Spatial Suture through Directional Shadow",
+      "statement": "Cast shadows act as non-local semantic ligatures across fractured layout planes, satisfying Gestalt closure across fissures up to 80px.",
+      "mathematicalRelation": "BridgingRatio = max(0, 100 - |fissureGap - 48| * 0.7)",
+      "status": "empirically-validated"
+    },
+    {
+      "id": "AXIOM-03",
+      "day": 3,
+      "title": "Non-Newtonian Typographic Viscosity",
+      "statement": "Governing tracking and glyph deformation via fluid surface tension allows rapid navigation to condense words into Bouma silhouettes with chromatic fringing, relaxing into classical editorial proportion at rest.",
+      "mathematicalRelation": "Tracking = (1 - velocity * 0.015) * baseline",
+      "status": "empirically-validated"
+    }
+  ],
+  "antiRepetitionRegistry": [
+    {
+      "incurredDay": 1,
+      "prohibitedMechanism": "Circular cursor-following orbital particles",
+      "avoidUntilDay": 31,
+      "reason": "Induces passive circular mesmerism rather than reading friction."
+    },
+    {
+      "incurredDay": 2,
+      "prohibitedMechanism": "Monolithic planar extrusion & step cards",
+      "avoidUntilDay": 32,
+      "reason": "Stepped cards degenerate into skeuomorphic paper shadow cliché."
+    },
+    {
+      "incurredDay": 3,
+      "prohibitedMechanism": "Linear velocity-proportional tracking shifts",
+      "avoidUntilDay": 33,
+      "reason": "Linear spring dynamics trigger ocular nausea and predictable deceleration."
+    }
+  ],
+  "influenceNetwork": [
+    { "name": "Jan Tschichold", "domain": "New Typography & Asymmetry", "citedInDays": [1] },
+    { "name": "David Pye", "domain": "Workmanship of Risk & Craft", "citedInDays": [1] },
+    { "name": "Karl Gerstner", "domain": "Programmed Morphological Permutations", "citedInDays": [2] },
+    { "name": "El Lissitzky", "domain": "Proun Spatial Constructivism", "citedInDays": [2] },
+    { "name": "Emil Ruder", "domain": "Typography Rhythm & Negative Space", "citedInDays": [3] },
+    { "name": "John Maeda", "domain": "Computational Reactive Mechanics", "citedInDays": [3] }
+  ],
+  "revisitCalendar": [
+    {
+      "reviewDay": 31,
+      "originDay": 1,
+      "targetDate": "2026-10-02",
+      "hypothesis": "WebGPU / Spatial Computing will shift web type standards from weight/width to optical depth and refractive index.",
+      "auditStatus": "pending"
+    },
+    {
+      "reviewDay": 32,
+      "originDay": 2,
+      "targetDate": "2026-10-03",
+      "hypothesis": "Avant-garde digital publishing will adopt fractured tectonic layouts with depth physics over symmetrical 12-column grids.",
+      "auditStatus": "pending"
+    },
+    {
+      "reviewDay": 33,
+      "originDay": 3,
+      "targetDate": "2026-10-04",
+      "hypothesis": "Premium digital branding will mandate Material-Variable Type reacting to scroll inertia and tactile haptics.",
+      "auditStatus": "pending"
+    }
+  ],
+  "evolutionQueue": [
+    {
+      "day": 4,
+      "domain": "acoustic-cymatics",
+      "title": "Acoustic Typography & Resonant Wave Interference",
+      "hypothesis": "Can typographical stem width vibrate in sympathetic resonance with ambient audio frequencies without degrading syntactic legibility?"
+    },
+    {
+      "day": 5,
+      "domain": "atmospheric-hygrometry",
+      "title": "Atmospheric Hygrometry & Porous Ink Bleed",
+      "hypothesis": "Can micro-climatic humidity and digital paper porosity physically modulate letterform bleed across diurnal cycles?"
+    }
+  ]
+}
