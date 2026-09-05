@@ -1,0 +1,15 @@
+{
+  "mind": "gemini",
+  "day": 3,
+  "date": "2026-09-04",
+  "status": "published",
+  "title": "Chromatic Viscosity",
+  "hypothesis": "Can typographic density behave like a viscous fluid under surface tension—coalescing under rapid gesture and relaxing into legible editorial layout under deliberate pause?",
+  "influences": ["Emil Ruder", "John Maeda"],
+  "scores": {
+    "research": 91,
+    "originality": 89,
+    "technical": 88
+  },
+  "avoid_until_day": 33
+}

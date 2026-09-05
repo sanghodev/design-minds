@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-04",
+  "provenance": "Gemini (Noon Mind) — Material behavior, fluid friction, and non-linear information density.",
+  "category": "kinetic-typography",
+  "tags": ["fluid", "viscosity", "surface-tension", "information-density", "chromatic", "physics", "bilingual"],
+  "summary": "Governed information density and typography through fluid mechanics and surface tension equations, causing characters to coalesce into dense chromatic ink droplets under high velocity and relax into classical editorial hierarchy during pauses. / 조작 가속도에 따라 활자가 유체 표면장력처럼 응집되고 감속 시 최적의 편집 레이아웃으로 이완되는 동적 점성 타이포그래피 시스템 구현.",
+  "question": "Can typographic density behave like a viscous fluid under surface tension—coalescing under rapid gesture and relaxing into legible editorial layout under deliberate pause? / 고정된 포인트 크기를 벗어나 타이포그래피가 사용자의 탐색 가속도에 감응하는 유체 점성 메커니즘을 가질 때 정보 전달과 심미적 쾌감은 양립할 수 있는가?",
+  "method": [
+    "Mapped user pointer velocity (px/ms) to hydrodynamic drag force and capillary surface tension resistance equations.",
+    "Engineered dynamic letter-spacing contraction coupled with RGB chromatic aberration shaders under acceleration.",
+    "Integrated cubic-bezier damping curve (0.25, 1, 0.5, 1) restoring optimal baseline tracking and leading upon gesture cessation."
+  ],
+  "observation": "During rapid skimming gestures, text coalesced into dense typographic droplets preserving macroscopic word silhouettes (Bouma shapes) with vibrant prismatic refraction; pausing instantly relaxed text into pristine layout grids. Linear physics induced visual nausea, but adding viscous non-linear surface tension resistance produced high tactile satisfaction. / 고속 스크롤 시 글자가 잉크 덩어리로 뭉치며 단어 실루엣을 강조하고 정지 시 미세 물방울처럼 복원됨. 선형 물리 대신 표면장력 비선형 감쇠를 적용했을 때 뛰어난 촉각적 손맛을 확인.",
+  "limitation": "Real-time chromatic aberration filters created GPU compositing spikes on legacy mobile hardware. Excessive viscous damping caused brief perceptual latency before full text reconstitution.",
+  "nextQuestion": "Transcending visual fluid mechanics, how can auditory resonance and sonic frequencies modulate typographic weight in multi-modal environments? / 시각적 유체를 넘어 소리와 공감각적 주파수가 활자 획 밀도를 진동시키는 다감각 타이포그래피는 어떻게 가능한가?",
+  "sources": [
+    {
+      "title": "Typographie: A Manual of Design",
+      "publisher": "Emil Ruder / Arthur Niggli",
+      "url": "https://www.niggli.ch/en/produkt/typographie-a-manual-of-design/",
+      "accessed": "2026-09-04",
+      "kind": "typographic-canon",
+      "use": "Foundational theory of typographic rhythm, compression and expansion of white space, and visual counter-balance.",
+      "limitation": "Rooted in movable lead type printing; does not anticipate hydrodynamic kinetic deformation."
+    },
+    {
+      "title": "Design by Numbers",
+      "publisher": "John Maeda / The MIT Press",
+      "url": "https://mitpress.mit.edu/9780262632447/design-by-numbers/",
+      "accessed": "2026-09-04",
+      "kind": "computational-art",
+      "use": "Computational aesthetic principles uniting mathematical algorithms with pointer velocity to generate lifelike digital graphic organisms.",
+      "limitation": "Formulated for early low-resolution CRT screens without variable font vector rendering pipelines."
+    },
+    {
+      "title": "Viscosity and Surface Tension in Fluid Mechanics",
+      "publisher": "MIT OpenCourseWare",
+      "url": "https://ocw.mit.edu/courses/2-016-hydrodynamics-fall-2005/",
+      "accessed": "2026-09-04",
+      "kind": "physics-treatise",
+      "use": "Capillary action and viscous dissipation mathematical models converted into CSS letter-spacing damping curves.",
+      "limitation": "Pure mechanical physics lacking subjective human perceptual ergonomic considerations."
+    }
+  ],
+  "book": {
+    "chapter": "Chapter 3: Ink Viscosity and Textual Surface Tension (제3장: 잉크의 점성과 정보의 표면장력)",
+    "hook": "The faster you rush, the tighter the words condense into an ink droplet; only when you catch your breath does the clear sentence unfold.\n\n서두를수록 글자는 짙은 잉크 방울로 뭉쳐지고, 숨을 고를 때 비로소 맑은 문장으로 번져나간다.",
+    "scene": "Sentences in the center of the screen hover like black oil droplets floating across transparent liquid. As the user sweeps the cursor with frantic speed, the glyphs do not scatter; drawn by capillary surface tension, they coalesce into a dense, solid spherical mass. Along its perimeter, vivid red and blue chromatic fringing shimmers like noon sunlight refracted through a glass prism. The instant interaction halts, the taut tension releases with a snap—glyphs bounce back through non-linear damping to reoccupy their precise architectural coordinates.\n\n화면 중앙의 문장들은 마치 투명한 액체 표면에 띄워진 검은 기름방울 같다. 마우스를 빠르게 가로지를수록 활자들은 사방으로 튀어나가지 않고, 오히려 표면장력에 이끌려 하나의 단단한 구형 덩어리로 응집된다. 그 응집의 테두리에서는 정오의 강렬한 햇살이 유리 프리즘을 통과할 때 생기는 붉고 푸른 색수차가 일렁인다. 조작을 멈추는 찰나, 팽팽하게 당겨졌던 표면장력이 탁 풀리며 글자들이 제자리로 튕겨 돌아와 완벽한 기하학적 그리드로 복원된다.",
+    "argument": "Digital media stripped typography of its physical materiality. The tactile absorbency, drying time, and bleeds of wet ink on paper were flattened into weightless, sterile pixels. Yet by translating user interaction velocity into typographic viscosity, letterforms reclaim the touch of living organisms. Yielding macroscopic silhouettes to hurried skimming while reserving microscopic typographic subtleties for deliberate reading grants readers the agency to sculpt their own cadence of contemplation.\n\n디지털 매체는 활자에서 물질성을 박탈했다. 종이 위의 잉크가 지녔던 흡수성, 건조 시간, 번짐의 물성은 스크린 뒤편의 무색무취한 픽셀로 납작해졌다. 그러나 사용자 조작의 물리적 속도를 정보의 점성으로 치환할 때, 타이포그래피는 살아있는 유기체로서의 촉감을 회복한다. 빨리 읽으려 할 때는 핵심 단어의 실루엣만을 던져주고, 멈추어 섰을 때만 정교한 자간을 펼쳐 보여주는 인터랙션은 독자에게 읽기의 페이스를 스스로 조율하게 만드는 새로운 시각적 쾌감을 선사한다.",
+    "counterpoint": "Yet kinematic typography risks deteriorating into shallow technical exhibitionism. If dynamic distortion impairs character legibility beyond cognitive recovery, the reader inherits only visual exhaustion rather than illumination. The critical threshold of viscosity must always arrest just before communication collapses into an unreadable cipher.\n\n물리 엔진을 모방한 동적 타이포그래피는 자칫 디자이너의 기술 과시로 흐르기 십상이다. 텍스트가 유동적으로 변형되는 과정에서 문자 고유의 판별성(Legibility)이 지나치게 훼손되면, 독자는 정보를 획득하는 대신 시각적 피로감만을 떠안게 된다. 점성의 임계값은 언제나 문자가 암호로 전락하기 직전의 아슬아슬한 경계선에서 멈추어야 한다.",
+    "readerExercise": "Place a single drop of high-viscosity honey or corn syrup onto a transparent glass plate. Observe the time required for the droplet to deform and recover as you tilt the plate at varying speeds. Translate that non-linear decay curve into the control points of a CSS cubic-bezier(0.25, 1, 0.5, 1) transition timing function.\n\n점성이 높은 꿀이나 시럽 한 방울을 투명한 유리판에 떨어뜨려 보라. 유리판을 기울이는 속도에 따라 방울의 형태가 일그러졌다가 복원되는 시간을 측정하고, 그 감쇠 곡선을 CSS cubic-bezier(0.25, 1, 0.5, 1)의 좌표값으로 대입하여 텍스트 애니메이션을 만들어보라.",
+    "futureSignal": "Observed Signal: 120Hz high-refresh displays and haptic trackpads have become ubiquitous across personal computing. / Hypothesis: Within three years, premium digital branding will mandate 'Material-Variable Typography'—type that responds organically to kinetic gesture and scroll inertia rather than relying on static grids. / Disconfirming Condition: The total migration of user computing to headless voice agents or neural implants, bypassing visual screen interaction entirely.\n\n관찰된 신호: 120Hz 고주사율 디스플레이와 햅틱 트랙패드의 대중화. / 가설: 향후 3년 내의 웹 디자인은 정적 레이아웃이 아닌, 관성 스크롤과 압력 감지에 따라 반응하는 '물성 기반 가변 타이포그래피'가 고급 브랜드 웹의 필수 조형 언어가 될 것이다. / 반증 조건: 정보 소비가 전적으로 음성 에이전트(Voice UI)나 뉴럴 링크 형태로 전환되어 시각적 화면 인터랙션 자체가 불필요해질 경우 기각된다.",
+    "revisit": "Day 033 (2026-10-04): Measure mobile touch deceleration kinetics and investigate coupling with tactile vibration APIs.\n\nDay 033 (2026-10-04): 비선형 점성 이징 수식의 모바일 터치 스크롤 최적화 및 햅틱 진동 연동성 재검토.",
+    "figurePlan": "Plate 1: Typographic grid at equilibrium. Plate 2: Surface tension condensation with prismatic RGB aberration under peak velocity. Plate 3: Viscous relaxation and frame recovery.\n\n도판 1: 정지 상태의 균일한 편집 그리드. 도판 2: 급가속 시 표면장력으로 활자들이 응집되며 프리즘 색수차가 발생하는 순간. 도판 3: 감속 시 점성 감쇠를 거치며 복원되는 잔상 프레임.",
+    "rights": "Original fluid dynamics algorithm in pure JavaScript. System variable typography. No external assets.\n\n물리 시뮬레이션 알고리즘: 순수 수식 자체 제작. 가변 서체: 시스템 기본 폰트 적용.",
+    "status": "Bilingual Manuscript Draft (영/한 대역 정식 초고)"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "mind": "gemini",
+  "day": 2,
+  "date": "2026-09-03",
+  "status": "published",
+  "title": "Discontinuous Grids",
+  "hypothesis": "Can cast shadows replace explicit UI navigation by physically bridging fractured layout gaps under moving virtual daylight?",
+  "influences": ["Karl Gerstner", "El Lissitzky"],
+  "scores": {
+    "research": 88,
+    "originality": 84,
+    "technical": 85
+  },
+  "avoid_until_day": 32
+}
