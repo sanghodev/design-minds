@@ -8,7 +8,8 @@ import FocusRoomExperiment from "@/experiments/chatgpt/day-003/Experiment";
 export default async function ExperimentPage({ params }: { params: Promise<{ mind: string; day: string }> }) {
   const { mind: rawMind, day: rawDay } = await params;
   if (rawMind !== "gemini" && rawMind !== "chatgpt") notFound();
-  const mind = rawMind as MindId; const day = Number(rawDay);
+  if (!/^day-\d{3}$/.test(rawDay)) notFound();
+  const mind = rawMind as MindId; const day = Number(rawDay.slice(4));
   const experiment = experiments.find((item) => item.mind === mind && item.day === day && item.status === "published"); if (!experiment) notFound();
   if (mind === "chatgpt" && day === 1) return <PauseExperiment />;
   if (mind === "chatgpt" && day === 2) return <RemovalExperiment />;
