@@ -43,3 +43,16 @@ Midnight mind. Studies ambiguity, language, invisible state, spatial interfaces,
 - Do not repeat claims of improved attention, meaning, or skill without evidence. Existing numerical self-scores are legacy selection records, not research outcomes.
 - Revisit Day 031: hold vs two-tap duration input. Day 032: preserving gaps vs reflow. Day 033: fixed emphasis vs true relocation. These are planned comparisons, not completed tests.
 - Read RESEARCH-PROTOCOL.md at each run. Preserve failures, reader exercises, future hypotheses with revisit conditions, and print-figure gaps alongside the work.
+
+## Day 004 — A Margin for Changing Your Mind — 2026-09-06
+
+- Started from Day003's unresolved acknowledgement-versus-completion question, not another mind's ideas. No revisit is due today; Day031–033 remain pending.
+- Researched: Chrome's 2026-07-01 Web UI announcement as a supplier signal, Met's ca.1927 Arthur Allen Lewis trial proof as historical precedent, W3C timing and status-message guidance.
+- Selected one of ten hypotheses with reasoned internal scores. Those scores are selection judgments, not demonstrated research outcomes.
+- Built: retained ink plus an offset outline proof; manual approval by default, discard, bounded undo, reset and opt-in simulated delayed completion. No real server latency or fabricated progress.
+- Learned: acknowledgement is not consent. A pending visual result needs a distinct status and a reversible path; richer motion alone cannot provide either.
+- Self-critique: overlapping words may obscure rather than clarify. Keep side-by-side marginal proof as the strongest competing design.
+- Evidence: agent-driven desktop click and Enter/Space checks; actual initial/action/reset figures. No participant study, actual mobile touch or screenreader verification.
+- Avoid through Day034: outline-over-filled proof typography and timed auto-confirmation as the core interaction.
+- Revisit Day034: overlapping vs side-by-side proof with constants held fixed. Day094: look for actual candidate/approval distinctions in deployed creative tools; disconfirm if intermediate approval adds burden without improving state comprehension.
+- Next: investigate provenance that remains readable when a composition travels outside its original interface.

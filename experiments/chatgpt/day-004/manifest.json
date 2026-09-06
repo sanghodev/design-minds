@@ -1,0 +1,189 @@
+{
+  "mind": "chatgpt",
+  "day": 4,
+  "date": "2026-09-06",
+  "status": "published",
+  "title": "A Margin for Changing Your Mind",
+  "discipline": [
+    "proof typography",
+    "reversible interaction"
+  ],
+  "hypothesis": "Can a visible proof distinguish acknowledgement from commitment without requiring motion?",
+  "variables": {
+    "changed": "Pending candidate represented as offset outline type over retained ink.",
+    "constants": "Authored vocabulary, poster frame, semantic controls; manual approval default.",
+    "challenge": "Readers identify the pending outline as already committed, or side-by-side text proves clearer without loss of authorship."
+  },
+  "research": [
+    {
+      "title": "What's new in web UI",
+      "publisher": "Bramus · Una Kravets / Chrome for Developers",
+      "url": "https://developer.chrome.com/blog/new-in-web-ui-io26",
+      "published": "2026-07-01",
+      "accessed": "2026-09-06",
+      "kind": "현재 기술 신호 · 플랫폼 제작자 발표 · 2026-07-01",
+      "use": "사용자 선호를 존중하는 UI와 세밀한 전환을 함께 다룬다. 더 풍부한 전환 기술의 등장에 대해, 오늘은 움직임 대신 상태의 의미를 먼저 드러내는 대조 실험을 설계했다.",
+      "limitation": "브라우저 공급자의 발표이며 디자인 업계 전체의 채택률이나 사용자 효과를 보여주는 조사가 아니다. 신기능을 이 작품에서 사용하거나 성능 검증하지 않았다."
+    },
+    {
+      "title": "Title Page for Walt Whitman's Short Stories",
+      "publisher": "The Metropolitan Museum of Art · Arthur Allen Lewis",
+      "url": "https://www.metmuseum.org/art/collection/search/914072",
+      "published": "unknown",
+      "accessed": "2026-09-06",
+      "kind": "역사 선례 · 기관 소장품 기록 · 작품 약 1927년 / 웹 게시일 미상",
+      "use": "목판 시험 인쇄(trial proof)로 분류된 제목 페이지를 통해, 인쇄물의 중간 상태도 독립적으로 기록될 수 있다는 점을 참조했다. 확정 전 글자를 읽을 수 있는 시각적 상태로 남긴다.",
+      "limitation": "소장품의 분류와 제작연대만 확인했다. 작가가 어떤 수정을 했는지, 교정쇄가 의사결정을 개선했는지 입증하지 않는다. 외형을 복제하지 않았다."
+    },
+    {
+      "title": "Understanding SC 2.2.1: Timing Adjustable",
+      "publisher": "W3C WAI",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable.html",
+      "published": "unknown",
+      "accessed": "2026-09-06",
+      "kind": "접근성 기술 근거 · 현행 설명 문서 / 개별 게시일 미상",
+      "use": "시간 제한이 다양한 이용자에게 장벽이 될 수 있다는 근거로 수동 확정을 기본값으로 두었다. 자동 지연은 선택 사항이며 언제든 끄고, 확정 뒤에도 되돌린다.",
+      "limitation": "설명 문서는 이 구현의 준수 인증이 아니다. 실제 보조기술 및 운동·인지 다양성 사용자 검증은 미실시."
+    },
+    {
+      "title": "Understanding SC 4.1.3: Status Messages",
+      "publisher": "W3C WAI",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html",
+      "published": "unknown",
+      "accessed": "2026-09-06",
+      "kind": "접근성 기술 근거 · 현행 설명 문서 / 개별 게시일 미상",
+      "use": "선택·확정·거두기·되돌리기 상태를 포커스 강제 이동 없이 role=status로 알린다. 글자의 윤곽만으로 확정 여부를 전달하지 않는다.",
+      "limitation": "라이브 영역을 코드에 넣었다는 사실과 실제 스크린리더에서 적절히 발화되는지는 별개다. 발화 순서와 중복 안내는 실기 검증 필요."
+    }
+  ],
+  "candidateScoring": {
+    "scale": "1–10, subjective selection only; not measured improvement",
+    "dimensions": [
+      "originality",
+      "visual necessity",
+      "interaction meaning",
+      "feasibility"
+    ]
+  },
+  "candidates": [
+    {
+      "title": "A Margin for Changing Your Mind",
+      "scores": [
+        9,
+        9,
+        9,
+        9
+      ],
+      "reason": "후보와 확정을 겹친 교정쇄로 구별하고 사용자가 결정 시간을 소유한다. 이전 날짜의 시간 누르기·단어 지우기·포커스 격자와 다르다."
+    },
+    {
+      "title": "The Slow Receipt",
+      "scores": [
+        8,
+        7,
+        8,
+        9
+      ],
+      "reason": "접수와 완료를 두 장의 영수증으로 분리한다. 명료하지만 타이포그래피가 상태 라벨에 머물 위험."
+    },
+    {
+      "title": "A Queue You Can Fold",
+      "scores": [
+        9,
+        9,
+        8,
+        6
+      ],
+      "reason": "대기 항목을 접어 보류한다. 물리 은유는 좋지만 여러 항목의 접근 가능한 정렬이 하루 범위를 넘는다."
+    },
+    {
+      "title": "Type Before Ink",
+      "scores": [
+        8,
+        9,
+        8,
+        9
+      ],
+      "reason": "윤곽에서 채움으로 바뀌는 지연만 보여준다. 선정안보다 시각적이나 거부·수정의 의미가 약하다."
+    },
+    {
+      "title": "A Letter Arrives Late",
+      "scores": [
+        8,
+        8,
+        6,
+        9
+      ],
+      "reason": "마지막 글자의 도착으로 뜻이 바뀐다. 독자 선택보다 연출된 반전에 의존."
+    },
+    {
+      "title": "The Cancelled Poster",
+      "scores": [
+        8,
+        8,
+        9,
+        8
+      ],
+      "reason": "확정 직전 취소 흔적을 남긴다. 강한 대안이나 Day002의 부재 기록과 중복."
+    },
+    {
+      "title": "Permission to Finish",
+      "scores": [
+        8,
+        7,
+        9,
+        9
+      ],
+      "reason": "최종 결과를 사용자가 허가한다. 명확하지만 이중 상태를 읽을 시각적 근거가 빈약."
+    },
+    {
+      "title": "An Honest Wait",
+      "scores": [
+        7,
+        6,
+        9,
+        9
+      ],
+      "reason": "아무 진행률 없이 접수 문장을 유지한다. 윤리적 질문은 좋지만 시각 연구의 변수 부족."
+    },
+    {
+      "title": "Revision in the Margin",
+      "scores": [
+        8,
+        9,
+        9,
+        8
+      ],
+      "reason": "본문 옆 여백에 후보를 병기한다. 가장 강한 대안: 읽기 쉬울 수 있지만 비교 편집기와 유사. Day034 대조군으로 보존."
+    },
+    {
+      "title": "The Reversible Seal",
+      "scores": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "reason": "도장 모양을 확정 후 풀 수 있다. 도상 은유가 실제 상태와 혼동될 위험."
+    }
+  ],
+  "selectedReason": "후보와 확정을 겹친 교정쇄로 구별하고 사용자가 결정 시간을 소유한다. 이전 날짜의 시간 누르기·단어 지우기·포커스 격자와 다르다.",
+  "strongestAlternative": "본문 옆 여백에 후보를 병기한다. 가장 강한 대안: 읽기 쉬울 수 있지만 비교 편집기와 유사. Day034 대조군으로 보존.",
+  "interaction": "Choose a proof, approve or discard it, undo or reset. Optional 2400 ms auto-commit simulation; no actual network wait.",
+  "technology": [
+    "React reducer",
+    "semantic HTML",
+    "CSS outline type"
+  ],
+  "accessibility": [
+    "manual untimed default",
+    "keyboard/touch buttons",
+    "polite live status",
+    "non-color state labels",
+    "reduced-motion and forced-colors CSS"
+  ],
+  "performance": "No assets, libraries, frames or persistence added. One cancellable timeout only when auto mode is enabled; history bounded to 20 states.",
+  "self_critique": "Outline and filled type may compete rather than clarify. This is an implemented state model, not evidence that readers understand it.",
+  "avoid_until_day": 34,
+  "legacyScores": "Registry zero fields are unmeasured legacy schema placeholders, never displayed or interpreted as results."
+}

@@ -1,0 +1,36 @@
+{
+  "captured": "2026-09-06",
+  "viewport": {
+    "width": 1363,
+    "height": 936
+  },
+  "input": "pointer click; keyboard Enter/Space separately tested",
+  "provenance": "Actual internal preview screenshots; not generated images or participant evidence.",
+  "source": {
+    "componentSha256": "205fd10d8ff6729b8792bd6a83bb362ea12b496989051257830b86d97027dd1e",
+    "cssSha256": "81de1b8282695e493e3b9c821dcaa219aeeff8cbb699949489160d4e0730779d"
+  },
+  "figures": [
+    {
+      "file": "initial.jpg",
+      "caption": "F1. 후보를 고르기 전, ROOM만 확정되어 있다.",
+      "alt": "MAKE ROOM AGAIN 문장과 비활성 확정 버튼."
+    },
+    {
+      "file": "action.jpg",
+      "caption": "F2. TIME은 교정 후보이며 기존 ROOM은 남는다.",
+      "alt": "윤곽 TIME이 채워진 ROOM 위에 어긋나 겹쳐 있는 교정쇄."
+    },
+    {
+      "file": "reset.jpg",
+      "caption": "F3. 처음으로를 누르면 ROOM과 수동 모드로 복귀한다.",
+      "alt": "ROOM만 남은 포스터와 초기화 완료 상태 안내."
+    }
+  ],
+  "gaps": [
+    "mobile viewport",
+    "screenreader session",
+    "print-resolution figures"
+  ],
+  "rights": "Project-created interface and text; system font; no external image reproduction."
+}

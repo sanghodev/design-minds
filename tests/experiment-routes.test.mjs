@@ -6,6 +6,7 @@ for (const [path, marker] of [
   ["/chatgpt/day-001", "SILENCE"],
   ["/chatgpt/day-002", "What we remove"],
   ["/chatgpt/day-003", "Focus rearranges"],
+  ["/chatgpt/day-004", "Changing Your Mind"],
 ]) {
   test(path + " renders its experiment", async () => {
     const response = await worker.fetch(new Request("http://localhost" + path),
