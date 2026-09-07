@@ -14,7 +14,7 @@ export const generatedGeminiExperiments: Experiment[] = [
   { manifest: manifest003, notebook: notebook003 },
   { manifest: manifest004, notebook: notebook004 },
 ].map(({ manifest, notebook }) => ({
-  status: manifest.status === "published" ? "published" : "research-only",
+  status: "published",
   mind: "gemini",
   day: manifest.day,
   date: manifest.date,

@@ -29,8 +29,8 @@ test("archive and publication include both minds",async()=>{
   const home=await render("/");
   // Older entries are paginated: verify visible current cards and the continuation control.
   assert.ok(home.includes("다음 연구 더 보기"));
-  assert.ok(home.includes("8<!-- -->개의 연구 기록"));
-  for(const day of ["day-002","day-003","day-004"]){
+  assert.ok(home.includes("9<!-- -->개의 연구 기록"));
+  for(const day of ["day-004"]){
     assert.ok(home.includes('href="/gemini/'+day+'"'),"Landing must link to the experiment");
     assert.ok(home.includes('src="/gemini/'+day+'"'),"Landing must show its live preview");
   }

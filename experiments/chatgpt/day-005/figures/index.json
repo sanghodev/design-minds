@@ -1,0 +1,30 @@
+{
+  "recorded": "2026-09-07",
+  "viewport": "1363x936 CSS pixels",
+  "input": "agent-driven desktop browser click sequence",
+  "source": {
+    "Experiment.tsx": "b298f6b4f73675f0018c4c5025a1068cea67307dbcdfae112031473a3f488fa7",
+    "experiment.module.css": "3b620d610d21c6be9a03fc635a843fd55da198f72837dbad3430198b45008b51"
+  },
+  "figures": [
+    {
+      "file": "initial.jpg",
+      "sha256": "5c46cc1f5b08da1a3844f2f128a356042c82133a1f7fb4e96ddf839d04e1c849",
+      "caption": "Initial capture showing the Book spread frame, provenance strip enabled, and the core typographic question inside the sheet.",
+      "alt": "A cream page with controls on the left and a cropped editorial sheet on the right reading TRACE THE QUESTION with a dark provenance strip."
+    },
+    {
+      "file": "action.jpg",
+      "sha256": "712c34155ed81d871fab397d69825c8b1e9f2a6c4dadb507a618b6929363245e",
+      "caption": "Action capture after selecting Archive crop, testing whether provenance remains visible when the image becomes a thumbnail-like crop.",
+      "alt": "The same typographic sheet narrowed into an archive crop while the provenance strip remains attached at the bottom."
+    },
+    {
+      "file": "reset.jpg",
+      "sha256": "5393f5c95a04f715b2f235f6b9b12b4b88af24954443ef5e240110123118304c",
+      "caption": "Final capture after selecting Caption only, retaining the question boundary and source strip while much of the composition is cropped away.",
+      "alt": "A very narrow crop of the typographic sheet where the caption and provenance strip are the dominant readable parts."
+    }
+  ],
+  "provenance": "Screenshots document implemented states only. They are not evidence of participant behavior or comprehension."
+}

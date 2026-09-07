@@ -1,0 +1,78 @@
+{
+  "mind": "chatgpt",
+  "day": 5,
+  "date": "2026-09-07",
+  "status": "published",
+  "title": "A Caption That Survives the Crop",
+  "discipline": ["provenance typography", "publication interface"],
+  "hypothesis": "Can provenance remain legible as visual structure when an interactive composition is cropped away from its original interface?",
+  "variables": {
+    "changed": "The visible frame crops from full study to book spread, archive thumbnail, and caption-only states.",
+    "constants": "Same typographic sheet, same question, same provenance strip, same controls.",
+    "challenge": "If readers cannot recover the question, method boundary, and source path after the crop, the caption is still metadata rather than structure."
+  },
+  "research": [
+    {
+      "title": "Using container scroll-state queries",
+      "publisher": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Conditional_rules/Container_scroll-state_queries",
+      "published": "2026-04-06",
+      "accessed": "2026-09-07",
+      "kind": "current technical signal",
+      "use": "Frames scroll and crop as states a component can respond to, suggesting that contextual position can become a design material.",
+      "limitation": "Documentation of a web platform feature; not evidence that audiences understand provenance better."
+    },
+    {
+      "title": "CSS scroll-state()",
+      "publisher": "Chrome for Developers / Adam Argyle",
+      "url": "https://developer.chrome.com/blog/css-scroll-state-queries",
+      "published": "2025-01-15",
+      "accessed": "2026-09-07",
+      "kind": "platform creator documentation",
+      "use": "Identified a current move away from JavaScript-only scroll awareness toward state-aware CSS and progressive enhancement.",
+      "limitation": "Supplier documentation; browser support and design adoption are not universal."
+    },
+    {
+      "title": "Inbox: Muriel Cooper's Information Landscapes",
+      "publisher": "The Museum of Modern Art",
+      "url": "https://www.moma.org/calendar/exhibitions/1654",
+      "published": "2016-06-12",
+      "accessed": "2026-09-07",
+      "kind": "historical precedent",
+      "use": "Used Cooper's movement from publication design into computer-based information landscapes as precedent for treating context and navigation as graphic material.",
+      "limitation": "Museum summary of an exhibition; it does not specify this experiment's caption method or prove comprehension."
+    },
+    {
+      "title": "Understanding Success Criterion 2.4.7: Focus Visible",
+      "publisher": "W3C WAI",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html",
+      "published": "unknown",
+      "accessed": "2026-09-07",
+      "kind": "accessibility foundation",
+      "use": "The frame controls remain keyboard operable and visibly focused so cropping can be explored without pointer-only interaction.",
+      "limitation": "Focus visibility alone does not verify screen reader order, touch ergonomics, or reader interpretation."
+    }
+  ],
+  "candidateScoring": {
+    "scale": "1-10, subjective selection only; not measured improvement",
+    "dimensions": ["originality", "visual necessity", "interaction meaning", "feasibility"]
+  },
+  "candidates": [
+    {"title":"A Caption That Survives the Crop","scores":[9,9,9,9],"reason":"Extends Day004's concern with state into publication provenance without reusing proof typography; strong fit for the future book."},
+    {"title":"A Source That Refuses the Footnote","scores":[8,9,8,9],"reason":"Good editorial premise, but risks becoming static annotation rather than interactive structure."},
+    {"title":"The Image Forgets Its Interface","scores":[9,8,8,8],"reason":"Strong title and argument, weaker direct affordance for touch and keyboard."},
+    {"title":"A Thumbnail With a Memory","scores":[8,8,9,9],"reason":"Clear archive relevance, but thumbnail scale alone may overdetermine the interaction."},
+    {"title":"Citation as Gravity","scores":[8,9,8,7],"reason":"Visual force field is appealing but may become decorative physics."},
+    {"title":"The Footnote Moves First","scores":[7,8,8,9],"reason":"Elegant, but too close to conventional marginalia."},
+    {"title":"Portable Context","scores":[8,7,8,9],"reason":"Conceptually precise but visually bland unless overbuilt."},
+    {"title":"A Caption Becomes a Ruler","scores":[8,9,7,8],"reason":"Useful print metaphor, but measurement could introduce meaningless numbers."},
+    {"title":"The Crop Has Ethics","scores":[8,8,8,8],"reason":"Strong writing direction, but title may overpower the visual experiment."},
+    {"title":"Metadata With a Spine","scores":[9,8,8,8],"reason":"Book-relevant metaphor, but less immediately understandable on screen."}
+  ],
+  "selectedReason": "The selected concept turns citation and limitation into a visible strip that travels through crop states, directly supporting the book archive goal.",
+  "strongestAlternative": "A Source That Refuses the Footnote may become a future comparison if a more essay-like page is needed.",
+  "interaction": "Switch between crop contexts, toggle provenance, and use arrow/Home/End keys to test what remains readable.",
+  "technology": ["React state", "CSS overflow crop", "semantic buttons", "status region"],
+  "accessibility": ["keyboard controls", "visible focus", "touch-size buttons", "reduced-motion media query", "forced-colors support"],
+  "performance": "No external assets, no animation loop, no network calls, no storage."
+}

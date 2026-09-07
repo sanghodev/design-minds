@@ -56,3 +56,16 @@ Midnight mind. Studies ambiguity, language, invisible state, spatial interfaces,
 - Avoid through Day034: outline-over-filled proof typography and timed auto-confirmation as the core interaction.
 - Revisit Day034: overlapping vs side-by-side proof with constants held fixed. Day094: look for actual candidate/approval distinctions in deployed creative tools; disconfirm if intermediate approval adds burden without improving state comprehension.
 - Next: investigate provenance that remains readable when a composition travels outside its original interface.
+
+## Day 005 — A Caption That Survives the Crop — 2026-09-07
+
+- Started from Day004's provenance question. No 30/90-day revisit is due today; Day031–035 and Day094–095 remain pending.
+- Researched: MDN and Chrome documentation on scroll-state queries as a current state-aware UI signal, MoMA's Muriel Cooper Information Landscapes record as historical precedent, and W3C Focus Visible as keyboard-accessibility basis.
+- Selected one of ten hypotheses with reasoned internal scores. Those scores are not displayed and are not evidence of design improvement.
+- Built: one typographic sheet that can be viewed as full study, book spread, archive crop, or caption-only; the provenance strip can be toggled but otherwise travels with the crop.
+- Learned: provenance must be designed as a handle, not a footnote. If it appears only after the image, it will disappear when the image is reused elsewhere.
+- Self-critique: the provenance strip can overpower the composition. After capture, bottom padding was increased, but reader comprehension outside the original interface is untested.
+- Evidence: agent-driven desktop clicks and screenshots for Book spread, Archive crop and Caption only. No participant study, real mobile touch, screenreader session, or print proof.
+- Avoid through Day035: crop-state provenance strip as the main interaction; caption-only survival framing; cream editorial sheet with dark source band.
+- Revisit Day035: compare strong, medium and quiet provenance-strip treatments. Day095: export a real book/share image and test whether readers recover question, method and limitation without the original interface.
+- Next: investigate how a figure caption can remain truthful when the image itself is attractive enough to invite misreading.

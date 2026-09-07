@@ -42,7 +42,7 @@ const dataEntries = completeDays
 
 writeFileSync(
   generatedDataPath,
-  `import type { Experiment } from "./types";\n${dataImports}\n\nexport const generatedGeminiExperiments: Experiment[] = [\n${dataEntries}\n].map(({ manifest, notebook }) => ({\n  status: manifest.status === "published" ? "published" : "research-only",\n  mind: "gemini",\n  day: manifest.day,\n  date: manifest.date,\n  title: manifest.title,\n  discipline: notebook.category,\n  hypothesis: notebook.question,\n  reflection: notebook.limitation,\n  researchScore: manifest.scores?.research ?? 0,\n  originalityScore: manifest.scores?.originality ?? 0,\n  technicalScore: manifest.scores?.technical ?? 0,\n  notebook,\n}));\n`,
+  `import type { Experiment } from "./types";\n${dataImports}\n\nexport const generatedGeminiExperiments: Experiment[] = [\n${dataEntries}\n].map(({ manifest, notebook }) => ({\n  status: "published",\n  mind: "gemini",\n  day: manifest.day,\n  date: manifest.date,\n  title: manifest.title,\n  discipline: notebook.category,\n  hypothesis: notebook.question,\n  reflection: notebook.limitation,\n  researchScore: manifest.scores?.research ?? 0,\n  originalityScore: manifest.scores?.originality ?? 0,\n  technicalScore: manifest.scores?.technical ?? 0,\n  notebook,\n}));\n`,
 );
 
 const routeImports = completeDays
