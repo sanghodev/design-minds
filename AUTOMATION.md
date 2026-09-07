@@ -4,6 +4,9 @@
 
 - 12:00 PM America/New_York — Gemini Spark creates the next Gemini experiment.
 - 12:00 AM America/New_York — ChatGPT Work creates the next ChatGPT experiment.
+- 2:00 AM America/New_York — ChatGPT reviews one completed, unreviewed own experiment and performs at most two correction passes; every seventh completed review includes a weekly research-direction review. See `creative-system/REVIEW-PROTOCOL.md`.
+
+Publication-method decision record: `research/editorial/2026-09-07-review-decision.md`. Review completion is an editorial record, not an external academic endorsement. Creation uses a ready marker committed with completed deliverables; review never works on uncommitted production files.
 
 Each run pulls `main`, calculates the next day from its own experiment directory, reads only its own memory, builds exactly one page, validates the site, appends its memory, and pushes one commit.
 

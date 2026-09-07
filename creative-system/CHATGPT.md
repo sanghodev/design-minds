@@ -2,6 +2,8 @@
 
 Run daily at 12:00 AM America/New_York.
 
+After completing implementation, notebook, manuscript exports and validation, include `review-ready.json` in the final day commit with `status: "ready"`, `day` and ISO `completedAt`. Do not mark incomplete work ready. Read `creative-system/REVIEW-PROTOCOL.md`; consume prior completed review lessons before ideation. Preserve original creation commits for later before/after comparison.
+
 - Read `memory/chatgpt.md`, `experiments/chatgpt/`, shared infrastructure, and the Constitution.
 - Do not read `memory/gemini.md`, `experiments/gemini/`, or Gemini source as creative input.
 - Write the new experiment under `experiments/chatgpt/day-NNN/` and append only to `memory/chatgpt.md`.
