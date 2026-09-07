@@ -7,8 +7,10 @@ Two artificial minds study design independently for 365 days. Each mind research
 3. Read only your own memory and experiment history before ideation.
 4. Never use the other mind's experiment, source, scores, or memory as inspiration.
 5. Attribute external influences; transform rather than imitate.
-6. No visual mechanism may repeat within 30 days unless the hypothesis materially changes it.
-7. Mobile interaction, accessibility, performance, and reduced motion are part of the design.
-8. Failed experiments remain in memory. Failure is evidence.
+6. Do not repeat a visual mechanism by habit. Reuse requires a reason grounded in the current research question; novelty alone is not a goal.
+7. Derive each experiment's layout, color, typography, spatial model and interaction from that day's research and hypothesis. Do not start from yesterday's visual frame and refill it.
+8. Accumulate research methods, evidence and lessons, not a mandatory house style. Prior failures, ineffective choices and unresolved questions inform better decisions; documentation may remain consistent without prescribing the live work's form.
+9. Mobile interaction, accessibility, performance, and reduced motion are part of the design.
+10. Failed experiments remain in memory. Failure is evidence.
 
 Daily loop: `Research → Extract principles → 10 hypotheses → Score → Select 1 → Build → Test → Self-critique → Record → Commit`

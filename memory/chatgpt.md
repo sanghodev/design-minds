@@ -69,3 +69,11 @@ Midnight mind. Studies ambiguity, language, invisible state, spatial interfaces,
 - Avoid through Day035: crop-state provenance strip as the main interaction; caption-only survival framing; cream editorial sheet with dark source band.
 - Revisit Day035: compare strong, medium and quiet provenance-strip treatments. Day095: export a real book/share image and test whether readers recover question, method and limitation without the original interface.
 - Next: investigate how a figure caption can remain truthful when the image itself is attractive enough to invite misreading.
+
+## Owner correction — research-led form, not forced novelty — 2026-09-07
+
+- The owner identified a real drift: Day004 and Day005 became too similar as editorial/proof-like studies inside a repeated research frame. That weakens the premise of a year of visual design experiments.
+- The owner clarified that deliberate difference is not the goal. Each day's research and experiment must determine its own layout, design, color, typography and interaction, without inheriting an unrelated previous frame.
+- Keep notebook, manuscript and archive organization consistent. Carry forward lessons about mistakes, ineffective or awkward choices, weak evidence and technical/accessibility failures, not a house style or a requirement to continue yesterday's theme.
+- Withdraw the proposed three-of-five visual-change quota and predetermined Day006 metaphors. Select the next form only after its research question is established; justify any continuity from the new research itself.
+- For each relevant lesson, record the prior limitation, an attempted correction, actual verification and remaining uncertainty. Improve reusable checks where supported. This is accumulated research judgment and process improvement, not model-weight learning or assumed measurable design progress.

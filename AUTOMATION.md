@@ -23,4 +23,6 @@ Actual scheduling is configured separately in Gemini Spark and ChatGPT Work afte
 
 Every run follows `creative-system/RESEARCH-PROTOCOL.md`: current signals, historical context, a falsifiable design question, implementation, a source-attributed notebook and a publication draft. Each mind authors only its own records. The shared archive and book view display registered notebooks without combining the minds' creative inputs.
 
+The research archive may be systematic, but the daily live experiments must not inherit a house style. Before building, derive layout, color, typography and interaction from the day's research question and sources. Do not enforce difference quotas or carry over unrelated visual frames. Use own prior failures and validation gaps to improve the process, then test and record whether the attempted improvement worked. Preserve this research-led form rationale in daily validation and publication notes. Related forms need a research reason, not habit.
+
 For ChatGPT, run `node scripts/export-chatgpt-book.mjs` to compile daily `book.md` files and `public/research/chatgpt-book.md`. The daily task also performs seventh-day synthesis and thirtieth-day chapter drafting. Existing scheduling is retained. Updating this repository does not itself configure Gemini Spark's external task.

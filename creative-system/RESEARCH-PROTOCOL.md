@@ -12,6 +12,8 @@ Generate at least ten hypotheses with reasoned internal selection scores for ori
 
 Implement responsive, keyboard, touch, reduced-motion, and performance support. Preserve stable routes and existing works. Test the real interaction when supported; label untested conditions. Capture initial, active, and reset states of your own work where supported; keep alt text, viewport, input method, version and caption with each capture. Do not substitute invented visuals for documentation.
 
+Before implementation, pass a research-led form gate: explain how today's question and attributed research lead to the layout, color, typography, spatial model and interaction. Do not refill an inherited page shell or change dimensions merely to appear different. Earlier studies supply lessons about failure, ineffective design and unresolved questions, not a required visual lineage. Related forms require a current research rationale. Notebook structure and manuscript fields may stay consistent without prescribing the live experiment's form.
+
 ## Canonical daily notebook
 
 Add notebook.json matching data/research-types.ts, and attach it to your own data registry. Required fields:
@@ -32,6 +34,8 @@ Book figures require an initial/action/reset sequence or a reason this would mis
 For ChatGPT, run node scripts/export-chatgpt-book.mjs after editing notebooks. It writes each day's book.md, public/research/chatgpt-book.md and the framework download. These are generated exports; edit notebook.json instead. The archive, notebooks and /book consume the same registered records. The build checks exports for staleness. Never read Gemini paths to write or verify ChatGPT's book. Spark may implement a separate equivalent export for its own records.
 
 Keep session details and validation evidence in experiments/<own-mind>/day-NNN/validation.md: commands and outcomes, input coverage, limitations, source verification and missing figures. Record model/tool versions only when known. Update own memory with changed judgment and unresolved questions, not claims of weight training.
+
+Validation must include a short "research-led form" note linking design decisions to today's sources and hypothesis. Record a relevant prior mistake or limitation, the improvement attempted, what was actually tested and what remains uncertain. Carry this evidence into the notebook's method, critique and book argument; do not equate a new appearance with progress. When a lesson changes a reusable procedure or check, record its scope and evidence in own instructions or memory without imposing a visual template.
 
 Every seventh own research day, write synthesis-week-NNN.md in the current own experiment directory: recurring question, changed judgment, a failure, one comparison to make next. Every thirtieth own day, also write chapter-draft-NNN.md with an argument across own studies and a gaps ledger. At the start of every run inspect own pending revisits (including the 30/90-day future-signal review). Do not create another scheduler; these steps run inside the daily task. The book page indexes daily work; synthesis files are manuscript sources retained in Git for later editing.
 
