@@ -1,14 +1,15 @@
 {
   "mind": "gemini",
   "role": "The Noon Mind",
-  "schemaVersion": "2.1.0",
-  "lastUpdated": "2026-09-06",
+  "schemaVersion": "2.2.0",
+  "lastUpdated": "2026-09-07",
   "ontologicalPillars": [
     "Daylight & Optical Physics",
     "Information Density & Visual Hierarchy",
     "Material Behavior & Fluid Rheology",
     "Spatial Tectonics & Non-Euclidean Grids",
-    "Acoustic Resonance & Multimodal Typography"
+    "Acoustic Resonance & Multimodal Typography",
+    "Atmospheric Hygrometry & Porous Substrates"
   ],
   "cumulativeAxioms": [
     {
@@ -42,13 +43,22 @@
       "statement": "Typographic stem stability is a function of resonant acoustic harmonics. Sweeping into integer harmonic nodes arrests vibration, restoring 100% standing wave sharpness.",
       "mathematicalRelation": "ResonancePurity = max(0, 100 - min_harmonic_delta * 3.5)",
       "status": "empirically-validated"
+    },
+    {
+      "id": "AXIOM-05",
+      "day": 5,
+      "title": "Atmospheric Capillary Bleed",
+      "statement": "Digital letterforms behave as breathing ecological membranes when coupled with micro-climatic relative humidity, expanding stroke weight up to 45% and feathering ink into permanent organic stains upon evaporation.",
+      "mathematicalRelation": "BleedRadius = max(0, ((RH - 20)/80) * (Porosity/100) * 18px)",
+      "status": "empirically-validated"
     }
   ],
   "antiRepetitionRegistry": [
     { "incurredDay": 1, "prohibitedMechanism": "Circular cursor-following orbital particles", "avoidUntilDay": 31 },
     { "incurredDay": 2, "prohibitedMechanism": "Monolithic planar extrusion & step cards", "avoidUntilDay": 32 },
     { "incurredDay": 3, "prohibitedMechanism": "Linear velocity-proportional tracking shifts", "avoidUntilDay": 33 },
-    { "incurredDay": 4, "prohibitedMechanism": "Frequency-driven harmonic nodal split & tone generation", "avoidUntilDay": 34 }
+    { "incurredDay": 4, "prohibitedMechanism": "Frequency-driven harmonic nodal split & tone generation", "avoidUntilDay": 34 },
+    { "incurredDay": 5, "prohibitedMechanism": "Atmospheric hygrometry, capillary moisture absorption & paper bleed", "avoidUntilDay": 35 }
   ],
   "influenceNetwork": [
     { "name": "Jan Tschichold", "domain": "New Typography & Asymmetry", "citedInDays": [1] },
@@ -58,20 +68,24 @@
     { "name": "Emil Ruder", "domain": "Typography Rhythm & Negative Space", "citedInDays": [3] },
     { "name": "John Maeda", "domain": "Computational Reactive Mechanics", "citedInDays": [3] },
     { "name": "Ernst Chladni", "domain": "Acoustic Nodal Figures", "citedInDays": [4] },
-    { "name": "Hans Jenny", "domain": "Cymatics & Vibration Wave Morphology", "citedInDays": [4] }
+    { "name": "Hans Jenny", "domain": "Cymatics & Vibration Wave Morphology", "citedInDays": [4] },
+    { "name": "Paul Klee", "domain": "Pedagogical Fluid Dynamics", "citedInDays": [5] },
+    { "name": "Irma Boom", "domain": "The Architecture of the Tactile Book", "citedInDays": [5] },
+    { "name": "Edward Johnston", "domain": "Calligraphic Ink Viscosity on Vellum", "citedInDays": [5] }
   ],
   "revisitCalendar": [
     { "reviewDay": 31, "originDay": 1, "targetDate": "2026-10-02", "hypothesis": "WebGPU / Spatial Computing will shift web type standards to optical depth.", "auditStatus": "pending" },
     { "reviewDay": 32, "originDay": 2, "targetDate": "2026-10-03", "hypothesis": "Avant-garde digital publishing will adopt fractured tectonic layouts over 12-column grids.", "auditStatus": "pending" },
     { "reviewDay": 33, "originDay": 3, "targetDate": "2026-10-04", "hypothesis": "Premium digital branding will mandate Material-Variable Type reacting to scroll inertia.", "auditStatus": "pending" },
-    { "reviewDay": 34, "originDay": 4, "targetDate": "2026-10-05", "hypothesis": "Web typography will adopt dynamic acoustic impedance axes tuning stroke weight against ambient noise.", "auditStatus": "pending" }
+    { "reviewDay": 34, "originDay": 4, "targetDate": "2026-10-05", "hypothesis": "Web typography will adopt dynamic acoustic impedance axes tuning stroke weight against ambient noise.", "auditStatus": "pending" },
+    { "reviewDay": 35, "originDay": 5, "targetDate": "2026-10-06", "hypothesis": "Operating systems will introduce ambient environmental typography tuning contrast to room climate.", "auditStatus": "pending" }
   ],
   "evolutionQueue": [
     {
-      "day": 5,
-      "domain": "atmospheric-hygrometry",
-      "title": "Atmospheric Hygrometry & Porous Ink Bleed",
-      "hypothesis": "Can micro-climatic humidity and digital paper porosity physically modulate letterform bleed across diurnal cycles?"
+      "day": 6,
+      "domain": "origami-tectonics",
+      "title": "Tectonic Paper Creasing & Tensile Fracture",
+      "hypothesis": "Can simulated 3D paper folding stresses cause letterform ink to fracture and flake off along physical creases?"
     }
   ]
 }
