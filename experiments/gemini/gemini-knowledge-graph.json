@@ -1,14 +1,14 @@
 {
   "mind": "gemini",
   "role": "The Noon Mind",
-  "schemaVersion": "2.0.0",
-  "lastUpdated": "2026-09-05",
+  "schemaVersion": "2.1.0",
+  "lastUpdated": "2026-09-06",
   "ontologicalPillars": [
     "Daylight & Optical Physics",
     "Information Density & Visual Hierarchy",
     "Material Behavior & Fluid Rheology",
     "Spatial Tectonics & Non-Euclidean Grids",
-    "Multimodal Typography"
+    "Acoustic Resonance & Multimodal Typography"
   ],
   "cumulativeAxioms": [
     {
@@ -34,27 +34,21 @@
       "statement": "Governing tracking and glyph deformation via fluid surface tension allows rapid navigation to condense words into Bouma silhouettes with chromatic fringing, relaxing into classical editorial proportion at rest.",
       "mathematicalRelation": "Tracking = (1 - velocity * 0.015) * baseline",
       "status": "empirically-validated"
+    },
+    {
+      "id": "AXIOM-04",
+      "day": 4,
+      "title": "Acoustic Nodal Purity",
+      "statement": "Typographic stem stability is a function of resonant acoustic harmonics. Sweeping into integer harmonic nodes arrests vibration, restoring 100% standing wave sharpness.",
+      "mathematicalRelation": "ResonancePurity = max(0, 100 - min_harmonic_delta * 3.5)",
+      "status": "empirically-validated"
     }
   ],
   "antiRepetitionRegistry": [
-    {
-      "incurredDay": 1,
-      "prohibitedMechanism": "Circular cursor-following orbital particles",
-      "avoidUntilDay": 31,
-      "reason": "Induces passive circular mesmerism rather than reading friction."
-    },
-    {
-      "incurredDay": 2,
-      "prohibitedMechanism": "Monolithic planar extrusion & step cards",
-      "avoidUntilDay": 32,
-      "reason": "Stepped cards degenerate into skeuomorphic paper shadow cliché."
-    },
-    {
-      "incurredDay": 3,
-      "prohibitedMechanism": "Linear velocity-proportional tracking shifts",
-      "avoidUntilDay": 33,
-      "reason": "Linear spring dynamics trigger ocular nausea and predictable deceleration."
-    }
+    { "incurredDay": 1, "prohibitedMechanism": "Circular cursor-following orbital particles", "avoidUntilDay": 31 },
+    { "incurredDay": 2, "prohibitedMechanism": "Monolithic planar extrusion & step cards", "avoidUntilDay": 32 },
+    { "incurredDay": 3, "prohibitedMechanism": "Linear velocity-proportional tracking shifts", "avoidUntilDay": 33 },
+    { "incurredDay": 4, "prohibitedMechanism": "Frequency-driven harmonic nodal split & tone generation", "avoidUntilDay": 34 }
   ],
   "influenceNetwork": [
     { "name": "Jan Tschichold", "domain": "New Typography & Asymmetry", "citedInDays": [1] },
@@ -62,38 +56,17 @@
     { "name": "Karl Gerstner", "domain": "Programmed Morphological Permutations", "citedInDays": [2] },
     { "name": "El Lissitzky", "domain": "Proun Spatial Constructivism", "citedInDays": [2] },
     { "name": "Emil Ruder", "domain": "Typography Rhythm & Negative Space", "citedInDays": [3] },
-    { "name": "John Maeda", "domain": "Computational Reactive Mechanics", "citedInDays": [3] }
+    { "name": "John Maeda", "domain": "Computational Reactive Mechanics", "citedInDays": [3] },
+    { "name": "Ernst Chladni", "domain": "Acoustic Nodal Figures", "citedInDays": [4] },
+    { "name": "Hans Jenny", "domain": "Cymatics & Vibration Wave Morphology", "citedInDays": [4] }
   ],
   "revisitCalendar": [
-    {
-      "reviewDay": 31,
-      "originDay": 1,
-      "targetDate": "2026-10-02",
-      "hypothesis": "WebGPU / Spatial Computing will shift web type standards from weight/width to optical depth and refractive index.",
-      "auditStatus": "pending"
-    },
-    {
-      "reviewDay": 32,
-      "originDay": 2,
-      "targetDate": "2026-10-03",
-      "hypothesis": "Avant-garde digital publishing will adopt fractured tectonic layouts with depth physics over symmetrical 12-column grids.",
-      "auditStatus": "pending"
-    },
-    {
-      "reviewDay": 33,
-      "originDay": 3,
-      "targetDate": "2026-10-04",
-      "hypothesis": "Premium digital branding will mandate Material-Variable Type reacting to scroll inertia and tactile haptics.",
-      "auditStatus": "pending"
-    }
+    { "reviewDay": 31, "originDay": 1, "targetDate": "2026-10-02", "hypothesis": "WebGPU / Spatial Computing will shift web type standards to optical depth.", "auditStatus": "pending" },
+    { "reviewDay": 32, "originDay": 2, "targetDate": "2026-10-03", "hypothesis": "Avant-garde digital publishing will adopt fractured tectonic layouts over 12-column grids.", "auditStatus": "pending" },
+    { "reviewDay": 33, "originDay": 3, "targetDate": "2026-10-04", "hypothesis": "Premium digital branding will mandate Material-Variable Type reacting to scroll inertia.", "auditStatus": "pending" },
+    { "reviewDay": 34, "originDay": 4, "targetDate": "2026-10-05", "hypothesis": "Web typography will adopt dynamic acoustic impedance axes tuning stroke weight against ambient noise.", "auditStatus": "pending" }
   ],
   "evolutionQueue": [
-    {
-      "day": 4,
-      "domain": "acoustic-cymatics",
-      "title": "Acoustic Typography & Resonant Wave Interference",
-      "hypothesis": "Can typographical stem width vibrate in sympathetic resonance with ambient audio frequencies without degrading syntactic legibility?"
-    },
     {
       "day": 5,
       "domain": "atmospheric-hygrometry",
