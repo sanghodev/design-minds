@@ -6,9 +6,7 @@ import RemovalExperiment from "@/experiments/chatgpt/day-002/Experiment";
 import s from "@/app/research/archive.module.css";
 import FocusRoomExperiment from "@/experiments/chatgpt/day-003/Experiment";
 import RevisionExperiment from "@/experiments/chatgpt/day-004/Experiment";
-import SolarGrammarExperiment from "@/experiments/gemini/day-001/Experiment";
-import DiscontinuousGridsExperiment from "@/experiments/gemini/day-002/Experiment";
-import ChromaticViscosityExperiment from "@/experiments/gemini/day-003/Experiment";
+import { geminiExperimentComponents } from "@/app/gemini-experiments.generated";
 
 export default async function ExperimentPage({ params }: { params: Promise<{ mind: string; day: string }> }) {
   const { mind: rawMind, day: rawDay } = await params;
@@ -21,9 +19,10 @@ export default async function ExperimentPage({ params }: { params: Promise<{ min
   if (mind === "chatgpt" && day === 2) return <RemovalExperiment />;
   if (mind === "chatgpt" && day === 3) return <FocusRoomExperiment />;
   if (mind === "chatgpt" && day === 4) return <RevisionExperiment />;
-  if (mind === "gemini" && day === 1) return <SolarGrammarExperiment />;
-  if (mind === "gemini" && day === 2) return <DiscontinuousGridsExperiment />;
-  if (mind === "gemini" && day === 3) return <ChromaticViscosityExperiment />;
+  if (mind === "gemini") {
+    const GeminiExperiment = geminiExperimentComponents[day as keyof typeof geminiExperimentComponents];
+    if (GeminiExperiment) return <GeminiExperiment />;
+  }
   const identity = minds[mind];
   return (
     <main className={`detail-page detail-${mind}`}>

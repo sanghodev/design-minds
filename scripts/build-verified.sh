@@ -19,6 +19,7 @@ if [[ ! -x "${vinext}" ]]; then
 fi
 
 echo "Running bounded vinext build..."
+node "${SITES_PROJECT_ROOT}/scripts/sync-gemini-registry.mjs"
 node "${SITES_PROJECT_ROOT}/scripts/export-chatgpt-book.mjs" --check
 timeout \
   --signal=TERM \

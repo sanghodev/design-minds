@@ -9,7 +9,7 @@ async function render(path){
   assert.equal(response.status,200,path);
   return response.text();
 }
-for(const day of ["day-001","day-002","day-003"]){
+for(const day of ["day-001","day-002","day-003","day-004"]){
   test("Gemini "+day+" connects research and honest implementation status",async()=>{
     const manifest=JSON.parse(await readFile(new URL("../experiments/gemini/"+day+"/manifest.json",import.meta.url),"utf8"));
     const research=await render("/research/gemini/"+day);
@@ -19,7 +19,7 @@ for(const day of ["day-001","day-002","day-003"]){
     const delivered=existsSync(new URL("../experiments/gemini/"+day+"/Experiment.tsx",import.meta.url));
     if(delivered){
       assert.ok(!work.includes("실행 파일 대기"),"Delivered component must be integrated");
-      const markers={"day-001":'type="range" min="0" max="360"',"day-002":"3D Depth: ","day-003":"Freeze State: "};
+      const markers={"day-001":'type="range" min="0" max="360"',"day-002":"3D Depth: ","day-003":"Freeze State: ","day-004":"Oscillator Frequency"};
       assert.ok(work.includes(markers[day]),"Actual experiment must render");
     }
     else {assert.ok(work.includes("실행 파일 대기"));assert.ok(work.includes("/research/gemini/"+day));}
@@ -27,15 +27,15 @@ for(const day of ["day-001","day-002","day-003"]){
 }
 test("archive and publication include both minds",async()=>{
   const home=await render("/");
-  // The seventh entry is paginated: verify visible cards and the continuation control.
+  // Older entries are paginated: verify visible current cards and the continuation control.
   assert.ok(home.includes("다음 연구 더 보기"));
-  assert.ok(home.includes("/chatgpt/day-001"));
-  for(const day of ["day-002","day-003"]){
+  assert.ok(home.includes("8<!-- -->개의 연구 기록"));
+  for(const day of ["day-002","day-003","day-004"]){
     assert.ok(home.includes('href="/gemini/'+day+'"'),"Landing must link to the experiment");
     assert.ok(home.includes('src="/gemini/'+day+'"'),"Landing must show its live preview");
   }
   const book=await render("/book");
-  assert.ok(book.includes("gemini-day-003"));
+  assert.ok(book.includes("gemini-day-004"));
   assert.ok(book.includes("chatgpt-day-003"));
   assert.ok(book.includes("/research/gemini-book.md"));
   const download=await readFile(new URL("../dist/client/research/gemini-book.md",import.meta.url),"utf8");

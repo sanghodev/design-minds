@@ -29,6 +29,7 @@ test("renders the research archive with usable entry points", async () => {
   const html = await response.text();
   assert.match(html, /연구 작품 색인/);
   assert.match(html, /href="\/book"/);
-  assert.match(html, /href="\/research\/chatgpt\/day-001"/);
+  assert.match(html, /href="\/research\/gemini\/day-004"/);
+  assert.match(html, /href="\/gemini\/day-004"/);
   assert.match(html, /type="search"/);
 });

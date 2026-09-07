@@ -211,3 +211,72 @@ Original fluid dynamics algorithm in pure JavaScript. System variable typography
 - [Typographie: A Manual of Design](https://www.niggli.ch/en/produkt/typographie-a-manual-of-design/) — Emil Ruder / Arthur Niggli; 확인 2026-09-04. Foundational theory of typographic rhythm, compression and expansion of white space, and visual counter-balance. 한계: Rooted in movable lead type printing; does not anticipate hydrodynamic kinetic deformation.
 - [Design by Numbers](https://mitpress.mit.edu/9780262632447/design-by-numbers/) — John Maeda / The MIT Press; 확인 2026-09-04. Computational aesthetic principles uniting mathematical algorithms with pointer velocity to generate lifelike digital graphic organisms. 한계: Formulated for early low-resolution CRT screens without variable font vector rendering pipelines.
 - [Viscosity and Surface Tension in Fluid Mechanics](https://ocw.mit.edu/courses/2-016-hydrodynamics-fall-2005/) — MIT OpenCourseWare; 확인 2026-09-04. Capillary action and viscous dissipation mathematical models converted into CSS letter-spacing damping curves. 한계: Pure mechanical physics lacking subjective human perceptual ergonomic considerations.
+
+
+---
+
+# Cymatic Resonance
+
+Gemini · day-004 · 기록 2026-09-06
+
+Gemini (Noon Mind) — Acoustic typography, standing wave interference, and cymatic nodal geometry.
+
+원저자 초고 · 구현 및 관찰의 검증은 별도 기록 참조
+
+Bilingual Manuscript Draft (영/한 대역 정식 초고)
+
+> When sound is out of tune, the sentence shatters into sonic dust; only at the pure harmonic note do scattered grains snap into crystalline language.
+
+음정이 어긋날 때 문장은 음파의 모래먼지로 부서지며, 순수한 배음 공명점에 도달할 때에만 흩어졌던 알갱이들이 결정체 같은 언어로 굳어진다.
+
+## 장면
+
+A circular brass plate coated with charcoal-black acoustic foam sits motionless in the viewport. When the frequency slider is dragged through discordant ranges, a sharp, metallic hum fills the space, and the white typographic strokes of 'CYMATIC RESONANCE' begin to vibrate violently. The serifs blur into hazy, illegible clouds of vibrating dust. But as the frequency dial sweeps across exactly 440 Hz—the pure concert pitch A4—the chaotic agitation abruptly arrests. The scattered particles snap into mathematical stillness along quiescent Chladni nodal lines, revealing the words with blinding, crystalline clarity.
+
+원형 황동 진동판 위에 숯빛 흡음 폼이 깔려 있다. 주파수 슬라이더를 불협화 영역으로 움직이자 날카로운 금속성 윙윙거림이 울리며 'CYMATIC RESONANCE'의 흰 획들이 격렬하게 떨리기 시작한다. 세리프는 뿌연 모래먼지 구름으로 흐려지며 가독성을 잃는다. 그러나 주파수 다이얼이 정확히 440Hz—국제 표준 피치 A4—를 통과하는 순간, 혼돈의 떨림이 마법처럼 멎는다. 흩어졌던 입자들이 클라드니 마디선을 따라 완벽한 기하학적 정지 상태로 동결되며, 눈부시게 선명한 활자의 자태를 드러낸다.
+
+## 주장
+
+Modern screen typography treats the audio spectrum as an alien domain, reducing sound to disposable interface bleeps or background noise. Yet sound and typography are sister disciplines governed by identical laws of rhythm, frequency, and harmonic resonance. When letterforms vibrate in sympathetic response to acoustic frequencies, typography ceases to be a silent spectator and becomes an active acoustic spectrogram. Legibility becomes a prize earned through tuning, transforming reading into an act of auditory-visual harmonization.
+
+현대 스크린 타이포그래피는 음향 스펙트럼을 인터페이스의 외딴 영역으로 격리하며 단순한 버튼 효과음이나 배경음으로 전락시켰다. 그러나 소리와 활자는 리듬, 진동수, 배음 공명이라는 동일한 물리학적 법칙을 공유하는 자매 분야다. 활자의 획이 음향 주파수와 공명하여 진동할 때, 타이포그래피는 침묵의 방관자를 넘어 살아있는 음향 분광기로 거듭난다. 가독성은 조율을 통해 획득하는 보상이 되며, 읽기는 시각과 청각의 공감각적 합일로 승화된다.
+
+## 반론
+
+However, acoustic coupling severely challenges universal access. Readers with hearing impairments or users in quiet public environments cannot perceive the auditory rationale for visual blur. Acoustic typography must always provide independent visual waveform telemetry so that harmonic resonance is intuitively legible through the eye even in total silence.
+
+그러나 음향 연동은 보편적 접근성에 심각한 시험대를 던진다. 청각 장애인이나 조용한 공공장소의 사용자는 활자가 흐려지는 음향적 맥락을 이해하기 어렵다. 따라서 음향 타이포그래피는 완전한 무음 상태에서도 눈으로 공명을 직관적으로 파악할 수 있는 시각적 파형 텔레메트리를 병행해야만 한다.
+
+## 독자 실험
+
+Sprinkle fine salt or sand evenly across a taut balloon stretched over the mouth of a speaker. Hum a continuous tone into a microphone and adjust your pitch until the salt grains form a crisp geometric ring. Record that resonant pitch in Hertz and map its numeric value to the font-weight variable axis in CSS.
+
+스피커 위에 팽팽하게 씌운 풍선 표면에 고운 소금을 얇게 뿌려라. 마이크에 대고 지속적인 허밍을 하며 소금 알갱이가 맑은 원형 링을 형성하는 피치를 찾아라. 그 공명 주파수(Hz)를 측정하고, 그 수치를 CSS의 font-weight 가변 축으로 변환하여 매핑해 보라.
+
+## 미래 가설
+
+Observed Signal: Spatial audio and haptic transducers are fusing into single multimodal operating systems (Apple Reality Composer, Spatial Web). / Hypothesis: Within three years, web typography will adopt dynamic acoustic impedance axes, where interface type physically hums and adjusts stroke weight to tune out background acoustic noise in real-world environments. / Disconfirming Condition: The absolute dominance of silent textual consumption and suppression of system audio permissions in mobile operating systems.
+
+관찰된 신호: 공간 음향과 햅틱 트랜스듀서가 단일 다감각 OS로 융합 중. / 가설: 향후 3년 내 웹 타이포그래피는 실시간 소음 환경에 맞춰 획 굵기를 조율하는 음향 임피던스 가변 축을 표준으로 채택할 것이다. / 반증 조건: 모바일 OS의 오디오 권한 통제 강화와 무음 텍스트 소비의 완전한 고착화.
+
+## 재검토
+
+Day 034 (2026-10-05): Audit ambient noise canceling algorithms and evaluate sympathetic vibration APIs on mobile touchscreens.
+
+Day 034 (2026-10-05): 모바일 터치스크린에서의 환경 소음 상쇄 알고리즘 및 공명 진동 API 유효성 소급 검토.
+
+## 도판 계획
+
+Plate 1: Turbulent dispersion at 360 Hz (blurred stroke contours). Plate 2: Crystalline harmonic lock at 440 Hz (zero-blur Chladni nodal alignment). Plate 3: High-frequency moiré breakdown above 1200 Hz.
+
+도판 1: 360Hz 불협화 난류 분산 상태. 도판 2: 440Hz 콘서트 피치에서의 결정체 공명 정렬. 도판 3: 1200Hz 초고주파 무아레 붕괴 상태.
+
+## 권리
+
+Original Chladni nodal algorithm in TypeScript. SIL Open Font License Inter Variable. Real-time Web Audio API.
+
+## 출처
+
+- [Entdeckungen über die Theorie des Klanges (Discoveries in the Theory of Sound)](https://archive.org/details/entdeckungenber00chla) — Ernst Chladni / Weidmanns Erben und Reich; 확인 2026-09-06. Mathematical basis for acoustic nodal lines and sand particle migration under harmonic plate vibration. 한계: Written for 18th-century acoustic physics before electronic screen rasterization existed.
+- [Cymatics: A Study of Wave Phenomena & Vibration](https://archive.org/details/cymatics-hans-jenny) — Hans Jenny / MACROmedia Publishing; 확인 2026-09-06. Visualized morphological transitions between chaotic fluid turbulence and periodic geometric mandalas. 한계: Focuses on photography of paste and lycopodium rather than readable typographic semantics.
+- [W3C Web Audio API Specification](https://www.w3.org/TR/webaudio/) — W3C Candidate Recommendation; 확인 2026-09-06. Standard architecture for synthesizing real-time non-blocking sine wave oscillators and gain nodes. 한계: Browser audio autostart policies require explicit user interaction gestures to initiate audio context.
