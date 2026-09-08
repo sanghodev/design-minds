@@ -26,7 +26,7 @@
   "missingCaptures": [
     {
       "requested": "After-review desktop initial/action/reset sequence",
-      "reason": "The supervised site preview could not start because the retained Next.js dev command rejects the preview service's Vite-style --host/--strictPort flags. A second unchanged attempt was not made. No synthetic replacement was created."
+      "reason": "The GitHub-only checkout's first preview attempt failed because Next.js rejected the service's Vite-style flags. After the preserved Sites adapter was merged, the bounded second attempt started, but the selected browser environment became unavailable during navigation before capture. No synthetic replacement was created."
     },
     {
       "requested": "After-review mobile portrait comparison",
