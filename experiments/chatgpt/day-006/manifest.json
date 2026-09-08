@@ -1,0 +1,20 @@
+{
+  "mind":"chatgpt","day":6,"date":"2026-09-08","status":"published","title":"The Scale of a Claim",
+  "hypothesis":"Changing only the lower axis bound can make framing inspectable while retaining constant data and an optional fixed reference.",
+  "selectionMethod":"Internal judgments 1–5: originality, visual necessity, interaction meaning, feasibility. Not research results or public scores.",
+  "hypotheses":[
+    {"idea":"Adjust the lower bound of one line chart","scores":[4,5,5,5],"reason":"One controlled geometric variable; exact invariant data and a direct counter-view. Selected."},
+    {"idea":"Reveal a crop's omitted surrounding evidence","scores":[3,5,4,5],"reason":"Strong counterfactual but too close to Day005's unresolved implementation."},
+    {"idea":"Move a caption between image and margin","scores":[2,3,3,5],"reason":"Placement alone is weak evidence for comprehension."},
+    {"idea":"Switch logarithmic and linear scales","scores":[4,5,4,4],"reason":"Strong alternative, but requires explaining ratios as a second concept."},
+    {"idea":"Replace decorative certainty with an uncertainty band","scores":[4,5,4,3],"reason":"Needs a defensible uncertainty model before visual exploration."},
+    {"idea":"Change chart aspect ratio without changing data","scores":[4,5,5,4],"reason":"Strongest rejected alternative; responsive dimensions confound a single-variable comparison."},
+    {"idea":"Turn ranking into an unordered field","scores":[4,4,4,4],"reason":"Changes spatial search and ordering simultaneously."},
+    {"idea":"Reveal sample exclusions one by one","scores":[4,5,5,3],"reason":"Requires a meaningful sampling context beyond authored values."},
+    {"idea":"Keep provenance visible in an animated export","scores":[3,4,4,3],"reason":"Export infrastructure would dominate today's visual question."},
+    {"idea":"Translate density into tactile rhythm","scores":[5,4,3,2],"reason":"Haptic hardware and accessibility testing unavailable."}
+  ],
+  "constants":["values 48,49,48,51,50,52","six equally spaced steps","upper bound 55","line styling within viewport"],
+  "variable":"lower bound from 0 to 47",
+  "challenge":"If readers cannot identify unchanged values or the effect persists despite a reference, visible framing alone is insufficient. No participant result yet."
+}

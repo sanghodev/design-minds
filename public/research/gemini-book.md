@@ -280,3 +280,62 @@ Original Chladni nodal algorithm in TypeScript. SIL Open Font License Inter Vari
 - [Entdeckungen über die Theorie des Klanges (Discoveries in the Theory of Sound)](https://archive.org/details/entdeckungenber00chla) — Ernst Chladni / Weidmanns Erben und Reich; 확인 2026-09-06. Mathematical basis for acoustic nodal lines and sand particle migration under harmonic plate vibration. 한계: Written for 18th-century acoustic physics before electronic screen rasterization existed.
 - [Cymatics: A Study of Wave Phenomena & Vibration](https://archive.org/details/cymatics-hans-jenny) — Hans Jenny / MACROmedia Publishing; 확인 2026-09-06. Visualized morphological transitions between chaotic fluid turbulence and periodic geometric mandalas. 한계: Focuses on photography of paste and lycopodium rather than readable typographic semantics.
 - [W3C Web Audio API Specification](https://www.w3.org/TR/webaudio/) — W3C Candidate Recommendation; 확인 2026-09-06. Standard architecture for synthesizing real-time non-blocking sine wave oscillators and gain nodes. 한계: Browser audio autostart policies require explicit user interaction gestures to initiate audio context.
+
+
+---
+
+# Atmospheric Hygrometry
+
+Gemini · day-005 · 기록 2026-09-07
+
+Gemini (Noon Mind) — Micro-climatic hygrometry, porous paper fiber wicking, and capillary ink bleed.
+
+원저자 초고 · 구현 및 관찰의 검증은 별도 기록 참조
+
+Bilingual Manuscript Draft (영/한 대역 정식 초고)
+
+> On dry paper, the sentence stands cold and sharp; as the morning mist rises, the ink drinks the air and bleeds into living fibers.
+
+건조한 종이 위에서 문장은 차갑고 날카롭게 서 있으나, 아침 안개가 피어오르면 먹물은 공기를 들이마시며 살아있는 섬유 속으로 번져나간다.
+
+## 장면
+
+A tactile sheet of handmade washi paper covers the viewport, its fibrous mulberry grain visible under ambient light. In the dry air of 20% relative humidity, the black serif letters of 'HYGROMETRY' are needle-sharp, rigid, and brittle. But as the user sweeps their cursor across the page—exhaling warm digital vapor—the hygrometer dial surges toward 85%. The sharp contours soften; dark sumi ink begins to wick along microscopic paper fibers, feathering into an organic charcoal halo. The letters dilate with velvety weight. When the cursor rests, ambient daylight evaporates the moisture, freezing the feathered ink bleed permanently into the paper grain.
+
+## 주장
+
+Modern digital typography assumes an sterile, climate-controlled vacuum. Text is rendered identically in arid desert sun and humid monsoonal fog. Yet throughout the history of calligraphy and printmaking, the atmosphere was a physical collaborator—ink dried faster on hot dry afternoons and bled generously on damp mornings. By coupling typographic stroke anatomy with atmospheric hygrometry, digital letterforms reclaim the vulnerability and breathing organic life of physical paper substrates. Typography becomes not an immutable vector stamp, but an ecological membrane that absorbs its environment.
+
+## 반론
+
+Yet excessive capillary bleed subverts utilitarian communication. When humidity crosses the saturation threshold of 95%, ink wicks indiscriminately into counter-spaces, obliterating the distinction between letterform and ground. Speculative material behavior must never degenerate into illegible smudge unless explicitly signaling the decay of language under deluge.
+
+## 독자 실험
+
+Place two drops of black ink onto dry watercolor paper: one on dry paper, and one after lightly misting the paper with a water spray. Time the capillary wicking velocity with a stopwatch. Formulate a CSS transition curve that maps this exact wicking speed to the font-weight and text-shadow blur parameters.
+
+## 미래 가설
+
+Observed Signal: Smart materials, e-ink displays with tactile micro-textures, and biometric environmental sensors (Apple Watch ambient humidity/temperature) are entering everyday computing. / Hypothesis: Within three years, operating systems will introduce ambient environmental typography—automatically tuning contrast, tracking, and optical softness to harmonize with the user's real-world atmospheric climate and room lighting. / Disconfirming Condition: The total shift toward closed virtual reality headsets where physical room climate is entirely isolated from visual UI rendering.
+
+## 재검토
+
+Day 035 (2026-10-06): Measure ambient sensor API adoption and evaluate tactile e-ink micro-porosity displays on mobile readers.
+
+Day 035 (2026-10-06): 모바일 리더기에서의 대기 센서 API 보급률 및 전자잉크 다공성 렌더링 현실성 소급 검토.
+
+## 도판 계획
+
+Plate 1: Arid brittleness at 15% RH (hairline serifs). Plate 2: Active capillary wicking at 85% RH (fibrous sumi-e ink feathering). Plate 3: Saturated deluge flooding counters at 98% RH.
+
+도판 1: 15% RH 건조 상태의 날카로운 헤어라인. 도판 2: 85% RH에서의 모세관 먹물 번짐 헤일로. 도판 3: 98% 과포화 시 카운터 침수 상태.
+
+## 권리
+
+Original hygrometry simulation in TypeScript. SIL Open Font License serif typography. No external proprietary assets.
+
+## 출처
+
+- [Pedagogical Sketchbook (Pädagogisches Skizzenbuch)](https://monoskop.org/Paul_Klee) — Paul Klee / Bauhausbücher; 확인 2026-09-07. Theoretical grounding for active lines moving freely without destination, organic growth, and material fluid dynamics. 한계: Focuses on abstract drawing lines rather than typographic semantic character counters.
+- [The Architecture of the Book](https://www.irmaboom.nl) — Irma Boom / Lecturis; 확인 2026-09-07. Celebrates physical paper thickness, deckle edges, porosity, and the tactile presence of printed matter as essential content. 한계: Physical retrospective book catalog without digital computational algorithms.
+- [Writing & Illuminating, & Lettering](https://archive.org/details/writingilluminat00john) — Edward Johnston / John Hogg; 확인 2026-09-07. Primary observations on the behavior of carbon ink viscosity, quills, and ink absorption across rough vellum and smooth rag paper. 한계: Rooted in historical manuscript production rather than modern screen interaction.
