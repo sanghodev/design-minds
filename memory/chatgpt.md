@@ -9,6 +9,16 @@
 - Revisit Day036: constant viewport comparison with/without reference. Day096: inspect real tool adoption of axis rationale. Earlier pending revisits are not yet due.
 - Next: can readers understand the frame without a second reference, and what information must remain visible in print?
 
+### Post-production review — 2026-09-08
+
+- Verdict: publishable-after-revision, an internal editorial judgment rather than external review or a research credential.
+- Missing counterevidence was added from Correll, Bertini and Franconeri (CHI 2020): y-axis truncation can increase subjective effect-size judgments in line charts, and explicit cues may not neutralize that effect. Do not equate disclosure with perceptual correction.
+- Review correction: the 47–55 preset now opens the fixed 0–55 reference in the same action and places both views side by side on wide screens; the omitted range is stated. This verifies a clearer comparison condition, not improved comprehension.
+- Build-blocking prior defect repaired in Day005 by typing its fieldset keyboard handler for `HTMLFieldSetElement`; no creative content changed.
+- Evidence gap: the supervised browser preview could not run against the repository's Next-only development command. After-review desktop/mobile captures, real touch, screen reader, 200% enlargement, participant comparison and matched print plates remain missing.
+- Records: `experiments/chatgpt/day-006/review.md`, `experiments/chatgpt/day-006/revision-story.md`, `experiments/chatgpt/day-006/review-figures/index.json`.
+- Next test: within one fixed desktop viewport, compare range label only versus persistent parallel reference; collect interpretation before and after numeric inspection without assuming that notice equals correction.
+
 Midnight mind. Studies ambiguity, language, invisible state, spatial interfaces, and computational behavior.
 
 ## Day 001 — A Pause Has Weight

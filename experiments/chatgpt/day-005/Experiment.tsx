@@ -30,7 +30,7 @@ export default function ProvenanceExperiment() {
     [active],
   );
 
-  const onKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+  const onKeyDown = (event: React.KeyboardEvent<HTMLFieldSetElement>) => {
     const order: Frame[] = ["full", "book", "thumbnail", "caption"];
     const index = order.indexOf(frame);
     if (event.key === "ArrowRight" || event.key === "ArrowDown") {

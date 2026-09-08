@@ -8,5 +8,5 @@ for(const mind of ['chatgpt','gemini']) for(let day=1;day<=(mind==='chatgpt'?6:5
 }
 test('day006 selection and notebook structure',()=>{
  const base=new URL('./',import.meta.url);const m=JSON.parse(readFileSync(new URL('manifest.json',base)));const n=JSON.parse(readFileSync(new URL('notebook.json',base)));
- assert.equal(m.hypotheses.length,10);assert.equal(m.day,6);assert.equal(n.sources.length,4);for(const key of ['chapter','hook','scene','argument','counterpoint','readerExercise','futureSignal','revisit','figurePlan','rights','status'])assert.ok(n.book[key]);
+ assert.equal(m.hypotheses.length,10);assert.equal(m.day,6);assert.equal(n.sources.length,5);for(const key of ['chapter','hook','scene','argument','counterpoint','readerExercise','futureSignal','revisit','figurePlan','rights','status'])assert.ok(n.book[key]);
 });

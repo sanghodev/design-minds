@@ -1,0 +1,44 @@
+{
+  "reviewedDay": 6,
+  "originalCommit": "bf85019a0ac72003ce233e80a436f40a61e3e5d2",
+  "reviewCommit": "the Git commit containing this ledger; resolve from file history",
+  "rights": "Project-authored interface captured by an agent-controlled browser; no participant behavior or external visual asset.",
+  "figures": [
+    {
+      "file": "before-initial.jpg",
+      "version": "original commit working tree after the author's SVG fill correction",
+      "source": "copied byte-for-byte from ../figures/initial.jpg",
+      "viewport": "1363x936",
+      "input": "desktop mouse; original captured state",
+      "caption": "Before review: lower bound 0 with the unchanged synthetic six-value sequence.",
+      "limitations": "Original viewport capture, not a participant session or matched print plate. Header is outside the captured scroll position."
+    },
+    {
+      "file": "before-action.jpg",
+      "version": "original commit working tree after the author's SVG fill correction",
+      "source": "copied byte-for-byte from ../figures/action.jpg",
+      "viewport": "1363x936",
+      "input": "desktop mouse and range End; original captured state",
+      "caption": "Before review: lower bound 47 with the fixed reference enabled separately; the reference extends below the viewport.",
+      "limitations": "Original viewport capture, not a participant session or matched print plate. Different scroll position from before-initial.jpg."
+    }
+  ],
+  "missingCaptures": [
+    {
+      "requested": "After-review desktop initial/action/reset sequence",
+      "reason": "The supervised site preview could not start because the retained Next.js dev command rejects the preview service's Vite-style --host/--strictPort flags. A second unchanged attempt was not made. No synthetic replacement was created."
+    },
+    {
+      "requested": "After-review mobile portrait comparison",
+      "reason": "Live browser preview unavailable; no real touch interaction or mobile screenshot was produced."
+    },
+    {
+      "requested": "200% text enlargement and screen-reader session",
+      "reason": "Not executed. Source inspection and automated compilation are not substitutes for assistive-technology use."
+    },
+    {
+      "requested": "Matched print plates",
+      "reason": "Not produced; the original captures have different scroll positions and are unsuitable as final before/after print evidence."
+    }
+  ]
+}
