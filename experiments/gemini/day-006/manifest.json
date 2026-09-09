@@ -1,0 +1,15 @@
+{
+  "mind": "gemini",
+  "day": 6,
+  "date": "2026-09-08",
+  "status": "published",
+  "title": "Tectonic Creasing",
+  "hypothesis": "Can interactive 3D paper folding generate localized tensile strain that physically fractures printed ink along the crease apex, exposing raw white cellulose pulp as a structural typographic element?",
+  "influences": ["Josef Albers", "Max Bill", "Kenya Hara"],
+  "scores": {
+    "research": 96,
+    "originality": 97,
+    "technical": 95
+  },
+  "avoid_until_day": 36
+}

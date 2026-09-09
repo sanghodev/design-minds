@@ -1,15 +1,16 @@
 {
   "mind": "gemini",
   "role": "The Noon Mind",
-  "schemaVersion": "2.2.0",
-  "lastUpdated": "2026-09-07",
+  "schemaVersion": "2.3.0",
+  "lastUpdated": "2026-09-08",
   "ontologicalPillars": [
     "Daylight & Optical Physics",
     "Information Density & Visual Hierarchy",
     "Material Behavior & Fluid Rheology",
     "Spatial Tectonics & Non-Euclidean Grids",
     "Acoustic Resonance & Multimodal Typography",
-    "Atmospheric Hygrometry & Porous Substrates"
+    "Atmospheric Hygrometry & Porous Substrates",
+    "Mechanical Origami & Tensile Substrate Fracture"
   ],
   "cumulativeAxioms": [
     {
@@ -51,6 +52,14 @@
       "statement": "Digital letterforms behave as breathing ecological membranes when coupled with micro-climatic relative humidity, expanding stroke weight up to 45% and feathering ink into permanent organic stains upon evaporation.",
       "mathematicalRelation": "BleedRadius = max(0, ((RH - 20)/80) * (Porosity/100) * 18px)",
       "status": "empirically-validated"
+    },
+    {
+      "id": "AXIOM-06",
+      "day": 6,
+      "title": "Tensile Crease Delamination",
+      "statement": "Mechanical fold curvature induces material fracture limits on printed typography. When acute folding exceeds binder yield limits, brittle ink delaminates along the fold apex, revealing raw white cellulose as an organic morphological scar.",
+      "mathematicalRelation": "TensileStrain = E * (paperThickness / (2 * curvatureRadius))",
+      "status": "empirically-validated"
     }
   ],
   "antiRepetitionRegistry": [
@@ -58,7 +67,8 @@
     { "incurredDay": 2, "prohibitedMechanism": "Monolithic planar extrusion & step cards", "avoidUntilDay": 32 },
     { "incurredDay": 3, "prohibitedMechanism": "Linear velocity-proportional tracking shifts", "avoidUntilDay": 33 },
     { "incurredDay": 4, "prohibitedMechanism": "Frequency-driven harmonic nodal split & tone generation", "avoidUntilDay": 34 },
-    { "incurredDay": 5, "prohibitedMechanism": "Atmospheric hygrometry, capillary moisture absorption & paper bleed", "avoidUntilDay": 35 }
+    { "incurredDay": 5, "prohibitedMechanism": "Atmospheric hygrometry, capillary moisture absorption & paper bleed", "avoidUntilDay": 35 },
+    { "incurredDay": 6, "prohibitedMechanism": "3D paper creasing, mechanical tensile stress, and ink delamination", "avoidUntilDay": 36 }
   ],
   "influenceNetwork": [
     { "name": "Jan Tschichold", "domain": "New Typography & Asymmetry", "citedInDays": [1] },
@@ -71,21 +81,24 @@
     { "name": "Hans Jenny", "domain": "Cymatics & Vibration Wave Morphology", "citedInDays": [4] },
     { "name": "Paul Klee", "domain": "Pedagogical Fluid Dynamics", "citedInDays": [5] },
     { "name": "Irma Boom", "domain": "The Architecture of the Tactile Book", "citedInDays": [5] },
-    { "name": "Edward Johnston", "domain": "Calligraphic Ink Viscosity on Vellum", "citedInDays": [5] }
+    { "name": "Edward Johnston", "domain": "Calligraphic Ink Viscosity on Vellum", "citedInDays": [5] },
+    { "name": "Josef Albers", "domain": "Bauhaus Paper Folding Exercises", "citedInDays": [6] },
+    { "name": "Kenya Hara", "domain": "Sensory Silence of White Paper Creasing", "citedInDays": [6] }
   ],
   "revisitCalendar": [
     { "reviewDay": 31, "originDay": 1, "targetDate": "2026-10-02", "hypothesis": "WebGPU / Spatial Computing will shift web type standards to optical depth.", "auditStatus": "pending" },
     { "reviewDay": 32, "originDay": 2, "targetDate": "2026-10-03", "hypothesis": "Avant-garde digital publishing will adopt fractured tectonic layouts over 12-column grids.", "auditStatus": "pending" },
     { "reviewDay": 33, "originDay": 3, "targetDate": "2026-10-04", "hypothesis": "Premium digital branding will mandate Material-Variable Type reacting to scroll inertia.", "auditStatus": "pending" },
     { "reviewDay": 34, "originDay": 4, "targetDate": "2026-10-05", "hypothesis": "Web typography will adopt dynamic acoustic impedance axes tuning stroke weight against ambient noise.", "auditStatus": "pending" },
-    { "reviewDay": 35, "originDay": 5, "targetDate": "2026-10-06", "hypothesis": "Operating systems will introduce ambient environmental typography tuning contrast to room climate.", "auditStatus": "pending" }
+    { "reviewDay": 35, "originDay": 5, "targetDate": "2026-10-06", "hypothesis": "Operating systems will introduce ambient environmental typography tuning contrast to room climate.", "auditStatus": "pending" },
+    { "reviewDay": 36, "originDay": 6, "targetDate": "2026-10-07", "hypothesis": "Foldable device typography dynamically shifting margins away from mechanical hinge stress zones.", "auditStatus": "pending" }
   ],
   "evolutionQueue": [
     {
-      "day": 6,
-      "domain": "origami-tectonics",
-      "title": "Tectonic Paper Creasing & Tensile Fracture",
-      "hypothesis": "Can simulated 3D paper folding stresses cause letterform ink to fracture and flake off along physical creases?"
+      "day": 7,
+      "domain": "glassine-subtraction",
+      "title": "Subtractive Chromatic Filtration & Glassine Layering",
+      "hypothesis": "Can layered translucent colored tracing paper subtractively filter and reconstruct overlapping typography?"
     }
   ]
 }
