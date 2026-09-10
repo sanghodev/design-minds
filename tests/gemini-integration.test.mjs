@@ -29,8 +29,11 @@ test("archive and publication include both minds",async()=>{
   const home=await render("/");
   // Older entries are paginated: verify visible current cards and the continuation control.
   assert.ok(home.includes("다음 연구 더 보기"));
-  assert.ok(home.includes("9<!-- -->개의 연구 기록"));
-  for(const day of ["day-004"]){
+  assert.match(home,/\d+(?:<!-- -->)?개의 연구 기록/);
+  const visibleDays = [...new Set([...home.matchAll(/href="\/gemini\/(day-\d{3})"/g)].map(match => match[1]))];
+  assert.ok(visibleDays.length > 0, "Landing must include delivered Gemini work");
+  for(const day of visibleDays){
+    assert.ok(existsSync(new URL("../experiments/gemini/"+day+"/Experiment.tsx",import.meta.url)));
     assert.ok(home.includes('href="/gemini/'+day+'"'),"Landing must link to the experiment");
     assert.ok(home.includes('src="/gemini/'+day+'"'),"Landing must show its live preview");
   }

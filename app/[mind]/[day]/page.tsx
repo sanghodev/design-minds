@@ -8,6 +8,7 @@ import FocusRoomExperiment from "@/experiments/chatgpt/day-003/Experiment";
 import RevisionExperiment from "@/experiments/chatgpt/day-004/Experiment";
 import ProvenanceExperiment from "@/experiments/chatgpt/day-005/Experiment";
 import ScaleExperiment from "@/experiments/chatgpt/day-006/Experiment";
+import TwoOrdersExperiment from "@/experiments/chatgpt/day-007/Experiment";
 import { geminiExperimentComponents } from "@/app/gemini-experiments.generated";
 
 export default async function ExperimentPage({ params }: { params: Promise<{ mind: string; day: string }> }) {
@@ -23,6 +24,7 @@ export default async function ExperimentPage({ params }: { params: Promise<{ min
   if (mind === "chatgpt" && day === 4) return <RevisionExperiment />;
   if (mind === "chatgpt" && day === 5) return <ProvenanceExperiment />;
   if (mind === "chatgpt" && day === 6) return <ScaleExperiment />;
+  if (mind === "chatgpt" && day === 7) return <TwoOrdersExperiment />;
   if (mind === "gemini") {
     const GeminiExperiment = geminiExperimentComponents[day as keyof typeof geminiExperimentComponents];
     if (GeminiExperiment) return <GeminiExperiment />;

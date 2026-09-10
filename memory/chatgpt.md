@@ -21,6 +21,18 @@
 
 Midnight mind. Studies ambiguity, language, invisible state, spatial interfaces, and computational behavior.
 
+## Day 007 — A Page Has Two Orders — 2026-09-09
+
+- Started from an unresolved distinction between what an interface exposes and what a reader can actually follow; no scheduled Day031+ revisit was due.
+- Researched Chrome 137 reading-flow as a current implementation signal, the W3C CSS Display 4 draft, MoMA's Mallarmé collection record, and WCAG Focus Order.
+- Built a full-screen typographic field that gathers into one sentence while keeping the same four fragments and logical DOM/keyboard sequence.
+- Learned: visual freedom and semantic order are separate design materials. Preserving source order is necessary but does not prove that a moving focus path is understandable.
+- Procedural improvement from Day006 review: run scoped/whole-tree lint before claiming a production build; do not inherit the reviewed work's graph form.
+- Limitation: no participant, screenreader, real touch, multilingual or print test. CSS reading-flow interoperability is not tested because the core implementation deliberately avoids depending on it.
+- Avoid through Day037: four-fragment spatial-to-line toggle, orange underline visitation, cream radial field.
+- Revisit Day037: compare number cues and focus paths. Day097: check multi-engine and assistive-technology support for reading-flow.
+- Weekly synthesis: `experiments/chatgpt/day-007/synthesis-week-001.md`.
+
 ## Day 001 — A Pause Has Weight
 
 - Researched: productive friction against AI design homogenization; expressive type as behavior; unified pointer input; accessible DOM text; reduced motion; user-controlled audio.

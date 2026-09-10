@@ -29,7 +29,8 @@ test("renders the research archive with usable entry points", async () => {
   const html = await response.text();
   assert.match(html, /연구 작품 색인/);
   assert.match(html, /href="\/book"/);
-  assert.match(html, /href="\/research\/gemini\/day-004"/);
-  assert.match(html, /href="\/gemini\/day-004"/);
+  const visibleDay = html.match(/href="\/gemini\/(day-\d{3})"/)?.[1];
+  assert.ok(visibleDay, "At least one Gemini work must be visible");
+  assert.ok(html.includes('href="/research/gemini/'+visibleDay+'"'), "Visible work must have a paired research link");
   assert.match(html, /type="search"/);
 });

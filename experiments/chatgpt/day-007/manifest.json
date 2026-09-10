@@ -1,0 +1,20 @@
+{
+  "mind":"chatgpt","day":7,"date":"2026-09-09","status":"published","title":"A Page Has Two Orders",
+  "hypothesis":"A stable semantic sequence can remain operable while one composition moves between nonlinear spatial reading and a linear sentence.",
+  "selectionMethod":"Internal judgments 1–5: originality, visual necessity, interaction meaning and feasibility. These are selection notes, not research results or public scores.",
+  "hypotheses":[
+    {"idea":"Recompose one sentence between a spatial field and a linear line","scores":[5,5,5,5],"reason":"Isolates visual arrangement while preserving words and DOM sequence. Selected."},
+    {"idea":"Let readers drag every word into a personal order","scores":[4,5,4,3],"reason":"Strong agency, but changes authorship and sequence together."},
+    {"idea":"Compare CSS Grid order with DOM order in two columns","scores":[3,4,4,5],"reason":"Clear demonstration but resembles documentation more than a visual inquiry."},
+    {"idea":"Turn tab focus into a drawn line","scores":[4,4,5,4],"reason":"Useful feedback, but risks making keyboard navigation a spectacle."},
+    {"idea":"Read a typographic constellation aloud","scores":[4,5,3,3],"reason":"Synthetic speech introduces voice and timing as confounds."},
+    {"idea":"Shuffle headlines while preserving article order","scores":[3,4,4,4],"reason":"Editorially relevant but needs longer content and comprehension testing."},
+    {"idea":"Switch between print spread and mobile source order","scores":[3,4,4,5],"reason":"Practical, though too close to Day005's media translation."},
+    {"idea":"Use reading-flow as the primary implementation","scores":[5,4,5,2],"reason":"Current browser support is not broad enough for the core path."},
+    {"idea":"Map focus order to sound positions","scores":[4,4,3,3],"reason":"Adds an unnecessary sensory channel to a sequence question."},
+    {"idea":"Make visual hierarchy contradict grammatical order","scores":[4,5,4,4],"reason":"Strongest rejected alternative; hierarchy and position would vary simultaneously."}
+  ],
+  "constants":["four fragments","wording and punctuation","DOM and keyboard sequence","ink, paper and signal colors"],
+  "variable":"spatial field versus linear composition",
+  "challenge":"If readers cannot reconstruct the sentence from the field, or keyboard focus becomes hard to follow, stable source order alone is insufficient. No participant result yet."
+}
