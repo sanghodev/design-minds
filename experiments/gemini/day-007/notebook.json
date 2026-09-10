@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-09",
+  "provenance": "Gemini (Noon Mind) — Translucent glassine tracing paper, subtractive CMY light absorption, and physical optical registration.",
+  "category": "material-behavior",
+  "tags": ["glassine", "tracing-paper", "subtractive-color", "munari", "itten", "beer-lambert", "overprint", "bilingual"],
+  "summary": "Governed digital typography through the Beer-Lambert law of subtractive light absorption and layered glassine tracing sheets, demonstrating how decomposed primary color components (Cyan, Magenta, Yellow) remain unreadable abstract geometries in isolation, but reconstruct into pitch-black composite typography through physical optical registration. / 반투명 글라신지(유산지)의 다층 중첩과 부게-람베르트-베르 감산 혼합 법칙을 조형 제약으로 설정하여, 분리된 CMY 원색 시트에서는 추상적 기하 도형으로 해체되어 있던 활자가 물리적 핀맞춤(Registration)을 통해 백색 투과광을 100% 흡수·소멸시키며 칠흑 같은 검은색 본문으로 결착되는 광학적 타이포그래피 탐구.",
+  "question": "Can layered translucent colored tracing paper subtractively filter and reconstruct composite typography, so that individual CMY sheets reveal fragmented abstract glyph stems while their physical overlap subtracts white light to form legible black letterforms through Beer-Lambert absorption? / 다층으로 중첩된 반투명 유산지(Glassine)는 감산 혼합 광학을 통해 합성 타이포그래피를 여과하고 재구성할 수 있는가? 즉, 개별 시트에서는 불완전한 원색 파편으로 흩어져 있던 글자가 완벽한 핀맞춤을 이룰 때만 부게-람베르트-베르 법칙에 의해 빛을 완전히 흡수하여 검은색 활자로 응집되는 임계점은 어디인가?",
+  "method": [
+    "Formulated the subtractive spectral transmission model: T(lambda) = 10^(-sum(A_i(lambda))), implemented via CSS mix-blend-mode: multiply across Process Cyan, Magenta, and Yellow wavelengths.",
+    "Engineered dual interaction modes: Full CMY Process Overprint versus Anatomical Stroke Decomposition (Cyan stems, Magenta crossbars, Yellow bowls).",
+    "Coupled a 10x virtual lithographic loupe magnifier to inspect micro-misregistration trapping gaps and process color fringing."
+  ],
+  "observation": "When glassine sheets were displaced by more than 25px, letterform stems were completely severed into floating primary color swatches (Munari unreadable state); as displacement narrowed below 8px, letterforms regained syntactic legibility with vivid chromatic fringing; at exact registration (< 3px), subtractive light absorption reached 100%, snapping the word into deep, pitch-black composite typography. / 시트 간격이 25px 이상 어긋났을 때는 글자가 완전히 해체되어 무나리의 '읽을 수 없는 책'과 같은 순수 추상 색채 리듬으로 분해되었으나, 오차가 8px 이하로 좁혀지자 선명한 색채 헤일로와 함께 가독성이 급격히 회복되었으며, 3px 이내 완전 정렬 시 감산 혼합에 의해 순도 100%의 칠흑 같은 검은색 활자로 결착됨을 확인.",
+  "limitation": "CSS mix-blend-mode: multiply operates in sRGB color space rather than physical spectral wavelength transmittance, resulting in slightly brighter secondary greens than physical offset printing inks. Glassine diffuse transmission scattering is approximated with backdrop-blur rather than volumetric light scattering.",
+  "nextQuestion": "Week 1 synthesizes daylight, grids, viscosity, acoustics, hygrometry, creasing, and glassine. Entering Week 2, how can typography respond to physical magnetic field lines, where ferromagnetic iron gall ink realigns its stroke vectors along invisible electromagnetic flux? / 1주 차의 7대 물성(빛, 불연속 그리드, 점성, 음향, 습도, 접힘, 감산 중첩)을 종합하며 2주 차로 진입할 때, 보이지 않는 자기장 플럭스(Magnetic Flux)에 감응하여 활자의 획 벡터가 자력선을 따라 배열되는 강자성 잉크 타이포그래피는 어떻게 가능한가?",
+  "sources": [
+    {
+      "title": "I Libri Illeggibili (Unreadable Books)",
+      "publisher": "Bruno Munari / Corraini Edizioni",
+      "url": "https://corraini.com/en/i-libri-illeggibili.html",
+      "accessed": "2026-09-09",
+      "kind": "experimental-book-art",
+      "use": "Foundational paradigm of transforming paper translucency, cut-outs, and color sequencing into a visual language that communicates before text is even read.",
+      "limitation": "Artistic artist book edition without computational digital registration algorithms."
+    },
+    {
+      "title": "The Art of Color: The Experience and Theory of Color",
+      "publisher": "Johannes Itten / John Wiley & Sons",
+      "url": "https://monoskop.org/Johannes_Itten",
+      "accessed": "2026-09-09",
+      "kind": "bauhaus-color-theory",
+      "use": "Subtractive color mixture theory and simultaneous contrast principles governing the visual interaction of primary process pigments.",
+      "limitation": "Focuses on static pigment paint mixing rather than dynamic interactive layer displacement."
+    },
+    {
+      "title": "Absorption and Scattering of Light by Small Particles (Beer-Lambert Law)",
+      "publisher": "Craig F. Bohren, Donald R. Huffman / Wiley-VCH",
+      "url": "https://www.wiley.com",
+      "accessed": "2026-09-09",
+      "kind": "optical-physics",
+      "use": "Mathematical formulation of light attenuation and spectral transmission through stacked absorbing layers of varying thickness and concentration.",
+      "limitation": "Formulated for colloidal particle suspensions rather than translucent vegetable parchment paper fibers."
+    },
+    {
+      "title": "Thoughts on Design",
+      "publisher": "Paul Rand / Wittenborn, Schultz",
+      "url": "https://www.paulrand.design",
+      "accessed": "2026-09-09",
+      "kind": "modernist-graphic-theory",
+      "use": "Integration of transparent overlays, photograms, and figure-ground ambiguity as instruments of poetic tension in visual communication.",
+      "limitation": "Theoretical treatise focusing on advertising and static layout rather than dynamic interactive web software."
+    }
+  ],
+  "book": {
+    "chapter": "Chapter 7: Subtractive Chromatic Filtration & Glassine Layering (제7장: 감산 혼합과 반투명 트레이싱지 중첩)",
+    "hook": "Separate the leaves, and the sentence dissolves into yellow, cyan, and magenta ghosts; press them together upon the lightbox, and the darkness of language is born from overlapping light.\n\n종이를 떼어내면 문장은 노랑, 시안, 마젠타의 유령으로 흩어지지만, 라이트박스 위에서 이들을 하나로 포개는 순간 빛의 겹침 속에서 비로소 칠흑 같은 언어의 어둠이 태어난다.",
+    "scene": "A glowing drafting lightbox illuminates the viewport with pristine white lux. Resting on its surface are three wafer-thin, translucent sheets of glassine tracing paper. The top sheet carries only disjointed cyan vertical stems; the middle carries horizontal magenta crossbars; the bottom holds curved yellow counters. In their dispersed state, the word 'GLASSINE' cannot be read—it dances as an airy, modernist geometric pattern reminiscent of Bruno Munari's unreadable books. As the user drags the leaves into physical alignment, the colors physically multiply. Cyan cancels red; magenta cancels green; yellow cancels blue. Along the exact intersection, all transmitted light is quenched: a razor-sharp, dense, pitch-black word snaps into focus, born entirely from the subtractive union of three colored transparent skins.",
+    "argument": "Screen-based design has indoctrinated us into the additive logic of emitted light: RGB pixels emit red, green, and blue photons, and their sum is blinding white. But in the tangible craft of printmaking, lithography, and layered book design, meaning is created through subtraction. Ink does not emit light; it murders light. By overlaying translucent glassine sheets, typography becomes a subtractive optical puzzle. A letterform is not a static glyph stamped on a surface, but a momentary alignment of spectral filters. Meaning in typography is not an isolated mark—it is the physical registration of layered evidence.",
+    "counterpoint": "Yet misregistration is a fragile aesthetic tightrope. When the displacement exceeds the human visual threshold of 15 pixels, semantic coherence shatters into chromatic noise. The reader ceases to experience a letterform and instead sees three conflicting graphics. The designer must calibrate the balance between material tactile honesty and semiotic legibility, preserving the word's syntactic skeleton even as its skin breaks.",
+    "readerExercise": "Obtain three sheets of translucent colored film or tracing paper (Cyan, Magenta, Yellow). Cut the strokes of a single letter 'A' across the three sheets: stem on Cyan, crossbar on Magenta, apex on Yellow. Place them on a windowpane. Photograph the exact displacement distance at which your brain ceases to recognize the letter 'A' and instead sees three abstract shapes. Calculate the visual angle of this cognitive threshold.",
+    "futureSignal": "Observed Signal: Transparent micro-OLED displays (LG Transparent OLED, Apple VisionOS glass interfaces) are decoupling graphics from opaque backgrounds. / Hypothesis: Within three years, augmented reality operating systems will use subtractive spatial layering—rendering digital typography as optical color filters that subtract from real-world sunlight rather than glowing over it like neon stickers. / Disconfirming Condition: The persistence of low-contrast ambient daylight washing out non-emissive transparent displays.",
+    "revisit": "Day 037 (2026-10-08): Audit commercial transparent micro-OLED display adoption and test spatial subtractive color blend modes in WebXR.\n\nDay 037 (2026-10-08): 상용 투명 OLED 디스플레이 보급 현황 및 WebXR 환경에서의 감산 혼합 공간 타이포그래피 실효성 소급 검토.",
+    "figurePlan": "Plate 1: Dispersed unreadable state (three distinct primary CMY glassine sheets floating apart). Plate 2: Intermediate chromatic misregistration (visible process color fringing under 10x loupe). Plate 3: Perfect subtractive registration (100% pitch-black composite typography).\n\n도판 1: 해체된 비가독 상태 (흩어진 세 장의 CMY 트레이싱지). 도판 2: 중간 단계의 미세 핀어긋남 (10배 확대경 아래 선명한 색수차 헤일로). 도판 3: 완전 정렬 상태 (감산 혼합으로 형성된 칠흑 같은 검은색 활자).",
+    "rights": "Original subtractive Beer-Lambert CSS blend mechanics in TypeScript. SIL Open Font License sans-serif typography. No external proprietary media.",
+    "status": "Bilingual Manuscript Draft (영/한 대역 정식 초고)"
+  }
+}

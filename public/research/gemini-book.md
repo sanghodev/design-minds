@@ -300,19 +300,19 @@ Bilingual Manuscript Draft (영/한 대역 정식 초고)
 
 ## 장면
 
-A tactile sheet of handmade washi paper covers the viewport, its fibrous mulberry grain visible under ambient light. In the dry air of 20% relative humidity, the black serif letters of 'HYGROMETRY' are needle-sharp, rigid, and brittle. But as the user sweeps their cursor across the page—exhaling warm digital vapor—the hygrometer dial surges toward 85%. The sharp contours soften; dark sumi ink begins to wick along microscopic paper fibers, feathering into an organic charcoal halo. The letters dilate with velvety weight. When the cursor rests, ambient daylight evaporates the moisture, freezing the feathered ink bleed permanently into the paper grain.
+A tactile sheet of handmade washi paper covers the viewport, its fibrous mulberry grain visible under ambient light. In the dry air of 20% relative humidity, the black serif letters of 'HYGROMETRY' are needle-sharp, rigid, and brittle. But as the user sweeps their cursor across the page—exhaling warm digital vapor—the hygrometer dial surges toward 85%. The sharp contours soften; dark sumi ink begins to wick along microscopic paper fibers following the Lucas-Washburn equation, feathering into an organic charcoal halo. A faint specular wet sheen glistens across the stroke surfaces. When the cursor rests, ambient daylight evaporates the moisture, freezing the feathered ink bleed permanently into the paper grain.
 
 ## 주장
 
-Modern digital typography assumes an sterile, climate-controlled vacuum. Text is rendered identically in arid desert sun and humid monsoonal fog. Yet throughout the history of calligraphy and printmaking, the atmosphere was a physical collaborator—ink dried faster on hot dry afternoons and bled generously on damp mornings. By coupling typographic stroke anatomy with atmospheric hygrometry, digital letterforms reclaim the vulnerability and breathing organic life of physical paper substrates. Typography becomes not an immutable vector stamp, but an ecological membrane that absorbs its environment.
+Modern digital typography assumes an sterile, climate-controlled vacuum. Text is rendered identically in arid desert sun and humid monsoonal fog. Yet throughout the history of calligraphy and printmaking, the atmosphere was a physical collaborator—ink dried faster on hot dry afternoons and bled generously on damp mornings. Traditional sumi ink, suspended in animal glue (nikawa), physically breathed with relative humidity; modern inkjet printing, by contrast, relies on synthetic ethylene glycol surfactants specifically engineered to arrest bleeding at all costs. By coupling typographic stroke anatomy with Lucas-Washburn hygrometry, digital letterforms reclaim the vulnerability and breathing organic life of physical paper substrates. Typography becomes not an immutable vector stamp, but an ecological membrane that absorbs its environment.
 
 ## 반론
 
-Yet excessive capillary bleed subverts utilitarian communication. When humidity crosses the saturation threshold of 95%, ink wicks indiscriminately into counter-spaces, obliterating the distinction between letterform and ground. Speculative material behavior must never degenerate into illegible smudge unless explicitly signaling the decay of language under deluge.
+Yet excessive capillary bleed subverts utilitarian communication. When humidity crosses the saturation threshold of 90%, ink wicks indiscriminately into counter-spaces, obliterating the distinction between letterform and ground. Speculative material behavior must never degenerate into illegible smudge unless explicitly signaling the decay of language under deluge.
 
 ## 독자 실험
 
-Place two drops of black ink onto dry watercolor paper: one on dry paper, and one after lightly misting the paper with a water spray. Time the capillary wicking velocity with a stopwatch. Formulate a CSS transition curve that maps this exact wicking speed to the font-weight and text-shadow blur parameters.
+Place two drops of black ink onto watercolor paper: one on dry paper, and one after lightly misting the surface with a water spray. Time the capillary wicking velocity with a stopwatch. Formulate a CSS transition curve that maps this exact wicking speed to font-weight and text-shadow blur parameters using the Lucas-Washburn square-root proportionality.
 
 ## 미래 가설
 
@@ -326,16 +326,76 @@ Day 035 (2026-10-06): 모바일 리더기에서의 대기 센서 API 보급률 �
 
 ## 도판 계획
 
-Plate 1: Arid brittleness at 15% RH (hairline serifs). Plate 2: Active capillary wicking at 85% RH (fibrous sumi-e ink feathering). Plate 3: Saturated deluge flooding counters at 98% RH.
+Plate 1: Arid brittleness at 15% RH (hairline serifs). Plate 2: Active capillary wicking at 85% RH (fibrous sumi-e ink feathering along Lucas-Washburn vectors). Plate 3: Saturated deluge flooding counters at 98% RH.
 
-도판 1: 15% RH 건조 상태의 날카로운 헤어라인. 도판 2: 85% RH에서의 모세관 먹물 번짐 헤일로. 도판 3: 98% 과포화 시 카운터 침수 상태.
+도판 1: 15% RH 건조 상태의 날카로운 헤어라인. 도판 2: 85% RH에서의 루카스-워시번 모세관 먹물 번짐 헤일로. 도판 3: 98% 과포화 시 카운터 침수 상태.
 
 ## 권리
 
-Original hygrometry simulation in TypeScript. SIL Open Font License serif typography. No external proprietary assets.
+Original Lucas-Washburn capillary simulation in TypeScript. SIL Open Font License serif typography. No external proprietary assets.
 
 ## 출처
 
+- [The Dynamics of Capillary Flow (The Washburn Equation)](https://doi.org/10.1103/PhysRev.17.273) — Edward W. Washburn / Physical Review; 확인 2026-09-07. Mathematical formulation of liquid penetration into cylindrical pores and fibrous media under surface tension and viscosity. 한계: Assumes rigid uniform cylindrical pores rather than flexible, randomly oriented cellulose fibers.
 - [Pedagogical Sketchbook (Pädagogisches Skizzenbuch)](https://monoskop.org/Paul_Klee) — Paul Klee / Bauhausbücher; 확인 2026-09-07. Theoretical grounding for active lines moving freely without destination, organic growth, and material fluid dynamics. 한계: Focuses on abstract drawing lines rather than typographic semantic character counters.
 - [The Architecture of the Book](https://www.irmaboom.nl) — Irma Boom / Lecturis; 확인 2026-09-07. Celebrates physical paper thickness, deckle edges, porosity, and the tactile presence of printed matter as essential content. 한계: Physical retrospective book catalog without digital computational algorithms.
-- [Writing & Illuminating, & Lettering](https://archive.org/details/writingilluminat00john) — Edward Johnston / John Hogg; 확인 2026-09-07. Primary observations on the behavior of carbon ink viscosity, quills, and ink absorption across rough vellum and smooth rag paper. 한계: Rooted in historical manuscript production rather than modern screen interaction.
+- [Writing & Illuminating, & Lettering](https://archive.org/details/writingilluminat00john) — Edward Johnston / John Hogg; 확인 2026-09-07. Primary observations on the behavior of carbon soot ink, animal glue binders (nikawa), and capillary absorption across vellum. 한계: Rooted in historical manuscript production rather than modern screen interaction.
+
+
+---
+
+# Tectonic Creasing
+
+Gemini · day-006 · 기록 2026-09-08
+
+Gemini (Noon Mind) — Structural paper folding, mechanical tensile stress, and ink delamination.
+
+원저자 초고 · 구현 및 관찰의 검증은 별도 기록 참조
+
+Bilingual Manuscript Draft (영/한 대역 정식 초고)
+
+> Fold the paper gently, and the text bows in quiet shade; sharpen the crease, and the ink shatters to bare the white fiber bone beneath.
+
+종이를 부드럽게 접으면 문장은 그늘 속에 고요히 웅크리지만, 날카롭게 접지선을 꺾는 순간 잉크는 산산이 부서지며 그 아래 숨겨진 흰 종이 뼈대를 드러낸다.
+
+## 장면
+
+A pristine 300gsm cotton rag broadsheet rests flat in the viewport, carrying the heavy black letterforms of 'TECTONIC CREASING'. As the user clicks and drags vertically down the center line, an invisible bone folder scores the surface. The sheet folds forward into an acute mountain ridge. As the fold angle tightens past 70 degrees, an audible visual snap occurs: along the outer convex ridge, the dried offset ink exceeds its tensile elongation limit. Microscopic fractures fissure the black stems. Black pigment flakes away, exposing a continuous, glowing 3-pixel seam of raw white cellulose cotton fibers running straight through the heart of the typography.
+
+## 주장
+
+Modern digital design worships the illusion of indestructible, weightless typography. Digital glyphs can be stretched, rotated, and scaled ad infinitum without ever showing material wear or structural exhaustion. Yet in the physical realm of bookbinding, packaging, and origami, paper is an elastoplastic body with finite mechanical thresholds. When a sheet is creased, the outer fibers stretch while inner fibers compress. By subjecting typography to mechanical bending strain and ink delamination, we liberate digital text from the sterility of the untouchable vector. The crease is not a defect; it is the physical scar where reading collides with tectonic spatial gravity.
+
+## 반론
+
+Yet structural fracture threatens textual legibility. If the crease severity is pushed beyond 120 degrees, words are violently severed across opposing spatial planes, and the loss of ink along the fracture ridge destroys essential character recognition features. The designer must calibrate the balance between material tactile honesty and semiotic legibility, preserving the word's syntactic skeleton even as its skin breaks.
+
+## 독자 실험
+
+Take a sheet of heavy black-coated cardstock (or paper heavily printed with black ink). Fold it sharply in half using the back of a spoon or a bone folder. Observe under a magnifying glass how the black ink fractures and peels off along the ridge, exposing white paper fibers. Measure the width of this white fracture line and write a CSS border-image shader mimicking this exact material delamination.
+
+## 미래 가설
+
+Observed Signal: Foldable smartphones (Galaxy Z Fold, Pixel Fold) and flexible e-paper displays have introduced physical screen hinges into everyday interaction. / Hypothesis: Within three years, editorial typography for foldable devices will account for physical hinge creasing—dynamically shifting margins, letter-spacing, and typographic weight away from mechanical stress zones or embracing decorative creased aesthetics. / Disconfirming Condition: The development of seamless, crease-free flexible OLED substrate polymers that eliminate mechanical surface curvature entirely.
+
+## 재검토
+
+Day 036 (2026-10-07): Audit consumer foldable display hinge ergonomics and evaluate W3C Foldable Screen CSS Media Queries (@media screen-spanning) adoption.
+
+Day 036 (2026-10-07): 폴더블 디스플레이 힌지 인체공학 및 W3C 듀얼 스크린 미디어 쿼리 표준화 동향 소급 검토.
+
+## 도판 계획
+
+Plate 1: Planar baseline sheet (pristine uncreased ink). Plate 2: Acute mountain fold at 105° (visible white cellulose fracture line running through typography). Plate 3: Valley fold inversion (deep architectural trough shadow without delamination).
+
+도판 1: 평면 기저 지면 (손상 없는 잉크). 도판 2: 105도 산 접지 (활자를 가로지르는 흰색 셀룰로오스 균열선). 도판 3: 골 접지 반전 (박리 없는 깊은 협곡 그림자).
+
+## 권리
+
+Original elastoplastic 3D CSS perspective folding mechanics in TypeScript. SIL Open Font License serif typography. No external proprietary media.
+
+## 출처
+
+- [Interaction of Color & Paper Folding Exercises](https://albersfoundation.org) — Josef Albers / Yale University Press; 확인 2026-09-08. Core philosophy of activating unprinted paper sheets through folding without cutting or pasting, turning planar material into self-supporting structural form. 한계: Focuses on geometric paper transformation rather than typographic printing and ink film mechanics.
+- [White (Shiro)](https://www.lars-mueller-publishers.com/white) — Kenya Hara / Lars Müller Publishers; 확인 2026-09-08. Phenomenological inquiry into the tactile nuance, silence, and sensory gravity of embossed and creased white paper surfaces. 한계: Philosophical meditation without algorithmic or mechanical physics formulation.
+- [Mechanics of Materials: Beam Bending & Tensile Stress](https://www.mheducation.com) — Ferdinand P. Beer, E. Russell Johnston / McGraw-Hill; 확인 2026-09-08. Mathematical formulation of maximum tensile strain on the convex outer surface of curved plates under structural deformation. 한계: Derived for isotropic metals rather than heterogeneous layered paper and dried ink films.

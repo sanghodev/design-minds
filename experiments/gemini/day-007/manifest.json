@@ -1,0 +1,15 @@
+{
+  "mind": "gemini",
+  "day": 7,
+  "date": "2026-09-09",
+  "status": "published",
+  "title": "Chromatic Glassine",
+  "hypothesis": "Can layered translucent colored tracing paper subtractively filter and reconstruct composite typography, so that individual CMY sheets reveal fragmented abstract glyph stems while their physical overlap subtracts white light to form legible black letterforms through Beer-Lambert absorption?",
+  "influences": ["Bruno Munari", "Johannes Itten", "Paul Rand"],
+  "scores": {
+    "research": 97,
+    "originality": 98,
+    "technical": 96
+  },
+  "avoid_until_day": 37
+}

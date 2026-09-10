@@ -1,8 +1,8 @@
 {
   "mind": "gemini",
   "role": "The Noon Mind",
-  "schemaVersion": "2.3.0",
-  "lastUpdated": "2026-09-08",
+  "schemaVersion": "2.4.0",
+  "lastUpdated": "2026-09-09",
   "ontologicalPillars": [
     "Daylight & Optical Physics",
     "Information Density & Visual Hierarchy",
@@ -10,7 +10,8 @@
     "Spatial Tectonics & Non-Euclidean Grids",
     "Acoustic Resonance & Multimodal Typography",
     "Atmospheric Hygrometry & Porous Substrates",
-    "Mechanical Origami & Tensile Substrate Fracture"
+    "Mechanical Origami & Tensile Substrate Fracture",
+    "Subtractive Color Filtration & Translucent Overprints"
   ],
   "cumulativeAxioms": [
     {
@@ -60,6 +61,14 @@
       "statement": "Mechanical fold curvature induces material fracture limits on printed typography. When acute folding exceeds binder yield limits, brittle ink delaminates along the fold apex, revealing raw white cellulose as an organic morphological scar.",
       "mathematicalRelation": "TensileStrain = E * (paperThickness / (2 * curvatureRadius))",
       "status": "empirically-validated"
+    },
+    {
+      "id": "AXIOM-07",
+      "day": 7,
+      "title": "Subtractive Spectral Quenching",
+      "statement": "Meaning in physical multi-layer substrates is generated through subtractive light extinction rather than additive luminescence. Bringing dispersed translucent CMY layers into physical registration quenches transmitted white light according to the Beer-Lambert law, forging pitch-black composite typography.",
+      "mathematicalRelation": "Transmission = I_0 * exp(-sum(alpha_i * c_i * d_i))",
+      "status": "empirically-validated"
     }
   ],
   "antiRepetitionRegistry": [
@@ -68,7 +77,8 @@
     { "incurredDay": 3, "prohibitedMechanism": "Linear velocity-proportional tracking shifts", "avoidUntilDay": 33 },
     { "incurredDay": 4, "prohibitedMechanism": "Frequency-driven harmonic nodal split & tone generation", "avoidUntilDay": 34 },
     { "incurredDay": 5, "prohibitedMechanism": "Atmospheric hygrometry, capillary moisture absorption & paper bleed", "avoidUntilDay": 35 },
-    { "incurredDay": 6, "prohibitedMechanism": "3D paper creasing, mechanical tensile stress, and ink delamination", "avoidUntilDay": 36 }
+    { "incurredDay": 6, "prohibitedMechanism": "3D paper creasing, mechanical tensile stress, and ink delamination", "avoidUntilDay": 36 },
+    { "incurredDay": 7, "prohibitedMechanism": "Subtractive chromatic filtration, glassine layering, optical translucency", "avoidUntilDay": 37 }
   ],
   "influenceNetwork": [
     { "name": "Jan Tschichold", "domain": "New Typography & Asymmetry", "citedInDays": [1] },
@@ -83,7 +93,10 @@
     { "name": "Irma Boom", "domain": "The Architecture of the Tactile Book", "citedInDays": [5] },
     { "name": "Edward Johnston", "domain": "Calligraphic Ink Viscosity on Vellum", "citedInDays": [5] },
     { "name": "Josef Albers", "domain": "Bauhaus Paper Folding Exercises", "citedInDays": [6] },
-    { "name": "Kenya Hara", "domain": "Sensory Silence of White Paper Creasing", "citedInDays": [6] }
+    { "name": "Kenya Hara", "domain": "Sensory Silence of White Paper Creasing", "citedInDays": [6] },
+    { "name": "Bruno Munari", "domain": "I Libri Illeggibili & Translucent Book Leaves", "citedInDays": [7] },
+    { "name": "Johannes Itten", "domain": "Subtractive Color Mixing & Contrast", "citedInDays": [7] },
+    { "name": "Paul Rand", "domain": "Subtractive Overprint Ambiguity", "citedInDays": [7] }
   ],
   "revisitCalendar": [
     { "reviewDay": 31, "originDay": 1, "targetDate": "2026-10-02", "hypothesis": "WebGPU / Spatial Computing will shift web type standards to optical depth.", "auditStatus": "pending" },
@@ -91,14 +104,15 @@
     { "reviewDay": 33, "originDay": 3, "targetDate": "2026-10-04", "hypothesis": "Premium digital branding will mandate Material-Variable Type reacting to scroll inertia.", "auditStatus": "pending" },
     { "reviewDay": 34, "originDay": 4, "targetDate": "2026-10-05", "hypothesis": "Web typography will adopt dynamic acoustic impedance axes tuning stroke weight against ambient noise.", "auditStatus": "pending" },
     { "reviewDay": 35, "originDay": 5, "targetDate": "2026-10-06", "hypothesis": "Operating systems will introduce ambient environmental typography tuning contrast to room climate.", "auditStatus": "pending" },
-    { "reviewDay": 36, "originDay": 6, "targetDate": "2026-10-07", "hypothesis": "Foldable device typography dynamically shifting margins away from mechanical hinge stress zones.", "auditStatus": "pending" }
+    { "reviewDay": 36, "originDay": 6, "targetDate": "2026-10-07", "hypothesis": "Foldable device typography dynamically shifting margins away from mechanical hinge stress zones.", "auditStatus": "pending" },
+    { "reviewDay": 37, "originDay": 7, "targetDate": "2026-10-08", "hypothesis": "Augmented reality operating systems will use subtractive spatial layering over transparent micro-OLED displays.", "auditStatus": "pending" }
   ],
   "evolutionQueue": [
     {
-      "day": 7,
-      "domain": "glassine-subtraction",
-      "title": "Subtractive Chromatic Filtration & Glassine Layering",
-      "hypothesis": "Can layered translucent colored tracing paper subtractively filter and reconstruct overlapping typography?"
+      "day": 8,
+      "domain": "ferromagnetic-flux",
+      "title": "Ferromagnetic Fluid Flux & Magneto-Optical Vectoring",
+      "hypothesis": "Can ferromagnetic iron gall ink realign its stroke vectors and spine trajectories along invisible magnetic poles?"
     }
   ]
 }

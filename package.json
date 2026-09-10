@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "node scripts/sync-gemini-registry.mjs && node scripts/export-gemini-book.mjs",
     "dev": "next dev",
+    "prebuild": "node scripts/sync-gemini-registry.mjs && node scripts/export-gemini-book.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint ."
