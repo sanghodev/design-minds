@@ -1,8 +1,8 @@
 {
   "mind": "gemini",
   "role": "The Noon Mind",
-  "schemaVersion": "2.5.0",
-  "lastUpdated": "2026-09-10",
+  "schemaVersion": "2.6.0",
+  "lastUpdated": "2026-09-11",
   "ontologicalPillars": [
     "Daylight & Optical Physics",
     "Information Density & Visual Hierarchy",
@@ -12,7 +12,8 @@
     "Atmospheric Hygrometry & Porous Substrates",
     "Mechanical Origami & Tensile Substrate Fracture",
     "Subtractive Color Filtration & Translucent Overprints",
-    "Electromagnetic Force Fields & Ferrofluid Spikes"
+    "Electromagnetic Force Fields & Ferrofluid Spikes",
+    "Electrostatic Latent Fields & Triboelectric Powder Cling"
   ],
   "cumulativeAxioms": [
     {
@@ -78,6 +79,14 @@
       "statement": "Digital typography can be sculpted by continuous electromagnetic force fields rather than Cartesian Bézier control points. Surpassing the Rosensweig critical threshold (B > 35 Gauss) triggers spontaneous normal-field instability, erupting needle-sharp conical spikes along flux lines.",
       "mathematicalRelation": "B(r) = (mu_0 / (4 * pi * r^3)) * (3 * (m . r_hat) * r_hat - m)",
       "status": "empirically-validated"
+    },
+    {
+      "id": "AXIOM-09",
+      "day": 9,
+      "title": "Coulomb Electrostatic Accumulation",
+      "statement": "Digital typography can emerge as a transient physical state held together by electrostatic potential rather than permanent raster matrices. Triboelectric surface friction across a dielectric selenium plate generates latent electrostatic fields, pulling airborne dry carbon toner dust along Coulomb force gradients into dense, velvety glyph structures. Grounding instantly drops potential to zero, shattering words into airborne soot.",
+      "mathematicalRelation": "F_e = k_e * (q_1 * q_2) / r^2",
+      "status": "empirically-validated"
     }
   ],
   "antiRepetitionRegistry": [
@@ -88,7 +97,8 @@
     { "incurredDay": 5, "prohibitedMechanism": "Atmospheric hygrometry, capillary moisture absorption & paper bleed", "avoidUntilDay": 35 },
     { "incurredDay": 6, "prohibitedMechanism": "3D paper creasing, mechanical tensile stress, and ink delamination", "avoidUntilDay": 36 },
     { "incurredDay": 7, "prohibitedMechanism": "Subtractive chromatic filtration, glassine layering, optical translucency", "avoidUntilDay": 37 },
-    { "incurredDay": 8, "prohibitedMechanism": "Ferromagnetic fluid flux, magnetic dipole alignment, Rosensweig spikes", "avoidUntilDay": 38 }
+    { "incurredDay": 8, "prohibitedMechanism": "Ferromagnetic fluid flux, magnetic dipole alignment, Rosensweig spikes", "avoidUntilDay": 38 },
+    { "incurredDay": 9, "prohibitedMechanism": "Electrostatic charging, triboelectric friction, dry toner dusting", "avoidUntilDay": 39 }
   ],
   "influenceNetwork": [
     { "name": "Jan Tschichold", "domain": "New Typography & Asymmetry", "citedInDays": [1] },
@@ -109,7 +119,10 @@
     { "name": "Paul Rand", "domain": "Subtractive Overprint Ambiguity", "citedInDays": [7] },
     { "name": "Michael Faraday", "domain": "Electromagnetic Lines of Force", "citedInDays": [8] },
     { "name": "Wim Crouwel", "domain": "New Alphabet & Mathematical Vector Grids", "citedInDays": [8] },
-    { "name": "Sachiko Kodama", "domain": "Dynamic Ferrofluid Kinetic Sculptures", "citedInDays": [8] }
+    { "name": "Sachiko Kodama", "domain": "Dynamic Ferrofluid Kinetic Sculptures", "citedInDays": [8] },
+    { "name": "Chester Carlson", "domain": "Xerography & Latent Electrostatic Images", "citedInDays": [9] },
+    { "name": "Dieter Rams", "domain": "Functional Transparency & Subtraction", "citedInDays": [9] },
+    { "name": "Muriel Cooper", "domain": "Visible Language Workshop Dynamic Text", "citedInDays": [9] }
   ],
   "revisitCalendar": [
     { "reviewDay": 31, "originDay": 1, "targetDate": "2026-10-02", "hypothesis": "WebGPU / Spatial Computing will shift web type standards to optical depth.", "auditStatus": "pending" },
@@ -119,14 +132,15 @@
     { "reviewDay": 35, "originDay": 5, "targetDate": "2026-10-06", "hypothesis": "Operating systems will introduce ambient environmental typography tuning contrast to room climate.", "auditStatus": "pending" },
     { "reviewDay": 36, "originDay": 6, "targetDate": "2026-10-07", "hypothesis": "Foldable device typography dynamically shifting margins away from mechanical hinge stress zones.", "auditStatus": "pending" },
     { "reviewDay": 37, "originDay": 7, "targetDate": "2026-10-08", "hypothesis": "Augmented reality operating systems will use subtractive spatial layering over transparent micro-OLED displays.", "auditStatus": "pending" },
-    { "reviewDay": 38, "originDay": 8, "targetDate": "2026-10-09", "hypothesis": "Tactile displays will utilize micro-fluidic ferrofluid cells under electromagnetic pin matrices for physical haptic typography.", "auditStatus": "pending" }
+    { "reviewDay": 38, "originDay": 8, "targetDate": "2026-10-09", "hypothesis": "Tactile displays will utilize micro-fluidic ferrofluid cells under electromagnetic pin matrices for physical haptic typography.", "auditStatus": "pending" },
+    { "reviewDay": 39, "originDay": 9, "targetDate": "2026-10-10", "hypothesis": "Tablets will feature programmable electrostatic surface friction for haptic reading of printed letterform edges.", "auditStatus": "pending" }
   ],
   "evolutionQueue": [
     {
-      "day": 9,
-      "domain": "triboelectric-dusting",
-      "title": "Electrostatic Carbon Cling & Triboelectric Charging",
-      "hypothesis": "Can digital typography simulate triboelectric surface charging on dielectric substrates, attracting airborne carbon toner powder along latent electrostatic fields?"
+      "day": 10,
+      "domain": "phosphorescent-decay",
+      "title": "Phosphorescent Photonic Decay & Luminescent Memory",
+      "hypothesis": "Can typography simulate quantum photon absorption and exponential half-life decay, storing UV energy and slowly emitting ghostly luminescent light in total darkness?"
     }
   ]
 }

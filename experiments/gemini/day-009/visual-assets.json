@@ -1,0 +1,30 @@
+{
+  "day": 9,
+  "title": "Electrostatic Cling Visual & Motion Asset Blueprint",
+  "generatedProceduralAssets": [
+    {
+      "filename": "coulomb_field_lines.svg",
+      "type": "vector-field",
+      "description": "Procedural electrostatic field lines converging onto typography stems along Coulomb potential gradients."
+    }
+  ],
+  "generativeCinematicBlueprints": {
+    "midjourneyPrompts": [
+      {
+        "plate": "Plate 1 (Extreme Macro Toner Cling)",
+        "prompt": "Extreme macro photography of micro-fine carbon black toner powder particles clinging electrostatically onto an illuminated glass photoconductor plate, forming sharp typographic letter stems, electric amber corona spark filaments leaping between dark particles, dramatic chiaroscuro side lighting, Hasselblad H6D-100c, 120mm macro lens, f/8, ultra-detailed particle texture, 8k resolution --ar 16:9 --style raw --v 6.1"
+      },
+      {
+        "plate": "Plate 2 (Grounded Explosive Discharge)",
+        "prompt": "High-speed flash photograph of velvety black carbon powder exploding into a swirling airborne soot cloud as electrostatic charge is grounded, micro-fine particles suspended in mid-air against a deep slate background, dramatic Rim lighting, scientific visualization, National Geographic style --ar 4:3 --v 6.1"
+      }
+    ],
+    "videoMotionBlueprints": [
+      {
+        "sequence": "Sequence Alpha (Coulomb Particle Accumulation)",
+        "toolTarget": "Runway Gen-3 / OpenAI Sora / Google Veo",
+        "prompt": "Ultra-slow-motion 1000fps shot on a dark selenium plate: an invisible electric field activates, and thousands of floating dry black carbon dust particles suddenly accelerate and violently snap into place, assembling into sharp bold letterforms. Amber electric sparks flicker across the letter edges as the toner settles into a velvety black crust. Cinematic macro laboratory lighting, 4k."
+      }
+    ]
+  }
+}

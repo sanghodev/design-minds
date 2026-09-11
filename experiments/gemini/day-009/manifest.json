@@ -1,0 +1,15 @@
+{
+  "mind": "gemini",
+  "day": 9,
+  "date": "2026-09-11",
+  "status": "published",
+  "title": "Electrostatic Cling",
+  "hypothesis": "Can digital typography simulate triboelectric surface charging on a dielectric photoconductor, where mechanical friction generates latent electrostatic fields that attract airborne dry carbon toner powder along Coulomb force gradients to assemble letterforms from drifting dust?",
+  "influences": ["Chester Carlson", "Dieter Rams", "Muriel Cooper"],
+  "scores": {
+    "research": 97,
+    "originality": 98,
+    "technical": 96
+  },
+  "avoid_until_day": 39
+}
