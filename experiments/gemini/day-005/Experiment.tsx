@@ -1,227 +1,207 @@
 "use client";
 
-import React, { useState, useEffect, useId } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
-interface ClimatePreset {
-  rh: number;
-  label: string;
-  description: string;
-}
-
-const CLIMATE_PRESETS: ClimatePreset[] = [
-  { rh: 14, label: "Atacama Arid", description: "Extreme dryness; ink remains brittle, razor-sharp hairlines with zero capillary absorption." },
-  { rh: 52, label: "Temperate Studio", description: "Balanced equilibrium; crisp letterforms with subtle fibrous edge softening." },
-  { rh: 84, label: "Kyoto Monsoon", description: "High atmospheric moisture; deep capillary wicking, ink feathering into paper grain." },
-  { rh: 98, label: "Saturated Deluge", description: "Complete fiber saturation; counters flood and serifs dissolve into organic wash pools." }
-];
-
 export default function AtmosphericHygrometryExperiment() {
-  const [humidity, setHumidity] = useState<number>(52);
-  const [porosity, setPorosity] = useState<number>(65); // Paper fiber pore radius parameter (r)
-  const [evaporationRate, setEvaporationRate] = useState<number>(45);
-  const [isMoistening, setIsMoistening] = useState<boolean>(false);
-  const [fiberOrientation, setFiberOrientation] = useState<"isotropic" | "directional">("directional");
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const [rhPercent, setRhPercent] = useState<number>(45);
+  const mouseRef = useRef<{ x: number; y: number; spraying: boolean }>({ x: 0, y: 0, spraying: false });
 
-  const humId = useId();
-  const porId = useId();
-
-  // Natural diurnal evaporation loop: moisture gradually decays to baseline equilibrium (50% RH)
   useEffect(() => {
-    const timer = setInterval(() => {
-      if (!isMoistening) {
-        setHumidity((prev) => {
-          if (prev > 50) {
-            return Math.max(50, prev - (evaporationRate / 100) * 0.7);
-          } else if (prev < 50) {
-            return Math.min(50, prev + (evaporationRate / 100) * 0.4);
-          }
-          return prev;
-        });
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    let animId: number;
+    let width = (canvas.width = window.innerWidth);
+    let height = (canvas.height = window.innerHeight);
+
+    const handleResize = () => {
+      if (!canvas) return;
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+      initPaper();
+    };
+    window.addEventListener("resize", handleResize);
+
+    // 2D Moisture & Ink Concentration Grids (Downscaled for 60fps cellular diffusion)
+    const simScale = 2;
+    const simW = Math.floor(width / simScale);
+    const simH = Math.floor(height / simScale);
+
+    let inkGrid = new Float32Array(simW * simH);
+    let moistureGrid = new Float32Array(simW * simH);
+    let tempGrid = new Float32Array(simW * simH);
+
+    const initPaper = () => {
+      const off = document.createElement("canvas");
+      off.width = simW;
+      off.height = simH;
+      const offCtx = off.getContext("2d");
+      if (!offCtx) return;
+
+      offCtx.fillStyle = "#000000";
+      offCtx.fillRect(0, 0, simW, simH);
+      offCtx.fillStyle = "#ffffff";
+      offCtx.font = `600 ${Math.min(simW * 0.11, 75)}px "Times New Roman", Times, serif`;
+      offCtx.textAlign = "center";
+      offCtx.textBaseline = "middle";
+      offCtx.letterSpacing = "0.08em";
+      offCtx.fillText("HYGROMETRY", simW * 0.5, simH * 0.5);
+
+      const raw = offCtx.getImageData(0, 0, simW, simH).data;
+      inkGrid = new Float32Array(simW * simH);
+      moistureGrid = new Float32Array(simW * simH);
+
+      for (let i = 0; i < simW * simH; i++) {
+        inkGrid[i] = raw[i * 4] / 255.0; // 0 to 1
+        moistureGrid[i] = 0.2; // Baseline 20% ambient humidity
       }
-    }, 90);
-    return () => clearInterval(timer);
-  }, [isMoistening, evaporationRate]);
+    };
 
-  // Lucas-Washburn Capillary Penetration Model: L = sqrt((gamma * r * cos(theta) * t) / (2 * eta))
-  // Normalized as a function of Relative Humidity and Substrate Porosity
-  const lucasWashburnFactor = Math.sqrt(Math.max(0, (humidity - 18) / 82) * (porosity / 100));
-  const bleedRadius = lucasWashburnFactor * 22;
-  const strokeInflation = lucasWashburnFactor * 16;
-  const wetSheen = Math.max(0, (humidity - 55) / 45); // Surface glisten before evaporation
-  const dynamicWeight = Math.round(300 + lucasWashburnFactor * 580);
+    initPaper();
 
-  // Directional anisotropic fiber wicking vectors
-  const spreadX = fiberOrientation === "directional" ? bleedRadius * 1.35 : bleedRadius;
-  const spreadY = fiberOrientation === "directional" ? bleedRadius * 0.75 : bleedRadius;
+    // Diffusion render loop (Lucas-Washburn Capillary Bleed)
+    const render = () => {
+      const m = mouseRef.current;
+      const simMX = Math.floor(m.x / simScale);
+      const simMY = Math.floor(m.y / simScale);
 
-  // Direct tactile breathing / moistening via pointer drag
-  const handlePointerDown = () => setIsMoistening(true);
-  const handlePointerUp = () => setIsMoistening(false);
+      // Deposit moisture on drag
+      if (m.spraying && simMX > 5 && simMX < simW - 5 && simMY > 5 && simMY < simH - 5) {
+        for (let dy = -18; dy <= 18; dy++) {
+          for (let dx = -18; dx <= 18; dx++) {
+            const distSq = dx * dx + dy * dy;
+            if (distSq < 324) {
+              const idx = (simMY + dy) * simW + (simMX + dx);
+              moistureGrid[idx] = Math.min(1.0, moistureGrid[idx] + 0.15);
+            }
+          }
+        }
+      }
+
+      // Calculate global RH average
+      let totalMoisture = 0;
+      for (let i = 0; i < 200; i++) {
+        const randIdx = Math.floor(Math.random() * (simW * simH));
+        totalMoisture += moistureGrid[randIdx];
+      }
+      setRhPercent(Math.round((totalMoisture / 200) * 100));
+
+      // Cellular diffusion: Ink diffuses where moisture is high
+      tempGrid.set(inkGrid);
+
+      for (let y = 1; y < simH - 1; y++) {
+        for (let x = 1; x < simW - 1; x++) {
+          const idx = y * simW + x;
+          const localMoisture = moistureGrid[idx];
+
+          if (localMoisture > 0.35) {
+            // Lucas-Washburn diffusion rate proportional to local moisture content
+            const rate = (localMoisture - 0.35) * 0.08;
+            const laplacian = (
+              tempGrid[idx - 1] + tempGrid[idx + 1] +
+              tempGrid[idx - simW] + tempGrid[idx + simW] -
+              4 * tempGrid[idx]
+            );
+            inkGrid[idx] = Math.max(0, Math.min(1.0, inkGrid[idx] + laplacian * rate));
+          }
+
+          // Natural evaporation
+          moistureGrid[idx] = Math.max(0.15, moistureGrid[idx] * 0.996);
+        }
+      }
+
+      // Draw paper & sumi ink to display buffer
+      const imgData = ctx.createImageData(simW, simH);
+      const d = imgData.data;
+
+      // Fibrous washi base color #f7f4ec (247, 244, 236)
+      for (let i = 0; i < simW * simH; i++) {
+        const pIdx = i * 4;
+        const ink = inkGrid[i];
+        const wet = moistureGrid[i];
+
+        // Paper color darkens slightly with water
+        const paperR = 247 - wet * 20;
+        const paperG = 244 - wet * 22;
+        const paperB = 236 - wet * 24;
+
+        // Sumi carbon soot ink #141312 (20, 19, 18)
+        d[pIdx] = Math.floor(paperR * (1 - ink) + 20 * ink);
+        d[pIdx + 1] = Math.floor(paperG * (1 - ink) + 19 * ink);
+        d[pIdx + 2] = Math.floor(paperB * (1 - ink) + 18 * ink);
+        d[pIdx + 3] = 255;
+      }
+
+      createImageBitmap(imgData).then((bmp) => {
+        ctx.drawImage(bmp, 0, 0, width, height);
+      });
+
+      animId = requestAnimationFrame(render);
+    };
+
+    animId = requestAnimationFrame(render);
+
+    return () => {
+      cancelAnimationFrame(animId);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const handlePointerDown = (e: React.PointerEvent) => {
+    mouseRef.current.spraying = true;
+    mouseRef.current.x = e.clientX;
+    mouseRef.current.y = e.clientY;
+  };
+
+  const handlePointerUp = () => {
+    mouseRef.current.spraying = false;
+  };
 
   const handlePointerMove = (e: React.PointerEvent) => {
-    if (isMoistening) {
-      const delta = (Math.abs(e.movementX) + Math.abs(e.movementY)) * 0.4;
-      setHumidity((prev) => Math.min(99, Math.max(10, prev + delta)));
-    }
+    mouseRef.current.x = e.clientX;
+    mouseRef.current.y = e.clientY;
   };
 
   return (
-    <main
+    <div
       onPointerDown={handlePointerDown}
       onPointerUp={handlePointerUp}
       onPointerMove={handlePointerMove}
-      className="min-h-screen w-full bg-[#f4f0e6] text-[#1a1715] font-serif antialiased select-none overflow-hidden relative flex flex-col justify-between p-6 sm:p-14 selection:bg-[#2c2621] selection:text-[#f4f0e6] cursor-crosshair touch-none"
-      style={{
-        backgroundImage: `
-          radial-gradient(#d8d1c0 0.75px, transparent 0.75px),
-          radial-gradient(#e4ded0 0.75px, #f4f0e6 0.75px)
-        `,
-        backgroundSize: "28px 28px, 14px 14px"
-      }}
+      className="w-screen h-screen overflow-hidden bg-[#f7f4ec] select-none touch-none cursor-crosshair font-serif relative"
     >
-      {/* Editorial Watermark Header */}
-      <header className="flex justify-between items-baseline z-20 border-b border-[#d8d1c0] pb-4">
-        <div className="flex items-baseline gap-4">
-          <Link
-            href="/"
-            className="font-mono text-xs uppercase tracking-widest text-[#786e64] hover:text-[#1a1715] transition-colors font-semibold"
-          >
-            ← Design Minds
-          </Link>
-          <span className="text-[#b8af9f] font-mono">/</span>
-          <span className="font-mono text-xs uppercase tracking-widest text-[#2c2621] font-bold">
-            Noon Mind · Day 005 · Lucas-Washburn Capillary Specimen
-          </span>
-        </div>
+      <canvas ref={canvasRef} className="absolute inset-0 w-full h-full block" />
 
-        <div className="font-mono text-xs text-[#786e64] hidden sm:flex items-center gap-6">
-          <span>RH: <strong className="text-[#1a1715] font-bold">{humidity.toFixed(0)}%</strong></span>
-          <span>LUCAS-WASHBURN (L): <strong className="text-[#1a1715]">{bleedRadius.toFixed(1)}px</strong></span>
-          <span>SUBSTRATE: <strong className="text-[#42372d] uppercase">{fiberOrientation} washi</strong></span>
-        </div>
-      </header>
+      {/* Atmospheric Washi Watermark */}
+      <div className="absolute top-8 left-8 z-30 pointer-events-auto">
+        <Link
+          href="/"
+          className="font-mono text-xs text-[#786e64] hover:text-[#1a1715] uppercase tracking-widest transition-colors font-semibold block"
+        >
+          ← DM-005 // WASHI HYGROMETRY
+        </Link>
+        <span className="font-mono text-[10px] text-[#9c9384] uppercase tracking-wider block mt-1">
+          Lucas-Washburn Capillary Flow (1921)
+        </span>
+      </div>
 
-      {/* Main Porous Paper Specimen Center (Full-Bleed Direct Canvas) */}
-      <div className="flex-1 flex flex-col justify-center items-center my-auto py-12 relative z-10 text-center">
-        
-        {/* Capillary Dew Droplet Status Indicator */}
-        <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-[#d8d1c0] bg-[#fbf9f4]/85 backdrop-blur mb-8 font-mono text-xs text-[#786e64]">
-          <span
-            className="w-2 h-2 rounded-full transition-colors duration-200"
-            style={{
-              backgroundColor: humidity > 75 ? "#2563eb" : humidity > 40 ? "#059669" : "#d97706"
-            }}
-          />
-          <span className="uppercase tracking-widest text-[11px] font-bold text-[#1a1715]">
-            {humidity > 85 ? "Counter Flooding (Deluge Threshold)" : humidity > 40 ? "Capillary Equilibrium" : "Brittle Vector Acuity"}
-          </span>
-          <span>·</span>
-          <span>{humidity.toFixed(0)}% RH</span>
-          {wetSheen > 0.1 && (
-            <span className="text-blue-600 animate-pulse font-semibold">· Wet Sheen {(wetSheen * 100).toFixed(0)}%</span>
-          )}
-        </div>
-
-        {/* The Capillary Bleeding Typographic Core */}
-        <div className="relative max-w-5xl w-full py-6">
-          <h1
-            className="text-5xl sm:text-7xl md:text-9xl uppercase font-serif tracking-tight transition-all duration-150"
-            style={{
-              fontWeight: dynamicWeight,
-              color: "#161413",
-              letterSpacing: `${(0.05 - (strokeInflation * 0.002)).toFixed(3)}em`,
-              textShadow: `
-                0 0 ${spreadX * 0.2}px rgba(22, 20, 19, 0.98),
-                0 0 ${spreadX}px rgba(66, 55, 45, ${lucasWashburnFactor * 0.85}),
-                0 0 ${spreadX * 2}px rgba(85, 70, 58, ${lucasWashburnFactor * 0.45})
-              `
-            }}
-          >
-            Hygrometry
-          </h1>
-
-          <p
-            className="mt-8 text-sm sm:text-lg text-[#4a423a] max-w-xl mx-auto leading-relaxed transition-all duration-150 font-serif italic"
-            style={{
-              textShadow: `0 0 ${spreadX * 0.3}px rgba(66, 55, 45, ${lucasWashburnFactor * 0.6})`
-            }}
-          >
-            "Handmade washi fibers drink the morning mist. In arid air, the hairline serif stands brittle; as relative humidity descends, Lucas-Washburn capillary suction wicks black sumi ink across organic paper grain."
-          </p>
-        </div>
-
-        {/* Tactile Direct-Drag Cue */}
-        <p className="font-mono text-[11px] uppercase tracking-widest text-[#8a8074] mt-6">
-          {isMoistening ? "💧 Exhaling Moisture onto Substrate..." : "Click and drag anywhere to breathe atmospheric moisture across the paper fibers"}
-        </p>
-
-        {/* Organic Substrate Climate Dial */}
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-6 bg-[#eae4d3]/80 border border-[#d8d1c0] px-8 py-3.5 rounded-full backdrop-blur z-20 font-mono text-xs">
-          <div className="flex items-center gap-3">
-            <label htmlFor={humId} className="text-[10px] text-[#786e64] uppercase font-bold tracking-wider">Moisture (RH)</label>
-            <input
-              id={humId}
-              type="range"
-              min="10"
-              max="99"
-              value={humidity}
-              onChange={(e) => setHumidity(Number(e.target.value))}
-              className="w-32 accent-[#2c2621] cursor-pointer"
-            />
-            <span className="font-bold text-[#1a1715] w-10">{humidity.toFixed(0)}%</span>
-          </div>
-
-          <div className="h-4 w-px bg-[#c8c0af]" />
-
-          <div className="flex items-center gap-3">
-            <label htmlFor={porId} className="text-[10px] text-[#786e64] uppercase font-bold tracking-wider">Fiber Porosity (r)</label>
-            <input
-              id={porId}
-              type="range"
-              min="20"
-              max="95"
-              value={porosity}
-              onChange={(e) => setPorosity(Number(e.target.value))}
-              className="w-24 accent-[#2c2621] cursor-pointer"
-            />
-            <span className="font-bold text-[#1a1715] w-8">{porosity}%</span>
-          </div>
-
-          <div className="h-4 w-px bg-[#c8c0af]" />
-
-          <button
-            onClick={() => setFiberOrientation(fiberOrientation === "directional" ? "isotropic" : "directional")}
-            className="px-3 py-1 rounded text-[10px] uppercase font-bold border border-[#c8c0af] hover:border-[#2c2621] transition-colors"
-          >
-            Fibers: {fiberOrientation}
-          </button>
-
-          <div className="h-4 w-px bg-[#c8c0af]" />
-
-          <div className="flex items-center gap-2">
-            {CLIMATE_PRESETS.map((p) => (
-              <button
-                key={p.label}
-                onClick={() => setHumidity(p.rh)}
-                className={`px-2.5 py-1 rounded text-[10px] uppercase font-bold transition-all border ${
-                  Math.abs(humidity - p.rh) < 6
-                    ? "border-[#2c2621] bg-[#2c2621] text-[#f4f0e6]"
-                    : "border-[#c8c0af] bg-transparent text-[#786e64] hover:text-[#1a1715]"
-                }`}
-              >
-                {p.label}
-              </button>
-            ))}
-          </div>
+      <div className="absolute top-8 right-8 z-30 text-right font-mono text-xs text-[#786e64] pointer-events-none">
+        <div>SUBSTRATE MOISTURE: <strong className="text-[#1a1715]">{rhPercent}% RH</strong></div>
+        <div className="text-[10px] text-[#9c9384] mt-0.5">
+          STATE: <strong className={rhPercent > 65 ? "text-blue-700" : "text-[#1a1715]"}>{rhPercent > 65 ? "ACTIVE CAPILLARY BLEED" : "ARID EQUILIBRIUM"}</strong>
         </div>
       </div>
 
-      {/* Papermaker's Deckle Colophon */}
-      <footer className="border-t border-[#d8d1c0] pt-4 flex flex-wrap justify-between items-center text-[11px] font-mono text-[#786e64] z-20">
-        <div>LUCAS-WASHBURN CAPILLARY EQUATION · PAUL KLEE FLUIDITY · IRMA BOOM TACTILITY</div>
-        <div className="tracking-wider">CHAPTER V: ATMOSPHERIC HYGROMETRY & POROUS INK BLEED</div>
-      </footer>
-    </main>
+      <div className="absolute bottom-8 left-8 z-30 text-[11px] font-mono text-[#8a8070] pointer-events-none max-w-md uppercase tracking-widest leading-relaxed">
+        CLICK &amp; DRAG TO DEPOSIT ATMOSPHERIC MOISTURE ACROSS POROUS WASHI FIBERS. BLACK SUMI INK DIFFUSES OUTWARD IN REAL TIME AND PERMANENTLY STAINS UPON EVAPORATION.
+      </div>
+
+      <div className="absolute bottom-8 right-8 z-30 font-mono text-[10px] text-[#9c9384] pointer-events-none text-right">
+        <span>PAUL KLEE FLUID DYNAMICS · EDWARD JOHNSTON VELLUM INK ABSORPTION</span>
+      </div>
+    </div>
   );
 }
