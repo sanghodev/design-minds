@@ -1,0 +1,30 @@
+{
+  "day": 8,
+  "title": "Ferromagnetic Flux Visual & Motion Asset Blueprint",
+  "generatedProceduralAssets": [
+    {
+      "filename": "dipole_flux_field.svg",
+      "type": "vector-field",
+      "description": "Mathematical vector curves mapping Faraday magnetic flux lines and normal vectors radiating from a neodymium dipole actuator."
+    }
+  ],
+  "generativeCinematicBlueprints": {
+    "midjourneyPrompts": [
+      {
+        "plate": "Plate 1 (Book Cover Edition)",
+        "prompt": "Extreme macro macro-photography of black colloidal ferrofluid spiked into sharp mathematical Rosensweig conical needles, suspended in clear mineral oil, illuminated by electric cyan and deep violet raking laboratory neon lights, metallic specular chrome reflections on ink surface, high contrast, Hasselblad H6D-100c, 120mm macro lens, f/8, cinematic lighting, 8k resolution --ar 16:9 --style raw --v 6.1"
+      },
+      {
+        "plate": "Plate 2 (Microscopic Scanning Electron View)",
+        "prompt": "Scanning electron microscope (SEM) scientific capture of iron oxide nanoparticles coalescing into magnetized typographic spines, nanoscale texture, ultra-fine crystalline spikes, scientific false color cyan and gold, volumetric depth of field, National Geographic science photography style --ar 4:3 --v 6.1"
+      }
+    ],
+    "videoMotionBlueprints": [
+      {
+        "sequence": "Sequence Alpha (High-Speed Fluid Actuation)",
+        "toolTarget": "Runway Gen-3 / OpenAI Sora / Google Veo",
+        "prompt": "Ultra-slow-motion 1000fps phantom camera shot: a shiny polished neodymium cylinder magnet moves smoothly from top to bottom over a shallow pool of reflective black ferrofluid. As the magnet draws near, the smooth mirror-like black fluid violently erupts into hundreds of sharp, needle-like conical spikes that pulse and tilt in unison, following the magnet's movement. Cinematic laboratory lighting, neon cyan rim lights, glossy liquid obsidian texture, photorealistic physics, 4k."
+      }
+    ]
+  }
+}
