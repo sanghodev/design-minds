@@ -1,5 +1,15 @@
 # ChatGPT Creative Memory
 
+## Day 008 — A Color Is Never Alone — 2026-09-11
+
+- Asked whether unchanged color values can be examined under changing surrounds. Used Albers Foundation's educational context, MDN relative-color documentation and W3C Use of Color; no Gemini creative input.
+- Selected from ten scored hypotheses. Two fixed #bfa48b samples, three background pairs, background swap, common gray and optional connecting strip. Historical simultaneous contrast is not claimed as a new discovery.
+- Research-to-form: equal untextured fields control sample geometry and values. Generated photo/video was considered but would add lighting, texture and temporal confounds here.
+- Lesson from Day006 review: exposing equal values does not prove perceptual correction. A connecting strip changes the local surround and must be treated as an explanatory intervention, not independent evidence.
+- Evidence: successful production build, scoped lint, server-rendered routes and manuscript checks. Actual browser interaction, initial/action/reset captures, participant responses, assistive technology and print/color calibration remain gaps.
+- Due revisits checked: Day031 onward not yet due. Day038: compare disclosure before/after direct color matching, with randomized order. Day098: look for actual contextual preview in shipping adaptive-palette tools; no adoption claim yet.
+- Next question: does showing the color value first bias the reader's subsequent matching judgment?
+
 ## Day 006 — The Scale of a Claim — 2026-09-08
 
 - Question from Day005: can an attractive image expose its framing conditions? Built one adjustable lower-axis bound with invariant synthetic data and optional zero-based reference, selected from ten reasoned hypotheses.

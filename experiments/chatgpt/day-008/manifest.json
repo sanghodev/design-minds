@@ -1,0 +1,129 @@
+{
+  "day": 8,
+  "mind": "chatgpt",
+  "date": "2026-09-11",
+  "status": "published",
+  "title": "A Color Is Never Alone",
+  "selectionMethod": "Internal 1–5 judgments: originality, visual necessity, interaction meaning, feasibility. Not outcome scores.",
+  "hypotheses": [
+    {
+      "idea": "동일한 표본의 주변만 바꾸고 공통 회색에서 다시 비교한다",
+      "scores": [
+        3,
+        5,
+        5,
+        5
+      ],
+      "reason": "선택. 고전적인 동시 대비 원리 자체는 새 발견이 아니다. 바뀐 조건과 고정값을 동시에 확인하는 인터페이스를 연구한다."
+    },
+    {
+      "idea": "사진 속 물체를 잘라 서로 다른 방에 놓는다",
+      "scores": [
+        4,
+        5,
+        4,
+        3
+      ],
+      "reason": "생성 이미지를 쓸 이유가 강하지만 조명·질감·사물 인지까지 변해 단일 변수 해석이 어렵다."
+    },
+    {
+      "idea": "동일한 글자의 자간만 바꿔 무게를 비교한다",
+      "scores": [
+        3,
+        5,
+        4,
+        5
+      ],
+      "reason": "명료하지만 최근 타이포그래피 편향을 넘어서는 현재 색 지각 질문에는 덜 직접적이다."
+    },
+    {
+      "idea": "검은 배경과 흰 배경에 같은 영상을 재생한다",
+      "scores": [
+        4,
+        4,
+        4,
+        3
+      ],
+      "reason": "시간에 따른 장면 변화와 압축이 비교를 흔든다. 정지색 통제 이후 연구한다."
+    },
+    {
+      "idea": "배경을 서서히 교체하며 색을 맞추게 한다",
+      "scores": [
+        4,
+        5,
+        5,
+        3
+      ],
+      "reason": "적응 시간과 입력을 별도로 통제해야 하며 시각적 피로 가능성이 있다."
+    },
+    {
+      "idea": "사용자가 표본 색을 직접 보정하고 원래 값과 비교한다",
+      "scores": [
+        4,
+        5,
+        5,
+        4
+      ],
+      "reason": "가장 강한 대안. 지각적 일치를 수치 차이로 기록할 수 있으나 보정 UI의 편향이 추가된다. 후속 비교로 보존한다."
+    },
+    {
+      "idea": "색 이름을 가리고 명명 전후 인상을 비교한다",
+      "scores": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "reason": "언어와 문화권에 대한 참가자 연구가 필요하며 이번 주변색 변수에서 벗어난다."
+    },
+    {
+      "idea": "배경 면적만 바꾸고 표본을 고정한다",
+      "scores": [
+        4,
+        5,
+        4,
+        5
+      ],
+      "reason": "좋은 후속 질문이지만 면적과 위치 통제가 추가된다."
+    },
+    {
+      "idea": "인쇄용 색면과 화면 색면을 동시에 비교한다",
+      "scores": [
+        4,
+        5,
+        5,
+        2
+      ],
+      "reason": "중요한 출판 질문이나 현재 실제 교정쇄와 측색 도구가 없다."
+    },
+    {
+      "idea": "다양한 질감을 생성해 동일 색 위에 겹친다",
+      "scores": [
+        4,
+        5,
+        4,
+        3
+      ],
+      "reason": "물성 연구로 가치가 있지만 합성 때문에 실제 표본 픽셀도 달라져 오늘의 불변 조건을 깨뜨린다."
+    }
+  ],
+  "variable": "Surround colors; compare the same pair before/after swapping or replacing both surrounds with #888888.",
+  "constants": [
+    "Two #bfa48b sRGB samples",
+    "Sample dimensions and positions within one viewport",
+    "Neutral control text",
+    "No color animation"
+  ],
+  "challenge": "If observers report no appearance difference, or a common surround fails to aid comparison, do not claim the interface improves color understanding. The optional bridge changes local context and is not a controlled comparison.",
+  "mediaDecision": "Uniform CSS color fields preserve exact specified values. Generated stills and video were considered but rejected for this controlled comparison because texture, lighting and frame changes confound it. No generated media claimed.",
+  "revisits": [
+    {
+      "day": 38,
+      "question": "Compare value disclosure against reader adjustment with controlled surround and randomized order."
+    },
+    {
+      "day": 98,
+      "question": "Do shipping adaptive-palette tools actually preview contextual color appearance, beyond numeric token derivation?"
+    }
+  ]
+}

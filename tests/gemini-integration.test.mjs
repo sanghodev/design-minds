@@ -19,8 +19,12 @@ for(const day of ["day-001","day-002","day-003","day-004"]){
     const delivered=existsSync(new URL("../experiments/gemini/"+day+"/Experiment.tsx",import.meta.url));
     if(delivered){
       assert.ok(!work.includes("실행 파일 대기"),"Delivered component must be integrated");
-      const markers={"day-001":'type="range" min="0" max="360"',"day-002":"3D Depth: ","day-003":"Freeze State: ","day-004":"Oscillator Frequency"};
-      assert.ok(work.includes(markers[day]),"Actual experiment must render");
+      // Creative labels change independently; test the integration contract,
+      // including an interactive surface absent from the generic fallback.
+      assert.match(work, /<(?:button|input|canvas|svg)\b/, "Delivered experiment must expose a control or drawing surface");
+      const source = await readFile(new URL("../experiments/gemini/"+day+"/Experiment.tsx",import.meta.url),"utf8");
+      assert.match(source, /on(?:Click|Change|PointerDown|PointerMove|MouseMove|KeyDown)\s*=/, "Delivered source must bind an interaction; this is not a browser behavior test");
+      assert.ok(!work.includes('class="detail-notes"'), "Generic metadata is not the delivered experiment");
     }
     else {assert.ok(work.includes("실행 파일 대기"));assert.ok(work.includes("/research/gemini/"+day));}
   });

@@ -519,3 +519,62 @@ Original ferromagnetic dipole simulation in TypeScript. SIL Open Font License ty
 - [The Interfacial Instability of a Ferromagnetic Fluid](https://doi.org/10.1017/S002211206700205X) — M. D. Cowley, R. E. Rosensweig / Journal of Fluid Mechanics; 확인 2026-09-10. Mathematical formulation of the normal-field instability threshold and critical peak spike wavelength in magnetic fluids under perpendicular field stress. 한계: Focuses on planar liquid pools rather than semantic typographic boundary contours.
 - [Protrude, Flow: Dynamic Ferrofluid Sculptures](https://sachikokodama.com) — Sachiko Kodama, Minako Takeno / SIGGRAPH; 확인 2026-09-10. Inspiration for transforming black liquid ferrofluid into living sculptural organisms via computer-controlled electromagnets. 한계: Physical gallery installation requiring physical pumps and iron fluid rather than pure browser code.
 - [New Alphabet: An Introduction for a Programmed Typography](https://www.stedelijk.nl) — Wim Crouwel / Total Design; 확인 2026-09-10. Mathematical reduction of typography to modular coordinate matrices for electronic screen displays. 한계: Restricted to early cathode-ray dot-matrix limitations without analog magnetic field continuum.
+
+
+---
+
+# Electrostatic Cling
+
+Gemini · day-009 · 기록 2026-09-11
+
+Gemini (Noon Mind) — Triboelectric surface charging, Coulomb force fields, and dry carbon toner powder accumulation.
+
+원저자 초고 · 구현 및 관찰의 검증은 별도 기록 참조
+
+Bilingual Manuscript Draft (영/한 대역 정식 초고)
+
+> Rub the glass, and an invisible lightning awakens; draw the carbon dust across the dark plate, and language gathers like iron filings to a quiet soul.
+
+유리를 문지르면 보이지 않는 번개가 깨어나고, 어두운 감광판 위로 탄소 가루를 흩뿌리는 순간 언어는 고요한 영혼에 이끌리는 쇳가루처럼 제 모습을 갖춘다.
+
+## 장면
+
+A dark selenium photoconductor plate stretches across the viewport like matte obsidian slate. In ambient room equilibrium, the surface appears empty, save for a faint swirl of 4,000 airborne carbon toner particles drifting aimlessly like cosmic soot. But as the user clicks and scrubs their pointer across the dark plate, the friction sparks invisible triboelectric voltage. A latent electric field surges past 40 kilovolts. The drifting carbon dust feels the pull: particles violently brake, turn, and plunge toward the invisible charge tracks of 'XEROGRAPHY'. Grain by grain, stroke by stroke, the letters thicken into dense, velvety black matter. When the user taps the ground wire, the static potential vanishes in an instant—the letters dissolve, and the black words scatter into a cloud of drifting ash.
+
+## 주장
+
+In standard screen graphics, typography exists as an absolute, binary certainty: a pixel is either on or off, rendered instantaneously by raster engines without physical struggle. But in the origin story of the modern copy machine—born in Chester Carlson's cramped Queens kitchen in 1938—text was a miracle of electrostatic attraction. A word existed first as an invisible ghost of electrostatic voltage etched into a sulfur plate; only when dry carbon powder clung to that charge did the language take physical body. By treating digital typography as an electrostatic latent image, we restore the visceral fragility of textual accumulation. Text is not a pre-rendered stamp; it is a temporary arrest of drifting particles held together by invisible electromagnetic tension.
+
+## 반론
+
+Yet electrostatic cling introduces stochastic vulnerability. If the surface humidity is too high or the charge voltage decays unevenly, toner grains form irregular clumps and ragged halos around stroke stems, mimicking the toner scatter of an exhausted copy drum. The designer must calibrate the balance between crisp geometric legibility and the organic tactile grit of airborne powder physics.
+
+## 독자 실험
+
+Take an ordinary plastic ruler and vigorously rub it against wool fabric for twenty seconds. Hover the charged ruler one centimeter above finely ground black pepper or coffee grounds on a white plate. Photograph the precise threshold distance where the grounds leap upward against gravity to cling to the plastic edge. Calculate the minimum electric field strength required to overcome gravity.
+
+## 미래 가설
+
+Observed Signal: Electrophoretic displays (E-Ink Spectra 6, color electronic paper) and electrostatic haptic surfaces (TanvasTouch, TeslaTouch) are commercializing micro-charge manipulation on glass. / Hypothesis: Within five years, next-generation tablets will feature programmable electrostatic surface friction—allowing users to physically feel the dry, velvety texture of carbon toner and the sharp edge of printed letterforms under their fingertips as they read. / Disconfirming Condition: The complete dominance of frictionless gesture-free gaze tracking that eliminates finger-to-screen contact.
+
+## 재검토
+
+Day 039 (2026-10-10): Audit electrostatic friction tactile screen patents and test the WebHaptics surface texture API.
+
+Day 039 (2026-10-10): 정전기 표면 마찰 햅틱 스크린 특허 동향 및 WebHaptics 표면 질감 API 실효성 소급 검토.
+
+## 도판 계획
+
+Plate 1: Uncharged latent state at 5 kV (4,000 particles drifting as random airborne dust). Plate 2: Active triboelectric charging at 65 kV (dense carbon toner clinging along typographic stems). Plate 3: Grounded discharge (instantaneous dissipation of charge and explosive scattering of text into dust).
+
+도판 1: 5 kV 미대전 잠상 상태 (무작위로 부유하는 4,000개의 탄소 먼지 입자). 도판 2: 65 kV 마찰대전 활성 상태 (활자 획을 따라 벨벳처럼 응집된 카본 토너). 도판 3: 접지 방전 상태 (전하의 소멸과 함께 폭발적으로 비산하는 활자 파편).
+
+## 권리
+
+Original Coulomb electrostatic particle engine in TypeScript. SIL Open Font License typography. No external proprietary media.
+
+## 출처
+
+- [Electrophotography (Xerography Patent Specification)](https://patents.google.com/patent/US2297691A/en) — Chester F. Carlson / US Patent 2,297,691; 확인 2026-09-11. Core concept of forming electrostatic latent images on photoconductive insulating layers and developing them with finely divided electrostatic powders. 한계: Legal patent document focused on sulfur and anthracene coated zinc plates rather than digital computational code.
+- [Thoughts on Design and Functional Minimalism](https://www.vitsoe.com/us/about/good-design) — Dieter Rams / Vitsoe Archives; 확인 2026-09-11. Philosophy of eliminating arbitrary ornamental interfaces and letting raw material forces speak directly through functional form. 한계: Industrial product design principles without direct software particle simulation formulas.
+- [Computers and Design (Visible Language Workshop)](https://mitpress.mit.edu) — Muriel Cooper / Design Quarterly; 확인 2026-09-11. Pioneering exploration of dynamic, non-static typography emerging from interactive electronic space through accumulation and spatial depth. 한계: Historic 1989 essay written prior to modern GPU-accelerated canvas particle engines.
