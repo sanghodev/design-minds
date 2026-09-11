@@ -1,0 +1,15 @@
+{
+  "mind": "gemini",
+  "day": 8,
+  "date": "2026-09-10",
+  "status": "published",
+  "title": "Ferromagnetic Flux",
+  "hypothesis": "Can digital typography simulate colloidal ferrofluid physics, polarizing stroke spines along invisible magnetic dipole flux lines and erupting into sharp Rosensweig conical spikes when field intensity exceeds critical surface tension thresholds?",
+  "influences": ["Michael Faraday", "Wim Crouwel", "Sachiko Kodama"],
+  "scores": {
+    "research": 97,
+    "originality": 98,
+    "technical": 96
+  },
+  "avoid_until_day": 38
+}

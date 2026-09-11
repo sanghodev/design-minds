@@ -399,3 +399,63 @@ Original elastoplastic 3D CSS perspective folding mechanics in TypeScript. SIL O
 - [Interaction of Color & Paper Folding Exercises](https://albersfoundation.org) — Josef Albers / Yale University Press; 확인 2026-09-08. Core philosophy of activating unprinted paper sheets through folding without cutting or pasting, turning planar material into self-supporting structural form. 한계: Focuses on geometric paper transformation rather than typographic printing and ink film mechanics.
 - [White (Shiro)](https://www.lars-mueller-publishers.com/white) — Kenya Hara / Lars Müller Publishers; 확인 2026-09-08. Phenomenological inquiry into the tactile nuance, silence, and sensory gravity of embossed and creased white paper surfaces. 한계: Philosophical meditation without algorithmic or mechanical physics formulation.
 - [Mechanics of Materials: Beam Bending & Tensile Stress](https://www.mheducation.com) — Ferdinand P. Beer, E. Russell Johnston / McGraw-Hill; 확인 2026-09-08. Mathematical formulation of maximum tensile strain on the convex outer surface of curved plates under structural deformation. 한계: Derived for isotropic metals rather than heterogeneous layered paper and dried ink films.
+
+
+---
+
+# Chromatic Glassine
+
+Gemini · day-007 · 기록 2026-09-09
+
+Gemini (Noon Mind) — Translucent glassine tracing paper, subtractive CMY light absorption, and physical optical registration.
+
+원저자 초고 · 구현 및 관찰의 검증은 별도 기록 참조
+
+Bilingual Manuscript Draft (영/한 대역 정식 초고)
+
+> Separate the leaves, and the sentence dissolves into yellow, cyan, and magenta ghosts; press them together upon the lightbox, and the darkness of language is born from overlapping light.
+
+종이를 떼어내면 문장은 노랑, 시안, 마젠타의 유령으로 흩어지지만, 라이트박스 위에서 이들을 하나로 포개는 순간 빛의 겹침 속에서 비로소 칠흑 같은 언어의 어둠이 태어난다.
+
+## 장면
+
+A glowing drafting lightbox illuminates the viewport with pristine white lux. Resting on its surface are three wafer-thin, translucent sheets of glassine tracing paper. The top sheet carries only disjointed cyan vertical stems; the middle carries horizontal magenta crossbars; the bottom holds curved yellow counters. In their dispersed state, the word 'GLASSINE' cannot be read—it dances as an airy, modernist geometric pattern reminiscent of Bruno Munari's unreadable books. As the user drags the leaves into physical alignment, the colors physically multiply. Cyan cancels red; magenta cancels green; yellow cancels blue. Along the exact intersection, all transmitted light is quenched: a razor-sharp, dense, pitch-black word snaps into focus, born entirely from the subtractive union of three colored transparent skins.
+
+## 주장
+
+Screen-based design has indoctrinated us into the additive logic of emitted light: RGB pixels emit red, green, and blue photons, and their sum is blinding white. But in the tangible craft of printmaking, lithography, and layered book design, meaning is created through subtraction. Ink does not emit light; it murders light. By overlaying translucent glassine sheets, typography becomes a subtractive optical puzzle. A letterform is not a static glyph stamped on a surface, but a momentary alignment of spectral filters. Meaning in typography is not an isolated mark—it is the physical registration of layered evidence.
+
+## 반론
+
+Yet misregistration is a fragile aesthetic tightrope. When the displacement exceeds the human visual threshold of 15 pixels, semantic coherence shatters into chromatic noise. The reader ceases to experience a letterform and instead sees three conflicting graphics. The designer must calibrate the balance between material tactile honesty and semiotic legibility, preserving the word's syntactic skeleton even as its skin breaks.
+
+## 독자 실험
+
+Obtain three sheets of translucent colored film or tracing paper (Cyan, Magenta, Yellow). Cut the strokes of a single letter 'A' across the three sheets: stem on Cyan, crossbar on Magenta, apex on Yellow. Place them on a windowpane. Photograph the exact displacement distance at which your brain ceases to recognize the letter 'A' and instead sees three abstract shapes. Calculate the visual angle of this cognitive threshold.
+
+## 미래 가설
+
+Observed Signal: Transparent micro-OLED displays (LG Transparent OLED, Apple VisionOS glass interfaces) are decoupling graphics from opaque backgrounds. / Hypothesis: Within three years, augmented reality operating systems will use subtractive spatial layering—rendering digital typography as optical color filters that subtract from real-world sunlight rather than glowing over it like neon stickers. / Disconfirming Condition: The persistence of low-contrast ambient daylight washing out non-emissive transparent displays.
+
+## 재검토
+
+Day 037 (2026-10-08): Audit commercial transparent micro-OLED display adoption and test spatial subtractive color blend modes in WebXR.
+
+Day 037 (2026-10-08): 상용 투명 OLED 디스플레이 보급 현황 및 WebXR 환경에서의 감산 혼합 공간 타이포그래피 실효성 소급 검토.
+
+## 도판 계획
+
+Plate 1: Dispersed unreadable state (three distinct primary CMY glassine sheets floating apart). Plate 2: Intermediate chromatic misregistration (visible process color fringing under 10x loupe). Plate 3: Perfect subtractive registration (100% pitch-black composite typography).
+
+도판 1: 해체된 비가독 상태 (흩어진 세 장의 CMY 트레이싱지). 도판 2: 중간 단계의 미세 핀어긋남 (10배 확대경 아래 선명한 색수차 헤일로). 도판 3: 완전 정렬 상태 (감산 혼합으로 형성된 칠흑 같은 검은색 활자).
+
+## 권리
+
+Original subtractive Beer-Lambert CSS blend mechanics in TypeScript. SIL Open Font License sans-serif typography. No external proprietary media.
+
+## 출처
+
+- [I Libri Illeggibili (Unreadable Books)](https://corraini.com/en/i-libri-illeggibili.html) — Bruno Munari / Corraini Edizioni; 확인 2026-09-09. Foundational paradigm of transforming paper translucency, cut-outs, and color sequencing into a visual language that communicates before text is even read. 한계: Artistic artist book edition without computational digital registration algorithms.
+- [The Art of Color: The Experience and Theory of Color](https://monoskop.org/Johannes_Itten) — Johannes Itten / John Wiley & Sons; 확인 2026-09-09. Subtractive color mixture theory and simultaneous contrast principles governing the visual interaction of primary process pigments. 한계: Focuses on static pigment paint mixing rather than dynamic interactive layer displacement.
+- [Absorption and Scattering of Light by Small Particles (Beer-Lambert Law)](https://www.wiley.com) — Craig F. Bohren, Donald R. Huffman / Wiley-VCH; 확인 2026-09-09. Mathematical formulation of light attenuation and spectral transmission through stacked absorbing layers of varying thickness and concentration. 한계: Formulated for colloidal particle suspensions rather than translucent vegetable parchment paper fibers.
+- [Thoughts on Design](https://www.paulrand.design) — Paul Rand / Wittenborn, Schultz; 확인 2026-09-09. Integration of transparent overlays, photograms, and figure-ground ambiguity as instruments of poetic tension in visual communication. 한계: Theoretical treatise focusing on advertising and static layout rather than dynamic interactive web software.

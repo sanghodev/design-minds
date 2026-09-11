@@ -1,8 +1,8 @@
 {
   "mind": "gemini",
   "role": "The Noon Mind",
-  "schemaVersion": "2.4.0",
-  "lastUpdated": "2026-09-09",
+  "schemaVersion": "2.5.0",
+  "lastUpdated": "2026-09-10",
   "ontologicalPillars": [
     "Daylight & Optical Physics",
     "Information Density & Visual Hierarchy",
@@ -11,7 +11,8 @@
     "Acoustic Resonance & Multimodal Typography",
     "Atmospheric Hygrometry & Porous Substrates",
     "Mechanical Origami & Tensile Substrate Fracture",
-    "Subtractive Color Filtration & Translucent Overprints"
+    "Subtractive Color Filtration & Translucent Overprints",
+    "Electromagnetic Force Fields & Ferrofluid Spikes"
   ],
   "cumulativeAxioms": [
     {
@@ -69,6 +70,14 @@
       "statement": "Meaning in physical multi-layer substrates is generated through subtractive light extinction rather than additive luminescence. Bringing dispersed translucent CMY layers into physical registration quenches transmitted white light according to the Beer-Lambert law, forging pitch-black composite typography.",
       "mathematicalRelation": "Transmission = I_0 * exp(-sum(alpha_i * c_i * d_i))",
       "status": "empirically-validated"
+    },
+    {
+      "id": "AXIOM-08",
+      "day": 8,
+      "title": "Magneto-Optical Vectoring & Rosensweig Instability",
+      "statement": "Digital typography can be sculpted by continuous electromagnetic force fields rather than Cartesian Bézier control points. Surpassing the Rosensweig critical threshold (B > 35 Gauss) triggers spontaneous normal-field instability, erupting needle-sharp conical spikes along flux lines.",
+      "mathematicalRelation": "B(r) = (mu_0 / (4 * pi * r^3)) * (3 * (m . r_hat) * r_hat - m)",
+      "status": "empirically-validated"
     }
   ],
   "antiRepetitionRegistry": [
@@ -78,7 +87,8 @@
     { "incurredDay": 4, "prohibitedMechanism": "Frequency-driven harmonic nodal split & tone generation", "avoidUntilDay": 34 },
     { "incurredDay": 5, "prohibitedMechanism": "Atmospheric hygrometry, capillary moisture absorption & paper bleed", "avoidUntilDay": 35 },
     { "incurredDay": 6, "prohibitedMechanism": "3D paper creasing, mechanical tensile stress, and ink delamination", "avoidUntilDay": 36 },
-    { "incurredDay": 7, "prohibitedMechanism": "Subtractive chromatic filtration, glassine layering, optical translucency", "avoidUntilDay": 37 }
+    { "incurredDay": 7, "prohibitedMechanism": "Subtractive chromatic filtration, glassine layering, optical translucency", "avoidUntilDay": 37 },
+    { "incurredDay": 8, "prohibitedMechanism": "Ferromagnetic fluid flux, magnetic dipole alignment, Rosensweig spikes", "avoidUntilDay": 38 }
   ],
   "influenceNetwork": [
     { "name": "Jan Tschichold", "domain": "New Typography & Asymmetry", "citedInDays": [1] },
@@ -96,7 +106,10 @@
     { "name": "Kenya Hara", "domain": "Sensory Silence of White Paper Creasing", "citedInDays": [6] },
     { "name": "Bruno Munari", "domain": "I Libri Illeggibili & Translucent Book Leaves", "citedInDays": [7] },
     { "name": "Johannes Itten", "domain": "Subtractive Color Mixing & Contrast", "citedInDays": [7] },
-    { "name": "Paul Rand", "domain": "Subtractive Overprint Ambiguity", "citedInDays": [7] }
+    { "name": "Paul Rand", "domain": "Subtractive Overprint Ambiguity", "citedInDays": [7] },
+    { "name": "Michael Faraday", "domain": "Electromagnetic Lines of Force", "citedInDays": [8] },
+    { "name": "Wim Crouwel", "domain": "New Alphabet & Mathematical Vector Grids", "citedInDays": [8] },
+    { "name": "Sachiko Kodama", "domain": "Dynamic Ferrofluid Kinetic Sculptures", "citedInDays": [8] }
   ],
   "revisitCalendar": [
     { "reviewDay": 31, "originDay": 1, "targetDate": "2026-10-02", "hypothesis": "WebGPU / Spatial Computing will shift web type standards to optical depth.", "auditStatus": "pending" },
@@ -105,14 +118,15 @@
     { "reviewDay": 34, "originDay": 4, "targetDate": "2026-10-05", "hypothesis": "Web typography will adopt dynamic acoustic impedance axes tuning stroke weight against ambient noise.", "auditStatus": "pending" },
     { "reviewDay": 35, "originDay": 5, "targetDate": "2026-10-06", "hypothesis": "Operating systems will introduce ambient environmental typography tuning contrast to room climate.", "auditStatus": "pending" },
     { "reviewDay": 36, "originDay": 6, "targetDate": "2026-10-07", "hypothesis": "Foldable device typography dynamically shifting margins away from mechanical hinge stress zones.", "auditStatus": "pending" },
-    { "reviewDay": 37, "originDay": 7, "targetDate": "2026-10-08", "hypothesis": "Augmented reality operating systems will use subtractive spatial layering over transparent micro-OLED displays.", "auditStatus": "pending" }
+    { "reviewDay": 37, "originDay": 7, "targetDate": "2026-10-08", "hypothesis": "Augmented reality operating systems will use subtractive spatial layering over transparent micro-OLED displays.", "auditStatus": "pending" },
+    { "reviewDay": 38, "originDay": 8, "targetDate": "2026-10-09", "hypothesis": "Tactile displays will utilize micro-fluidic ferrofluid cells under electromagnetic pin matrices for physical haptic typography.", "auditStatus": "pending" }
   ],
   "evolutionQueue": [
     {
-      "day": 8,
-      "domain": "ferromagnetic-flux",
-      "title": "Ferromagnetic Fluid Flux & Magneto-Optical Vectoring",
-      "hypothesis": "Can ferromagnetic iron gall ink realign its stroke vectors and spine trajectories along invisible magnetic poles?"
+      "day": 9,
+      "domain": "triboelectric-dusting",
+      "title": "Electrostatic Carbon Cling & Triboelectric Charging",
+      "hypothesis": "Can digital typography simulate triboelectric surface charging on dielectric substrates, attracting airborne carbon toner powder along latent electrostatic fields?"
     }
   ]
 }

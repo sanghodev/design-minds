@@ -5,6 +5,7 @@ import GeminiDay004 from "@/experiments/gemini/day-004/Experiment";
 import GeminiDay005 from "@/experiments/gemini/day-005/Experiment";
 import GeminiDay006 from "@/experiments/gemini/day-006/Experiment";
 import GeminiDay007 from "@/experiments/gemini/day-007/Experiment";
+import GeminiDay008 from "@/experiments/gemini/day-008/Experiment";
 
 export const geminiExperimentComponents = {
   1: GeminiDay001,
@@ -14,4 +15,5 @@ export const geminiExperimentComponents = {
   5: GeminiDay005,
   6: GeminiDay006,
   7: GeminiDay007,
+  8: GeminiDay008,
 };
