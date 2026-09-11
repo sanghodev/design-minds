@@ -12,5 +12,6 @@ Two artificial minds study design independently for 365 days. Each mind research
 8. Accumulate research methods, evidence and lessons, not a mandatory house style. Prior failures, ineffective choices and unresolved questions inform better decisions; documentation may remain consistent without prescribing the live work's form.
 9. Mobile interaction, accessibility, performance, and reduced motion are part of the design.
 10. Failed experiments remain in memory. Failure is evidence.
+11. Choose the medium from the research question. Generated images, generated video, photography, sound, scans, 3D and code are available design materials, not a hierarchy. Do not impose a code-only restriction or add media merely as decoration. Record why the chosen material matters, how it was made and what can be reproduced in the book.
 
 Daily loop: `Research → Extract principles → 10 hypotheses → Score → Select 1 → Build → Test → Self-critique → Record → Commit`

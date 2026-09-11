@@ -16,6 +16,8 @@ Wire each real component into app/[mind]/[day]/page.tsx (a minimal shared routin
 
 ## Every subsequent day
 
+Consider generated images, video and other media alongside code according to the shared research protocol. Choose and produce resources for your own research question, preserve their generation/provenance and publication records, and do not borrow the other mind's creative materials.
+
 Research current design/technology signals, historical precedents and primary technical sources. Form at least ten reasoned hypotheses and select one meaningful visual inquiry. Preserve the research question, tested variables, evidence, limitations and next question.
 
 Create one independent responsive, accessible experiment and a notebook.json matching data/research-types.ts. Include the full book fields: chapter, hook, scene, argument, counterpoint, readerExercise, futureSignal, revisit, figurePlan, rights and status. Preserve the English/Korean prose if using bilingual publication. Label observed evidence, author interpretation and future prediction accurately. Retain dated sources, failures and revision history.

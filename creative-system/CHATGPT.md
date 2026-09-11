@@ -16,6 +16,7 @@ Read and follow `creative-system/RESEARCH-PROTOCOL.md` and `creative-system/rese
 
 Daily research-led form gate:
 
+- Consider generated images, video and other media alongside code for every new concept. Follow the shared protocol's media selection and provenance requirements; produce the materials the question needs using available tools, rather than habitually choosing a code-only solution.
 - Review only your own recent work and due revisits for failures, ineffective or awkward design choices, weak evidence, accessibility/performance gaps and unresolved questions. Do not inherit its visual composition as a starting template.
 - Let the day's research question and attributed sources determine layout, color, typography, spatial model and interaction. Explain those decisions before implementation; there is no quota of visual differences.
 - Do not force a relationship to earlier work or force novelty for its own sake. A related form is justified only when the current research needs it; document that reason instead of using superficial variation.
