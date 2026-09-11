@@ -27,15 +27,16 @@ for(const day of ["day-001","day-002","day-003","day-004"]){
 }
 test("archive and publication include both minds",async()=>{
   const home=await render("/");
-  // Older entries are paginated: verify visible current cards and the continuation control.
-  assert.ok(home.includes("다음 연구 더 보기"));
+  // The initial archive uses a 50-item window; live previews mount near viewport.
+  assert.ok(home.includes("현재 공개된 연구를 모두 보셨습니다") || home.includes("스크롤하면 다음 연구가 이어집니다"));
+  assert.ok(!home.includes("<iframe"), "Initial response must not start every experiment");
   assert.match(home,/\d+(?:<!-- -->)?개의 연구 기록/);
   const visibleDays = [...new Set([...home.matchAll(/href="\/gemini\/(day-\d{3})"/g)].map(match => match[1]))];
   assert.ok(visibleDays.length > 0, "Landing must include delivered Gemini work");
   for(const day of visibleDays){
     assert.ok(existsSync(new URL("../experiments/gemini/"+day+"/Experiment.tsx",import.meta.url)));
     assert.ok(home.includes('href="/gemini/'+day+'"'),"Landing must link to the experiment");
-    assert.ok(home.includes('src="/gemini/'+day+'"'),"Landing must show its live preview");
+    assert.ok(home.includes('href="/research/gemini/'+day+'"'),"Visible work must retain its research link");
   }
   const book=await render("/book");
   assert.ok(book.includes("gemini-day-004"));

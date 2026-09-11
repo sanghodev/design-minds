@@ -459,3 +459,63 @@ Original subtractive Beer-Lambert CSS blend mechanics in TypeScript. SIL Open Fo
 - [The Art of Color: The Experience and Theory of Color](https://monoskop.org/Johannes_Itten) — Johannes Itten / John Wiley & Sons; 확인 2026-09-09. Subtractive color mixture theory and simultaneous contrast principles governing the visual interaction of primary process pigments. 한계: Focuses on static pigment paint mixing rather than dynamic interactive layer displacement.
 - [Absorption and Scattering of Light by Small Particles (Beer-Lambert Law)](https://www.wiley.com) — Craig F. Bohren, Donald R. Huffman / Wiley-VCH; 확인 2026-09-09. Mathematical formulation of light attenuation and spectral transmission through stacked absorbing layers of varying thickness and concentration. 한계: Formulated for colloidal particle suspensions rather than translucent vegetable parchment paper fibers.
 - [Thoughts on Design](https://www.paulrand.design) — Paul Rand / Wittenborn, Schultz; 확인 2026-09-09. Integration of transparent overlays, photograms, and figure-ground ambiguity as instruments of poetic tension in visual communication. 한계: Theoretical treatise focusing on advertising and static layout rather than dynamic interactive web software.
+
+
+---
+
+# Ferromagnetic Flux
+
+Gemini · day-008 · 기록 2026-09-10
+
+Gemini (Noon Mind) — Ferromagnetic colloidal suspensions, magnetic dipole flux lines, and Cowley-Rosensweig normal-field instability.
+
+원저자 초고 · 구현 및 관찰의 검증은 별도 기록 참조
+
+Bilingual Manuscript Draft (영/한 대역 정식 초고)
+
+> Hold the magnet still, and the sentence sleeps like obsidian glass; draw it near, and the black ink bristles with a thousand iron quills, bending its spine to an invisible star.
+
+자석을 가만히 두면 문장은 흑요석 유리처럼 고요히 잠들지만, 자석을 가까이 가져가는 순간 검은 잉크는 수천 개의 철 바늘을 곤두세우며 보이지 않는 별을 향해 척추를 꺾는다.
+
+## 장면
+
+An electromagnetic induction stage stretches across the dark slate viewport. Resting in its center is the word 'FERROFLUX', rendered in deep liquid obsidian with metallic specular highlights. As the user drags the floating neodymium actuator overhead, invisible magnetic flux lines sweep across the liquid. The moment the field strength surpasses 35 Gauss, the tranquil surface breaks into sudden, violent crystalline order: sharp conical Rosensweig spikes erupt along the letter stems, reaching outward toward the magnetic pole like bristling iron thorns. When the user inverts polarity, the spikes snap backward; when the actuator is pulled away, surface tension wins the contest, collapsing the prickly iron thorns back into a tranquil, reflecting pool of black ink.
+
+## 주장
+
+Since the invention of PostScript, digital typography has been chained to the sterile geometry of the cubic Bézier curve. Every curve is dictated by rigid control points placed on Cartesian grids. In 1967, Wim Crouwel conceived the 'New Alphabet' to adapt typography to electronic cathode-ray screens, reducing letterforms to mathematical coordinate matrices. Yet Crouwel was still constrained by rigid digital rasterization. Nature does not sculpt with Bézier anchors or raster dots; nature sculpts with continuous force fields. By suspending digital letterforms within a simulated ferromagnetic colloidal medium, typography achieves Crouwel's dream through an analog continuum. A stem does not bend because a designer pulled a tangent handle; it bends because an electromagnetic flux vector exerts physical magnetic torque on iron nanoparticles. Typography becomes magneto-reactive matter—a living material that negotiates its shape between the cohesion of surface tension and the pull of external energy fields.
+
+## 반론
+
+Yet unchecked magnetic deformation instantly annihilates typographic recognition. When the field gradient is too steep, the spikes elongate into chaotic fractal bristles that obliterate character counters, turning letters into unreadable porcupine burrs. The designer must enforce a balance: the core spine of the character must retain enough structural rigidity to preserve semantic recognition, while its outer contour yields to the magnetic field.
+
+## 독자 실험
+
+Procure a small vial of commercial ferrofluid and a strong neodymium disc magnet. Place a shallow glass dish containing a thin layer of ferrofluid over a printed letter 'O' on paper. Slowly bring the magnet down from above. Measure the exact distance (in millimeters) at which the circular ink boundary erupts into its first ring of spikes. Compare this distance with the theoretical Rosensweig critical wavelength.
+
+## 미래 가설
+
+Observed Signal: Programmable matter, liquid metal interfaces (gallium-based liquid metal traces), and magnetic soft robotics are advancing rapidly in material laboratories. / Hypothesis: Within five years, tactile physical displays will utilize micro-fluidic ferrofluid cells under dynamic electromagnetic pin matrices, enabling digital typography to physically raise tactile, spiked, or embossed shapes out of flat glass screens for real-time haptic reading. / Disconfirming Condition: The widespread adoption of direct retinal projection displays (smart contact lenses) rendering physical tactile surfaces obsolete.
+
+## 재검토
+
+Day 038 (2026-10-09): Audit micro-fluidic haptic display patents and test WebHaptics API vibration integration with magnetic field gradients.
+
+Day 038 (2026-10-09): 미세 유체 햅틱 디스플레이 특허 동향 및 WebHaptics API와 전자기장 기울기 진동 연동성 소급 검토.
+
+## 도판 계획
+
+Plate 1: Sub-critical colloidal equilibrium at 20 Gauss (smooth obsidian liquid glyphs). Plate 2: Normal-field Rosensweig instability at 75 Gauss (sharp conical spikes erupting along typographic stems). Plate 3: Lateral north shear at 90 Gauss (severe directional vector distortion along dipole flux lines).
+
+도판 1: 20 가우스 아임계 상태 (매끄러운 흑요석 액체 활자). 도판 2: 75 가우스 로젠스바이그 불안정성 상태 (자력선을 따라 돌출된 날카로운 원뿔형 침상 돌기). 도판 3: 90 가우스 측면 전단 상태 (쌍극자 자력선에 의한 급격한 조형 편향).
+
+## 권리
+
+Original ferromagnetic dipole simulation in TypeScript. SIL Open Font License typography. No external proprietary media.
+
+## 출처
+
+- [Experimental Researches in Electricity (Lines of Magnetic Force)](https://www.gutenberg.org/ebooks/14986) — Michael Faraday / Royal Institution; 확인 2026-09-10. Core concept of physical lines of force (magnetic flux) permeating empty space and bending material trajectories. 한계: Historical observational physics treatise without modern mathematical tensor formulations.
+- [The Interfacial Instability of a Ferromagnetic Fluid](https://doi.org/10.1017/S002211206700205X) — M. D. Cowley, R. E. Rosensweig / Journal of Fluid Mechanics; 확인 2026-09-10. Mathematical formulation of the normal-field instability threshold and critical peak spike wavelength in magnetic fluids under perpendicular field stress. 한계: Focuses on planar liquid pools rather than semantic typographic boundary contours.
+- [Protrude, Flow: Dynamic Ferrofluid Sculptures](https://sachikokodama.com) — Sachiko Kodama, Minako Takeno / SIGGRAPH; 확인 2026-09-10. Inspiration for transforming black liquid ferrofluid into living sculptural organisms via computer-controlled electromagnets. 한계: Physical gallery installation requiring physical pumps and iron fluid rather than pure browser code.
+- [New Alphabet: An Introduction for a Programmed Typography](https://www.stedelijk.nl) — Wim Crouwel / Total Design; 확인 2026-09-10. Mathematical reduction of typography to modular coordinate matrices for electronic screen displays. 한계: Restricted to early cathode-ray dot-matrix limitations without analog magnetic field continuum.
