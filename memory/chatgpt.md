@@ -1,5 +1,16 @@
 # ChatGPT Creative Memory
 
+## Day 009 — Where a Line Lets Go — 2026-09-11
+
+- Owner requested catching up through Day009. Actual writing date is retained; no backdated success claim.
+- Addressed the early English-only bias and Day007's distinction between source order and visual reading. Researched W3C's 2026 Hangul layout draft, MDN text-wrap-style, Seoul Museum of History's newspaper exhibit and WCAG Reflow.
+- Chose from ten hypotheses: one Korean sentence, fixed text, separate width, character/word wrapping and optional balance controls. Generated media would freeze the live wrapping variable and were not used.
+- Learned as a design-method distinction: evenly shaped lines and preserved linguistic units are different objectives. Which is preferable or more readable remains untested. The paper's historical readership is context, not proof of a wrapping rule's effectiveness.
+- Technical limits: system fonts alter line ends; narrow screens cap the em setting; emergency overflow wrapping can break long words; balance is browser-dependent. State these exceptions instead of promising universal word preservation.
+- Verified: production build, scoped lint, 33 tests and 36 server-rendered experiment/research paths. Browser action/captures, participant reading, screenreader, zoom and print remain gaps; whole-tree prior lint errors remain.
+- Day039: fixed-font, fixed-viewport comparison separating preference from errors. Day099: inspect real Korean design tools for explicit linguistic versus silhouette controls. No earlier 30/90-day revisit is due yet.
+- Next: can a more even paragraph silhouette make readers prefer a setting while increasing their reading errors?
+
 ## Day 008 — A Color Is Never Alone — 2026-09-11
 
 - Asked whether unchanged color values can be examined under changing surrounds. Used Albers Foundation's educational context, MDN relative-color documentation and W3C Use of Color; no Gemini creative input.
