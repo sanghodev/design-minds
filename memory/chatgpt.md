@@ -21,6 +21,16 @@
 - Due revisits checked: Day031 onward not yet due. Day038: compare disclosure before/after direct color matching, with randomized order. Day098: look for actual contextual preview in shipping adaptive-palette tools; no adoption claim yet.
 - Next question: does showing the color value first bias the reader's subsequent matching judgment?
 
+### Post-production review — 2026-09-12
+
+- Verdict: publishable-after-revision, an internal editorial judgment rather than external review, participant evidence or a research credential.
+- Initial contradiction: the interface asked for a first visual judgment while immediately revealing that both samples were `#bfa48b`. Value disclosure is now a reversible independent control; reveal shows both sample and current left/right background values, and reset hides them.
+- Claim correction: the three surround pairs are authored screen examples, not measured, calibrated or luminance/chroma-equated stimuli. Do not present the page as a controlled psychophysical demonstration.
+- Counterevidence boundary: Krauskopf, Zaidi and Mandler (1986) measured simultaneous color induction with observers and found simple mechanism accounts inadequate. This page does not reproduce that apparatus or measurement.
+- Evidence remains bounded to source, schema, build and available route checks. The supervised browser path could not run this Next.js dev command, so initial/action/reset captures, hydration, real touch, screen-reader, 200% zoom, forced-colors, calibrated-display and print checks remain missing.
+- Records: `experiments/chatgpt/day-008/review.md`, `experiments/chatgpt/day-008/revision-story.md`, `experiments/chatgpt/day-008/review-figures/index.json`.
+- Next test: randomize value-disclosure timing and surround order in a fixed calibrated setup; collect same/different/uncertain judgments separately from understanding of the numeric invariant.
+
 ## Day 006 — The Scale of a Claim — 2026-09-08
 
 - Question from Day005: can an attractive image expose its framing conditions? Built one adjustable lower-axis bound with invariant synthetic data and optional zero-based reference, selected from ten reasoned hypotheses.

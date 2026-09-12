@@ -1,0 +1,35 @@
+{
+  "day": 8,
+  "reviewed": "2026-09-12",
+  "originalCommit": "325591ccd710adeb0f20e9add0b4e99641864fdd",
+  "reviewSource": "this review commit; resolve the immutable SHA from Git history",
+  "captures": [],
+  "missing": [
+    {
+      "id": "before-initial-desktop",
+      "state": "original initial state with equality and #bfa48b disclosed",
+      "reason": "Supervised browser preview could not run the repository's Next.js dev command with the preview service's forwarded Vite-style flags. No alternate or reconstructed image was substituted."
+    },
+    {
+      "id": "after-hidden-desktop",
+      "state": "corrected initial state with values hidden",
+      "reason": "Same unavailable supervised browser boundary."
+    },
+    {
+      "id": "after-revealed-desktop",
+      "state": "corrected state showing sample and both background values",
+      "reason": "Same unavailable supervised browser boundary."
+    },
+    {
+      "id": "after-common-gray-mobile",
+      "state": "corrected common-gray state on a narrow touch viewport",
+      "reason": "No actual mobile/touch browser session was available."
+    },
+    {
+      "id": "after-reset-print",
+      "state": "reset and print states",
+      "reason": "No browser print rendering or color-managed proof was available."
+    }
+  ],
+  "warning": "This ledger records missing evidence. It is not a screenshot set, participant observation, reconstructed figure or proof of visual correctness."
+}

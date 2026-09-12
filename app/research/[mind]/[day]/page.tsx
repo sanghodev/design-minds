@@ -18,5 +18,6 @@ export default async function NotebookPage({params}:{params:Promise<{mind:string
   <h2>출처와 적용 범위</h2>{n.sources.map(x=><section className={s.source} key={x.url}><h3><a href={x.url}>{x.title} ↗</a></h3><small>{x.publisher} · {x.kind} · 확인 {x.accessed}</small><p>{x.use}</p><p>한계: {x.limitation}</p></section>)}
   <p className={s.note}>작성 당시의 기본 기록은 <a href={"https://github.com/sanghodev/design-minds/blob/main/experiments/"+mind+"/"+day+"/manifest.json"}>원본 manifest</a>에 보존했습니다. 이 페이지 연결 과정에서 모든 출처와 관찰 결과를 다시 검증한 것은 아닙니다. 숫자 평가는 당시의 주관적 선택 기록이며 연구 성과 지표로 사용하지 않습니다.</p>
   <h2>출판용 도판 계획</h2><p>{n.book.figurePlan}</p><p>{n.book.rights}</p>
+  {n.review?.status==="complete"&&<><h2>검토 기록</h2><p>{n.review.reviewed} · {n.review.verdict}</p><p>{n.review.summary}</p><ul>{n.review.records.map(path=><li key={path}><a href={"https://github.com/sanghodev/design-minds/blob/main/"+path}>{path.split("/").at(-1)} ↗</a></li>)}</ul></>}
   </article></main>;
 }
