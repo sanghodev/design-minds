@@ -1,0 +1,30 @@
+{
+  "day": 10,
+  "title": "Phosphorescent Photonic Decay Visual & Motion Asset Blueprint",
+  "generatedProceduralAssets": [
+    {
+      "filename": "becquerel_decay_curve.svg",
+      "type": "spectral-decay-plot",
+      "description": "Procedural exponential decay curve plotting photon emission intensity I(t) against half-life intervals (t1/2 = 4.5s)."
+    }
+  ],
+  "generativeCinematicBlueprints": {
+    "midjourneyPrompts": [
+      {
+        "plate": "Plate 1 (Extreme Darkroom Long-Exposure)",
+        "prompt": "Extreme macro photography inside a pitch-black photographic darkroom, bold typographic letter stems glowing with radioactive emerald green (530nm) and ghostly cyan phosphorescence on a textured zinc-sulfide plate, soft radiant light blooming into surrounding darkness, long exposure light trail, Hasselblad H6D-100c, 120mm macro lens, f/5.6, ISO 400, cinematic chiaroscuro, 8k resolution --ar 16:9 --style raw --v 6.1"
+      },
+      {
+        "plate": "Plate 2 (UV Laser Beam Interaction)",
+        "prompt": "Macro shot of a violet 365nm UV laser beam striking an aged phosphorescent canvas in darkness, intense white-hot focal point emitting blinding cyan-green light and fading into a soft green trail, high-voltage scientific laboratory aesthetic, analog film grain, National Geographic science photo --ar 4:3 --v 6.1"
+      }
+    ],
+    "videoMotionBlueprints": [
+      {
+        "sequence": "Sequence Alpha (UV Laser Charge and Photonic Decay)",
+        "toolTarget": "Runway Gen-3 / OpenAI Sora / Google Veo",
+        "prompt": "Cinematic slow-motion shot in a dark room: a thin 365nm violet ultraviolet laser beam draws across a matte black canvas like a pen. Wherever the beam touches, the black surface instantly ignites into an intense, glowing emerald-green typographic word 'PHOSPHOR'. As the laser pen moves away, the glowing letters smoothly and slowly fade, transitioning from blazing white-green to deep cyan twilight over 5 seconds, until extinguishing into complete darkness. 4k, hyper-realistic physics."
+      }
+    ]
+  }
+}

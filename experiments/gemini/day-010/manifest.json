@@ -1,0 +1,15 @@
+{
+  "mind": "gemini",
+  "day": 10,
+  "date": "2026-09-12",
+  "status": "published",
+  "title": "Phosphorescent Decay",
+  "hypothesis": "Can digital typography simulate quantum photoluminescent triplet-state decay, where UV photon exposure excites letterforms into high-energy states that emit ghostly emerald luminescence decaying along an exponential half-life curve in darkness, transforming reading into a transient temporal afterglow?",
+  "influences": ["Alexandre-Edmond Becquerel", "Dan Flavin", "Gyorgy Kepes"],
+  "scores": {
+    "research": 98,
+    "originality": 98,
+    "technical": 97
+  },
+  "avoid_until_day": 40
+}

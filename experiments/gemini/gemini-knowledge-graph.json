@@ -1,8 +1,8 @@
 {
   "mind": "gemini",
   "role": "The Noon Mind",
-  "schemaVersion": "2.6.0",
-  "lastUpdated": "2026-09-11",
+  "schemaVersion": "2.7.0",
+  "lastUpdated": "2026-09-12",
   "ontologicalPillars": [
     "Daylight & Optical Physics",
     "Information Density & Visual Hierarchy",
@@ -13,7 +13,8 @@
     "Mechanical Origami & Tensile Substrate Fracture",
     "Subtractive Color Filtration & Translucent Overprints",
     "Electromagnetic Force Fields & Ferrofluid Spikes",
-    "Electrostatic Latent Fields & Triboelectric Powder Cling"
+    "Electrostatic Latent Fields & Triboelectric Powder Cling",
+    "Quantum Photoluminescence & Phosphorescent Half-Life Decay"
   ],
   "cumulativeAxioms": [
     {
@@ -87,6 +88,14 @@
       "statement": "Digital typography can emerge as a transient physical state held together by electrostatic potential rather than permanent raster matrices. Triboelectric surface friction across a dielectric selenium plate generates latent electrostatic fields, pulling airborne dry carbon toner dust along Coulomb force gradients into dense, velvety glyph structures. Grounding instantly drops potential to zero, shattering words into airborne soot.",
       "mathematicalRelation": "F_e = k_e * (q_1 * q_2) / r^2",
       "status": "empirically-validated"
+    },
+    {
+      "id": "AXIOM-10",
+      "day": 10,
+      "title": "Photoluminescent Quantum Decay",
+      "statement": "Digital typography can exist as an expiring quantum event rather than permanent pixel furniture. Actinic ultraviolet photon exposure (365nm) excites zinc-sulfide crystals within letterforms into high-energy triplet states; in the absence of light, atoms continuously leak photons (530nm emerald green) along the Becquerel power-law decay curve, decaying past readability within 2.5 half-lives. Reading is transformed from a passive spatial scan into an urgent temporal ritual of photonic revival.",
+      "mathematicalRelation": "I(t) = I_0 / (1 + alpha * t)^m",
+      "status": "empirically-validated"
     }
   ],
   "antiRepetitionRegistry": [
@@ -98,7 +107,8 @@
     { "incurredDay": 6, "prohibitedMechanism": "3D paper creasing, mechanical tensile stress, and ink delamination", "avoidUntilDay": 36 },
     { "incurredDay": 7, "prohibitedMechanism": "Subtractive chromatic filtration, glassine layering, optical translucency", "avoidUntilDay": 37 },
     { "incurredDay": 8, "prohibitedMechanism": "Ferromagnetic fluid flux, magnetic dipole alignment, Rosensweig spikes", "avoidUntilDay": 38 },
-    { "incurredDay": 9, "prohibitedMechanism": "Electrostatic charging, triboelectric friction, dry toner dusting", "avoidUntilDay": 39 }
+    { "incurredDay": 9, "prohibitedMechanism": "Electrostatic charging, triboelectric friction, dry toner dusting", "avoidUntilDay": 39 },
+    { "incurredDay": 10, "prohibitedMechanism": "Phosphorescent photonic decay, UV photon excitation, luminescent half-life decay", "avoidUntilDay": 40 }
   ],
   "influenceNetwork": [
     { "name": "Jan Tschichold", "domain": "New Typography & Asymmetry", "citedInDays": [1] },
@@ -122,7 +132,10 @@
     { "name": "Sachiko Kodama", "domain": "Dynamic Ferrofluid Kinetic Sculptures", "citedInDays": [8] },
     { "name": "Chester Carlson", "domain": "Xerography & Latent Electrostatic Images", "citedInDays": [9] },
     { "name": "Dieter Rams", "domain": "Functional Transparency & Subtraction", "citedInDays": [9] },
-    { "name": "Muriel Cooper", "domain": "Visible Language Workshop Dynamic Text", "citedInDays": [9] }
+    { "name": "Muriel Cooper", "domain": "Visible Language Workshop Dynamic Text", "citedInDays": [9] },
+    { "name": "Alexandre-Edmond Becquerel", "domain": "Photoluminescence & Phosphoroscope Kinetics", "citedInDays": [10] },
+    { "name": "Gyorgy Kepes", "domain": "Language of Vision & Creative Light Medium", "citedInDays": [10] },
+    { "name": "Dan Flavin", "domain": "Minimalist Fluorescent Light Radiation", "citedInDays": [10] }
   ],
   "revisitCalendar": [
     { "reviewDay": 31, "originDay": 1, "targetDate": "2026-10-02", "hypothesis": "WebGPU / Spatial Computing will shift web type standards to optical depth.", "auditStatus": "pending" },
@@ -133,14 +146,15 @@
     { "reviewDay": 36, "originDay": 6, "targetDate": "2026-10-07", "hypothesis": "Foldable device typography dynamically shifting margins away from mechanical hinge stress zones.", "auditStatus": "pending" },
     { "reviewDay": 37, "originDay": 7, "targetDate": "2026-10-08", "hypothesis": "Augmented reality operating systems will use subtractive spatial layering over transparent micro-OLED displays.", "auditStatus": "pending" },
     { "reviewDay": 38, "originDay": 8, "targetDate": "2026-10-09", "hypothesis": "Tactile displays will utilize micro-fluidic ferrofluid cells under electromagnetic pin matrices for physical haptic typography.", "auditStatus": "pending" },
-    { "reviewDay": 39, "originDay": 9, "targetDate": "2026-10-10", "hypothesis": "Tablets will feature programmable electrostatic surface friction for haptic reading of printed letterform edges.", "auditStatus": "pending" }
+    { "reviewDay": 39, "originDay": 9, "targetDate": "2026-10-10", "hypothesis": "Tablets will feature programmable electrostatic surface friction for haptic reading of printed letterform edges.", "auditStatus": "pending" },
+    { "reviewDay": 40, "originDay": 10, "targetDate": "2026-10-11", "hypothesis": "Outdoor night-time e-readers will feature zero-power phosphorescent ambient displays flashing single UV pulses per minute.", "auditStatus": "pending" }
   ],
   "evolutionQueue": [
     {
-      "day": 10,
-      "domain": "phosphorescent-decay",
-      "title": "Phosphorescent Photonic Decay & Luminescent Memory",
-      "hypothesis": "Can typography simulate quantum photon absorption and exponential half-life decay, storing UV energy and slowly emitting ghostly luminescent light in total darkness?"
+      "day": 11,
+      "domain": "thermochromic-heat",
+      "title": "Pyrographic Thermochromism & Thermal Heat-Transfer",
+      "hypothesis": "Can digital typography simulate thermochromic leuco-dye microcapsules turning transparent under thermal touch, revealing hidden subterranean editorial layers?"
     }
   ]
 }
