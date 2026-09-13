@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%" style="background-color: #0d1117; font-family: 'Courier New', monospace;">
+  <defs>
+    <!-- Blueprint Grid -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#161b22" stroke-width="1"/>
+      <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#21262d" stroke-width="1.5"/>
+    </pattern>
+    <radialGradient id="hopliteGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#b45309" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bronzeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="50%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Grid -->
+  <rect width="1200" height="800" fill="url(#grid)" />
+
+  <!-- Technical Header Framing -->
+  <rect x="40" y="30" width="1120" height="60" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="60" y="65" fill="#f59e0b" font-size="16" font-weight="bold" letter-spacing="3">FORENSIC ARCHAEOLOGY // THE TROJAN HORSE (ΔΟΥΡΕΙΟΣ ΙΠΠΟΣ)</text>
+  <text x="820" y="65" fill="#8b949e" font-size="12" letter-spacing="1">HOMER ODYSSEY BK.VIII · STRUCTURAL TIMBER LOAD ANALYSIS</text>
+
+  <!-- Scale & Dimensions Metric Markers -->
+  <line x1="160" y1="720" x2="1040" y2="720" stroke="#8b949e" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="160" y1="710" x2="160" y2="730" stroke="#8b949e" stroke-width="2"/>
+  <line x1="1040" y1="710" x2="1040" y2="730" stroke="#8b949e" stroke-width="2"/>
+  <text x="600" y="745" fill="#8b949e" font-size="12" text-anchor="middle" letter-spacing="2">OVERALL WHEELBASE LENGTH: 14.80 METERS</text>
+
+  <line x1="100" y1="140" x2="100" y2="700" stroke="#8b949e" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="90" y1="140" x2="110" y2="140" stroke="#8b949e" stroke-width="2"/>
+  <line x1="90" y1="700" x2="110" y2="700" stroke="#8b949e" stroke-width="2"/>
+  <text x="75" y="420" fill="#8b949e" font-size="12" text-anchor="middle" transform="rotate(-90 75 420)" letter-spacing="2">CREST HEIGHT: 11.20 METERS</text>
+
+  <!-- Wooden Horse Outer Rib Truss Silhouette -->
+  <path d="M 280 700 L 290 520 L 330 460 L 420 440 L 460 380 L 520 280 L 580 180 L 640 140 L 720 160 L 740 220 L 680 300 L 680 440 L 820 460 L 860 520 L 880 700 L 830 700 L 820 560 L 760 520 L 400 520 L 340 560 L 330 700 Z" 
+        fill="none" stroke="#e6edf3" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Interior Abdominal Cavity (Hoplite Chamber) -->
+  <path d="M 430 500 L 430 450 L 480 400 L 650 400 L 660 500 Z" 
+        fill="#21262d" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4,4"/>
+  <rect x="420" y="390" width="250" height="120" fill="url(#hopliteGlow)"/>
+
+  <!-- 40 Hoplites Representation Matrix inside Abdomen -->
+  <g id="hoplites" fill="#f59e0b">
+    <!-- Row 1 -->
+    <circle cx="450" cy="425" r="5"/><circle cx="470" cy="425" r="5"/><circle cx="490" cy="425" r="5"/><circle cx="510" cy="425" r="5"/>
+    <circle cx="530" cy="425" r="5"/><circle cx="550" cy="425" r="5"/><circle cx="570" cy="425" r="5"/><circle cx="590" cy="425" r="5"/>
+    <circle cx="610" cy="425" r="5"/><circle cx="630" cy="425" r="5"/>
+    <!-- Row 2 -->
+    <circle cx="450" cy="450" r="5"/><circle cx="470" cy="450" r="5"/><circle cx="490" cy="450" r="5"/><circle cx="510" cy="450" r="5"/>
+    <circle cx="530" cy="450" r="5"/><circle cx="550" cy="450" r="5"/><circle cx="570" cy="450" r="5"/><circle cx="590" cy="450" r="5"/>
+    <circle cx="610" cy="450" r="5"/><circle cx="630" cy="450" r="5"/>
+    <!-- Row 3 -->
+    <circle cx="450" cy="475" r="5"/><circle cx="470" cy="475" r="5"/><circle cx="490" cy="475" r="5"/><circle cx="510" cy="475" r="5"/>
+    <circle cx="530" cy="475" r="5"/><circle cx="550" cy="475" r="5"/><circle cx="570" cy="475" r="5"/><circle cx="590" cy="475" r="5"/>
+    <circle cx="610" cy="475" r="5"/><circle cx="630" cy="475" r="5"/>
+    <!-- Row 4 -->
+    <circle cx="450" cy="495" r="5"/><circle cx="470" cy="495" r="5"/><circle cx="490" cy="495" r="5"/><circle cx="510" cy="495" r="5"/>
+    <circle cx="530" cy="495" r="5"/><circle cx="550" cy="495" r="5"/><circle cx="570" cy="495" r="5"/><circle cx="590" cy="495" r="5"/>
+    <circle cx="610" cy="495" r="5"/><circle cx="630" cy="495" r="5"/>
+  </g>
+
+  <!-- Technical Annotations Callouts -->
+  <path d="M 540 390 L 540 320 L 360 320" fill="none" stroke="#58a6ff" stroke-width="1.5"/>
+  <circle cx="540" cy="390" r="3" fill="#58a6ff"/>
+  <text x="350" y="315" fill="#58a6ff" font-size="11" text-anchor="end" font-weight="bold">HOPLITE PAYLOAD CHAMBER</text>
+  <text x="350" y="332" fill="#8b949e" font-size="10" text-anchor="end">40 Soldiers in Full Bronze Panoply</text>
+  <text x="350" y="347" fill="#8b949e" font-size="10" text-anchor="end">Total Bio-Mass Load: 4,120 kg</text>
+
+  <path d="M 330 240 L 460 240 L 520 280" fill="none" stroke="#58a6ff" stroke-width="1.5"/>
+  <circle cx="520" cy="280" r="3" fill="#58a6ff"/>
+  <text x="320" y="235" fill="#58a6ff" font-size="11" text-anchor="end" font-weight="bold">CONCEALED VENTILATION SLIT</text>
+  <text x="320" y="252" fill="#8b949e" font-size="10" text-anchor="end">Nostril Micro-Aperture (4.5 cm²)</text>
+  <text x="320" y="267" fill="#8b949e" font-size="10" text-anchor="end">Minimum Air Exchange: 22.4 L/min</text>
+
+  <!-- Structural Wheels & Ground Roller System -->
+  <circle cx="310" cy="700" r="32" fill="#161b22" stroke="#d97706" stroke-width="3"/>
+  <circle cx="310" cy="700" r="8" fill="#d97706"/>
+  <circle cx="850" cy="700" r="32" fill="#161b22" stroke="#d97706" stroke-width="3"/>
+  <circle cx="850" cy="700" r="8" fill="#d97706"/>
+  <line x1="260" y1="732" x2="900" y2="732" stroke="#30363d" stroke-width="4"/>
+
+  <!-- Telemetry Data Dashboard (Right Side) -->
+  <rect x="880" y="140" width="280" height="320" fill="#161b22" stroke="#30363d" stroke-width="1" rx="4"/>
+  <text x="900" y="170" fill="#f59e0b" font-size="13" font-weight="bold" letter-spacing="1">FORENSIC TELEMETRY</text>
+  
+  <text x="900" y="210" fill="#8b949e" font-size="11">TIMBER MATERIAL:</text>
+  <text x="900" y="228" fill="#e6edf3" font-size="12" font-weight="bold">Mount Ida Silver Fir (Abies alba)</text>
+  
+  <text x="900" y="260" fill="#8b949e" font-size="11">CHAMBER VOLUME:</text>
+  <text x="900" y="278" fill="#e6edf3" font-size="12" font-weight="bold">38.4 m³ (0.96 m³ / soldier)</text>
+
+  <text x="900" y="310" fill="#8b949e" font-size="11">CRITICAL HYPOXIA TIME:</text>
+  <text x="900" y="328" fill="#ef4444" font-size="12" font-weight="bold">9.2 Hours (O₂ drops &lt; 14%)</text>
+
+  <text x="900" y="360" fill="#8b949e" font-size="11">SCAEAN GATE BREACH:</text>
+  <text x="900" y="378" fill="#58a6ff" font-size="12" font-weight="bold">Gate: 3.2m / Horse: 4.1m (BREACH REQ.)</text>
+
+  <text x="900" y="415" fill="#238636" font-size="10">STATUS: MATHEMATICALLY FEASIBLE</text>
+</svg>

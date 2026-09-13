@@ -1,29 +1,34 @@
 {
   "day": 10,
-  "title": "Phosphorescent Photonic Decay Visual & Motion Asset Blueprint",
-  "generatedProceduralAssets": [
+  "title": "Schrödinger's Typography Visual & Motion Asset Blueprint",
+  "webSourcedHistoricalAssets": [
     {
-      "filename": "becquerel_decay_curve.svg",
-      "type": "spectral-decay-plot",
-      "description": "Procedural exponential decay curve plotting photon emission intensity I(t) against half-life intervals (t1/2 = 4.5s)."
+      "title": "Schrödinger's Cat Paradox Historical Diagram",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Schrodingers_cat.svg",
+      "license": "Creative Commons Attribution-Share Alike 3.0 Unported",
+      "credit": "Wikimedia Commons / Dhatfield",
+      "useInBook": "Figure 10.3 / Plate 3 Historical Reference"
     }
   ],
   "generativeCinematicBlueprints": {
     "midjourneyPrompts": [
       {
-        "plate": "Plate 1 (Extreme Darkroom Long-Exposure)",
-        "prompt": "Extreme macro photography inside a pitch-black photographic darkroom, bold typographic letter stems glowing with radioactive emerald green (530nm) and ghostly cyan phosphorescence on a textured zinc-sulfide plate, soft radiant light blooming into surrounding darkness, long exposure light trail, Hasselblad H6D-100c, 120mm macro lens, f/5.6, ISO 400, cinematic chiaroscuro, 8k resolution --ar 16:9 --style raw --v 6.1"
+        "targetFilename": "plate-01.png",
+        "title": "Plate 1 (Quantum Superposition Phase Shimmer)",
+        "prompt": "Extreme macro photography of a typographic word glowing in two simultaneous contradictory states inside a sealed dark vacuum chamber, cyan light and crimson light phase-shifting across the exact same spatial coordinates, double exposure wave interference fringes, quantum foam and floating dust motes illuminated by coherent laser light, Hasselblad H6D-100c, 120mm macro, f/4, cinematic sci-fi laboratory aesthetic, 8k resolution --ar 16:9 --style raw --v 6.1"
       },
       {
-        "plate": "Plate 2 (UV Laser Beam Interaction)",
-        "prompt": "Macro shot of a violet 365nm UV laser beam striking an aged phosphorescent canvas in darkness, intense white-hot focal point emitting blinding cyan-green light and fading into a soft green trail, high-voltage scientific laboratory aesthetic, analog film grain, National Geographic science photo --ar 4:3 --v 6.1"
+        "targetFilename": "plate-02.png",
+        "title": "Plate 2 (Decoherence Collapse Event)",
+        "prompt": "High-speed scientific capture of a quantum wavefunction collapse: the moment an observation aperture opens, a shimmering cloud of probabilistic cyan and red light violently snaps into a single crisp emerald green geometric letterform, shockwave of dissipating interference fringes, chiaroscuro lighting, National Geographic science photography style, 8k --ar 4:3 --v 6.1"
       }
     ],
     "videoMotionBlueprints": [
       {
-        "sequence": "Sequence Alpha (UV Laser Charge and Photonic Decay)",
+        "targetFilename": "video-01.mp4",
+        "title": "Sequence Alpha (The Observer's Gaze & Wavefunction Collapse)",
         "toolTarget": "Runway Gen-3 / OpenAI Sora / Google Veo",
-        "prompt": "Cinematic slow-motion shot in a dark room: a thin 365nm violet ultraviolet laser beam draws across a matte black canvas like a pen. Wherever the beam touches, the black surface instantly ignites into an intense, glowing emerald-green typographic word 'PHOSPHOR'. As the laser pen moves away, the glowing letters smoothly and slowly fade, transitioning from blazing white-green to deep cyan twilight over 5 seconds, until extinguishing into complete darkness. 4k, hyper-realistic physics."
+        "prompt": "Cinematic slow-motion shot inside a steel vacuum chamber: In total darkness, two ghostly overlapping words 'ALIVE' (glowing cyan) and 'DEAD' (glowing crimson) vibrate and phase-shift through each other like ethereal smoke. Suddenly, a mechanical camera iris in the wall clicks open, letting in a beam of white observation light. Instantly, with an electric snap, the red text dissolves into smoke and the word 'ALIVE' solidifies into blinding solid emerald green neon. Epic cinematic physics, 4k, hyper-detailed."
       }
     ]
   }

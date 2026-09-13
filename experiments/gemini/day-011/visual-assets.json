@@ -1,0 +1,55 @@
+{
+  "day": 11,
+  "title": "The Trojan Horse Visual & Motion Asset Registry",
+  "status": "fully-rendered-and-verified",
+  "verifiedAssets": [
+    {
+      "filename": "plate-01.jpeg",
+      "fileId": "1Z5EVEXdtjpE65_CKAWxYOg2i0uJhuFab",
+      "type": "cinematic-still",
+      "title": "Plate 1: Colossal Timber Monolith Outside Troy",
+      "viewUrl": "https://drive.google.com/file/d/1Z5EVEXdtjpE65_CKAWxYOg2i0uJhuFab/view?usp=drivesdk",
+      "description": "8K cinematic still of the 11-meter Trojan Horse standing outside the walls of Troy at dusk."
+    },
+    {
+      "filename": "plate-02.jfif",
+      "fileId": "1MscW3vInQYBeijf0nO-zb19tTpqifxHC",
+      "type": "anatomical-cross-section",
+      "title": "Plate 2: Forensic X-Ray Interior Cross-Section",
+      "viewUrl": "https://drive.google.com/file/d/1MscW3vInQYBeijf0nO-zb19tTpqifxHC/view?usp=drivesdk",
+      "description": "Da Vinci style anatomical and engineering cross-section of 40 hoplites inside the abdominal bay."
+    },
+    {
+      "filename": "plate-03.jpeg",
+      "fileId": "1uoSC9cX-2hRLXRAxkT7yjSk738cl-xBJ",
+      "type": "historical-narrative",
+      "title": "Plate 3: Citizens Hauling the Wooden Horse",
+      "viewUrl": "https://drive.google.com/file/d/1uoSC9cX-2hRLXRAxkT7yjSk738cl-xBJ/view?usp=drivesdk",
+      "description": "Night scene of Trojan citizens hauling the giant horse through the dismantled wall breach."
+    },
+    {
+      "filename": "plate-04.jfif",
+      "fileId": "1iN-JYvZxJFBXe51fkIVXRF-6ue6tf8vx",
+      "type": "tactical-detail",
+      "title": "Plate 4: Tactical Assembly Detail",
+      "viewUrl": "https://drive.google.com/file/d/1iN-JYvZxJFBXe51fkIVXRF-6ue6tf8vx/view?usp=drivesdk",
+      "description": "Detail rendering of the wooden hull and concealed access hatch."
+    },
+    {
+      "filename": "trojan_horse_blueprint.svg",
+      "fileId": "1etw5DbXy-XfA7syQFERyiAn8TrckS4Kc",
+      "type": "architectural-schematic",
+      "title": "Plate 5: Forensic Engineering Blueprint (Vector)",
+      "viewUrl": "https://drive.google.com/file/d/1etw5DbXy-XfA7syQFERyiAn8TrckS4Kc/view?usp=drivesdk",
+      "description": "High-resolution vector schematic with metric calipers, load vectors, and hypoxia curves."
+    },
+    {
+      "filename": "video-01.mp4",
+      "fileId": "1z-xXHkUGCGJ3eetZQKHsK6TYQySG-bqF",
+      "type": "cinematic-motion",
+      "title": "Video 1: The Breached Gate & The Hidden Breath (24fps 4K)",
+      "viewUrl": "https://drive.google.com/file/d/1z-xXHkUGCGJ3eetZQKHsK6TYQySG-bqF/view?usp=drivesdk",
+      "description": "6.1MB cinematic tracking shot penetrating through timber planks into the dark belly of the horse."
+    }
+  ]
+}

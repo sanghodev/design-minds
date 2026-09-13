@@ -1,0 +1,37 @@
+# Day 011: The Trojan Horse — Visual & Motion Prompts
+## 트로이 목마 이미지 및 영상 생성 프롬프트 가이드
+
+> **저장 위치:** 이 폴더(`day-011/assets/` 또는 `day-011/`)에 생성된 파일을 아래 지정된 파일명으로 넣어주시면 자동으로 연결됩니다.
+
+---
+
+### [도판 1] 거대한 목마와 트로이 평원
+* **저장할 파일명:** `plate-01.png` (또는 `.jpg`)
+* **추천 엔진:** Gemini Imagen 3 / Midjourney v6.1
+* **프롬프트 (복사용):**
+```text
+Cinematic historical film still of the colossal Trojan Horse standing on the windswept coastal plain of Troy at twilight, towering 11-meter hollow wooden equine siege structure constructed from weathered Mount Ida fir timber planks and bronze bolts, resting on four massive iron-banded timber wheels, ancient cyclopean stone walls and the narrow Scaean Gate in background, torchlight flickers, dramatic stormy sky, Panavision anamorphic lens, 70mm film grain, directed by Ridley Scott, hyper-realistic, 8k resolution --ar 16:9 --style raw
+```
+* **한국어 설명:** 황혼 녘 트로이 평원에 우뚝 선 11미터 높이의 거대한 전나무 목마. 거대한 청동 바퀴와 배경의 좁은 스카이아 성문, 횃불이 일렁이는 시네마틱 8K 스틸컷.
+
+---
+
+### [도판 2] 목마 내부 X-Ray 단면 및 40인의 전사
+* **저장할 파일명:** `plate-02.png` (또는 `.jpg`)
+* **추천 엔진:** Gemini Imagen 3 / Midjourney v6.1
+* **프롬프트 (복사용):**
+```text
+Forensic architectural cutaway illustration and cross-section of the Trojan Horse's hollow interior: forty ancient Greek hoplites in battered bronze cuirasses and Corinthian helmets crouching silently shoulder-to-shoulder inside the narrow wooden ribcage, spears and round shields clutched close, faint shafts of golden dusk light penetrating concealed nostril ventilation slits, chiaroscuro lighting, Da Vinci anatomical drawing meets modern forensic blueprint, ultra-detailed textures, 8k resolution --ar 4:3 --style raw
+```
+* **한국어 설명:** 목마의 좁은 복부 안에서 어깨를 맞대고 웅크린 마흔 명의 청동 갑옷 그리스 전사들. 콧구멍 환기 슬릿으로 새어 들어오는 황혼의 빛, 다빈치 해부도와 현대 법의학 청사진이 결합된 고화질 단면도.
+
+---
+
+### [영상 1] 무너진 성문과 숨죽인 전사들 (슬로모션)
+* **저장할 파일명:** `video-01.mp4`
+* **추천 엔진:** Gemini Veo / Runway Gen-3 / Sora / Luma Dream Machine
+* **프롬프트 (복사용):**
+```text
+Cinematic slow-motion 24fps tracking shot: Hundreds of Trojan citizens under flickering orange torchlight haul the colossal wooden horse through a newly dismantled breach in the massive stone walls of Troy. Ropes strain, massive wooden wheels creak and roll across dusty cobblestones. The camera smoothly glides and dollies inward toward the dark wooden flanks of the horse, seamlessly penetrating through the timber planks to reveal forty Greek warriors frozen in breathless silence inside the dark, cramped hull, sweat gleaming on bronze armor. Epic historical cinematography, 4k, hyper-detailed.
+```
+* **한국어 설명:** 트로이인들이 성벽을 허물고 밧줄로 거대한 목마를 끌고 들어오는 횃불 밤 풍경에서, 카메라가 목마의 나무 판자를 뚫고 들어가 어둠 속에서 숨죽인 전사들의 얼굴을 비추는 4K 시네마틱 트래킹 샷.
