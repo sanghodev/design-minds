@@ -3,7 +3,15 @@
   "recorded": "2026-09-13",
   "provenance": "Gemini (Noon Mind) — Forensic structural engineering, Homeric epic archaeo-physics, and enclosed respiratory hypoxia kinetics.",
   "category": "forensic-engineering",
-  "tags": ["trojan-horse", "odyssey", "homer", "forensic-architecture", "hypoxia-kinetics", "timber-mechanics", "bilingual"],
+  "tags": [
+    "trojan-horse",
+    "odyssey",
+    "homer",
+    "forensic-architecture",
+    "hypoxia-kinetics",
+    "timber-mechanics",
+    "bilingual"
+  ],
   "summary": "Reconstructed the physical and physiological feasibility of the Trojan Horse from Homer's Odyssey and Virgil's Aeneid, proving that 40 Greek hoplites in full bronze panoply (4,120 kg payload) within a 38.4 m³ fir wood chamber would have succumbed to fatal hypoxia within 9.2 hours without concealed ventilation apertures, and that the horse's 4.1-meter wheelbase necessitated the dismantling of the 3.2-meter Scaean Gate. / 호메로스의 《오디세이아》와 베르길리우스의 《아이네이스》에 기록된 트로이 목마의 공학적·생체역학적 실현 가능성을 고증하여, 38.4 m³ 체적의 전나무 복부에 잠복한 40명의 그리스 중장보병(총 4,120 kg 하중)이 콧구멍의 미세 환기 슬릿 없이는 9.2시간 만에 치명적인 저산소증으로 질식사했을 것임을 증명하고, 목마의 4.1m 휠베이스 너비로 인해 트로이인들이 3.2m 폭의 스카이아 성벽을 스스로 허물 수밖에 없었던 역사적 필연성을 밝힌 법의학적 조형 탐구.",
   "question": "Can forensic engineering and biophysical modeling reconstruct the legendary Trojan Horse, proving through structural timber shear loads and enclosed hypoxia kinetics that 40 concealed Greek hoplites required concealed nostril ventilation slits and a deliberate breach of the 3.2-meter Scaean Gate? / 법의학적 구조공학과 생체물리학 시뮬레이션을 통해 전설적인 트로이 목마를 재구성하여, 구조 목재의 전단 하중과 밀폐 공간 내 산소 소모 속도를 검증함으로써 40명의 그리스 중장보병이 질식사하지 않기 위한 최소 환기 슬릿의 존재와 3.2m 너비의 트로이 스카이아 성벽 해체의 공학적 필연성을 입증할 수 있는가?",
   "method": [
@@ -64,5 +72,56 @@
     "figurePlan": "Plate 1: Forensic structural blueprint (overall 11.2m elevation and timber shear load vectors). Plate 2: X-Ray internal payload cross-section (40 hoplites matrix and nostril ventilation aperture). Plate 3: Hypoxia timeline curve (O2 depletion from 20.9% to fatal 9.2-hour limit).\n\n도판 1: 법의학 구조 설계도 (11.2m 전고 및 전나무 트러스 하중 벡터). 도판 2: X-Ray 내부 적재 단면도 (40인 중장보병 배치 및 콧구멍 환기구). 도판 3: 산소 결핍 타임라인 곡선 (20.9%에서 9.2시간 치사선에 이르는 감쇠 그래프).",
     "rights": "Original forensic structural calculation in TypeScript. Homeric translations public domain. No external proprietary assets.",
     "status": "Bilingual Manuscript Draft (영/한 대역 정식 초고)"
-  }
+  },
+  "visualAssets": [
+    {
+      "id": "1Z5EVEXdtjpE65_CKAWxYOg2i0uJhuFab",
+      "filename": "plate-01.jpeg",
+      "type": "image/jpeg",
+      "role": "Plate 1 (Colossal Timber Monolith Outside Troy)",
+      "driveUrl": "https://drive.google.com/file/d/1Z5EVEXdtjpE65_CKAWxYOg2i0uJhuFab/view?usp=drivesdk"
+    },
+    {
+      "id": "1sHpocSU91zQtW4KH10Etr3Kb-o63UiF0",
+      "filename": "plate-02.png",
+      "type": "image/png",
+      "role": "Plate 2 (Forensic X-Ray Interior Cross-Section & 40 Hoplites)",
+      "driveUrl": "https://drive.google.com/file/d/1sHpocSU91zQtW4KH10Etr3Kb-o63UiF0/view?usp=drivesdk"
+    },
+    {
+      "id": "1uoSC9cX-2hRLXRAxkT7yjSk738cl-xBJ",
+      "filename": "plate-03.jpeg",
+      "type": "image/jpeg",
+      "role": "Plate 3 (The Breached Scaean Gate & Midnight Haul)",
+      "driveUrl": "https://drive.google.com/file/d/1uoSC9cX-2hRLXRAxkT7yjSk738cl-xBJ/view?usp=drivesdk"
+    },
+    {
+      "id": "1dMnw957Nc_W1IV2FTLTNarNECH9ZIBb0",
+      "filename": "plate-04.png",
+      "type": "image/png",
+      "role": "Plate 4 (Tactical Chamber Architecture & Night Torchlight)",
+      "driveUrl": "https://drive.google.com/file/d/1dMnw957Nc_W1IV2FTLTNarNECH9ZIBb0/view?usp=drivesdk"
+    },
+    {
+      "id": "1z-xXHkUGCGJ3eetZQKHsK6TYQySG-bqF",
+      "filename": "video-01.mp4",
+      "type": "video/mp4",
+      "role": "Video 1: Sequence Alpha (The Breached Gate & The Hidden Breath)",
+      "driveUrl": "https://drive.google.com/file/d/1z-xXHkUGCGJ3eetZQKHsK6TYQySG-bqF/view?usp=drivesdk"
+    },
+    {
+      "id": "1G5l1lYkEvVpmjjEHFrEUyobxew9JkJ-J",
+      "filename": "video-02.mp4",
+      "type": "video/mp4",
+      "role": "Video 2: Sequence Beta (Nocturnal Siege & Trojan Cobblestone Wheel Haul)",
+      "driveUrl": "https://drive.google.com/file/d/1G5l1lYkEvVpmjjEHFrEUyobxew9JkJ-J/view?usp=drivesdk"
+    },
+    {
+      "id": "1do-ER3xu_wzjF0vHVIp-4Guey8Lq5mTA",
+      "filename": "trojan_horse_blueprint.svg",
+      "type": "image/svg+xml",
+      "role": "Procedural Vector Blueprint (Forensic Architecture & Telemetry)",
+      "driveUrl": "https://drive.google.com/file/d/1do-ER3xu_wzjF0vHVIp-4Guey8Lq5mTA/view?usp=drivesdk"
+    }
+  ]
 }

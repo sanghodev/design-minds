@@ -1,0 +1,56 @@
+{
+  "day": 11,
+  "title": "The Trojan Horse Visual & Motion Asset Catalog",
+  "status": "fully-grounded-and-linked",
+  "connectedAssets": [
+    {
+      "id": "1Z5EVEXdtjpE65_CKAWxYOg2i0uJhuFab",
+      "filename": "plate-01.jpeg",
+      "type": "image/jpeg",
+      "role": "Plate 1 (Colossal Timber Monolith Outside Troy)",
+      "driveUrl": "https://drive.google.com/file/d/1Z5EVEXdtjpE65_CKAWxYOg2i0uJhuFab/view?usp=drivesdk"
+    },
+    {
+      "id": "1sHpocSU91zQtW4KH10Etr3Kb-o63UiF0",
+      "filename": "plate-02.png",
+      "type": "image/png",
+      "role": "Plate 2 (Forensic X-Ray Interior Cross-Section & 40 Hoplites)",
+      "driveUrl": "https://drive.google.com/file/d/1sHpocSU91zQtW4KH10Etr3Kb-o63UiF0/view?usp=drivesdk"
+    },
+    {
+      "id": "1uoSC9cX-2hRLXRAxkT7yjSk738cl-xBJ",
+      "filename": "plate-03.jpeg",
+      "type": "image/jpeg",
+      "role": "Plate 3 (The Breached Scaean Gate & Midnight Haul)",
+      "driveUrl": "https://drive.google.com/file/d/1uoSC9cX-2hRLXRAxkT7yjSk738cl-xBJ/view?usp=drivesdk"
+    },
+    {
+      "id": "1dMnw957Nc_W1IV2FTLTNarNECH9ZIBb0",
+      "filename": "plate-04.png",
+      "type": "image/png",
+      "role": "Plate 4 (Tactical Chamber Architecture & Night Torchlight)",
+      "driveUrl": "https://drive.google.com/file/d/1dMnw957Nc_W1IV2FTLTNarNECH9ZIBb0/view?usp=drivesdk"
+    },
+    {
+      "id": "1z-xXHkUGCGJ3eetZQKHsK6TYQySG-bqF",
+      "filename": "video-01.mp4",
+      "type": "video/mp4",
+      "role": "Video 1: Sequence Alpha (The Breached Gate & The Hidden Breath)",
+      "driveUrl": "https://drive.google.com/file/d/1z-xXHkUGCGJ3eetZQKHsK6TYQySG-bqF/view?usp=drivesdk"
+    },
+    {
+      "id": "1G5l1lYkEvVpmjjEHFrEUyobxew9JkJ-J",
+      "filename": "video-02.mp4",
+      "type": "video/mp4",
+      "role": "Video 2: Sequence Beta (Nocturnal Siege & Trojan Cobblestone Wheel Haul)",
+      "driveUrl": "https://drive.google.com/file/d/1G5l1lYkEvVpmjjEHFrEUyobxew9JkJ-J/view?usp=drivesdk"
+    },
+    {
+      "id": "1do-ER3xu_wzjF0vHVIp-4Guey8Lq5mTA",
+      "filename": "trojan_horse_blueprint.svg",
+      "type": "image/svg+xml",
+      "role": "Procedural Vector Blueprint (Forensic Architecture & Telemetry)",
+      "driveUrl": "https://drive.google.com/file/d/1do-ER3xu_wzjF0vHVIp-4Guey8Lq5mTA/view?usp=drivesdk"
+    }
+  ]
+}

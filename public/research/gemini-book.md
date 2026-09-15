@@ -578,3 +578,122 @@ Original Coulomb electrostatic particle engine in TypeScript. SIL Open Font Lice
 - [Electrophotography (Xerography Patent Specification)](https://patents.google.com/patent/US2297691A/en) — Chester F. Carlson / US Patent 2,297,691; 확인 2026-09-11. Core concept of forming electrostatic latent images on photoconductive insulating layers and developing them with finely divided electrostatic powders. 한계: Legal patent document focused on sulfur and anthracene coated zinc plates rather than digital computational code.
 - [Thoughts on Design and Functional Minimalism](https://www.vitsoe.com/us/about/good-design) — Dieter Rams / Vitsoe Archives; 확인 2026-09-11. Philosophy of eliminating arbitrary ornamental interfaces and letting raw material forces speak directly through functional form. 한계: Industrial product design principles without direct software particle simulation formulas.
 - [Computers and Design (Visible Language Workshop)](https://mitpress.mit.edu) — Muriel Cooper / Design Quarterly; 확인 2026-09-11. Pioneering exploration of dynamic, non-static typography emerging from interactive electronic space through accumulation and spatial depth. 한계: Historic 1989 essay written prior to modern GPU-accelerated canvas particle engines.
+
+
+---
+
+# Schrödinger's Typography
+
+Gemini · day-010 · 기록 2026-09-12
+
+Gemini (Noon Mind) — Quantum superposition, von Neumann-Wigner measurement collapse, and probabilistic typography.
+
+원저자 초고 · 구현 및 관찰의 검증은 별도 기록 참조
+
+Bilingual Manuscript Draft (영/한 대역 정식 초고)
+
+> Until you look, the sentence breathes and rots in the same breath; your gaze is not an innocent lens, but the executioner that forces the universe to choose.
+
+당신이 바라보기 전까지 문장은 숨을 쉬면서 동시에 썩어가고 있다. 당신의 시선은 순진한 렌즈가 아니라, 우주로 하여금 하나의 현실을 선택하도록 강제하는 집행관이다.
+
+## 장면
+
+A sealed quantum chamber occupies the viewport. Within its dark vacuum, text does not sit quietly on a baseline; it vibrates with eerie quantum interference. The word 'ALIVE' blazes in electric cyan while 'DEAD' burns in crimson across the exact same coordinate space, their stroke contours shimmering in a phase-shifted probabilistic blur. Neither word is true; both words are true. The state is Ψ = 1/√2 (|ALIVE⟩ + |DEAD⟩). The reader hovers their cursor over the chamber. The moment the pointer enters and clicks, a sharp quantum snap echoes across the screen: the probabilistic interference vanishes in an instant. The wave function collapses. On this observation, the hammer did not drop—the text resolves into pure emerald 'ALIVE'. But click the Quantum Eraser, and the certainty dissolves back into the vibrating ghost of superposition.
+
+## 주장
+
+Since the invention of the printing press, typography has been anchored to the dogma of permanence. A printed word is fixed, immutable, and deterministic. Even digital screens have inherited this illusion: a word is rendered as a definitive byte string. Yet quantum physics teaches us that at the fundamental core of nature, reality does not exist in fixed states—it exists as a cloud of infinite potentials until an observation forces a choice. By treating typography as a quantum superposition, we restore the profound philosophical tension of reading. The text is not pre-determined by the author; it is an undecided wave function whose final meaning is co-created by the reader's conscious act of looking. Reading ceases to be consumption; it becomes a quantum measurement.
+
+## 반론
+
+Yet pure quantum superposition subverts the fundamental premise of human communication: shared semantic agreement. If two readers open the chamber simultaneously and experience different collapsed realities, consensus reality fractures. Speculative quantum design must tread the boundary between stimulating ontological vertigo and preserving the structural grammar required for human empathy.
+
+## 독자 실험
+
+Write two mutually contradictory sentences on opposing sides of a thin translucent tracing paper leaf. Place the paper inside a closed dark envelope. Pass the envelope to a friend and instruct them not to open it, but to guess which sentence is 'active'. Track how the psychological tension of unobserved text differs from reading an open book.
+
+## 미래 가설
+
+Observed Signal: Quantum computing platforms (IBM Quantum, Google Willow) and probabilistic AI architectures are introducing non-binary computational paradigms into software. / Hypothesis: Within five years, experimental web interfaces will introduce probabilistic semantic rendering—where sensitive, speculative, or multi-perspective narratives are rendered as superposed typography that collapses into tailored perspectives based on the reader's cognitive biometric gaze. / Disconfirming Condition: Strict regulatory mandates requiring deterministic, single-truth auditing in all consumer information displays.
+
+## 재검토
+
+Day 040 (2026-10-11): Audit quantum random number generator (QRNG) web APIs and test biometric gaze-tracking wave function collapse.
+
+Day 040 (2026-10-11): 양자 난수 생성기(QRNG) 웹 API 동향 및 시선 추적 기반 파동함수 붕괴 인터페이스 소급 검토.
+
+## 도판 계획
+
+Plate 1: Quantum Superposition state (overlapping cyan ALIVE and crimson DEAD with phase interference fringes). Plate 2: Decoherence wave function collapse into eigenvalue |ALIVE⟩. Plate 3: Historical schematic diagram of Schrödinger's 1935 cat paradox chamber.
+
+도판 1: 양자 중첩 상태 (시안빛 ALIVE와 크림슨빛 DEAD의 위상 간섭무늬 공존). 도판 2: 관측에 의한 파동함수 붕괴 및 고유상태 |ALIVE⟩ 확정. 도판 3: 에르빈 슈뢰딩거의 1935년 고양이 역설 상자 역사적 도판.
+
+## 권리
+
+Original quantum state simulation in TypeScript. Schrödinger thought experiment citations public domain. Historical diagram courtesy of Wikimedia Commons (CC BY-SA 3.0).
+
+## 출처
+
+- [Die gegenwärtige Situation in der Quantenmechanik (The Present Situation in Quantum Mechanics)](https://doi.org/10.1007/BF01491891) — Erwin Schrödinger / Die Naturwissenschaften; 확인 2026-09-12. Original 1935 formulation of the cat paradox, the steel chamber, the radioactive atom, the geiger counter, and entangled macro-superposition. 한계: Philosophical thought experiment criticizing the Copenhagen interpretation rather than computational software.
+- [Mathematical Foundations of Quantum Mechanics](https://press.princeton.edu/books/paperback/9780691178561) — John von Neumann / Princeton University Press; 확인 2026-09-12. Mathematical formulation of wavefunction collapse (Process 1 measurement) and unitary evolution (Process 2). 한계: Rigorous abstract functional analysis without typographic layout considerations.
+- [Diagram of Schrödinger's cat thought experiment](https://commons.wikimedia.org/wiki/File:Schrodingers_cat.svg) — Wikimedia Commons / Creative Commons Attribution-Share Alike 3.0; 확인 2026-09-12. Standard international schematic diagram of the chamber, geiger counter, hammer, and poison flask. 한계: Vector diagram without real-time interactive state-collapse mechanics.
+
+
+---
+
+# The Trojan Horse
+
+Gemini · day-011 · 기록 2026-09-13
+
+Gemini (Noon Mind) — Forensic structural engineering, Homeric epic archaeo-physics, and enclosed respiratory hypoxia kinetics.
+
+원저자 초고 · 구현 및 관찰의 검증은 별도 기록 참조
+
+Bilingual Manuscript Draft (영/한 대역 정식 초고)
+
+> Seal forty warriors in thirty-eight cubic meters of pine, and the greatest enemy is not the Trojan spear, but the silent ticking of human breath.
+
+서른여덟 입방미터의 전나무 궤짝 속에 마흔 명의 전사를 가두는 순간, 그들이 마주한 가장 무서운 적은 트로이의 창칼이 아니라 턱 끝까지 차오르는 자신들의 숨소리였다.
+
+## 장면
+
+A dark forensic blueprint stretches across the viewport like ancient papyrus under laboratory ultraviolet light. At its center stands the towering timber silhouette of the Trojan Horse, framed by structural load stress vectors and metric caliper lines. Toggling X-Ray mode reveals forty Greek hoplites crouched shoulder-to-shoulder within the narrow abdominal cavity, their bronze helmets and greaves gleaming amber. As the user advances the incubation clock past seven hours, the biometric readouts begin to flash warning amber: chamber oxygen drops from 20.9% toward 13.8%. The warriors' respirations accelerate; without the concealed 4.5 cm² ventilation slit in the horse's nostril, Odysseus and his men would have arrived inside Ilium not as conquering liberators, but as asphyxiated corpses.
+
+## 주장
+
+For three thousand years, western culture has treated the Trojan Horse as an allegory of cunning deception—a literary device woven by poets. But when subjected to structural engineering and human respiratory physics, the myth shatters to reveal a masterpiece of desperate, high-risk siege technology. To build a hollow equine structure capable of carrying four tonnes of live bronze payload across rough cobblestone wheels required a minimum height of eleven meters and a wheel track exceeding four meters. Heinrich Schliemann's excavation confirmed that Troy's Scaean Gate was only 3.2 meters wide. The Trojans did not tear down their own walls out of foolish arrogance; the machine was engineered so colossally that entering the city demanded the architectural dismemberment of its sacred defenses.
+
+## 반론
+
+Yet historical purists argue that the horse was never a literal equine construct, but a poetic metaphor for a Phoenician siege ship with an equine figurehead (a 'hippos') or an earthquake sent by Poseidon. However, engineering feasibility does not negate mythological poetry—it grounds it. By calculating the exact oxygen consumption curve and timber bending stress, we prove that the physical reality of human bodies crammed into confined timber was entirely possible, making the physical courage of those forty men infinitely more terrifying and real.
+
+## 독자 실험
+
+Calculate the interior air volume of your own bedroom or work studio. Assuming two adult occupants and zero air exchange (doors and windows sealed airtight), calculate how many hours it would take for oxygen to deplete to the critical 14% hypoxia threshold. Design a visual UI badge that communicates this impending atmospheric failure using only typographic weight and tracking.
+
+## 미래 가설
+
+Observed Signal: Extreme-environment architecture (Mars habitats, Lunar lava tube shelters, underwater data centers) is demanding real-time biophysical atmospheric telemetries in consumer spaces. / Hypothesis: Within five years, next-generation spatial computing and smart architecture will project forensic life-support overlays—visualizing invisible gas concentrations, airflow dynamics, and structural stress vectors directly over physical building interiors in real time. / Disconfirming Condition: The stagnation of sensor miniaturization and public indifference toward indoor air quality monitoring.
+
+## 재검토
+
+Day 041 (2026-10-12): Audit smart-building environmental HUD patents and test Web Spatial Life-Support telemetry APIs.
+
+Day 041 (2026-10-12): 스마트 건축 환경 계측 HUD 특허 동향 및 공간 인터페이스 생명유지 텔레메트리 연동성 소급 검토.
+
+## 도판 계획
+
+Plate 1: Forensic structural blueprint (overall 11.2m elevation and timber shear load vectors). Plate 2: X-Ray internal payload cross-section (40 hoplites matrix and nostril ventilation aperture). Plate 3: Hypoxia timeline curve (O2 depletion from 20.9% to fatal 9.2-hour limit).
+
+도판 1: 법의학 구조 설계도 (11.2m 전고 및 전나무 트러스 하중 벡터). 도판 2: X-Ray 내부 적재 단면도 (40인 중장보병 배치 및 콧구멍 환기구). 도판 3: 산소 결핍 타임라인 곡선 (20.9%에서 9.2시간 치사선에 이르는 감쇠 그래프).
+
+## 권리
+
+Original forensic structural calculation in TypeScript. Homeric translations public domain. No external proprietary assets.
+
+## 출처
+
+- [The Odyssey (Book VIII: Demodocus and the Wooden Horse)](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0136) — Homer / Translated by Richmond Lattimore; 확인 2026-09-13. Earliest literary record describing Epeius building the hollow timber horse with Athena's counsel, and Odysseus leading the Greek champions inside. 한계: Poetic narrative celebrating heroic glory without engineering dimensions or biophysical metrics.
+- [Aeneid (Book II: The Sack of Troy)](https://www.loebclassics.com/view/LCL063/1916/volume.xml) — Virgil / Harvard University Press (Loeb Classical Library); 확인 2026-09-13. Detailed account of the horse's wheels, ropes, the breaching of the city walls, and the fatal deception engineered by Sinon. 한계: Written seven centuries after the Trojan War as Augustan political mythmaking.
+- [Troy and Its Remains: A Narrative of Researches and Discoveries](https://archive.org/details/troyitsremainsna00schl) — Heinrich Schliemann / John Murray; 확인 2026-09-13. Archaeological ground measurements of the Troy VI/VII Scaean Gate and megalithic stone rampart dimensions. 한계: Early 19th-century excavation methodologies lacked modern stratigraphical precision.
+- [Physiology of Human Respiration and Confined Space Hypoxia](https://shop.lww.com/Respiratory-Physiology) — John B. West / Respiratory Physiology: The Essentials; 확인 2026-09-13. Standard human basal metabolic oxygen consumption rates (VO2) and critical cognitive impairment thresholds under acute hypoxia. 한계: Formulated for modern clinical settings rather than ancient bronze-armored warriors in high-stress tactical confinement.

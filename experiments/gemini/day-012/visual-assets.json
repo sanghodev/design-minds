@@ -1,0 +1,33 @@
+{
+  "day": 12,
+  "title": "Powers of Ten Visual & Motion Asset Blueprint",
+  "generatedProceduralAssets": [
+    {
+      "filename": "powers_of_ten_cosmic_neural.svg",
+      "type": "scale-invariance-schematic",
+      "description": "High-resolution comparative blueprint contrasting the human cerebellum neuronal network (10⁻⁶m) with the cosmic web of galaxies (10⁺²⁶m), complete with power spectral density P(k) formulas."
+    }
+  ],
+  "generativeCinematicBlueprints": {
+    "midjourneyPrompts": [
+      {
+        "targetFilename": "plate-01.png",
+        "title": "Plate 1 (The Human Cerebral Connectome at 10⁻⁶m)",
+        "prompt": "Extreme macro scientific visualization of human pyramidal neurons and dendritic spines in the cerebral cortex, glowing amber bio-electric synaptic pulses firing across microscopic synaptic clefts, volumetric depth of field, multiphoton fluorescence microscopy aesthetic, dark slate background, ultra-detailed cellular textures, 8k resolution --ar 16:9 --style raw --v 6.1"
+      },
+      {
+        "targetFilename": "plate-02.png",
+        "title": "Plate 2 (The Laniakea Cosmic Web at 10⁺²⁶m)",
+        "prompt": "Astrophysical deep-space visualization of the cosmic web and Laniakea supercluster filaments connecting billions of galaxies, glowing ethereal cyan and cobalt blue gravitational light threads stretching across vast dark matter voids, James Webb Space Telescope deep field aesthetic, volumetric nebular haze, 8k resolution --ar 4:3 --v 6.1"
+      }
+    ],
+    "videoMotionBlueprints": [
+      {
+        "targetFilename": "video-01.mp4",
+        "title": "Sequence Alpha (The Seamless 42-Magnitude Cosmic Zoom)",
+        "toolTarget": "Runway Gen-3 / OpenAI Sora / Google Veo",
+        "prompt": "Hypnotic continuous ultra-smooth zoom-out shot across 42 orders of magnitude: Starting deep inside a subatomic vibrating quark, zooming outward through DNA double helix, transitioning into glowing amber human brain neurons firing synapses, zooming out past human eye to an editorial newspaper reader, outward through Earth atmosphere, solar system planetary orbits, the Milky Way spiral, and finally settling into the colossal web of galaxies at 10^26 meters, where the cosmic filaments visually dissolve into identical neural patterns. Seamless infinite zoom, 60fps, 4k cinematic documentary style."
+      }
+    ]
+  }
+}

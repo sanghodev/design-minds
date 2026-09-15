@@ -1,0 +1,33 @@
+{
+  "day": 13,
+  "title": "Gravitational Lensing Visual & Motion Asset Blueprint",
+  "generatedProceduralAssets": [
+    {
+      "filename": "einstein_ring_lensing.svg",
+      "type": "spacetime-deflection-manifold",
+      "description": "High-resolution relativistic ray deflection manifold diagram illustrating the Einstein ring radius theta_E, Schwarzschild radius R_s, and light ray geodesic curvature."
+    }
+  ],
+  "generativeCinematicBlueprints": {
+    "midjourneyPrompts": [
+      {
+        "targetFilename": "plate-01.png",
+        "title": "Plate 1 (Cosmic Gravitational Lens Distortion)",
+        "prompt": "Astrophysical deep-space visualization of a supermassive black hole gravitationally lensing an entire field of rectilinear gold typographic letterforms across deep space, text bending into concentric golden Einstein rings around a pitch-black spherical event horizon, brilliant blue accretion photon sphere, James Webb Space Telescope deep field aesthetic, volumetric nebular dust, 8k resolution --ar 16:9 --style raw --v 6.1"
+      },
+      {
+        "targetFilename": "plate-02.png",
+        "title": "Plate 2 (Editorial Page Spacetime Warp)",
+        "prompt": "Conceptual graphic design exhibition poster: clean rectilinear black-and-white Swiss typography columns on textured cream paper, warped and distorted into a perfect circular vortex by an invisible heavy sphere resting on the page, dramatic chiaroscuro raking laboratory lighting, Hasselblad H6D-100c, 100mm macro lens, ultra-detailed paper fiber and ink texture, 8k --ar 4:3 --style raw --v 6.1"
+      }
+    ],
+    "videoMotionBlueprints": [
+      {
+        "targetFilename": "video-01.mp4",
+        "title": "Sequence Alpha (The Singularity Transit & Einstein Ring Formation)",
+        "toolTarget": "Runway Gen-3 / OpenAI Sora / Google Veo",
+        "prompt": "Cinematic 60fps ultra-smooth shot: A dark spherical singularity glides slowly from left to right across a dense page of printed newspaper columns. As it passes, the straight lines of text dynamically warp, stretching and curving into glowing golden circular arcs that sweep around the black hole, forming a complete Einstein ring at maximum alignment before smoothly unbending back into straight lines in its wake. Hyper-realistic optical ray-tracing physics, 4k."
+      }
+    ]
+  }
+}

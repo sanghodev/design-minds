@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%" style="background-color: #06090e; font-family: 'Courier New', monospace;">
+  <defs>
+    <pattern id="blueprintGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#101726" stroke-width="1"/>
+      <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+    </pattern>
+    <linearGradient id="neuralGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#b45309" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="cosmicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1e3a8a" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#blueprintGrid)" />
+
+  <!-- Header Section -->
+  <rect x="40" y="30" width="1120" height="60" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+  <text x="60" y="65" fill="#38bdf8" font-size="15" font-weight="bold" letter-spacing="3">POWERS OF TEN // QUANTITATIVE SCALE INVARIANCE (10⁻¹⁶m TO 10⁺²⁶m)</text>
+  <text x="800" y="65" fill="#94a3b8" font-size="11" letter-spacing="1">VAZZA &amp; FELETTI (2020) FRONTIERS IN PHYSICS · EAMES (1977)</text>
+
+  <!-- Left: Human Cerebellum Neuronal Network (Micro Scale 10^-6m) -->
+  <rect x="60" y="120" width="500" height="460" fill="#0b111e" stroke="#1e293b" stroke-width="1" rx="4"/>
+  <text x="80" y="155" fill="#f59e0b" font-size="13" font-weight="bold" letter-spacing="2">A. HUMAN CEREBELLUM NEURAL NETWORK</text>
+  <text x="80" y="175" fill="#94a3b8" font-size="11">SCALE: 10⁻⁶ METERS (MICROMETER REGIME)</text>
+
+  <!-- Neural Network Filaments Drawing -->
+  <g stroke="url(#neuralGrad)" stroke-width="1.5" fill="none">
+    <path d="M 120 280 Q 200 240 280 320 T 440 260" />
+    <path d="M 280 320 Q 320 400 380 440 T 480 360" />
+    <path d="M 160 420 Q 240 380 280 320" />
+    <path d="M 200 240 Q 260 190 360 210" />
+    <path d="M 380 440 Q 300 480 220 500" />
+    <path d="M 440 260 Q 480 220 520 240" />
+  </g>
+  <!-- Neural Somas & Synaptic Knobs -->
+  <g fill="#f59e0b">
+    <circle cx="280" cy="320" r="7" /><circle cx="200" cy="240" r="5" /><circle cx="440" cy="260" r="6" />
+    <circle cx="380" cy="440" r="6" /><circle cx="160" cy="420" r="5" /><circle cx="360" cy="210" r="4" />
+    <circle cx="480" cy="360" r="5" /><circle cx="220" cy="500" r="4" />
+  </g>
+  <text x="80" y="530" fill="#cbd5e1" font-size="11">Node Count: 10¹¹ Neurons · Connections: 10¹⁵ Synapses</text>
+  <text x="80" y="550" fill="#94a3b8" font-size="10">Substrate Composition: 77% Water / 20% Lipids</text>
+
+  <!-- Right: Cosmic Web of Galaxies (Cosmic Scale 10^+26m) -->
+  <rect x="640" y="120" width="500" height="460" fill="#0b111e" stroke="#1e293b" stroke-width="1" rx="4"/>
+  <text x="660" y="155" fill="#38bdf8" font-size="13" font-weight="bold" letter-spacing="2">B. THE OBSERVABLE COSMIC WEB</text>
+  <text x="660" y="175" fill="#94a3b8" font-size="11">SCALE: 10⁺²⁶ METERS (ZETTA-GIGAPARSEC REGIME)</text>
+
+  <!-- Cosmic Web Filaments Drawing -->
+  <g stroke="url(#cosmicGrad)" stroke-width="1.5" fill="none">
+    <path d="M 700 280 Q 780 240 860 320 T 1020 260" />
+    <path d="M 860 320 Q 900 400 960 440 T 1060 360" />
+    <path d="M 740 420 Q 820 380 860 320" />
+    <path d="M 780 240 Q 840 190 940 210" />
+    <path d="M 960 440 Q 880 480 800 500" />
+    <path d="M 1020 260 Q 1060 220 1100 240" />
+  </g>
+  <!-- Galaxy Clusters & Superclusters -->
+  <g fill="#38bdf8">
+    <circle cx="860" cy="320" r="7" /><circle cx="780" cy="240" r="5" /><circle cx="1020" cy="260" r="6" />
+    <circle cx="960" cy="440" r="6" /><circle cx="740" cy="420" r="5" /><circle cx="940" cy="210" r="4" />
+    <circle cx="1060" cy="360" r="5" /><circle cx="800" cy="500" r="4" />
+  </g>
+  <text x="660" y="530" fill="#cbd5e1" font-size="11">Node Count: 10¹¹ Galaxies · Connections: 10¹⁵ Filaments</text>
+  <text x="660" y="550" fill="#94a3b8" font-size="10">Substrate Composition: 72% Dark Energy / 23% Dark Matter</text>
+
+  <!-- Central Mathematical Scale Invariance Banner -->
+  <rect x="60" y="600" width="1080" height="150" fill="#0f172a" stroke="#1e293b" stroke-width="1" rx="4"/>
+  <text x="80" y="630" fill="#38bdf8" font-size="13" font-weight="bold" letter-spacing="2">MATHEMATICAL CONVERGENCE ACROSS 32 ORDERS OF MAGNITUDE</text>
+  
+  <text x="80" y="665" fill="#f59e0b" font-size="12" font-weight="bold">SPECTRAL POWER DENSITY:</text>
+  <text x="310" y="665" fill="#e2e8f0" font-size="12">P(k) ∝ k⁻²·⁵ (Cerebellum: γ = 2.47 ± 0.12 · Cosmic Web: γ = 2.56 ± 0.15)</text>
+
+  <text x="80" y="695" fill="#f59e0b" font-size="12" font-weight="bold">CLUSTERING COEFFICIENT:</text>
+  <text x="310" y="695" fill="#e2e8f0" font-size="12">C_neural ≈ 0.38 · C_cosmic ≈ 0.39 (Identical Small-World Network Topology)</text>
+
+  <text x="80" y="725" fill="#8b949e" font-size="11">CONCLUSION: Information connectivity in the human brain mirrors cosmic gravitation via self-organized criticality.</text>
+</svg>

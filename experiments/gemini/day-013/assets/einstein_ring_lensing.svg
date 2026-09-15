@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%" style="background-color: #080a0f; font-family: 'Courier New', monospace;">
+  <defs>
+    <!-- Spacetime Geodesic Grid Pattern -->
+    <pattern id="spacetimeGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#161b22" stroke-width="1"/>
+      <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#21262d" stroke-width="1.5"/>
+    </pattern>
+
+    <radialGradient id="singularityGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#020305" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#080a0f" stop-opacity="0.8"/>
+      <stop offset="85%" stop-color="#f59e0b" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="photonSphereGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background Spacetime Mesh -->
+  <rect width="1200" height="800" fill="url(#spacetimeGrid)"/>
+
+  <!-- Technical Header Box -->
+  <rect x="40" y="30" width="1120" height="60" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="60" y="65" fill="#f59e0b" font-size="15" font-weight="bold" letter-spacing="3">RELATIVISTIC GENERAL GEOMETRY // EINSTEIN GRAVITATIONAL DEFLECTION MANIFOLD</text>
+  <text x="830" y="65" fill="#8b949e" font-size="12" letter-spacing="1">EDDINGTON 1919 SOLAR ECLIPSE VERIFICATION</text>
+
+  <!-- Distant Background Rectilinear Light Ray Grid (Unwarped Plane) -->
+  <g stroke="#30363d" stroke-width="1" stroke-dasharray="4,4" opacity="0.6">
+    <line x1="100" y1="160" x2="1100" y2="160"/>
+    <line x1="100" y1="240" x2="1100" y2="240"/>
+    <line x1="100" y1="320" x2="1100" y2="320"/>
+    <line x1="100" y1="400" x2="1100" y2="400"/>
+    <line x1="100" y1="480" x2="1100" y2="480"/>
+    <line x1="100" y1="560" x2="1100" y2="560"/>
+    <line x1="100" y1="640" x2="1100" y2="640"/>
+  </g>
+
+  <!-- Curved Geodesic Spacetime Ray Trajectories Bending Around Singularity (x=600, y=420) -->
+  <g fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.85">
+    <!-- Upper Deflected Rays -->
+    <path d="M 120 220 Q 420 230 540 280 T 660 280 Q 780 230 1080 220"/>
+    <path d="M 120 280 Q 460 295 560 330 T 640 330 Q 740 295 1080 280"/>
+    <path d="M 120 340 Q 480 355 570 375 T 630 375 Q 720 355 1080 340"/>
+    <!-- Lower Deflected Rays -->
+    <path d="M 120 500 Q 480 485 570 465 T 630 465 Q 720 485 1080 500"/>
+    <path d="M 120 560 Q 460 545 560 510 T 640 510 Q 740 545 1080 560"/>
+    <path d="M 120 620 Q 420 610 540 560 T 660 560 Q 780 610 1080 620"/>
+  </g>
+
+  <!-- Einstein Ring (Luminous Golden Circle at Theta_E = 140px, Center=(600, 420)) -->
+  <circle cx="600" cy="420" r="140" fill="none" stroke="#f59e0b" stroke-width="3" stroke-dasharray="10,6"/>
+  <circle cx="600" cy="420" r="145" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.4"/>
+  <circle cx="600" cy="420" r="135" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.4"/>
+
+  <!-- Schwarzschild Event Horizon (R_s = 48px) -->
+  <circle cx="600" cy="420" r="220" fill="url(#singularityGlow)"/>
+  <circle cx="600" cy="420" r="48" fill="#020305" stroke="#ef4444" stroke-width="2.5"/>
+
+  <!-- Accretion & Photon Sphere Highlights -->
+  <ellipse cx="600" cy="420" rx="180" ry="40" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.7" transform="rotate(-15 600 420)"/>
+
+  <!-- Optical Annotations & Mathematical Vector Callouts -->
+  <!-- Impact Parameter b -->
+  <line x1="420" y1="420" x2="420" y2="280" stroke="#a855f7" stroke-width="2"/>
+  <text x="405" y="355" fill="#a855f7" font-size="13" font-weight="bold" text-anchor="end">IMPACT PARAMETER (b)</text>
+
+  <!-- Deflection Angle Alpha -->
+  <path d="M 680 420 L 860 330" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <path d="M 680 420 L 860 420" stroke="#8b949e" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <path d="M 760 420 A 80 80 0 0 0 750 380" fill="none" stroke="#f59e0b" stroke-width="2"/>
+  <text x="775" y="405" fill="#f59e0b" font-size="12" font-weight="bold">DEFLECTION ANGLE α</text>
+
+  <!-- Callout: Einstein Ring Radius -->
+  <line x1="600" y1="420" x2="700" y2="320" stroke="#f59e0b" stroke-width="1.5"/>
+  <circle cx="700" cy="320" r="3" fill="#f59e0b"/>
+  <text x="715" y="315" fill="#f59e0b" font-size="12" font-weight="bold">θ_E = √( (4GM/c²) · (D_LS / D_L·D_S) )</text>
+  <text x="715" y="332" fill="#8b949e" font-size="11">ANGULAR EINSTEIN RING RADIUS</text>
+
+  <!-- Callout: Schwarzschild Event Horizon -->
+  <line x1="600" y1="420" x2="480" y2="520" stroke="#ef4444" stroke-width="1.5"/>
+  <circle cx="480" cy="520" r="3" fill="#ef4444"/>
+  <text x="470" y="525" fill="#ef4444" font-size="12" font-weight="bold" text-anchor="end">EVENT HORIZON R_s = 2GM / c²</text>
+  <text x="470" y="542" fill="#8b949e" font-size="11" text-anchor="end">Information Singularity (Zero Transmission)</text>
+
+  <!-- Telemetry Box (Bottom Right) -->
+  <rect x="780" y="600" width="380" height="150" fill="#161b22" stroke="#30363d" stroke-width="1" rx="4"/>
+  <text x="800" y="630" fill="#f59e0b" font-size="13" font-weight="bold" letter-spacing="1">RELATIVISTIC DEFLECTION METRICS</text>
+  <text x="800" y="660" fill="#8b949e" font-size="11">DEFLECTION LAW:</text>
+  <text x="800" y="678" fill="#e6edf3" font-size="12" font-weight="bold">α = 4GM / (c² · b)  [Einstein 1915]</text>
+  <text x="800" y="710" fill="#8b949e" font-size="11">1919 EXPERIMENTAL VERIFICATION:</text>
+  <text x="800" y="728" fill="#38bdf8" font-size="12" font-weight="bold">Observed: 1.98″ ± 0.12″ (Predicted: 1.75″)</text>
+</svg>
