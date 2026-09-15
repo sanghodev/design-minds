@@ -697,3 +697,121 @@ Original forensic structural calculation in TypeScript. Homeric translations pub
 - [Aeneid (Book II: The Sack of Troy)](https://www.loebclassics.com/view/LCL063/1916/volume.xml) — Virgil / Harvard University Press (Loeb Classical Library); 확인 2026-09-13. Detailed account of the horse's wheels, ropes, the breaching of the city walls, and the fatal deception engineered by Sinon. 한계: Written seven centuries after the Trojan War as Augustan political mythmaking.
 - [Troy and Its Remains: A Narrative of Researches and Discoveries](https://archive.org/details/troyitsremainsna00schl) — Heinrich Schliemann / John Murray; 확인 2026-09-13. Archaeological ground measurements of the Troy VI/VII Scaean Gate and megalithic stone rampart dimensions. 한계: Early 19th-century excavation methodologies lacked modern stratigraphical precision.
 - [Physiology of Human Respiration and Confined Space Hypoxia](https://shop.lww.com/Respiratory-Physiology) — John B. West / Respiratory Physiology: The Essentials; 확인 2026-09-13. Standard human basal metabolic oxygen consumption rates (VO2) and critical cognitive impairment thresholds under acute hypoxia. 한계: Formulated for modern clinical settings rather than ancient bronze-armored warriors in high-stress tactical confinement.
+
+
+---
+
+# Powers of Ten
+
+Gemini · day-012 · 기록 2026-09-14
+
+Gemini (Noon Mind) — Quantitative scale invariance, fractal network topologies, and cosmic-neuronal power spectral density comparison.
+
+원저자 초고 · 구현 및 관찰의 검증은 별도 기록 참조
+
+Bilingual Manuscript Draft (영/한 대역 정식 초고)
+
+> Zoom thirty orders of magnitude inward, and the brain is an expanse of filaments; zoom thirty orders outward, and the cosmos is a web of thoughts.
+
+서른 자릿수를 축소하여 파고들면 인간의 뇌는 거대한 필라멘트의 바다이며, 서른 자릿수를 확대하여 물러서면 온 우주는 하나의 거대한 생각의 그물망이다.
+
+## 장면
+
+A boundless cosmological viewport opens before the viewer. At the center sits a single coordinate crosshair. As the user spins the scroll wheel forward, the view dives into the subatomic abyss: past the skin, past the cell wall, arriving at 10⁻⁶ meters inside the human cerebral cortex. Dendritic axons flare with golden bio-electric pulses, connecting 100 billion neurons across a million billion synaptic junctions. Now spin the wheel backward: the viewpoint rockets outward through planetary orbits, stellar clusters, and galaxies, finally arriving at 10⁺²⁶ meters—the cosmic web of Laniakea. The blue cosmic filaments look staggeringly identical to the amber neural synapses just witnessed. Without the scale readout, human thought and cosmic gravitation are visually indistinguishable.
+
+## 주장
+
+In 1977, Charles and Ray Eames revolutionized human perspective with 'Powers of Ten', demonstrating that scale is not a barrier but a continuum. Yet graphic design has remained trapped in a claustrophobic anthropocentric window, designing solely for the 1-meter viewing distance of posters and screens. In 2020, astrophysicist Franco Vazza and neurosurgeon Alberto Feletti stunned the scientific world by proving that the human brain and the cosmic web share identical power-law spectral density curves P(k) ∝ k⁻²·⁵. Nature builds information networks using the same self-organizing fractal grammar whether clustering stars across billions of light years or wiring memories inside a three-pound organ. By constructing an interactive typography that scales across 42 orders of magnitude, we liberate design from flat paper into a cosmic fractal continuum.
+
+## 반론
+
+Yet scale invariance creates disorientation. If every scale looks identical, how does a reader navigate meaning? Total fractal symmetry collapses the distinction between foreground and background, macro and micro. The designer must anchor the continuum with rigorous metric waypoints and dynamic typographic contrast, ensuring that while the structure remains invariant, the semantic meaning changes with every power of ten.
+
+## 독자 실험
+
+Find a high-resolution microscopic photograph of a Purkinje brain cell and a telescopic image of the Laniakea supercluster. Trace their primary branch lines using vector beziers in your vector software. Overlay the two vector paths at 50% opacity. Measure the fractal dimension of both curves and calculate the structural deviation percentage.
+
+## 미래 가설
+
+Observed Signal: Multi-scale astronomical zoom platforms (WorldWide Telescope, NASA Eyes) and high-resolution neuroimaging (Human Connectome Project) are merging into unified zoomable data spaces. / Hypothesis: Within five years, computational encyclopedias and operating systems will eliminate hierarchical folder directories in favor of infinite-scale fractal zoom spaces—where zooming out from an email zooms through organizational networks, urban infrastructure, and planetary logistics seamlessly. / Disconfirming Condition: The persistence of flat 2D window-based multitasking paradigms in enterprise desktop software.
+
+## 재검토
+
+Day 042 (2026-10-13): Audit infinite-canvas spatial operating systems and test WebGPU multi-scale LOD tile streaming.
+
+Day 042 (2026-10-13): 무한 캔버스 공간 운영체제 특허 동향 및 WebGPU 다중 스케일 LOD 타일 스트리밍 실효성 소급 검토.
+
+## 도판 계획
+
+Plate 1: Quantitative comparative blueprint (Human cerebellum vs. Cosmic web side-by-side with P(k) equations). Plate 2: Continuous scale timeline from 10⁻¹⁶m to 10⁺²⁶m with 7 key waypoints. Plate 3: High-resolution vector overlay showing identical power-law clustering.
+
+도판 1: 정량적 비교 공학 청사진 (소뇌 신경망 vs 우주 거대구조 P(k) 분광 밀도 대조). 도판 2: 10⁻¹⁶m에서 10⁺²⁶m에 이르는 7대 핵심 이정표 연속 스케일 타임라인. 도판 3: 동일한 멱법칙 클러스터링을 입증하는 고해상도 벡터 오버레이.
+
+## 권리
+
+Original quantitative scale engine in TypeScript. Mathematical formulas based on Vazza & Feletti (2020) open access. No external proprietary media.
+
+## 출처
+
+- [Powers of Ten: A Film Dealing with the Relative Size of Things in the Universe](https://www.eamesoffice.com/education/powers-of-ten/) — Charles & Ray Eames / Office of Charles and Ray Eames (IBM); 확인 2026-09-14. Foundational cinematic paradigm illustrating exponential scale variation from Picnic in Chicago outward to cosmic clusters and inward to a single carbon atom quark. 한계: Linear analog documentary film from 1977 lacking interactive real-time computational scrubbing.
+- [The Quantitative Comparison Between the Neuronal Network and the Cosmic Web](https://doi.org/10.3389/fphy.2020.525731) — Franco Vazza, Alberto Feletti / Frontiers in Physics; 확인 2026-09-14. Groundbreaking empirical physics paper calculating identical power spectrum density P(k) and clustering coefficients between the human cerebellum and the cosmic web. 한계: Strictly statistical astrophysics and neuroanatomy paper without interactive visual graphic software.
+- [The Fractal Geometry of Nature](https://archive.org/details/fractalgeometryo00mand) — Benoit B. Mandelbrot / W. H. Freeman and Company; 확인 2026-09-14. Mathematical theory of self-similarity and fractal dimension proving that complex branching forms retain structural invariance across scales. 한계: Theoretical geometry without focus on typographic readability or web interface ergonomics.
+
+
+---
+
+# Gravitational Lensing
+
+Gemini · day-013 · 기록 2026-09-14
+
+Gemini (Noon Mind) — General relativity, geodesic light deflection manifolds, and semantic gravitational lensing.
+
+원저자 초고 · 구현 및 관찰의 검증은 별도 기록 참조
+
+Bilingual Manuscript Draft (영/한 대역 정식 초고)
+
+> Give a word enough ideological mass, and it will bend the straight lines of truth into an inescapable golden ring.
+
+어떤 단어에 거대한 이념적 질량을 부여하는 순간, 그 단어는 진실의 곧은 직선마저 제 주위를 감도는 황금빛 고리로 휘어놓는다.
+
+## 장면
+
+A vast field of rectilinear editorial text covers the dark viewport, speaking in clean, orderly columns of journalistic fact and historical records. But as the user drags a supermassive singularity across the page, the flat Cartesian plane melts. The straight sentences approaching the core do not merely warp—they curve into breathtaking, concentric golden halos. At the exact threshold of the Einstein radius, a single sentence fractures and mirrors into two luminous circular arcs flanking the central void. Cross the Schwarzschild event horizon, and the text is swallowed into pure obsidian silence. The observer realizes with a chill that the text is not broken; it is simply traveling along the only straight path available through curved spacetime.
+
+## 주장
+
+Modern graphic design has worshipped the Cartesian grid since the Renaissance: axes of X and Y, straight margins, right angles, and parallel columns. We pretend that visual information exists in an objective, flat space. But in Einstein's universe, mass tells spacetime how to curve, and spacetime tells light how to bend. Ideological power operates on identical physics. When an institution or ideology accumulates immense narrative mass—whether national identity, corporate hegemony, or religious dogma—it curves the cultural space around it. Objective facts entering its gravitational sphere cannot maintain their linear trajectory; they are gravitationally lensed, amplified, distorted, and mirrored into compliant arcs. Typography must acknowledge this truth: there is no neutral reading grid in the vicinity of power.
+
+## 반론
+
+Yet severe gravitational lensing obliterates syntactic legibility. If every sentence is pulled into an Einstein arc, the reader cannot decipher individual characters. The designer must maintain an impact parameter boundary: the core singularity must possess enough gravitational pull to visibly demonstrate curvature, while leaving outer orbital zones intact for comparative reading.
+
+## 독자 실험
+
+Find a piece of clear, thick curved glass (such as the round base of a wine glass or a heavy magnifying lens). Place it directly over a printed newspaper editorial. Observe how the straight horizontal lines of text curve into semi-circular arcs as you slide the glass across the page. Measure the optical deflection distance and map the distortion threshold in your design notebook.
+
+## 미래 가설
+
+Observed Signal: Adaptive AR lenses, gaze-directed focal deformation in spatial vision headsets, and non-Euclidean digital gaming environments are becoming ubiquitous. / Hypothesis: Within five years, next-generation spatial computing operating systems will feature semantic gravitational typography—where urgent alerts and core conversational themes project localized informational gravity, naturally bending secondary background notifications into peripheral orbital arcs around the user's primary focus. / Disconfirming Condition: Public rejection of spatial focal warping in favor of rigid, flat 2D window panes.
+
+## 재검토
+
+Day 043 (2026-10-14): Audit spatial operating system semantic gravity patents and test WebXR non-Euclidean optical shader performance.
+
+Day 043 (2026-10-14): 공간 컴퓨팅 시맨틱 중력 특허 동향 및 WebXR 비유클리드 광학 셰이더 성능 소급 검토.
+
+## 도판 계획
+
+Plate 1: Unwarped rectilinear editorial manifold. Plate 2: Relativistic deflection showing Einstein ring formation and Schwarzschild event horizon core. Plate 3: Geodesic ray deflection schematic (impact parameter b vs. deflection angle alpha).
+
+도판 1: 왜곡 없는 평면 기사 매니폴드. 도판 2: 아인슈타인 링 형성 및 슈바르츠실트 사건의 지평선 상대론적 굴절. 도판 3: 측지선 광선 굴절 도면 (충돌 매개변수 b 대 굴절각 alpha).
+
+## 권리
+
+Original general relativistic ray-deflection canvas in TypeScript. SIL Open Font License typography. No external proprietary assets.
+
+## 출처
+
+- [Die Grundlage der allgemeinen Relativitätstheorie (The Foundation of the General Theory of Relativity)](https://doi.org/10.1002/andp.19163540702) — Albert Einstein / Annalen der Physik; 확인 2026-09-14. Mathematical derivation of spacetime metric curvature tensor G_uv and the deflection of light rays grazing mass M by angle alpha = 4GM / c^2 b. 한계: Rigorous 1916 tensor calculus treatise without digital pixel rendering models.
+- [A Determination of the Deflection of Light by the Sun's Gravitational Field (1919 Solar Eclipse Expedition)](https://doi.org/10.1098/rsta.1920.0009) — Arthur S. Eddington, Frank W. Dyson, Charles Davidson / Philosophical Transactions of the Royal Society; 확인 2026-09-14. Historical empirical proof measuring 1.98 arcseconds deflection during the May 29, 1919 total solar eclipse at Principe Island. 한계: Observational photographic glass plates measuring stellar displacement rather than continuous text manipulation.
+- [Nebulae as Gravitational Lenses](https://doi.org/10.1103/PhysRev.51.290) — Fritz Zwicky / Physical Review; 확인 2026-09-14. Theoretical formulation predicting that extragalactic nebulae act as gravitational telescopes producing ring-like magnifications of background objects. 한계: Concise 1937 letter to the editor establishing astronomical feasibility without computational algorithms.
