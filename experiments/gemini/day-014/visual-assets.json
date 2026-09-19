@@ -1,0 +1,33 @@
+{
+  "day": 14,
+  "title": "Cellular Automata & Emergent Typographic Ecosystems",
+  "generatedProceduralAssets": [
+    {
+      "filename": "conway_cellular_automata_typography.svg",
+      "type": "complex-systems-schematic",
+      "description": "High-resolution architectural vector schematic of John Conway's Game of Life transition rules, 2D Moore neighborhood kinematics, 4-phase glider translation vectors, archetypal cellular morphologies (Still Lifes, Oscillators, Spaceships), and Langton's lambda phase transition spectrum demonstrating Class IV computation at the Edge of Chaos."
+    }
+  ],
+  "generativeCinematicBlueprints": {
+    "midjourneyPrompts": [
+      {
+        "targetFilename": "plate-01.png",
+        "title": "Plate 1 (The Emergent Typographic Biome)",
+        "prompt": "Macro documentary photograph of an ultra-high-resolution luminescent silicon micro-LED cellular automata matrix displaying bold Helvetica letterforms, letterforms spontaneously calving into tiny glowing emerald Conway gliders that crawl across the obsidian grid, intricate micro-circuitry traces, depth of field, raking studio lighting, Hasselblad H6D-100c, 120mm macro lens, 8k resolution --ar 16:9 --style raw --v 6.1"
+      },
+      {
+        "targetFilename": "plate-02.png",
+        "title": "Plate 2 (Glider Gun Collision at the Edge of Chaos)",
+        "prompt": "Futuristic laboratory optical visualization: dual Gosper glider guns made of pulsating cyan neon cellular grids firing rhythmic streams of gliders that collide at a precise focal point, synthesizing a glowing golden alphabet glyph out of constructive cellular interference, volumetric dust motes, dark minimalist scientific aesthetic, 8k --ar 4:3 --style raw --v 6.1"
+      }
+    ],
+    "videoMotionBlueprints": [
+      {
+        "targetFilename": "video-01.mp4",
+        "title": "Sequence Alpha (Living Syntactic Glider Emission)",
+        "toolTarget": "Runway Gen-3 / OpenAI Sora / Google Veo",
+        "prompt": "Cinematic 60fps ultra-fluid shot: An obsidian black display board illuminated by a fine grid of phosphor-green square cells. The word 'EMERGENCE' stands sharply defined. Suddenly, the serifs of the letters begin to oscillate in Conway's Game of Life patterns. From each letter, tiny five-cell gliders detach and march diagonally across the empty dark space between words, colliding with punctuation marks that burst into pulsating cellular blossoms before restabilizing. Photorealistic phosphor persistence glow, 4k."
+      }
+    ]
+  }
+}

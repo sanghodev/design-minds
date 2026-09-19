@@ -1,0 +1,33 @@
+{
+  "day": 16,
+  "title": "Synaptic Plasticity & Hebbian Learning Typography",
+  "generatedProceduralAssets": [
+    {
+      "filename": "hebbian_synaptic_typography.svg",
+      "type": "neural-plasticity-schematic",
+      "description": "High-resolution architectural vector schematic of Donald Hebb's 1949 synaptic learning rule, Oja's stable normalization equation, asymmetric Spike-Timing-Dependent Plasticity (STDP) learning curve, synaptic cleft neurotransmitter release, variable font weight/kerning transformation, and the cognitive connectome comparison matrix."
+    }
+  ],
+  "generativeCinematicBlueprints": {
+    "midjourneyPrompts": [
+      {
+        "targetFilename": "plate-01.png",
+        "title": "Plate 1 (The Cognitive Connectome Editorial Page)",
+        "prompt": "Macro conceptual photography of an illuminated editorial typography page: glowing violet and electric cyan neural dendritic fibers physically weaving between bold printed letterforms, synaptic boutons docking onto serif edges like bioluminescent fireflies, textured heavy cotton paper substrate, shallow depth of field, raking laboratory microscope lighting, Hasselblad H6D-100c, 100mm macro, 8k resolution --ar 16:9 --style raw --v 6.1"
+      },
+      {
+        "targetFilename": "plate-02.png",
+        "title": "Plate 2 (Hebbian Long-Term Potentiation of Meaning)",
+        "prompt": "Abstract scientific visualization of human gaze saccades over text: two key words 'NEURON' and 'FIRE' glowing with intense golden-emerald bioluminescence as their letterform weights physically thicken and magnetic dendritic axon bridges snap across the margin between them, dark obsidian void background, volumetric synaptic dust, 8k --ar 4:3 --style raw --v 6.1"
+      }
+    ],
+    "videoMotionBlueprints": [
+      {
+        "targetFilename": "video-01.mp4",
+        "title": "Sequence Alpha (Saccadic Potentiation & Kerning Contraction)",
+        "toolTarget": "Runway Gen-3 / OpenAI Sora / Google Veo",
+        "prompt": "Cinematic 60fps macro tracking shot: A reader's gaze beam leaps rapidly across a paragraph of ultra-thin hairline typography. Wherever the gaze dwells, words spark with violet bio-electrical pulses. As the gaze repeatedly jumps between two non-adjacent concepts, a glowing axon filament sprouts across the whitespace, physically pulling the two words toward each other as their font weights swell from delicate Hairline 100 into massive, commanding Ultra-Black 900. Smooth biological rewiring motion, 4k."
+      }
+    ]
+  }
+}

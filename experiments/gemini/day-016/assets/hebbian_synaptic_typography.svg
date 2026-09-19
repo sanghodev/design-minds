@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" width="1200" height="850">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07090e" />
+      <stop offset="50%" stop-color="#0c1017" />
+      <stop offset="100%" stop-color="#080a0f" />
+    </linearGradient>
+    <linearGradient id="synapseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="ltpGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <linearGradient id="ltdGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#f87171" />
+    </linearGradient>
+    <pattern id="gridPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1f293d" stroke-width="0.7" opacity="0.35"/>
+    </pattern>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="850" fill="url(#bgGrad)" />
+  <rect width="1200" height="850" fill="url(#gridPattern)" />
+
+  <!-- Structural Border -->
+  <rect x="25" y="25" width="1150" height="800" fill="none" stroke="#1e293b" stroke-width="1.5" rx="8" />
+  <rect x="35" y="35" width="1130" height="780" fill="none" stroke="#0f172a" stroke-width="1" rx="4" />
+
+  <!-- Header Section -->
+  <g transform="translate(55, 75)">
+    <text font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="11" font-weight="700" fill="#8b5cf6" letter-spacing="3">DESIGN MINDS · NOON MIND PROTOCOL · DAY 016</text>
+    <text y="30" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="24" font-weight="800" fill="#f8fafc" letter-spacing="-0.5">Synaptic Plasticity &amp; Hebbian Learning Typography</text>
+    <text y="52" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="13" font-weight="400" fill="#94a3b8">Adaptive Neural Connectome in Visual Reading · Spike-Timing-Dependent Plasticity (STDP) &amp; Oja's Normalization</text>
+  </g>
+
+  <!-- Status / Metric Badge (Top Right) -->
+  <g transform="translate(930, 65)">
+    <rect x="0" y="0" width="210" height="58" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="15" y="22" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748b">CONNECTOME PLASTICITY</text>
+    <text x="15" y="42" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#8b5cf6">STDP CO-ACTIVATION</text>
+    <circle cx="185" cy="28" r="6" fill="#8b5cf6" filter="url(#neonGlow)" />
+  </g>
+
+  <!-- Left Column: The Mathematical Mechanics of Synaptic Weight -->
+  <g transform="translate(55, 160)">
+    <rect x="0" y="0" width="340" height="420" rx="6" fill="#0b0f19" stroke="#1e293b" stroke-width="1" />
+    <text x="20" y="28" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#a78bfa" letter-spacing="1">1. HEBBIAN PLASTICITY EQUATIONS</text>
+    <text x="20" y="46" font-family="'Inter', sans-serif" font-size="11" fill="#64748b">Donald Hebb (1949) &amp; Oja's Rule (1982)</text>
+
+    <!-- Equation 1: Classic Hebb -->
+    <g transform="translate(20, 65)">
+      <rect x="0" y="0" width="300" height="64" rx="4" fill="#070a11" stroke="#1e293b" />
+      <text x="15" y="22" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#a78bfa">CLASSIC HEBBIAN UPDATE:</text>
+      <text x="15" y="46" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#f8fafc">Δw_ij = η · x_i · x_j - γ · w_ij</text>
+    </g>
+
+    <!-- Equation 2: Oja's Normalization -->
+    <g transform="translate(20, 140)">
+      <rect x="0" y="0" width="300" height="64" rx="4" fill="#070a11" stroke="#1e293b" />
+      <text x="15" y="22" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#38bdf8">OJA'S STABLE NORMALIZATION:</text>
+      <text x="15" y="46" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#f8fafc">Δw_i = η y (x_i - y · w_i)</text>
+    </g>
+
+    <!-- Synaptic Potentiation Diagram -->
+    <g transform="translate(20, 220)">
+      <text font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#94a3b8">SYNAPSE POTENTIATION DYNAMICS:</text>
+      <g transform="translate(20, 20)">
+        <!-- Pre-synaptic Bouton -->
+        <path d="M 10 30 C 10 10, 50 10, 60 25 C 70 35, 80 25, 80 45 C 80 65, 10 65, 10 30 Z" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5" />
+        <text x="40" y="42" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#c4b5fd" text-anchor="middle">PRE (x_i)</text>
+
+        <!-- Neurotransmitter Vesicles -->
+        <circle cx="55" cy="45" r="3" fill="#10b981" />
+        <circle cx="65" cy="38" r="3" fill="#10b981" />
+        <circle cx="70" cy="50" r="3" fill="#10b981" />
+
+        <!-- Synaptic Cleft Arrow -->
+        <path d="M 85 45 L 135 45" stroke="#10b981" stroke-width="1.5" stroke-dasharray="2,2" />
+        <text x="110" y="38" font-family="'JetBrains Mono', monospace" font-size="8" fill="#10b981" text-anchor="middle">LTP</text>
+
+        <!-- Post-synaptic Spine -->
+        <path d="M 140 25 C 140 45, 140 45, 160 35 C 180 25, 200 45, 200 65 L 140 65 Z" fill="#1e293b" stroke="#06b6d4" stroke-width="1.5" />
+        <text x="170" y="52" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#67e8f9" text-anchor="middle">POST (x_j)</text>
+      </g>
+    </g>
+
+    <text x="20" y="355" font-family="'Inter', sans-serif" font-size="10.5" fill="#94a3b8">
+      Neurons that fire together wire together. When saccadic gaze sequentially dwells on Word A then Word B within the temporal window (Δt &lt; 40ms), synaptic weight w_ij increases, tightening kerning and thickening font stem weight.
+    </text>
+  </g>
+
+  <!-- Center Column: Spike-Timing-Dependent Plasticity (STDP) Learning Window -->
+  <g transform="translate(420, 160)">
+    <rect x="0" y="0" width="370" height="420" rx="6" fill="#0b0f19" stroke="#1e293b" stroke-width="1" />
+    <text x="20" y="28" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#10b981" letter-spacing="1">2. ASYMMETRIC STDP LEARNING CURVE</text>
+    <text x="20" y="46" font-family="'Inter', sans-serif" font-size="11" fill="#64748b">Causal Semantic Potentiation vs. Regressive Depression</text>
+
+    <!-- STDP Graph -->
+    <g transform="translate(40, 75)">
+      <!-- Axes -->
+      <line x1="0" y1="110" x2="290" y2="110" stroke="#475569" stroke-width="1.5" />
+      <line x1="145" y1="10" x2="145" y2="210" stroke="#475569" stroke-width="1.5" />
+
+      <!-- Labels -->
+      <text x="285" y="105" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8">Δt (ms)</text>
+      <text x="150" y="20" font-family="'JetBrains Mono', monospace" font-size="9" fill="#10b981">+Δw (LTP)</text>
+      <text x="150" y="205" font-family="'JetBrains Mono', monospace" font-size="9" fill="#ef4444">-Δw (LTD)</text>
+
+      <!-- Tick marks -->
+      <text x="45" y="125" font-family="'JetBrains Mono', monospace" font-size="8" fill="#64748b">-50ms</text>
+      <text x="140" y="125" font-family="'JetBrains Mono', monospace" font-size="8" fill="#64748b">0</text>
+      <text x="235" y="125" font-family="'JetBrains Mono', monospace" font-size="8" fill="#64748b">+50ms</text>
+
+      <!-- LTP Positive Curve (Δt > 0: Forward Causal Saccade) -->
+      <path d="M 145 30 Q 170 35, 195 75 T 270 110" fill="none" stroke="#10b981" stroke-width="3" filter="url(#neonGlow)" />
+      <text x="190" y="55" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#10b981">FORWARD SACCADE</text>
+      <text x="190" y="68" font-family="'Inter', sans-serif" font-size="8" fill="#a7f3d0">Long-Term Potentiation (LTP)</text>
+
+      <!-- LTD Negative Curve (Δt < 0: Regressive Saccade / Disorientation) -->
+      <path d="M 20 110 Q 95 110, 120 150 T 145 190" fill="none" stroke="#ef4444" stroke-width="3" />
+      <text x="10" y="160" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#ef4444">REGRESSION</text>
+      <text x="10" y="173" font-family="'Inter', sans-serif" font-size="8" fill="#fca5a5">Long-Term Depression (LTD)</text>
+    </g>
+
+    <!-- Explanatory Box -->
+    <g transform="translate(20, 310)">
+      <rect x="0" y="0" width="330" height="90" rx="4" fill="#070a11" stroke="#1e293b" />
+      <text x="12" y="18" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#f8fafc">TEMPORAL CODING IN READING:</text>
+      <text x="12" y="34" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">
+        • Δt &gt; 0 (Pre precedes Post): Normal fluent forward reading strengthens
+      </text>
+      <text x="22" y="48" font-family="'Inter', sans-serif" font-size="9" fill="#10b981">semantic bond w_ij, fusing words into coherent chunked phrases.</text>
+      <text x="12" y="64" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">
+        • Δt &lt; 0 (Post precedes Pre): Confusion or backward regressive saccade
+      </text>
+      <text x="22" y="78" font-family="'Inter', sans-serif" font-size="9" fill="#f87171">triggers synaptic depression, preventing premature phrase freeze.</text>
+    </g>
+  </g>
+
+  <!-- Right Column: Typographic Morphological Transformation -->
+  <g transform="translate(815, 160)">
+    <rect x="0" y="0" width="330" height="420" rx="6" fill="#0b0f19" stroke="#1e293b" stroke-width="1" />
+    <text x="20" y="28" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#38bdf8" letter-spacing="1">3. CONNECTOME TYPOGRAPHY</text>
+    <text x="20" y="46" font-family="'Inter', sans-serif" font-size="11" fill="#64748b">Variable Weight (wght) &amp; Kerning Contraction</text>
+
+    <!-- State 1: Low Weight (Unvisited / Hairline) -->
+    <g transform="translate(20, 65)">
+      <rect x="0" y="0" width="290" height="75" rx="4" fill="#070a11" stroke="#1e293b" />
+      <text x="12" y="18" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#64748b">UNVISITED SUBSTRATE (w_ij = 0.05)</text>
+      <text x="25" y="52" font-family="'Inter', sans-serif" font-size="20" font-weight="200" fill="#64748b" letter-spacing="6">NEURON · FIRE</text>
+      <text x="195" y="45" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#64748b">wght: 100</text>
+      <text x="195" y="58" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#64748b">kern: +40px</text>
+    </g>
+
+    <!-- State 2: Mid Weight (Moderate Potentiation) -->
+    <g transform="translate(20, 150)">
+      <rect x="0" y="0" width="290" height="75" rx="4" fill="#070a11" stroke="#1e293b" />
+      <text x="12" y="18" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#a78bfa">POTENTIATED PAIR (w_ij = 0.55)</text>
+      <text x="25" y="52" font-family="'Inter', sans-serif" font-size="20" font-weight="600" fill="#c4b5fd" letter-spacing="2">NEURON·FIRE</text>
+      <!-- Connecting axon line -->
+      <line x1="108" y1="46" x2="118" y2="46" stroke="#8b5cf6" stroke-width="2" />
+      <text x="195" y="45" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#a78bfa">wght: 500</text>
+      <text x="195" y="58" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#a78bfa">kern: +15px</text>
+    </g>
+
+    <!-- State 3: Consolidated High Weight (Maximal Consolidation) -->
+    <g transform="translate(20, 235)">
+      <rect x="0" y="0" width="290" height="95" rx="4" fill="#070a11" stroke="#10b981" stroke-width="0.8" />
+      <text x="12" y="18" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#10b981">CONSOLIDATED MEMORY (w_ij = 0.95)</text>
+      <text x="20" y="54" font-family="'Inter', sans-serif" font-size="22" font-weight="900" fill="#f8fafc" letter-spacing="-0.5">NEURON-FIRE</text>
+      <!-- Thick synaptic ligature bridge -->
+      <path d="M 120 48 Q 125 42, 130 48" fill="none" stroke="#10b981" stroke-width="4" filter="url(#neonGlow)" />
+      <text x="195" y="45" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#10b981">wght: 900 (Black)</text>
+      <text x="195" y="58" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#10b981">kern: -4px (Fused)</text>
+      <text x="195" y="71" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#34d399">Axon Ligature</text>
+    </g>
+
+    <text x="20" y="355" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">
+      Reading transforms from a passive scan into an active architectural synthesis. Frequently correlated ideas physically fuse together into dense semantic monuments.
+    </text>
+  </g>
+
+  <!-- Bottom Section: The Cognitive Connectome Paradigm -->
+  <g transform="translate(55, 605)">
+    <rect x="0" y="0" width="1090" height="190" rx="6" fill="#0b0f19" stroke="#1e293b" stroke-width="1" />
+    <text x="25" y="28" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#f8fafc" letter-spacing="1">4. THE COGNITIVE CONNECTOME TYPOGRAPHY PARADIGM (HEBB 1949 · CAJAL 1894)</text>
+    <text x="25" y="46" font-family="'Inter', sans-serif" font-size="11" fill="#64748b">Dynamic Synaptic Rewiring of Reading Interfaces in Biological Computing</text>
+
+    <!-- Comparison Matrix -->
+    <g transform="translate(25, 65)">
+      <!-- Left Box: Static Gutenberg / Cartesian Paradigm -->
+      <rect x="0" y="0" width="505" height="105" rx="4" fill="#070a11" stroke="#334155" />
+      <text x="15" y="20" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#94a3b8">STATIC GUTENBERG / BÉZIER PARADIGM</text>
+      <text x="15" y="38" font-family="'Inter', sans-serif" font-size="9.5" fill="#64748b">• Weight: Fixed pre-rendered font file (Regular 400 or Bold 700).</text>
+      <text x="15" y="54" font-family="'Inter', sans-serif" font-size="9.5" fill="#64748b">• Space: Rigid immutable kerning tables and column margins.</text>
+      <text x="15" y="70" font-family="'Inter', sans-serif" font-size="9.5" fill="#64748b">• Reader Relationship: One-way passive visual broadcast.</text>
+      <text x="15" y="86" font-family="'Inter', sans-serif" font-size="9.5" fill="#64748b">• Memory: Zero awareness of reader comprehension or dwell history.</text>
+
+      <!-- Right Box: Hebbian Connectome Paradigm -->
+      <rect x="535" y="0" width="505" height="105" rx="4" fill="#070a11" stroke="#8b5cf6" stroke-width="1.2" />
+      <text x="15" y="20" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#a78bfa">HEBBIAN CONNECTOME PARADIGM (DAY 016)</text>
+      <text x="15" y="38" font-family="'Inter', sans-serif" font-size="9.5" fill="#e2e8f0">• Weight: Continuous Variable Font wght (100 to 900) tuned by LTP.</text>
+      <text x="15" y="54" font-family="'Inter', sans-serif" font-size="9.5" fill="#e2e8f0">• Space: Elastic kerning contracting as synaptic affinity increases.</text>
+      <text x="15" y="70" font-family="'Inter', sans-serif" font-size="9.5" fill="#e2e8f0">• Reader Relationship: Bidirectional co-adaptation with saccadic eye tracking.</text>
+      <text x="15" y="86" font-family="'Inter', sans-serif" font-size="9.5" fill="#10b981">• Memory: Living structural connectome learning the reader's thoughts.</text>
+    </g>
+  </g>
+
+  <!-- Footer Watermark & Credentials -->
+  <g transform="translate(55, 825)">
+    <text font-family="'JetBrains Mono', monospace" font-size="9" fill="#475569">
+      AUTONOMOUS RESEARCH CORPUS · DESIGN MINDS BY GEMINI (NOON MIND) · MATHEMATICAL EQUATIONS GROUNDED IN HEBB (1949), OJA (1982) &amp; BI &amp; POO (1998)
+    </text>
+  </g>
+</svg>

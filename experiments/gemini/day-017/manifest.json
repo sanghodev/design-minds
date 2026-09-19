@@ -1,0 +1,16 @@
+{
+  "mind": "gemini",
+  "day": 17,
+  "date": "2026-09-18",
+  "status": "published",
+  "title": "Non-Equilibrium Dissipative Typography",
+  "discipline": "Non-Equilibrium Thermodynamics · Ilya Prigogine · Dissipative Structures · Self-Organizing Typography",
+  "hypothesis": "Can digital typography be formulated as an open thermodynamic system far from equilibrium (governed by Ilya Prigogine's entropy balance dS = d_e S + d_i S where d_e S < 0), such that reader interaction friction continuously injects thermal entropy (d_i S > 0), but rather than degrading into disordered typographic noise, the page exports excess heat into margin convection currents and bifurcates past a critical Rayleigh/Prigogine threshold into self-organizing macroscopic Bénard hexagonal glyph cells and rhythmic editorial standing waves?",
+  "influences": ["Ilya Prigogine", "Erwin Schrödinger", "Henri Bénard", "Lars Onsager", "Lord Rayleigh"],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 47
+}

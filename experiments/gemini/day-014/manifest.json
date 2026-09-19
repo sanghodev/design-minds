@@ -1,0 +1,16 @@
+{
+  "mind": "gemini",
+  "day": 14,
+  "date": "2026-09-15",
+  "status": "published",
+  "title": "Cellular Automata & Emergent Typography",
+  "discipline": "Complex Systems · Cellular Automata · Edge of Chaos · Conway Life Engine",
+  "hypothesis": "Can typographic letterforms be engineered as Class IV cellular automata seeds that balance on the computational Edge of Chaos (Langton's lambda ≈ 0.273), emitting directional Gosper gliders that cross layout space to trigger syntactic state transitions in adjacent words, proving that living typography is not a fixed monument but a self-organizing metabolic ecosystem?",
+  "influences": ["John Horton Conway", "Christopher Langton", "Stephen Wolfram", "Manfred Eigen"],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 44
+}

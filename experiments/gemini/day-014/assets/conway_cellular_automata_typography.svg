@@ -1,0 +1,332 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" width="1200" height="850">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07090e" />
+      <stop offset="50%" stop-color="#0c1017" />
+      <stop offset="100%" stop-color="#080a0f" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#be123c" />
+    </linearGradient>
+    <pattern id="gridPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1f293d" stroke-width="0.7" opacity="0.35"/>
+    </pattern>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="850" fill="url(#bgGrad)" />
+  <rect width="1200" height="850" fill="url(#gridPattern)" />
+
+  <!-- Outer Structural Border -->
+  <rect x="25" y="25" width="1150" height="800" fill="none" stroke="#1e293b" stroke-width="1.5" rx="8" />
+  <rect x="35" y="35" width="1130" height="780" fill="none" stroke="#0f172a" stroke-width="1" rx="4" />
+
+  <!-- Header Section -->
+  <g transform="translate(55, 75)">
+    <text font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="11" font-weight="700" fill="#10b981" letter-spacing="3">DESIGN MINDS · NOON MIND PROTOCOL · DAY 014</text>
+    <text y="30" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="24" font-weight="800" fill="#f8fafc" letter-spacing="-0.5">Cellular Automata &amp; Emergent Typographic Ecosystems</text>
+    <text y="52" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="13" font-weight="400" fill="#94a3b8">Class IV Computation at the Edge of Chaos (Langton λ ≈ 0.273) · Discrete 2D Moore Neighborhood Kinematics</text>
+  </g>
+
+  <!-- Status / Metric Badge (Top Right) -->
+  <g transform="translate(930, 65)">
+    <rect x="0" y="0" width="210" height="58" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="15" y="22" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748b">TURING COMPLETENESS</text>
+    <text x="15" y="42" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#10b981">UNIVERSAL CLASS IV</text>
+    <circle cx="185" cy="28" r="6" fill="#10b981" filter="url(#neonGlow)" />
+  </g>
+
+  <!-- Left Column: Conway Transition Rule Mechanics (Moore Neighborhood) -->
+  <g transform="translate(55, 160)">
+    <rect x="0" y="0" width="340" height="420" rx="6" fill="#0b0f19" stroke="#1e293b" stroke-width="1" />
+    <text x="20" y="28" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#38bdf8" letter-spacing="1">1. CONWAY TRANSITION MATRIX</text>
+    <text x="20" y="46" font-family="'Inter', sans-serif" font-size="11" fill="#64748b">2D Moore Neighborhood: 8 Adjacent Lattice Nodes</text>
+
+    <!-- Moore Neighborhood Diagram -->
+    <g transform="translate(100, 70)">
+      <!-- 3x3 Grid -->
+      <!-- Row 1 -->
+      <rect x="0" y="0" width="35" height="35" rx="3" fill="#1e293b" stroke="#334155" />
+      <rect x="42" y="0" width="35" height="35" rx="3" fill="#1e293b" stroke="#334155" />
+      <rect x="84" y="0" width="35" height="35" rx="3" fill="#1e293b" stroke="#334155" />
+      <!-- Row 2 -->
+      <rect x="0" y="42" width="35" height="35" rx="3" fill="#1e293b" stroke="#334155" />
+      <rect x="42" y="42" width="35" height="35" rx="3" fill="url(#emeraldGrad)" stroke="#34d399" filter="url(#neonGlow)" />
+      <text x="59.5" y="64" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#042f2e" text-anchor="middle">S(t)</text>
+      <rect x="84" y="42" width="35" height="35" rx="3" fill="#1e293b" stroke="#334155" />
+      <!-- Row 3 -->
+      <rect x="0" y="84" width="35" height="35" rx="3" fill="#1e293b" stroke="#334155" />
+      <rect x="42" y="84" width="35" height="35" rx="3" fill="#1e293b" stroke="#334155" />
+      <rect x="84" y="84" width="35" height="35" rx="3" fill="#1e293b" stroke="#334155" />
+
+      <text x="59.5" y="135" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8" text-anchor="middle">N = ∑ M_i ∈ {0..8}</text>
+    </g>
+
+    <!-- Rule Descriptions -->
+    <g transform="translate(20, 230)">
+      <!-- Rule 1 -->
+      <circle cx="8" cy="8" r="4" fill="#f43f5e" />
+      <text x="22" y="11" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#f8fafc">Underpopulation (N &lt; 2)</text>
+      <text x="22" y="26" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Active cell perishes from isolation (S_{t+1} = 0)</text>
+
+      <!-- Rule 2 -->
+      <circle cx="8" cy="48" r="4" fill="#10b981" />
+      <text x="22" y="51" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#f8fafc">Survival Equilibrium (N ∈ {2, 3})</text>
+      <text x="22" y="66" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Homeostatic preservation of cell integrity (S_{t+1} = 1)</text>
+
+      <!-- Rule 3 -->
+      <circle cx="8" cy="88" r="4" fill="#f59e0b" />
+      <text x="22" y="91" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#f8fafc">Overcrowding Exhaustion (N &gt; 3)</text>
+      <text x="22" y="106" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Cell asphyxiates from metabolic competition (S_{t+1} = 0)</text>
+
+      <!-- Rule 4 -->
+      <circle cx="8" cy="128" r="4" fill="#38bdf8" />
+      <text x="22" y="131" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#f8fafc">Morphogenetic Genesis (N == 3)</text>
+      <text x="22" y="146" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Quiescent void produces living node (S_{t+1} = 1)</text>
+    </g>
+  </g>
+
+  <!-- Center Column: Archetypal Morphologies & The Glider Kinematics -->
+  <g transform="translate(420, 160)">
+    <rect x="0" y="0" width="370" height="420" rx="6" fill="#0b0f19" stroke="#1e293b" stroke-width="1" />
+    <text x="20" y="28" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#10b981" letter-spacing="1">2. CELLULAR MORPHOLOGY TAXONOMY</text>
+    <text x="20" y="46" font-family="'Inter', sans-serif" font-size="11" fill="#64748b">Still Lifes, Oscillators, and Glider Spaceships</text>
+
+    <!-- The 4-Phase Glider Kinematics -->
+    <g transform="translate(20, 65)">
+      <rect x="0" y="0" width="330" height="150" rx="5" fill="#070a11" stroke="#1e293b" />
+      <text x="15" y="20" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#38bdf8">SPACESHIP: THE GLIDER (Period 4 Diagonal Drift · c/4)</text>
+
+      <!-- Phase 1 -->
+      <g transform="translate(20, 35)">
+        <text x="25" y="12" font-family="'JetBrains Mono', monospace" font-size="9" fill="#64748b" text-anchor="middle">t = 0</text>
+        <rect x="0" y="20" width="12" height="12" fill="#1e293b" />
+        <rect x="16" y="20" width="12" height="12" fill="url(#emeraldGrad)" />
+        <rect x="32" y="20" width="12" height="12" fill="#1e293b" />
+        <rect x="0" y="36" width="12" height="12" fill="#1e293b" />
+        <rect x="16" y="36" width="12" height="12" fill="#1e293b" />
+        <rect x="32" y="36" width="12" height="12" fill="url(#emeraldGrad)" />
+        <rect x="0" y="52" width="12" height="12" fill="url(#emeraldGrad)" />
+        <rect x="16" y="52" width="12" height="12" fill="url(#emeraldGrad)" />
+        <rect x="32" y="52" width="12" height="12" fill="url(#emeraldGrad)" />
+      </g>
+
+      <!-- Arrow -->
+      <path d="M 85 75 L 100 75" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)" />
+
+      <!-- Phase 2 -->
+      <g transform="translate(110, 35)">
+        <text x="25" y="12" font-family="'JetBrains Mono', monospace" font-size="9" fill="#64748b" text-anchor="middle">t = 1</text>
+        <rect x="0" y="20" width="12" height="12" fill="url(#emeraldGrad)" />
+        <rect x="16" y="20" width="12" height="12" fill="#1e293b" />
+        <rect x="32" y="20" width="12" height="12" fill="url(#emeraldGrad)" />
+        <rect x="0" y="36" width="12" height="12" fill="#1e293b" />
+        <rect x="16" y="36" width="12" height="12" fill="url(#emeraldGrad)" />
+        <rect x="32" y="36" width="12" height="12" fill="url(#emeraldGrad)" />
+        <rect x="0" y="52" width="12" height="12" fill="#1e293b" />
+        <rect x="16" y="52" width="12" height="12" fill="url(#emeraldGrad)" />
+        <rect x="32" y="52" width="12" height="12" fill="#1e293b" />
+      </g>
+
+      <!-- Arrow -->
+      <path d="M 175 75 L 190 75" stroke="#334155" stroke-width="1.5" />
+
+      <!-- Phase 3 -->
+      <g transform="translate(200, 35)">
+        <text x="25" y="12" font-family="'JetBrains Mono', monospace" font-size="9" fill="#64748b" text-anchor="middle">t = 2</text>
+        <rect x="0" y="20" width="12" height="12" fill="#1e293b" />
+        <rect x="16" y="20" width="12" height="12" fill="#1e293b" />
+        <rect x="32" y="20" width="12" height="12" fill="url(#emeraldGrad)" />
+        <rect x="0" y="36" width="12" height="12" fill="url(#emeraldGrad)" />
+        <rect x="16" y="36" width="12" height="12" fill="#1e293b" />
+        <rect x="32" y="36" width="12" height="12" fill="url(#emeraldGrad)" />
+        <rect x="0" y="52" width="12" height="12" fill="#1e293b" />
+        <rect x="16" y="52" width="12" height="12" fill="url(#emeraldGrad)" />
+        <rect x="32" y="52" width="12" height="12" fill="url(#emeraldGrad)" />
+      </g>
+
+      <!-- Arrow -->
+      <path d="M 265 75 L 280 75" stroke="#334155" stroke-width="1.5" />
+
+      <!-- Translation Vector -->
+      <text x="165" y="130" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#10b981" text-anchor="middle">Δx = +1, Δy = +1 (Speed v = c / 4)</text>
+    </g>
+
+    <!-- Still Lifes & Oscillators Grid -->
+    <g transform="translate(20, 230)">
+      <!-- Block & Beehive -->
+      <g transform="translate(10, 10)">
+        <rect x="0" y="0" width="140" height="75" rx="4" fill="#070a11" stroke="#1e293b" />
+        <text x="10" y="18" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8">STILL LIFE: BLOCK (Period ∞)</text>
+        <rect x="15" y="28" width="14" height="14" fill="#38bdf8" />
+        <rect x="31" y="28" width="14" height="14" fill="#38bdf8" />
+        <rect x="15" y="44" width="14" height="14" fill="#38bdf8" />
+        <rect x="31" y="44" width="14" height="14" fill="#38bdf8" />
+        <text x="60" y="45" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Stable semantic node</text>
+      </g>
+
+      <!-- Blinker & Pulsar -->
+      <g transform="translate(170, 10)">
+        <rect x="0" y="0" width="140" height="75" rx="4" fill="#070a11" stroke="#1e293b" />
+        <text x="10" y="18" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8">OSCILLATOR: BLINKER (Period 2)</text>
+        <rect x="15" y="38" width="12" height="12" fill="#f59e0b" />
+        <rect x="29" y="38" width="12" height="12" fill="#f59e0b" />
+        <rect x="43" y="38" width="12" height="12" fill="#f59e0b" />
+        <text x="65" y="45" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Rhythmic pulse</text>
+      </g>
+
+      <text x="10" y="110" font-family="'Inter', sans-serif" font-size="10.5" fill="#94a3b8" width="310">
+        In emergent typography, stable glyphs function as nouns (Still Lifes), punctuation acts as clock pulses (Oscillators), and transmitting gliders function as verbs carrying information across margins.
+      </text>
+    </g>
+  </g>
+
+  <!-- Right Column: Emergent Syntactic Collision & Seed Typography -->
+  <g transform="translate(815, 160)">
+    <rect x="0" y="0" width="330" height="420" rx="6" fill="#0b0f19" stroke="#1e293b" stroke-width="1" />
+    <text x="20" y="28" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1">3. GLYPHIC SEED TRANSMISSION</text>
+    <text x="20" y="46" font-family="'Inter', sans-serif" font-size="11" fill="#64748b">Constructive Cellular Interference &amp; Assembly</text>
+
+    <!-- Schematic Box -->
+    <g transform="translate(20, 65)">
+      <rect x="0" y="0" width="290" height="230" rx="5" fill="#070a11" stroke="#1e293b" />
+
+      <!-- Letterform 'A' Cellular Seed -->
+      <g transform="translate(25, 30)">
+        <text x="20" y="-10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#38bdf8" text-anchor="middle">SEED 'A'</text>
+        <rect x="14" y="0" width="10" height="10" fill="#38bdf8" />
+        <rect x="8" y="12" width="10" height="10" fill="#38bdf8" />
+        <rect x="20" y="12" width="10" height="10" fill="#38bdf8" />
+        <rect x="2" y="24" width="10" height="10" fill="#38bdf8" />
+        <rect x="14" y="24" width="10" height="10" fill="#38bdf8" />
+        <rect x="26" y="24" width="10" height="10" fill="#38bdf8" />
+        <rect x="0" y="36" width="10" height="10" fill="#38bdf8" />
+        <rect x="28" y="36" width="10" height="10" fill="#38bdf8" />
+      </g>
+
+      <!-- Glider Emission Wave -->
+      <g transform="translate(85, 55)">
+        <path d="M 0 10 Q 50 -10, 100 20" fill="none" stroke="#10b981" stroke-width="1.5" stroke-dasharray="3,3" />
+        <!-- Moving Glider -->
+        <rect x="40" y="0" width="6" height="6" fill="#10b981" />
+        <rect x="48" y="6" width="6" height="6" fill="#10b981" />
+        <rect x="34" y="12" width="6" height="6" fill="#10b981" />
+        <rect x="40" y="12" width="6" height="6" fill="#10b981" />
+        <rect x="48" y="12" width="6" height="6" fill="#10b981" />
+        <text x="50" y="35" font-family="'JetBrains Mono', monospace" font-size="8" fill="#10b981" text-anchor="middle">Glider Packet</text>
+      </g>
+
+      <!-- Letterform 'B' Target Seed -->
+      <g transform="translate(225, 40)">
+        <text x="20" y="-10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#f59e0b" text-anchor="middle">SEED 'B'</text>
+        <rect x="0" y="0" width="10" height="10" fill="#f59e0b" />
+        <rect x="12" y="0" width="10" height="10" fill="#f59e0b" />
+        <rect x="0" y="12" width="10" height="10" fill="#f59e0b" />
+        <rect x="22" y="12" width="10" height="10" fill="#f59e0b" />
+        <rect x="0" y="24" width="10" height="10" fill="#f59e0b" />
+        <rect x="12" y="24" width="10" height="10" fill="#f59e0b" />
+        <rect x="0" y="36" width="10" height="10" fill="#f59e0b" />
+        <rect x="22" y="36" width="10" height="10" fill="#f59e0b" />
+        <rect x="0" y="48" width="10" height="10" fill="#f59e0b" />
+        <rect x="12" y="48" width="10" height="10" fill="#f59e0b" />
+      </g>
+
+      <!-- Collision Synthesis Zone -->
+      <g transform="translate(20, 135)">
+        <rect x="0" y="0" width="250" height="75" rx="4" fill="#0c121e" stroke="#f59e0b" stroke-width="0.8" />
+        <text x="15" y="20" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#f59e0b">COLLISION SYNTHESIS STATE:</text>
+        <text x="15" y="38" font-family="'Inter', sans-serif" font-size="9" fill="#e2e8f0">Constructive Glider Collision converts</text>
+        <text x="15" y="52" font-family="'Inter', sans-serif" font-size="9" fill="#e2e8f0">Seed 'B' into evolved ligature form or</text>
+        <text x="15" y="66" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#38bdf8">AND/OR/NOT logic computation gate.</text>
+      </g>
+    </g>
+
+    <text x="20" y="335" font-family="'Inter', sans-serif" font-size="10.5" fill="#94a3b8">
+      Two glyph seeds interact across layout margins through glider emissions. Collisions alter the attractor states, triggering dynamic grammatical changes without central script execution.
+    </text>
+  </g>
+
+  <!-- Bottom Section: Langton's Lambda Spectrum & Phase Transitions -->
+  <g transform="translate(55, 605)">
+    <rect x="0" y="0" width="1090" height="190" rx="6" fill="#0b0f19" stroke="#1e293b" stroke-width="1" />
+    <text x="25" y="28" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#f8fafc" letter-spacing="1">4. LANGTON'S LAMBDA (λ) SPECTRUM &amp; WOLFRAM COMPLEXITY CLASSES</text>
+    <text x="25" y="46" font-family="'Inter', sans-serif" font-size="11" fill="#64748b">Phase Transitions of Information Entropy: From Crystalline Death to White Noise</text>
+
+    <!-- Spectrum Bar -->
+    <g transform="translate(25, 65)">
+      <!-- Gradient Bar -->
+      <rect x="0" y="0" width="1040" height="24" rx="4" fill="#1e293b" />
+
+      <!-- Class I Zone -->
+      <rect x="0" y="0" width="220" height="24" rx="4" fill="#334155" opacity="0.6" />
+      <text x="110" y="16" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#94a3b8" text-anchor="middle">CLASS I: FROZEN DEATH</text>
+
+      <!-- Class II Zone -->
+      <rect x="225" y="0" width="230" height="24" fill="#0284c7" opacity="0.5" />
+      <text x="340" y="16" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#38bdf8" text-anchor="middle">CLASS II: PERIODIC CRYSTALS</text>
+
+      <!-- Class IV Zone (Edge of Chaos) -->
+      <rect x="460" y="0" width="200" height="24" fill="url(#emeraldGrad)" filter="url(#neonGlow)" />
+      <text x="560" y="16" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="800" fill="#022c22" text-anchor="middle">CLASS IV: EDGE OF CHAOS (λ ≈ 0.273)</text>
+
+      <!-- Class III Zone -->
+      <rect x="665" y="0" width="375" height="24" rx="4" fill="#e11d48" opacity="0.5" />
+      <text x="852" y="16" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#fda4af" text-anchor="middle">CLASS III: CHAOTIC ENTROPIC NOISE</text>
+    </g>
+
+    <!-- Explanatory Callouts under the bar -->
+    <g transform="translate(25, 110)">
+      <!-- Callout 1 -->
+      <g transform="translate(0, 0)">
+        <text font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#94a3b8">λ &lt; 0.15</text>
+        <text y="16" font-family="'Inter', sans-serif" font-size="10" fill="#64748b">Sub-critical: All glyphs perish;</text>
+        <text y="30" font-family="'Inter', sans-serif" font-size="10" fill="#64748b">Information extincts immediately.</text>
+      </g>
+
+      <!-- Callout 2 -->
+      <g transform="translate(230, 0)">
+        <text font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#38bdf8">0.15 ≤ λ &lt; 0.25</text>
+        <text y="16" font-family="'Inter', sans-serif" font-size="10" fill="#64748b">Rigid crystalline lattice;</text>
+        <text y="30" font-family="'Inter', sans-serif" font-size="10" fill="#64748b">Repetitive loops without evolution.</text>
+      </g>
+
+      <!-- Callout 4 (Crucial) -->
+      <g transform="translate(465, 0)">
+        <text font-family="'JetBrains Mono', monospace" font-size="10" font-weight="800" fill="#10b981">λ ≈ 0.273 (B3/S23 CONWAY LIFE)</text>
+        <text y="16" font-family="'Inter', sans-serif" font-size="10" fill="#e2e8f0">Maximum computational complexity;</text>
+        <text y="30" font-family="'Inter', sans-serif" font-size="10" fill="#e2e8f0">Language, memory &amp; Turing completeness.</text>
+      </g>
+
+      <!-- Callout 3 -->
+      <g transform="translate(730, 0)">
+        <text font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#f43f5e">λ &gt; 0.35</text>
+        <text y="16" font-family="'Inter', sans-serif" font-size="10" fill="#64748b">Super-critical entropy overload;</text>
+        <text y="30" font-family="'Inter', sans-serif" font-size="10" fill="#64748b">Legibility dissolves into white static noise.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Footer Watermark & Credentials -->
+  <g transform="translate(55, 825)">
+    <text font-family="'JetBrains Mono', monospace" font-size="9" fill="#475569">
+      AUTONOMOUS RESEARCH CORPUS · DESIGN MINDS BY GEMINI (NOON MIND) · MATHEMATICAL EQUATIONS GROUNDED IN CONWAY (1970) &amp; LANGTON (1990)
+    </text>
+  </g>
+</svg>

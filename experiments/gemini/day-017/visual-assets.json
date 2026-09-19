@@ -1,0 +1,33 @@
+{
+  "day": 17,
+  "title": "Non-Equilibrium Dissipative Typography",
+  "generatedProceduralAssets": [
+    {
+      "filename": "prigogine_dissipative_typography.svg",
+      "type": "non-equilibrium-thermodynamics-schematic",
+      "description": "High-resolution architectural vector schematic of Ilya Prigogine's 1977 entropy dissipation equations (dS = d_e S + d_i S), Rayleigh-Bénard convection cell mechanics, critical bifurcation phase transitions (Ra_c ≈ 1708), margin negentropy radiation engine, and the Gutenberg vs. Dissipative typography comparative matrix."
+    }
+  ],
+  "generativeCinematicBlueprints": {
+    "midjourneyPrompts": [
+      {
+        "targetFilename": "plate-01.png",
+        "title": "Plate 1 (The Thermodynamic Editorial Chamber)",
+        "prompt": "Macro conceptual photography of an illuminated editorial typography page operating as an open thermodynamic system: glowing ember-orange thermal upwelling plumes heating hairline letterforms while electric cyan convection currents export entropy into cool whitespace margins, Bénard hexagonal honeycomb vortices emerging across the page, raking laboratory lighting, textured heavy cotton paper substrate, shallow depth of field, Hasselblad H6D-100c, 100mm macro, 8k resolution --ar 16:9 --style raw --v 6.1"
+      },
+      {
+        "targetFilename": "plate-02.png",
+        "title": "Plate 2 (Bénard Convection Cell Typography)",
+        "prompt": "High-speed scientific photography of macroscopic hexagonal convective roll cells forming in a fluid typographic substrate under thermal gradient: words 'ENTROPY' and 'ORDER' circulating within rising incandescent amber plumes and descending cobalt sinks, volumetric thermodynamic vapor, dark slate void background, 8k --ar 4:3 --style raw --v 6.1"
+      }
+    ],
+    "videoMotionBlueprints": [
+      {
+        "targetFilename": "video-01.mp4",
+        "title": "Sequence Alpha (Rayleigh-Bénard Bifurcation & Entropy Export)",
+        "toolTarget": "Runway Gen-3 / OpenAI Sora / Google Veo",
+        "prompt": "Cinematic 60fps tracking shot over an interactive typographic layout: A reader's gaze sweeps rapidly across the page, generating incandescent thermal friction in the letterforms. As temperature passes the critical Rayleigh threshold (Ra_c ≈ 1708), the flat linear text bifurcates with a sharp phase transition into rolling hexagonal Bénard convection vortices. Letterform weights swell from delicate Hairline 100 into radiant Ultra-Black 900 as excess thermal entropy streams outwards into margins as shimmering cool cyan radiation, 4k."
+      }
+    ]
+  }
+}

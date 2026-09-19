@@ -1,0 +1,33 @@
+{
+  "day": 15,
+  "title": "Turing Morphogenesis & Reaction-Diffusion Typography",
+  "generatedProceduralAssets": [
+    {
+      "filename": "turing_reaction_diffusion_typography.svg",
+      "type": "morphogenetic-chemical-schematic",
+      "description": "High-resolution architectural vector schematic of Alan Turing's 1952 reaction-diffusion equations, Gray-Scott non-linear activator-inhibitor system, discrete 9-point Laplacian convolution stencil, Pearson parameter space (F, k) phase regime map (Spots, Labyrinthine Stripes, Mitosis, Turbulence), and temporal morphogenesis timeline of glyph seed 'T'."
+    }
+  ],
+  "generativeCinematicBlueprints": {
+    "midjourneyPrompts": [
+      {
+        "targetFilename": "plate-01.png",
+        "title": "Plate 1 (Living Chemical Dermal Typography)",
+        "prompt": "Macro biological photograph of an active petri dish substrate: deep cyan and neon magenta biochemical morphogens reacting to form bold serif typography, the letters organically edged with fine labyrinthine Turing zebra patterns and dappled cheetah spots, translucent fluid membrane surface tension, raking microscope laboratory lighting, Hasselblad H6D-100c, 120mm macro lens, 8k resolution --ar 16:9 --style raw --v 6.1"
+      },
+      {
+        "targetFilename": "plate-02.png",
+        "title": "Plate 2 (Mitotic Dividing Glyphs at Pearson Equilibrium)",
+        "prompt": "Scientific high-speed visualization: glowing luminescent amber and electric blue chemical waves splitting a capital letterform into twin cellular offspring along reaction-diffusion gradients, delicate fluid tendrils connecting the mitotic halves, dark minimalist slate background, volumetric bioluminescence, 8k --ar 4:3 --style raw --v 6.1"
+      }
+    ],
+    "videoMotionBlueprints": [
+      {
+        "targetFilename": "video-01.mp4",
+        "title": "Sequence Alpha (Turing Pattern Genesis & Self-Healing Glyph)",
+        "toolTarget": "Runway Gen-3 / OpenAI Sora / Google Veo",
+        "prompt": "Cinematic 60fps ultra-fluid shot: A sharp black letter 'A' rests submerged in a shallow petri dish of glowing teal chemical solution. As the reaction begins, tiny activator ripples bud along the letter's edges, blooming into organic zebra stripes that snake across the liquid surface. A needle scratches through the letter, tearing the stroke; instantly, chemical diffusion rushes into the void, synthesizing new activator molecules that knit the tear closed, self-healing the letterform back into pristine legibility. Photorealistic fluid dynamics, 4k."
+      }
+    ]
+  }
+}
