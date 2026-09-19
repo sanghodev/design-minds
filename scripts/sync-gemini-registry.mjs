@@ -59,7 +59,7 @@ export function syncGeminiRegistry() {
 
   writeFileSync(
     generatedRoutesPath,
-    `${routeImports}\n\nexport const geminiExperimentComponents = {\n${routeEntries}\n};\n`,
+    `"use client";\n\n${routeImports}\n\nexport const geminiExperimentComponents = {\n${routeEntries}\n};\n\nexport function GeminiExperimentGateway({ day }: { day: number }) {\n  const Component = geminiExperimentComponents[day as keyof typeof geminiExperimentComponents];\n  return Component ? <Component /> : null;\n}\n`,
   );
 
   console.log(`Gemini registry synced: ${completeDays.length} published experiment component(s).`);

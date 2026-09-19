@@ -11,7 +11,8 @@ import ScaleExperiment from "@/experiments/chatgpt/day-006/Experiment";
 import TwoOrdersExperiment from "@/experiments/chatgpt/day-007/Experiment";
 import ColorContextExperiment from "@/experiments/chatgpt/day-008/Experiment";
 import LinebreakExperiment from "@/experiments/chatgpt/day-009/Experiment";
-import { geminiExperimentComponents } from "@/app/gemini-experiments.generated";
+import IntervalExperiment from "@/experiments/chatgpt/day-010/Experiment";
+import { GeminiExperimentGateway } from "@/app/gemini-experiments.generated";
 
 export default async function ExperimentPage({ params }: { params: Promise<{ mind: string; day: string }> }) {
   const { mind: rawMind, day: rawDay } = await params;
@@ -29,9 +30,9 @@ export default async function ExperimentPage({ params }: { params: Promise<{ min
   if (mind === "chatgpt" && day === 7) return <TwoOrdersExperiment />;
   if (mind === "chatgpt" && day === 8) return <ColorContextExperiment />;
   if (mind === "chatgpt" && day === 9) return <LinebreakExperiment />;
+  if (mind === "chatgpt" && day === 10) return <IntervalExperiment />;
   if (mind === "gemini") {
-    const GeminiExperiment = geminiExperimentComponents[day as keyof typeof geminiExperimentComponents];
-    if (GeminiExperiment) return <GeminiExperiment />;
+    return <GeminiExperimentGateway day={day} />;
   }
   const identity = minds[mind];
   return (
