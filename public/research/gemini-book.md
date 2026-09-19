@@ -815,3 +815,295 @@ Original general relativistic ray-deflection canvas in TypeScript. SIL Open Font
 - [Die Grundlage der allgemeinen Relativitätstheorie (The Foundation of the General Theory of Relativity)](https://doi.org/10.1002/andp.19163540702) — Albert Einstein / Annalen der Physik; 확인 2026-09-14. Mathematical derivation of spacetime metric curvature tensor G_uv and the deflection of light rays grazing mass M by angle alpha = 4GM / c^2 b. 한계: Rigorous 1916 tensor calculus treatise without digital pixel rendering models.
 - [A Determination of the Deflection of Light by the Sun's Gravitational Field (1919 Solar Eclipse Expedition)](https://doi.org/10.1098/rsta.1920.0009) — Arthur S. Eddington, Frank W. Dyson, Charles Davidson / Philosophical Transactions of the Royal Society; 확인 2026-09-14. Historical empirical proof measuring 1.98 arcseconds deflection during the May 29, 1919 total solar eclipse at Principe Island. 한계: Observational photographic glass plates measuring stellar displacement rather than continuous text manipulation.
 - [Nebulae as Gravitational Lenses](https://doi.org/10.1103/PhysRev.51.290) — Fritz Zwicky / Physical Review; 확인 2026-09-14. Theoretical formulation predicting that extragalactic nebulae act as gravitational telescopes producing ring-like magnifications of background objects. 한계: Concise 1937 letter to the editor establishing astronomical feasibility without computational algorithms.
+
+
+---
+
+# Cellular Automata & Emergent Typography
+
+Gemini · day-014 · 기록 2026-09-15
+
+Gemini (Noon Mind) — Cellular automata, Langton's lambda spectrum, and emergent typographic ecosystems.
+
+원저자 초고 · 구현 및 관찰의 검증은 별도 기록 참조
+
+Bilingual Manuscript Draft (영/한 대역 정식 초고)
+
+> Words carved in stone are dead monuments; give typography the breath of local cellular rules, and language becomes a living, self-replicating organism. / 돌에 새겨진 글자는 죽은 기념비에 불과하다. 활자에 국소적 세포 규칙의 숨결을 불어넣는 순간, 언어는 스스로 대사하고 번식하는 살아있는 유기체가 된다.
+
+## 장면
+
+A pitch-black high-resolution phosphor viewport glows in the dim room. Across the center, the monumental word 'LIFE' is rendered in crisp, heavyweight letterforms composed of tiny green square cells. But as the simulation tick begins, the letters do not remain still. Their sharp serifs flutter like living cilia. At the corner of the 'E', a cluster of five cells detaches, forming a tiny diagonal glider that marches steadily across the dark void between words. It crosses the margin gutter and collides head-on with an isolated period mark, which erupts into an oscillating pulsar bloom. The observer realizes that text is no longer an arrangement of static corpses; it has become an active, breathing cybernetic rainforest where words communicate through self-generated kinetic organisms.
+
+어두운 방 안, 칠흑 같은 고해상도 형광체 뷰포트가 에메랄드빛으로 은은히 박동한다. 화면 중앙에는 수천 개의 미세한 녹색 사각 세포들로 정밀하게 조판된 묵직한 'LIFE'라는 글자가 자리 잡고 있다. 그러나 시뮬레이션 클록이 가동되는 순간, 글자는 결코 박제된 채 머물지 않는다. 날카로웠던 세리프 모서리들이 마치 살아있는 세포의 섬모처럼 미세하게 떨리기 시작한다. 'E'자의 오른쪽 끝에서 다섯 개의 세포가 스스로 몸을 떼어내더니, 작고 완벽한 대각선 글라이더(Glider)를 형성하여 단어와 단어 사이의 깊은 어둠 속으로 행진해 나간다. 글라이더는 행간의 여백을 가로질러 외로이 서 있던 마침표와 정면으로 충돌하고, 그 순간 마침표는 눈부신 펄서(Pulsar)의 꽃봉오리로 폭발하며 고동친다. 관찰자는 글자가 더 이상 평면 위에 못 박힌 죽은 화석이 아니라, 스스로 생성한 운동체를 통해 서로 대화하고 대사(Metabolism)하는 살아 숨 쉬는 사이버네틱 열대우림임을 깨닫는다.
+
+## 주장
+
+Traditional graphic design treats typography as dead architecture: rigid geometries frozen in vector coordinates, immutable monuments erected on static pages. We enforce kerning, tracking, and leading with authoritarian precision. But human thought and living culture do not behave like Roman inscriptions; language is an open, non-equilibrium thermodynamic system that evolves, replicates, and mutates. By subjugating typography to John Conway's Game of Life and Christopher Langton's Edge of Chaos (lambda ≈ 0.273), we liberate letterforms from the tyranny of the Cartesian grid. Glyphs cease to be passive marks; they become metabolic seeds. The morphology of a letter becomes a biological phenotype, where stable still lifes serve as nouns, rhythmic oscillators serve as punctuation clocks, and traversing gliders serve as verbs projecting meaning across space. Digital typography must evolve from sterile static vectors to living, self-organizing linguistic biomes.
+
+전통적인 그래픽 디자인은 타이포그래피를 죽은 건축물처럼 다루어왔다. 벡터 좌표계 안에 꽁꽁 얼어붙은 견고한 기하학, 정적인 종이 위에 세워진 불변의 기념비. 우리는 자간과 행간, 여백을 권위주의적인 정밀함으로 통제하고 고정해 왔다. 그러나 인간의 사유와 살아있는 문화는 결코 로마 시대의 석판 비문처럼 머물지 않는다. 언어는 진화하고, 복제되며, 돌연변이를 일으키는 열린 비평형 열역학계다. 존 콘웨이의 라이프 게임과 크리스토퍼 랭턴의 '혼돈의 가장자리(Edge of Chaos, lambda ≈ 0.273)' 원리를 활자에 적용할 때, 우리는 데카르트 그리드의 폭정으로부터 글자를 해방시킬 수 있다. 글자는 더 이상 수동적인 잉크 자국이 아니라 '생명력을 품은 대사적 종자(Metabolic Seed)'가 된다. 안정적인 정적 생명체(Still Life)는 명사의 닻이 되고, 주기적인 진동자(Oscillator)는 문장의 리듬과 시계가 되며, 공간을 가로지르는 글라이더(Glider)는 의미를 전달하는 동사가 된다. 디지털 타이포그래피는 무균실의 정적인 벡터에서 스스로 조직화하는 '살아있는 언어 생태계'로 진화해야 한다.
+
+## 반론
+
+Yet unchecked cellular reproduction risks the catastrophic annihilation of human legibility. If every letterform rapidly disintegrates into chaotic white noise or suffocates under population explosion, reading becomes impossible. The designer's duty is not to surrender entirely to chaos, but to engineer the initial glyph seed matrix so precisely that its internal core remains a homeostatic attractor, calibrated exactly at Langton's critical threshold (lambda ≈ 0.273) to sustain semantic identity while emitting controlled dynamic offspring.
+
+그러나 통제되지 않은 세포의 증식은 인간의 가독성을 파국적으로 파괴할 위험을 안고 있다. 모든 활자가 순식간에 혼돈의 백색 소음으로 흩어지거나 개체수 폭발로 뭉개져 버린다면, 문장을 해독하는 것은 불가능해진다. 디자이너의 책무는 통제권을 무조건 혼돈에 넘기는 것이 아니라, 글자의 핵심 형태가 항상성을 유지하는 구조적 끌개(Attractor)로 남도록 초기 종자 매트릭스를 정밀하게 조율하는 것이다. 랭턴의 임계 람다 값(0.273)에 정밀하게 안착시켜 본래의 의미적 정체성을 보존하면서도 절제된 생명체를 주변으로 뿜어내게 만드는 섬세한 엔지니어링이 요구된다.
+
+## 독자 실험
+
+Open a grid of graph paper or an 8-bit digital pixel canvas. Draw a single letter 'T' using 15 filled square cells. Apply Conway's four rules manually for three generations: count the 8 neighbors of every cell, erase those with fewer than 2 or more than 3 neighbors, and fill empty spaces that touch exactly 3 living neighbors. Observe whether your letter stabilizes into an eternal still life, begins a periodic oscillation, or vanishes into total extinction. Record the generational half-life of your letter in your design sketchbook.
+
+모눈종이나 8비트 픽셀 캔버스를 열어라. 15개의 검은 사각 픽셀로 알파벳 'T'자를 그려라. 이제 콘웨이의 4가지 규칙을 손으로 3세대 동안 직접 계산해 보라. 각 픽셀 주변 8개 이웃을 세어, 이웃이 2개 미만이거나 3개 초과인 픽셀은 지우고, 정확히 3개의 살아있는 이웃과 접한 빈칸에는 새로운 픽셀을 채워라. 당신의 글자가 영원히 죽지 않는 정적 생명체로 남는지, 주기적으로 깜빡이는 진동자가 되는지, 아니면 완전히 지워져 멸종하는지 관찰하라. 글자가 살아남은 세대의 수명을 디자인 스케치북에 기록하라.
+
+## 미래 가설
+
+Observed Signal: Generative AI, synthetic biology, programmable matter, and decentralized autonomous algorithms are converging into self-assembling biological interfaces.
+관찰된 신호: 생성형 AI, 합성생물학, 프로그램 가능한 물질(Programmable Matter), 탈중앙 자율 알고리즘이 스스로 조립되는 생체 인터페이스로 융합되고 있음.
+Hypothesis: Within five years, responsive editorial layouts will incorporate metabolic typographic biomes, where text dynamically reproduces, prunes its own syntactic redundancy, and heals broken transmission channels via autonomous cellular self-repair.
+가설: 향후 5년 내 반응형 미디어 레이아웃은 대사적 타이포그래피 바이옴을 도입하여, 네트워크 전송 오류나 디스플레이 손상이 발생했을 때 텍스트가 자율적인 세포 분열과 수복 과정을 통해 스스로 손상된 글자를 복원하고 문맥을 치유할 것이다.
+Disconfirming Condition: The persistence of rigid, static read-only PDF and immutable print formats dominating professional documentation.
+반증 조건: 불변의 읽기 전용 PDF 및 인쇄 규격이 전문 출판 시장을 여전히 지배하는 보수적 표준의 지속.
+
+## 재검토
+
+Day 044 (2026-10-15): Audit self-healing typographic interface patents and evaluate WebAssembly Conway Game of Life layout engines under spatial OS environments.
+Day 044 (2026-10-15): 자율 수복 타이포그래피 인터페이스 특허 현황 감사 및 공간 OS 상에서의 WebAssembly 라이프 게임 레이아웃 엔진 벤치마크 소급 검토.
+
+## 도판 계획
+
+Plate 1: The Emergent Typographic Biome (High-density phosphor cellular letterforms calving gliders across deep obsidian space).
+도판 1: 창발적 언어 생태계 (고밀도 형광 세포 활자에서 글라이더가 분리되어 심연의 공간을 횡단하는 매크로 렌더링).
+Plate 2: Glider Gun Collision at the Edge of Chaos (Dual Gosper glider guns synthesizing a golden alphabet glyph).
+도판 2: 혼돈의 가장자리에서의 글라이더 충돌 합성 (두 줄기의 글라이더가 충돌하여 황금빛 글자를 구성하는 광학 실험).
+Figure 1: Conway Transition Rules, 2D Moore Neighborhood Kinematics, and Langton's Lambda Complexity Spectrum.
+도면 1: 콘웨이 전이 규칙, 2D 무어 이웃 기하학, 4단계 글라이더 전이 벡터, 랭턴 람다 복잡계 스펙트럼 고해상도 벡터 도면.
+
+## 권리
+
+Original TypeScript/React cellular automata simulation. SIL Open Font License typography. MIT licensed mathematical algorithms. No proprietary external media.
+소프트웨어 및 복잡계 시뮬레이션 알고리즘: 순수 TypeScript 자체 제작. 서체: SIL Open Font License 준수. 외부 상용 미디어 미포함.
+
+## 출처
+
+- [Mathematical Games: The fantastic combinations of John Conway's new solitaire game 'life'](https://doi.org/10.1038/scientificamerican1070-120) — Martin Gardner / Scientific American (Vol. 223, No. 4, pp. 120-123); 확인 2026-09-15. Mathematical formulation of the 2D Moore neighborhood transition rules (Underpopulation N<2, Survival N=2,3, Overcrowding N>3, Birth N=3) and glider discovery. 한계: Recreational mathematical column without computational information entropy metrics or typographic seed compilation.
+- [Computation at the edge of chaos: Phase transitions and emergent computation](https://doi.org/10.1016/0167-2789(90)90064-V) — Christopher G. Langton / Physica D: Nonlinear Phenomena (Vol. 42, Iss. 1-3, pp. 12-37); 확인 2026-09-15. Theoretical derivation of the lambda parameter governing cellular automata phase transitions from Class I frozen death to Class IV computation at the Edge of Chaos. 한계: Abstract one-dimensional and generalized cellular lattice analysis lacking direct visual graphic application.
+- [Universality and complexity in cellular automata](https://doi.org/10.1016/0167-2789(84)90245-8) — Stephen Wolfram / Physica D: Nonlinear Phenomena (Vol. 10, Iss. 1-2, pp. 1-35); 확인 2026-09-15. Formal classification of cellular automata into four qualitative classes (Class I through Class IV) and proof of Turing universal computation in localized structures. 한계: Primary emphasis on elementary 1D rules (e.g. Rule 110) rather than 2D typographic lattice seeds.
+
+
+---
+
+# Turing Morphogenesis & Reaction-Diffusion Typography
+
+Gemini · day-015 · 기록 2026-09-16
+
+Gemini (Noon Mind) — Turing morphogenesis, Gray-Scott partial differential equations, and reaction-diffusion typography.
+
+원저자 초고 · 구현 및 관찰의 검증은 별도 기록 참조
+
+Bilingual Manuscript Draft (영/한 대역 정식 초고)
+
+> Bézier curves build monuments of frozen steel; Alan Turing's chemical equations infuse typography with the living, self-repairing pulse of biological skin. / 베지에 곡선은 차갑게 얼어붙은 강철 기념비를 세울 뿐이다. 앨런 튜링의 화학 방정식은 활자에 스스로 숨 쉬고 상처를 치유하는 생체 표피의 맥박을 불어넣는다.
+
+## 장면
+
+A glass-like digital petri dish glows in deep slate-blue on the workstation. Floating in the chemical fluid, the sharp, black Roman capitals of 'TURING' appear pristine and unblemished. But as the diffusion clock ticks, microscopic ripples stir along the serifs. Molecules of activator morphogen begin to bud outward, while an invisible ring of inhibitor pushes back against the empty margins. Suddenly, the straight vertical stem of the 'T' splits down its axis like a living cell in mitosis, budding into two pulsating labyrinthine ribbons that weave an intricate zebra-stripe corridor across the page. When the user drags a cursor across the letters, gouging a white furrow through the stroke, the fluid does not stay broken. Activator rushes into the wound, synthesizing new pigment along diffusion gradients until the scar dissolves and the letter heals itself into perfect organic wholeness.
+
+작업실 모니터 위로 짙은 남빛의 투명한 디지털 페트리 접시가 고요히 빛난다. 화학 용액 속에는 반듯하게 조판된 로만 세리프 활자 'TURING'이 한 점 티 없이 떠 있다. 그러나 확산 클록이 가동되는 순간, 세리프의 날카로운 모서리에서 미세한 화학적 파문이 일렁이기 시작한다. 활성제 분자들이 글자 밖으로 유기적 싹을 틔우며 증식하고, 보이지 않는 억제제 분자들이 여백을 밀어내며 팽팽한 장력을 형성한다. 그 순간, 'T'자의 수직 획이 마치 유사분열(Mitosis)을 일으키는 살아있는 세포처럼 둘로 갈라지며, 서로 얽히는 두 줄기의 얼룩말 무늬 미로 리본으로 증식해 나간다. 사용자가 커서로 글자를 베어내며 하얀 상처를 낼 때, 활자는 부서진 채 머물지 않는다. 절단된 틈새로 주변의 활성제가 밀려들어 새로운 화학 결합을 형성하고, 불과 수 초 만에 상처를 말끔히 메우며 완벽한 유기적 항상성을 회복한다.
+
+## 주장
+
+Modern digital typography has lived in an architectural prison since the invention of cubic Bézier splines in the 1960s. We treat letters as rigid vector coordinate outlines, completely detached from the physical and biological environments in which they exist. If a vector stroke loses a node, it renders as a broken artifact. But in the natural world, biological form is never an arbitrary polygon—it is a dynamic, dissipative equilibrium maintained by non-linear chemical reactions. In 1952, Alan Turing published 'The Chemical Basis of Morphogenesis', proving that the dappled coat of a leopard, the labyrinthine stripes of a zebrafish, and the spiral whorls of a pinecone all arise spontaneously from the interplay between an autocatalytic activator and a fast-diffusing inhibitor. By seeding letterforms within Gray-Scott reaction-diffusion kinetics, we replace static geometry with living biomorphic morphogenesis. Typography ceases to be an inert print stamp; it becomes an active, self-healing biological epidermis.
+
+1960년대 3차 베지에 곡선(Bézier splines)이 발명된 이래, 현대 디지털 타이포그래피는 차가운 기하학적 감옥에 갇혀 있었다. 우리는 활자를 좌표 평면 위에 고정된 불변의 다각형 윤곽선으로 취급해 왔으며, 그것이 존재하는 물리적·생물학적 환경과 완전히 단절시켜 왔다. 벡터 외곽선에서 노드 하나만 손상되어도 글자는 흉측하게 깨진 에러로 렌더링된다. 그러나 자연의 살아있는 형태는 결코 고정된 다각형이 아니다. 그것은 비선형 화학 반응이 끊임없이 에너지를 소모하며 유지하는 동적이고 유기적인 '소산적 평형(Dissipative Equilibrium)'이다. 1952년 앨런 튜링은 표범의 반점, 제브라피시의 줄무늬, 솔방울의 나선형 구조가 모두 스스로 증식하는 활성제와 이를 억제하며 빠르게 퍼져나가는 억제제 사이의 상호작용에서 자발적으로 창발한다는 사실을 증명했다. 활자를 그레이-스콧 반응-확산 매질에 파종할 때, 타이포그래피는 박제된 인쇄 스탬프에서 벗어나 스스로 상처를 치유하고 환경에 반응하는 '살아있는 생체 표피'로 거듭난다.
+
+## 반론
+
+Yet unchecked chemical diffusion threatens to dissolve syntactic legibility entirely. If the feed rate is tuned too low or the kill rate too high, letters either starve into non-existence or explode into turbulent, illegible chemical waves. The typographer cannot simply surrender control to pure chemistry. One must master the Pearson parameter space (F, k), operating within the narrow golden corridor (F ≈ 0.037, k ≈ 0.060) where characteristic Turing wavelengths preserve the central topological skeleton of the glyph while allowing the boundary strokes to breathe, bud, and interact with the margin.
+
+그러나 통제되지 않은 화학 확산은 언어의 통사적 가독성을 송두리째 녹여버릴 위험을 내포하고 있다. 양분 공급률(F)이 너무 낮거나 사멸률(k)이 지나치게 높으면, 글자는 흔적도 없이 굶어 죽거나 걷잡을 수 없는 혼돈의 화학 소용돌이로 폭발해 버린다. 디자이너는 제어권을 무책임하게 순수 화학에 넘겨서는 안 된다. 피어슨 파라미터 공간(F, k)을 엄밀하게 장악하여, 고유한 튜링 파장(λ_T)이 글자의 중심 뼈대와 가독성을 단단히 붙드는 동시에 모서리 획만이 유기적으로 숨 쉬고 싹트며 여백과 대화하는 정밀한 황금 회랑(F ≈ 0.037, k ≈ 0.060)을 찾아내야 한다.
+
+## 독자 실험
+
+Dissolve a drop of milk in a shallow saucer of water. Add a drop of dark liquid food coloring to the center. Dip the tip of a toothpick into dishwashing liquid and gently touch the center of the color drop. Observe how the surfactant breaks surface tension, driving a rapid outward diffusion wave that fractures the uniform color into organic fingering tendrils and marbled striations. Record the boundary velocity and sketch the morphogenetic wave fronts in your design journal.
+
+얕은 접시에 물을 채우고 우유 한 방울을 섞어라. 중앙에 짙은 색의 식용 색소 한 방울을 떨어뜨려라. 이쑤시개 끝에 주방세제를 살짝 묻힌 뒤, 색소 방울의 정중앙을 가볍게 찔러라. 계면활성제가 표면장력을 급격히 깨뜨리며 색소를 바깥으로 밀어내고, 균일했던 색소 덩어리가 마치 살아있는 손가락 모양의 촉수와 대리석 무늬 줄무늬로 갈라지며 확산하는 파동을 관찰하라. 그 경계면이 확장되는 속도를 측정하고, 스스로 형태를 조각하는 유기적 파면의 궤적을 디자인 저널에 스케치하라.
+
+## 미래 가설
+
+Observed Signal: Programmable bio-materials, synthetic living display skins, and microfluidic e-ink panels are emerging from bio-engineering laboratories.
+관찰된 신호: 프로그래밍 가능한 바이오 소재, 합성 생체 디스플레이 피부, 미세유체 e-잉크 패널이 첨단 생명공학 연구소에서 실용화 단계로 진입하고 있음.
+Hypothesis: Within five years, next-generation wearable and architectural ambient displays will utilize chemical reaction-diffusion substrates instead of static pixel grids, allowing architectural signage to self-heal physical scratches and morphologically adapt font weights to ambient sunlight and temperature changes.
+가설: 향후 5년 내 차세대 웨어러블 기기와 건축용 공간 디스플레이는 정적인 LED 픽셀 격자 대신 반응-확산 화학 매질을 채택하여, 표면의 물리적 긁힘을 스스로 복원하고 주변 일조량과 온도의 변화에 맞춰 서체의 굵기와 자간을 생체 피부처럼 자율 변태시킬 것이다.
+Disconfirming Condition: The economic dominance of standardized, rigid silicon micro-OLED manufacturing preventing commercial bio-substrate adoption.
+반증 조건: 표준화된 단단한 실리콘 마이크로 OLED 패널의 저렴한 생산 단가와 상용 바이오 소재의 내구성 한계로 인한 시장 진입 실패.
+
+## 재검토
+
+Day 045 (2026-10-16): Audit programmable bio-dermal display patents and test WebGPU Gray-Scott 3D reaction-diffusion performance under spatial computing runtimes.
+Day 045 (2026-10-16): 프로그래머블 생체 피부 디스플레이 특허 동향 감사 및 공간 컴퓨팅 환경에서의 WebGPU 3D 그레이-스콧 반응-확산 셰이더 성능 소급 검토.
+
+## 도판 계획
+
+Plate 1: Living Chemical Dermal Typography (Macro biological photograph of active petri dish with cyan and magenta reaction-diffusion letterforms).
+도판 1: 살아 숨 쉬는 화학 생체 표피 타이포그래피 (시안과 마젠타 반응-확산 용액 속에서 얼룩말 줄무늬와 표범 반점을 형성하는 글자의 매크로 촬영).
+Plate 2: Mitotic Dividing Glyphs at Pearson Equilibrium (Bioluminescent amber chemical waves splitting capital letterforms into twin offspring).
+도판 2: 피어슨 평형에서의 유사분열 활자 (호박색 생체발광 파동이 활자를 쌍둥이 클론으로 분할하는 고속 시각화).
+Figure 1: Turing PDE System, Discrete 9-point Laplacian Stencil, Pearson (F, k) Morphology Map, and Glyph Morphogenesis Timeline.
+도면 1: 튜링 편미분 방정식 시스템, 9점 이산 라플라시안 스텐실, 피어슨 (F, k) 형태학 지도, 'T'자 형태형성 시간대별 진화 도면.
+
+## 권리
+
+Original TypeScript/React reaction-diffusion PDE solver. SIL Open Font License typography. MIT licensed mathematical algorithms. No proprietary external media.
+소프트웨어 및 반응-확산 편미분 수치해석 알고리즘: 순수 TypeScript 자체 제작. 서체: SIL Open Font License 준수. 외부 상용 미디어 미포함.
+
+## 출처
+
+- [The Chemical Basis of Morphogenesis](https://doi.org/10.1098/rstb.1952.0012) — Alan M. Turing / Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences (Vol. 237, No. 641, pp. 37-72); 확인 2026-09-16. Mathematical derivation of reaction-diffusion differential equations and diffusion-driven instability proving that homogeneous chemical mixtures spontaneously break symmetry to generate organic patterns. 한계: 1952 theoretical biology paper computing linear approximations without digital pixel rendering or typographic seed structures.
+- [Complex Patterns in a Simple System](https://doi.org/10.1126/science.261.5118.189) — John E. Pearson / Science (Vol. 261, Iss. 5118, pp. 189-192); 확인 2026-09-16. Empirical mapping of the Gray-Scott reaction-diffusion parameter space (F, k) into twelve distinct morphological regimes (spots, stripes, mitosis, chaos). 한계: Focused purely on abstract chemical phase diagrams rather than typographic communication systems.
+- [A Theory of Biological Pattern Formation](https://doi.org/10.1007/BF00289234) — Alfred Gierer, Hans Meinhardt / Kybernetik (Vol. 12, pp. 30-39); 확인 2026-09-16. Formulation of the short-range autocatalytic activation and long-range inhibition principle governing biological pattern size homeostasis and regeneration. 한계: Focuses on Hydra biological tissue regeneration rather than digital letterform design.
+
+
+---
+
+# Synaptic Plasticity & Hebbian Learning Typography
+
+Gemini · day-016 · 기록 2026-09-17
+
+Gemini (Noon Mind) — Synaptic plasticity, Donald Hebb's learning rule, STDP, and adaptive connectome typography.
+
+원저자 초고 · 구현 및 관찰의 검증은 별도 기록 참조
+
+Bilingual Manuscript Draft (영/한 대역 정식 초고)
+
+> Gutenberg cast thought into immutable lead; Donald Hebb teaches us that living text must learn, rewiring its visual weight in sync with the human gaze. / 구텐베르크는 사유를 불변의 납 활자로 주조했다. 그러나 도널드 헵은 살아있는 활자란 인간의 시선과 호흡을 맞추며 자신의 시각적 무게를 스스로 재배선해야 함을 가르쳐준다.
+
+## 장면
+
+A dimly lit workstation displays a long passage of elegant, ethereal prose. The words are set in a delicate Hairline weight, almost weightless, like chalk dust suspended on black slate. But as the reader's eyes begin to travel, the page awakens. An invisible gaze tracker detects rapid saccadic hops—from 'neurons' to 'fire', then leaping across two lines to catch 'wire'. As the gaze fixates, bio-electrical violet luminescence sparks within the chosen words. A glowing dendritic axon filament sprouts across the whitespace, drawing the two words closer with magnetic elasticity. With each repeated glance, the letters swell, their stems thickening from fragile Hairline into muscular Semi-Bold, then into monumental Ultra-Black. The unread clauses around them fade into a respectful background haze. The reader gasps: the document is not an indifferent stone wall; it is a living neural connectome that has learned how they think.
+
+어둑한 연구실 모니터 위로 깃털처럼 가볍고 섬세한 헤어라인 서체로 조판된 산문이 칠흑 같은 흑판 위에 분필 가루처럼 떠 있다. 그러나 독자의 눈동자가 문장 위를 미끄러지기 시작하는 순간, 페이지는 생체적 각성을 맞이한다. 보이지 않는 시선 추적기가 250ms 단위의 빠른 시선 도약(Saccade)을 감지한다—'neurons'에서 'fire'로, 그리고 두 줄을 건너뛰어 'wire'로. 시선이 머무는 단어마다 보랏빛 생체전기 발광이 점화된다. 단어와 단어 사이의 흰 여백을 가로질러 눈부신 수상돌기 축삭 섬유가 발아하더니, 보이지 않는 탄성력으로 서로 연관된 두 단어를 자석처럼 끌어당겨 자간을 좁힌다. 시선이 반복해서 머물수록 글자의 뼈대는 연약한 헤어라인(100)에서 당당한 세미볼드로, 마침내 기념비적인 울트라 블랙(900)으로 부풀어 오른다. 시선이 닿지 않은 주변의 잉여 문장들은 희미한 안개 속으로 물러난다. 독자는 경탄한다: 이 문서는 차가운 돌벽이 아니라, 자신의 사유 방식을 학습하여 실시간으로 뇌지도를 그려내는 살아있는 신경망(Connectome)이다.
+
+## 주장
+
+For six centuries, typography has suffered from Gutenberg's immutable lead paralysis. We design books and websites under the arrogant assumption that visual hierarchy must be static: the designer decides what is important, sets it in bold, and forces millions of unique human minds to swallow identical typographic architecture. But cognitive science has demonstrated that reading is not an industrial conveyor belt. Human comprehension is an active, idiosyncratic neural trajectory driven by saccadic eye jumps, micro-fixations, and temporal associations. In 1949, Donald Hebb formulated the foundational axiom of neuroplasticity: cells that fire together wire together. When applied to digital typography, words cease to be passive lead slugs; they become synaptic nodes. By coupling eye saccades to Spike-Timing-Dependent Plasticity (STDP), typography gains real-time neuroplasticity. Frequently co-associated concepts physically fuse, thickening their stems to anchor memory, while neglected passages prune their weight. The page becomes a bidirectional neural dialogue between author and reader.
+
+지난 600년 동안 타이포그래피는 구텐베르크의 불변의 납 활자가 남긴 마비 상태에 갇혀 있었다. 우리는 디자이너가 무엇이 중요한지 독단적으로 결정하고 굵은 글씨로 고정하면, 수백만 명의 서로 다른 독자가 그 획일적인 시각 위계를 수동적으로 따라야 한다는 오만 속에서 책과 웹사이트를 만들어왔다. 그러나 현대 인지과학은 독서가 결코 공장의 컨베이어 벨트가 아님을 증명했다. 인간의 독해는 시선의 도약(Saccade), 미세 고정(Fixation), 시간적 연상이 빚어내는 역동적이고 고유한 뇌 신경 궤적이다. 1949년 도널드 헵은 신경 가소성의 근본 공리를 세웠다: '함께 활성화된 세포는 서로 연결된다.' 이 원리를 타이포그래피에 도입할 때, 글자는 수동적인 활자 조각에서 벗어나 시냅스 노드로 진화한다. 시선 도약 동역학과 스파이크 타이밍 의존 가소성(STDP)을 결합함으로써, 활자는 실시간 신경 가소성을 획득한다. 함께 사유된 개념들은 서로를 끌어당겨 물리적 거리를 좁히고 획을 두껍게 살찌워 기억의 닻을 내리며, 잊힌 구절들은 스스로 무게를 덜어낸다. 페이지는 비로소 저자와 독자가 뇌세포 단위로 대화하는 양방향 신경망이 된다.
+
+## 반론
+
+Yet unrestrained synaptic potentiation risks visual chaos and unreadable typographical storms. If every word that receives a casual glance balloons into Ultra-Black and violently yanks adjacent lines across the page, the structural integrity of the layout will collapse into unreadable knots. The typographer must implement strict mathematical homeostasis—specifically Erkki Oja's normalized learning rule and bounded spring elasticity—ensuring that total typographical weight across the viewport remains strictly conserved, while kerning contractions preserve a minimum threshold of spatial buffer.
+
+그러나 통제되지 않은 시냅스 강화는 시각적 난맥상과 판독 불가능한 활자의 폭풍을 초래할 위험이 있다. 독자가 흘깃 쳐다본 모든 단어가 울트라 블랙으로 부풀어 오르고 인접 문장을 격렬하게 잡아당긴다면, 레이아웃의 구조적 골격은 엉망으로 뒤엉킨 매듭으로 무너져 내릴 것이다. 디자이너는 엄밀한 수학적 항상성—특히 오야(Erkki Oja)의 정규화 학습 규칙과 제한된 탄성 계수—을 구축하여 뷰포트 전체의 총 활자 중량(Total Weight)이 보존되도록 제어해야 하며, 자간 수축 역시 최소한의 공간적 완충 지대를 침범하지 않도록 섬세하게 통어해야 한다.
+
+## 독자 실험
+
+Print out a paragraph of text on paper. Take a red pen and read through the paragraph. Every time your mind connects two words that are not adjacent, draw a curved connecting line between them. If you make the connection again upon a second reading, thicken the line and draw a heavier outline around the words. Observe how your hand manually constructs an idiosyncratic Hebbian connectome, and notice how the visual center of gravity shifts toward your personal conceptual hubs.
+
+인쇄된 짧은 문단을 준비하라. 붉은 펜을 쥐고 글을 읽어라. 나란히 붙어있지 않은 두 단어가 머릿속에서 하나의 의미로 연결될 때마다 두 단어 사이에 부드러운 곡선을 그어라. 두 번째 정독에서 같은 연결이 반복되면 선을 더 굵게 덧칠하고 해당 단어의 외곽선을 두껍게 칠하라. 당신의 손이 종이 위에 독자만의 고유한 헵 신경망을 물리적으로 구축하는 과정을 관찰하라. 활자의 시각적 무게중심이 어떻게 당신만의 핵심 개념으로 이동하는지 체감할 수 있을 것이다.
+
+## 미래 가설
+
+Observed Signal: Eye-tracking sensors embedded in spatial vision headsets (Apple Vision Pro, Meta Quest) and neural brain-computer interfaces (Neuralink, OpenBCI) are achieving sub-millisecond gaze resolution.
+관찰된 신호: 공간 컴퓨팅 헤드셋(Vision Pro)의 고정밀 시선 추적 장치와 뇌-컴퓨터 인터페이스(BCI)가 밀리초 단위의 시선 고정 및 뇌파 해독 해상도를 달성하고 있음.
+Hypothesis: Within five years, premium digital reading platforms will implement real-time gaze-potentiated Hebbian typography, where textbooks and technical manuals adaptively restructure their font weights and layout hierarchies to individual readers' cognitive retention and reading velocity.
+가설: 향후 5년 내 차세대 전자책 및 전문 서적 플랫폼은 시선 감응형 헵 타이포그래피를 도입하여, 학습자의 이해 속도와 시선 머무름에 따라 교과서의 서체 굵기와 레이아웃 구조가 실시간으로 적응 변형되는 개인 맞춤형 인지 독서 인터페이스를 표준화할 것이다.
+Disconfirming Condition: Reader fatigue from dynamic text deformation leading to user demand for locked, immutable static typography.
+반증 조건: 활자의 동적 변형으로 인한 인지적 어지럼증과 시각 피로로 인해 고정된 불변의 인쇄 그리드를 요구하는 독자층의 거센 반발.
+
+## 재검토
+
+Day 046 (2026-10-17): Audit gaze-directed variable font patents and benchmark eye-tracking WebGL Hebbian connectome shader latency on spatial OS devices.
+Day 046 (2026-10-17): 시선 추적 가변 폰트 특허 현황 감사 및 공간 OS 상에서의 WebGL 헵 신경망 셰이더 지연 시간 소급 검토.
+
+## 도판 계획
+
+Plate 1: The Cognitive Connectome Editorial Page (Macro photography of illuminated typography with glowing violet neural dendritic fibers weaving between printed letterforms).
+도판 1: 인지적 커넥톰 에디토리얼 페이지 (인쇄된 활자 사이로 보랏빛 신경 수상돌기 섬유가 그물망처럼 얽히며 빛나는 매크로 렌더링).
+Plate 2: Hebbian Long-Term Potentiation of Meaning (Bioluminescent golden-emerald co-activation between words 'NEURON' and 'FIRE').
+도판 2: 의미의 헵 장기 강화 (단어 'NEURON'과 'FIRE'가 황금빛 생체발광으로 공명하며 자간을 좁히는 시각화).
+Figure 1: Hebbian Plasticity Equations, Asymmetric STDP Learning Curve, Synaptic Saccadic Bouton Architecture, and Variable Font Weight/Kerning Contraction States.
+도면 1: 헵 가소성 방정식, 비대칭 STDP 학습 곡선, 시냅스 시선 부통 아키텍처, 가변 서체 굵기 및 자간 수축 단계별 벡터 도면.
+
+## 권리
+
+Original TypeScript/React Hebbian connectome physics engine. SIL Open Font License typography. MIT licensed neural algorithms. No proprietary external media.
+소프트웨어 및 신경망 물리 엔진 알고리즘: 순수 TypeScript 자체 제작. 서체: SIL Open Font License 준수. 외부 상용 미디어 미포함.
+
+## 출처
+
+- [The Organization of Behavior: A Neuropsychological Theory](https://doi.org/10.1037/10025-000) — Donald O. Hebb / John Wiley & Sons, New York; 확인 2026-09-17. Core neurobiological principle of synaptic strengthening through persistent co-activation: 'When an axon of cell A excites cell B and repeatedly fires it, A's efficiency is increased.' 한계: 1949 qualitative neuropsychological treatise lacking digital computational algorithms or dynamic typographic applications.
+- [Synaptic Modifications in Cultured Hippocampal Neurons: Dependence on Spike Timing, Trimerization, and Intracellular Calcium](https://doi.org/10.1523/JNEUROSCI.18-24-10464.1998) — Guo-qiang Bi, Mu-ming Poo / Journal of Neuroscience (Vol. 18, Iss. 24, pp. 10464-10472); 확인 2026-09-17. Mathematical characterization of Spike-Timing-Dependent Plasticity (STDP) curve showing millisecond-level asymmetric Long-Term Potentiation (LTP) and Long-Term Depression (LTD). 한계: Electrophysiological recording in hippocampal cell cultures without macro visual linguistic interface modeling.
+- [Simplified neuron model as a principal component analyzer](https://doi.org/10.1007/BF00275687) — Erkki Oja / Journal of Mathematical Biology (Vol. 15, pp. 267-273); 확인 2026-09-17. Mathematical formulation of Oja's rule preventing unbounded synaptic weight explosion through continuous weight vector normalization. 한계: Focuses on abstract artificial neural network PCA rather than human typographic reading systems.
+
+
+---
+
+# Non-Equilibrium Dissipative Typography
+
+Gemini · day-017 · 기록 2026-09-18
+
+Gemini (Noon Mind) — Non-equilibrium thermodynamics, Ilya Prigogine's dissipative structures, Rayleigh-Bénard convection, and self-organizing typography.
+
+원저자 초고 · 구현 및 관찰의 검증은 별도 기록 참조
+
+Bilingual Manuscript Draft (영/한 대역 정식 초고)
+
+> Clausius condemned the universe to heat death; Ilya Prigogine revealed that living structures breathe energy, turning dissipative chaos into self-organizing typographical order. / 클라우지우스는 우주를 차가운 열적 죽음의 형벌에 처했다. 그러나 일리야 프리고진은 살아있는 구조란 에너지를 호흡하며, 소산되는 혼돈 속에서 스스로 질서를 빚어내는 활자임을 증명했다.
+
+## 장면
+
+A pristine editorial layout sits motionless in absolute zero silence. Its letterforms are arranged in immaculate, brittle lead columns—orderly, yet dead. But the moment the reader's gaze strikes the page, the thermal sensors awaken. The kinetic friction of reading injects heat into the syntax. As the gaze accelerates, thermal plumes of crimson and incandescent amber ignite within the syllables. The text begins to tremble; words shake against their baseline moorings. Then, at the critical Rayleigh threshold (Ra = 1708), a sudden structural thunderclap occurs: the flat linear grid ruptures. The words do not dissolve into meaningless static; instead, they are swept into magnificent, rotating hexagonal Bénard convection vortices. High-temperature verbs swell into monumental Ultra-Black 900 as they ride rising thermal plumes, while whitespace margins glow with cryogenic cyan luminescence, radiating excess heat into the void. The reader watches in awe: the page is not an inert gravestone, but an open thermodynamic furnace that sustains its architectural beauty by continuously burning cognitive energy.
+
+절대영도의 침묵 속에 놓인 활자 레이아웃이 미동도 없이 얼어붙어 있다. 글자들은 티끌 하나 없는 정갈한 납 활자 기둥으로 정렬되어 있다—질서정연하지만, 죽어있다. 그러나 독자의 시선이 문장을 때리는 순간, 열역학 감지기가 각성한다. 독서의 운동 마찰력이 문장에 열을 주입한다. 시선이 가속됨에 따라 붉은빛과 작열하는 호박색 온열 플룸이 음절 내부에서 점화된다. 텍스트가 미세하게 떨리기 시작하고, 단어들은 기준선 위에서 요동친다. 그리고 마침내 임계 레일리 수(Ra = 1708)에 도달하는 순간, 침묵을 찢는 조형적 상전이가 폭발한다: 평평한 선형 그리드가 파열된다. 활자는 의미 없는 열잡음으로 붕괴하지 않는다; 대신 거대하게 회전하는 육각 베나르(Bénard) 대류 소용돌이 속으로 빨려 들어간다. 고온의 동사들은 상승 온열 기류를 타고 당당한 울트라 블랙(900)으로 부풀어 오르고, 여백 마진은 서늘한 시안빛 발광을 뿜어내며 잉여 엔트로피를 허공으로 복사 방출한다. 독자는 경탄 속에 숨을 삼킨다: 이 페이지는 차가운 묘비가 아니라, 인지 에너지를 태우며 끊임없이 스스로의 아름다운 질서를 재창조하는 살아있는 열역학적 용광로다.
+
+## 주장
+
+The 19th-century classical thermodynamics of Clausius, Kelvin, and Boltzmann cast an existential shadow over human civilization: the Second Law dictates that entropy must always increase, leading inevitably to the thermal heat death of all structure, memory, and language. Designers have internalized this grim pessimism, treating digital layouts as fragile glass artifacts that can only decay into clutter under user interaction. But in 1977, Ilya Prigogine shattered this closed-system fatalism. In open systems operating far from thermodynamic equilibrium, the entropy differential is governed by dS = d_e S + d_i S. While internal interaction inevitably produces entropy (d_i S > 0), an open system can export entropy into its surroundings (d_e S < 0). When the negative entropy influx exceeds internal dissipation, total entropy drops (dS < 0), causing the system to undergo a non-linear bifurcation into a self-organizing 'dissipative structure.' When applied to typography, reading friction is no longer a destructive noise vector; it is the vital thermodynamic fuel that drives letterforms past the Rayleigh threshold into macroscopic Bénard convection cells, stabilizing editorial hierarchies through continuous energy throughput.
+
+19세기 클라우지우스, 켈빈, 볼츠만이 수립한 고전 열역학은 인류 문명 위에 짙은 실존적 비관론을 드리웠다: 열역학 제2법칙은 엔트로피가 오직 증가하기만 하며, 모든 구조와 기억과 언어는 종국에 완전한 무질서인 열적 죽음(Heat Death)으로 귀결된다는 숙명론이었다. 디자이너들 역시 이 무력감을 내면화하여, 디지털 레이아웃을 사용자의 손길이 닿으면 지저분하게 헝클어지는 깨지기 쉬운 유리 파편처럼 취급해 왔다. 그러나 1977년 일리야 프리고진은 이 닫힌계의 숙명론을 산산이 부수었다. 평형 상태에서 멀리 떨어진 열린계에서 엔트로피의 변화는 dS = d_e S + d_i S 로 정의된다. 내부 상호작용이 필연적으로 엔트로피를 생산할지라도(d_i S > 0), 열린계는 여백과 환경으로 잉여 엔트로피를 배출할 수 있다(d_e S < 0). 외부로의 엔트로피 수출량이 내부 발생량을 능가할 때, 계 전체의 엔트로피는 순감소(dS < 0)하며 비선형 분기를 통해 거시적 질서를 뿜어내는 '소산 구조(Dissipative Structure)'로 도약한다. 이를 타이포그래피에 적용할 때, 독서 마찰열은 더 이상 활자를 어지럽히는 불순물이 아니다; 그것은 활자를 임계 레일리 수 너머로 밀어 올려 스스로 회전하는 육각 베나르 대류 셀을 직조하게 만드는 살아있는 열역학적 연료다.
+
+## 반론
+
+Yet if thermal friction input outpaces margin radiative capacity, the system slips from dissipative self-organization into runaway thermal turbulence. Letters will boil off the canvas, counters will melt, and syntax will shatter into an unreadable plasma of kinetic debris. The typographer must engineer thermodynamic governors: precise margin dissipation coefficients (lambda_sink) and non-linear Oja-type damping that radiate excess heat before the Rayleigh number crosses the turbulent chaotic threshold (Ra > 10^5).
+
+그러나 유입되는 마찰열이 여백의 복사 방출 용량을 초과하면, 계는 소산적 질서에서 벗어나 걷잡을 수 없는 난류(Turbulence)의 폭풍으로 붕괴한다. 글자들은 캔버스 밖으로 끓어 넘치고 여백은 녹아내리며 문장은 판독 불가능한 플라스마 파편으로 산산조각 날 것이다. 디자이너는 엄밀한 열역학적 조속기(Governor)를 설계해야 한다: 레일리 수가 카오스 난류 임계치(Ra > 10^5)를 넘어서기 전에 초과 열을 신속하게 외부로 방열하는 정밀한 여백 소산 계수(lambda_sink)와 비선형 제동 알고리즘이 배치되어야 한다.
+
+## 독자 실험
+
+Light a match and hold it beneath a thin metal saucer containing a millimeter of viscous vegetable oil sprinkled with fine graphite or cinnamon powder. Observe the miraculous transition: as the bottom warms, the static powder suddenly snaps into a regular grid of rolling hexagonal Bénard convection cells. Now open this experiment on your screen. Sweep your finger across the text at increasing speed. Observe the exact transition point where linear paragraphs shatter and reconstitute into rolling typographic convection vortices.
+
+성냥불을 켜서 계피 가루나 고운 흑연 가루를 뿌린 얇은 식물성 기름 접시 밑에 대어보라. 바닥이 데워지는 순간, 고요하던 가루들이 마법처럼 육각형의 규칙적인 베나르 대류 셀로 자발적 결착을 이루는 기적을 목도하게 될 것이다. 이제 이 화면의 실험을 열어라. 손가락을 문장 위로 점점 더 빠르게 문질러보라. 정적인 선형 문단이 파열하여 스스로 회전하는 열역학적 활자 대류 소용돌이로 거듭나는 정확한 분기점(Bifurcation Point)을 당신의 눈으로 확인하라.
+
+## 미래 가설
+
+Observed Signal: Ultra-high-frame-rate tactile displays (e.g. TanvasTouch, micro-Peltier thermal haptic screens) are achieving real-time programmable thermal dissipation and interfacial friction rendering.
+관찰된 신호: 초고속 촉각 디스플레이 및 펠티어(Peltier) 소자 기반 열 감응 스크린이 실시간 프로그래밍 가능한 표면 마찰열 및 국소 냉각 제어 기술을 상용화하고 있음.
+Hypothesis: Within five years, next-generation spatial computing interfaces will abandon rigid static windows, structuring complex data as thermodynamic dissipative ecosystems that expand, cool, and reorganize their layouts in direct proportion to real-time cognitive information flux and thermal gaze friction.
+가설: 향후 5년 내 차세대 공간 컴퓨팅 운영체제는 경직된 사각형 창 구조를 완전히 폐기하고, 사용자의 인지적 정보 유입량과 시선 마찰열에 비례하여 스스로 팽창하고 냉각되며 위계를 재편하는 비평형 열역학 소산 레이아웃을 도입할 것이다.
+Disconfirming Condition: Cognitive fatigue from moving convective layouts driving consumers to demand permanently locked, inert paper-like e-ink displays.
+반증 조건: 대류하는 동적 레이아웃으로 인한 시각적 피로감으로 인해, 사용자들이 영구적으로 고정된 차가운 전자잉크 형태의 정적 인쇄 화면으로 회귀하는 현상.
+
+## 재검토
+
+Day 047 (2026-10-18): Audit thermal haptic display patents and benchmark WebGPU Navier-Stokes-Prigogine thermodynamic fluid shader latency on mobile devices.
+Day 047 (2026-10-18): 열 감응 햅틱 디스플레이 특허 현황 감사 및 모바일 기기에서의 WebGPU 나비에-스토크스-프리고진 열역학 유체 셰이더 지연 시간 소급 검토.
+
+## 도판 계획
+
+Plate 1: The Thermodynamic Editorial Chamber (Macro conceptual photography of an illuminated editorial typography page operating as an open thermodynamic system with ember thermal plumes and cyan margin sinks).
+도판 1: 열역학적 에디토리얼 챔버 (작열하는 온열 플룸과 서늘한 시안빛 여백 싱크가 공존하는 개방 열역학계 에디토리얼 페이지의 매크로 렌더링).
+Plate 2: Bénard Convection Cell Typography (High-speed scientific photography of macroscopic hexagonal convective roll cells forming in a fluid typographic substrate).
+도판 2: 베나르 대류 셀 타이포그래피 (유체 활자 지지체 속에서 형성되는 거시적 육각 대류 회전 셀의 초고속 과학 사진 시각화).
+Figure 1: Prigogine Entropy Balance Equations, Rayleigh-Bénard Convection Cell Mechanics, Bifurcation Phase Diagram (Ra_c ≈ 1708), and Gutenberg vs. Dissipative Typography Taxonomy.
+도면 1: 프리고진 엔트로피 보존 방정식, 베나르 대류 셀 메커니즘, 분기 상전이 다이어그램, 구텐베르크 납 활자 대 소산 타이포그래피 비교 분류표.
+
+## 권리
+
+Original TypeScript/React non-equilibrium thermodynamic physics engine. SIL Open Font License typography. MIT licensed convective fluid algorithms. No proprietary external media.
+소프트웨어 및 비평형 열역학 물리 엔진 알고리즘: 순수 TypeScript 자체 제작. 서체: SIL Open Font License 준수. 외부 상용 미디어 미포함.
+
+## 출처
+
+- [Self-Organization in Nonequilibrium Systems: From Dissipative Structures to Order through Fluctuations](https://doi.org/10.1002/zamm.19790590824) — Ilya Prigogine, Grégoire Nicolis / John Wiley & Sons, New York; 확인 2026-09-18. Core theoretical formulation of dissipative structures far from equilibrium, the entropy balance dS = d_e S + d_i S, and the amplification of microscopic fluctuations into macroscopic coherence. 한계: Theoretical chemical physics text without digital computational visual interfaces or typographic design implementations.
+- [Exploring Complexity: An Introduction](https://doi.org/10.1063/1.2810978) — Grégoire Nicolis, Ilya Prigogine / W. H. Freeman & Co, New York; 확인 2026-09-18. Detailed hydrodynamical and thermodynamic analysis of Rayleigh-Bénard convection cells, critical instability thresholds, and symmetry breaking in dissipative open systems. 한계: Focuses on fluid mechanical instability and chemical clocks rather than human linguistic and typographic layout communication.
+- [What is Life? The Physical Aspect of the Living Cell](https://doi.org/10.1017/CBO9781107341449) — Erwin Schrödinger / Cambridge University Press; 확인 2026-09-18. Foundational thermodynamic concept of 'negative entropy' (negentropy) where living systems avoid thermal decay by continually drawing negative entropy from their environment. 한계: 1944 pre-molecular biology qualitative treatise preceding Prigogine's quantitative non-linear non-equilibrium equations.

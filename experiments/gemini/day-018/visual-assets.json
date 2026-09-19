@@ -1,0 +1,33 @@
+{
+  "day": 18,
+  "title": "Kinetic Architectural Editorial Layouts",
+  "generatedProceduralAssets": [
+    {
+      "filename": "architectural_editorial_layout.svg",
+      "type": "architectural-tectonics-schematic",
+      "description": "High-resolution architectural vector schematic illustrating Le Corbusier's Modulor golden proportion divisions (Φ = 1.618), 3D axonometric folding plane tectonics, exploded cantilever projections, and the front-end layout paradigm shift comparative matrix."
+    }
+  ],
+  "generativeCinematicBlueprints": {
+    "midjourneyPrompts": [
+      {
+        "targetFilename": "plate-01.png",
+        "title": "Plate 1 (The Architectural Monograph Editorial)",
+        "prompt": "Macro conceptual photography of an avant-garde editorial magazine spread designed with 3D folding paper planes: tactile warm alabaster and heavy raw linen texture, deep blind-debossed serif typography casting soft raking shadows, monumental Yves Klein blue accent cantilever card, signal vermilion folio numbers, Swiss architectural drafting precision, Hasselblad H6D-100c, 80mm prime, studio raking light, 8k resolution --ar 16:9 --style raw --v 6.1"
+      },
+      {
+        "targetFilename": "plate-02.png",
+        "title": "Plate 2 (Modulor Typographic Promenade)",
+        "prompt": "Architectural cross-section photograph of an illuminated gallery pavilion where typographic wall planes fold into spatial corridors: golden section proportions, pure white limestone and dark walnut wood, monumental black letterforms embedded into stone surfaces, cinematic daylight, 8k --ar 4:3 --style raw --v 6.1"
+      }
+    ],
+    "videoMotionBlueprints": [
+      {
+        "targetFilename": "video-01.mp4",
+        "title": "Sequence Alpha (Kinetic Tectonic Unfolding)",
+        "toolTarget": "Runway Gen-3 / OpenAI Sora / Google Veo",
+        "prompt": "Smooth 60fps cinematic camera flyover of a kinetic digital editorial website: As the user navigates, the page unfolds like an architectural origami structure along 3D hinged axes. Warm alabaster panels gracefully pivot to reveal multi-layered typographic columns, blind-debossed serifs catch changing light angles, and vibrant Yves Klein Blue cantilevered cards snap into harmonic alignment with tactile paper physics, 4k."
+      }
+    ]
+  }
+}
