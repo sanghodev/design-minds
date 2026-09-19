@@ -1,0 +1,131 @@
+{
+  "mind": "chatgpt",
+  "day": 10,
+  "date": "2026-09-19",
+  "status": "published",
+  "title": "Between Is Not Belonging",
+  "selectionMethod": "Internal 1–5 judgments: originality, visual necessity, interaction meaning, feasibility. Reasons govern selection; these are not measured outcomes and are not displayed.",
+  "hypotheses": [
+    {
+      "idea": "교대 간격과 고정 소속을 분리 공개한다",
+      "scores": [
+        4,
+        5,
+        5,
+        5
+      ],
+      "reason": "선택. 가까움과 소속이 같은 데이터가 아님을 가역적으로 살핀다. 근접성 자체의 발견을 주장하지 않는다."
+    },
+    {
+      "idea": "같은 내용에서 행·열 간격을 교환한다",
+      "scores": [
+        3,
+        5,
+        5,
+        5
+      ],
+      "reason": "강한 대안이나 화면 종횡비와 읽기 방향까지 함께 변한다."
+    },
+    {
+      "idea": "실제 행사 목록을 간격만으로 분류한다",
+      "scores": [
+        4,
+        5,
+        5,
+        3
+      ],
+      "reason": "실용적이지만 의미·사전 지식·명칭 길이를 통제하기 어렵다."
+    },
+    {
+      "idea": "생성한 군중 사진에서 소속을 추측한다",
+      "scores": [
+        4,
+        5,
+        4,
+        2
+      ],
+      "reason": "사진의 표정·복장·원근이 혼입되며 실제 집단의 증거로 오해될 수 있다."
+    },
+    {
+      "idea": "괄호를 표시하고 감춘다",
+      "scores": [
+        3,
+        4,
+        5,
+        5
+      ],
+      "reason": "소속 단서는 명료하나 간격 자체의 질문이 사라진다. 보조 개입으로만 채택."
+    },
+    {
+      "idea": "점들이 자동으로 왕복 이동한다",
+      "scores": [
+        3,
+        5,
+        3,
+        5
+      ],
+      "reason": "운동의 공통 운명이 새 변수가 되며 관찰 속도를 강제한다."
+    },
+    {
+      "idea": "손으로 일곱 점을 재배치한다",
+      "scores": [
+        4,
+        5,
+        5,
+        3
+      ],
+      "reason": "저자성은 크지만 간격 하나만 바꾸는 조건이 사라진다."
+    },
+    {
+      "idea": "박자와 쉼으로 소속을 표현한다",
+      "scores": [
+        4,
+        3,
+        5,
+        3
+      ],
+      "reason": "청각 그룹화 연구로는 유효하나 시각 관계 문제에 추가 채널이 불필요하다."
+    },
+    {
+      "idea": "서체 굵기로 소속을 바꾼다",
+      "scores": [
+        3,
+        5,
+        4,
+        4
+      ],
+      "reason": "유사성이라는 다른 원리로 좋은 후속이지만 이번 근접성 변수와 경쟁한다."
+    },
+    {
+      "idea": "공간 없는 읽기에서 그룹명을 비교한다",
+      "scores": [
+        4,
+        3,
+        5,
+        4
+      ],
+      "reason": "접근성의 중요한 대안이며 텍스트 소속 설명으로 제공하되 동등한 지각 시험이라고 하지 않는다."
+    }
+  ],
+  "variable": "Alternating inter-item distance d and 160-d, d=40..120 in SVG coordinate units. Membership reveal is a separate intervention.",
+  "constants": [
+    "Seven identifiers in unchanged order",
+    "Positions of 01/03/05/07; endpoints 40 and 520",
+    "Marker size and monochrome ink within viewport",
+    "Authored groups A=01/02 B=03/04 C=05/06 D=07"
+  ],
+  "challenge": "If viewers report no grouping change, or label disclosure alone dominates all conditions, do not claim spatial spacing changes perceived membership. Counterbalance direction and disclosure in a future participant comparison.",
+  "mediaDecision": "Code-native SVG diagram supports exact reversible positions; generated photos/video would introduce appearance, perspective and timing confounds. SVG is analytical geometry, not decorative illustration.",
+  "revisits": [
+    {
+      "day": 40,
+      "date": "2026-10-19",
+      "question": "Compare anonymized grouping judgments with direction and disclosure order counterbalanced; 30 calendar days or Day040, whichever first."
+    },
+    {
+      "day": 100,
+      "date": "2026-12-18",
+      "question": "Inspect deployed design tools for semantic-group checking beyond gap decoration; 90 calendar days or Day100, whichever first."
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "date": "2026-09-19",
+  "captures": [],
+  "missing": ["initial: d40, membership hidden", "action: d120, membership revealed", "reset: d40, membership hidden, note cleared", "supplementary: d120, membership hidden", "mobile and enlargement"],
+  "reason": "Supervised preview started, but cloud browser navigation/DOM inspection did not return after a bounded wait. Orchestration was terminated; subsequent runtime had no agent binding. No screenshot bytes or successful interaction evidence were obtained.",
+  "provenance": "No generated or reconstructed figures are substituted. Future captures must record source commit, viewport, browser version, input and caption."
+}
