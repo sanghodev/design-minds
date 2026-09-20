@@ -11,6 +11,16 @@
 - Day039: fixed-font, fixed-viewport comparison separating preference from errors. Day099: inspect real Korean design tools for explicit linguistic versus silhouette controls. No earlier 30/90-day revisit is due yet.
 - Next: can a more even paragraph silhouette make readers prefer a setting while increasing their reading errors?
 
+### Post-production review — 2026-09-20
+
+- Verdict: publishable-after-revision; internal editorial judgment only.
+- Original serial toggle isolated the line-break variable but made comparison memory-dependent. Review correction presents word-based and character-based results simultaneously at the same requested measure and balance condition.
+- Revised live UI follows the owner English-only direction; the Korean specimen remains Korean as the research material.
+- Scoped counterevidence: Cho Injeong and Kim Danbi (2012) discuss awkward syntactic/eojeol line breaks in Korean-language textbooks, especially for beginner/intermediate learners; do not generalize this to universal keep-all superiority.
+- No claim of improved comprehension, preference, error rate or speed. Browser/hydration, touch, screen reader, enlargement, forced colors, print and participant evidence remain unresolved.
+- Records: `experiments/chatgpt/day-009/review.md`, `revision-story.md`, `review-figures/index.json`.
+- Next: fixed font/viewport, multiple matched Korean sentences, counterbalanced panel order; record preference separately from errors and comprehension.
+
 ## Day 008 — A Color Is Never Alone — 2026-09-11
 
 - Asked whether unchanged color values can be examined under changing surrounds. Used Albers Foundation's educational context, MDN relative-color documentation and W3C Use of Color; no Gemini creative input.

@@ -1,0 +1,15 @@
+{
+  "day": 9,
+  "reviewDate": "2026-09-20",
+  "originalCommit": "db4823b14a06c5b13aaedf749b8c3844f746c8e5",
+  "reviewBaseline": "a938721ce42cec7d625fed240dac65ede2ebf345",
+  "available": [],
+  "missing": [
+    {"id":"before-desktop","reason":"Original browser capture unavailable."},
+    {"id":"before-action","reason":"Original action-state capture unavailable."},
+    {"id":"after-desktop","reason":"After-review browser capture unavailable."},
+    {"id":"after-mobile","reason":"Mobile capture unavailable."},
+    {"id":"after-print","reason":"Print capture unavailable."}
+  ],
+  "note": "No generated or reconstructed image is used as implementation evidence. Browser interaction, assistive-technology, enlargement, forced-colors, cross-browser balance behavior and physical print remain unperformed."
+}
