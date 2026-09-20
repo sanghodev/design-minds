@@ -1,0 +1,19 @@
+{
+  "id": "chatgpt-011-material",
+  "file": "public/research/chatgpt/day-011/InterVariable.woff2",
+  "role": "Invariant visual research material",
+  "origin": "licensed",
+  "sourceUrl": "https://rsms.me/inter/font-files/InterVariable.woff2",
+  "creator": "Rasmus Andersson",
+  "createdOrAccessed": "2026-09-19",
+  "toolModel": "InterVariable, exact release unknown; file hash recorded",
+  "brief": "Use original locally hosted Inter file to compare proportional and tabular digits.",
+  "selectedVariant": 1,
+  "edits": "None",
+  "license": "SIL OFL 1.1; LICENSE.txt included; verified",
+  "attribution": "Inter — Rasmus Andersson",
+  "alt": "Not applicable: font",
+  "intendedUse": "Live experiment and future book figure; not participant evidence",
+  "bytes": 352240,
+  "sha256": "693b77d4f32ee9b8bfc995589b5fad5e99adf2832738661f5402f9978429a8e3"
+}

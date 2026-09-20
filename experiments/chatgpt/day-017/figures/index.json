@@ -1,0 +1,10 @@
+{
+  "status": "missing",
+  "states": [
+    "initial",
+    "action",
+    "reset"
+  ],
+  "reason": "No browser capture completed. Generated source image is not an implementation screenshot.",
+  "captured": []
+}

@@ -1,0 +1,130 @@
+{
+  "mind": "chatgpt",
+  "day": 14,
+  "date": "2026-09-20",
+  "status": "published",
+  "title": "Between the Frames",
+  "question": "같은 경로의 표본 수만 달라질 때 중간 움직임에 관한 주장을 얼마나 할 수 있는가?",
+  "selectionMethod": "Internal judgments 1–5: originality, visual necessity, interaction meaning, feasibility; not measured outcomes.",
+  "hypotheses": [
+    {
+      "idea": "같은 경로의 표본 수만 달라질 때 중간 움직임에 관한 주장을 얼마나 할 수 있는가?",
+      "scores": [
+        4,
+        5,
+        5,
+        5
+      ],
+      "reason": "선택: Sample count만 바꾸고 비교의 기준을 보존할 수 있다."
+    },
+    {
+      "idea": "실제 달리기 영상을 낮은 프레임률로 바꾼다",
+      "scores": [
+        4,
+        5,
+        5,
+        3
+      ],
+      "reason": "강한 현실 대안이나 원본 권리·동작 통제가 필요하다."
+    },
+    {
+      "idea": "표본 수와 재생 속도를 동시에 바꾼다",
+      "scores": [
+        3,
+        5,
+        4,
+        5
+      ],
+      "reason": "각각의 원인을 구별할 수 없다."
+    },
+    {
+      "idea": "균일 경로 대신 속도가 다른 경로를 쓴다",
+      "scores": [
+        3,
+        5,
+        2,
+        5
+      ],
+      "reason": "유용하지만 공간 간격과 시간 간격의 추가 설명이 필요하다."
+    },
+    {
+      "idea": "연결선을 항상 보인다",
+      "scores": [
+        4,
+        5,
+        5,
+        2
+      ],
+      "reason": "중간 경로를 추측하는 질문을 사전에 해결해 버린다."
+    },
+    {
+      "idea": "표본 시점을 무작위로 뽑는다",
+      "scores": [
+        4,
+        4,
+        5,
+        4
+      ],
+      "reason": "표본 방식의 연구로 확장되므로 균등 간격과 따로 비교해야 한다."
+    },
+    {
+      "idea": "현재 점에 잔상을 붙인다",
+      "scores": [
+        2,
+        3,
+        3,
+        5
+      ],
+      "reason": "보간 단서를 추가해 빈 구간의 불확실성을 줄인다."
+    },
+    {
+      "idea": "시점을 키보드로 한 단계씩 이동한다",
+      "scores": [
+        4,
+        3,
+        4,
+        3
+      ],
+      "reason": "접근 가능한 시간 선택에 적합해 네이티브 슬라이더의 기본 기능으로 채택."
+    },
+    {
+      "idea": "왕복 자동 재생을 기본으로 한다",
+      "scores": [
+        4,
+        5,
+        4,
+        2
+      ],
+      "reason": "관찰 속도를 강제하여 수동 탐색을 선택했다."
+    },
+    {
+      "idea": "프레임 사이를 생성형 영상으로 채운다",
+      "scores": [
+        2,
+        3,
+        4,
+        2
+      ],
+      "reason": "그럴듯한 생성과 실제 경로의 혼동이라는 다른 연구가 된다."
+    }
+  ],
+  "variable": "Sample count",
+  "constants": [
+    "Same trajectory, period and viewport"
+  ],
+  "challenge": "동일 조건에서 판단 변화가 없거나 설명 공개 순서만 판단을 결정한다면 지각 또는 이해에 대한 효과 주장을 기각한다. 구현 가능성과 독자 효과를 분리한다.",
+  "researchLedForm": "동작을 표본으로 나타내는 원리를 수동 시간 슬라이더와 고정 궤적으로 분해한다. 자동 재생을 없애 독자가 속도를 정하고 모션 감소 설정에도 같은 자료가 남게 한다.",
+  "mediaDecision": "Day013 uses an explicitly generated still image as the invariant object; Day011 uses licensed Inter. Other days use semantic HTML or analytical SVG because exact geometry/state is the variable; raster/video would fix or confound it.",
+  "revisits": [
+    {
+      "day": 44,
+      "date": "2026-10-20",
+      "question": "조건 순서를 균형화한 독자 비교와 실제 기기 검증"
+    },
+    {
+      "day": 104,
+      "date": "2026-12-19",
+      "question": "해당 조건의 공개가 실제 제작 도구에 채택되었는지 1차 문서로 재확인"
+    }
+  ]
+}

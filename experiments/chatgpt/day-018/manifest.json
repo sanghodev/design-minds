@@ -1,0 +1,130 @@
+{
+  "mind": "chatgpt",
+  "day": 18,
+  "date": "2026-09-20",
+  "status": "published",
+  "title": "The Weight of a Circle",
+  "question": "같은 수를 원의 반지름과 면적에 각각 대응시키면 그림이 추가한 과장을 직접 검산할 수 있는가?",
+  "selectionMethod": "Internal judgments 1–5: originality, visual necessity, interaction meaning, feasibility; not measured outcomes.",
+  "hypotheses": [
+    {
+      "idea": "같은 수를 원의 반지름과 면적에 각각 대응시키면 그림이 추가한 과장을 직접 검산할 수 있는가?",
+      "scores": [
+        4,
+        5,
+        5,
+        5
+      ],
+      "reason": "선택: Radius mapping rule만 바꾸고 비교의 기준을 보존할 수 있다."
+    },
+    {
+      "idea": "원과 막대를 바로 비교한다",
+      "scores": [
+        4,
+        5,
+        5,
+        3
+      ],
+      "reason": "가장 강한 대안이나 도형 종류와 매핑 규칙이 함께 달라진다."
+    },
+    {
+      "idea": "반지름 대신 지름을 수에 비례시킨다",
+      "scores": [
+        3,
+        5,
+        4,
+        5
+      ],
+      "reason": "면적의 제곱 관계는 그대로여서 독립적인 해결이 아니다."
+    },
+    {
+      "idea": "세 원의 최대 크기를 다르게 둔다",
+      "scores": [
+        3,
+        5,
+        2,
+        5
+      ],
+      "reason": "그림 전체 규모가 새 단서가 되어 최대 반지름을 고정한다."
+    },
+    {
+      "idea": "실제 사회 지표로 원을 그린다",
+      "scores": [
+        4,
+        5,
+        5,
+        2
+      ],
+      "reason": "의미가 중요하지만 단순 기하 검산에 맥락 지식을 혼입한다."
+    },
+    {
+      "idea": "정확한 면적 값을 처음부터 표시한다",
+      "scores": [
+        4,
+        4,
+        5,
+        4
+      ],
+      "reason": "검산은 쉽지만 독자의 첫 추측을 미리 규정한다."
+    },
+    {
+      "idea": "원 안에 같은 크기 작은 원을 채운다",
+      "scores": [
+        2,
+        3,
+        3,
+        5
+      ],
+      "reason": "단위 반복의 흥미로운 대안이나 틈과 포장 문제가 추가된다."
+    },
+    {
+      "idea": "3차원 구로 표현한다",
+      "scores": [
+        4,
+        3,
+        4,
+        3
+      ],
+      "reason": "부피·원근·조명이 더해져 이번 제곱 관계보다 복잡하다."
+    },
+    {
+      "idea": "작은 원을 확대해 별도로 보여준다",
+      "scores": [
+        4,
+        5,
+        4,
+        2
+      ],
+      "reason": "가시성은 좋아지지만 공통 축척을 깨므로 제외."
+    },
+    {
+      "idea": "정답률을 누적 점수로 만든다",
+      "scores": [
+        2,
+        3,
+        4,
+        2
+      ],
+      "reason": "관찰 조건과 반복 학습을 통제하지 않아 성과 지표로 내보내지 않는다."
+    }
+  ],
+  "variable": "Radius mapping rule",
+  "constants": [
+    "Same values, maximum radius and baseline"
+  ],
+  "challenge": "동일 조건에서 판단 변화가 없거나 설명 공개 순서만 판단을 결정한다면 지각 또는 이해에 대한 효과 주장을 기각한다. 구현 가능성과 독자 효과를 분리한다.",
+  "researchLedForm": "원 면적의 제곱 관계를 같은 최대 크기의 두 규칙으로 보여 준다. 세로 막대 대신 원을 쓴 이유는 바로 반지름과 면적 사이의 차이가 질문이기 때문이다.",
+  "mediaDecision": "Day013 uses an explicitly generated still image as the invariant object; Day011 uses licensed Inter. Other days use semantic HTML or analytical SVG because exact geometry/state is the variable; raster/video would fix or confound it.",
+  "revisits": [
+    {
+      "day": 48,
+      "date": "2026-10-20",
+      "question": "조건 순서를 균형화한 독자 비교와 실제 기기 검증"
+    },
+    {
+      "day": 108,
+      "date": "2026-12-19",
+      "question": "해당 조건의 공개가 실제 제작 도구에 채택되었는지 1차 문서로 재확인"
+    }
+  ]
+}

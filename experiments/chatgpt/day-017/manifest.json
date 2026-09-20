@@ -1,0 +1,130 @@
+{
+  "mind": "chatgpt",
+  "day": 17,
+  "date": "2026-09-20",
+  "status": "published",
+  "title": "A Place to Return",
+  "question": "목록 순서가 바뀌어도 선택한 항목의 정체성과 돌아갈 경로를 함께 보존할 수 있는가?",
+  "selectionMethod": "Internal judgments 1–5: originality, visual necessity, interaction meaning, feasibility; not measured outcomes.",
+  "hypotheses": [
+    {
+      "idea": "목록 순서가 바뀌어도 선택한 항목의 정체성과 돌아갈 경로를 함께 보존할 수 있는가?",
+      "scores": [
+        4,
+        5,
+        5,
+        5
+      ],
+      "reason": "선택: Sort order만 바꾸고 비교의 기준을 보존할 수 있다."
+    },
+    {
+      "idea": "선택 위치의 인덱스를 유지한다",
+      "scores": [
+        4,
+        5,
+        5,
+        3
+      ],
+      "reason": "재정렬 후 다른 항목을 가리켜 정체성 보존 요구를 위반한다."
+    },
+    {
+      "idea": "선택 항목을 항상 맨 위에 고정한다",
+      "scores": [
+        3,
+        5,
+        4,
+        5
+      ],
+      "reason": "강한 대안이나 정렬 규칙 자체를 바꿔 비교를 혼합한다."
+    },
+    {
+      "idea": "재정렬마다 선택 항목으로 초점을 옮긴다",
+      "scores": [
+        3,
+        5,
+        2,
+        5
+      ],
+      "reason": "사용자 요청 없이 조작 위치를 빼앗으므로 기각."
+    },
+    {
+      "idea": "목록을 애니메이션으로 이동한다",
+      "scores": [
+        4,
+        5,
+        5,
+        2
+      ],
+      "reason": "궤적 기억의 질문에는 유효하지만 모션 없이도 성립해야 할 정책부터 본다."
+    },
+    {
+      "idea": "항목 제목만 선택 상태로 보관한다",
+      "scores": [
+        4,
+        4,
+        5,
+        4
+      ],
+      "reason": "중복 제목과 수정에 취약해 식별자를 사용한다."
+    },
+    {
+      "idea": "긴 목록에 검색을 넣는다",
+      "scores": [
+        2,
+        3,
+        3,
+        5
+      ],
+      "reason": "탐색 방법이 추가되어 현재 다섯 항목의 비교와 다르다."
+    },
+    {
+      "idea": "선택 항목이 삭제되는 상태를 만든다",
+      "scores": [
+        4,
+        3,
+        4,
+        3
+      ],
+      "reason": "중요한 다음 질문이나 대체 선택 정책을 별도 설계해야 한다."
+    },
+    {
+      "idea": "정렬 후 DOM 순서는 고정한다",
+      "scores": [
+        4,
+        5,
+        4,
+        2
+      ],
+      "reason": "시각 순서와 읽기 순서가 갈라져 이번 의미적 목록의 목적에 맞지 않는다."
+    },
+    {
+      "idea": "돌아가기 버튼을 명시적으로 제공한다",
+      "scores": [
+        2,
+        3,
+        4,
+        2
+      ],
+      "reason": "사용자가 초점 이동을 요청하도록 하는 선택적 조작으로 채택했다."
+    }
+  ],
+  "variable": "Sort order",
+  "constants": [
+    "Same records, selected identity and wording"
+  ],
+  "challenge": "동일 조건에서 판단 변화가 없거나 설명 공개 순서만 판단을 결정한다면 지각 또는 이해에 대한 효과 주장을 기각한다. 구현 가능성과 독자 효과를 분리한다.",
+  "researchLedForm": "Bush의 연상 경로를 단순한 정렬 기능과 동일시하지 않고 돌아갈 수 있는 기록이라는 질문의 배경으로 삼는다. 목록과 선택 표식을 분리하고 초점 이동은 명시적 버튼으로 요청하게 한다.",
+  "mediaDecision": "Day013 uses an explicitly generated still image as the invariant object; Day011 uses licensed Inter. Other days use semantic HTML or analytical SVG because exact geometry/state is the variable; raster/video would fix or confound it.",
+  "revisits": [
+    {
+      "day": 47,
+      "date": "2026-10-20",
+      "question": "조건 순서를 균형화한 독자 비교와 실제 기기 검증"
+    },
+    {
+      "day": 107,
+      "date": "2026-12-19",
+      "question": "해당 조건의 공개가 실제 제작 도구에 채택되었는지 1차 문서로 재확인"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "mind": "chatgpt",
+  "day": 11,
+  "date": "2026-09-20",
+  "status": "published",
+  "title": "Digits That Hold Their Ground",
+  "question": "숫자가 바뀔 때 글자 폭의 규칙만 바꾸면 열의 안정성을 분리해서 볼 수 있는가?",
+  "selectionMethod": "Internal judgments 1–5: originality, visual necessity, interaction meaning, feasibility; not measured outcomes.",
+  "hypotheses": [
+    {
+      "idea": "숫자가 바뀔 때 글자 폭의 규칙만 바꾸면 열의 안정성을 분리해서 볼 수 있는가?",
+      "scores": [
+        4,
+        5,
+        5,
+        5
+      ],
+      "reason": "선택: Numeral spacing만 바꾸고 비교의 기준을 보존할 수 있다."
+    },
+    {
+      "idea": "소수점 정렬과 오른쪽 정렬을 비교한다",
+      "scores": [
+        4,
+        5,
+        5,
+        3
+      ],
+      "reason": "실제 장부에 가까운 강한 대안이나 정렬 규칙과 숫자 폭을 동시에 바꾼다."
+    },
+    {
+      "idea": "같은 숫자를 두 서체로 보여준다",
+      "scores": [
+        3,
+        5,
+        4,
+        5
+      ],
+      "reason": "서체 윤곽과 폭이 함께 변해 기능의 효과를 분리하기 어렵다."
+    },
+    {
+      "idea": "111과 888을 자동 카운터로 교환한다",
+      "scores": [
+        3,
+        5,
+        2,
+        5
+      ],
+      "reason": "폭 변화는 명료하지만 시간과 깜박임이 주의를 끈다."
+    },
+    {
+      "idea": "자릿수가 다른 숫자를 섞는다",
+      "scores": [
+        4,
+        5,
+        5,
+        2
+      ],
+      "reason": "실제적이지만 자릿수 증가와 숫자 기능의 영향을 구별하기 어렵다."
+    },
+    {
+      "idea": "가격 앞에 통화 기호를 넣는다",
+      "scores": [
+        4,
+        4,
+        5,
+        4
+      ],
+      "reason": "기호의 폭과 위치라는 다음 질문에 적합하다."
+    },
+    {
+      "idea": "고정폭 숫자에서 자간만 조절한다",
+      "scores": [
+        2,
+        3,
+        3,
+        5
+      ],
+      "reason": "글자 사이 공간은 다루지만 글리프별 폭이라는 질문을 놓친다."
+    },
+    {
+      "idea": "소수점 아래만 흐리게 만든다",
+      "scores": [
+        4,
+        3,
+        4,
+        3
+      ],
+      "reason": "주의의 가중치를 다룰 수 있으나 대비가 새 변수가 된다."
+    },
+    {
+      "idea": "변화한 숫자를 굵게 강조한다",
+      "scores": [
+        4,
+        5,
+        4,
+        2
+      ],
+      "reason": "변경 탐지에는 유용하지만 움직임 판단을 미리 유도한다."
+    },
+    {
+      "idea": "폰트가 늦게 로드되는 장면을 비교한다",
+      "scores": [
+        2,
+        3,
+        4,
+        2
+      ],
+      "reason": "실무 가치가 있으나 네트워크 시간 통제가 없어 현재 보조 한계로 기록한다."
+    }
+  ],
+  "variable": "Numeral spacing",
+  "constants": [
+    "Same ledger, font, size and alignment"
+  ],
+  "challenge": "동일 조건에서 판단 변화가 없거나 설명 공개 순서만 판단을 결정한다면 지각 또는 이해에 대한 효과 주장을 기각한다. 구현 가능성과 독자 효과를 분리한다.",
+  "researchLedForm": "CSS Fonts 4의 숫자 기능을 실제 Inter 파일에 적용한다. 장부 모양은 숫자의 자리를 비교하기 위한 것이며 금융 정보가 아니다.",
+  "mediaDecision": "Day013 uses an explicitly generated still image as the invariant object; Day011 uses licensed Inter. Other days use semantic HTML or analytical SVG because exact geometry/state is the variable; raster/video would fix or confound it.",
+  "revisits": [
+    {
+      "day": 41,
+      "date": "2026-10-20",
+      "question": "조건 순서를 균형화한 독자 비교와 실제 기기 검증"
+    },
+    {
+      "day": 101,
+      "date": "2026-12-19",
+      "question": "해당 조건의 공개가 실제 제작 도구에 채택되었는지 1차 문서로 재확인"
+    }
+  ]
+}

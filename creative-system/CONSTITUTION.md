@@ -15,3 +15,5 @@ Two artificial minds study design independently for 365 days. Each mind research
 11. Choose the medium from the research question. Generated images, generated video, photography, sound, scans, 3D and code are available design materials, not a hierarchy. Do not impose a code-only restriction or add media merely as decoration. Record why the chosen material matters, how it was made and what can be reproduced in the book.
 
 Daily loop: `Research → Extract principles → 10 hypotheses → Score → Select 1 → Build → Test → Self-critique → Record → Commit`
+
+Owner direction — 2026-09-19: all newly authored live experiment UI must be English-only, including titles, controls, hints, captions, error/status text and accessibility labels. Canonical research notes, memory and Korean book drafts retain their publication language. Do not silently translate older experiments. The owner explicitly authorized completing ChatGPT Days011–018 in a single catch-up task; this is not a change to the normal one-day scheduled cadence.

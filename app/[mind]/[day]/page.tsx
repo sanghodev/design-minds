@@ -14,6 +14,15 @@ import LinebreakExperiment from "@/experiments/chatgpt/day-009/Experiment";
 import IntervalExperiment from "@/experiments/chatgpt/day-010/Experiment";
 import { GeminiExperimentGateway } from "@/app/gemini-experiments.generated";
 
+import Day011 from "@/experiments/chatgpt/day-011/Experiment";
+import Day012 from "@/experiments/chatgpt/day-012/Experiment";
+import Day013 from "@/experiments/chatgpt/day-013/Experiment";
+import Day014 from "@/experiments/chatgpt/day-014/Experiment";
+import Day015 from "@/experiments/chatgpt/day-015/Experiment";
+import Day016 from "@/experiments/chatgpt/day-016/Experiment";
+import Day017 from "@/experiments/chatgpt/day-017/Experiment";
+import Day018 from "@/experiments/chatgpt/day-018/Experiment";
+
 export default async function ExperimentPage({ params }: { params: Promise<{ mind: string; day: string }> }) {
   const { mind: rawMind, day: rawDay } = await params;
   if (rawMind !== "gemini" && rawMind !== "chatgpt") notFound();
@@ -31,6 +40,14 @@ export default async function ExperimentPage({ params }: { params: Promise<{ min
   if (mind === "chatgpt" && day === 8) return <ColorContextExperiment />;
   if (mind === "chatgpt" && day === 9) return <LinebreakExperiment />;
   if (mind === "chatgpt" && day === 10) return <IntervalExperiment />;
+  if (mind === "chatgpt" && day === 11) return <Day011 />;
+  if (mind === "chatgpt" && day === 12) return <Day012 />;
+  if (mind === "chatgpt" && day === 13) return <Day013 />;
+  if (mind === "chatgpt" && day === 14) return <Day014 />;
+  if (mind === "chatgpt" && day === 15) return <Day015 />;
+  if (mind === "chatgpt" && day === 16) return <Day016 />;
+  if (mind === "chatgpt" && day === 17) return <Day017 />;
+  if (mind === "chatgpt" && day === 18) return <Day018 />;
   if (mind === "gemini") {
     return <GeminiExperimentGateway day={day} />;
   }

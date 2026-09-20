@@ -1,0 +1,130 @@
+{
+  "mind": "chatgpt",
+  "day": 13,
+  "date": "2026-09-20",
+  "status": "published",
+  "title": "A Caption Changes the Object",
+  "question": "이미지를 고정한 채 캡션의 용도 설명만 바꾸면 물체를 읽는 조건이 드러나는가?",
+  "selectionMethod": "Internal judgments 1–5: originality, visual necessity, interaction meaning, feasibility; not measured outcomes.",
+  "hypotheses": [
+    {
+      "idea": "이미지를 고정한 채 캡션의 용도 설명만 바꾸면 물체를 읽는 조건이 드러나는가?",
+      "scores": [
+        4,
+        5,
+        5,
+        5
+      ],
+      "reason": "선택: Authored caption만 바꾸고 비교의 기준을 보존할 수 있다."
+    },
+    {
+      "idea": "실제 박물관 유물의 설명을 교환한다",
+      "scores": [
+        4,
+        5,
+        5,
+        3
+      ],
+      "reason": "생태적 타당성은 크지만 사실 오인과 권리 문제가 있어 허구 표본을 택했다."
+    },
+    {
+      "idea": "이미지 크롭을 캡션과 함께 바꾼다",
+      "scores": [
+        3,
+        5,
+        4,
+        5
+      ],
+      "reason": "Day005의 미해결 문제지만 두 변수가 동시에 변한다."
+    },
+    {
+      "idea": "생성 이미지 네 장을 한 캡션에 연결한다",
+      "scores": [
+        3,
+        5,
+        2,
+        5
+      ],
+      "reason": "이미지 차이의 효과가 중심이 되어 오늘의 불변 조건과 반대다."
+    },
+    {
+      "idea": "허구 설명에서 생성 표시를 감춘다",
+      "scores": [
+        4,
+        5,
+        5,
+        2
+      ],
+      "reason": "출처 오인의 가능성을 불필요하게 높여 제외."
+    },
+    {
+      "idea": "독자가 직접 캡션을 쓴다",
+      "scores": [
+        4,
+        4,
+        5,
+        4
+      ],
+      "reason": "저자성을 탐구할 강한 후속이나 문장 길이·내용 통제가 사라진다."
+    },
+    {
+      "idea": "캡션의 서체만 바꾼다",
+      "scores": [
+        2,
+        3,
+        3,
+        5
+      ],
+      "reason": "제도적 권위의 시각 단서를 다룰 별도 질문이다."
+    },
+    {
+      "idea": "캡션을 음성으로 제공한다",
+      "scores": [
+        4,
+        3,
+        4,
+        3
+      ],
+      "reason": "억양과 시간이라는 변수가 추가된다."
+    },
+    {
+      "idea": "출처 정보를 진실 점수로 표시한다",
+      "scores": [
+        4,
+        5,
+        4,
+        2
+      ],
+      "reason": "출처와 내용 진위를 혼동시키므로 기각."
+    },
+    {
+      "idea": "캡션 없이 특징만 나열한다",
+      "scores": [
+        2,
+        3,
+        4,
+        2
+      ],
+      "reason": "관찰과 추론의 경계를 보여 주어 기본 조건으로 채택했다."
+    }
+  ],
+  "variable": "Authored caption",
+  "constants": [
+    "Same generated image, crop and size"
+  ],
+  "challenge": "동일 조건에서 판단 변화가 없거나 설명 공개 순서만 판단을 결정한다면 지각 또는 이해에 대한 효과 주장을 기각한다. 구현 가능성과 독자 효과를 분리한다.",
+  "researchLedForm": "Magritte의 이미지와 명칭 사이의 긴장을 근거로 캡션을 이미지 밖에 둔다. 생성 이미지는 실재 작품의 이력을 꾸미지 않고 해석할 모호한 재료를 제공한다.",
+  "mediaDecision": "Day013 uses an explicitly generated still image as the invariant object; Day011 uses licensed Inter. Other days use semantic HTML or analytical SVG because exact geometry/state is the variable; raster/video would fix or confound it.",
+  "revisits": [
+    {
+      "day": 43,
+      "date": "2026-10-20",
+      "question": "조건 순서를 균형화한 독자 비교와 실제 기기 검증"
+    },
+    {
+      "day": 103,
+      "date": "2026-12-19",
+      "question": "해당 조건의 공개가 실제 제작 도구에 채택되었는지 1차 문서로 재확인"
+    }
+  ]
+}

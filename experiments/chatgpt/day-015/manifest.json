@@ -1,0 +1,130 @@
+{
+  "mind": "chatgpt",
+  "day": 15,
+  "date": "2026-09-20",
+  "status": "published",
+  "title": "A Tone Made of Dots",
+  "question": "검은 면적 비율을 고정하고 망점 간격만 바꾸면 회색과 질감의 관계를 분리해 볼 수 있는가?",
+  "selectionMethod": "Internal judgments 1–5: originality, visual necessity, interaction meaning, feasibility; not measured outcomes.",
+  "hypotheses": [
+    {
+      "idea": "검은 면적 비율을 고정하고 망점 간격만 바꾸면 회색과 질감의 관계를 분리해 볼 수 있는가?",
+      "scores": [
+        4,
+        5,
+        5,
+        5
+      ],
+      "reason": "선택: Screen pitch만 바꾸고 비교의 기준을 보존할 수 있다."
+    },
+    {
+      "idea": "망점과 실제 인쇄물을 비교한다",
+      "scores": [
+        4,
+        5,
+        5,
+        3
+      ],
+      "reason": "가장 강한 대안이나 잉크·종이·조명 통제가 이번 환경에 없다."
+    },
+    {
+      "idea": "검정 대신 두 보색 점을 섞는다",
+      "scores": [
+        3,
+        5,
+        4,
+        5
+      ],
+      "reason": "색 혼합이라는 별도 질문이 추가된다."
+    },
+    {
+      "idea": "점 대신 같은 면적의 선을 쓴다",
+      "scores": [
+        3,
+        5,
+        2,
+        5
+      ],
+      "reason": "방향성과 공간 주파수를 분리하는 후속으로 유용하다."
+    },
+    {
+      "idea": "망점 크기를 키우면서 개수는 고정한다",
+      "scores": [
+        4,
+        5,
+        5,
+        2
+      ],
+      "reason": "면적률도 함께 변해 질감만의 효과를 분리하지 못한다."
+    },
+    {
+      "idea": "셀마다 점을 무작위 배치한다",
+      "scores": [
+        4,
+        4,
+        5,
+        4
+      ],
+      "reason": "규칙성과 잡음의 차이로 후속 비교 가능하나 이번에는 주기 패턴 고정."
+    },
+    {
+      "idea": "카메라로 화면을 촬영해 평균을 비교한다",
+      "scores": [
+        2,
+        3,
+        3,
+        5
+      ],
+      "reason": "센서·노출·모아레가 새 변수가 된다."
+    },
+    {
+      "idea": "회색 참조를 선형광 계산으로 만든다",
+      "scores": [
+        4,
+        3,
+        4,
+        3
+      ],
+      "reason": "감마 문제를 좁힐 유효 대안이나 출력 교정 없는 지각 등가를 주장할 수 없다."
+    },
+    {
+      "idea": "시청 거리를 화면에 숫자로 요구한다",
+      "scores": [
+        4,
+        5,
+        4,
+        2
+      ],
+      "reason": "실제 거리 측정이 없으므로 장식적 정밀도를 만들지 않는다."
+    },
+    {
+      "idea": "확대 배율을 자동 왕복한다",
+      "scores": [
+        2,
+        3,
+        4,
+        2
+      ],
+      "reason": "크기와 관찰 시간을 동시에 바꿔 제외."
+    }
+  ],
+  "variable": "Screen pitch",
+  "constants": [
+    "Same nominal ink coverage, panel size and color"
+  ],
+  "challenge": "동일 조건에서 판단 변화가 없거나 설명 공개 순서만 판단을 결정한다면 지각 또는 이해에 대한 효과 주장을 기각한다. 구현 가능성과 독자 효과를 분리한다.",
+  "researchLedForm": "Ben Day의 인쇄 필름 특허는 반복 표면으로 인쇄 흔적을 만드는 역사적 배경이다. 동일 면적률의 SVG 패턴과 회색 참조를 나란히 놓아 출력 구조를 직접 비교한다.",
+  "mediaDecision": "Day013 uses an explicitly generated still image as the invariant object; Day011 uses licensed Inter. Other days use semantic HTML or analytical SVG because exact geometry/state is the variable; raster/video would fix or confound it.",
+  "revisits": [
+    {
+      "day": 45,
+      "date": "2026-10-20",
+      "question": "조건 순서를 균형화한 독자 비교와 실제 기기 검증"
+    },
+    {
+      "day": 105,
+      "date": "2026-12-19",
+      "question": "해당 조건의 공개가 실제 제작 도구에 채택되었는지 1차 문서로 재확인"
+    }
+  ]
+}

@@ -150,3 +150,14 @@ Midnight mind. Studies ambiguity, language, invisible state, spatial interfaces,
 - Validated: full production build, 61 Worker route/asset checks, current 10-day ChatGPT/18-day Gemini exports and scoped lint. Full tests 31/34; absent starter components caused three failures. Global lint 28 errors/28 warnings remains in existing other-mind and test files. Browser navigation timed out; no screenshots or participant/device results claimed.
 - Due reviews: no 30/90-day item due. Preserve Day031–039/094–099 questions; framework future hypotheses check 2026-10-05/12-04. Day010 checks Day040 or 2026-10-19 and Day100 or 2026-12-18, whichever first. Next: disclosure timing under fixed geometry, not inherited visual form.
 - Operational repair: full GitHub main synchronized through 0f612bf; Sites adapter restored; Gemini Day018 hook boundary repaired only in shared gateway. Both disabled Design Minds automations were re-enabled; disable reason unavailable. Enabled does not mean completed. Keep source, pending publication and confirmed deployment separate.
+
+
+## Owner-authorized catch-up — Days011–018 — 2026-09-20
+
+- English-only live UI is now an owner requirement, including status, captions and aria labels. Korean research/book prose remains Korean. Do not translate older works without a revision question.
+- Eight studies: numeric widths, contour gaps, caption framing, temporal sampling, periodic tone, hit regions, identity under sorting, and radius/area encoding. Each has its own variable, constants, ten hypotheses and challenge. No Gemini creative inputs.
+- Materials: licensed local Inter with OFL; one explicitly generated fictional specimen with ledger and no invented artifact history. Geometry uses analytical SVG, not generated documentation.
+- Carry Day006/008 review lessons: disclosure does not neutralize an effect; reset restores UI but cannot restore a naive observer. No participant effect or weight training claimed.
+- Stable selection follows identity; moving focus is an explicit request. A keyboard alternative provides equivalent function, not an equivalent pointing experiment. Nominal dot area is not calibrated luminance; mathematically correct circle area is not proof of accurate area judgment.
+- Day014 synthesis: experiments/chatgpt/day-014/synthesis-week-002.md. Day030 chapter not yet due. Existing Day031+ and 30/90-day revisits are not due. New revisits Day041–048 / Oct20 and Day101–108 / Dec19, whichever arrives first.
+- Unresolved: actual browser captures/input, assistive technology, touch, calibrated display/print and counterbalanced participant comparison. Validation records distinguish implemented states from observed behavior.
