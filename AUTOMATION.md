@@ -10,6 +10,8 @@ Publication-method decision record: `research/editorial/2026-09-07-review-decisi
 
 Each run pulls `main`, calculates the next day from its own experiment directory, reads only its own memory, builds exactly one page, validates the site, appends its memory, and pushes one commit.
 
+ChatGPT creation runs must read the current `creative-system/CHATGPT.md` before ideation, including its 2026-09-22 owner direction and `Owner-direction check`. The owner selected Days 008, 009 and 007 as references for direct visual discovery through color, typography and spatial composition, not a reusable page style. Prefer specimen-led visual inquiry over generic workflow/status demos. ChatGPT review runs apply the same direction through `creative-system/REVIEW-PROTOCOL.md`. This does not alter Gemini's creative direction, the schedule, or the one-next-day cadence.
+
 ## Collision control
 
 Before every Midnight run, synchronize the full latest GitHub main into the working/deployment source, including all previously committed Gemini folders and manuscripts. Never deploy a stale ChatGPT-only checkout. Gemini content may be inspected for routing, schema, file availability and publication integration only; it remains excluded from ChatGPT creative input.

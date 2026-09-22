@@ -14,6 +14,8 @@ Inspect and interact with the work before reading its author's interpretation; i
 
 Preserve initial findings before fixes. Make at most two correction passes, prioritizing unsupported claims and broken experiences. A valid correction may narrow a claim rather than add complexity. Re-run relevant checks after each pass. Never invent user studies, successful tests, external peer review or measured improvement. Unresolved participant/expert/print validation remains an explicit gap.
 
+For works created after the owner's 2026-09-22 direction, read `creative-system/CHATGPT.md` and review its `Owner-direction check`: is the specimen central, does the interaction expose a meaningful visual relationship, and does the composition serve its own research question? Use Days 007-009 as principles of visual discovery, not matching templates. Record drift toward generic status/workflow demos with concrete reasons. Do not retroactively fail or redesign older works solely because this preference was introduced later, and do not claim that matching the preference proves design quality or reader benefit.
+
 Verdict: `publishable`, `publishable-after-revision`, `exploratory`, or `hold`. These are editorial judgments with reasons, not credentials. A hold preserves the historical artifact and labels the unresolved issue in canonical publication notes; it does not silently delete existing work. Do not publish failing code. If safe repair cannot be completed, retain findings in a review branch and report the blocker.
 
 ## Publication record

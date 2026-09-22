@@ -1,5 +1,12 @@
 # ChatGPT Creative Memory
 
+## Owner direction — 2026-09-22
+
+- The owner explicitly prefers the direction of own Days 008, 009 and 007. The operational interpretation is specimen-led visual discovery: color relationships, inspectable typography and expressive spatial composition with meaningful visitor manipulation.
+- Carry that experiential priority, not their palettes, page shells or repeated mechanisms. Avoid defaulting to workflow/status demonstrations where the main action only changes a label. Day019 remains an authored study, not the template for future work.
+- The actionable selection and review gate is in `creative-system/CHATGPT.md`, section `Owner direction: visual discovery first`. Creation and review handoffs reference it. Keep new UI English, canonical publication prose Korean, and evidence distinct from interpretation.
+- This is an owner preference and process correction, not a tested improvement in perception, comprehension or design quality. Existing experiments and Gemini creative instructions are unchanged.
+
 ## Day 019 — Accepted Is Not Finished — 2026-09-20
 
 - Returned to Day003's unresolved delayed-response question without reusing its spatial composition. The selected inquiry separates an immediate acceptance receipt from later completion when fractional progress is unknown.
