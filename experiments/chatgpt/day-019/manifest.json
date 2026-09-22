@@ -1,0 +1,79 @@
+{
+  "mind": "chatgpt",
+  "day": 19,
+  "date": "2026-09-20",
+  "status": "published",
+  "title": "Accepted Is Not Finished",
+  "selectionMethod": "Internal 1–5 judgments for originality, visual necessity, interaction meaning and feasibility. These scores guide selection and are not displayed or treated as evidence.",
+  "hypotheses": [
+    {
+      "idea": "Separate an immediate receipt from a later completion without showing a percentage",
+      "scores": [5, 5, 5, 5],
+      "reason": "Selected. It makes the semantic difference between acceptance and completion visible while keeping the actual delayed operation fixed."
+    },
+    {
+      "idea": "Compare a spinner with a progress bar",
+      "scores": [2, 4, 3, 5],
+      "reason": "Familiar, but it compares two conventional ornaments rather than testing whether the system can state what it actually knows."
+    },
+    {
+      "idea": "Estimate a percentage from elapsed time",
+      "scores": [3, 5, 4, 4],
+      "reason": "Visually direct, but the estimate would imply knowledge of work completed that this simulation does not possess."
+    },
+    {
+      "idea": "Use a real network upload",
+      "scores": [4, 4, 5, 2],
+      "reason": "Ecologically stronger, but network, file size and service state would introduce uncontrolled variables and transmit user data."
+    },
+    {
+      "idea": "Show three invented processing stages",
+      "scores": [3, 5, 4, 4],
+      "reason": "It provides narrative, but stage names would be progress theater because no corresponding subprocesses exist."
+    },
+    {
+      "idea": "Display only the final result after a silent delay",
+      "scores": [3, 4, 4, 5],
+      "reason": "A useful comparison condition, but silence makes it unclear whether the initial action registered."
+    },
+    {
+      "idea": "Let the visitor set the delay duration",
+      "scores": [3, 3, 4, 5],
+      "reason": "It makes time inspectable, but moves the question toward duration preference rather than status semantics."
+    },
+    {
+      "idea": "Add sound at acceptance and completion",
+      "scores": [4, 3, 4, 3],
+      "reason": "Two auditory events could reinforce the distinction, but add a channel unnecessary to the semantic comparison."
+    },
+    {
+      "idea": "Keep a history of every completed request",
+      "scores": [3, 4, 4, 4],
+      "reason": "Useful for durable systems, but a growing archive would shift attention from one request's state boundary."
+    },
+    {
+      "idea": "Measure repeated clicks as evidence of uncertainty",
+      "scores": [4, 3, 5, 2],
+      "reason": "Potentially informative in a participant study, but this page has no consent, controlled task or basis for interpreting clicks as confusion."
+    }
+  ],
+  "variable": "Status structure: one undifferentiated waiting message versus a persistent acceptance receipt followed by a separate completion record",
+  "constants": [
+    "Same six-second local delay, task text, start action, completion result and page layout"
+  ],
+  "challenge": "If readers cannot distinguish accepted from completed in the split condition, or if the persistent receipt creates more confusion than the single message, the proposed semantic separation is not supported. This implementation alone cannot establish either outcome.",
+  "researchLedForm": "A two-column ledger separates what the system knows now from what remains unresolved. The split condition prints an immutable receipt above a later completion record; the compact condition uses one changing status line. No spinner, progress bar or invented stage is shown because the system knows elapsed state, not fractional completion.",
+  "mediaDecision": "Semantic HTML and live text are the research material because the variable is state language and temporal order. A generated still would freeze the transition; video would demonstrate an authored sequence rather than allow the visitor to create and cancel it. No external media asset is needed.",
+  "revisits": [
+    {
+      "day": 49,
+      "date": "2026-10-20",
+      "question": "Counterbalance compact and split status structures in a participant comparison; ask separately what was accepted and what was completed."
+    },
+    {
+      "day": 109,
+      "date": "2026-12-19",
+      "question": "Inspect shipping asynchronous interfaces and primary documentation for explicit acceptance-versus-completion semantics without inferred progress."
+    }
+  ]
+}

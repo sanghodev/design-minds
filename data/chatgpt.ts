@@ -17,8 +17,10 @@ import day015 from "@/experiments/chatgpt/day-015/notebook.json";
 import day016 from "@/experiments/chatgpt/day-016/notebook.json";
 import day017 from "@/experiments/chatgpt/day-017/notebook.json";
 import day018 from "@/experiments/chatgpt/day-018/notebook.json";
+import day019 from "@/experiments/chatgpt/day-019/notebook.json";
 
 const entries: Experiment[] = [
+  { status: "published", day: 19, date: "2026-09-20", mind: "chatgpt", title: "Accepted Is Not Finished", discipline: "Asynchronous interface · Status semantics", hypothesis: "Can an interface preserve acceptance and completion as separate claims without inventing fractional progress?", reflection: "The implementation verifies state transitions and preserves a receipt; participant understanding and assistive-technology behavior remain unmeasured.", researchScore: 0, originalityScore: 0, technicalScore: 0 },
   {"status": "published", "day": 18, "date": "2026-09-20", "mind": "chatgpt", "title": "The Weight of a Circle", "discipline": "Area encoding", "hypothesis": "Radius mapping rule changes while same values, maximum radius and baseline.", "reflection": "Implemented comparison; participant effects remain unmeasured.", "researchScore": 0, "originalityScore": 0, "technicalScore": 0},
   {"status": "published", "day": 17, "date": "2026-09-20", "mind": "chatgpt", "title": "A Place to Return", "discipline": "Identity and order", "hypothesis": "Sort order changes while same records, selected identity and wording.", "reflection": "Implemented comparison; participant effects remain unmeasured.", "researchScore": 0, "originalityScore": 0, "technicalScore": 0},
   {"status": "published", "day": 16, "date": "2026-09-20", "mind": "chatgpt", "title": "The Shape of a Hit", "discipline": "Input geometry", "hypothesis": "Hit area size changes while same marker size, positions and labels.", "reflection": "Implemented comparison; participant effects remain unmeasured.", "researchScore": 0, "originalityScore": 0, "technicalScore": 0},
@@ -38,5 +40,5 @@ const entries: Experiment[] = [
   { status: "published", day: 2, date: "2026-09-04", mind: "chatgpt", title: "What We Remove Remains", discipline: "Erasure poetry · Spatial type · Optional sound", hypothesis: "Can removing language produce a presence that is simultaneously semantic, spatial, and audible?", reflection: "The gaps carry real information because they preserve the position and width of what the visitor chose to remove; sound is an optional second reading, not spectacle.", researchScore: 90, originalityScore: 92, technicalScore: 85 },
   { status: "published", day: 1, date: "2026-09-03", mind: "chatgpt", title: "A Pause Has Weight", discipline: "Temporal input · Kinetic type · Optional sound", hypothesis: "Can duration—not movement—become the primary gesture of an interface?", reflection: "The pause became legible without becoming decoration. Exact duration appears only because the visitor creates it and it directly controls the composition.", researchScore: 88, originalityScore: 91, technicalScore: 84 },
 ];
-const notebooks = [day001, day002, day003, day004, day005, day006, day007, day008, day009, day010, day011, day012, day013, day014, day015, day016, day017, day018];
+const notebooks = [day001, day002, day003, day004, day005, day006, day007, day008, day009, day010, day011, day012, day013, day014, day015, day016, day017, day018, day019];
 export const chatgptExperiments: Experiment[] = entries.map(entry => ({ ...entry, notebook: notebooks[entry.day - 1] }));
