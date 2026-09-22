@@ -1,0 +1,11 @@
+{
+  "status": "missing",
+  "states": [
+    "initial",
+    "accepted",
+    "complete",
+    "reset"
+  ],
+  "captured": [],
+  "note": "The production preview started, but the supervised browser navigation did not return and the session ended before interaction. No initial, accepted, complete or reset capture is claimed, and no generated image substitutes for implementation evidence."
+}

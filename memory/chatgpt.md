@@ -1,5 +1,26 @@
 # ChatGPT Creative Memory
 
+## Day 019 — Accepted Is Not Finished — 2026-09-20
+
+- Returned to Day003's unresolved delayed-response question without reusing its spatial composition. The selected inquiry separates an immediate acceptance receipt from later completion when fractional progress is unknown.
+- Current sources: W3C Event Timing Working Draft dated 2026-03-19 and web.dev INP guidance updated 2025-09-02. These show that prompt interaction feedback is a current technical concern; they do not prove broad design practice or comprehension effects.
+- Historical/technical boundary: RFC 2068 (January 1997) distinguishes `202 Accepted` from completed processing. WAI-ARIA 1.2 `status` and WCAG status-message guidance support polite, focus-preserving updates. Standards define semantics, not user success.
+- Selected from ten hypotheses: compare one changing message with a persistent acceptance receipt plus a later outcome. Same six-second local delay; no percentage, spinner or invented processing stages because the implementation has no fractional work evidence.
+- Media decision: semantic HTML and local time are the material. A still would freeze the state change; video would replace visitor-controlled start/cancel; a real upload would introduce data transmission and uncontrolled network state.
+- Own-review carryover: disclosure does not neutralize an effect; reset restores UI, not naive knowledge. No claim that the split condition improves understanding, reduces anxiety or prevents repeated clicks.
+- Revisit Day049 or 2026-10-20: counterbalance the two structures and ask separately what was accepted and completed. Revisit Day109 or 2026-12-19: inspect primary documentation for real asynchronous tools. Earlier Day031+ and Day041–048 future reviews are not yet due.
+- Next question: how should a real asynchronous interface record acceptance, cancellation, completion and rejection without overstating its promise?
+
+## Day 009 post-production review — 2026-09-20
+
+- Verdict: publishable-after-revision; internal editorial judgment only.
+- Original serial toggle isolated the line-break variable but made comparison memory-dependent. Review correction presents word-based and character-based results simultaneously at the same requested measure and balance condition.
+- Revised live UI follows the owner English-only direction; the Korean specimen remains Korean as the research material.
+- Scoped counterevidence: Cho Injeong and Kim Danbi (2012) discuss awkward syntactic/eojeol line breaks in Korean-language textbooks, especially for beginner/intermediate learners; do not generalize this to universal keep-all superiority.
+- No claim of improved comprehension, preference, error rate or speed. Browser/hydration, touch, screen reader, enlargement, forced colors, print and participant evidence remain unresolved.
+- Records: `experiments/chatgpt/day-009/review.md`, `revision-story.md`, `review-figures/index.json`.
+- Next: fixed font/viewport, multiple matched Korean sentences, counterbalanced panel order; record preference separately from errors and comprehension.
+
 ## Day 009 — Where a Line Lets Go — 2026-09-11
 
 - Owner requested catching up through Day009. Actual writing date is retained; no backdated success claim.
@@ -10,16 +31,6 @@
 - Verified: production build, scoped lint, 33 tests and 36 server-rendered experiment/research paths. Browser action/captures, participant reading, screenreader, zoom and print remain gaps; whole-tree prior lint errors remain.
 - Day039: fixed-font, fixed-viewport comparison separating preference from errors. Day099: inspect real Korean design tools for explicit linguistic versus silhouette controls. No earlier 30/90-day revisit is due yet.
 - Next: can a more even paragraph silhouette make readers prefer a setting while increasing their reading errors?
-
-### Post-production review — 2026-09-20
-
-- Verdict: publishable-after-revision; internal editorial judgment only.
-- Original serial toggle isolated the line-break variable but made comparison memory-dependent. Review correction presents word-based and character-based results simultaneously at the same requested measure and balance condition.
-- Revised live UI follows the owner English-only direction; the Korean specimen remains Korean as the research material.
-- Scoped counterevidence: Cho Injeong and Kim Danbi (2012) discuss awkward syntactic/eojeol line breaks in Korean-language textbooks, especially for beginner/intermediate learners; do not generalize this to universal keep-all superiority.
-- No claim of improved comprehension, preference, error rate or speed. Browser/hydration, touch, screen reader, enlargement, forced colors, print and participant evidence remain unresolved.
-- Records: `experiments/chatgpt/day-009/review.md`, `revision-story.md`, `review-figures/index.json`.
-- Next: fixed font/viewport, multiple matched Korean sentences, counterbalanced panel order; record preference separately from errors and comprehension.
 
 ## Day 008 — A Color Is Never Alone — 2026-09-11
 
