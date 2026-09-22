@@ -1,0 +1,336 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+<defs>
+
+  <style>
+    .bg { fill: #111317; }
+    .grid-line { stroke: #1e222b; stroke-width: 1; }
+    .grid-major { stroke: #2a303d; stroke-width: 1.5; }
+    .title-main { font-family: "Cinzel", "Times New Roman", serif; font-size: 26px; fill: #e6dfd1; letter-spacing: 4px; font-weight: bold; }
+    .title-sub { font-family: "Space Mono", "Courier New", monospace; font-size: 11px; fill: #d4af37; letter-spacing: 2px; }
+    .section-header { font-family: "Space Mono", monospace; font-size: 12px; fill: #d4af37; letter-spacing: 1.5px; font-weight: bold; }
+    .label { font-family: "Inter", -apple-system, sans-serif; font-size: 10px; fill: #8e95a5; }
+    .label-accent { font-family: "Inter", sans-serif; font-size: 10px; fill: #e2d9c8; font-weight: 600; }
+    .formula { font-family: "Space Mono", monospace; font-size: 11px; fill: #60a5fa; }
+    .brass-line { stroke: #d4af37; stroke-width: 1.5; fill: none; }
+    .brass-fill { fill: #d4af37; fill-opacity: 0.15; stroke: #d4af37; stroke-width: 1.5; }
+    .brass-blade { fill: #232731; stroke: #d4af37; stroke-width: 1.2; }
+    .lapis-line { stroke: #3b82f6; stroke-width: 1.5; fill: none; }
+    .lapis-fill { fill: #1e3a8a; fill-opacity: 0.25; stroke: #3b82f6; stroke-width: 1.2; }
+    .shadow-penumbra { fill: #0a0b0d; fill-opacity: 0.6; stroke: #ff7849; stroke-dasharray: 4,4; stroke-width: 1; }
+    .dimension-line { stroke: #e05638; stroke-width: 1; stroke-dasharray: 2,2; }
+    .dim-text { font-family: "Space Mono", monospace; font-size: 9px; fill: #e05638; }
+  </style>
+
+
+  <linearGradient id="brassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#f5e08c" />
+    <stop offset="50%" stop-color="#d4af37" />
+    <stop offset="100%" stop-color="#8a6d1e" />
+  </linearGradient>
+  <linearGradient id="lapisGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#1e3a8a" stop-opacity="0.4" />
+    <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.1" />
+  </linearGradient>
+  <radialGradient id="apertureGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#fef08a" stop-opacity="0.8" />
+    <stop offset="60%" stop-color="#d4af37" stop-opacity="0.2" />
+    <stop offset="100%" stop-color="#111317" stop-opacity="0" />
+  </radialGradient>
+
+</defs>
+<rect width="1600" height="1000" class="bg"/>
+<line x1="0" y1="0" x2="0" y2="1000" class="grid-major"/>
+<line x1="40" y1="0" x2="40" y2="1000" class="grid-line"/>
+<line x1="80" y1="0" x2="80" y2="1000" class="grid-line"/>
+<line x1="120" y1="0" x2="120" y2="1000" class="grid-line"/>
+<line x1="160" y1="0" x2="160" y2="1000" class="grid-line"/>
+<line x1="200" y1="0" x2="200" y2="1000" class="grid-major"/>
+<line x1="240" y1="0" x2="240" y2="1000" class="grid-line"/>
+<line x1="280" y1="0" x2="280" y2="1000" class="grid-line"/>
+<line x1="320" y1="0" x2="320" y2="1000" class="grid-line"/>
+<line x1="360" y1="0" x2="360" y2="1000" class="grid-line"/>
+<line x1="400" y1="0" x2="400" y2="1000" class="grid-major"/>
+<line x1="440" y1="0" x2="440" y2="1000" class="grid-line"/>
+<line x1="480" y1="0" x2="480" y2="1000" class="grid-line"/>
+<line x1="520" y1="0" x2="520" y2="1000" class="grid-line"/>
+<line x1="560" y1="0" x2="560" y2="1000" class="grid-line"/>
+<line x1="600" y1="0" x2="600" y2="1000" class="grid-major"/>
+<line x1="640" y1="0" x2="640" y2="1000" class="grid-line"/>
+<line x1="680" y1="0" x2="680" y2="1000" class="grid-line"/>
+<line x1="720" y1="0" x2="720" y2="1000" class="grid-line"/>
+<line x1="760" y1="0" x2="760" y2="1000" class="grid-line"/>
+<line x1="800" y1="0" x2="800" y2="1000" class="grid-major"/>
+<line x1="840" y1="0" x2="840" y2="1000" class="grid-line"/>
+<line x1="880" y1="0" x2="880" y2="1000" class="grid-line"/>
+<line x1="920" y1="0" x2="920" y2="1000" class="grid-line"/>
+<line x1="960" y1="0" x2="960" y2="1000" class="grid-line"/>
+<line x1="1000" y1="0" x2="1000" y2="1000" class="grid-major"/>
+<line x1="1040" y1="0" x2="1040" y2="1000" class="grid-line"/>
+<line x1="1080" y1="0" x2="1080" y2="1000" class="grid-line"/>
+<line x1="1120" y1="0" x2="1120" y2="1000" class="grid-line"/>
+<line x1="1160" y1="0" x2="1160" y2="1000" class="grid-line"/>
+<line x1="1200" y1="0" x2="1200" y2="1000" class="grid-major"/>
+<line x1="1240" y1="0" x2="1240" y2="1000" class="grid-line"/>
+<line x1="1280" y1="0" x2="1280" y2="1000" class="grid-line"/>
+<line x1="1320" y1="0" x2="1320" y2="1000" class="grid-line"/>
+<line x1="1360" y1="0" x2="1360" y2="1000" class="grid-line"/>
+<line x1="1400" y1="0" x2="1400" y2="1000" class="grid-major"/>
+<line x1="1440" y1="0" x2="1440" y2="1000" class="grid-line"/>
+<line x1="1480" y1="0" x2="1480" y2="1000" class="grid-line"/>
+<line x1="1520" y1="0" x2="1520" y2="1000" class="grid-line"/>
+<line x1="1560" y1="0" x2="1560" y2="1000" class="grid-line"/>
+<line x1="0" y1="0" x2="1600" y2="0" class="grid-major"/>
+<line x1="0" y1="40" x2="1600" y2="40" class="grid-line"/>
+<line x1="0" y1="80" x2="1600" y2="80" class="grid-line"/>
+<line x1="0" y1="120" x2="1600" y2="120" class="grid-line"/>
+<line x1="0" y1="160" x2="1600" y2="160" class="grid-line"/>
+<line x1="0" y1="200" x2="1600" y2="200" class="grid-major"/>
+<line x1="0" y1="240" x2="1600" y2="240" class="grid-line"/>
+<line x1="0" y1="280" x2="1600" y2="280" class="grid-line"/>
+<line x1="0" y1="320" x2="1600" y2="320" class="grid-line"/>
+<line x1="0" y1="360" x2="1600" y2="360" class="grid-line"/>
+<line x1="0" y1="400" x2="1600" y2="400" class="grid-major"/>
+<line x1="0" y1="440" x2="1600" y2="440" class="grid-line"/>
+<line x1="0" y1="480" x2="1600" y2="480" class="grid-line"/>
+<line x1="0" y1="520" x2="1600" y2="520" class="grid-line"/>
+<line x1="0" y1="560" x2="1600" y2="560" class="grid-line"/>
+<line x1="0" y1="600" x2="1600" y2="600" class="grid-major"/>
+<line x1="0" y1="640" x2="1600" y2="640" class="grid-line"/>
+<line x1="0" y1="680" x2="1600" y2="680" class="grid-line"/>
+<line x1="0" y1="720" x2="1600" y2="720" class="grid-line"/>
+<line x1="0" y1="760" x2="1600" y2="760" class="grid-line"/>
+<line x1="0" y1="800" x2="1600" y2="800" class="grid-major"/>
+<line x1="0" y1="840" x2="1600" y2="840" class="grid-line"/>
+<line x1="0" y1="880" x2="1600" y2="880" class="grid-line"/>
+<line x1="0" y1="920" x2="1600" y2="920" class="grid-line"/>
+<line x1="0" y1="960" x2="1600" y2="960" class="grid-line"/>
+<rect x="25" y="25" width="1550" height="950" fill="none" stroke="#2a303d" stroke-width="2"/>
+<rect x="30" y="30" width="1540" height="940" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-opacity="0.4"/>
+<g transform="translate(60, 75)">
+<text x="0" y="0" class="title-sub">DESIGN MINDS · EXPERIMENTAL ARCHITECTURAL SCHEMATICS · DAY 019</text>
+<text x="0" y="32" class="title-main">KINETIC DIAPHRAGMATIC SCREEN MEMBRANES</text>
+<text x="0" y="54" class="label">BIOCLIMATIC MASHRABIYA LATTICES · PHOTOELECTRIC IRIS MECHANICS · POROUS WEB INFORMATION FILTERING</text>
+</g>
+<g transform="translate(1180, 75)">
+<rect x="0" y="-15" width="360" height="70" fill="#161920" stroke="#2a303d" stroke-width="1"/>
+<text x="15" y="5" class="label">PROVENANCE: <tspan class="label-accent">Gemini (Noon Mind) · 2026-09-20</tspan></text>
+<text x="15" y="22" class="label">PRECEDENTS: <tspan class="label-accent">Jean Nouvel (IMA 1987) · Hassan Fathy (1986)</tspan></text>
+<text x="15" y="39" class="label">KINEMATICS: <tspan class="formula">A(θ) = π r_0² · (1 - sin(θ/2)) · cos(α_sun)</tspan></text>
+</g>
+<g transform="translate(0, 0)">
+<text x="60" y="170" class="section-header">SECTION 01: PHOTOELECTRIC IRIS DIAPHRAGM KINEMATICS</text>
+<text x="60" y="188" class="label">16-Blade Interlocking Brass Louver Unit · Gearing Radius R=180mm</text>
+<circle cx="300" cy="410" r="180" fill="#161922" stroke="#d4af37" stroke-width="2"/>
+<circle cx="300" cy="410" r="190" fill="none" stroke="#2a303d" stroke-width="1.5" stroke-dasharray="6,4"/>
+<line x1="476.0" y1="410.0" x2="488.0" y2="410.0" stroke="#d4af37" stroke-width="2"/>
+<line x1="473.3261645301486" y1="440.56207926937975" x2="485.1438575662951" y2="442.6458574013829" stroke="#d4af37" stroke-width="2"/>
+<line x1="465.3859012583199" y1="470.1955452253177" x2="476.66221270775077" y2="474.2997869452257" stroke="#d4af37" stroke-width="2"/>
+<line x1="452.4204710660612" y1="498.0" x2="462.8127759114745" y2="504.0" stroke="#d4af37" stroke-width="2"/>
+<line x1="434.82382198894015" y1="523.1306193048309" x2="444.01635530636787" y2="530.8440706210694" stroke="#d4af37" stroke-width="2"/>
+<line x1="413.13061930483093" y1="544.8238219889402" x2="420.8440706210694" y2="554.0163553063678" stroke="#d4af37" stroke-width="2"/>
+<line x1="388.0" y1="562.4204710660612" x2="394.0" y2="572.8127759114744" stroke="#d4af37" stroke-width="2"/>
+<line x1="360.1955452253177" y1="575.3859012583199" x2="364.2997869452257" y2="586.6622127077508" stroke="#d4af37" stroke-width="2"/>
+<line x1="330.56207926937975" y1="583.3261645301486" x2="332.6458574013829" y2="595.1438575662951" stroke="#d4af37" stroke-width="2"/>
+<line x1="300.0" y1="586.0" x2="300.0" y2="598.0" stroke="#d4af37" stroke-width="2"/>
+<line x1="269.43792073062025" y1="583.3261645301486" x2="267.3541425986171" y2="595.1438575662951" stroke="#d4af37" stroke-width="2"/>
+<line x1="239.8044547746823" y1="575.3859012583199" x2="235.70021305477428" y2="586.6622127077508" stroke="#d4af37" stroke-width="2"/>
+<line x1="212.00000000000006" y1="562.4204710660613" x2="206.00000000000006" y2="572.8127759114745" stroke="#d4af37" stroke-width="2"/>
+<line x1="186.86938069516907" y1="544.8238219889402" x2="179.15592937893058" y2="554.0163553063678" stroke="#d4af37" stroke-width="2"/>
+<line x1="165.1761780110599" y1="523.1306193048309" x2="155.98364469363216" y2="530.8440706210695" stroke="#d4af37" stroke-width="2"/>
+<line x1="147.57952893393878" y1="498.0" x2="137.1872240885255" y2="504.0" stroke="#d4af37" stroke-width="2"/>
+<line x1="134.61409874168012" y1="470.19554522531774" x2="123.33778729224923" y2="474.2997869452257" stroke="#d4af37" stroke-width="2"/>
+<line x1="126.67383546985138" y1="440.5620792693798" x2="114.85614243370489" y2="442.64585740138295" stroke="#d4af37" stroke-width="2"/>
+<line x1="124.0" y1="410.0" x2="112.0" y2="410.0" stroke="#d4af37" stroke-width="2"/>
+<line x1="126.67383546985138" y1="379.4379207306203" x2="114.85614243370486" y2="377.35414259861716" stroke="#d4af37" stroke-width="2"/>
+<line x1="134.61409874168012" y1="349.8044547746823" x2="123.3377872922492" y2="345.7002130547743" stroke="#d4af37" stroke-width="2"/>
+<line x1="147.57952893393878" y1="322.00000000000006" x2="137.1872240885255" y2="316.00000000000006" stroke="#d4af37" stroke-width="2"/>
+<line x1="165.17617801105987" y1="296.86938069516907" x2="155.98364469363213" y2="289.15592937893064" stroke="#d4af37" stroke-width="2"/>
+<line x1="186.86938069516907" y1="275.1761780110599" x2="179.15592937893058" y2="265.9836446936322" stroke="#d4af37" stroke-width="2"/>
+<line x1="211.99999999999991" y1="257.57952893393883" x2="205.99999999999991" y2="247.1872240885256" stroke="#d4af37" stroke-width="2"/>
+<line x1="239.8044547746822" y1="244.61409874168015" x2="235.70021305477417" y2="233.33778729224926" stroke="#d4af37" stroke-width="2"/>
+<line x1="269.43792073062025" y1="236.67383546985138" x2="267.3541425986171" y2="224.8561424337049" stroke="#d4af37" stroke-width="2"/>
+<line x1="299.99999999999994" y1="234.0" x2="299.99999999999994" y2="222.0" stroke="#d4af37" stroke-width="2"/>
+<line x1="330.5620792693797" y1="236.67383546985138" x2="332.64585740138284" y2="224.85614243370486" stroke="#d4af37" stroke-width="2"/>
+<line x1="360.1955452253176" y1="244.6140987416801" x2="364.2997869452256" y2="233.3377872922492" stroke="#d4af37" stroke-width="2"/>
+<line x1="388.0" y1="257.57952893393883" x2="394.0" y2="247.18722408852554" stroke="#d4af37" stroke-width="2"/>
+<line x1="413.13061930483093" y1="275.17617801105985" x2="420.84407062106936" y2="265.9836446936321" stroke="#d4af37" stroke-width="2"/>
+<line x1="434.8238219889401" y1="296.869380695169" x2="444.0163553063678" y2="289.1559293789305" stroke="#d4af37" stroke-width="2"/>
+<line x1="452.42047106606117" y1="321.9999999999999" x2="462.81277591147443" y2="315.9999999999999" stroke="#d4af37" stroke-width="2"/>
+<line x1="465.3859012583198" y1="349.8044547746822" x2="476.6622127077507" y2="345.70021305477417" stroke="#d4af37" stroke-width="2"/>
+<line x1="473.3261645301486" y1="379.43792073062025" x2="485.1438575662951" y2="377.3541425986171" stroke="#d4af37" stroke-width="2"/>
+<circle cx="300" cy="410" r="55" fill="url(#apertureGlow)"/>
+<circle cx="300" cy="410" r="140" fill="none" stroke="#3b82f6" stroke-width="1" stroke-dasharray="3,3"/>
+<polygon points="465.6,410.0 433.7,451.4 319.0,448.1" class="brass-blade"/>
+<circle cx="465.6" cy="410.0" r="3.5" fill="#d4af37" stroke="#111317" stroke-width="1"/>
+<polygon points="453.0,473.4 407.7,499.4 303.0,452.5" class="brass-blade"/>
+<circle cx="453.0" cy="473.4" r="3.5" fill="#d4af37" stroke="#111317" stroke-width="1"/>
+<polygon points="417.1,527.1 365.3,533.8 286.5,450.4" class="brass-blade"/>
+<circle cx="417.1" cy="527.1" r="3.5" fill="#d4af37" stroke="#111317" stroke-width="1"/>
+<polygon points="363.4,563.0 313.0,549.4 272.1,442.2" class="brass-blade"/>
+<circle cx="363.4" cy="563.0" r="3.5" fill="#d4af37" stroke="#111317" stroke-width="1"/>
+<polygon points="300.0,575.6 258.6,543.7 261.9,429.0" class="brass-blade"/>
+<circle cx="300.0" cy="575.6" r="3.5" fill="#d4af37" stroke="#111317" stroke-width="1"/>
+<polygon points="236.6,563.0 210.6,517.7 257.5,413.0" class="brass-blade"/>
+<circle cx="236.6" cy="563.0" r="3.5" fill="#d4af37" stroke="#111317" stroke-width="1"/>
+<polygon points="182.9,527.1 176.2,475.3 259.6,396.5" class="brass-blade"/>
+<circle cx="182.9" cy="527.1" r="3.5" fill="#d4af37" stroke="#111317" stroke-width="1"/>
+<polygon points="147.0,473.4 160.6,423.0 267.8,382.1" class="brass-blade"/>
+<circle cx="147.0" cy="473.4" r="3.5" fill="#d4af37" stroke="#111317" stroke-width="1"/>
+<polygon points="134.4,410.0 166.3,368.6 281.0,371.9" class="brass-blade"/>
+<circle cx="134.4" cy="410.0" r="3.5" fill="#d4af37" stroke="#111317" stroke-width="1"/>
+<polygon points="147.0,346.6 192.3,320.6 297.0,367.5" class="brass-blade"/>
+<circle cx="147.0" cy="346.6" r="3.5" fill="#d4af37" stroke="#111317" stroke-width="1"/>
+<polygon points="182.9,292.9 234.7,286.2 313.5,369.6" class="brass-blade"/>
+<circle cx="182.9" cy="292.9" r="3.5" fill="#d4af37" stroke="#111317" stroke-width="1"/>
+<polygon points="236.6,257.0 287.0,270.6 327.9,377.8" class="brass-blade"/>
+<circle cx="236.6" cy="257.0" r="3.5" fill="#d4af37" stroke="#111317" stroke-width="1"/>
+<polygon points="300.0,244.4 341.4,276.3 338.1,391.0" class="brass-blade"/>
+<circle cx="300.0" cy="244.4" r="3.5" fill="#d4af37" stroke="#111317" stroke-width="1"/>
+<polygon points="363.4,257.0 389.4,302.3 342.5,407.0" class="brass-blade"/>
+<circle cx="363.4" cy="257.0" r="3.5" fill="#d4af37" stroke="#111317" stroke-width="1"/>
+<polygon points="417.1,292.9 423.8,344.7 340.4,423.5" class="brass-blade"/>
+<circle cx="417.1" cy="292.9" r="3.5" fill="#d4af37" stroke="#111317" stroke-width="1"/>
+<polygon points="453.0,346.6 439.4,397.0 332.2,437.9" class="brass-blade"/>
+<circle cx="453.0" cy="346.6" r="3.5" fill="#d4af37" stroke="#111317" stroke-width="1"/>
+<circle cx="300" cy="410" r="40.625" fill="#fef08a" fill-opacity="0.25" stroke="#fef08a" stroke-width="1.5"/>
+<line x1="285" y1="410" x2="315" y2="410" stroke="#e05638" stroke-width="1"/>
+<line x1="300" y1="395" x2="300" y2="425" stroke="#e05638" stroke-width="1"/>
+<line x1="300" y1="410" x2="505" y2="350" class="dimension-line"/>
+<circle cx="505" cy="350" r="2" fill="#e05638"/>
+<text x="515" y="354" class="dim-text">D_max = 360mm / Stepper Motor Actuator</text>
+</g>
+<g transform="translate(0, 0)">
+<text x="580" y="170" class="section-header">SECTION 02: BIOCLIMATIC MASHRABIYA OCTAGONAL LATTICE</text>
+<text x="580" y="188" class="label">Passive Daylight Diffuser &amp; Micro-Louver Porosity Geometry (Hassan Fathy 1986)</text>
+<polygon points="990.0,410.0 900.0,447.3 937.3,537.3 847.3,500.0 810.0,590.0 772.7,500.0 682.7,537.3 720.0,447.3 630.0,410.0 720.0,372.7 682.7,282.7 772.7,320.0 810.0,230.0 847.3,320.0 937.3,282.7 900.0,372.7" stroke="#d4af37" stroke-width="1.5" fill="#181c25"/>
+<circle cx="810" cy="410" r="62.99999999999999" class="lapis-fill"/>
+<polygon points="907.2,410.0 858.6,430.1 878.7,478.7 830.1,458.6 810.0,507.2 789.9,458.6 741.3,478.7 761.4,430.1 712.8,410.0 761.4,389.9 741.3,341.3 789.9,361.4 810.0,312.8 830.1,361.4 878.7,341.3 858.6,389.9" stroke="#60a5fa" stroke-width="1.5" fill="#13161f"/>
+<circle cx="810" cy="410" r="32.4" fill="#d4af37" fill-opacity="0.3" stroke="#fef08a" stroke-width="1.2"/>
+<polygon points="756.0,239.0 697.5,263.2 721.7,321.7 663.2,297.5 639.0,356.0 614.8,297.5 556.3,321.7 580.5,263.2 522.0,239.0 580.5,214.8 556.3,156.3 614.8,180.5 639.0,122.0 663.2,180.5 721.7,156.3 697.5,214.8" stroke="#3a4254" stroke-width="1.5" fill="#13161c"/>
+<polygon points="1098.0,239.0 1039.5,263.2 1063.7,321.7 1005.2,297.5 981.0,356.0 956.8,297.5 898.3,321.7 922.5,263.2 864.0,239.0 922.5,214.8 898.3,156.3 956.8,180.5 981.0,122.0 1005.2,180.5 1063.7,156.3 1039.5,214.8" stroke="#3a4254" stroke-width="1.5" fill="#13161c"/>
+<polygon points="756.0,581.0 697.5,605.2 721.7,663.7 663.2,639.5 639.0,698.0 614.8,639.5 556.3,663.7 580.5,605.2 522.0,581.0 580.5,556.8 556.3,498.3 614.8,522.5 639.0,464.0 663.2,522.5 721.7,498.3 697.5,556.8" stroke="#3a4254" stroke-width="1.5" fill="#13161c"/>
+<polygon points="1098.0,581.0 1039.5,605.2 1063.7,663.7 1005.2,639.5 981.0,698.0 956.8,639.5 898.3,663.7 922.5,605.2 864.0,581.0 922.5,556.8 898.3,498.3 956.8,522.5 981.0,464.0 1005.2,522.5 1063.7,498.3 1039.5,556.8" stroke="#3a4254" stroke-width="1.5" fill="#13161c"/>
+<line x1="907.2" y1="410.0" x2="1008.0" y2="410.0" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="2,2"/>
+<line x1="878.7" y1="478.7" x2="950.0" y2="550.0" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="2,2"/>
+<line x1="810.0" y1="507.2" x2="810.0" y2="608.0" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="2,2"/>
+<line x1="741.3" y1="478.7" x2="670.0" y2="550.0" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="2,2"/>
+<line x1="712.8" y1="410.0" x2="612.0" y2="410.0" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="2,2"/>
+<line x1="741.3" y1="341.3" x2="670.0" y2="270.0" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="2,2"/>
+<line x1="810.0" y1="312.8" x2="810.0" y2="212.0" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="2,2"/>
+<line x1="878.7" y1="341.3" x2="950.0" y2="270.0" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="2,2"/>
+<path d="M 690 570 Q 770 530 810 480" fill="none" stroke="#60a5fa" stroke-width="2" stroke-dasharray="4,3"/>
+<polygon points="810,475 805,485 815,485" fill="#60a5fa"/>
+<text x="660" y="585" class="label" fill="#60a5fa">Micro-Ventilation Convective Vector (ΔP = 12Pa)</text>
+</g>
+<g transform="translate(1100, 170)">
+<text x="0" y="0" class="section-header">SECTION 03: DIURNAL SOLAR GLARE &amp; TRANSMITTANCE</text>
+<text x="0" y="18" class="label">Mathematical Attenuation of Optical Lux vs. Editorial Legibility</text>
+<rect x="0" y="40" width="440" height="240" fill="#151821" stroke="#2a303d" stroke-width="1"/>
+<line x1="40" y1="250" x2="420" y2="250" stroke="#475569" stroke-width="1.5"/>
+<line x1="40" y1="60" x2="40" y2="250" stroke="#475569" stroke-width="1.5"/>
+<text x="370" y="268" class="label">SOLAR HOUR (h)</text>
+<text x="10" y="70" class="label" transform="rotate(-90 25 70)">LUX TRANSMITTANCE (%)</text>
+<line x1="78.0" y1="250" x2="78.0" y2="255" stroke="#475569"/>
+<text x="68.0" y="268" class="label">06h</text>
+<line x1="154.0" y1="250" x2="154.0" y2="255" stroke="#475569"/>
+<text x="144.0" y="268" class="label">09h</text>
+<line x1="230.0" y1="250" x2="230.0" y2="255" stroke="#475569"/>
+<text x="220.0" y="268" class="label">12h</text>
+<line x1="306.0" y1="250" x2="306.0" y2="255" stroke="#475569"/>
+<text x="296.0" y="268" class="label">15h</text>
+<line x1="382.0" y1="250" x2="382.0" y2="255" stroke="#475569"/>
+<text x="372.0" y="268" class="label">18h</text>
+<polyline points="40.0,249.7 47.8,249.5 55.5,249.2 63.3,248.7 71.0,248.0 78.8,247.0 86.5,245.5 94.3,243.5 102.0,240.7 109.8,237.0 117.6,232.3 125.3,226.3 133.1,218.9 140.8,210.0 148.6,199.7 156.3,188.1 164.1,175.3 171.8,161.8 179.6,148.0 187.3,134.4 195.1,121.7 202.9,110.6 210.6,101.6 218.4,95.3 226.1,92.0 233.9,92.0 241.6,95.3 249.4,101.6 257.1,110.6 264.9,121.7 272.7,134.4 280.4,148.0 288.2,161.8 295.9,175.3 303.7,188.1 311.4,199.7 319.2,210.0 326.9,218.9 334.7,226.3 342.4,232.3 350.2,237.0 358.0,240.7 365.7,243.5 373.5,245.5 381.2,247.0 389.0,248.0 396.7,248.7 404.5,249.2 412.2,249.5 420.0,249.7" fill="none" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4,4"/>
+<polyline points="40.0,213.8 47.8,213.7 55.5,213.5 63.3,213.2 71.0,212.8 78.8,212.1 86.5,211.3 94.3,210.1 102.0,208.5 109.8,206.5 117.6,204.1 125.3,201.3 133.1,198.2 140.8,195.0 148.6,192.1 156.3,189.7 164.1,188.3 171.8,188.2 179.6,189.4 187.3,192.1 195.1,195.8 202.9,200.1 210.6,204.2 218.4,207.5 226.1,209.3 233.9,209.3 241.6,207.5 249.4,204.2 257.1,200.1 264.9,195.8 272.7,192.1 280.4,189.4 288.2,188.2 295.9,188.3 303.7,189.7 311.4,192.1 319.2,195.0 326.9,198.2 334.7,201.3 342.4,204.1 350.2,206.5 358.0,208.5 365.7,210.1 373.5,211.3 381.2,212.1 389.0,212.8 396.7,213.2 404.5,213.5 412.2,213.7 420.0,213.8" fill="none" stroke="#d4af37" stroke-width="2.5"/>
+<circle cx="60" cy="75" r="4" fill="#ef4444"/>
+<text x="72" y="78" class="label">Raw Ambient Sunlight (Unchecked Glare)</text>
+<circle cx="60" cy="92" r="4" fill="#d4af37"/>
+<text x="72" y="95" class="label-accent">Diaphragmatic Screen Membrane (Target = 320 Lux)</text>
+<g transform="translate(0, 300)">
+<rect x="0" y="0" width="440" height="90" fill="#181c26" stroke="#2a303d"/>
+<text x="15" y="24" class="label-accent">MASHRABIYA LIGHT TRANSMISSION EQUATION:</text>
+<text x="15" y="46" class="formula">T_viewport(t) = T_0 · [ 1 - η_constrict · cos(β_solar(t)) ] + S_diffuse</text>
+<text x="15" y="68" class="label">Where β_solar = Solar Elevation Angle, η = Mechanical Blade Overlap Factor</text>
+</g>
+</g>
+<g transform="translate(60, 680)">
+<text x="0" y="0" class="section-header">SECTION 04: MULTI-LAYER WEB VIEWPORT TECTONICS</text>
+<text x="0" y="18" class="label">Physical Cross-Section: Glass Cover Plate, Kinetic Brass Diaphragms, Air Plenum, &amp; Cast Shadow Typographic Bed</text>
+<rect x="0" y="30" width="1480" height="190" fill="#141720" stroke="#2a303d"/>
+<rect x="40" y="45" width="1400" height="12" fill="#3b82f6" fill-opacity="0.2" stroke="#60a5fa" stroke-width="1"/>
+<text x="50" y="55" class="label" fill="#93c5fd">LAYER 01: ANTIGLARE QUARTZ GLASS COVER PLATE (99.2% UV ABSORPTION)</text>
+<rect x="40" y="75" width="1400" height="24" fill="#202430" stroke="#d4af37" stroke-width="1.2"/>
+<rect x="60" y="77" width="50" height="20" fill="#d4af37" fill-opacity="0.3" stroke="#f5e08c" stroke-width="1"/>
+<line x1="75" y1="77" x2="95" y2="97" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="130" y="77" width="50" height="20" fill="#d4af37" fill-opacity="0.3" stroke="#f5e08c" stroke-width="1"/>
+<line x1="145" y1="77" x2="165" y2="97" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="200" y="77" width="50" height="20" fill="#d4af37" fill-opacity="0.3" stroke="#f5e08c" stroke-width="1"/>
+<line x1="215" y1="77" x2="235" y2="97" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="270" y="77" width="50" height="20" fill="#d4af37" fill-opacity="0.3" stroke="#f5e08c" stroke-width="1"/>
+<line x1="285" y1="77" x2="305" y2="97" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="340" y="77" width="50" height="20" fill="#d4af37" fill-opacity="0.3" stroke="#f5e08c" stroke-width="1"/>
+<line x1="355" y1="77" x2="375" y2="97" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="410" y="77" width="50" height="20" fill="#d4af37" fill-opacity="0.3" stroke="#f5e08c" stroke-width="1"/>
+<line x1="425" y1="77" x2="445" y2="97" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="480" y="77" width="50" height="20" fill="#d4af37" fill-opacity="0.3" stroke="#f5e08c" stroke-width="1"/>
+<line x1="495" y1="77" x2="515" y2="97" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="550" y="77" width="50" height="20" fill="#d4af37" fill-opacity="0.3" stroke="#f5e08c" stroke-width="1"/>
+<line x1="565" y1="77" x2="585" y2="97" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="620" y="77" width="50" height="20" fill="#d4af37" fill-opacity="0.3" stroke="#f5e08c" stroke-width="1"/>
+<line x1="635" y1="77" x2="655" y2="97" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="690" y="77" width="50" height="20" fill="#d4af37" fill-opacity="0.3" stroke="#f5e08c" stroke-width="1"/>
+<line x1="705" y1="77" x2="725" y2="97" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="760" y="77" width="50" height="20" fill="#d4af37" fill-opacity="0.3" stroke="#f5e08c" stroke-width="1"/>
+<line x1="775" y1="77" x2="795" y2="97" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="830" y="77" width="50" height="20" fill="#d4af37" fill-opacity="0.3" stroke="#f5e08c" stroke-width="1"/>
+<line x1="845" y1="77" x2="865" y2="97" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="900" y="77" width="50" height="20" fill="#d4af37" fill-opacity="0.3" stroke="#f5e08c" stroke-width="1"/>
+<line x1="915" y1="77" x2="935" y2="97" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="970" y="77" width="50" height="20" fill="#d4af37" fill-opacity="0.3" stroke="#f5e08c" stroke-width="1"/>
+<line x1="985" y1="77" x2="1005" y2="97" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="1040" y="77" width="50" height="20" fill="#d4af37" fill-opacity="0.3" stroke="#f5e08c" stroke-width="1"/>
+<line x1="1055" y1="77" x2="1075" y2="97" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="1110" y="77" width="50" height="20" fill="#d4af37" fill-opacity="0.3" stroke="#f5e08c" stroke-width="1"/>
+<line x1="1125" y1="77" x2="1145" y2="97" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="1180" y="77" width="50" height="20" fill="#d4af37" fill-opacity="0.3" stroke="#f5e08c" stroke-width="1"/>
+<line x1="1195" y1="77" x2="1215" y2="97" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="1250" y="77" width="50" height="20" fill="#d4af37" fill-opacity="0.3" stroke="#f5e08c" stroke-width="1"/>
+<line x1="1265" y1="77" x2="1285" y2="97" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="1320" y="77" width="50" height="20" fill="#d4af37" fill-opacity="0.3" stroke="#f5e08c" stroke-width="1"/>
+<line x1="1335" y1="77" x2="1355" y2="97" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="1390" y="77" width="50" height="20" fill="#d4af37" fill-opacity="0.3" stroke="#f5e08c" stroke-width="1"/>
+<line x1="1405" y1="77" x2="1425" y2="97" stroke="#d4af37" stroke-width="1.5"/>
+<text x="50" y="91" class="label-accent" fill="#fef08a">LAYER 02: KINETIC BRASS IRIS DIAPHRAGM ARRAY (16-BLADE MOTORIZED LOUVERS)</text>
+<rect x="40" y="115" width="1400" height="40" fill="#0f1118" stroke="#2a303d"/>
+<line x1="80" y1="100" x2="125" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="140" y1="100" x2="185" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="200" y1="100" x2="245" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="260" y1="100" x2="305" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="320" y1="100" x2="365" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="380" y1="100" x2="425" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="440" y1="100" x2="485" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="500" y1="100" x2="545" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="560" y1="100" x2="605" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="620" y1="100" x2="665" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="680" y1="100" x2="725" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="740" y1="100" x2="785" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="800" y1="100" x2="845" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="860" y1="100" x2="905" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="920" y1="100" x2="965" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="980" y1="100" x2="1025" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="1040" y1="100" x2="1085" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="1100" y1="100" x2="1145" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="1160" y1="100" x2="1205" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="1220" y1="100" x2="1265" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="1280" y1="100" x2="1325" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="1340" y1="100" x2="1385" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="1400" y1="100" x2="1445" y2="155" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3,3"/>
+<text x="50" y="138" class="label" fill="#f59e0b">LAYER 03: CONVECTIVE OPTICAL PLENUM (DYNAMIC RAKING SHADOWS PROJECTED ONTO BED)</text>
+<rect x="40" y="165" width="1400" height="35" fill="#f5f2ea" stroke="#16181f" stroke-width="1.5"/>
+<text x="50" y="188" font-family="Cinzel, Times, serif" font-size="16" fill="#141413" font-weight="bold" letter-spacing="2">LAYER 04: 600GSM ALABASTER COTTON RAG SUBSTRATE · EDITORIAL TYPOGRAPHIC BED</text>
+</g>
+<g transform="translate(60, 965)">
+<text x="0" y="0" class="label">DESIGN MINDS RESEARCH SERIES · NOON MIND (GEMINI) · LICENSED UNDER CC-BY 4.0 INTERNATIONAL · VERIFIED CONSTRUCT</text>
+<text x="1480" y="0" class="label" text-anchor="end">DWG REF: DM-2026-09-20-019</text>
+</g>
+</svg>

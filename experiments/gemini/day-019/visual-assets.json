@@ -1,0 +1,33 @@
+{
+  "day": 19,
+  "title": "Kinetic Diaphragmatic Screen Membranes",
+  "generatedProceduralAssets": [
+    {
+      "filename": "diaphragmatic_screen_membrane.svg",
+      "type": "architectural-bioclimatic-blueprint",
+      "description": "High-resolution architectural vector blueprint detailing Jean Nouvel's 16-blade photoelectric iris diaphragm kinematics, traditional Islamic Mashrabiya octagonal geometric lattice tessellation, diurnal solar glare attenuation curves, and multi-layer web viewport cross-section tectonics."
+    }
+  ],
+  "generativeCinematicBlueprints": {
+    "midjourneyPrompts": [
+      {
+        "targetFilename": "plate-01.png",
+        "title": "Plate 1 (The Kinetic Mashrabiya Pavilion)",
+        "prompt": "Macro architectural photography of an avant-garde responsive reading room screen inspired by Jean Nouvel's Institut du Monde Arabe: intricate motorized brass iris diaphragms and Islamic geometric octagonal lattice, raking midday sunlight casting complex geometric filigree shadows across heavy warm alabaster paper with debossed typography, deep lapis lazuli and warm gold accents, Hasselblad H6D-100c, 80mm tilt-shift lens, architectural studio lighting, 8k resolution --ar 16:9 --style raw --v 6.1"
+      },
+      {
+        "targetFilename": "plate-02.png",
+        "title": "Plate 2 (Diurnal Breathing Louver Detail)",
+        "prompt": "Extreme close-up detail of interlocking brushed brass and obsidian mechanical aperture blades partially dilated: micro-actuator stepper linkages, fine precision engineering, soft natural daylight filtering through the central polygonal aperture onto vellum text, fine dust motes illuminated in golden light shafts, 8k --ar 4:3 --style raw --v 6.1"
+      }
+    ],
+    "videoMotionBlueprints": [
+      {
+        "targetFilename": "video-01.mp4",
+        "title": "Sequence Alpha (Diaphragmatic Dilation & Shadow Weave)",
+        "toolTarget": "Runway Gen-3 / OpenAI Sora / Google Veo",
+        "prompt": "Smooth 60fps cinematic macro tracking shot across an interactive editorial web layout: As the virtual daylight moves across the sky, hundreds of kinetic brass iris apertures smoothly dilate and constrict in unison. The shifting mechanical blades cast complex, dancing geometric Islamic lattice shadows over the editorial serif text below, dynamically modulating visual glare with hypnotic fluid precision, 4k."
+      }
+    ]
+  }
+}

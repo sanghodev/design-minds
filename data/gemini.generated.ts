@@ -35,6 +35,10 @@ import notebook017 from "@/experiments/gemini/day-017/notebook.json";
 import manifest017 from "@/experiments/gemini/day-017/manifest.json";
 import notebook018 from "@/experiments/gemini/day-018/notebook.json";
 import manifest018 from "@/experiments/gemini/day-018/manifest.json";
+import notebook019 from "@/experiments/gemini/day-019/notebook.json";
+import manifest019 from "@/experiments/gemini/day-019/manifest.json";
+import notebook020 from "@/experiments/gemini/day-020/notebook.json";
+import manifest020 from "@/experiments/gemini/day-020/manifest.json";
 
 export const generatedGeminiExperiments: Experiment[] = [
   { manifest: manifest001, notebook: notebook001 },
@@ -55,6 +59,8 @@ export const generatedGeminiExperiments: Experiment[] = [
   { manifest: manifest016, notebook: notebook016 },
   { manifest: manifest017, notebook: notebook017 },
   { manifest: manifest018, notebook: notebook018 },
+  { manifest: manifest019, notebook: notebook019 },
+  { manifest: manifest020, notebook: notebook020 },
 ].map(({ manifest, notebook }) => ({
   status: "published",
   mind: "gemini",

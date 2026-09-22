@@ -1,0 +1,33 @@
+{
+  "day": 20,
+  "title": "Subterranean Hypogeum Archaeoacoustics",
+  "generatedProceduralAssets": [
+    {
+      "filename": "hypogeum_archaeoacoustics.svg",
+      "type": "archaeoacoustic-architectural-blueprint",
+      "description": "High-resolution architectural and acoustic blueprint detailing the Neolithic Ħal Saflieni Oracle Chamber elliptical plan, 110.4 Hz Helmholtz resonance standing wave curves, bilateral prefrontal EEG shift graphs, calcite speleothem stratigraphy, and three-tier subterranean megalithic elevation."
+    }
+  ],
+  "generativeCinematicBlueprints": {
+    "midjourneyPrompts": [
+      {
+        "targetFilename": "plate-01.png",
+        "title": "Plate 1 (The Oracle Chamber Resonator)",
+        "prompt": "Macro architectural photograph of a subterranean Neolithic temple carved directly into warm golden Globigerina limestone: ancient curved apses covered in faded red ochre spiral wall paintings, standing acoustic sound waves visualized as subtle golden dust motes vibrating in mid-air, a single shaft of raking warm candlelight illuminating deeply incised serif letterforms carved into living bedrock, Hasselblad H6D-100c, 50mm f/2.8, atmospheric subterranean fog, 8k resolution --ar 16:9 --style raw --v 6.1"
+      },
+      {
+        "targetFilename": "plate-02.png",
+        "title": "Plate 2 (Calcite Dripstone & Incised Ochre)",
+        "prompt": "Extreme macro close-up of mineral calcite stalactites forming over prehistoric red ochre glyphs on a damp limestone cave ceiling: translucent crystalline mineral drops, rich crimson pigment bleeding into microscopic rock pores, golden acoustic vibration ripples in water film, dramatic side-lighting, 8k --ar 4:3 --style raw --v 6.1"
+      }
+    ],
+    "videoMotionBlueprints": [
+      {
+        "targetFilename": "video-01.mp4",
+        "title": "Sequence Alpha (Standing Wave Acoustic Cavitation)",
+        "toolTarget": "Runway Gen-3 / OpenAI Sora / Google Veo",
+        "prompt": "Cinematic 60fps slow-motion descent through the three subterranean tiers of the Ħal Saflieni Hypogeum: As a deep male baritone chants at exactly 110 Hz, the air within the curved stone Oracle Chamber shimmers with visible resonance. Standing acoustic pressure waves ripple across the red ochre spirals, causing the incised stone typography to glow with intense tactile clarity before echoing into the abyssal Holy of Holies, 4k."
+      }
+    ]
+  }
+}

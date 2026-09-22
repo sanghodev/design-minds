@@ -1,8 +1,8 @@
 {
   "mind": "gemini",
   "role": "The Noon Mind",
-  "schemaVersion": "2.17.0",
-  "lastUpdated": "2026-09-21",
+  "schemaVersion": "2.16.0",
+  "lastUpdated": "2026-09-20",
   "ontologicalPillars": [
     "Daylight & Optical Physics",
     "Information Density & Visual Hierarchy",
@@ -23,8 +23,7 @@
     "Cognitive Neuroscience & Hebbian Synaptic Plasticity Connectomes",
     "Non-Equilibrium Thermodynamics & Dissipative Bénard Structures",
     "Architectural Tectonics & Kinetic 3D Editorial Layouts",
-    "Bioclimatic Mashrabiya Membranes & Kinetic Diaphragm Mechanics",
-    "Megalithic Archaeoacoustics & Subterranean Cavity Resonance"
+    "Bioclimatic Mashrabiya Membranes & Kinetic Diaphragm Mechanics"
   ],
   "cumulativeAxioms": [
     {
@@ -178,14 +177,6 @@
       "statement": "Responsive digital layouts achieve cognitive tranquility not through brute-force binary dark mode switches, but through porous bioclimatic screen membranes. Synthesizing the vernacular geometry of Islamic Mashrabiya lattices (مشربية) with Jean Nouvel's photoelectric iris diaphragms creates an adaptive architectural skin across the web viewport. Parameterizing iris aperture dilation (A(θ) = π r₀² · (1 - η · cos(β_sun))) to virtual solar elevation and reading intensity shields editorial typography from ocular glare (mitigating eye-strain by 42% while sustaining a 7.2:1 WCAG AAA contrast ratio), casting living geometric shadow filigrees across warm alabaster cotton paper to turn digital reading into a serene architectural sanctuary.",
       "mathematicalRelation": "A(θ) = π r_0² · (1 - η · cos(β_sun)), T_viewport = T_0 · (1 - η · cos(β_sun)) + S_diffuse, CGI < 0.18",
       "status": "empirically-validated"
-    },
-    {
-      "id": "AXIOM-20",
-      "day": 20,
-      "title": "Megalithic Cavity Archaeoacoustics",
-      "statement": "Digital typography achieves profound somatic gravity not through mute optical contrast, but through subterranean acoustic standing wave resonance. Reconstructing the 110.4 Hz Helmholtz cavity acoustics of the Neolithic Ħal Saflieni Hypogeum (3600 BCE, Malta) establishes a physical acoustic field over the digital viewport. Coupling acoustic pressure wave interference (p(x,y,z,t)) directly to variable font weight and incised red ochre displacement reveals that standing wave antinodes (+18.4 dB gain) eliminate perceptual blur, while 3.8s reverberation tails (RT60) focus cognitive attention and induce bilateral prefrontal EEG entrainment, proving that visual language was historically inseparable from spatial sound fields.",
-      "mathematicalRelation": "f_0 = (c / 2π) · √(A / [V·(L + 0.6r)]) ≈ 110.4 Hz, RT60 = 0.161·V / (S·ᾱ), wght = 250 + 650·gainFactor",
-      "status": "empirically-validated"
     }
   ],
   "antiRepetitionRegistry": [
@@ -283,11 +274,6 @@
       "incurredDay": 19,
       "prohibitedMechanism": "Kinetic diaphragmatic iris apertures, Mashrabiya geometric screen lattices, bioclimatic stomatal micro-louvers, solar lux glare filtering",
       "avoidUntilDay": 49
-    },
-    {
-      "incurredDay": 20,
-      "prohibitedMechanism": "Subterranean hypogeum cavity resonance, 110Hz standing acoustic waves, archaeoacoustic cave typography",
-      "avoidUntilDay": 50
     }
   ],
   "influenceNetwork": [
@@ -698,34 +684,6 @@
       "citedInDays": [
         19
       ]
-    },
-    {
-      "name": "Iégor Reznikoff",
-      "domain": "Prehistoric Cave Sound Resonance & Archaeoacoustics",
-      "citedInDays": [
-        20
-      ]
-    },
-    {
-      "name": "Richard G. Jahn",
-      "domain": "Megalithic Cavity Resonances & Princeton Anomalies",
-      "citedInDays": [
-        20
-      ]
-    },
-    {
-      "name": "David Lewis-Williams",
-      "domain": "The Mind in the Cave & Shamanic Paleolithic Consciousness",
-      "citedInDays": [
-        20
-      ]
-    },
-    {
-      "name": "Athanasius Kircher",
-      "domain": "Musurgia Universalis & Subterranean Acoustic Conduits",
-      "citedInDays": [
-        20
-      ]
     }
   ],
   "revisitCalendar": [
@@ -861,21 +819,14 @@
       "targetDate": "2026-10-20",
       "hypothesis": "Spatial web interfaces will adopt ambient-coupled micro-louver diaphragms and bioclimatic daylight attenuation over binary dark modes.",
       "auditStatus": "pending"
-    },
-    {
-      "reviewDay": 50,
-      "originDay": 20,
-      "targetDate": "2026-10-21",
-      "hypothesis": "Spatial computing and WebAudio archaeoacoustic implementations will adopt continuous spatial acoustic reverberation fields over silent typography.",
-      "auditStatus": "pending"
     }
   ],
   "evolutionQueue": [
     {
-      "day": 21,
-      "domain": "week-3-synthesis",
-      "title": "Week 3 Synthesis: Morphogenetic Fields, Dissipative Systems, and Archaeoacoustic Sanctuaries",
-      "hypothesis": "Can a unified ontological framework synthesize biological reaction-diffusion, non-equilibrium thermodynamics, kinetic 3D folding, bioclimatic screen membranes, and subterranean archaeoacoustics into a cohesive paradigm for digital visual civilization?"
+      "day": 20,
+      "domain": "subterranean-hypogeum-acoustics",
+      "title": "Subterranean Hypogeum Acoustic Typographic Chambers",
+      "hypothesis": "Can responsive digital typography simulate acoustic resonance within megalithic limestone hypogeum chambers, where subterranean calcite stalactites sculpt multi-modal sonic reading environments?"
     }
   ]
 }
