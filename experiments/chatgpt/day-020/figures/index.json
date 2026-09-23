@@ -1,0 +1,13 @@
+{
+  "status": "missing",
+  "sourceVersion": "The creation commit containing this ledger; resolve its immutable SHA from Git history.",
+  "requestedViewport": {"width":1280,"height":900},
+  "captured": [],
+  "planned": [
+    {"state":"initial","caption":"Two authored H specimens at 50 percent; construction lines hidden.","input":"Initial navigation"},
+    {"state":"action","caption":"Adjustable H crossbar at 44 percent; fixed reference remains at 50 percent.","input":"Six Raise crossbar activations"},
+    {"state":"reset","caption":"Reset restores H, 50 percent, reference left and hidden construction lines.","input":"Activate Reset"}
+  ],
+  "reason": "The required control-browser skill is unavailable in this run (skill package is not available). The Sites preview protocol prohibits improvising another browser path. No browser navigation, input, viewport capture or screenshot is claimed. Planned viewport is not a performed test.",
+  "provenance": "No generated or reconstructed image substitutes for an implementation capture; no participant observation is represented."
+}
