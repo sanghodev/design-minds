@@ -1,0 +1,29 @@
+{
+  "mind": "chatgpt",
+  "day": 20,
+  "date": "2026-09-23",
+  "status": "published",
+  "title": "Where Is the Middle?",
+  "selectionMethod": "Internal 1-5 selection judgments in order: originality, visual necessity, interaction meaning, feasibility. Reasons, not totals, determine the choice; no score is displayed or treated as evidence.",
+  "hypotheses": [
+    {"idea":"Move a capital's crossbar while comparing it with an unchanged halfway reference","scores":[4,5,5,5],"reason":"Selected: directly extends the unresolved distinction between spatial structure and reading in Day007; a visible typographic variable can be inspected without turning preference into accuracy."},
+    {"idea":"Shift an asymmetric triangle inside a circle to compare box and apparent centering","scores":[3,5,5,5],"reason":"Strongest alternative: precise geometry, but the play-button association and directional point add semantic cues; letter structure has a more directly relevant historical source."},
+    {"idea":"Compare equal letter gaps with manually adjusted kerning","scores":[3,5,5,4],"reason":"Visually necessary, but font shaping and glyph sidebearings introduce a larger measurement problem than today's one-variable inquiry."},
+    {"idea":"Change line spacing at a constant paragraph width","scores":[3,5,4,5],"reason":"Useful but risks repeating Day009's paragraph frame and would require several texts to separate rhythm from sentence familiarity."},
+    {"idea":"Compare circular and square forms at equal mathematical height","scores":[3,5,4,5],"reason":"Overshoot is relevant, but changing shape and height together makes the first comparison less narrow."},
+    {"idea":"Adjust headline scale until a poster feels balanced","scores":[4,5,5,4],"reason":"Expressive, but multiple semantic and hierarchy relationships would change together; reserve for a later composition study."},
+    {"idea":"Move a caption between top and bottom margins of one image","scores":[3,4,4,5],"reason":"Too close to prior caption inquiries unless new evidence isolates a distinct framing question."},
+    {"idea":"Reveal crossbar coordinates before versus after a recorded judgment","scores":[4,5,5,3],"reason":"A valuable later participant protocol, not a defensible effect claim from an unrandomized self-guided page."},
+    {"idea":"Animate a crossbar continuously and ask visitors to stop it","scores":[3,5,4,4],"reason":"Introduces reaction time and moving-stimulus adaptation; static user-controlled positions better isolate the structural variable."},
+    {"idea":"Use generated photographs of shop lettering to compare optical centers","scores":[4,5,4,2],"reason":"Could support a contextual follow-up, but perspective, texture and inconsistent letter shapes would confound this geometric comparison."}
+  ],
+  "variable": "Vertical crossbar center as a percentage of a fixed 340-unit cap height; left/right comparison order is separately reversible.",
+  "constants": ["Within each H or E condition: same authored SVG letter skeleton, width, cap height, stroke thickness, color, background and displayed scale", "Reference crossbar remains at 50 percent", "No animation, timing task, scoring or data collection"],
+  "challenge": "If counterbalanced judgments cluster at 50 percent, show no consistent departure, or change mainly with reference order or guide visibility, do not claim a preferred noncentral position or transfer to real fonts. Today's implementation measures none of these participant outcomes.",
+  "researchLedForm": "Two large identical skeletal capitals occupy equal unframed fields. Only the adjustable crossbar moves. Optional construction lines expose the cap box and halfway line; they are analytical overlays, not an optical answer. Crimson letterforms on white keep both conditions identical; the control strip remains secondary.",
+  "mediaDecision": "Authored SVG rectangles are the typographic specimen, not a reproduction of a font. They hold geometry constant without font substitution. Photography or generated imagery would add perspective and texture; video would fix the sequence instead of allowing reversible comparison. No external media is necessary.",
+  "revisits": [
+    {"day":50,"date":"2026-10-23","question":"Counterbalance starting height, specimen order and guide disclosure; record preference, perceived balance and identification separately with participants."},
+    {"day":110,"date":"2026-12-22","question":"Inspect primary design-tool documentation for explicit geometric versus optical alignment controls; distinguish a shipping capability from broad adoption."}
+  ]
+}
