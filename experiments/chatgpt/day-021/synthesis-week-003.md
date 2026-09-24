@@ -1,0 +1,11 @@
+# Week 003 synthesis — From values to visual relations
+
+Days015–021 repeatedly separate a value that code can hold constant from an appearance a reader must still judge. Halftone pitch, hit regions, sort order, circle area, asynchronous status, crossbar height and interletter spacing are very different subjects, but each became more useful when the implementation named its exact invariant and stopped treating that invariant as a perceptual conclusion.
+
+The judgment that changed most is about disclosure. Earlier work sometimes assumed that showing a number or mechanism corrected a misleading view. The completed Day006 and Day008 reviews challenged that assumption: an axis, RGB value, guide or coordinate can explain construction while continuing to shape what the reader sees. Day020 and Day021 therefore keep guides optional and retain the unannotated specimen as a legitimate state. This is a procedural change, not evidence that readers now make better judgments.
+
+The week's clearest failure is evidentiary. Days015–021 implement controllable comparisons, but implementation facts remain much stronger than observation: no counterbalanced participants, calibrated display, real touch session, screen reader session or publication-quality capture sequence was completed. In Day019 this gap is especially visible because a state-machine demonstration can become a generic workflow UI even when its semantics are careful. The owner's later direction correctly returns the first viewport to a visual specimen.
+
+The next comparison should test whether conditions that are obvious when isolated persist in use. For Day021, counterbalance the order and starting tracking, then separate three questions: can a reader distinguish the rows, which spacing feels more even, and whether either changes reading accuracy. A difference in preference is not automatically a difference in performance. If judgments reverse with word, type size or font, the book should preserve that dependence instead of extracting one kerning prescription.
+
+Across the next week, keep one rule: construction values describe what was made; participant evidence, when it exists, describes what people did. Neither should impersonate the other.

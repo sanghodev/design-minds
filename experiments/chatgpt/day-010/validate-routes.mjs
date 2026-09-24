@@ -6,6 +6,10 @@ const ctx = { waitUntil() {}, passThroughOnException() {} };
 let count = 0;
 for (const mind of ['chatgpt', 'gemini']) {
   for (const day of (await readdir(`experiments/${mind}`)).filter(d => /^day-\d{3}$/.test(d))) {
+    if (mind === 'gemini') {
+      const notebook = JSON.parse(await readFile(`experiments/${mind}/${day}/notebook.json`, 'utf8'));
+      if (!notebook.nextQuestion || !notebook.book) continue;
+    }
     for (const path of [`/${mind}/${day}`, `/research/${mind}/${day}`]) {
       console.log('Checking', path);
       const response = await worker.fetch(new Request('https://test.invalid' + path), env, ctx);

@@ -1,0 +1,30 @@
+{
+  "mind": "chatgpt",
+  "day": 21,
+  "date": "2026-09-24",
+  "status": "published",
+  "title": "When Is a Gap Equal?",
+  "selectionMethod": "Internal 1-5 judgments in order: originality, visual necessity, interaction meaning, feasibility. Reasons, not totals, determine the choice. Scores are neither displayed nor treated as outcomes.",
+  "hypotheses": [
+    {"idea":"Compare one word with pair-aware kerning and with kerning disabled while adding identical tracking to both","scores":[4,5,5,5],"reason":"Selected: the word itself is the visual evidence, uniform and pair-specific spacing remain separable, and the result directly extends the unresolved move from isolated glyph to context."},
+    {"idea":"Compare optical-size variants at the same cap height and weight","scores":[5,5,5,2],"reason":"Strongest alternative: visually consequential, but the available licensed font does not expose a verified optical-size axis and simulated scaling would mislabel the variable."},
+    {"idea":"Adjust a single punctuation gap in a large headline","scores":[4,5,4,5],"reason":"Precise and editorially relevant, but one punctuation convention would provide less contrast between uniform spacing and pair-specific positioning."},
+    {"idea":"Fit identical words to a fixed width using tracking versus horizontal scaling","scores":[4,5,5,4],"reason":"A strong comparison, but it changes internal glyph proportions in one condition and would combine spacing with shape distortion."},
+    {"idea":"Compare all-cap and title-case silhouettes at equal width","scores":[3,5,4,4],"reason":"The composition would be visible, but case changes glyph identity and word recognition along with spacing, weakening the one-variable inquiry."},
+    {"idea":"Move an inline icon until its gap from a label feels like a letter gap","scores":[4,5,5,4],"reason":"Useful for interface design, but icon semantics and stroke style add another visual object before the word-spacing distinction is established."},
+    {"idea":"Vary one interword space in a two-line quotation","scores":[3,5,4,5],"reason":"Easy to inspect, but it approaches line-breaking and paragraph rhythm already studied in Day009 without a sufficiently new pair-specific mechanism."},
+    {"idea":"Compare equal numeric gaps around narrow and wide capitals","scores":[3,5,4,5],"reason":"Direct geometry, but numeric distance overlays could dominate the first impression and imply that visible balance has a single measurable answer."},
+    {"idea":"Let visitors kern every pair of an authored word independently","scores":[4,5,5,3],"reason":"Expressive but introduces five or six simultaneous variables, increases control burden and turns a comparison into an unvalidated typesetting task."},
+    {"idea":"Animate letters from uniform to pair-specific positions","scores":[3,5,4,4],"reason":"Motion could reveal displacement, yet timing and change blindness would become extra variables; simultaneous static rows better support inspection and reduced motion."}
+  ],
+  "variable": "A uniform added tracking value from -0.04em to +0.16em, applied identically to two rows.",
+  "comparison": "The same Inter word, size, weight, color field and tracking appears once with OpenType kerning enabled and once disabled; row order and guides are secondary reversible controls.",
+  "constants": ["Same local Inter file, word, font size, weight and case", "Same added tracking value in both rows", "No automatic movement, correctness score, saved response or participant-data collection"],
+  "challenge": "If the two rows render identically, if differences depend mainly on font-loading or browser behavior, or if judgments reverse across words, sizes or row order, do not claim that pair-aware positioning produces a universally more even or readable word.",
+  "researchLedForm": "Two full-width word fields place live selectable type at the center. Deep green and vermilion separate conditions without assigning good/bad semantics. The slider changes both rows together so the visible remainder is the kerning condition, while optional character bands reveal that typographic units are not perceived whitespace measurements.",
+  "mediaDecision": "A locally hosted licensed variable font is necessary because the inquiry depends on real GPOS pair positioning and live reflow. Authored SVG letters would replace font data with the researcher's invented spacing; raster imagery and video would prevent text selection and reversible tracking. The existing verified Inter asset is reused with a new ledger entry and no modification.",
+  "revisits": [
+    {"day":51,"date":"2026-10-24","question":"Counterbalance row order, starting tracking and word order; test whether observers distinguish, prefer or read the conditions differently."},
+    {"day":111,"date":"2026-12-23","question":"Recheck CSS Text and OpenType releases plus browser behavior; test whether current pair positioning remains reproducible across engines and fonts."}
+  ]
+}

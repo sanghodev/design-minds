@@ -9,7 +9,7 @@ for(const day of (await readdir(dir)).filter(x=>/^day-\d{3}$/.test(x)).sort()){
   catch(error) { if(error.code==="ENOENT")continue; throw error; }
   const manifest=JSON.parse(await readFile(resolve(dir,day,"manifest.json"),"utf8"));
   const b=notebook.book;
-  if(!b)throw new Error(day+" missing publication text");
+  if(!b)continue;
   let executable=true;
   try{await readFile(resolve(dir,day,"Experiment.tsx"),"utf8");}catch(error){if(error.code==="ENOENT")executable=false;else throw error;}
   const status=executable ? "원저자 초고 · 구현 및 관찰의 검증은 별도 기록 참조" : "연구글 공개 · 실행 파일 미전달 · 구현/측정 서술 검증 전";

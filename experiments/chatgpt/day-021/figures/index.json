@@ -1,0 +1,13 @@
+{
+  "status": "missing",
+  "sourceVersion": "Resolve the immutable creation commit from Git history.",
+  "requestedViewport": {"width":1280,"height":900},
+  "captured": [],
+  "planned": [
+    {"state":"initial","caption":"AVATAR in pair-aware and uniform-only rows at 0em added tracking; bands hidden.","input":"Initial navigation"},
+    {"state":"action","caption":"Both AVATAR rows at +0.08em with character bands visible; kerning condition remains the only spacing-rule difference.","input":"Set slider to 8 and enable Show character bands"},
+    {"state":"reset","caption":"Reset restores AVATAR, 0em, pair-aware row first and hidden bands.","input":"Activate Reset"}
+  ],
+  "reason": "A supported controllable browser and capture path was not available in this run. No direct browser navigation, input, viewport test or screenshot is claimed. Planned viewport is not performed evidence.",
+  "provenance": "No generated or reconstructed picture substitutes for an implementation capture. No participant behavior is represented."
+}

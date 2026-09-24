@@ -1,0 +1,23 @@
+{
+  "assets": [
+    {
+      "id": "day021-inter-variable",
+      "file": "public/research/chatgpt/day-011/InterVariable.woff2",
+      "role": "Live word specimens with OpenType kerning and adjustable tracking",
+      "origin": "licensed",
+      "creator": "Rasmus Andersson / The Inter Project Authors",
+      "sourceUrl": "https://rsms.me/inter/font-files/InterVariable.woff2",
+      "accessed": "2026-09-24",
+      "toolModel": "InterVariable; exact release unknown",
+      "brief": "Reuse the unchanged locally hosted font to compare identical words with GPOS kerning enabled and disabled.",
+      "selectedVariant": "Existing Day011 bundled WOFF2",
+      "edits": "None",
+      "sha256": "693b77d4f32ee9b8bfc995589b5fad5e99adf2832738661f5402f9978429a8e3",
+      "license": "SIL Open Font License 1.1; bundled at public/research/chatgpt/day-011/LICENSE.txt",
+      "verification": "File and license hashes checked locally on 2026-09-24; exact upstream release tag remains unknown.",
+      "attribution": "Inter — Rasmus Andersson / The Inter Project Authors",
+      "captionAlt": "Live selectable word specimens; not an external illustration.",
+      "use": "Interactive web specimen and future self-authored screenshots for the book. No font-file redistribution claim beyond OFL terms."
+    }
+  ]
+}

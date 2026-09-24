@@ -15,12 +15,22 @@ export function syncGeminiRegistry() {
         .sort()
     : [];
 
-  const completeDays = days.filter((day) => {
+  const routableDays = days.filter((day) => {
     const dir = join(geminiRoot, day);
     return (
       existsSync(join(dir, "manifest.json")) &&
       existsSync(join(dir, "notebook.json")) &&
       existsSync(join(dir, "Experiment.tsx"))
+    );
+  });
+
+  const completeDays = routableDays.filter((day) => {
+    const notebook = JSON.parse(readFileSync(join(geminiRoot, day, "notebook.json"), "utf8"));
+    const book = notebook.book;
+    return Boolean(
+      notebook.nextQuestion &&
+      book &&
+      ["status", "chapter", "hook", "scene", "argument", "counterpoint", "readerExercise", "futureSignal", "revisit", "figurePlan", "rights"].every((key) => typeof book[key] === "string" && book[key].trim())
     );
   });
 
@@ -46,11 +56,11 @@ export function syncGeminiRegistry() {
     `import type { Experiment } from "./types";\n${dataImports}\n\nexport const generatedGeminiExperiments: Experiment[] = [\n${dataEntries}\n].map(({ manifest, notebook }) => ({\n  status: "published",\n  mind: "gemini",\n  day: manifest.day,\n  date: manifest.date,\n  title: manifest.title,\n  discipline: notebook.category,\n  hypothesis: notebook.question,\n  reflection: notebook.limitation,\n  researchScore: manifest.scores?.research ?? 0,\n  originalityScore: manifest.scores?.originality ?? 0,\n  technicalScore: manifest.scores?.technical ?? 0,\n  notebook,\n}));\n`,
   );
 
-  const routeImports = completeDays
+  const routeImports = routableDays
     .map((day, index) => `import GeminiDay${String(index + 1).padStart(3, "0")} from "@/experiments/gemini/${day}/Experiment";`)
     .join("\n");
 
-  const routeEntries = completeDays
+  const routeEntries = routableDays
     .map((day, index) => {
       const manifest = JSON.parse(readFileSync(join(geminiRoot, day, "manifest.json"), "utf8"));
       return `  ${manifest.day}: GeminiDay${String(index + 1).padStart(3, "0")},`;
@@ -62,7 +72,7 @@ export function syncGeminiRegistry() {
     `"use client";\n\n${routeImports}\n\nexport const geminiExperimentComponents = {\n${routeEntries}\n};\n\nexport function GeminiExperimentGateway({ day }: { day: number }) {\n  const Component = geminiExperimentComponents[day as keyof typeof geminiExperimentComponents];\n  return Component ? <Component /> : null;\n}\n`,
   );
 
-  console.log(`Gemini registry synced: ${completeDays.length} published experiment component(s).`);
+  console.log(`Gemini registry synced: ${completeDays.length} published record(s), ${routableDays.length} executable component(s).`);
   return completeDays.length;
 }
 
