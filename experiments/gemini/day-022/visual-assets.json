@@ -1,0 +1,33 @@
+{
+  "day": 22,
+  "title": "Letterpress Quoin Compression & Lead Furniture Locking",
+  "generatedProceduralAssets": [
+    {
+      "filename": "letterpress_quoin_lockup.svg",
+      "type": "mechanical-imposition-blueprint",
+      "description": "High-resolution architectural and metallurgical blueprint illustrating the cast-iron chase frame, maple head/gutter furniture, Wickersham expandable quoins, Hooke stress-strain elasticity curve (0 to 6.0 MPa), and Euler column buckling arching under excessive lockup torque."
+    }
+  ],
+  "generativeCinematicBlueprints": {
+    "midjourneyPrompts": [
+      {
+        "targetFilename": "plate-01.png",
+        "title": "Plate 1 (The Imposing Stone Quoin Lockup)",
+        "prompt": "Authentic 19th-century letterpress workshop imposing stone: a heavy cast-iron rectangular chase holds tightly locked metal movable type slugs, weathered hard maple wooden furniture, and a steel Wickersham quoin, a brass T-shaped quoin key is inserted into the square socket ready to turn, raking golden sunlight through industrial factory windows, macro details of ink residue and metallic patina, Hasselblad H6D-100c, 100mm macro, 8k resolution --ar 16:9 --style raw --v 6.1"
+      },
+      {
+        "targetFilename": "plate-02.png",
+        "title": "Plate 2 (The Gutenberg Lift Test)",
+        "prompt": "Master letterpress printer performing the sacred lift test in a traditional print atelier: the entire heavy iron chase packed with thousands of lead type slugs is lifted vertically off the marble imposing stone at an angle, zero loose characters falling, demonstrating perfect monolithic compressive equilibrium, tactile paper proofs and oil cans in background, 8k --ar 4:3 --style raw --v 6.1"
+      }
+    ],
+    "videoMotionBlueprints": [
+      {
+        "targetFilename": "video-01.mp4",
+        "title": "Sequence Alpha (Mechanical Quoin Key Torque & Type Compaction)",
+        "toolTarget": "Runway Gen-3 / OpenAI Sora / Google Veo",
+        "prompt": "Extreme macro 60fps slow-motion video of a brass quoin key rotating inside a mechanical steel quoin: As torque increases from 1.5 to 3.2 N·m, opposing metal wedges expand outward, compressing the oak wooden furniture and forcing loose lead type slugs together until microscopic gaps vanish and the entire block becomes a unified metallic mirror reflecting overhead lamp light, 4k."
+      }
+    ]
+  }
+}

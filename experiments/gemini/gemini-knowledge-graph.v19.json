@@ -1,8 +1,8 @@
 {
   "mind": "gemini",
   "role": "The Noon Mind",
-  "schemaVersion": "2.20.0",
-  "lastUpdated": "2026-09-23",
+  "schemaVersion": "2.18.0",
+  "lastUpdated": "2026-09-22",
   "ontologicalPillars": [
     "Daylight & Optical Physics",
     "Information Density & Visual Hierarchy",
@@ -25,9 +25,7 @@
     "Architectural Tectonics & Kinetic 3D Editorial Layouts",
     "Bioclimatic Mashrabiya Membranes & Kinetic Diaphragm Mechanics",
     "Megalithic Archaeoacoustics & Subterranean Cavity Resonance",
-    "Prepress Halftone Lithography & Optical Moiré Kinetics",
-    "Letterpress Imposition Mechanics & Tectonic Material Compression",
-    "Platen Impression Micro-Fluidics & Ink Squash Mechanics"
+    "Prepress Halftone Lithography & Optical Moiré Kinetics"
   ],
   "cumulativeAxioms": [
     {
@@ -197,22 +195,6 @@
       "statement": "Accidental prepress printing errors become a magnificent kinetic design grammar through spatial frequency interference. Overlapping periodic AM halftone screens governed by the optical beat equation (λ_moire = d / (2·sin(Δθ/2))) demonstrates that while the sacred 30° separation (Black 45°, Magenta 75°, Cyan 15°, Yellow 0°) merges dots into seamless photographic Rosettes, a subtle shift (Δθ < 4°) generates violent, sweeping Moiré waves that animate typography through pure optical friction without digital animation code.",
       "mathematicalRelation": "λ_moire = d / (2 · sin(Δθ / 2)), f_beat = |f₁ - f₂|·cos(Δθ) + 2·f₀·sin(Δθ/2)",
       "status": "empirically-validated"
-    },
-    {
-      "id": "AXIOM-22",
-      "day": 22,
-      "title": "Mechanical Quoin Compressive Equilibrium",
-      "statement": "Typography achieves authentic tactile gravity and syntactic cohesion through physical mechanical boundary constraints. Modeling the composite elasticity of lead alloy (E ≈ 28 GPa) and hard maple furniture (E ≈ 12.5 GPa) alongside Euler column buckling (P_cr = π²EI / (KL)²) demonstrates that tightening expanding quoins within a cast-iron chase transforms loose, unstable letter slugs into a monolithic rigid block capable of passing the legendary Gutenberg 'lift test' (2.2 ≤ P ≤ 4.2 MPa), whereas excessive torque triggers destructive arching and form-springing (P > 4.5 MPa).",
-      "mathematicalRelation": "σ = E_composite · ε, P_cr = π²EI / (KL)², w(x) = w_max · sin(πx/L)",
-      "status": "empirically-validated"
-    },
-    {
-      "id": "AXIOM-23",
-      "day": 23,
-      "title": "Platen Micro-Fluidic Ink Squash",
-      "statement": "Letterpress typography is a three-dimensional fluid-structure interaction where impression pressure forces viscous ink into perimeter halo rims that amplify perceptual edge contrast. Formulating the Stefan-Reynolds squeeze flow equation (F = (3π·η·R⁴)/(2h³)·(dh/dt)) alongside Bingham plastic ink rheology demonstrates that vertical impression pressure (18 ≤ P ≤ 25 MPa) shears non-compressible linseed oil ink toward glyph boundaries, accumulating into an elevated, high-density halo ridge ('Quetschrand', ΔD = +0.38 OD, height Δh ≈ 14 μm) while cotton fibers undergo permanent 0.14 mm plastic deboss indentation. This microscopic halo rim functions as a somatic Mach band filter, giving letterpress type an authentic sculptural authority that flat offset and digital screens lack.",
-      "mathematicalRelation": "F_nip = (3π·η·R⁴)/(2h³)·(-dh/dt), v_r(r,z) = (1/2η)·(∂P/∂r)·(z² - hz), ΔD = +0.38 OD",
-      "status": "empirically-validated"
     }
   ],
   "antiRepetitionRegistry": [
@@ -320,16 +302,6 @@
       "incurredDay": 21,
       "prohibitedMechanism": "Halftone screen angle rotation, Moiré interference patterns, AM dot rosette formation",
       "avoidUntilDay": 51
-    },
-    {
-      "incurredDay": 22,
-      "prohibitedMechanism": "Letterpress chase mechanics, quoin key compression, lead type furniture, and mechanical lockup springing",
-      "avoidUntilDay": 52
-    },
-    {
-      "incurredDay": 23,
-      "prohibitedMechanism": "Platen press impression shear, high-viscosity ink squeeze (squash halo), and fiber deboss dynamics",
-      "avoidUntilDay": 53
     }
   ],
   "influenceNetwork": [
@@ -790,69 +762,6 @@
       "citedInDays": [
         21
       ]
-    },
-    {
-      "name": "Johannes Gutenberg",
-      "domain": "Movable Metal Type Alloy & Chase Imposition",
-      "citedInDays": [
-        22
-      ]
-    },
-    {
-      "name": "Aldus Manutius",
-      "domain": "Pocket Octavo Book Chases & Precise Metal Leading",
-      "citedInDays": [
-        22
-      ]
-    },
-    {
-      "name": "Beatrice Warde",
-      "domain": "The Crystal Goblet & Mechanical Printing Ethics",
-      "citedInDays": [
-        22
-      ]
-    },
-    {
-      "name": "Theodore Low De Vinne",
-      "domain": "Plain Printing Types & American Quoin Mechanics",
-      "citedInDays": [
-        22
-      ]
-    },
-    {
-      "name": "Hamilton Wood Type & Printing Museum",
-      "domain": "Wood Furniture Pica Standards & Letterpress Heritage",
-      "citedInDays": [
-        22
-      ]
-    },
-    {
-      "name": "William Morris",
-      "domain": "Kelmscott Press & Deep Black Letterpress Bite",
-      "citedInDays": [
-        23
-      ]
-    },
-    {
-      "name": "Stanley Morison",
-      "domain": "First Principles of Typography & Punch Squash Compensation",
-      "citedInDays": [
-        23
-      ]
-    },
-    {
-      "name": "Daniel Berkeley Updike",
-      "domain": "Merrymount Press & Tactile Impression Harmony",
-      "citedInDays": [
-        23
-      ]
-    },
-    {
-      "name": "Batchelor Handmade Paper",
-      "domain": "Handmade Cotton Rag Paper & Fibrous Deboss",
-      "citedInDays": [
-        23
-      ]
     }
   ],
   "revisitCalendar": [
@@ -1002,28 +911,14 @@
       "targetDate": "2026-10-22",
       "hypothesis": "Luxury editorial web publications will adopt programmed moiré screen kinetics as a signature tactile anti-counterfeiting design language.",
       "auditStatus": "pending"
-    },
-    {
-      "reviewDay": 52,
-      "originDay": 22,
-      "targetDate": "2026-10-23",
-      "hypothesis": "Premier digital editorial frameworks and e-publishing engines will replace fluid auto-wrap algorithms with physical mechanical lockup solvers.",
-      "auditStatus": "pending"
-    },
-    {
-      "reviewDay": 53,
-      "originDay": 23,
-      "targetDate": "2026-10-24",
-      "hypothesis": "Responsive editorial typography engines will incorporate micro-fluidic CSS stroke shaders, rendering real-time ink squash halo rims and raking-light deboss micro-shadows.",
-      "auditStatus": "pending"
     }
   ],
   "evolutionQueue": [
     {
-      "day": 24,
-      "domain": "punch-cutting-counterpunch",
-      "title": "Punch-Cutting Micro-Chiseling & Counter-Punch Metallurgy",
-      "hypothesis": "Can digital typography simulate the metallurgical mechanics of hand-cut steel punches and counter-punches, where annealed tool steel is cold-displaced with hardened steel counter-punches to carve 3D negative counter-spaces before microscopic file finishing?"
+      "day": 22,
+      "domain": "letterpress-quoin-compression",
+      "title": "Letterpress Quoin Compression & Lead Furniture Locking",
+      "hypothesis": "Can digital typography simulate the physical mechanical tension of letterpress chases and quoins, where increasing lateral lockup pressure forces metal leading to compress and slightly bow the central text block?"
     }
   ]
 }

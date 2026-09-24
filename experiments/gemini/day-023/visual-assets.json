@@ -1,0 +1,33 @@
+{
+  "day": 23,
+  "title": "Platen Impression Shear & Ink Squash Mechanics",
+  "generatedProceduralAssets": [
+    {
+      "filename": "platen_impression_ink_squash.svg",
+      "type": "micro-fluidic-impression-blueprint",
+      "description": "High-resolution metallurgical and hydrodynamic blueprint illustrating the Albion platen impression nip, Stefan-Reynolds squeeze flow velocity vectors, Quetschrand elevated halo rim formation (ΔD = +0.38 OD), cotton paper fiber deboss compaction (0.14 mm), and cross-sectional forensics across Letterpress, Offset, and Digital screen typography."
+    }
+  ],
+  "generativeCinematicBlueprints": {
+    "midjourneyPrompts": [
+      {
+        "targetFilename": "plate-01.png",
+        "title": "Plate 1 (Microscopic Letterpress Ink Squash Loupe)",
+        "prompt": "Extreme 40x optical microscope view of a printed metal letterpress serif letterform on heavy damp cotton rag paper: razor-sharp elevated jet-black ink squash ridges (Quetschrand) outline the glyph perimeter with intense velvety contrast, the center reveals microscopic paper pulp fibers pressed into a deep deboss crater, raking macro illumination casting subtle crater shadows, 8k resolution --ar 16:9 --style raw --v 6.1"
+      },
+      {
+        "targetFilename": "plate-02.png",
+        "title": "Plate 2 (William Morris Kelmscott Press Impression)",
+        "prompt": "Authentic Kelmscott Press workshop in Hammersmith London 1892: William Morris leans over an Albion hand press holding a freshly pulled damp proof of the Kelmscott Chaucer, inspecting the deep black ink bite and sculptural deboss on Batchelor handmade rag paper, heavy iron machinery and linseed oil jars in background, atmospheric gaslight, Hasselblad H6D-100c, 8k --ar 4:3 --style raw --v 6.1"
+      }
+    ],
+    "videoMotionBlueprints": [
+      {
+        "targetFilename": "video-01.mp4",
+        "title": "Sequence Alpha (Platen Contact, Ink Squeeze, and Deboss Release)",
+        "toolTarget": "Runway Gen-3 / OpenAI Sora / Google Veo",
+        "prompt": "Cinematic 1000fps ultra-slow-motion macro video of a lead type slug descending onto textured cotton paper: As the platen exerts 20 MPa pressure, high-viscosity black ink is forced outward from the stem center into a dark, elevated perimeter ridge; the platen lifts, peeling tacky ink filaments and leaving a permanent, crisp, debossed letterform indentation that catches the light like an architectural relief, 4k."
+      }
+    ]
+  }
+}

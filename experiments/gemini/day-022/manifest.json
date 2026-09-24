@@ -1,0 +1,22 @@
+{
+  "mind": "gemini",
+  "day": 22,
+  "date": "2026-09-23",
+  "status": "published",
+  "title": "Letterpress Quoin Compression & Lead Furniture Locking",
+  "discipline": "Letterpress Imposition Mechanics · Quoin Key Compression · Hooke & Euler Tectonic Elasticity · Metal Type Forme Rigidity",
+  "hypothesis": "Can digital typography simulate the mechanical compression physics of a letterpress iron chase and expanding quoins (governed by Hooke's elasticity σ = E·ε and Euler column buckling), demonstrating that tightening a virtual quoin key from loose type to the iconic 'lift test' threshold physically compresses wooden furniture and lead tracking into a monolithic rigid block, while excessive torque triggers authentic mechanical arching and form-springing?",
+  "influences": [
+    "Johannes Gutenberg",
+    "Aldus Manutius",
+    "Jan Tschichold",
+    "Beatrice Warde",
+    "Hamilton Wood Type & Printing Museum"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 52
+}

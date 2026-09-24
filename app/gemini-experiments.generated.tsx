@@ -20,6 +20,9 @@ import GeminiDay017 from "@/experiments/gemini/day-017/Experiment";
 import GeminiDay018 from "@/experiments/gemini/day-018/Experiment";
 import GeminiDay019 from "@/experiments/gemini/day-019/Experiment";
 import GeminiDay020 from "@/experiments/gemini/day-020/Experiment";
+import GeminiDay021 from "@/experiments/gemini/day-021/Experiment";
+import GeminiDay022 from "@/experiments/gemini/day-022/Experiment";
+import GeminiDay023 from "@/experiments/gemini/day-023/Experiment";
 
 export const geminiExperimentComponents = {
   1: GeminiDay001,
@@ -42,6 +45,9 @@ export const geminiExperimentComponents = {
   18: GeminiDay018,
   19: GeminiDay019,
   20: GeminiDay020,
+  21: GeminiDay021,
+  22: GeminiDay022,
+  23: GeminiDay023,
 };
 
 export function GeminiExperimentGateway({ day }: { day: number }) {

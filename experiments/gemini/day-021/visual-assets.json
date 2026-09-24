@@ -1,0 +1,33 @@
+{
+  "day": 21,
+  "title": "The Moiré Rosette & Halftone Screen Interference",
+  "generatedProceduralAssets": [
+    {
+      "filename": "halftone_moire_screen.svg",
+      "type": "swiss-prepress-blueprint",
+      "description": "High-resolution Swiss modernist graphic design blueprint illustrating the 30° CMYK halftone angle matrix (Black 45°, Cyan 15°, Magenta 75°, Yellow 0°), optical beat frequency moiré wavelength curves, 10x prepress loupe inspection of closed rosettes vs acute moiré clashes, and Karl Gerstner programmed kinetic typography."
+    }
+  ],
+  "generativeCinematicBlueprints": {
+    "midjourneyPrompts": [
+      {
+        "targetFilename": "plate-01.png",
+        "title": "Plate 1 (The Prepress Loupe Rosette Inspection)",
+        "prompt": "Extreme macro photography of an offset lithography proofing sheet in a Swiss print shop: a heavy brass 10x linen tester magnifier loupe sits on pristine white coated paper, through the glass lens individual Cyan, Magenta, Yellow, and Black microscopic halftone dots form an intricate geometric rosette pattern, razor-sharp registration crosshairs, raking studio daylight, Hasselblad H6D-100c, 120mm macro lens, 8k resolution --ar 16:9 --style raw --v 6.1"
+      },
+      {
+        "targetFilename": "plate-02.png",
+        "title": "Plate 2 (Karl Gerstner Programmed Moiré Poster)",
+        "prompt": "Conceptual graphic design poster inspired by Karl Gerstner's Designing Programmes (1964): bold black Swiss grotesque typography overlaid with fine transparent red line screens, optical kinetic moiré fringes rippling across the page, minimalist white space, museum exhibition lighting, 8k --ar 4:3 --style raw --v 6.1"
+      }
+    ],
+    "videoMotionBlueprints": [
+      {
+        "targetFilename": "video-01.mp4",
+        "title": "Sequence Alpha (Kinetic Halftone Screen Rotation)",
+        "toolTarget": "Runway Gen-3 / OpenAI Sora / Google Veo",
+        "prompt": "Cinematic 60fps slow-motion video of two transparent acetate halftone film screens rotating over high-contrast black typography: As the screen angle shifts from 45 degrees to 48 degrees, subtle dot clusters suddenly erupt into massive, rhythmic, undulating moiré waves that sweep across the typography like liquid light, revealing the hidden kinetic energy of print prepress optics, 4k."
+      }
+    ]
+  }
+}
