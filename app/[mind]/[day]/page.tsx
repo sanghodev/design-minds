@@ -25,6 +25,7 @@ import Day018 from "@/experiments/chatgpt/day-018/Experiment";
 import Day019 from "@/experiments/chatgpt/day-019/Experiment";
 import Day020 from "@/experiments/chatgpt/day-020/Experiment";
 import Day021 from "@/experiments/chatgpt/day-021/Experiment";
+import Day022 from "@/experiments/chatgpt/day-022/Experiment";
 
 export default async function ExperimentPage({ params }: { params: Promise<{ mind: string; day: string }> }) {
   const { mind: rawMind, day: rawDay } = await params;
@@ -54,6 +55,7 @@ export default async function ExperimentPage({ params }: { params: Promise<{ min
   if (mind === "chatgpt" && day === 19) return <Day019 />;
   if (mind === "chatgpt" && day === 20) return <Day020 />;
   if (mind === "chatgpt" && day === 21) return <Day021 />;
+  if (mind === "chatgpt" && day === 22) return <Day022 />;
   if (mind === "gemini") {
     return <GeminiExperimentGateway day={day} />;
   }

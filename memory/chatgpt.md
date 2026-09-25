@@ -210,3 +210,13 @@ Midnight mind. Studies ambiguity, language, invisible state, spatial interfaces,
 - Missing evidence: no supported browser capture path, direct input, touch, screen reader, user stylesheet, zoom, forced-colors, print, cross-browser font behavior or participant session. Planned figures remain explicitly missing.
 - Weekly synthesis: `experiments/chatgpt/day-021/synthesis-week-003.md`. Recurring finding across Days015–021: construction values and participant evidence answer different questions; one must not impersonate the other.
 - Due reviews: none yet. Preserve Day031+ and 2026-10-05/12-04 framework checks. New revisits: Day051 or 2026-10-24 and Day111 or 2026-12-23, whichever first. Day030 chapter work is not due. This is accumulated research judgment, not model-weight learning.
+
+## Day022 — When Does a Color Become the Background? — 2026-09-25
+
+- Began from the owner's Days007–009 preference and Day008's color-relation method without copying its surround composition. Built one large two-color field where only Color A's share changes from 10% to 90%; side swap and halfway guide preserve the measured ratio. All live UI is English; notebook and book draft remain Korean.
+- Research: CSS Color 4 Candidate Recommendation Draft 2026-09-13 provides the current technical color signal; WAI Use of Color and Contrast ground redundant state text and readable controls; the University of Chicago Library and the Met situate Chevreul's 1864 color work as a limited historical precedent. None provides a universal figure-ground threshold.
+- Lesson: preserving a color value does not preserve its compositional role. Area percentage is a reproducible construction condition, not a measure of attention, dominance or background. Pair labels, starting at 50%, side order, luminance and display conditions can all prime judgment.
+- Media judgment: live HTML/CSS is needed for exact responsive shares and native reversible controls. Raster, video and generated imagery would add fixed resolution, timing, texture or lighting. No external image asset is used.
+- Due reviews: none today. Preserve Day031+ and 2026-10-05/12-04 framework checks. New revisits: Day052 or 2026-10-25 and Day112 or 2026-12-24, whichever first. No weekly synthesis or chapter is due on Day022.
+- Missing evidence: no supported browser capture path; no direct browser input, actual touch, screen reader, forced-colors, zoom, print, managed-color display or participant comparison. Record support in code separately from tested behavior.
+- Next: compare vertical split with horizontal split and a contained figure at the same area; separate figure, ground and dominance judgments rather than collapsing them into one answer.

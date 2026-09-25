@@ -1,0 +1,30 @@
+{
+  "mind": "chatgpt",
+  "day": 22,
+  "date": "2026-09-25",
+  "status": "published",
+  "title": "When Does a Color Become the Background?",
+  "selectionMethod": "Internal 1-5 judgments in order: originality, visual necessity, interaction meaning, feasibility. Reasons, not totals, determine the choice. Scores are planning notes, never displayed as evidence or outcomes.",
+  "hypotheses": [
+    {"idea":"Change only the relative area occupied by two fixed colors and ask when either reads as field or figure","scores":[5,5,5,5],"reason":"Selected: color itself fills the composition, the manipulated quantity is exact and reversible, and the question extends contextual color research without repeating a surround illusion."},
+    {"idea":"Place one fixed color over three differently sized neutral margins","scores":[3,5,4,5],"reason":"A clear quantity comparison, but it would return too closely to Day008's unchanged sample against changing surrounds rather than make both colors co-own the field."},
+    {"idea":"Compare identical hues as thin rules and broad panels","scores":[4,5,4,5],"reason":"Strong as an editorial system, yet line thickness and edge contrast would change along with occupied area and make the boundary the main object."},
+    {"idea":"Let a two-color poster move from centered square to edge-to-edge crop","scores":[4,5,5,4],"reason":"Visually rich, but crop, containment and position would change together; a single sliding boundary makes the area variable easier to audit."},
+    {"idea":"Reveal the same color pair through dots at changing screen frequency","scores":[3,5,5,4],"reason":"The interaction would be meaningful, but it repeats Day015's halftone structure and introduces spatial mixing rather than isolate relative quantity."},
+    {"idea":"Change one color's chroma while keeping occupied area equal","scores":[3,5,5,4],"reason":"A useful colorimetric question, but chroma adjustment depends on color-space and gamut decisions and would move away from the owner's preferred direct relational compositions."},
+    {"idea":"Build a color-weight balance with two movable blocks","scores":[4,5,5,3],"reason":"The balance metaphor is legible but risks treating subjective visual weight as a physical measurement and encourages a decorative correctness score."},
+    {"idea":"Compare three publication covers using the same palette at different ratios","scores":[4,5,4,3],"reason":"Editorially concrete, but typography, hierarchy and cover genre would become uncontrolled variables before the basic color-quantity relation is established."},
+    {"idea":"Let visitors paint a field until the minority color becomes a focal point","scores":[5,5,5,2],"reason":"Open-ended and expressive, but brush shape, gesture history and texture introduce many variables and make reset or exact replication harder."},
+    {"idea":"Animate one color consuming another at a fixed rate","scores":[3,5,3,4],"reason":"Motion dramatizes quantity, but timing and change blindness would become extra variables and would weaken reduced-motion access; direct control is more inspectable."}
+  ],
+  "variable": "Color A's share of one fixed rectangular field, from 10% to 90% in one-percentage-point steps.",
+  "comparison": "Two unchanged sRGB hex colors share the same field; only their horizontal area ratio changes. Pair selection is a separate condition that resets area, side order and guide state.",
+  "constants": ["Same field dimensions and boundary orientation within a viewport", "Same sRGB color values and full opacity within each selected pair", "No texture, text, animation, score, stored response or participant-data collection inside the field"],
+  "challenge": "If reported figure-ground judgments do not cluster, reverse when sides are swapped, depend primarily on lightness or display conditions, or change across pairs and field proportions, do not claim a universal percentage at which a color becomes background.",
+  "researchLedForm": "A large edge-to-edge two-color field is the primary object. One boundary maps directly to area share, while names and percentages sit outside the field so explanation does not become the image. Pair change, side swap and a halfway guide expose contextual dependencies without assigning a correct answer.",
+  "mediaDecision": "Live HTML and CSS are necessary because the field must preserve exact, reversible area ratios across viewports and expose native controls to keyboard and touch. A raster image would freeze one ratio and resolution; video would add timing; a generated image would introduce texture, lighting and untraceable color changes. No external image is used.",
+  "revisits": [
+    {"day":52,"date":"2026-10-25","question":"Counterbalance color-pair order, side order and starting share; collect separate figure, background and dominance judgments without suggesting a threshold."},
+    {"day":112,"date":"2026-12-24","question":"Recheck CSS Color 4 status and compare calibrated versus ordinary displays, light and dark surroundings, and horizontal versus vertical boundaries."}
+  ]
+}

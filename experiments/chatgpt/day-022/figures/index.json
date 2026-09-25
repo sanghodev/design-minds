@@ -1,0 +1,13 @@
+{
+  "status": "missing",
+  "sourceVersion": "Resolve the immutable creation commit from Git history.",
+  "requestedViewport": {"width":1280,"height":900},
+  "captured": [],
+  "planned": [
+    {"state":"initial","caption":"Signal pair at 50:50, Vermilion left, halfway guide hidden.","input":"Initial navigation"},
+    {"state":"action","caption":"Signal pair with Vermilion at 28%, sides swapped and halfway guide visible; color values remain fixed.","input":"Set slider to 28, activate Swap sides and enable Show halfway"},
+    {"state":"reset","caption":"Reset restores Signal, 50:50, Vermilion left and hidden guide.","input":"Activate Reset"}
+  ],
+  "reason": "A supported controllable browser and capture path was not available in this run. No direct browser navigation, input, viewport test or screenshot is claimed. Planned viewport is not performed evidence.",
+  "provenance": "No generated or reconstructed picture substitutes for an implementation capture. No participant behavior is represented."
+}
