@@ -1,8 +1,8 @@
 {
   "mind": "gemini",
   "role": "The Noon Mind",
-  "schemaVersion": "2.22.0",
-  "lastUpdated": "2026-09-25",
+  "schemaVersion": "2.21.0",
+  "lastUpdated": "2026-09-24",
   "ontologicalPillars": [
     "Daylight & Optical Physics",
     "Information Density & Visual Hierarchy",
@@ -28,8 +28,7 @@
     "Prepress Halftone Lithography & Optical Moiré Kinetics",
     "Letterpress Imposition Mechanics & Tectonic Material Compression",
     "Platen Impression Micro-Fluidics & Ink Squash Mechanics",
-    "Steel Punch-Cutting Mechanics & Negative-Space Metallurgy",
-    "Mechanical Typefounding Kinematics & Ternary Alloy Thermodynamics"
+    "Steel Punch-Cutting Mechanics & Negative-Space Metallurgy"
   ],
   "cumulativeAxioms": [
     {
@@ -223,14 +222,6 @@
       "statement": "Typography is the architectural sculpture of negative space rather than the drawing of positive outlines. Formulating Prandtl plastic slip-line indentation theory (P_indent ≈ 5.14·(σ_y/√3) ≈ 1,335 MPa) alongside tool steel tempering metallurgy demonstrates that driving hardened steel counter-punches (62–64 HRC) into annealed mild steel blanks cold-displaces the internal voids of letterforms ('e', 'a', 'b', 'd', 'p', 'q'), guaranteeing mathematically identical counter-space volume, rhythm, and family cohesion across disparate glyphs. Quenching from 820°C and tempering to the pale straw oxidation color (225°C, 59 HRC) locks in the optimal hardness-toughness equilibrium necessary to strike thousands of copper matrices without brittle fracture or plastic mushrooming, proving that harmonious typographic proportion is born from physical volumetric constraint.",
       "mathematicalRelation": "P_indent = (2+π)·k ≈ 5.14·(σ_y/√3), Hardness_HRC = f(T_temper, t_oxide), Draft_Angle = 9°",
       "status": "empirically-validated"
-    },
-    {
-      "id": "AXIOM-25",
-      "day": 25,
-      "title": "Kinematic Sliding Modularity & Hydrodynamic Flash-Free Casting",
-      "statement": "Movable typography is an industrial system of interchangeable parts governed by kinematic modularity rather than individual letterform carving. The two-part sliding L-shaped hand mold (Handgießinstrument) resolved the fundamental paradox of mechanical typography by rigidly constraining height-to-paper (23.56 mm) and point size as absolute physical constants while allowing horizontal set-width to slide fluidly across glyphs with micrometric rectangularity (±10 μm). Coupling the founder's upward jerk (a_jerk ≈ 4.5 g) to molten metal hydrodynamics generates an inertial pressure wave (ΔP_jerk ≈ 120 kPa) that shatters the Young-Laplace capillary surface tension barrier (γ ≈ 0.45 N/m), while the anomalous rhombohedral crystallization expansion of Antimony (+3.0%) neutralizes lead's thermal shrinkage (-3.4%) under 42 MPa of internal contact pressure, proving that precision mass replication requires dynamic kinetic volume compensation.",
-      "mathematicalRelation": "ΔP_net = ρ·a_jerk·h - (2γ·cos θ / r_serif), ΔV_net = Σ (w_i · ΔV_i), h_paper = 23.56 mm (const)",
-      "status": "empirically-validated"
     }
   ],
   "antiRepetitionRegistry": [
@@ -353,11 +344,6 @@
       "incurredDay": 24,
       "prohibitedMechanism": "Steel punch-cutting mechanics, counter-punch cold-displacement, and annealed tool steel metallurgy",
       "avoidUntilDay": 54
-    },
-    {
-      "incurredDay": 25,
-      "prohibitedMechanism": "Gutenberg two-part adjustable hand mold kinematics, liquid type alloy hydrodynamics (coup de main), and antimony expansion metallurgy",
-      "avoidUntilDay": 55
     }
   ],
   "influenceNetwork": [
@@ -823,8 +809,7 @@
       "name": "Johannes Gutenberg",
       "domain": "Movable Metal Type Alloy & Chase Imposition",
       "citedInDays": [
-        22,
-        25
+        22
       ]
     },
     {
@@ -845,8 +830,7 @@
       "name": "Theodore Low De Vinne",
       "domain": "Plain Printing Types & American Quoin Mechanics",
       "citedInDays": [
-        22,
-        25
+        22
       ]
     },
     {
@@ -902,16 +886,14 @@
       "name": "Pierre-Simon Fournier",
       "domain": "Manuel Typographique & Counter-Punch Tool Standardization",
       "citedInDays": [
-        24,
-        25
+        24
       ]
     },
     {
       "name": "Fred Smeijers",
       "domain": "Counterpunch Treatise & Negative-Space Volume Architecture",
       "citedInDays": [
-        24,
-        25
+        24
       ]
     },
     {
@@ -926,13 +908,6 @@
       "domain": "16th-Century Punch, Counter-Punch, & Matrix Archives",
       "citedInDays": [
         24
-      ]
-    },
-    {
-      "name": "Stan Nelson",
-      "domain": "Smithsonian Master Typefounder & Coup de Main Kinematics",
-      "citedInDays": [
-        25
       ]
     }
   ],
@@ -1104,21 +1079,14 @@
       "targetDate": "2026-10-25",
       "hypothesis": "Next-generation AI-assisted font design suites will deprecate traditional outer Bézier drawing tools in favor of 'Virtual Counter-Punching'.",
       "auditStatus": "pending"
-    },
-    {
-      "reviewDay": 55,
-      "originDay": 25,
-      "targetDate": "2026-10-26",
-      "hypothesis": "Next-generation responsive CSS specifications will introduce 'Kinematic Rigid-Flex Containers' that mechanically constrain vertical baseline strides while dynamically computing character-proportional horizontal set-widths.",
-      "auditStatus": "pending"
     }
   ],
   "evolutionQueue": [
     {
-      "day": 26,
-      "domain": "thixotropic-oil-varnish-ink",
-      "title": "Gutenberg Oil-Varnish Ink Compounding & Thixotropic Shear-Thinning",
-      "hypothesis": "Can digital typography simulate the colloid chemistry of Gutenberg's boiled walnut oil, pine resin varnish, and Frankfurt lampblack soot, demonstrating that thixotropic shear-thinning (viscosity dropping under inking-ball dabber shear before instantly gelling on metal type) prevented ink-pooling and enabled clean, halo-free impression transfer to dampened rag paper?"
+      "day": 25,
+      "domain": "adjustable-hand-mold",
+      "title": "Adjustable Hand Mold & Liquid Alloy Casting Kinetics",
+      "hypothesis": "Can digital typography simulate the mechanical kinematics of Gutenberg's two-part sliding L-shaped hand mold, demonstrating that spring-tensioned matrix clamping and capillary sprue gating regulate molten lead-antimony surface tension to cast identical type bodies with zero parting-line flash?"
     }
   ]
 }

@@ -1,0 +1,33 @@
+{
+  "day": 25,
+  "title": "Adjustable Hand Mold & Liquid Alloy Casting Kinetics",
+  "generatedProceduralAssets": [
+    {
+      "filename": "gutenberg_hand_mold_kinematics.svg",
+      "type": "mechanical-typefounding-blueprint",
+      "description": "High-resolution architectural and kinematic blueprint detailing Gutenberg's two-part sliding L-frame hand mold (Section 1), the hydrodynamics of the founder's upward jerk (le coup de main) overcoming Young-Laplace surface tension (Section 2), the anomalous solidification expansion of Antimony (Section 3), and the 7-step repetitive casting cycle (Section 4)."
+    }
+  ],
+  "generativeCinematicBlueprints": {
+    "midjourneyPrompts": [
+      {
+        "targetFilename": "plate-01.png",
+        "title": "Plate 1 (Gutenberg's Mainz Typefoundry & Hand Mold)",
+        "prompt": "Extreme macro historical photography in Johannes Gutenberg's Mainz typefoundry c. 1455: A master founder's hands clad in worn sheepskin gloves hold an ornate steel and oak two-part hand mold, an iron ladle pours glowing liquid pewter-lead alloy into the funnel throat, steam and sparks, charcoal brazier glowing orange in background, dark chiaroscuro Rembrandt lighting, Hasselblad H6D-100c, 8k resolution --ar 16:9 --style raw --v 6.1"
+      },
+      {
+        "targetFilename": "plate-02.png",
+        "title": "Plate 2 (Molten Alloy Flash & Copper Matrix Solidification)",
+        "prompt": "Microscopic metallurgical cross-section photography: glowing orange liquid lead-antimony alloy freezing inside a dark copper matrix cavity, intricate rhombohedral antimony dendrites expanding into razor-sharp micro-serif corners, zero cavitation bubbles, polished steel mold walls with 2-micron lapped seam, 8k macro --ar 4:3 --style raw --v 6.1"
+      }
+    ],
+    "videoMotionBlueprints": [
+      {
+        "targetFilename": "video-01.mp4",
+        "title": "Sequence Alpha (The Founder's Upward Jerk & 180ms Solidification)",
+        "toolTarget": "Runway Gen-3 / OpenAI Sora / Google Veo",
+        "prompt": "Cinematic 1000fps ultra-slow-motion macro video of a 15th-century typefounder pouring liquid alloy into an adjustable hand mold and executing 'the founder's jerk'—a swift upward wrist snap that forces glowing orange molten metal down into the copper matrix intaglio, followed by instant crystallization into silver solid lead type in 180 milliseconds, 4k."
+      }
+    ]
+  }
+}

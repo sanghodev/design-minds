@@ -1,0 +1,298 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" width="1600" height="1100" style="background:#121316; font-family:'JetBrains Mono', 'Fira Code', 'Courier New', monospace;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="metalDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a3f4a"/>
+      <stop offset="50%" stop-color="#282c34"/>
+      <stop offset="100%" stop-color="#1e2127"/>
+    </linearGradient>
+    <linearGradient id="metalLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8a93a5"/>
+      <stop offset="50%" stop-color="#5c6370"/>
+      <stop offset="100%" stop-color="#434852"/>
+    </linearGradient>
+    <linearGradient id="woodCasing" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a2e18"/>
+      <stop offset="25%" stop-color="#6e4624"/>
+      <stop offset="50%" stop-color="#5a381c"/>
+      <stop offset="100%" stop-color="#3d2412"/>
+    </linearGradient>
+    <linearGradient id="copperMatrix" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e07a5f"/>
+      <stop offset="50%" stop-color="#b45339"/>
+      <stop offset="100%" stop-color="#8c3a24"/>
+    </linearGradient>
+    <linearGradient id="moltenAlloy" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="40%" stop-color="#fb923c"/>
+      <stop offset="80%" stop-color="#fdba74"/>
+      <stop offset="100%" stop-color="#fed7aa"/>
+    </linearGradient>
+    <linearGradient id="solidLead" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="50%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <radialGradient id="hotGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#121316" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+
+  <!-- Architectural Background Grid -->
+  <g stroke="#1e222b" stroke-width="1">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="40" y2="0"/>
+      <line x1="0" y1="0" x2="0" y2="40"/>
+    </pattern>
+    <rect width="1600" height="1100" fill="url(#grid)"/>
+  </g>
+
+  <!-- Header Banner -->
+  <rect x="50" y="35" width="1500" height="75" fill="#181a20" rx="6" stroke="#2a2f3a" stroke-width="1.5"/>
+  <text x="75" y="70" fill="#f59e0b" font-size="20" font-weight="800" letter-spacing="1.5">GUTENBERG TWO-PART ADJUSTABLE HAND MOLD (HANDGIEßINSTRUMENT c. 1450)</text>
+  <text x="75" y="93" fill="#94a3b8" font-size="12" letter-spacing="0.8">SLIDING L-FRAME KINEMATICS · HYDRODYNAMIC FOUNDER'S JERK (LE COUP DE MAIN) · ANTIMONY SOLIDIFICATION EXPANSION</text>
+  <text x="1410" y="77" fill="#64748b" font-size="12" text-anchor="end">DAY 025 · METALLURGICAL TYPEFOUNDING</text>
+
+  <!-- ==================== SECTION 1: THE TWO-PART SLIDING L-MOLD (LEFT) ==================== -->
+  <g transform="translate(60, 140)">
+    <rect x="0" y="0" width="720" height="580" fill="#16181f" rx="6" stroke="#2a2f3d" stroke-width="1.5"/>
+    <text x="25" y="32" fill="#38bdf8" font-size="14" font-weight="700">SECTION 1: THE TWO-PART SLIDING L-FRAME KINEMATICS</text>
+    <text x="25" y="50" fill="#64748b" font-size="10">INTERLOCKING L-SHAPED STEEL HALVES PERMITTING CONTINUOUS SET-WIDTH ADJUSTMENT</text>
+
+    <!-- Wood Casing Left Half -->
+    <rect x="60" y="90" width="120" height="340" fill="url(#woodCasing)" rx="4" stroke="#2c1a0e" stroke-width="2"/>
+    <text x="120" y="260" fill="#d1d5db" font-size="11" font-weight="700" text-anchor="middle" transform="rotate(-90 120 260)">WOOD INSULATING CASING (MALE)</text>
+
+    <!-- Steel Carriage Male (L-Shape Half A) -->
+    <path d="M 180 120 L 320 120 L 320 280 L 260 280 L 260 410 L 180 410 Z" fill="url(#metalLight)" stroke="#1e222a" stroke-width="2"/>
+    
+    <!-- Sliding Set-Width Gap (Cavity) -->
+    <rect x="320" y="160" width="80" height="230" fill="#0f1115" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <text x="360" y="270" fill="#f59e0b" font-size="11" font-weight="700" text-anchor="middle">TYPE BODY</text>
+    <text x="360" y="288" fill="#fbbf24" font-size="9" text-anchor="middle">CAVITY</text>
+
+    <!-- Steel Carriage Female (L-Shape Half B) -->
+    <path d="M 400 160 L 460 160 L 460 290 L 540 290 L 540 450 L 400 450 Z" fill="url(#metalDark)" stroke="#1e222a" stroke-width="2"/>
+
+    <!-- Wood Casing Right Half -->
+    <rect x="540" y="200" width="120" height="340" fill="url(#woodCasing)" rx="4" stroke="#2c1a0e" stroke-width="2"/>
+    <text x="600" y="370" fill="#d1d5db" font-size="11" font-weight="700" text-anchor="middle" transform="rotate(90 600 370)">WOOD INSULATING CASING (FEMALE)</text>
+
+    <!-- Funnel Jet (Sprue Mouth at Top) -->
+    <polygon points="280,120 440,120 380,160 340,160" fill="url(#metalLight)" stroke="#1e222a" stroke-width="1.5"/>
+    <text x="360" y="145" fill="#e2e8f0" font-size="9" text-anchor="middle">POURING JET (MOUTH)</text>
+
+    <!-- Copper Matrix Clamped at Bottom -->
+    <rect x="310" y="390" width="100" height="40" fill="url(#copperMatrix)" rx="2" stroke="#5a2214" stroke-width="2"/>
+    <text x="360" y="415" fill="#ffffff" font-size="11" font-weight="800" text-anchor="middle">COPPER MATRIX</text>
+    <!-- Intaglio Letter on Matrix Top Face -->
+    <text x="360" y="388" fill="#fef08a" font-size="14" font-weight="900" text-anchor="middle">g</text>
+
+    <!-- Spring Bow (Ressor) Clamping Matrix -->
+    <path d="M 220 440 C 200 520, 280 540, 360 480 C 440 540, 520 520, 500 440" fill="none" stroke="#94a3b8" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="360" cy="480" r="6" fill="#f59e0b"/>
+    <text x="360" y="525" fill="#94a3b8" font-size="10" text-anchor="middle">SPRING BOW (RESSOR) · F = 35 N</text>
+
+    <!-- Dimension Lines: Height to Paper -->
+    <line x1="680" y1="160" x2="680" y2="390" stroke="#38bdf8" stroke-width="1.5" marker-start="url(#arrowCyan)" marker-end="url(#arrowCyan)"/>
+    <text x="695" y="280" fill="#38bdf8" font-size="10" font-weight="700">HEIGHT TO PAPER</text>
+    <text x="695" y="295" fill="#38bdf8" font-size="9">h = 23.56 mm (FIXED)</text>
+
+    <!-- Dimension Lines: Adjustable Set Width -->
+    <line x1="320" y1="100" x2="400" y2="100" stroke="#f59e0b" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="360" y="90" fill="#f59e0b" font-size="10" font-weight="700" text-anchor="middle">VARIABLE SET WIDTH (CHASSE)</text>
+    <text x="360" y="78" fill="#cbd5e1" font-size="9" text-anchor="middle">w = 2.5 mm ('i') to 8.5 mm ('M')</text>
+
+    <!-- Annotations & Callouts -->
+    <path d="M 290 320 L 230 350" stroke="#64748b" stroke-width="1"/>
+    <text x="220" y="365" fill="#94a3b8" font-size="9" text-anchor="end">Hardened Tool Steel Carriage</text>
+    <text x="220" y="377" fill="#64748b" font-size="8" text-anchor="end">Flatness Tolerance &lt; 2.0 μm</text>
+  </g>
+
+  <!-- ==================== SECTION 2: HYDRODYNAMIC FOUNDER'S JERK (RIGHT TOP) ==================== -->
+  <g transform="translate(810, 140)">
+    <rect x="0" y="0" width="730" height="420" fill="#16181f" rx="6" stroke="#2a2f3d" stroke-width="1.5"/>
+    <text x="25" y="32" fill="#f97316" font-size="14" font-weight="700">SECTION 2: HYDRODYNAMICS OF THE FOUNDER'S JERK (LE COUP DE MAIN)</text>
+    <text x="25" y="50" fill="#64748b" font-size="10">OVERCOMING CAPILLARY SURFACE TENSION THROUGH UPWARD INERTIAL ROTATION</text>
+
+    <!-- Ladle Pouring Metal -->
+    <ellipse cx="140" cy="110" rx="35" ry="18" fill="#475569" stroke="#334155" stroke-width="2"/>
+    <path d="M 105 110 L 140 160 L 175 110 Z" fill="#475569"/>
+    <!-- Molten stream -->
+    <path d="M 140 150 Q 155 180, 180 200 Q 190 210, 195 240" fill="none" stroke="url(#moltenAlloy)" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="140" cy="115" r="24" fill="url(#hotGlow)"/>
+    <text x="140" y="90" fill="#fb923c" font-size="10" font-weight="700" text-anchor="middle">IRON LADLE (285°C)</text>
+
+    <!-- Mold Cross-Section with Liquid Filling -->
+    <g transform="translate(180, 180)">
+      <!-- Funnel Sprue -->
+      <polygon points="0,40 50,40 35,70 15,70" fill="#2d3340" stroke="#4b5563"/>
+      <!-- Molten in sprue -->
+      <polygon points="3,42 47,42 33,68 17,68" fill="url(#moltenAlloy)"/>
+      
+      <!-- Type cavity filled with molten alloy -->
+      <rect x="15" y="70" width="20" height="110" fill="url(#moltenAlloy)" stroke="#f97316" stroke-width="1"/>
+      
+      <!-- Copper Matrix at base -->
+      <rect x="5" y="180" width="40" height="20" fill="url(#copperMatrix)"/>
+      <!-- Letter intaglio -->
+      <path d="M 22 180 L 22 186 Q 25 188, 28 186 L 28 180 Z" fill="#121316"/>
+
+      <!-- Young-Laplace Meniscus Callout Zoom -->
+      <circle cx="85" cy="183" r="30" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+      <path d="M 70 183 Q 85 195, 100 183" fill="none" stroke="#f97316" stroke-width="3"/>
+      <text x="85" y="170" fill="#38bdf8" font-size="8" font-weight="700" text-anchor="middle">MENISCUS</text>
+      <text x="85" y="205" fill="#94a3b8" font-size="7" text-anchor="middle">r = 2γ / ΔP</text>
+    </g>
+
+    <!-- Acceleration Vector & Jerk Motion -->
+    <path d="M 330 330 Q 370 240, 420 200" fill="none" stroke="#f59e0b" stroke-width="3" stroke-dasharray="6 3" marker-end="url(#arrow)"/>
+    <text x="435" y="220" fill="#f59e0b" font-size="11" font-weight="800">THE FOUNDER'S JERK</text>
+    <text x="435" y="235" fill="#fef08a" font-size="10">a_jerk ≈ 4.5 g (Upward Snap)</text>
+    <text x="435" y="250" fill="#cbd5e1" font-size="9">Hydrodynamic Head ΔP = 120 kPa</text>
+
+    <!-- Hydrodynamic Formula Card -->
+    <rect x="330" y="80" width="370" height="95" fill="#1e222d" rx="4" stroke="#374151" stroke-width="1"/>
+    <text x="345" y="105" fill="#38bdf8" font-size="11" font-weight="700">YOUNG-LAPLACE PENETRATION THRESHOLD</text>
+    <text x="345" y="125" fill="#fef08a" font-size="11" font-weight="600">ΔP_net = ρ·a_jerk·h - 2γ·cos(θ) / r_serif</text>
+    <text x="345" y="145" fill="#94a3b8" font-size="9">Liquid Surface Tension: γ = 0.45 N/m (Molten Pb-Sb-Sn)</text>
+    <text x="345" y="160" fill="#94a3b8" font-size="9">Without Jerk (1g): r_min ≈ 45 μm (Rounded blunted serifs)</text>
+    <text x="560" y="160" fill="#10b981" font-size="9" font-weight="700">With Jerk (4.5g): r_min ≈ 7 μm (Razor acuity)</text>
+
+    <!-- Solidification Speed bar -->
+    <rect x="330" y="280" width="370" height="95" fill="#1e222d" rx="4" stroke="#374151" stroke-width="1"/>
+    <text x="345" y="305" fill="#e2e8f0" font-size="11" font-weight="700">DIRECTIONAL DENDRITIC SOLIDIFICATION</text>
+    <text x="345" y="325" fill="#cbd5e1" font-size="9">Matrix Chill Rate: Copper diffusivity k_Cu = 390 W/(m·K)</text>
+    <text x="345" y="340" fill="#cbd5e1" font-size="9">Solidification time at face: t_freeze ≈ 180 ms</text>
+    <text x="345" y="358" fill="#10b981" font-size="9" font-weight="700">Freezes from matrix face upward into jet -> ZERO cavitation voids</text>
+  </g>
+
+  <!-- ==================== SECTION 3: TERNARY ALLOY EXPANSION METALLURGY (RIGHT BOTTOM) ==================== -->
+  <g transform="translate(810, 580)">
+    <rect x="0" y="0" width="730" height="470" fill="#16181f" rx="6" stroke="#2a2f3d" stroke-width="1.5"/>
+    <text x="25" y="32" fill="#10b981" font-size="14" font-weight="700">SECTION 3: ANTIMONY ANOMALOUS SOLIDIFICATION EXPANSION (Pb-Sb-Sn)</text>
+    <text x="25" y="50" fill="#64748b" font-size="10">RHOMBOHEDRAL LATTICE EXPANSION PREVENTING THERMAL SHRINKAGE VOIDS</text>
+
+    <!-- Volume Delta vs Solidification Graph -->
+    <!-- Axes -->
+    <line x1="80" y1="280" x2="680" y2="280" stroke="#4b5563" stroke-width="1.5"/>
+    <line x1="80" y1="100" x2="80" y2="340" stroke="#4b5563" stroke-width="1.5"/>
+    
+    <text x="380" y="315" fill="#94a3b8" font-size="10" text-anchor="middle">SOLIDIFICATION TEMPERATURE (°C) -> 240°C EUTECTIC</text>
+    <text x="30" y="190" fill="#94a3b8" font-size="10" text-anchor="middle" transform="rotate(-90 30 190)">VOLUME CHANGE ΔV/V (%)</text>
+
+    <!-- Zero line -->
+    <line x1="80" y1="220" x2="680" y2="220" stroke="#64748b" stroke-width="1" stroke-dasharray="4 4"/>
+    <text x="70" y="224" fill="#64748b" font-size="9" text-anchor="end">0.0% (ZERO)</text>
+
+    <!-- Pure Lead Curve (Shrinkage -3.4%) -->
+    <path d="M 120 180 Q 300 240, 600 320" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+    <text x="610" y="325" fill="#ef4444" font-size="10" font-weight="700">PURE LEAD (Pb): -3.4% SHRINKAGE (FAILED CAST)</text>
+
+    <!-- Lead-Tin Binary (Shrinkage -2.1%) -->
+    <path d="M 120 180 Q 300 230, 600 270" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <text x="610" y="275" fill="#f59e0b" font-size="10">Pb 85% + Sn 15%: -2.1% SHRINKAGE</text>
+
+    <!-- Gutenberg Ternary Alloy (Lead 78% + Antimony 17% + Tin 5%) -->
+    <path d="M 120 180 Q 280 215, 380 210 Q 480 205, 600 200" fill="none" stroke="#10b981" stroke-width="3.5"/>
+    <circle cx="600" cy="200" r="5" fill="#10b981"/>
+    <text x="610" y="198" fill="#10b981" font-size="11" font-weight="800">GUTENBERG ALLOY (78% Pb, 17% Sb, 5% Sn): +0.2% EXPANSION</text>
+
+    <!-- Microscopic Matrix Corner Filling Diagram -->
+    <g transform="translate(100, 340)">
+      <rect x="0" y="0" width="580" height="105" fill="#1e222d" rx="4" stroke="#334155" stroke-width="1"/>
+      <text x="20" y="25" fill="#fef08a" font-size="11" font-weight="700">WHY ANTIMONY (Sb) IS THE MASTER ELEMENT OF PRINTING:</text>
+      <text x="20" y="45" fill="#cbd5e1" font-size="9.5">1. <tspan fill="#38bdf8" font-weight="700">Anomalous Freezing Expansion:</tspan> Antimony crystallizes into an open rhombohedral lattice, expanding +3.0% by volume.</text>
+      <text x="20" y="65" fill="#cbd5e1" font-size="9.5">2. <tspan fill="#38bdf8" font-weight="700">Zero Thermal Slack:</tspan> Expansion presses cooling metal against matrix boundaries with 42 MPa internal stress.</text>
+      <text x="20" y="85" fill="#cbd5e1" font-size="9.5">3. <tspan fill="#38bdf8" font-weight="700">Low Eutectic Melting Point:</tspan> Drops casting temperature to 240°C, extending copper matrix life to 50,000+ casts.</text>
+    </g>
+  </g>
+
+  <!-- ==================== SECTION 4: THE 7-STEP KINEMATIC CYCLE (BOTTOM LEFT) ==================== -->
+  <g transform="translate(60, 740)">
+    <rect x="0" y="0" width="720" height="310" fill="#16181f" rx="6" stroke="#2a2f3d" stroke-width="1.5"/>
+    <text x="25" y="32" fill="#eab308" font-size="14" font-weight="700">SECTION 4: THE 7-STEP KINEMATIC FOUNDING CYCLE (2.8 SECONDS PER PIECE)</text>
+    <text x="25" y="50" fill="#64748b" font-size="10">RENAISSANCE REPETITIVE MASS PRODUCTION (2,500 TO 4,000 PIECES / DAY / CASTER)</text>
+
+    <!-- 7 Step Process Cards -->
+    <g transform="translate(20, 75)">
+      <!-- Step 1 -->
+      <rect x="0" y="0" width="90" height="100" fill="#1e222d" rx="4" stroke="#374151"/>
+      <text x="45" y="25" fill="#f59e0b" font-size="16" font-weight="800" text-anchor="middle">1</text>
+      <text x="45" y="50" fill="#e2e8f0" font-size="9" font-weight="700" text-anchor="middle">CLOSE MOLD</text>
+      <text x="45" y="70" fill="#94a3b8" font-size="8" text-anchor="middle">Slide L-halves</text>
+      <text x="45" y="82" fill="#64748b" font-size="7" text-anchor="middle">t = 0.3s</text>
+
+      <!-- Step 2 -->
+      <rect x="98" y="0" width="90" height="100" fill="#1e222d" rx="4" stroke="#374151"/>
+      <text x="143" y="25" fill="#f59e0b" font-size="16" font-weight="800" text-anchor="middle">2</text>
+      <text x="143" y="50" fill="#e2e8f0" font-size="9" font-weight="700" text-anchor="middle">HOOK SPRING</text>
+      <text x="143" y="70" fill="#94a3b8" font-size="8" text-anchor="middle">Clamp matrix</text>
+      <text x="143" y="82" fill="#64748b" font-size="7" text-anchor="middle">t = 0.6s</text>
+
+      <!-- Step 3 -->
+      <rect x="196" y="0" width="90" height="100" fill="#1e222d" rx="4" stroke="#374151"/>
+      <text x="241" y="25" fill="#f97316" font-size="16" font-weight="800" text-anchor="middle">3</text>
+      <text x="241" y="50" fill="#f97316" font-size="9" font-weight="700" text-anchor="middle">POUR ALLOY</text>
+      <text x="241" y="70" fill="#94a3b8" font-size="8" text-anchor="middle">Ladle 280°C</text>
+      <text x="241" y="82" fill="#64748b" font-size="7" text-anchor="middle">t = 1.0s</text>
+
+      <!-- Step 4 -->
+      <rect x="294" y="0" width="90" height="100" fill="#2d1f14" rx="4" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="339" y="25" fill="#fef08a" font-size="16" font-weight="900" text-anchor="middle">4</text>
+      <text x="339" y="50" fill="#fef08a" font-size="9" font-weight="800" text-anchor="middle">UPWARD JERK</text>
+      <text x="339" y="70" fill="#fbbf24" font-size="8" text-anchor="middle">Le coup de main</text>
+      <text x="339" y="82" fill="#f59e0b" font-size="7" text-anchor="middle">t = 1.2s</text>
+
+      <!-- Step 5 -->
+      <rect x="392" y="0" width="90" height="100" fill="#1e222d" rx="4" stroke="#374151"/>
+      <text x="437" y="25" fill="#38bdf8" font-size="16" font-weight="800" text-anchor="middle">5</text>
+      <text x="437" y="50" fill="#e2e8f0" font-size="9" font-weight="700" text-anchor="middle">UNHOOK</text>
+      <text x="437" y="70" fill="#94a3b8" font-size="8" text-anchor="middle">Release bow</text>
+      <text x="437" y="82" fill="#64748b" font-size="7" text-anchor="middle">t = 1.8s</text>
+
+      <!-- Step 6 -->
+      <rect x="490" y="0" width="90" height="100" fill="#1e222d" rx="4" stroke="#374151"/>
+      <text x="535" y="25" fill="#38bdf8" font-size="16" font-weight="800" text-anchor="middle">6</text>
+      <text x="535" y="50" fill="#e2e8f0" font-size="9" font-weight="700" text-anchor="middle">OPEN MOLD</text>
+      <text x="535" y="70" fill="#94a3b8" font-size="8" text-anchor="middle">Separate halves</text>
+      <text x="535" y="82" fill="#64748b" font-size="7" text-anchor="middle">t = 2.2s</text>
+
+      <!-- Step 7 -->
+      <rect x="588" y="0" width="90" height="100" fill="#13231e" rx="4" stroke="#10b981"/>
+      <text x="633" y="25" fill="#10b981" font-size="16" font-weight="800" text-anchor="middle">7</text>
+      <text x="633" y="50" fill="#10b981" font-size="9" font-weight="700" text-anchor="middle">EJECT SORT</text>
+      <text x="633" y="70" fill="#a7f3d0" font-size="8" text-anchor="middle">Drop lead type</text>
+      <text x="633" y="82" fill="#059669" font-size="7" text-anchor="middle">t = 2.8s</text>
+    </g>
+
+    <!-- Completed Sort Callout Diagram -->
+    <g transform="translate(50, 195)">
+      <text x="0" y="25" fill="#cbd5e1" font-size="10" font-weight="700">THE COMPLETED TYPE SORT (PIÈCE DE CARACTÈRE):</text>
+      <!-- Horizontal diagram of cast sort -->
+      <rect x="300" y="10" width="180" height="24" fill="url(#solidLead)" stroke="#334155"/>
+      <!-- Face on left -->
+      <rect x="290" y="8" width="10" height="28" fill="#fef08a" stroke="#d97706"/>
+      <text x="280" y="26" fill="#fef08a" font-size="12" font-weight="900" text-anchor="end">FACE (TYPE)</text>
+      <!-- Nick -->
+      <circle cx="340" cy="10" r="5" fill="#121316"/>
+      <text x="340" y="48" fill="#94a3b8" font-size="8" text-anchor="middle">NICK (CRAN)</text>
+      <!-- Jet / Break on right -->
+      <polygon points="480,14 520,6 520,38 480,30" fill="#64748b" stroke="#475569" stroke-dasharray="2 2"/>
+      <text x="535" y="26" fill="#94a3b8" font-size="9">JET / BREAK (TO BE BROKEN OFF)</text>
+    </g>
+  </g>
+
+  <!-- Technical Footer Stamp -->
+  <text x="60" y="1080" fill="#475569" font-size="10">DESIGN MINDS · DISCIPLINE: MECHANICAL TYPEFOUNDING KINEMATICS &amp; TERNARY ALLOY THERMODYNAMICS · GEMINI NOON MIND</text>
+  <text x="1540" y="1080" fill="#475569" font-size="10" text-anchor="end">CONFIDENTIAL RESEARCH LEDGER · DAY 025 (2026-09-25)</text>
+</svg>

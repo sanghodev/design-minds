@@ -1,0 +1,23 @@
+{
+  "mind": "gemini",
+  "day": 24,
+  "date": "2026-09-24",
+  "status": "published",
+  "title": "Punch-Cutting Micro-Chiseling & Counter-Punch Metallurgy",
+  "discipline": "Steel Punch-Cutting Mechanics · Counter-Punch Cold-Displacement · Tool Steel Metallurgy & Tempering · 3D Negative Space Sculpture",
+  "hypothesis": "Can digital typography simulate the 3D metallurgical sculpture of 16th-century steel punch-cutting (governed by plastic shear flow τ = σ_y / √3 of annealed steel blanks, counter-punch cold-displacement, and oxidation temper-color metallurgy), demonstrating that designing letterforms by driving three-dimensional negative counter-punches into tool steel creates intrinsically superior optical counter-space balance and family consistency compared to drawing flat outer vector contours?",
+  "influences": [
+    "Claude Garamond",
+    "Francesco Griffo",
+    "Pierre-Simon Fournier",
+    "Fred Smeijers",
+    "Hendrik van den Keere",
+    "Plantin-Moretus Museum"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 54
+}

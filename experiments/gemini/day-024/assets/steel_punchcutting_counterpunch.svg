@@ -1,0 +1,398 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Cinzel:wght@600;700&amp;family=Newsreader:ital,wght@0,400;0,600;1,400&amp;display=swap');
+    .bg { fill: #fbfaf6; }
+    .grid-line { stroke: #eee9dc; stroke-width: 1; }
+    .label-title { font-family: 'Cinzel', serif; font-size: 18px; fill: #1c1d20; font-weight: 700; letter-spacing: 1.5px; }
+    .label-sub { font-family: 'Newsreader', serif; font-style: italic; font-size: 14px; fill: #787163; }
+    .label-mono { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #524d42; }
+    .steel-annealed { fill: #9499a3; stroke: #4b515d; stroke-width: 1.5; }
+    .steel-hardened { fill: #474b54; stroke: #1f2229; stroke-width: 2; }
+    .copper-bar { fill: #d97746; stroke: #9a481f; stroke-width: 1.5; }
+    .flow-line { stroke: #2563eb; stroke-width: 1.5; stroke-dasharray: 4 2; fill: none; }
+    .stress-arrow { stroke: #dc2626; stroke-width: 2.5; marker-end: url(#arrow-red); fill: none; }
+    .strike-arrow { stroke: #d97706; stroke-width: 3; marker-end: url(#arrow-amber); fill: none; }
+  </style>
+  <marker id="arrow-red" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1 L 8 5 L 0 9 z" fill="#dc2626" />
+  </marker>
+  <marker id="arrow-amber" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1 L 8 5 L 0 9 z" fill="#d97706" />
+  </marker>
+  <linearGradient id="temper-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#d4d4d8"/>
+    <stop offset="20%" stop-color="#fef08a"/> <!-- Pale Straw 220C -->
+    <stop offset="40%" stop-color="#fde047"/> <!-- Dark Straw 240C -->
+    <stop offset="60%" stop-color="#d97706"/> <!-- Bronze/Brown 260C -->
+    <stop offset="80%" stop-color="#9333ea"/> <!-- Purple 280C -->
+    <stop offset="100%" stop-color="#2563eb"/> <!-- Peacock Blue 300C -->
+  </linearGradient>
+</defs>
+<rect width="1600" height="1000" class="bg"/>
+<line x1="40" y1="40" x2="40" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="80" y1="40" x2="80" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="120" y1="40" x2="120" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="160" y1="40" x2="160" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="200" y1="40" x2="200" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="240" y1="40" x2="240" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="280" y1="40" x2="280" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="320" y1="40" x2="320" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="360" y1="40" x2="360" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="400" y1="40" x2="400" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="440" y1="40" x2="440" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="480" y1="40" x2="480" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="520" y1="40" x2="520" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="560" y1="40" x2="560" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="600" y1="40" x2="600" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="640" y1="40" x2="640" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="680" y1="40" x2="680" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="720" y1="40" x2="720" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="760" y1="40" x2="760" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="800" y1="40" x2="800" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="840" y1="40" x2="840" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="880" y1="40" x2="880" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="920" y1="40" x2="920" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="960" y1="40" x2="960" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="1000" y1="40" x2="1000" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="1040" y1="40" x2="1040" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="1080" y1="40" x2="1080" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="1120" y1="40" x2="1120" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="1160" y1="40" x2="1160" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="1200" y1="40" x2="1200" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="1240" y1="40" x2="1240" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="1280" y1="40" x2="1280" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="1320" y1="40" x2="1320" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="1360" y1="40" x2="1360" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="1400" y1="40" x2="1400" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="1440" y1="40" x2="1440" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="1480" y1="40" x2="1480" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="1520" y1="40" x2="1520" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="1560" y1="40" x2="1560" y2="960" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="40" x2="1560" y2="40" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="80" x2="1560" y2="80" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="120" x2="1560" y2="120" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="160" x2="1560" y2="160" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="200" x2="1560" y2="200" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="240" x2="1560" y2="240" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="280" x2="1560" y2="280" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="320" x2="1560" y2="320" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="360" x2="1560" y2="360" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="400" x2="1560" y2="400" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="440" x2="1560" y2="440" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="480" x2="1560" y2="480" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="520" x2="1560" y2="520" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="560" x2="1560" y2="560" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="600" x2="1560" y2="600" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="640" x2="1560" y2="640" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="680" x2="1560" y2="680" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="720" x2="1560" y2="720" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="760" x2="1560" y2="760" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="800" x2="1560" y2="800" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="840" x2="1560" y2="840" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="880" x2="1560" y2="880" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="920" x2="1560" y2="920" class="grid-line" opacity="0.6"/>
+<line x1="40" y1="960" x2="1560" y2="960" class="grid-line" opacity="0.6"/>
+<g transform="translate(60, 65)">
+  <text class="label-title" x="0" y="0">TECHNICAL SCHEMATIC: 16TH-CENTURY STEEL PUNCH-CUTTING &amp; COUNTERPUNCH DYNAMICS</text>
+  <text class="label-sub" x="0" y="22">Cold-Displacement Plastic Shear Flow (τ = σ_y / √3), Martensitic Quench Hardening, and Temper-Color Metallurgy</text>
+  <text class="label-mono" x="0" y="42">ATELIER: CLAUDE GARAMOND (PARIS, c. 1540) · TOOL STEEL: 0.8% C · COUNTERPUNCH TOUGHNESS: 58 HRC</text>
+</g>
+<g id="punch-stages-panel">
+  <rect x="80" y="140" width="880" height="450" fill="#ffffff" stroke="#ded8c8" stroke-width="1.5" rx="6"/>
+  <rect x="80" y="140" width="880" height="45" fill="#f8f5ed" stroke="#ded8c8" stroke-width="1" rx="6"/>
+  <text class="label-title" x="100" y="168" font-size="14">1. THE FOUR STAGES OF METALLURGICAL TYPOGRAPHIC SCULPTURE</text>
+  <text class="label-mono" x="680" y="168">FROM ANNEALED BLANK TO HARDENED MATRIX STRIKE</text>
+
+  <!-- Stage A: Hardened Counter-Punch (Contre-Poinçon) -->
+  <g transform="translate(105, 205)">
+    <rect x="0" y="0" width="195" height="360" fill="#fcfbf8" stroke="#e8e2d4" rx="4"/>
+    <text class="label-title" x="12" y="24" font-size="12">A. COUNTER-PUNCH</text>
+    <text class="label-mono" x="12" y="40">Hardened Tool Steel</text>
+
+    <!-- Counter-punch shank and positive tip (e.g. eye of Garamond 'e') -->
+    <g transform="translate(48, 70)">
+      <!-- Shank -->
+      <path d="M 15 0 L 85 0 L 80 180 L 20 180 Z" class="steel-hardened"/>
+      <!-- Chiseled relief tip (positive bowl of 'e') -->
+      <path d="M 25 180 L 75 180 L 65 220 Q 50 225 35 220 Z" fill="#18191c" stroke="#000" stroke-width="1.5"/>
+      <text class="label-mono" fill="#ffffff" x="50" y="210" text-anchor="middle" font-size="9">VOID 'e'</text>
+    </g>
+
+    <text class="label-mono" fill="#d97706" font-weight="700" x="12" y="325">62–64 HRC HARDNESS</text>
+    <text class="label-mono" fill="#71717a" x="12" y="342">Sculpts the Negative Void</text>
+  </g>
+
+  <!-- Stage B: Cold-Displacement Hammer Strike -->
+  <g transform="translate(315, 205)">
+    <rect x="0" y="0" width="195" height="360" fill="#fcfbf8" stroke="#e8e2d4" rx="4"/>
+    <text class="label-title" x="12" y="24" font-size="12">B. PLASTIC STRIKE</text>
+    <text class="label-mono" x="12" y="40">Hammer Force F ≈ 22 kN</text>
+
+    <!-- Hammer Strike Arrow -->
+    <line x1="97" y1="55" x2="97" y2="95" class="strike-arrow"/>
+    <text class="label-mono" fill="#d97706" font-weight="700" x="105" y="80">BLOW</text>
+
+    <!-- Counterpunch driving into annealed blank -->
+    <g transform="translate(48, 100)">
+      <!-- Counterpunch tip driving down -->
+      <path d="M 30 0 L 70 0 L 60 40 Q 50 44 40 40 Z" fill="#2d3036" stroke="#18191c" stroke-width="1.5"/>
+      
+      <!-- Annealed blank steel bar receiving deformation -->
+      <path d="M 10 40 L 90 40 L 95 65 Q 98 90 90 150 L 10 150 Q 2 90 5 65 Z" class="steel-annealed"/>
+      
+      <!-- Displaced cavity inside blank -->
+      <path d="M 40 40 Q 50 44 60 40 L 58 65 Q 50 68 42 65 Z" fill="#18191c"/>
+      
+      <!-- Von Mises Slip Lines (bulging metal) -->
+      <path d="M 5 65 Q -10 80 5 95" class="flow-line"/>
+      <path d="M 95 65 Q 110 80 95 95" class="flow-line"/>
+      <text class="label-mono" fill="#2563eb" x="50" y="115" text-anchor="middle" font-size="8">PLASTIC FLOW</text>
+    </g>
+
+    <text class="label-mono" fill="#2563eb" font-weight="700" x="12" y="325">σ_yield ≈ 450 MPa</text>
+    <text class="label-mono" fill="#71717a" x="12" y="342">Cold-Displaced Void Cavity</text>
+  </g>
+
+  <!-- Stage C: Graver File Exterior Sculpting -->
+  <g transform="translate(525, 205)">
+    <rect x="0" y="0" width="195" height="360" fill="#fcfbf8" stroke="#e8e2d4" rx="4"/>
+    <text class="label-title" x="12" y="24" font-size="12">C. GRAVER FILING</text>
+    <text class="label-mono" x="12" y="40">Shoulder Draft Angle 9°</text>
+
+    <!-- Punch after filing outer contour -->
+    <g transform="translate(48, 75)">
+      <path d="M 15 0 L 85 0 L 80 140 L 70 180 L 30 180 L 20 140 Z" class="steel-annealed"/>
+      <!-- Finished raised glyph on top: Garamond 'e' -->
+      <rect x="35" y="180" width="30" height="25" fill="#18191c"/>
+      <text class="label-title" fill="#fef08a" x="50" y="200" text-anchor="middle" font-size="20">e</text>
+      <!-- Filing direction arrows -->
+      <line x1="5" y1="170" x2="25" y2="155" class="stress-arrow"/>
+      <line x1="95" y1="170" x2="75" y2="155" class="stress-arrow"/>
+      <text class="label-mono" fill="#dc2626" x="50" y="145" text-anchor="middle" font-size="8">DRAFT 9°</text>
+    </g>
+
+    <text class="label-mono" fill="#16a34a" font-weight="700" x="12" y="325">MICRO-FILING 0.02 mm</text>
+    <text class="label-mono" fill="#71717a" x="12" y="342">Relief Letterform Revealed</text>
+  </g>
+
+  <!-- Stage D: Copper Matrix Strike -->
+  <g transform="translate(735, 205)">
+    <rect x="0" y="0" width="200" height="360" fill="#fcfbf8" stroke="#e8e2d4" rx="4"/>
+    <text class="label-title" x="12" y="24" font-size="12">D. COPPER STRIKE</text>
+    <text class="label-mono" x="12" y="40">Martensitic Punch → Matrix</text>
+
+    <!-- Hardened steel punch striking into cold copper bar -->
+    <g transform="translate(50, 70)">
+      <!-- Hardened punch descending -->
+      <path d="M 15 0 L 85 0 L 80 110 L 70 130 L 30 130 L 20 110 Z" class="steel-hardened"/>
+      <!-- Stamped Glyph Tip -->
+      <rect x="35" y="130" width="30" height="15" fill="#000000"/>
+      <!-- Copper Bar Matrix below -->
+      <rect x="-10" y="142" width="120" height="65" class="copper-bar" rx="3"/>
+      <!-- Stamped indentation in copper -->
+      <path d="M 35 142 L 65 142 L 60 155 L 40 155 Z" fill="#6c2e12"/>
+      <text class="label-mono" fill="#ffffff" x="50" y="180" text-anchor="middle" font-size="9">COPPER MATRIX</text>
+    </g>
+
+    <text class="label-mono" fill="#c2410c" font-weight="700" x="12" y="325">DEPTH h = 0.85 mm</text>
+    <text class="label-mono" fill="#71717a" x="12" y="342">Ready for Hand Mold Casting</text>
+  </g>
+</g>
+<g id="temper-metallurgy-panel">
+  <rect x="80" y="620" width="880" height="330" fill="#ffffff" stroke="#ded8c8" stroke-width="1.5" rx="6"/>
+  <rect x="80" y="620" width="880" height="40" fill="#f8f5ed" stroke="#ded8c8" stroke-width="1" rx="6"/>
+  <text class="label-title" x="100" y="646" font-size="14">2. OXIDATION TEMPER COLORS &amp; HARDNESS-TOUGHNESS EQUILIBRIUM</text>
+
+  <!-- Steel Shank Heat Progression Bar -->
+  <g transform="translate(115, 685)">
+    <text class="label-mono" font-weight="700" x="0" y="0">POLISHED STEEL PUNCH REHEATED OVER CHARCOAL BRAZIER</text>
+    
+    <!-- Gradient Bar representing oxidation oxide film thickness -->
+    <rect x="0" y="15" width="810" height="40" fill="url(#temper-gradient)" stroke="#52525b" stroke-width="1.5" rx="3"/>
+
+    <!-- Temperature Markers -->
+    <g transform="translate(0, 75)">
+      <!-- 200C -->
+      <line x1="30" y1="-15" x2="30" y2="0" stroke="#71717a"/>
+      <text class="label-mono" x="30" y="15" text-anchor="middle">200°C</text>
+      <text class="label-mono" fill="#52525b" x="30" y="30" text-anchor="middle">Silver (66 HRC)</text>
+      <text class="label-mono" fill="#dc2626" x="30" y="45" text-anchor="middle">Too Brittle</text>
+
+      <!-- 225C Optimal Straw -->
+      <line x1="200" y1="-15" x2="200" y2="0" stroke="#d97706" stroke-width="2"/>
+      <circle cx="200" cy="-20" r="5" fill="#16a34a"/>
+      <text class="label-mono" font-weight="700" fill="#b45309" x="200" y="15" text-anchor="middle">225°C (PALE STRAW)</text>
+      <text class="label-mono" fill="#15803d" font-weight="700" x="200" y="30" text-anchor="middle">59–60 HRC</text>
+      <text class="label-mono" fill="#15803d" font-weight="700" x="200" y="45" text-anchor="middle">★ PUNCH OPTIMAL</text>
+
+      <!-- 245C Dark Straw -->
+      <line x1="380" y1="-15" x2="380" y2="0" stroke="#71717a"/>
+      <text class="label-mono" x="380" y="15" text-anchor="middle">245°C (DARK STRAW)</text>
+      <text class="label-mono" fill="#52525b" x="380" y="30" text-anchor="middle">57 HRC</text>
+      <text class="label-mono" fill="#71717a" x="380" y="45" text-anchor="middle">Gravers &amp; Chisels</text>
+
+      <!-- 265C Brown/Bronze -->
+      <line x1="530" y1="-15" x2="530" y2="0" stroke="#71717a"/>
+      <text class="label-mono" x="530" y="15" text-anchor="middle">265°C (BROWN)</text>
+      <text class="label-mono" fill="#52525b" x="530" y="30" text-anchor="middle">54 HRC</text>
+      <text class="label-mono" fill="#71717a" x="530" y="45" text-anchor="middle">Shears &amp; Axes</text>
+
+      <!-- 295C Peacock Blue -->
+      <line x1="720" y1="-15" x2="720" y2="0" stroke="#71717a"/>
+      <text class="label-mono" x="720" y="15" text-anchor="middle">295°C (SPRING BLUE)</text>
+      <text class="label-mono" fill="#52525b" x="720" y="30" text-anchor="middle">48 HRC</text>
+      <text class="label-mono" fill="#dc2626" x="720" y="45" text-anchor="middle">Too Soft (Deforms)</text>
+    </g>
+
+    <!-- Explanatory text block -->
+    <g transform="translate(0, 150)">
+      <rect x="0" y="0" width="810" height="65" fill="#fcfbf7" stroke="#e4dfd2" rx="4"/>
+      <text class="label-mono" x="15" y="22">MARTENSITIC TRANSFORMATION: Quenching at 820°C traps interstitial carbon, expanding lattice by +0.43%.</text>
+      <text class="label-mono" x="15" y="42">TEMPERING RECOVERY: Heating allows ε-carbide precipitation, trading 4 HRC hardness for 300% fracture toughness.</text>
+    </g>
+  </g>
+</g>
+<g id="counterpunch-theory-panel" transform="translate(1000, 140)">
+  <rect x="0" y="0" width="540" height="810" fill="#ffffff" stroke="#ded8c8" stroke-width="1.5" rx="6"/>
+  <rect x="80" y="0" width="540" height="45" fill="#f8f5ed" stroke="#ded8c8" stroke-width="1" rx="6"/>
+  <text class="label-title" x="25" y="28" font-size="14">3. SCULPTING THE VOID: FRED SMEIJERS MATRIX</text>
+  <circle cx="505" cy="24" r="6" fill="#2563eb"/>
+  <text class="label-mono" fill="#2563eb" x="420" y="28">CANONICAL</text>
+
+  <!-- Diagram A: Shared Counter-Punches across Letterforms -->
+  <g transform="translate(25, 70)">
+    <text class="label-title" x="0" y="0" font-size="12">A. COUNTER-PUNCH SHARING ACROSS THE ALPHABET</text>
+    <text class="label-mono" x="0" y="16">Single tool sculpts identical internal rhythm</text>
+
+    <!-- Matrix showing 'b', 'd', 'p', 'q' sharing the bowl counter-punch -->
+    <g transform="translate(0, 30)">
+      <rect x="0" y="0" width="490" height="150" fill="#fcfbf7" stroke="#e8e2d4" rx="4"/>
+
+      <!-- Counter-punch tool displayed in center -->
+      <g transform="translate(30, 20)">
+        <rect x="0" y="0" width="80" height="110" fill="#18191c" rx="4"/>
+        <path d="M 25 25 Q 60 25 60 55 Q 60 85 25 85 Z" fill="#fef08a"/>
+        <text class="label-mono" fill="#ffffff" x="40" y="102" text-anchor="middle" font-size="8">BOWL VOID</text>
+      </g>
+
+      <!-- Arrow branching to b, d, p, q -->
+      <line x1="125" y1="75" x2="165" y2="75" class="flow-arrow"/>
+
+      <!-- 4 Resulting Glyphs -->
+      <g transform="translate(180, 20)">
+        <!-- b -->
+        <g transform="translate(0, 0)">
+          <rect x="0" y="0" width="65" height="110" fill="#ffffff" stroke="#d4d4d8" rx="2"/>
+          <text class="label-title" fill="#18181b" x="32" y="75" text-anchor="middle" font-size="52">b</text>
+          <text class="label-mono" x="32" y="100" text-anchor="middle" font-size="8">Ascender</text>
+        </g>
+        <!-- d -->
+        <g transform="translate(75, 0)">
+          <rect x="0" y="0" width="65" height="110" fill="#ffffff" stroke="#d4d4d8" rx="2"/>
+          <text class="label-title" fill="#18181b" x="32" y="75" text-anchor="middle" font-size="52">d</text>
+          <text class="label-mono" x="32" y="100" text-anchor="middle" font-size="8">Mirrored</text>
+        </g>
+        <!-- p -->
+        <g transform="translate(150, 0)">
+          <rect x="0" y="0" width="65" height="110" fill="#ffffff" stroke="#d4d4d8" rx="2"/>
+          <text class="label-title" fill="#18181b" x="32" y="75" text-anchor="middle" font-size="52">p</text>
+          <text class="label-mono" x="32" y="100" text-anchor="middle" font-size="8">Descender</text>
+        </g>
+        <!-- q -->
+        <g transform="translate(225, 0)">
+          <rect x="0" y="0" width="65" height="110" fill="#ffffff" stroke="#d4d4d8" rx="2"/>
+          <text class="label-title" fill="#18181b" x="32" y="75" text-anchor="middle" font-size="52">q</text>
+          <text class="label-mono" x="32" y="100" text-anchor="middle" font-size="8">Inverted</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Diagram B: Mechanical Slip Line Theory (Prandtl Punch Field) -->
+  <g transform="translate(25, 275)">
+    <text class="label-title" x="0" y="0" font-size="12">B. PLASTIC SLIP-LINE FIELD THEORY</text>
+    <text class="label-mono" x="0" y="16">Prandtl indentation field in annealed mild steel</text>
+
+    <g transform="translate(0, 28)">
+      <rect x="0" y="0" width="490" height="175" fill="#f8fafc" stroke="#e2e8f0" rx="4"/>
+      
+      <!-- Slip Line Triangle & Fan drawing -->
+      <g transform="translate(180, 20)">
+        <!-- Rigid wedge zone -->
+        <polygon points="65,10 25,65 105,65" fill="#e2e8f0" stroke="#334155" stroke-width="1.5"/>
+        <text class="label-mono" fill="#0f172a" x="65" y="50" text-anchor="middle" font-size="8">RIGID WEDGE</text>
+        
+        <!-- Plastic shear fans -->
+        <path d="M 25 65 L -15 65 Q 5 100 25 65" fill="rgba(37, 99, 235, 0.15)" stroke="#2563eb"/>
+        <path d="M 105 65 L 145 65 Q 125 100 105 65" fill="rgba(37, 99, 235, 0.15)" stroke="#2563eb"/>
+        
+        <text class="label-mono" fill="#2563eb" x="-20" y="55" font-size="8">PLASTIC LIP</text>
+        <text class="label-mono" fill="#2563eb" x="120" y="55" font-size="8">PLASTIC LIP</text>
+      </g>
+
+      <text class="label-mono" font-weight="700" fill="#1e293b" x="20" y="125">P_indent = (2 + π) · k ≈ 5.14 · (σ_y / √3)</text>
+      <text class="label-mono" fill="#475569" x="20" y="145">• Compressive yield resistance of annealed C80 steel: 1,335 MPa</text>
+      <text class="label-mono" fill="#475569" x="20" y="162">• Requires hardened 62 HRC counterpunch to prevent mushrooming</text>
+    </g>
+  </g>
+
+  <!-- Diagram C: Renaissance Master Punch-Cutters Timeline -->
+  <g transform="translate(25, 500)">
+    <text class="label-title" x="0" y="0" font-size="12">C. HISTORICAL CANON OF PUNCH-CUTTING</text>
+
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="490" height="235" fill="#fcfbf7" stroke="#e8e2d4" rx="4"/>
+      
+      <!-- Table Header -->
+      <text class="label-mono" font-weight="700" fill="#1f2937" x="15" y="24">MASTER</text>
+      <text class="label-mono" font-weight="700" fill="#1f2937" x="160" y="24">ERA / LOCATION</text>
+      <text class="label-mono" font-weight="700" fill="#1f2937" x="320" y="24">COUNTERPUNCH INNOVATION</text>
+      <line x1="10" y1="34" x2="480" y2="34" stroke="#d6cfbe" stroke-width="1"/>
+
+      <!-- Francesco Griffo -->
+      <text class="label-mono" font-weight="700" fill="#b45309" x="15" y="55">Francesco Griffo</text>
+      <text class="label-mono" x="15" y="70">c. 1495 · Venice</text>
+      <text class="label-mono" fill="#374151" x="160" y="55">Aldus Manutius</text>
+      <text class="label-mono" fill="#374151" x="160" y="70">De Aetna &amp; Bembo</text>
+      <text class="label-mono" fill="#b45309" font-weight="700" x="320" y="55">Narrowed arch counters</text>
+      <text class="label-mono" fill="#71717a" x="320" y="70">Invented modern italic</text>
+      <line x1="10" y1="85" x2="480" y2="85" stroke="#ece7db" stroke-width="1"/>
+
+      <!-- Claude Garamond -->
+      <text class="label-mono" font-weight="700" fill="#4f46e5" x="15" y="105">Claude Garamond</text>
+      <text class="label-mono" x="15" y="120">c. 1540 · Paris</text>
+      <text class="label-mono" fill="#374151" x="160" y="105">Rue Saint-Jacques</text>
+      <text class="label-mono" fill="#374151" x="160" y="120">Grecs du Roi</text>
+      <text class="label-mono" fill="#4f46e5" font-weight="700" x="320" y="105">Asymmetric bowl poise</text>
+      <text class="label-mono" fill="#71717a" x="320" y="120">Deep straw temper 59 HRC</text>
+      <line x1="10" y1="135" x2="480" y2="135" stroke="#ece7db" stroke-width="1"/>
+
+      <!-- Pierre-Simon Fournier -->
+      <text class="label-mono" font-weight="700" fill="#059669" x="15" y="155">P. S. Fournier</text>
+      <text class="label-mono" x="15" y="170">c. 1764 · Paris</text>
+      <text class="label-mono" fill="#374151" x="160" y="155">Manuel Typographique</text>
+      <text class="label-mono" fill="#374151" x="160" y="170">Enlightenment foundry</text>
+      <text class="label-mono" fill="#059669" font-weight="700" x="320" y="155">Standardized point scale</text>
+      <text class="label-mono" fill="#71717a" x="320" y="170">Counterpunch tool catalog</text>
+      <line x1="10" y1="185" x2="480" y2="185" stroke="#ece7db" stroke-width="1"/>
+
+      <!-- Fred Smeijers -->
+      <text class="label-mono" font-weight="700" fill="#dc2626" x="15" y="205">Fred Smeijers</text>
+      <text class="label-mono" x="15" y="220">1996 · Arnhem</text>
+      <text class="label-mono" fill="#374151" x="160" y="205">Hyphen Press</text>
+      <text class="label-mono" fill="#374151" x="160" y="220">Plantin-Moretus Museum</text>
+      <text class="label-mono" fill="#dc2626" font-weight="700" x="320" y="205">'Counterpunch' Treatise</text>
+      <text class="label-mono" fill="#71717a" x="320" y="220">Negative space architecture</text>
+    </g>
+  </g>
+
+  <!-- Bottom Footer -->
+  <text class="label-mono" fill="#9ca3af" x="30" y="785">DESIGN MINDS · DAY 024 · PLANTIN-MORETUS ARCHIVES &amp; HYPHEN PRESS</text>
+</g>
+<g transform="translate(80, 960)">
+  <rect x="0" y="0" width="1440" height="30" fill="#f4efe2" stroke="#ded8c8" rx="3"/>
+  <text class="label-mono" x="20" y="19">PLATE 24: THE RENAISSANCE STEEL PUNCH-CUTTER'S MATRIX · VERIFIED BY GEMINI NOON MIND · 2026-09-24</text>
+  <text class="label-mono" x="1140" y="19">PUNCH HARDNESS: 59 HRC · COPPER MATRIX DEPTH: 0.85 mm · DRAFT: 9°</text>
+</g>
+</svg>

@@ -1,0 +1,33 @@
+{
+  "day": 24,
+  "title": "Punch-Cutting Micro-Chiseling & Counter-Punch Metallurgy",
+  "generatedProceduralAssets": [
+    {
+      "filename": "steel_punchcutting_counterpunch.svg",
+      "type": "metallurgical-punch-cutting-blueprint",
+      "description": "High-resolution architectural and metallurgical blueprint illustrating the 4 stages of punch-cutting (Counter-punch, cold-displacement strike, graver filing with 9° draft angle, copper matrix strike), the full oxidation temper color spectrum (200°C to 300°C), and Fred Smeijers' counter-punch sharing matrix across lowercase b, d, p, q."
+    }
+  ],
+  "generativeCinematicBlueprints": {
+    "midjourneyPrompts": [
+      {
+        "targetFilename": "plate-01.png",
+        "title": "Plate 1 (16th-Century Punch-Cutter's Vise & Counter-Punches)",
+        "prompt": "Extreme macro photography of Claude Garamond's 16th-century typographic atelier in Paris: an iron bench vise clamps a rectangular annealed tool steel blank, beside it sits an array of hardened steel counter-punches with razor-sharp micro-relief glyph tips, a heavy brass mallet, fine jewelers needle files, iron shavings on dark weathered oak workbench, raking candle and north window light, Hasselblad H6D-100c, 8k resolution --ar 16:9 --style raw --v 6.1"
+      },
+      {
+        "targetFilename": "plate-02.png",
+        "title": "Plate 2 (Cherry-Red Heat Quench & Temper Colors)",
+        "prompt": "Authentic blacksmith forge metallurgy for letterpress punch-cutting: a master punch-cutter holds a glowing cherry-red steel punch with tongs above a quenching barrel of cold water, steam hissing into the air, on the anvil a polished tempered steel punch displays shimmering oxide colors of pale straw yellow, bronze, and peacock blue, dramatic dark chiaroscuro lighting, 8k --ar 4:3 --style raw --v 6.1"
+      }
+    ],
+    "videoMotionBlueprints": [
+      {
+        "targetFilename": "video-01.mp4",
+        "title": "Sequence Alpha (Counter-Punch Hammer Strike & Plastic Steel Squeeze)",
+        "toolTarget": "Runway Gen-3 / OpenAI Sora / Google Veo",
+        "prompt": "Cinematic 1000fps ultra-slow-motion macro video of a brass hammer striking a hardened steel counter-punch: The tip drives 0.8mm into the face of an annealed steel blank, cold-displacing glowing microscopic shear lines as solid steel plastically flows like stiff clay, forging the perfect inner negative bowl of a lowercase letter e, 4k."
+      }
+    ]
+  }
+}
