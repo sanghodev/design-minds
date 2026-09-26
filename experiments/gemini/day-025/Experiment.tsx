@@ -697,7 +697,7 @@ export default function HandMoldExperiment() {
                 <div style={{ fontSize: '11px', color: '#fed7aa', lineHeight: 1.6, marginBottom: '8px' }}>
                   {lang === 'ko'
                     ? '주조사의 4.5g 상향 가속도는 쇳물 기둥에 120 kPa의 동적 압력파를 유도하여, 레이놀즈 수 Re ≈ 1,420의 층류 분출을 일으키며 7 μm 미세 세리프 음각 구석까지 완벽히 충진합니다.'
-                    : 'The founder's 4.5g upward jerk drives a 120 kPa dynamic shockwave down the molten column (Re ≈ 1,420), completely overcoming surface tension in 7 μm corners.'}
+                    : "The founder's 4.5g upward jerk drives a 120 kPa dynamic shockwave down the molten column (Re ≈ 1,420), completely overcoming surface tension in 7 μm corners."}
                 </div>
                 <div style={{ backgroundColor: '#170c08', padding: '6px 10px', borderRadius: '4px', fontFamily: 'monospace', fontSize: '10px', color: '#fb923c' }}>
                   Re = 1,420 (Laminar) · We = 280 · Capillary Number Ca = 0.042 · Jet Head ΔP = 120.4 kPa
@@ -723,7 +723,7 @@ export default function HandMoldExperiment() {
                 <div style={{ fontSize: '11px', color: '#d1fae5', lineHeight: 1.6, marginBottom: '8px' }}>
                   {lang === 'ko'
                     ? '구리 매트릭스의 높은 열전도(390 W/m·K)로 인해 활자 페이스가 180ms 만에 240°C 공정점으로 급랭됩니다. 안티몬 결정이 +3.0% 팽창하여 42 MPa의 벽면 밀착 압력을 형성합니다.'
-                    : 'Copper's high thermal diffusivity (390 W/m·K) freezes the face in 180ms at the 240°C eutectic plateau. Antimony expands +3.0%, locking the sort with 42 MPa wall pressure.'}
+                    : "Copper's high thermal diffusivity (390 W/m·K) freezes the face in 180ms at the 240°C eutectic plateau. Antimony expands +3.0%, locking the sort with 42 MPa wall pressure."}
                 </div>
                 <div style={{ backgroundColor: '#061611', padding: '6px 10px', borderRadius: '4px', fontFamily: 'monospace', fontSize: '10px', color: '#34d399' }}>
                   t_freeze = 180 ms · Plateau = 240°C Eutectic · Contact Stress = 42.1 MPa · Zero Flash
@@ -749,7 +749,7 @@ export default function HandMoldExperiment() {
                 <div style={{ fontSize: '11px', color: '#bae6fd', lineHeight: 1.6, marginBottom: '8px' }}>
                   {lang === 'ko'
                     ? '액체 납 표면장력(γ = 0.45 N/m)으로 인해 1g 중력만으로는 미세 세리프(7 μm) 진입 압력(80 kPa)을 넘지 못합니다. 주조사의 4.5g 상향 반동 도약만이 120 kPa 관성압을 만들어 면도날 모서리를 완성합니다.'
-                    : 'Molten alloy surface tension (γ = 0.45 N/m) blocks entry into 7 μm serifs under 1g gravity. The founder's 4.5g upward jerk delivers 120 kPa of dynamic inertial pressure, shattering the capillary barrier.'}
+                    : "Molten alloy surface tension (γ = 0.45 N/m) blocks entry into 7 μm serifs under 1g gravity. The founder's 4.5g upward jerk delivers 120 kPa of dynamic inertial pressure, shattering the capillary barrier."}
                 </div>
                 <div style={{ backgroundColor: '#081419', padding: '6px 10px', borderRadius: '4px', fontFamily: 'monospace', fontSize: '11px', color: '#38bdf8' }}>
                   ΔP_net = ρ·a_jerk·h - (2γ·cos θ / r) ≥ 0
@@ -866,7 +866,7 @@ export default function HandMoldExperiment() {
             {activeStage === 2 && (
               <div style={{ backgroundColor: '#171920', padding: '20px', borderRadius: '8px', border: '1px solid #2a2e38' }}>
                 <div style={{ fontWeight: 700, color: '#f97316', fontSize: '14px', marginBottom: '8px' }}>
-                  {lang === 'ko' ? '단계 2: 쇳물 주입 및 주조사의 반동 도약 (Le Coup de Main)' : 'Stage 2: Ladle Pour & The Founder's Jerk'}
+                  {lang === 'ko' ? '단계 2: 쇳물 주입 및 주조사의 반동 도약 (Le Coup de Main)' : "Stage 2: Ladle Pour & The Founder's Jerk"}
                 </div>
                 <p style={{ fontSize: '12px', color: '#d1d5db', lineHeight: 1.6, margin: '0 0 14px' }}>
                   {lang === 'ko'
@@ -939,7 +939,7 @@ export default function HandMoldExperiment() {
                 <p style={{ fontSize: '12px', color: '#d1d5db', lineHeight: 1.6, margin: '0 0 14px' }}>
                   {lang === 'ko'
                     ? '납의 수축(-3.4%)을 안티몬의 결정 팽창(+3.0%)으로 상쇄하여 구리 매트릭스 벽면에 42 MPa의 밀착 압력을 형성합니다. 안티몬이 부족하면 글자 면이 함몰됩니다.'
-                    : 'Antimony expands +3.0% upon crystallization, counteracting lead's -3.4% shrinkage and pressing the cooling sort against the matrix with 42 MPa internal stress.'}
+                    : "Antimony expands +3.0% upon crystallization, counteracting lead's -3.4% shrinkage and pressing the cooling sort against the matrix with 42 MPa internal stress."}
                 </p>
 
                 {/* Antimony Slider */}
@@ -1092,7 +1092,7 @@ export default function HandMoldExperiment() {
               <p style={{ color: '#d1d5db', margin: 0 }}>
                 {lang === 'ko'
                   ? '구텐베르크의 진정한 혁명은 가동 활자가 아니라 2분할 슬라이딩 주조기였습니다. 활자 높이를 23.56mm로 엄격히 고정하면서 글자 폭만 유동 조절함으로써, 인류 최초로 완벽히 호환 가능한 대량 생산 규격 부품 시스템을 탄생시켰습니다.'
-                  : 'Gutenberg's true revolution was the sliding two-part hand mold. By holding height-to-paper rigidly at 23.56 mm while allowing horizontal width to slide, he engineered the world's first precision interchangeable mass-production system.'}
+                  : "Gutenberg's true revolution was the sliding two-part hand mold. By holding height-to-paper rigidly at 23.56 mm while allowing horizontal width to slide, he engineered the world's first precision interchangeable mass-production system."}
               </p>
             </div>
           </div>
