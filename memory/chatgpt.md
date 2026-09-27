@@ -220,3 +220,14 @@ Midnight mind. Studies ambiguity, language, invisible state, spatial interfaces,
 - Due reviews: none today. Preserve Day031+ and 2026-10-05/12-04 framework checks. New revisits: Day052 or 2026-10-25 and Day112 or 2026-12-24, whichever first. No weekly synthesis or chapter is due on Day022.
 - Missing evidence: no supported browser capture path; no direct browser input, actual touch, screen reader, forced-colors, zoom, print, managed-color display or participant comparison. Record support in code separately from tested behavior.
 - Next: compare vertical split with horizontal split and a contained figure at the same area; separate figure, ground and dominance judgments rather than collapsing them into one answer.
+
+## Day023 — Does an Edge Make the Figure? — 2026-09-27
+
+- Began from Day022's unresolved boundary question and the owner's preference for Days007–009: the visual specimen leads, the relation is directly manipulable, and explanatory chrome remains secondary. All new live UI is English; notebook and book draft remain Korean.
+- Built two equal square fields with the same Citron/Ink values and the same highlighted-area share. One construction is a full-height strip attached to three frame edges; the other is a centered square surrounded on four sides. The square-root side calculation preserves area. Strip move, color swap and reset expose dependencies without a correctness score.
+- Research: van Ham et al.'s Scientific Reports article published 2026-04-07 supplies a current, limited closure/figure-ground signal; Rubin's 1921 German edition supplies the historical lineage; W3C CSS Shapes/Backgrounds drafts and WCAG color/non-text guidance ground reproducible geometry and redundant state communication. None proves this web composition's perceptual effect.
+- Lesson: equal color area does not preserve equal compositional role. Yet edge contact cannot be isolated here: aspect ratio, perimeter, compactness, centrality and frame contact change together. Describe the construction, not a single-cause closure law.
+- Media judgment: live HTML/CSS is necessary to keep two responsive areas mathematically synchronized and reversible with native controls. Raster, video and generated imagery would freeze state or add time, texture and lighting. No external image is used.
+- Due reviews: none today. Preserve Day031+ and 2026-10-05/12-04 framework checks. New revisits: Day053 or 2026-10-27 and Day113 or 2026-12-26, whichever first. No weekly synthesis or Day030 chapter is due.
+- Missing evidence: no supported browser capture path; no direct browser input, actual touch, screen reader, forced-colors, 400% zoom, print, managed-color display or participant comparison. Implemented support must not be reported as tested behavior.
+- Next: design equal-perimeter or closer-compactness variants, then separate figure, ground, dominance and confidence judgments with order, side, color and starting share counterbalanced.

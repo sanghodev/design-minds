@@ -1,0 +1,6 @@
+{
+  "status": "ready",
+  "day": 23,
+  "completedAt": "2026-09-27T04:12:43Z",
+  "reason": "Implementation, notebook, exports and automated validation finished. Missing browser and participant evidence remains disclosed in validation.md and figures/index.json."
+}

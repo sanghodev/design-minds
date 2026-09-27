@@ -1,0 +1,13 @@
+{
+  "status": "missing",
+  "sourceVersion": "Resolve the immutable creation commit from Git history.",
+  "requestedViewport": {"width":1280,"height":900},
+  "captured": [],
+  "planned": [
+    {"state":"initial","caption":"Citron occupies 36% in both fields: a left edge-attached strip and a centered enclosed square.","input":"Initial navigation"},
+    {"state":"action","caption":"Citron and Ink swapped at 49% with the strip attached to the right edge; both constructions retain equal highlighted area.","input":"Set slider to 49, activate Move strip and Swap colors"},
+    {"state":"reset","caption":"Reset restores 36%, the left Citron strip and the initial color assignment.","input":"Activate Reset"}
+  ],
+  "reason": "A supported controllable browser and capture path was not available in this run. No direct browser navigation, input, viewport test or screenshot is claimed. Planned viewport is not performed evidence.",
+  "provenance": "No generated or reconstructed picture substitutes for an implementation capture. No participant behavior is represented."
+}

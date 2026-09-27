@@ -1,0 +1,30 @@
+{
+  "mind": "chatgpt",
+  "day": 23,
+  "date": "2026-09-27",
+  "status": "published",
+  "title": "Does an Edge Make the Figure?",
+  "selectionMethod": "Internal 1-5 judgments in order: originality, visual necessity, interaction meaning, feasibility. Reasons, not totals, determine the choice. Scores are planning notes, never displayed as evidence or outcomes.",
+  "hypotheses": [
+    {"idea":"Hold color and area constant while comparing an edge-attached strip with an enclosed square","scores":[5,5,5,5],"reason":"Selected: the two simultaneous fields make equal quantity auditable while changing the boundary relation directly, extending Day022 without repeating its single sliding split."},
+    {"idea":"Rotate one equal-area split from vertical to horizontal","scores":[3,5,4,5],"reason":"A clean orientation check, but both regions would still touch the frame and the question would be more about reading direction and gravity than containment."},
+    {"idea":"Compare a centered square with an off-center square at the same size","scores":[4,5,5,5],"reason":"Position would be isolated more narrowly, yet it would not answer the unresolved question about whether touching the frame changes figure-ground assignment."},
+    {"idea":"Let a colored disk cross the frame edge while preserving its visible area","scores":[5,5,4,3],"reason":"Visually strong, but preserving visible area while clipping requires changing the disk size and introduces curvature, clipping and implied continuation together."},
+    {"idea":"Compare one closed contour with four separated corner marks","scores":[3,5,5,4],"reason":"Closure becomes explicit, but it returns to Day012's contour-completion territory and would compare line drawings rather than occupied color fields."},
+    {"idea":"Place the same word inside and across a color boundary","scores":[4,5,4,4],"reason":"Editorially concrete, but typography, legibility and semantic grouping would compete with the more basic figure-ground question."},
+    {"idea":"Compare equal-area convex and concave regions","scores":[4,5,5,3],"reason":"Relevant to Gestalt research, but perimeter and local edge density would vary substantially and responsive exact-area authoring would need more complex paths."},
+    {"idea":"Reveal equal color area as one block or many distributed dots","scores":[4,5,5,4],"reason":"It would make grouping visible, but spatial frequency and numerosity would dominate and repeat Day015's screen-pattern vocabulary."},
+    {"idea":"Animate an enclosed region until it touches the frame","scores":[4,5,4,4],"reason":"The transition could dramatize attachment, but timing, motion and change history would become extra variables and reduced-motion support would require a second form."},
+    {"idea":"Ask visitors to draw the boundary they think belongs to the figure","scores":[5,4,5,2],"reason":"It could surface individual constructions, but saved drawings would require a research protocol, privacy decisions and interpretation that are outside this implementation-only day."}
+  ],
+  "variable": "The highlighted region's boundary construction: a full-height strip attached to a frame edge versus a centered enclosed square.",
+  "comparison": "Both square fields use the same two opaque sRGB colors and the highlighted region occupies the same 16-64% area. The strip width equals the selected share; the enclosed square side is the square root of that share.",
+  "constants": ["Equal square field dimensions within the same viewport", "Same highlighted-area percentage in both constructions", "Same two CSS color values and full opacity", "No texture, animation, score, stored response or participant-data collection"],
+  "challenge": "If judgments do not cluster, reverse with color assignment or strip side, or are better explained by compactness, perimeter, position, luminance or terminology, do not attribute a general figure-ground effect to closure or edge contact alone.",
+  "researchLedForm": "Two large square fields appear side by side before the controls. One region touches three frame edges; the other is surrounded on four sides. A shared area control, strip-side move and color swap expose dependencies without assigning a correct figure.",
+  "mediaDecision": "Live HTML and CSS are necessary because one control must preserve mathematically equal area across two responsive constructions and remain reversible by keyboard and touch. A raster image freezes one state; video adds time; generated imagery cannot guarantee exact geometry and would introduce texture or lighting. No external image is used.",
+  "revisits": [
+    {"day":53,"date":"2026-10-27","question":"Counterbalance construction order, strip side, color assignment and starting share; collect separate figure, background, dominance and confidence judgments."},
+    {"day":113,"date":"2026-12-26","question":"Compare equal-perimeter and equal-compactness variants, calibrated versus ordinary displays, and current web geometry support without treating one cue as isolated."}
+  ]
+}
