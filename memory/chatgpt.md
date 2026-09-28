@@ -7,6 +7,18 @@
 - The actionable selection and review gate is in `creative-system/CHATGPT.md`, section `Owner direction: visual discovery first`. Creation and review handoffs reference it. Keep new UI English, canonical publication prose Korean, and evidence distinct from interpretation.
 - This is an owner preference and process correction, not a tested improvement in perception, comprehension or design quality. Existing experiments and Gemini creative instructions are unchanged.
 
+## Day 024 — How Much Space Makes a Figure? — 2026-09-28
+
+- Followed Day023's largest unresolved confound without inheriting its strip-versus-square form. Both specimens are now the same 34% square with equal area, perimeter, color and orientation; only the adjustable horizontal margin changes from frame contact to the centered position.
+- Current source: Yip, Moroze, Nishina and Yazdanbakhsh's Frontiers in Psychology article published 2026-02-27. Its CNN results make contour context and junction geometry relevant computational signals, not human evidence for this page.
+- Historical boundary: Kandinsky's 1926 *Point and Line to Plane* treats relations on the plane as material for analysis. The Bauhaus-Archiv interpretation and Met 1928-edition record provide context, not proof of a margin effect.
+- Technical/accessibility basis: CSS Positioned Layout WD 2025-10-07 supplies reproducible logical insets; W3C Target Size and Reflow guidance shaped large equivalent controls and the stacked narrow layout. No whole-page conformance claim.
+- Selected from ten hypotheses: fixed centered reference beside one matching square that travels 0–33% from either edge. Touch, Separate and Center are construction presets, not perceptual thresholds.
+- Own-review carryover: disclosure and a persistent reference do not neutralize perception. The centered reference may itself prime a preferred answer; source labels and color can also cue judgment.
+- Evidence boundary: implementation and model behavior are verifiable. Browser captures, actual touch, screen reader, forced colors, 400% zoom, print, calibrated displays and participant responses remain untested.
+- Revisit Day054 or 2026-10-28: counterbalance side, color, order and initial margin and separate contact, figure, dominance and confidence questions. Revisit Day114 or 2026-12-27: hold apparent position closer to constant with a moving frame or mask and inspect real design-tool relationship checks.
+- Next question: if the frame moves while the square stays in the same apparent position, does contact still change how the boundary is assigned?
+
 ## Day 019 — Accepted Is Not Finished — 2026-09-20
 
 - Returned to Day003's unresolved delayed-response question without reusing its spatial composition. The selected inquiry separates an immediate acceptance receipt from later completion when fractional progress is unknown.

@@ -27,6 +27,7 @@ import Day020 from "@/experiments/chatgpt/day-020/Experiment";
 import Day021 from "@/experiments/chatgpt/day-021/Experiment";
 import Day022 from "@/experiments/chatgpt/day-022/Experiment";
 import Day023 from "@/experiments/chatgpt/day-023/Experiment";
+import Day024 from "@/experiments/chatgpt/day-024/Experiment";
 
 export default async function ExperimentPage({ params }: { params: Promise<{ mind: string; day: string }> }) {
   const { mind: rawMind, day: rawDay } = await params;
@@ -34,7 +35,7 @@ export default async function ExperimentPage({ params }: { params: Promise<{ min
   if (!/^day-\d{3}$/.test(rawDay)) notFound();
   const mind = rawMind as MindId; const day = Number(rawDay.slice(4));
   const experiment = experiments.find((item) => item.mind === mind && item.day === day && item.status !== "scaffold-seed"); if (!experiment) notFound();
-  if (experiment.status === "research-only") return <main className={s.page} lang="ko"><article className={s.document}><Link href="/">← Design Minds</Link><p className={s.kicker}>GEMINI · DAY {String(day).padStart(3,"0")}</p><h1>{experiment.title}</h1><p className={s.lede}>연구글 공개 · 실행 파일 대기</p><p>이 연구의 노트와 출판 초고를 먼저 읽을 수 있습니다. 인터랙티브 작품은 실행 가능한 원본 파일이 연결되면 공개합니다.</p><div className={s.actions}><Link href={"/research/"+mind+"/"+rawDay}>연구노트 읽기 →</Link><Link href={"/book#"+mind+"-"+rawDay}>출판 초고 읽기 →</Link></div></article></main>;
+  if (experiment.status === "research-only") return <main className={s.page} lang="ko"><article className={s.document}><Link href="/">← Design Minds</Link><p className={s.kicker}>GEMINI · DAY {String(day).padStart(3,"0")}</p><h1>{experiment.title}</h1><p className={s.lede}>연구글 공개 · 실험 검증 대기</p><p>정본 연구노트와 공개 검증이 완료되기 전에는 인터랙티브 작품으로 승격하지 않습니다.</p><div className={s.actions}><Link href={"/research/"+mind+"/"+rawDay}>연구노트 읽기 →</Link></div></article></main>;
   if (mind === "chatgpt" && day === 1) return <PauseExperiment />;
   if (mind === "chatgpt" && day === 2) return <RemovalExperiment />;
   if (mind === "chatgpt" && day === 3) return <FocusRoomExperiment />;
@@ -58,6 +59,7 @@ export default async function ExperimentPage({ params }: { params: Promise<{ min
   if (mind === "chatgpt" && day === 21) return <Day021 />;
   if (mind === "chatgpt" && day === 22) return <Day022 />;
   if (mind === "chatgpt" && day === 23) return <Day023 />;
+  if (mind === "chatgpt" && day === 24) return <Day024 />;
   if (mind === "gemini") {
     return <GeminiExperimentGateway day={day} />;
   }

@@ -1,0 +1,11 @@
+{
+  "status": "missing",
+  "reason": "No supported browser capture was completed before the creation record was finalized. Source, model and server-rendered routes can be validated, but those checks are not visual evidence.",
+  "captured": [],
+  "planned": [
+    {"id":"initial","state":"0% gap, left anchor, initial colors","caption":"The adjustable square touches the frame while the equal reference remains centered.","provenance":"Own implementation; capture pending."},
+    {"id":"action","state":"16% gap, right anchor, swapped colors","caption":"A visible margin separates the same square from the mirrored frame edge.","provenance":"Own implementation; capture pending."},
+    {"id":"reset","state":"Reset to 0% gap, left anchor, initial colors","caption":"Reset restores the disclosed initial geometry.","provenance":"Own implementation; capture pending."}
+  ],
+  "limitations": ["No desktop or mobile browser screenshot", "No hardware touch, screen-reader, forced-colors, 400% zoom or print capture", "No participant behavior or perception evidence"]
+}

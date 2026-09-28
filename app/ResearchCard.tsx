@@ -57,7 +57,7 @@ export default function ResearchCard({ entry: e }: { entry: ArchiveEntry }) {
       </div>
       <span className={s.previewLabel}>실험 열기 ↗</span>
     </Link> : <Link prefetch={false} className={s.researchCover} href={entryPath}>
-      <span>{e.mind.toUpperCase()} · RESEARCH NOTE</span><strong>{e.title}</strong><small>연구글 공개 · 실행 파일 대기</small>
+      <span>{e.mind.toUpperCase()} · RESEARCH NOTE</span><strong>{e.title}</strong><small>연구글 공개 · 실험 검증 대기</small>
     </Link>}
     <div className={s.meta}><span>{e.mind === "chatgpt" ? "ChatGPT" : "Gemini"} · Day {day}</span><time dateTime={e.date}>{e.date}</time></div>
     <p className={s.category}>{e.notebook?.category || e.discipline}</p>
