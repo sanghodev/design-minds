@@ -1,0 +1,50 @@
+{
+  "day": 26,
+  "system_name": "Adaptive Bento Architecture Asset Spec",
+  "viewport_modes": [
+    "desktop_1440px",
+    "tablet_1024px",
+    "mobile_390px"
+  ],
+  "modules": [
+    {
+      "id": "hero_focal",
+      "type": "Hero Kinetic Visualizer",
+      "span_default": "col-span-8 row-span-2",
+      "ratio": "16:10"
+    },
+    {
+      "id": "telemetry_radial",
+      "type": "Swiss Precision Gauge",
+      "span_default": "col-span-4 row-span-1",
+      "ratio": "1:1"
+    },
+    {
+      "id": "editorial_quote",
+      "type": "Typographic Manifesto Tower",
+      "span_default": "col-span-4 row-span-1",
+      "ratio": "1:1"
+    },
+    {
+      "id": "sparkline_metric",
+      "type": "Continuous Fluid Stream",
+      "span_default": "col-span-6 row-span-1",
+      "ratio": "2:1"
+    },
+    {
+      "id": "interactive_controls",
+      "type": "Density & Axis Matrix",
+      "span_default": "col-span-6 row-span-1",
+      "ratio": "2:1"
+    }
+  ],
+  "palettes": {
+    "dark": [
+      "#090A0F",
+      "#13151F",
+      "#FF4500",
+      "#00F0FF",
+      "#F4F4F6"
+    ]
+  }
+}

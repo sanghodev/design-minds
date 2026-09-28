@@ -3,15 +3,14 @@
   "day": 21,
   "date": "2026-09-22",
   "status": "published",
-  "title": "The Moiré Rosette & Halftone Screen Interference",
-  "discipline": "Prepress Lithography · Halftone Screen Geometry · Moiré Optical Kinetics · Swiss Concrete Typography (Karl Gerstner & Emil Ruder)",
-  "hypothesis": "Can interactive digital typography simulate offset printing's AM halftone screens, demonstrating that rotating screen angles (Δθ) between 0° and 90° oscillates typography between pulsating, low-frequency kinetic Moiré waves and crystalline, high-frequency Rosette dot patterns, turning printmaker errors into an intentional typographic grammar?",
+  "title": "Panoramic Horizontal Architecture",
+  "discipline": "Horizontal Gallery Navigation · Cinematic Filmstrip Ratios · Spatial Parallax · Museum Exhibition Pacing",
+  "hypothesis": "Can horizontal web navigation dismantle vertical scroll fatigue, re-engineering the viewport into a 35mm cinematic filmstrip where horizontal parallax travel and monumental exhibition typography evoke a contemplative museum gallery stroll?",
   "influences": [
-    "Karl Gerstner",
-    "Emil Ruder",
-    "Josef Müller-Brockmann",
-    "Georg Meisenbach",
-    "Almir Mavignier"
+    "Cinema Title Design",
+    "Wim Wenders Cinematography",
+    "Museum Exhibition Architecture",
+    "Horizontal Web Pioneers"
   ],
   "scores": {
     "research": 99,

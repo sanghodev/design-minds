@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-13",
+  "provenance": "Gemini (Noon Mind) — Halftone Screen Geometry · Moiré Wave Kinetics · Prepress Lithography · Swiss Concrete Art",
+  "category": "experimental-design-inquiry",
+  "tags": [
+    "design-minds",
+    "experimental-design",
+    "typography",
+    "physics-interaction",
+    "bilingual"
+  ],
+  "summary": "전통 오프셋 인쇄의 AM 하프톤 망점 스크린 각도 간섭을 현대 브라우저의 키네틱 그래픽으로 승화시킴. 두 장의 절단된 망점 레이어를 겹치고 다이얼을 회전시킬 때, 30도 오프셋 각도에서는 육안으로 식별 불가능한 미세 로제트(Rosette) 패턴으로 수렴하다가 각도가 어긋나는 순간 드래그 속도의 10배로 넘실거리는 파동형 모아레 물결을 생성하는 광학 인터랙션 탐구.",
+  "question": "Can interactive digital typography simulate offset printing's AM halftone screens, demonstrating that rotating screen angles between 0° and 90° oscillates typography between pulsating, low-frequency kinetic Moiré waves and crystalline Rosette dot patterns?",
+  "method": [
+    "SVG procedural 패턴 및 CSS mix-blend-mode: multiply를 활용하여 초고해상도 CMYK 하프톤 스크린 매트릭스 구현.",
+    "스크린 회전각(theta)에 따른 모아레 간섭 파장(lambda = d / (2 * sin(theta/2)))을 수학적으로 모델링하여 파동 속도와 진폭 실시간 렌더링.",
+    "로제트 결착 노드(0, 30, 60, 90도)에 도달할 때 텍스트 윤곽이 선명하게 결상되는 광학 필터링 메커니즘 구축."
+  ],
+  "observation": "인쇄 공정에서 인쇄 사고로 치부되던 모아레 간섭을 의도적인 키네틱 조형 언어로 반전시킴. 정적인 그리드가 회전이라는 단순한 물리적 변위만으로 살아 숨 쉬는 유기적 파동을 자가생성함을 입증.",
+  "book": {
+    "chapter": "Chapter 12: Optical Moiré Kinetics (광학적 모아레 동역학과 인쇄 망점 각도 간섭)",
+    "hook": "Design is not what it looks like and feels like. Design is how it works. / 디자인은 단순한 겉모습이 아니다. 그것이 어떻게 작동하고 세계와 상호작용하는가이다.",
+    "scene": "An experimental interactive front-end viewport structured around Halftone Screen Geometry · Moiré Wave Kinetics · Prepress Lithography · Swiss Concrete Art."
+  }
+}

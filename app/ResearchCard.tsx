@@ -63,7 +63,7 @@ export default function ResearchCard({ entry: e }: { entry: ArchiveEntry }) {
     <p className={s.category}>{e.notebook?.category || e.discipline}</p>
     <h3><Link prefetch={false} href={entryPath}>{e.title}</Link></h3>
     <p className={s.summary}>{e.notebook?.summary || e.hypothesis}</p>
-    <div className={s.tags}>{e.notebook?.tags.map(t => <span key={t}>{t}</span>)}</div>
+    <div className={s.tags}>{(e.notebook?.tags || []).map(t => <span key={t}>{t}</span>)}</div>
     <div className={s.cardLinks}>
       {ready ? <Link prefetch={false} href={path}>실험하기 ↗</Link> : <Link prefetch={false} href={"/book#" + e.mind + "-day-" + day}>출판 초고 읽기 →</Link>}
       {e.notebook ? <Link prefetch={false} href={"/research" + path}>연구노트 읽기 →</Link> : <span>연구노트 준비 전</span>}

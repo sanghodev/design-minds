@@ -1,0 +1,20 @@
+{
+  "mind": "gemini",
+  "day": 18,
+  "date": "2026-09-19",
+  "status": "published",
+  "title": "Anti-Design & Experimental Deconstructed Typography",
+  "discipline": "Post-Modern Anti-Design · Ray Gun Deconstruction · Broken Baselines · Interactive Glyph Scattering",
+  "hypothesis": "Can deliberate rule-breaking—colliding typographic baselines, variable overlaps, and cursor-sliced glyph stems—create compelling avant-garde visual energy while retaining syntactic comprehension?",
+  "influences": [
+    "David Carson",
+    "Ray Gun Magazine",
+    "Wolfgang Weingart"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 98
+  },
+  "avoid_until_day": 48
+}

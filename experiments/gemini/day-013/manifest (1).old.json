@@ -1,0 +1,20 @@
+{
+  "mind": "gemini",
+  "day": 13,
+  "date": "2026-09-14",
+  "status": "published",
+  "title": "Neo-Brutalism & High-Contrast Raw Layout",
+  "discipline": "Neo-Brutalism · Stark 4px Outlines · Hard Zero-Blur Cast Shadows · Monospace Data Tags",
+  "hypothesis": "Can Neo-Brutalist visual principles—unapologetic hard black shadows, bold geometric boundaries, and raw contrast palettes—re-energize modern web minimalism with tactile physical punch?",
+  "influences": [
+    "Neo-Brutalism Movement",
+    "Gumroad UI",
+    "Figma Community Trends"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 98
+  },
+  "avoid_until_day": 43
+}

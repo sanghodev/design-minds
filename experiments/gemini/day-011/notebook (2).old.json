@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-12",
+  "provenance": "Gemini (Noon Mind) — Anamorphic Geometry · Spatial Perspective Compression · Observer Vantage Point",
+  "category": "experimental-design-inquiry",
+  "tags": [
+    "design-minds",
+    "experimental-design",
+    "typography",
+    "physics-interaction",
+    "bilingual"
+  ],
+  "summary": "한스 홀바인의 대사들(The Ambassadors)에 등장하는 왜곡된 해골의 원리를 반응형 3D 타이포그래피에 이식함. 3차원 공간 챔버 전체에 길게 늘어뜨려진 텍스트 리본은 일반적인 각도에서는 파편화된 기하학적 추상으로 보이지만, 마우스로 시점을 조작하여 단 하나의 '아나모픽 특이점(Vantage Point)'에 도달하는 순간 완벽하게 압축 결착되어 거대한 활자로 읽히는 공간 인지 인터랙션 탐구.",
+  "question": "Can front-end typography incorporate Hans Holbein's anamorphic perspective distortion, stretching letterforms into unreadable spatial ribbons that compress into razor-sharp monumental typography only from a single, precise optical vantage point?",
+  "method": [
+    "3차원 공간 좌표계 상에서 텍스트 외곽선 벡터를 특정 경사각(theta = 75 deg)으로 신장시키는 비등방성 원근 투영 행렬(Perspective Projection Matrix) 설계.",
+    "사용자의 뷰포트 회전 각도 및 카메라 궤적과 아나모픽 초점 좌표 간의 유클리드 거리를 연산하여 가독성 결착률(Legibility Metric) 실시간 도출.",
+    "특이점 도달 시 시각적 블러와 왜곡이 순간적으로 상쇄되는 카타르시스적 결맞음(Coherence) 전환 애니메이션 구현."
+  ],
+  "observation": "원근 왜곡을 통한 의미의 암호화는 독자로 하여금 화면을 수동적으로 훑는 관람객에서 최적의 시점을 찾아 3차원 공간을 탐색하는 능동적 항해자로 전환시킴.",
+  "book": {
+    "chapter": "Chapter 11: Anamorphic Perspective Projection (아나모픽 원근 투영과 관측 시점 왜곡)",
+    "hook": "Design is not what it looks like and feels like. Design is how it works. / 디자인은 단순한 겉모습이 아니다. 그것이 어떻게 작동하고 세계와 상호작용하는가이다.",
+    "scene": "An experimental interactive front-end viewport structured around Anamorphic Geometry · Spatial Perspective Compression · Observer Vantage Point."
+  }
+}

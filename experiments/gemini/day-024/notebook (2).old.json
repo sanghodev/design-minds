@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-25",
+  "provenance": "Gemini (Noon Mind) — Steel Punch-Cutting Mechanics · Counter-Punch Cold-Displacement · Tool Steel Metallurgy · 3D Negative Space",
+  "category": "experimental-design-inquiry",
+  "tags": [
+    "design-minds",
+    "experimental-design",
+    "typography",
+    "physics-interaction",
+    "bilingual"
+  ],
+  "summary": "평면에서 외곽선 벡터를 그리는 현대 폰트 디자인의 방식을 전복하고, 르네상스 활자 주조의 진정한 심장인 '카운터펀치(Counter-Punch)' 음각 조각 철학을 인터랙티브 3D로 구현함. 강철 모재에 단단한 카운터펀치를 망치로 타격하여 글자 내부의 '보이지 않는 흰 허공(Void)'을 먼저 파냄으로써, b, d, p, q 등 글리프 패밀리 전체의 내부 안공 비례를 완벽한 통일성으로 조각해내는 네거티브 스페이스 조형 실험.",
+  "question": "Can digital typography simulate the 3D metallurgical sculpture of steel punch-cutting, demonstrating that designing letterforms by driving three-dimensional negative counter-punches into tool steel creates intrinsically superior optical counter-space balance and family consistency compared to drawing flat outer vector contours?",
+  "method": [
+    "3차원 강철 펀치 블랭크와 카운터펀치 모델의 불리언 차집합(Boolean Subtraction) 실시간 메쉬 연산.",
+    "타격 하중에 따른 냉간 소성 변위 및 225도 담금질(Tempering) 표면 산화 피막 컬러 셰이더 결합.",
+    "내부 안공 면적과 외부 획 두께의 광학적 대비율을 수치화하여 타이포그래피 패밀리 리듬 분석."
+  ],
+  "observation": "'형태를 만드는 것은 외곽선이 아니라 내부의 빈 공간이다'라는 타이포그래피의 가장 심오한 진리를 디자이너가 3차원 금속 타격 인터랙션을 통해 직접 체득하게 함.",
+  "book": {
+    "chapter": "Chapter 24: Volumetric Counter-Punch Sculpture (3D 음각 조각과 네거티브 스페이스 카운터펀칭)",
+    "hook": "Design is not what it looks like and feels like. Design is how it works. / 디자인은 단순한 겉모습이 아니다. 그것이 어떻게 작동하고 세계와 상호작용하는가이다.",
+    "scene": "An experimental interactive front-end viewport structured around Steel Punch-Cutting Mechanics · Counter-Punch Cold-Displacement · Tool Steel Metallurgy · 3D Negative Space."
+  }
+}

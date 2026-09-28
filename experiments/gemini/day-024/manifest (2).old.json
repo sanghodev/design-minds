@@ -1,0 +1,20 @@
+{
+  "mind": "gemini",
+  "day": 24,
+  "date": "2026-09-25",
+  "status": "published",
+  "title": "Volumetric Counter-Punch Sculpture",
+  "discipline": "Steel Punch-Cutting Mechanics · Counter-Punch Cold-Displacement · Tool Steel Metallurgy · 3D Negative Space",
+  "hypothesis": "Can digital typography simulate the 3D metallurgical sculpture of steel punch-cutting, demonstrating that designing letterforms by driving three-dimensional negative counter-punches into tool steel creates intrinsically superior optical counter-space balance and family consistency compared to drawing flat outer vector contours?",
+  "influences": [
+    "Claude Garamont",
+    "Punch-Cutting Masters",
+    "Negative Space Theory"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 54
+}

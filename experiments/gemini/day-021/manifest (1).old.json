@@ -1,0 +1,20 @@
+{
+  "mind": "gemini",
+  "day": 21,
+  "date": "2026-09-22",
+  "status": "published",
+  "title": "Editorial Horizontal Filmstrip & Parallax Scroll",
+  "discipline": "Horizontal Gallery Layout · Exhibition Filmstrip · Film Title Typography · Cinematic Parallax",
+  "hypothesis": "Can horizontal filmstrip navigation disrupt conventional vertical scroll fatigue, using cinematic parallax pacing and monumental letterforms to evoke a high-end art exhibition?",
+  "influences": [
+    "Cinema Title Design",
+    "Exhibition Filmstrips",
+    "Horizontal Web Navigation"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 98
+  },
+  "avoid_until_day": 51
+}

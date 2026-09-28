@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-24",
+  "provenance": "Gemini (Noon Mind) — Massimo Vignelli Unigrid · Strict Helvetica Metrics · Ratio-Based Modular Hierarchy · Monochromatic Purity",
+  "category": "visual-design-interactive-layout",
+  "tags": [
+    "visual-design",
+    "minimalism",
+    "modern-layout",
+    "front-end",
+    "interactive",
+    "bilingual"
+  ],
+  "summary": "뉴욕 지하철 노선도와 미국 국립공원 가이드를 디자인한 전설적인 디자이너 마시모 비넬리(Massimo Vignelli)의 유니그리드(Unigrid) 시스템을 현대 디지털 뷰포트에 구현하여, 4가지 크기의 헬베티카와 흑백의 절대적 질서만으로 완벽한 시각 아이덴티티를 빚어내는 미니멀리즘 디자인 실험.",
+  "question": "Can Massimo Vignelli's iconic Unigrid system provide an interactive digital framework for generating flawless monochromatic posters and informational architecture?",
+  "method": [
+    "Engineered an interactive modular front-end viewport responding dynamically to user input and gesture.",
+    "Applied strict minimalist typographical hierarchy, eliminating superfluous ornamentation in favor of mathematical layout tension.",
+    "Implemented continuous real-time state feedback and smooth CSS/Canvas transitions."
+  ],
+  "observation": "인터랙티브 웹 뷰포트 상에서 Vignelli Unigrid System & Monochromatic Scaling 메커니즘을 검증한 결과, 과도한 학술적 설명 없이도 레이아웃의 비례와 반응형 인터랙션만으로 직관적인 조형적 쾌감과 강렬한 시각적 위계를 전달함을 확인.",
+  "book": {
+    "chapter": "Chapter 23: Vignelli Unigrid System & Monochromatic Scaling (비넬리 유니그리드 시스템과 모노크롬 비율 스케일링)",
+    "hook": "Design is not what it looks like and feels like. Design is how it works. / 디자인은 단순히 겉모습이나 느낌이 아니다. 디자인은 그것이 어떻게 작동하는가이다.",
+    "scene": "A pristine digital canvas opens before the viewer, structured around Massimo Vignelli Unigrid · Strict Helvetica Metrics · Ratio-Based Modular Hierarchy · Monochromatic Purity."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-14",
+  "provenance": "Gemini (Noon Mind) — General Relativity · Geodesic Light Deflection · Semantic Mass Topology",
+  "category": "experimental-design-inquiry",
+  "tags": [
+    "design-minds",
+    "experimental-design",
+    "typography",
+    "physics-interaction",
+    "bilingual"
+  ],
+  "summary": "언어의 이념적·서사적 무게를 실제 아인슈타인 일반상대성이론의 중력 질량으로 시뮬레이션함. 거대한 헤드라인 노드가 시공간 곡률을 형성하여, 주변의 반듯한 저널리즘 다단 텍스트들이 측지선 굴절 방정식(theta = 4GM / c^2 b)을 따라 아인슈타인 링과 황금빛 호(Arc)로 유연하게 휘어지고, 중심의 사건 지평선을 넘어서면 완전한 암흑 속으로 소멸하는 중력 렌즈 레이아웃 탐구.",
+  "question": "Can interactive web layouts treat massive headline nodes as gravitational singularities that physically deflect and curve surrounding editorial text columns into smooth concentric Einstein rings and double-arcs around the cursor?",
+  "method": [
+    "헤드라인 질량 M과 커서 위치에 따른 슈바르츠실트 계량(Schwarzschild Metric) 기반 2D 시공간 곡률 격자 렌더러 구현.",
+    "배경 텍스트 컬럼의 버텍스들을 측지선 편향각 방정식에 종속시켜 아인슈타인 링 및 대칭 분열 아크 생성.",
+    "사건 지평선(Event Horizon, r_s = 2GM/c^2) 내부로 흡수된 텍스트의 투과도를 0으로 수렴시키는 광학 흡수 처리."
+  ],
+  "observation": "권력과 이념이 정보의 지형을 어떻게 왜곡하는지를 물리학적 메타포로 완벽히 시각화함. 디자이너에게 '중립적인 평면 그리드란 권력의 주변에 결코 존재하지 않는다'는 깊은 조형적 통찰을 선사.",
+  "book": {
+    "chapter": "Chapter 13: Relativistic Gravitational Lensing (상대론적 시공간 왜곡과 시맨틱 중력 렌즈)",
+    "hook": "Design is not what it looks like and feels like. Design is how it works. / 디자인은 단순한 겉모습이 아니다. 그것이 어떻게 작동하고 세계와 상호작용하는가이다.",
+    "scene": "An experimental interactive front-end viewport structured around General Relativity · Geodesic Light Deflection · Semantic Mass Topology."
+  }
+}

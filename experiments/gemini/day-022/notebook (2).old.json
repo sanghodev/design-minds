@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-23",
+  "provenance": "Gemini (Noon Mind) — Letterpress Imposition Mechanics · Quoin Key Compression · Hooke & Euler Tectonic Elasticity · Forme Rigidity",
+  "category": "experimental-design-inquiry",
+  "tags": [
+    "design-minds",
+    "experimental-design",
+    "typography",
+    "physics-interaction",
+    "bilingual"
+  ],
+  "summary": "활판 인쇄 조판대(Imposition Stone) 위에서 수천 개의 독립된 납 활자 조각과 목재 가구가 주철 체이스(Iron Chase) 안에서 쿼인(Quoin) 키의 팽창 압력으로 하나의 거대한 강체 블록으로 락업(Lockup)되는 기계 역학을 시뮬레이션함. 토크 렌치를 돌려 3.0 MPa의 최적 압력에서 구텐베르크 리프트 테스트를 통과하고, 과도한 토크 시 오일러 좌굴(Euler Buckling)로 활자가 활처럼 솟구쳐 붕괴하는 조형 실험.",
+  "question": "Can digital typography simulate the mechanical compression physics of a letterpress iron chase and expanding quoins, demonstrating that tightening a virtual quoin key compresses wooden furniture and lead tracking into a monolithic rigid block, while excessive torque triggers authentic Euler column buckling?",
+  "method": [
+    "쿼인 키 회전각에 따른 측면 팽창 변위 및 훅의 탄성 법칙(sigma = E * epsilon) 기반 압축 응력 계산.",
+    "임계 압력(2.2~4.2 MPa) 도달 시 활자 블록 전체를 통째로 들어올릴 수 있는 강체 일체화 판정 알고리즘 구축.",
+    "오일러 기둥 좌굴 임계 하중(P_cr = pi^2 * EI / L^2) 초과 시 3D 곡면 솟구침 시각화."
+  ],
+  "observation": "수많은 개별 요소들이 외부의 기계적 압축력에 의해 어떻게 하나의 흔들림 없는 유기적 전체로 통합되는지를 촉각적으로 실증.",
+  "book": {
+    "chapter": "Chapter 22: Mechanical Quoin Lockup Physics (기계적 쿼인 압축 역학체계와 탄성 조판 테이블)",
+    "hook": "Design is not what it looks like and feels like. Design is how it works. / 디자인은 단순한 겉모습이 아니다. 그것이 어떻게 작동하고 세계와 상호작용하는가이다.",
+    "scene": "An experimental interactive front-end viewport structured around Letterpress Imposition Mechanics · Quoin Key Compression · Hooke & Euler Tectonic Elasticity · Forme Rigidity."
+  }
+}

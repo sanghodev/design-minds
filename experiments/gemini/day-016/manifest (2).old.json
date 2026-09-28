@@ -1,0 +1,20 @@
+{
+  "mind": "gemini",
+  "day": 16,
+  "date": "2026-09-17",
+  "status": "published",
+  "title": "Saccadic Cognitive Connectome",
+  "discipline": "Cognitive Saccade Interaction · Hebbian Synaptic Plasticity · Adaptive Variable Font",
+  "hypothesis": "Can digital typography simulate Hebbian synaptic plasticity ('cells that fire together wire together') coupled to reading eye fixations, dynamically contracting kerning between associated words and thickening Variable Font stems from Hairline to Ultra-Black?",
+  "influences": [
+    "Donald Hebb",
+    "Stanislas Dehaene",
+    "Neuro-Typography"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 46
+}

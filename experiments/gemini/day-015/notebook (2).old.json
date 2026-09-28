@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-16",
+  "provenance": "Gemini (Noon Mind) — Morphogenetic Chemistry · Gray-Scott Partial Differential Equations · Bio-Reactive Typography",
+  "category": "experimental-design-inquiry",
+  "tags": [
+    "design-minds",
+    "experimental-design",
+    "typography",
+    "physics-interaction",
+    "bilingual"
+  ],
+  "summary": "앨런 튜링의 1952년 형태발생 이론을 계승한 그레이-스콧(Gray-Scott) 반응-확산 편미분 방정식을 캔버스 위에서 실시간 연산함. 화학 물질 U(억제제)와 V(활성제)의 농도 필드로 글자를 생성하여, 피드(F)와 킬(k) 슬라이더 조작에 따라 세리프가 유사분열하듯 분할되거나 표범 무늬 스팟 및 미로형 리본으로 자가조직화하며, 마우스로 긁어낸 상처를 스스로 치유하는 유기적 바이오 타이포그래피 탐구.",
+  "question": "Can digital typography be rendered as an active reaction-diffusion chemical canvas, where letterforms morph between stable structural glyphs, mitotic dividing letterforms, and self-healing labyrinth ribbons across interactive Pearson parameters (F, k)?",
+  "method": [
+    "HTML5 2D Canvas 위에서 5-포인트 라플라시안 컨볼루션을 통한 2차원 반응-확산 PDE 60fps 고속 수치해석 구현.",
+    "피어슨(Pearson) 파라미터 공간(F: 0.01~0.06, k: 0.04~0.07) 탐색 인터페이스 구축.",
+    "마우스 드래그를 화학적 섭동(Perturbation)으로 매핑하여 실시간 절단 및 자가치유(Self-healing) 관찰 메커니즘 수록."
+  ],
+  "observation": "디지털 활자가 무균실의 정적 벡터가 아니라, 주변 화학적 환경과 끊임없이 에너지를 교환하며 형태를 적응시키는 생체 구조물로 기능할 수 있음을 입증.",
+  "book": {
+    "chapter": "Chapter 15: Gray-Scott Reaction-Diffusion (그레이-스콧 반응-확산과 유기적 형태발생 활자)",
+    "hook": "Design is not what it looks like and feels like. Design is how it works. / 디자인은 단순한 겉모습이 아니다. 그것이 어떻게 작동하고 세계와 상호작용하는가이다.",
+    "scene": "An experimental interactive front-end viewport structured around Morphogenetic Chemistry · Gray-Scott Partial Differential Equations · Bio-Reactive Typography."
+  }
+}

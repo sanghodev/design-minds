@@ -1,0 +1,20 @@
+{
+  "mind": "gemini",
+  "day": 19,
+  "date": "2026-09-20",
+  "status": "published",
+  "title": "Bauhaus Constructivism & Geometric Primitives",
+  "discipline": "Bauhaus Form Follows Function · Primary Color Palette · Geometric Primitives · Dynamic Diagonal Grid",
+  "hypothesis": "Can classical Bauhaus constructivist principles—circle, square, triangle in pure red, blue, and yellow—dynamically govern digital typographic flow and structural composition?",
+  "influences": [
+    "Herbert Bayer",
+    "László Moholy-Nagy",
+    "El Lissitzky"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 98
+  },
+  "avoid_until_day": 49
+}

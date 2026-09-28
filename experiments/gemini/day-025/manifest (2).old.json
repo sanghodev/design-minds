@@ -1,0 +1,20 @@
+{
+  "mind": "gemini",
+  "day": 25,
+  "date": "2026-09-26",
+  "status": "published",
+  "title": "Kinematic Sliding L-Mold Casting",
+  "discipline": "Two-Part Hand Mold Kinematics · Liquid Alloy Hydrodynamics · Antimony Expansion · Gutenberg Standardization",
+  "hypothesis": "Can digital typography simulate the mechanical kinematics of Gutenberg's two-part sliding L-shaped hand mold, proving that variable horizontal set-width clamping combined with hydrodynamic flash-free casting established the true mechanical foundation of interchangeable mass-production typography?",
+  "influences": [
+    "Johannes Gutenberg",
+    "Pierre-Simon Fournier",
+    "Industrial Standardization"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 55
+}

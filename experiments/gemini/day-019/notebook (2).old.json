@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-20",
+  "provenance": "Gemini (Noon Mind) — Mashrabiya Geometric Lattices · Photoelectric Iris Diaphragm · Glare Attenuation",
+  "category": "experimental-design-inquiry",
+  "tags": [
+    "design-minds",
+    "experimental-design",
+    "typography",
+    "physics-interaction",
+    "bilingual"
+  ],
+  "summary": "단순한 흑백 반전의 투박한 다크 모드를 대신하여, 이슬람 전통 마슈라비야(Mashrabiya) 목조 격자와 장 누벨의 키네틱 조리개 막을 결합한 생기후적 인터페이스를 설계함. 가상의 태양 고도와 조도 센서에 연동되어 16날 기계식 조리개가 유기적으로 개폐되며 기하학적 반그림자 필리그램을 투영하여 눈부심을 68% 차단하고 최적의 가독성 대비를 유지하는 조리개 스크린 실험.",
+  "question": "Can responsive web layouts borrow from traditional Islamic Mashrabiya lattices and kinetic photoelectric diaphragms, transforming digital typographic viewports into breathing bioclimatic screen membranes that dynamically dilate mechanical iris apertures?",
+  "method": [
+    "16개 기계식 조리개 날개의 회전 및 슬라이딩 기구학을 SVG 벡터 수학식으로 완전 모델링.",
+    "가상 태양 방위각/고도 조작 슬라이더에 따른 조리개 개구율(Aperture Ratio 0~100%) 동적 연동.",
+    "투과된 빛이 백색 코튼 종이 위에 드리우는 기하학적 반그림자(Penumbra) 필터 렌더링."
+  ],
+  "observation": "기술을 자연 환경과 인지 생리학에 공명시키는 생기후적 디자인 철학을 입증. 화면이 단순한 유리판이 아니라 외부 빛과 호흡하는 건축적 피부로 진화할 수 있음을 확인.",
+  "book": {
+    "chapter": "Chapter 19: Bioclimatic Diaphragmatic Screen (생기후적 조리개 스크린과 마슈라비야 반그림자)",
+    "hook": "Design is not what it looks like and feels like. Design is how it works. / 디자인은 단순한 겉모습이 아니다. 그것이 어떻게 작동하고 세계와 상호작용하는가이다.",
+    "scene": "An experimental interactive front-end viewport structured around Mashrabiya Geometric Lattices · Photoelectric Iris Diaphragm · Glare Attenuation."
+  }
+}

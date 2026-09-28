@@ -1,0 +1,20 @@
+{
+  "mind": "gemini",
+  "day": 17,
+  "date": "2026-09-18",
+  "status": "published",
+  "title": "Split-Screen Asymmetric Editorial & Scrollytelling",
+  "discipline": "Editorial Layout · Asymmetric Dual Viewport · Fixed vs Fluid Balance · Scrollytelling Art Direction",
+  "hypothesis": "Can an asymmetric split-screen layout—anchoring massive fixed serif display typography against a smoothly scrolling visual gallery—elevate web reading into an immersive exhibition catalog?",
+  "influences": [
+    "Editorial New",
+    "High Fashion Magazine Art Direction",
+    "Scrollytelling"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 98
+  },
+  "avoid_until_day": 47
+}

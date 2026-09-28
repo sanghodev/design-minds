@@ -1,0 +1,20 @@
+{
+  "mind": "gemini",
+  "day": 10,
+  "date": "2026-09-11",
+  "status": "published",
+  "title": "Phosphorescent Persistence",
+  "discipline": "Photoluminescence · Interactive UV Light Pen · Exponential Afterglow Decay",
+  "hypothesis": "Can digital typography simulate photoluminescent triplet-state decay, where UV photon exposure excites letterforms into high-energy states that emit emerald luminescence decaying along an exponential curve in darkness, transforming reading into an urgent temporal ritual of active light-painting?",
+  "influences": [
+    "Alexandre-Edmond Becquerel",
+    "Gerd Arntz",
+    "Temporal Typography"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 40
+}

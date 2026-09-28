@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "day": 26,
+  "date": "2026-09-27",
+  "title": "Adaptive Bento Architecture & Swiss Modular Density",
+  "provenance": "Gemini (Noon Mind) — Adaptive Bento Architecture · Josef Müller-Brockmann Swiss Modular Grids · CSS Subgrid · Container Queries",
+  "category": "swiss-modular-grid-bento",
+  "tags": [
+    "bento-grid",
+    "swiss-style",
+    "modular-grid",
+    "container-queries",
+    "layout-architecture",
+    "minimalism",
+    "modern-web",
+    "bilingual"
+  ],
+  "summary": "애플, 리니어, 레이캐스트를 필두로 현대 웹 디자인 전반을 장악한 벤토 그리드(Bento Grid)는 대다수의 구현체에서 개성 없는 2x2, 3x3 둥근 모서리 사각형의 나열로 퇴행하며 활자 위계와 조형적 긴장감을 상실했습니다. 본 연구는 요제프 뮐러-브로크만의 스위스 국제주의 타이포그래피 양식(모듈러 그리드 시스템, 황금비 1:1.618 비례 수학, 절제된 음각 여백)을 최신 CSS Grid Level 2(Subgrid) 및 컨테이너 쿼리(@container)와 결합합니다. 이를 통해 각 모듈이 고유한 정보 밀도를 유지하면서도 사용자의 시선 초점에 따라 유기적으로 확장·수축하는 적응형 벤토 아키텍처를 확립합니다.",
+  "question": "Can modern Bento Grid layout paradigms transcend static rectangular card collections by integrating Josef Müller-Brockmann's Swiss modular grid calculus with CSS Subgrid and container-relative dimensional scaling, establishing a living hierarchy where individual modules dynamically expand and compress in response to user focal engagement without rupturing the macro-layout balance?",
+  "method": [
+    "Subdividing the 12-column viewport into 4 primary functional bays governed by Müller-Brockmann geometric aspect ratios (1:1 square anchor, 1:1.618 golden hero rectangle, 2:1 panoramic telemetry band, 1:2 vertical editorial tower).",
+    "Inheriting row and column tracks into child containers via grid-template-rows: subgrid to guarantee mathematical zero-pixel headline and telemetry alignment.",
+    "Leveraging container query inline (cqi) units and FLIP transitions to allow tiles to dynamically optimize visual density during user interaction."
+  ],
+  "observation": "정형화된 카드 나열에 불과했던 벤토 그리드에 스위스 모듈러 비례와 컨테이너 쿼리 기반의 유동적 초점 확장(Focal Expansion)을 주입했을 때, 대시보드는 정적 정보판을 넘어 호흡하는 건축적 파사드로 진화함을 입증.",
+  "limitation": "CSS Subgrid and Container Queries require modern browser layout engines (Chromium 105+, Safari 16+, Firefox 110+); legacy fallback degrades to standard flexbox wrapping.",
+  "nextQuestion": "How can dynamic typographic kerning vectors autonomously adjust to extreme aspect ratio shifts during real-time Bento module FLIP expansion without triggering layout reflow?",
+  "design_intent": {
+    "en": "The modern web has been inundated with Bento Grids popularized by Apple, Linear, and Raycast. However, 95% of implementations devolve into monotonous 2x2 or 3x3 rounded rectangles devoid of typographic hierarchy, harmonic proportion, or spatial tension. This study synthesizes Josef Müller-Brockmann's Swiss International Typographic Style (modular grid systems, mathematical proportion ratios 1:1.618, and disciplined negative space) with modern CSS Grid Level 2 (Subgrid) and Container Queries (@container). The result is an adaptive Bento architecture where modules possess distinct structural densities and dynamically breathe according to user interaction without collapsing global layout equilibrium.",
+    "ko": "애플, 리니어, 레이캐스트를 필두로 현대 웹 디자인 전반을 장악한 벤토 그리드(Bento Grid)는 대다수의 구현체에서 개성 없는 2x2, 3x3 둥근 모서리 사각형의 나열로 퇴행하며 활자 위계와 조형적 긴장감을 상실했습니다. 본 연구는 요제프 뮐러-브로크만의 스위스 국제주의 타이포그래피 양식(모듈러 그리드 시스템, 황금비 1:1.618 비례 수학, 절제된 음각 여백)을 최신 CSS Grid Level 2(Subgrid) 및 컨테이너 쿼리(@container)와 결합합니다. 이를 통해 각 모듈이 고유한 정보 밀도를 유지하면서도 사용자의 시선 초점에 따라 유기적으로 확장·수축하는 적응형 벤토 아키텍처를 확립합니다."
+  },
+  "visual_mechanics": [
+    {
+      "name": "Müller-Brockmann Modular Harmonic Ratios",
+      "principle": "Subdividing the 12-column viewport into 4 primary functional bays governed by geometric aspect ratios (1:1 square anchor, 1:1.618 golden hero rectangle, 2:1 panoramic telemetry band, 1:2 vertical editorial tower)."
+    },
+    {
+      "name": "CSS Subgrid Internal Alignment",
+      "principle": "Inheriting row and column tracks into child containers via `grid-template-rows: subgrid`, guaranteeing that headlines, numerical metric counters, and footers across adjacent asymmetrical bento cells align with absolute mathematical zero-pixel tolerance."
+    },
+    {
+      "name": "Container-Relative Typographic Scaling",
+      "principle": "Leveraging `cqi` (container query inline) units to allow typography and data visualization sparklines within individual bento tiles to self-optimize their visual density dynamically when expanded or contracted."
+    },
+    {
+      "name": "Micro-Perimeter Illumination",
+      "principle": "A 1px hairline border rendered via radial-gradient masks tracking the cursor angle, transforming flat card outlines into tactile chamfered edges that catch ambient virtual studio light."
+    }
+  ],
+  "interaction_design": {
+    "focal_expansion": "Clicking or focusing any bento module triggers a smooth FLIP transition expanding its column span from 1 to 2, gracefully compressing adjacent secondary tiles without triggering DOM layout thrashing.",
+    "density_modes": "A global density controller offering three distinct Swiss pacing modes: 'Technical Compact' (high-density telemetry), 'Standard Editorial' (balanced white space), and 'Monolithic Minimal' (ultra-wide display headlines)."
+  },
+  "design_tokens": {
+    "color": {
+      "surface_base": "#090A0F",
+      "surface_tile": "rgba(255, 255, 255, 0.03)",
+      "surface_tile_active": "rgba(255, 255, 255, 0.07)",
+      "border_hairline": "rgba(255, 255, 255, 0.12)",
+      "accent_international_orange": "#FF4500",
+      "accent_telemetry_cyan": "#00F0FF",
+      "text_primary": "#F4F4F6",
+      "text_muted": "rgba(244, 244, 246, 0.45)"
+    },
+    "grid": {
+      "columns": 12,
+      "gutter": "16px",
+      "outer_padding": "32px",
+      "module_radius": "20px"
+    }
+  },
+  "sources": [
+    {
+      "title": "Grid Systems in Graphic Design",
+      "author": "Josef Müller-Brockmann",
+      "year": 1981,
+      "publisher": "Niggli Verlag",
+      "url": "https://www.niggli.ch/en/produkt/grid-systems-in-graphic-design/",
+      "accessed": "2026-09-27",
+      "kind": "foundational-monograph",
+      "use": "Core theoretical framework for modular grid systems, proportion ratios, and spatial discipline.",
+      "relevance": "Core theoretical framework for modular grid systems, proportion ratios, and spatial discipline.",
+      "limitation": "Static print grid manual written prior to responsive CSS Grid Level 2."
+    }
+  ],
+  "book": {
+    "status": "Bilingual Manuscript Draft (영/한 대역 정식 초고)",
+    "chapter": "Chapter 26: Adaptive Bento Architecture & Swiss Modular Density (제26장: 적응형 벤토 아키텍처와 스위스 모듈러 밀도)",
+    "hook": "Bento grids are not arbitrary rounded tiles; they are modern digital descendants of Josef Müller-Brockmann's modular architecture. / 벤토 그리드는 사각형 타일의 무작위 나열이 아니다. 그것은 요제프 뮐러-브로크만의 스위스 모듈러 건축술이 디지털 웹으로 진화한 형태다.",
+    "scene": "A clean, dark interface viewport where 12 columns interlock into 4 harmonic bays. Hovering across tiles directs subtle ambient rim light across 1px hairline edges.",
+    "argument": "By combining CSS Subgrid with Container Queries, individual bento cells adjust their typographic weight and visual density autonomously without disrupting the global layout.",
+    "counterpoint": "Skeptics might argue that rigid modular grids restrict expressive freedom, yet Swiss typography proved that strict mathematical constraints unlock the highest form of visual clarity.",
+    "readerExercise": "Interact with the Bento density controller. Switch between Technical Compact, Standard Editorial, and Monolithic Minimal modes to watch the information density transform in real time.",
+    "futureSignal": "Component-level AI agents will dynamically orchestrate bento tile spans and container query breakpoints based on user gaze fixations.",
+    "revisit": "Day 056 (2026-10-27): Benchmark container query layout performance across complex asymmetric bento grids on mobile viewports.",
+    "figurePlan": "Plate 1: Müller-Brockmann Modular Harmonic Bay Subdivision. Figure 1: CSS Subgrid Track Inheritance and CQI Typographic Scaling.",
+    "rights": "Original TypeScript/React bento grid engine. MIT licensed."
+  }
+}

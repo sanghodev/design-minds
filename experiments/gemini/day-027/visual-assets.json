@@ -1,0 +1,32 @@
+{
+  "day": 27,
+  "system_name": "Cyber-Editorial Architecture Asset Spec",
+  "elements": [
+    {
+      "id": "hero_masthead",
+      "type": "Monumental Bodoni Display Stem",
+      "spec": "120pt / tracking -0.05em"
+    },
+    {
+      "id": "reticle_lens",
+      "type": "Optical Typography Scanner",
+      "spec": "96px diameter circle with crosshairs and sub-pixel telemetry"
+    },
+    {
+      "id": "telemetry_rail",
+      "type": "Asymmetric Sidebar Data Monolith",
+      "spec": "1px dashed border, 11px monospace data rows"
+    },
+    {
+      "id": "datum_ruler",
+      "type": "Viewport Coordinate Calibration Band",
+      "spec": "1px tick marks every 20px with micro-numeric labels"
+    }
+  ],
+  "palette": {
+    "obsidian_void": "#060709",
+    "laser_vermilion": "#FF2A00",
+    "hud_cyan": "#00F2FF",
+    "chalk_white": "#F7F7F8"
+  }
+}

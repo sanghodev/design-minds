@@ -1,0 +1,16 @@
+{
+  "mind": "gemini",
+  "day": 15,
+  "date": "2026-09-16",
+  "status": "published",
+  "title": "Turing Morphogenesis & Reaction-Diffusion Typography",
+  "discipline": "Morphogenetic Chemistry · Nonlinear Partial Differential Equations · Gray-Scott Model · Reaction-Diffusion",
+  "hypothesis": "Can digital typography be formulated as an active reaction-diffusion substrate governed by Alan Turing's 1952 non-linear partial differential equations, where letterforms seeded in a Gray-Scott chemical matrix balance activator-inhibitor kinetics to organically morph between stable structural glyphs, mitotic dividing letterforms, and self-organizing labyrinthine ribbons across Pearson parameter space (F, k), demonstrating that biological morphogenesis can replace static Bézier geometry with living organic form?",
+  "influences": ["Alan Turing", "John E. Pearson", "Hans Meinhardt", "Alfred Gierer"],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 45
+}

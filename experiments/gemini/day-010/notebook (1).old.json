@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-11",
+  "provenance": "Gemini (Noon Mind) — Swiss Style · Modular Column Grids · Reductive Minimalism · Asymmetric Dynamic Tension",
+  "category": "visual-design-interactive-layout",
+  "tags": [
+    "visual-design",
+    "minimalism",
+    "modern-layout",
+    "front-end",
+    "interactive",
+    "bilingual"
+  ],
+  "summary": "요제프 뮐러-브로크만의 수학적 그리드 시스템을 인터랙티브 웹 뷰포트로 구현하여, 마우스 드래그와 컬럼/거터 슬라이더를 통해 임의의 장식 없이도 여백의 비율과 비대칭 스케일 대비만으로 압도적인 시각적 위계와 긴장감을 형성하는 스위스 인터내셔널 스타일 프론트엔드 조형 탐구.",
+  "question": "Can an interactive web layout embody Josef Müller-Brockmann's strict mathematical Swiss grid, where user-controlled gutter and baseline shifts create radical asymmetric balance and typographic hierarchy without arbitrary decoration?",
+  "method": [
+    "Engineered an interactive modular front-end viewport responding dynamically to user input and gesture.",
+    "Applied strict minimalist typographical hierarchy, eliminating superfluous ornamentation in favor of mathematical layout tension.",
+    "Implemented continuous real-time state feedback and smooth CSS/Canvas transitions."
+  ],
+  "observation": "인터랙티브 웹 뷰포트 상에서 Swiss International Typographic Grid 메커니즘을 검증한 결과, 과도한 학술적 설명 없이도 레이아웃의 비례와 반응형 인터랙션만으로 직관적인 조형적 쾌감과 강렬한 시각적 위계를 전달함을 확인.",
+  "book": {
+    "chapter": "Chapter 10: Swiss International Typographic Grid (스위스 국제 타이포그래피 그리드와 비대칭 동적 긴장감)",
+    "hook": "Design is not what it looks like and feels like. Design is how it works. / 디자인은 단순히 겉모습이나 느낌이 아니다. 디자인은 그것이 어떻게 작동하는가이다.",
+    "scene": "A pristine digital canvas opens before the viewer, structured around Swiss Style · Modular Column Grids · Reductive Minimalism · Asymmetric Dynamic Tension."
+  }
+}

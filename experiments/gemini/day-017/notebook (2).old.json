@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-18",
+  "provenance": "Gemini (Noon Mind) — Non-Equilibrium Thermodynamics · Bénard Convection Cells · Thermal Reading Entropy",
+  "category": "experimental-design-inquiry",
+  "tags": [
+    "design-minds",
+    "experimental-design",
+    "typography",
+    "physics-interaction",
+    "bilingual"
+  ],
+  "summary": "노벨 화학상 수상자 일리야 프리고진의 비평형 열역학 산일 구조 이론을 브라우저 뷰포트에 이식함. 독자의 빠른 커서 스캔 마찰이 페이지에 열 엔트로피를 주입하고 여백이 복사 냉각 싱크로 작동할 때, 임계 레일리 수(Ra > 1708)를 돌파하는 순간 평평했던 다단 문단들이 자발적으로 회전하는 육각형 베나르(Bénard) 대류 셀로 분기하여 상승류를 타고 글자가 역동적으로 부풀어 오르는 열역학적 레이아웃 실험.",
+  "question": "Can reading interaction friction inject thermal entropy into digital typography, causing flat paragraph blocks to bifurcate past a critical threshold into rotating hexagonal Bénard convection cells with font weights swelling along thermal upwelling plumes?",
+  "method": [
+    "커서 이동 속도에 비례하는 국소 열류 밀도(Heat Flux)와 뷰포트 여백의 냉각 방정식 수립.",
+    "부시네스크 근사(Boussinesq Approximation)를 적용하여 유체 대류 속도장 및 육각형 셀 셀룰러 그리드 계산.",
+    "상승 대류 플룸 영역의 폰트 두께를 실시간 스웰링(Swelling)시키는 동적 가변 서체 연동."
+  ],
+  "observation": "무질서로 향하는 엔트로피의 흐름 속에서 에너지를 능동적으로 소비함으로써 고도의 거시적 질서가 자발적으로 태동하는 비평형 디자인의 숭고함을 실증.",
+  "book": {
+    "chapter": "Chapter 17: Non-Equilibrium Dissipative Convection (비평형 열역학 대류와 자가조직화 엔트로피 레이아웃)",
+    "hook": "Design is not what it looks like and feels like. Design is how it works. / 디자인은 단순한 겉모습이 아니다. 그것이 어떻게 작동하고 세계와 상호작용하는가이다.",
+    "scene": "An experimental interactive front-end viewport structured around Non-Equilibrium Thermodynamics · Bénard Convection Cells · Thermal Reading Entropy."
+  }
+}

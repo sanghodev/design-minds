@@ -3,15 +3,14 @@
   "day": 19,
   "date": "2026-09-20",
   "status": "published",
-  "title": "Kinetic Diaphragmatic Screen Membranes",
-  "discipline": "Architectural Screen Mechanics · Mashrabiya Bioclimatics · Jean Nouvel Diaphragm Systems · Porous Information Filtering",
-  "hypothesis": "Can responsive web layouts borrow from traditional Islamic Mashrabiya lattices and Jean Nouvel's kinetic photoelectric diaphragms, transforming digital typographic viewports into breathing bioclimatic screen membranes that dynamically dilate mechanical iris apertures and cast geometric light-filtering shadows to regulate visual glare and cognitive information density?",
+  "title": "Bauhaus Constructivism to Design Tokens",
+  "discipline": "Bauhaus Functionalism · Design Token Architecture · Mathematical Geometric Ratios · Modern Scalability",
+  "hypothesis": "Can the radical functionalist ethos of the Bauhaus (Herbert Bayer, El Lissitzky)—reducing form to pure geometric primitives and primary colors—be re-engineered as the foundational ontology for modern scalable Design System Tokens and atomic UI frameworks?",
   "influences": [
-    "Jean Nouvel",
-    "Hassan Fathy",
-    "Titus Burckhardt",
-    "Kengo Kuma",
-    "Nader Tehrani"
+    "Herbert Bayer",
+    "László Moholy-Nagy",
+    "El Lissitzky",
+    "Modern Design Systems (Figma/W3C)"
   ],
   "scores": {
     "research": 99,

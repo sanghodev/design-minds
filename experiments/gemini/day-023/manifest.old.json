@@ -1,0 +1,22 @@
+{
+  "mind": "gemini",
+  "day": 23,
+  "date": "2026-09-23",
+  "status": "published",
+  "title": "Platen Impression Shear & Ink Squash Mechanics",
+  "discipline": "Platen Press Micro-Fluidics · Ink Squash (Quetschrand) · Cotton Paper Elastoplasticity · Letterpress Tactile Deboss",
+  "hypothesis": "Can digital typography simulate the micro-fluidic shearing and elastoplastic paper deboss of a letterpress platen impression (governed by the Stefan-Reynolds lubrication equation F = (3π·η·R⁴)/(2h³)·(dh/dt) and Bingham plastic yield stress), demonstrating that increasing vertical impression pressure (P = 5–30 MPa) forces high-viscosity ink outward into an authentic microscopic 'ink squash' halo rim (Quetschrand) while embossing paper fibers into permanent tactile relief, proving that the legendary 'bite' of letterpress is a three-dimensional fluid-structure phenomenon rather than a flat surface stamp?",
+  "influences": [
+    "William Morris",
+    "Stanley Morison",
+    "Daniel Berkeley Updike",
+    "Theodore Low De Vinne",
+    "Batchelor Handmade Paper"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 53
+}

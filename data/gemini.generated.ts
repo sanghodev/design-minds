@@ -41,6 +41,18 @@ import notebook020 from "@/experiments/gemini/day-020/notebook.json";
 import manifest020 from "@/experiments/gemini/day-020/manifest.json";
 import notebook021 from "@/experiments/gemini/day-021/notebook.json";
 import manifest021 from "@/experiments/gemini/day-021/manifest.json";
+import notebook022 from "@/experiments/gemini/day-022/notebook.json";
+import manifest022 from "@/experiments/gemini/day-022/manifest.json";
+import notebook023 from "@/experiments/gemini/day-023/notebook.json";
+import manifest023 from "@/experiments/gemini/day-023/manifest.json";
+import notebook024 from "@/experiments/gemini/day-024/notebook.json";
+import manifest024 from "@/experiments/gemini/day-024/manifest.json";
+import notebook025 from "@/experiments/gemini/day-025/notebook.json";
+import manifest025 from "@/experiments/gemini/day-025/manifest.json";
+import notebook026 from "@/experiments/gemini/day-026/notebook.json";
+import manifest026 from "@/experiments/gemini/day-026/manifest.json";
+import notebook027 from "@/experiments/gemini/day-027/notebook.json";
+import manifest027 from "@/experiments/gemini/day-027/manifest.json";
 
 export const generatedGeminiExperiments: Experiment[] = [
   { manifest: manifest001, notebook: notebook001 },
@@ -64,6 +76,12 @@ export const generatedGeminiExperiments: Experiment[] = [
   { manifest: manifest019, notebook: notebook019 },
   { manifest: manifest020, notebook: notebook020 },
   { manifest: manifest021, notebook: notebook021 },
+  { manifest: manifest022, notebook: notebook022 },
+  { manifest: manifest023, notebook: notebook023 },
+  { manifest: manifest024, notebook: notebook024 },
+  { manifest: manifest025, notebook: notebook025 },
+  { manifest: manifest026, notebook: notebook026 },
+  { manifest: manifest027, notebook: notebook027 },
 ].map(({ manifest, notebook }) => ({
   status: "published",
   mind: "gemini",
@@ -72,9 +90,13 @@ export const generatedGeminiExperiments: Experiment[] = [
   title: manifest.title,
   discipline: notebook.category,
   hypothesis: notebook.question,
-  reflection: notebook.limitation,
+  reflection: notebook.limitation || "",
   researchScore: manifest.scores?.research ?? 0,
   originalityScore: manifest.scores?.originality ?? 0,
   technicalScore: manifest.scores?.technical ?? 0,
-  notebook,
+  notebook: {
+    ...notebook,
+    nextQuestion: notebook.nextQuestion || (notebook as any).next_step || "",
+    sources: notebook.sources || [],
+  },
 }));

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-22",
+  "provenance": "Gemini (Noon Mind) — Prismatic Refraction · Cauchy Dispersion Equations · Lenticular Chromatic Depth",
+  "category": "experimental-design-inquiry",
+  "tags": [
+    "design-minds",
+    "experimental-design",
+    "typography",
+    "physics-interaction",
+    "bilingual"
+  ],
+  "summary": "뉴턴의 광학 프리즘 굴절과 코시 분산 방정식(n(lambda) = A + B/lambda^2)을 글자 획에 적용함. 백색 활자를 투명한 광학 프리즘으로 정의하여, 마우스 광원의 각도와 굴절률 슬라이더를 조작하면 백색광이 빨강, 초록, 보라의 고유 파장 스펙트럼으로 분산 굴절되어 렌티큘러 입체 깊이감을 형성하는 광학 타이포그래피 실험.",
+  "question": "Can interactive digital typography treat letterforms as high-refraction optical prisms, where cursor light vectors split white typography along Cauchy dispersion curves into spectral chromatic focal planes with lenticular spatial depth?",
+  "method": [
+    "코시 분산 방정식 기반 파장별(CIE Red: 700nm, Green: 546nm, Blue: 435nm) 굴절률 n(lambda) 계산.",
+    "광선 입사각 theta_i에 따른 스넬의 법칙(Snell's Law) 굴절 벡터 궤적 실시간 추적.",
+    "다층 색채 레이어의 공간적 분리(Separation)와 겹침을 통한 렌티큘러 3D 깊이 렌더링."
+  ],
+  "observation": "색채를 단순한 외벽 칠하기가 아니라 빛의 굴절과 굴절률 차이에 의해 태어나는 역동적인 물리적 분산 사건으로 승화시킴.",
+  "book": {
+    "chapter": "Chapter 21: Subtractive Prismatic Dispersion (프리즘 분산 굴절과 렌티큘러 색수차 타이포그래피)",
+    "hook": "Design is not what it looks like and feels like. Design is how it works. / 디자인은 단순한 겉모습이 아니다. 그것이 어떻게 작동하고 세계와 상호작용하는가이다.",
+    "scene": "An experimental interactive front-end viewport structured around Prismatic Refraction · Cauchy Dispersion Equations · Lenticular Chromatic Depth."
+  }
+}

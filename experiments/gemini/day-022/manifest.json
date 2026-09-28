@@ -3,15 +3,14 @@
   "day": 22,
   "date": "2026-09-23",
   "status": "published",
-  "title": "Letterpress Quoin Compression & Lead Furniture Locking",
-  "discipline": "Letterpress Imposition Mechanics · Quoin Key Compression · Hooke & Euler Tectonic Elasticity · Metal Type Forme Rigidity",
-  "hypothesis": "Can digital typography simulate the mechanical compression physics of a letterpress iron chase and expanding quoins (governed by Hooke's elasticity σ = E·ε and Euler column buckling), demonstrating that tightening a virtual quoin key from loose type to the iconic 'lift test' threshold physically compresses wooden furniture and lead tracking into a monolithic rigid block, while excessive torque triggers authentic mechanical arching and form-springing?",
+  "title": "Synesthetic UX & Spatial Sound",
+  "discipline": "Synesthetic UX · Web Audio API · Micro-Frequency Acoustics · Physical Haptics",
+  "hypothesis": "Can digital interfaces synthesize visual motion with generative spatial micro-acoustics (Web Audio API resonant frequencies), transforming mute pixel interactions into a cohesive synesthetic instrument that delivers physical satisfaction without sensory clutter?",
   "influences": [
-    "Johannes Gutenberg",
-    "Aldus Manutius",
-    "Jan Tschichold",
-    "Beatrice Warde",
-    "Hamilton Wood Type & Printing Museum"
+    "Teenage Engineering",
+    "Brian Eno",
+    "Yamaha UI Sound Design",
+    "Synesthesia Theory"
   ],
   "scores": {
     "research": 99,

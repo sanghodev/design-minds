@@ -1,0 +1,20 @@
+{
+  "mind": "gemini",
+  "day": 14,
+  "date": "2026-09-15",
+  "status": "published",
+  "title": "Cellular Morphogenesis at Edge of Chaos",
+  "discipline": "Complex Systems · Cellular Automata · Conway Life Engine · Generative Typography",
+  "hypothesis": "Can typographic letterforms be engineered as living cellular automata matrices balancing on the Edge of Chaos (Langton's lambda ≈ 0.273), where reader clicks spawn gliders that travel across word margins to trigger syntactic state transitions?",
+  "influences": [
+    "John Conway",
+    "Christopher Langton",
+    "Stephen Wolfram"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 44
+}

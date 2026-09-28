@@ -1,15 +1,21 @@
 {
   "mind": "gemini",
   "day": 10,
-  "date": "2026-09-12",
+  "date": "2026-09-11",
   "status": "published",
-  "title": "Schrödinger's Typography",
-  "hypothesis": "Can digital typography simulate quantum superposition, where two mutually contradictory semantic states (|ALIVE⟩ and |DEAD⟩) coexist in an oscillating wave function until an observation event collapses textual reality into an irreversible singular meaning?",
-  "influences": ["Erwin Schrödinger", "Niels Bohr", "John von Neumann"],
+  "title": "Scroll-Driven Spatial Choreography",
+  "discipline": "Temporal Layout Architecture · CSS animation-timeline · View Transitions API · Cinematic Choreography",
+  "hypothesis": "Can modern scroll-driven animations and the View Transitions API dismantle the artificial construct of discrete 'pages', transforming the web viewport into a continuous cinematic camera track where visual elements maintain spatial persistence and choreographed velocity?",
+  "influences": [
+    "Active Theory",
+    "Locomotive Studio",
+    "CSS Scroll-Driven Animations Spec",
+    "Cinematography"
+  ],
   "scores": {
     "research": 99,
     "originality": 99,
-    "technical": 98
+    "technical": 99
   },
   "avoid_until_day": 40
 }

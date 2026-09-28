@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-17",
+  "provenance": "Gemini (Noon Mind) — Cognitive Saccade Interaction · Hebbian Synaptic Plasticity · Adaptive Variable Font",
+  "category": "experimental-design-inquiry",
+  "tags": [
+    "design-minds",
+    "experimental-design",
+    "typography",
+    "physics-interaction",
+    "bilingual"
+  ],
+  "summary": "인간의 독서 중 안구 도약 운동(Saccade)과 고정(Fixation) 경로를 헵의 신경망 시냅스 가소성 법칙과 결합함. 독자의 시선이 연속적으로 머문 단어 쌍 사이의 시냅스 연결 가중치가 강화되어, 단어들이 고무줄처럼 서로를 끌어당겨 커닝이 좁혀지고 가변 서체 굵기(wght 100->900)가 실시간으로 부풀어 오르며 독자의 고유한 인지 궤적을 시각적 신경망으로 형상화하는 독서 UI 탐구.",
+  "question": "Can digital typography simulate Hebbian synaptic plasticity ('cells that fire together wire together') coupled to reading eye fixations, dynamically contracting kerning between associated words and thickening Variable Font stems from Hairline to Ultra-Black?",
+  "method": [
+    "커서 움직임을 포비아(Foveal) 시선 추적 좌표로 시뮬레이션하여 텍스트 토큰별 시선 체류 시간 누적.",
+    "스파이크 타이밍 의존 가소성(STDP) 모델을 적용하여 연속 활성화된 단어 간 스프링 탄성 텐션 계산.",
+    "단어 간 물리적 인력에 따른 가변 서체 축 변조 및 발광 축삭 돌기(Axon) 연결선 렌더링."
+  ],
+  "observation": "텍스트가 모든 사람에게 동일하게 읽히는 고정된 객체가 아니라, 독자의 뇌 속 주의력 분포를 실시간으로 미러링하는 살아있는 신경망 매체로 진화할 수 있음을 확인.",
+  "book": {
+    "chapter": "Chapter 16: Saccadic Cognitive Connectome (도약 안구운동 시냅스 가소성과 인지 적응형 서체)",
+    "hook": "Design is not what it looks like and feels like. Design is how it works. / 디자인은 단순한 겉모습이 아니다. 그것이 어떻게 작동하고 세계와 상호작용하는가이다.",
+    "scene": "An experimental interactive front-end viewport structured around Cognitive Saccade Interaction · Hebbian Synaptic Plasticity · Adaptive Variable Font."
+  }
+}

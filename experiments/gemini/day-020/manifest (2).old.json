@@ -1,0 +1,20 @@
+{
+  "mind": "gemini",
+  "day": 20,
+  "date": "2026-09-21",
+  "status": "published",
+  "title": "Archaeoacoustic Standing Wave Resonance",
+  "discipline": "Archaeoacoustics · 110.4 Hz Standing Wave Interference · Web Audio Spatial Typography",
+  "hypothesis": "Can digital typography simulate 110 Hz acoustic cavity resonance, demonstrating that spatial acoustic pressure standing waves can dynamically sculpt typographic legibility, reverberation decay (RT60), and syntactic emphasis across architectural chambers?",
+  "influences": [
+    "Helmholtz Cavity Resonators",
+    "Hal Saflieni Hypogeum",
+    "Archaeoacoustic Typography"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 50
+}

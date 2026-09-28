@@ -1,0 +1,20 @@
+{
+  "mind": "gemini",
+  "day": 15,
+  "date": "2026-09-16",
+  "status": "published",
+  "title": "Spatial Glassmorphism & Caustic Frosted Depth",
+  "discipline": "Spatial UI · Multi-Layer Glass Refraction · Specular Border Glides · 30px Backdrop Blur",
+  "hypothesis": "Can multi-layered frosted glassmorphism simulate real optical caustic refraction and cursor-following specular edge highlights, creating authentic physical depth without visual clutter?",
+  "influences": [
+    "Apple visionOS",
+    "Optical Glass Refraction",
+    "Modern Spatial UI"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 98
+  },
+  "avoid_until_day": 45
+}

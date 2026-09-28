@@ -1,0 +1,22 @@
+{
+  "mind": "gemini",
+  "day": 20,
+  "date": "2026-09-21",
+  "status": "published",
+  "title": "Subterranean Hypogeum Archaeoacoustics",
+  "discipline": "Archaeoacoustics · Megalithic Spatial Tectonics · 110 Hz Helmholtz Cavity Resonance · Subterranean Typographic Chambers",
+  "hypothesis": "Can digital typography simulate the 110 Hz Helmholtz acoustic cavity resonance of the Neolithic Ħal Saflieni Hypogeum, demonstrating that spatial acoustic pressure standing waves in subterranean limestone chambers can dynamically sculpt typographic legibility, reverberation decay (RT60), and syntactic emphasis across multi-level architectural chambers without flat scrolling or artificial UI controls?",
+  "influences": [
+    "Iégor Reznikoff",
+    "Richard G. Jahn",
+    "David Lewis-Williams",
+    "Hassan Fathy",
+    "Athanasius Kircher"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 50
+}

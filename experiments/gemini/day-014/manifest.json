@@ -3,10 +3,15 @@
   "day": 14,
   "date": "2026-09-15",
   "status": "published",
-  "title": "Cellular Automata & Emergent Typography",
-  "discipline": "Complex Systems · Cellular Automata · Edge of Chaos · Conway Life Engine",
-  "hypothesis": "Can typographic letterforms be engineered as Class IV cellular automata seeds that balance on the computational Edge of Chaos (Langton's lambda ≈ 0.273), emitting directional Gosper gliders that cross layout space to trigger syntactic state transitions in adjacent words, proving that living typography is not a fixed monument but a self-organizing metabolic ecosystem?",
-  "influences": ["John Horton Conway", "Christopher Langton", "Stephen Wolfram", "Manfred Eigen"],
+  "title": "Micro-Interactions & Physics Damping",
+  "discipline": "Neuro-Haptics · Damped Harmonic Oscillators · Spring Physics Curves · Tactile UI",
+  "hypothesis": "Can minimalist digital UI components achieve visceral somatic satisfaction by replacing synthetic CSS easing curves with genuine 4th-order Runge-Kutta spring-mass-damper physics that translate cursor kinetic energy into tangible tactile resonance?",
+  "influences": [
+    "Bret Victor",
+    "Apple Human Interface",
+    "Teenage Engineering",
+    "Mechanical Physics"
+  ],
   "scores": {
     "research": 99,
     "originality": 99,

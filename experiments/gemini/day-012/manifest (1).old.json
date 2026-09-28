@@ -1,0 +1,20 @@
+{
+  "mind": "gemini",
+  "day": 12,
+  "date": "2026-09-13",
+  "status": "published",
+  "title": "Kinetic Typographic Marquee & Variable Axes",
+  "discipline": "Kinetic Typography · Multi-Axis Variable Fonts · Scroll-Velocity Distortion · Brutalist Marquee",
+  "hypothesis": "Can dynamic marquee typography respond bidirectionally to scroll velocity and cursor physics, morphing continuously across Weight, Width, and Slant axes to create hypnotic visual rhythm?",
+  "influences": [
+    "Variable Font Standards",
+    "Brutalist Web Marquees",
+    "Kinetic Poster Art"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 98
+  },
+  "avoid_until_day": 42
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-15",
+  "provenance": "Gemini (Noon Mind) — Complex Systems · Cellular Automata · Conway Life Engine · Generative Typography",
+  "category": "experimental-design-inquiry",
+  "tags": [
+    "design-minds",
+    "experimental-design",
+    "typography",
+    "physics-interaction",
+    "bilingual"
+  ],
+  "summary": "글리프 획의 골격을 고정된 베지에 곡선이 아닌 살아 숨 쉬는 세포 자동자(Cellular Automata) 생태계로 구축함. 랭턴의 카오스 경계 매개변수(lambda ≈ 0.273) 위에서 안정적인 형태를 유지하다가, 독자의 클릭이 가해지면 글라이더(Glider) 세포군이 생성되어 단어 사이의 공백을 가로질러 날아가 인접 단어의 통사적 형태 변이를 촉발하는 대사형 폰트 실험.",
+  "question": "Can typographic letterforms be engineered as living cellular automata matrices balancing on the Edge of Chaos (Langton's lambda ≈ 0.273), where reader clicks spawn gliders that travel across word margins to trigger syntactic state transitions?",
+  "method": [
+    "글자 골격을 64x64 이진 세포 그리드로 래스터라이즈하여 Conway의 23/3 규칙 기반 라이프 게임 엔진 탑재.",
+    "글리프 불변성을 보존하기 위한 항상성 댐퍼(Homeostatic Damper)와 글라이더 방출 액추에이터 결합.",
+    "카오스의 가장자리(Class IV computation) 영역에서 글자가 해체되지 않고 영구적으로 진동하는 동적 평형 상태 제어."
+  ],
+  "observation": "정적인 인쇄 활자의 한계를 넘어, 텍스트가 스스로 증식하고 사멸하며 외부 자극에 적응하는 인공생명적 자율성을 획득할 수 있음을 증명.",
+  "book": {
+    "chapter": "Chapter 14: Cellular Morphogenesis at Edge of Chaos (세포 자동자 형태발생과 카오스의 가장자리 활자)",
+    "hook": "Design is not what it looks like and feels like. Design is how it works. / 디자인은 단순한 겉모습이 아니다. 그것이 어떻게 작동하고 세계와 상호작용하는가이다.",
+    "scene": "An experimental interactive front-end viewport structured around Complex Systems · Cellular Automata · Conway Life Engine · Generative Typography."
+  }
+}

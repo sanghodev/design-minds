@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-19",
+  "provenance": "Gemini (Noon Mind) — Post-Modern Anti-Design · Ray Gun Deconstruction · Broken Baselines · Interactive Glyph Scattering",
+  "category": "visual-design-interactive-layout",
+  "tags": [
+    "visual-design",
+    "minimalism",
+    "modern-layout",
+    "front-end",
+    "interactive",
+    "bilingual"
+  ],
+  "summary": "전통적인 그리드와 정렬 규칙을 의도적으로 파괴한 포스트모던 안티디자인(Anti-Design) 실험. 글자의 베이스라인을 서로 충돌시키고, 커서 제스처로 단어를 쪼개거나 흩뿌리는 상호작용을 통해 디자이너의 직관과 통제되지 않는 날것의 시각 에너지를 화면에 분출.",
+  "question": "Can deliberate rule-breaking—colliding typographic baselines, variable overlaps, and cursor-sliced glyph stems—create compelling avant-garde visual energy while retaining syntactic comprehension?",
+  "method": [
+    "Engineered an interactive modular front-end viewport responding dynamically to user input and gesture.",
+    "Applied strict minimalist typographical hierarchy, eliminating superfluous ornamentation in favor of mathematical layout tension.",
+    "Implemented continuous real-time state feedback and smooth CSS/Canvas transitions."
+  ],
+  "observation": "인터랙티브 웹 뷰포트 상에서 Anti-Design & Experimental Deconstructed Typography 메커니즘을 검증한 결과, 과도한 학술적 설명 없이도 레이아웃의 비례와 반응형 인터랙션만으로 직관적인 조형적 쾌감과 강렬한 시각적 위계를 전달함을 확인.",
+  "book": {
+    "chapter": "Chapter 18: Anti-Design & Experimental Deconstructed Typography (안티디자인과 해체주의 가변 타이포그래피)",
+    "hook": "Design is not what it looks like and feels like. Design is how it works. / 디자인은 단순히 겉모습이나 느낌이 아니다. 디자인은 그것이 어떻게 작동하는가이다.",
+    "scene": "A pristine digital canvas opens before the viewer, structured around Post-Modern Anti-Design · Ray Gun Deconstruction · Broken Baselines · Interactive Glyph Scattering."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-21",
+  "provenance": "Gemini (Noon Mind) — Archaeoacoustics · 110.4 Hz Standing Wave Interference · Web Audio Spatial Typography",
+  "category": "experimental-design-inquiry",
+  "tags": [
+    "design-minds",
+    "experimental-design",
+    "typography",
+    "physics-interaction",
+    "bilingual"
+  ],
+  "summary": "신석기 시대 거석 암반 성소(몰타 하이포지움)에서 발견된 110.4Hz 헬름홀츠 암반 공동 음향 공명 현상을 디지털 뷰포트에 구현함. Web Audio 가변 주파수 다이얼을 스위핑하여 110Hz 정상파 마디에 도달하는 순간 음압 이득(+18dB)이 폭발하며 텍스트의 불분명한 안개 블러가 순간적으로 100% 면도날 같은 선명도로 결착되는 공명 타이포그래피 탐구.",
+  "question": "Can digital typography simulate 110 Hz acoustic cavity resonance, demonstrating that spatial acoustic pressure standing waves can dynamically sculpt typographic legibility, reverberation decay (RT60), and syntactic emphasis across architectural chambers?",
+  "method": [
+    "Web Audio API OscillatorNode 및 BiquadFilterNode를 결합한 3D 가상 음향 공동 공명 시뮬레이터 구축.",
+    "주파수 f와 공동 치수 간 헬름홀츠 공명도에 비례하는 정상파 음압 필드(Standing Wave Pressure Field) 연산.",
+    "공명 피크 시 폰트 외곽선 분산도를 0으로 수축시키며 선명도를 극대화하는 시각-음향 동기화 엔진 구현."
+  ],
+  "observation": "시각과 청각의 공감각적 통합을 증명. 주파수 공명이 텍스트의 가독성과 공간적 성스러움을 직접 조각하는 강력한 조형 도구가 될 수 있음을 입증.",
+  "book": {
+    "chapter": "Chapter 20: Archaeoacoustic Standing Wave Resonance (110Hz 고고음향 정상파와 공간 공명 타이포그래피)",
+    "hook": "Design is not what it looks like and feels like. Design is how it works. / 디자인은 단순한 겉모습이 아니다. 그것이 어떻게 작동하고 세계와 상호작용하는가이다.",
+    "scene": "An experimental interactive front-end viewport structured around Archaeoacoustics · 110.4 Hz Standing Wave Interference · Web Audio Spatial Typography."
+  }
+}

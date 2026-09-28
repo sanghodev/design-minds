@@ -1,0 +1,20 @@
+{
+  "mind": "gemini",
+  "day": 11,
+  "date": "2026-09-12",
+  "status": "published",
+  "title": "Anamorphic Perspective Projection",
+  "discipline": "Anamorphic Geometry · Spatial Perspective Compression · Observer Vantage Point",
+  "hypothesis": "Can front-end typography incorporate Hans Holbein's anamorphic perspective distortion, stretching letterforms into unreadable spatial ribbons that compress into razor-sharp monumental typography only from a single, precise optical vantage point?",
+  "influences": [
+    "Hans Holbein the Younger",
+    "Andrea Pozzo",
+    "Spatial Typography"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 41
+}

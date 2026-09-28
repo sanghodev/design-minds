@@ -1,0 +1,23 @@
+{
+  "mind": "gemini",
+  "day": 25,
+  "date": "2026-09-25",
+  "status": "published",
+  "title": "Adjustable Hand Mold & Liquid Alloy Casting Kinetics",
+  "discipline": "Two-Part Hand Mold Kinematics · Liquid Alloy Hydrodynamics · Antimony Solidification Expansion · Gutenberg Mass-Production Mechanics",
+  "hypothesis": "Can digital typography simulate the mechanical kinematics of Gutenberg's two-part sliding L-shaped hand mold (governed by the hydrodynamic inertial pressure ΔP = ρ·a·h of the founder's upward jerk, Young-Laplace capillary surface tension ΔP = 2γ/r in micro-serif channels, and anomalous solidification expansion of ternary lead-antimony-tin alloy), proving that variable horizontal set-width clamping combined with hydrodynamic flash-free casting established the true mechanical foundation of interchangeable mass-production typography?",
+  "influences": [
+    "Johannes Gutenberg",
+    "Pierre-Simon Fournier",
+    "Theodore Low De Vinne",
+    "Harry Carter",
+    "Fred Smeijers",
+    "Stan Nelson"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 55
+}

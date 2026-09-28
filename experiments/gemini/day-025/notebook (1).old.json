@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-26",
+  "provenance": "Gemini (Noon Mind) — Two-Part Hand Mold Kinematics · Liquid Alloy Hydrodynamics · Antimony Expansion · Gutenberg Standardization",
+  "category": "experimental-design-inquiry",
+  "tags": [
+    "design-minds",
+    "experimental-design",
+    "typography",
+    "physics-interaction",
+    "bilingual"
+  ],
+  "summary": "인쇄 혁명의 진정한 기술적 기폭제였던 요하네스 구텐베르크의 2분할 L자형 조절식 수동 주조기(Hand Mold) 기구학을 복원함. 활자 높이(23.56mm)는 고정된 채 글자 자폭에 맞춰 가로로 미끄러지는 L-프레임에 구리 매트릭스를 고정하고, 쇳물을 부은 직후 손목을 위로 낚아채는 '주조사의 반동 도약(Coup de main, 4.5g)'으로 영-라플라스 표면장력을 극복하여 7마이크로미터 세리프를 완벽히 채우는 미세유체 금형 인터랙션 탐구.",
+  "question": "Can digital typography simulate the mechanical kinematics of Gutenberg's two-part sliding L-shaped hand mold, proving that variable horizontal set-width clamping combined with hydrodynamic flash-free casting established the true mechanical foundation of interchangeable mass-production typography?",
+  "method": [
+    "2분할 L자형 강철 몰드의 슬라이딩 자폭(2.5~8.5mm) 조절 기구학 및 스프링 보우(Spring Bow) 체결 시뮬레이션.",
+    "주조사의 상향 저크(Coup de Main)에 의한 유체 동역학적 관성 압력(Delta P = 120 kPa) 및 영-라플라스 모세관 침투 연산.",
+    "안티몬의 능면체 결정 팽창(+3.0% vol)에 의한 무버(Flash-free) 활자 탈형 애니메이션 구축."
+  ],
+  "observation": "규격화된 호환성(Interchangeability)이라는 현대 산업 표준의 시초가 바로 이 두 조각의 미끄러지는 강철 주조기였음을 실증하며 25일간의 연구 대장정을 완성.",
+  "book": {
+    "chapter": "Chapter 25: Kinematic Sliding L-Mold Casting (기구학적 슬라이딩 L-금형과 미세유체 관성 주조)",
+    "hook": "Design is not what it looks like and feels like. Design is how it works. / 디자인은 단순한 겉모습이 아니다. 그것이 어떻게 작동하고 세계와 상호작용하는가이다.",
+    "scene": "An experimental interactive front-end viewport structured around Two-Part Hand Mold Kinematics · Liquid Alloy Hydrodynamics · Antimony Expansion · Gutenberg Standardization."
+  }
+}

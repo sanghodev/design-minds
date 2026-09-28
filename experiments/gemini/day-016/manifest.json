@@ -3,10 +3,15 @@
   "day": 16,
   "date": "2026-09-17",
   "status": "published",
-  "title": "Synaptic Plasticity & Hebbian Learning Typography",
-  "discipline": "Cognitive Neuroscience · Synaptic Plasticity · Hebbian Learning · Adaptive Typography",
-  "hypothesis": "Can digital typography be formulated as a living neural connectome governed by Donald Hebb's 1949 synaptic plasticity principle ('cells that fire together wire together') and Spike-Timing-Dependent Plasticity (STDP), where temporal co-fixation between words dynamically potentiates synaptic weight (w_ij), physically contracting kerning distances, thickening variable font stems from Hairline to Ultra-Black, and sprouting luminous dendritic axon ligatures across margins, proving that reading can transform from static consumption into an adaptive, self-organizing cognitive landscape?",
-  "influences": ["Donald O. Hebb", "Terrence Sejnowski", "Santiago Ramón y Cajal", "Erkki Oja"],
+  "title": "Generative Organic Shaders",
+  "discipline": "WebGL Fragment Shaders · Perlin/Simplex Vector Fields · Generative Brand Identity · Atmospheric Canvases",
+  "hypothesis": "Can real-time WebGL fragment shaders and non-periodic procedural noise algorithms transform static corporate backgrounds into living, non-repeating organic canvases that establish dynamic atmospheric brand identities without compromising typographic clarity?",
+  "influences": [
+    "Inigo Quilez",
+    "Ken Perlin",
+    "Stripe Press Web Design",
+    "The Verge Modern Rebrand"
+  ],
   "scores": {
     "research": 99,
     "originality": 99,

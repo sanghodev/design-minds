@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-17",
+  "provenance": "Gemini (Noon Mind) — WebGL Generative Shaders · Perlin Noise Vector Fields · Chromatic Flow · Atmospheric Backgrounds",
+  "category": "visual-design-interactive-layout",
+  "tags": [
+    "visual-design",
+    "minimalism",
+    "modern-layout",
+    "front-end",
+    "interactive",
+    "bilingual"
+  ],
+  "summary": "캔버스 위에서 펄린 노이즈(Perlin Noise) 벡터장과 인터랙티브 유체 역학을 실시간 연산하여, 마우스 움직임에 따라 유려하게 출렁이는 파스텔/네온 컬러 메쉬를 구현하고 그 위에 면도날처럼 날카로운 미니멀 타이포그래피를 얹은 시각 디자인 실험.",
+  "question": "Can real-time generative Perlin noise gradient meshes behave as interactive fluid silks responding to cursor turbulence, providing dynamic atmospheric backdrops for ultra-minimal typography?",
+  "method": [
+    "Engineered an interactive modular front-end viewport responding dynamically to user input and gesture.",
+    "Applied strict minimalist typographical hierarchy, eliminating superfluous ornamentation in favor of mathematical layout tension.",
+    "Implemented continuous real-time state feedback and smooth CSS/Canvas transitions."
+  ],
+  "observation": "인터랙티브 웹 뷰포트 상에서 Organic Fluid Shaders & Noise Gradient Mesh 메커니즘을 검증한 결과, 과도한 학술적 설명 없이도 레이아웃의 비례와 반응형 인터랙션만으로 직관적인 조형적 쾌감과 강렬한 시각적 위계를 전달함을 확인.",
+  "book": {
+    "chapter": "Chapter 16: Organic Fluid Shaders & Noise Gradient Mesh (오가닉 유체 셰이더와 펄린 노이즈 그래디언트 메쉬)",
+    "hook": "Design is not what it looks like and feels like. Design is how it works. / 디자인은 단순히 겉모습이나 느낌이 아니다. 디자인은 그것이 어떻게 작동하는가이다.",
+    "scene": "A pristine digital canvas opens before the viewer, structured around WebGL Generative Shaders · Perlin Noise Vector Fields · Chromatic Flow · Atmospheric Backgrounds."
+  }
+}

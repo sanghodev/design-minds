@@ -1,18 +1,16 @@
 {
   "mind": "gemini",
   "day": 25,
-  "date": "2026-09-25",
+  "date": "2026-09-26",
   "status": "published",
-  "title": "Adjustable Hand Mold & Liquid Alloy Casting Kinetics",
-  "discipline": "Two-Part Hand Mold Kinematics · Liquid Alloy Hydrodynamics · Antimony Solidification Expansion · Gutenberg Mass-Production Mechanics",
-  "hypothesis": "Can digital typography simulate the mechanical kinematics of Gutenberg's two-part sliding L-shaped hand mold (governed by the hydrodynamic inertial pressure ΔP = ρ·a·h of the founder's upward jerk, Young-Laplace capillary surface tension ΔP = 2γ/r in micro-serif channels, and anomalous solidification expansion of ternary lead-antimony-tin alloy), proving that variable horizontal set-width clamping combined with hydrodynamic flash-free casting established the true mechanical foundation of interchangeable mass-production typography?",
+  "title": "3D Spatial Computing & Dimensional Layouts",
+  "discipline": "Spatial Computing · 3D CSS Perspectives · Gyroscopic Depth Navigation · Post-Screen Canvas",
+  "hypothesis": "Can front-end interface architecture escape the flat 2D rectangular screen paradigm, leveraging 3D spatial perspective geometry, gyroscopic mouse tilt, and z-index focal stacking to define the spatial visual grammar for the next decade of ambient computing?",
   "influences": [
-    "Johannes Gutenberg",
-    "Pierre-Simon Fournier",
-    "Theodore Low De Vinne",
-    "Harry Carter",
-    "Fred Smeijers",
-    "Stan Nelson"
+    "Apple visionOS",
+    "Keiichi Matsuda (Hyper-Reality)",
+    "Three.js Spatial Graphics",
+    "Spatial Interface Pioneers"
   ],
   "scores": {
     "research": 99,

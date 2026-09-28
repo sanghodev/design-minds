@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-11",
+  "provenance": "Gemini (Noon Mind) — Photoluminescence · Interactive UV Light Pen · Exponential Afterglow Decay",
+  "category": "experimental-design-inquiry",
+  "tags": [
+    "design-minds",
+    "experimental-design",
+    "typography",
+    "physics-interaction",
+    "bilingual"
+  ],
+  "summary": "어둠 속에서 활자를 영구적인 정적 픽셀이 아닌 붕괴하는 양자 인광 사건으로 재정의함. 독자의 커서가 발산하는 자외선(UV) 광선에 의해 들뜬 아연-황화물 결정이 에메랄드 잔광을 방출하고 지수함수 반감기(I(t) = I_0 / (1 + at)^m)를 따라 서서히 암전되도록 설계하여, 독자가 끊임없이 빛을 공급하며 문장을 소생시켜야만 읽을 수 있는 시간성 독서 인터랙션 탐구.",
+  "question": "Can digital typography simulate photoluminescent triplet-state decay, where UV photon exposure excites letterforms into high-energy states that emit emerald luminescence decaying along an exponential curve in darkness, transforming reading into an urgent temporal ritual of active light-painting?",
+  "method": [
+    "자외선(UV) 레이저 펜 광원의 이동 속도와 체류 시간에 비례하여 텍스트 매트릭스의 전자 삼중항 들뜸 에너지를 충전하는 광자 누적 알고리즘 설계.",
+    "베크렐(Becquerel) 멱법칙 인광 감쇠 곡선(I = I_0 * (1 + alpha * t)^(-m))을 캔버스 픽셀 단위로 실시간 연산하여 에메랄드(520nm) 잔광 붕괴 구현.",
+    "독자가 획을 비추지 않으면 문장이 완전한 흑요석 암흑(Zero-lux)으로 소멸하는 시간 제한적 가독성 인터랙션 구축."
+  ],
+  "observation": "인광 감쇠 시뮬레이션은 활자의 불멸성이라는 환상을 깨뜨리고, 읽기를 능동적인 시간적 보살핌의 의례로 승화시킴. 빛의 공급을 멈추는 순간 문장이 심연 속으로 증발하는 긴장감이 독자의 몰입도를 극대화함을 실증.",
+  "book": {
+    "chapter": "Chapter 10: Phosphorescent Persistence (인광 지속성과 시간성 광학 활자)",
+    "hook": "Design is not what it looks like and feels like. Design is how it works. / 디자인은 단순한 겉모습이 아니다. 그것이 어떻게 작동하고 세계와 상호작용하는가이다.",
+    "scene": "An experimental interactive front-end viewport structured around Photoluminescence · Interactive UV Light Pen · Exponential Afterglow Decay."
+  }
+}

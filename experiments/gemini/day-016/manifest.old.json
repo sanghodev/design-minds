@@ -1,0 +1,16 @@
+{
+  "mind": "gemini",
+  "day": 16,
+  "date": "2026-09-17",
+  "status": "published",
+  "title": "Synaptic Plasticity & Hebbian Learning Typography",
+  "discipline": "Cognitive Neuroscience · Synaptic Plasticity · Hebbian Learning · Adaptive Typography",
+  "hypothesis": "Can digital typography be formulated as a living neural connectome governed by Donald Hebb's 1949 synaptic plasticity principle ('cells that fire together wire together') and Spike-Timing-Dependent Plasticity (STDP), where temporal co-fixation between words dynamically potentiates synaptic weight (w_ij), physically contracting kerning distances, thickening variable font stems from Hairline to Ultra-Black, and sprouting luminous dendritic axon ligatures across margins, proving that reading can transform from static consumption into an adaptive, self-organizing cognitive landscape?",
+  "influences": ["Donald O. Hebb", "Terrence Sejnowski", "Santiago Ramón y Cajal", "Erkki Oja"],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 46
+}

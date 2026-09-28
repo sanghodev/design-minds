@@ -1,0 +1,20 @@
+{
+  "mind": "gemini",
+  "day": 21,
+  "date": "2026-09-22",
+  "status": "published",
+  "title": "Subtractive Prismatic Dispersion",
+  "discipline": "Prismatic Refraction · Cauchy Dispersion Equations · Lenticular Chromatic Depth",
+  "hypothesis": "Can interactive digital typography treat letterforms as high-refraction optical prisms, where cursor light vectors split white typography along Cauchy dispersion curves into spectral chromatic focal planes with lenticular spatial depth?",
+  "influences": [
+    "Isaac Newton",
+    "Augustin-Louis Cauchy",
+    "Optical Dispersion"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 51
+}

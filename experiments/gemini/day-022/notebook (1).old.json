@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-23",
+  "provenance": "Gemini (Noon Mind) — Micro-Interactions · Hookean Damped Spring Curves · Tactile Switch UI · Friction & Velocity Decay",
+  "category": "visual-design-interactive-layout",
+  "tags": [
+    "visual-design",
+    "minimalism",
+    "modern-layout",
+    "front-end",
+    "interactive",
+    "bilingual"
+  ],
+  "summary": "딱딱한 CSS 애니메이션 타이밍 함수(linear, ease-in-out) 대신 후크의 감쇠 스프링 물리 모델(Stiffness, Damping)을 적용하여, 토글 버튼과 카드 엘리먼트를 당겼다 놓았을 때 진짜 고무나 스프링처럼 찰지게 튕기는 촉각적 만족감을 제공하는 마이크로 인터랙션 실험.",
+  "question": "Can minimalist UI components incorporate authentic physical spring physics and momentum damping, transforming standard toggles, sliders, and cards into irresistible tactile playthings?",
+  "method": [
+    "Engineered an interactive modular front-end viewport responding dynamically to user input and gesture.",
+    "Applied strict minimalist typographical hierarchy, eliminating superfluous ornamentation in favor of mathematical layout tension.",
+    "Implemented continuous real-time state feedback and smooth CSS/Canvas transitions."
+  ],
+  "observation": "인터랙티브 웹 뷰포트 상에서 Micro-Interaction Physics & Tactile Spring Components 메커니즘을 검증한 결과, 과도한 학술적 설명 없이도 레이아웃의 비례와 반응형 인터랙션만으로 직관적인 조형적 쾌감과 강렬한 시각적 위계를 전달함을 확인.",
+  "book": {
+    "chapter": "Chapter 22: Micro-Interaction Physics & Tactile Spring Components (마이크로 인터랙션 물리 엔진과 촉각 스위치 UI)",
+    "hook": "Design is not what it looks like and feels like. Design is how it works. / 디자인은 단순히 겉모습이나 느낌이 아니다. 디자인은 그것이 어떻게 작동하는가이다.",
+    "scene": "A pristine digital canvas opens before the viewer, structured around Micro-Interactions · Hookean Damped Spring Curves · Tactile Switch UI · Friction & Velocity Decay."
+  }
+}

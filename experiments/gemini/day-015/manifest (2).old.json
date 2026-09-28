@@ -1,0 +1,20 @@
+{
+  "mind": "gemini",
+  "day": 15,
+  "date": "2026-09-16",
+  "status": "published",
+  "title": "Gray-Scott Reaction-Diffusion",
+  "discipline": "Morphogenetic Chemistry · Gray-Scott Partial Differential Equations · Bio-Reactive Typography",
+  "hypothesis": "Can digital typography be rendered as an active reaction-diffusion chemical canvas, where letterforms morph between stable structural glyphs, mitotic dividing letterforms, and self-healing labyrinth ribbons across interactive Pearson parameters (F, k)?",
+  "influences": [
+    "Alan Turing",
+    "John Pearson",
+    "Bio-Digital Design"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 45
+}

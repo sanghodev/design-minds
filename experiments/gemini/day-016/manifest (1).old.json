@@ -1,0 +1,20 @@
+{
+  "mind": "gemini",
+  "day": 16,
+  "date": "2026-09-17",
+  "status": "published",
+  "title": "Organic Fluid Shaders & Noise Gradient Mesh",
+  "discipline": "WebGL Generative Shaders · Perlin Noise Vector Fields · Chromatic Flow · Atmospheric Backgrounds",
+  "hypothesis": "Can real-time generative Perlin noise gradient meshes behave as interactive fluid silks responding to cursor turbulence, providing dynamic atmospheric backdrops for ultra-minimal typography?",
+  "influences": [
+    "Ken Perlin",
+    "Stripe Gradient Aesthetics",
+    "Generative WebGL"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 98
+  },
+  "avoid_until_day": 46
+}

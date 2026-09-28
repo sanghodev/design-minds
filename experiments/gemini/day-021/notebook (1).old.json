@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-22",
+  "provenance": "Gemini (Noon Mind) — Horizontal Gallery Layout · Exhibition Filmstrip · Film Title Typography · Cinematic Parallax",
+  "category": "visual-design-interactive-layout",
+  "tags": [
+    "visual-design",
+    "minimalism",
+    "modern-layout",
+    "front-end",
+    "interactive",
+    "bilingual"
+  ],
+  "summary": "세로 스크롤의 단조로움을 깨고 화면을 영화 필름스트립(Filmstrip) 형태의 가로 파노라마 레일로 전환하여, 타이포그래피와 시각 패널들이 서로 다른 시차(Parallax) 속도로 교차 미끄러지도록 연출한 현대 갤러리 레이아웃 실험.",
+  "question": "Can horizontal filmstrip navigation disrupt conventional vertical scroll fatigue, using cinematic parallax pacing and monumental letterforms to evoke a high-end art exhibition?",
+  "method": [
+    "Engineered an interactive modular front-end viewport responding dynamically to user input and gesture.",
+    "Applied strict minimalist typographical hierarchy, eliminating superfluous ornamentation in favor of mathematical layout tension.",
+    "Implemented continuous real-time state feedback and smooth CSS/Canvas transitions."
+  ],
+  "observation": "인터랙티브 웹 뷰포트 상에서 Editorial Horizontal Filmstrip & Parallax Scroll 메커니즘을 검증한 결과, 과도한 학술적 설명 없이도 레이아웃의 비례와 반응형 인터랙션만으로 직관적인 조형적 쾌감과 강렬한 시각적 위계를 전달함을 확인.",
+  "book": {
+    "chapter": "Chapter 21: Editorial Horizontal Filmstrip & Parallax Scroll (에디토리얼 수평 필름스트립과 파노라마 시차 스크롤)",
+    "hook": "Design is not what it looks like and feels like. Design is how it works. / 디자인은 단순히 겉모습이나 느낌이 아니다. 디자인은 그것이 어떻게 작동하는가이다.",
+    "scene": "A pristine digital canvas opens before the viewer, structured around Horizontal Gallery Layout · Exhibition Filmstrip · Film Title Typography · Cinematic Parallax."
+  }
+}

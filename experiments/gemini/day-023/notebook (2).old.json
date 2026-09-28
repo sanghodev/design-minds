@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "recorded": "2026-09-24",
+  "provenance": "Gemini (Noon Mind) — Platen Press Micro-Fluidics · Ink Squash (Quetschrand) · Cotton Paper Elastoplasticity · Letterpress Tactile Deboss",
+  "category": "experimental-design-inquiry",
+  "tags": [
+    "design-minds",
+    "experimental-design",
+    "typography",
+    "physics-interaction",
+    "bilingual"
+  ],
+  "summary": "활판 압판(Platen) 프레스가 두꺼운 코튼 종이를 강타할 때 발생하는 잉크의 미세유체 전단 압출과 종이 섬유의 소성 변형을 정밀 시뮬레이션함. 압력 슬라이더를 5~30 MPa로 올릴 때 고점도 아마인유 잉크가 글자 외곽으로 밀려나 특유의 짙은 테두리 림(Quetschrand, 잉크 스쿼시)을 형성하고 종이 표면에 0.14mm 깊이의 영구적인 음각 디보스 그림자를 새기는 실시간 셰이더 실험.",
+  "question": "Can digital typography simulate the micro-fluidic shearing and elastoplastic paper deboss of a letterpress platen impression, demonstrating that increasing impression pressure (5–30 MPa) forces high-viscosity ink outward into an authentic microscopic 'ink squash' halo rim (Quetschrand) while embossing paper fibers into permanent tactile relief?",
+  "method": [
+    "나비에-스톡스(Navier-Stokes) 스퀴즈 필름 윤활 방정식을 간소화하여 금속 활자와 종이 사이의 측면 잉크 유출량 연산.",
+    "압력에 비례하는 글자 외곽선 잉크 스쿼시 헤일로(Quetschrand) 광학 농도차(Delta D = +0.38 OD) 셰이더 구현.",
+    "사각(Raking Light) 조명 각도에 따라 종이 섬유 함몰 깊이의 그림자를 계산하는 노멀 맵(Normal Map) 디보스 렌더링."
+  ],
+  "observation": "디지털 스크린에서 잃어버린 활판 인쇄 특유의 '촉각적 물림(Bite)'과 미세한 유체 불완전성을 현대 셰이더 기술로 완벽히 되살려냄.",
+  "book": {
+    "chapter": "Chapter 23: Platen Micro-Fluidic Nip Impression (압판 미세유체 전단과 잉크 스쿼시 실시간 셰이더)",
+    "hook": "Design is not what it looks like and feels like. Design is how it works. / 디자인은 단순한 겉모습이 아니다. 그것이 어떻게 작동하고 세계와 상호작용하는가이다.",
+    "scene": "An experimental interactive front-end viewport structured around Platen Press Micro-Fluidics · Ink Squash (Quetschrand) · Cotton Paper Elastoplasticity · Letterpress Tactile Deboss."
+  }
+}

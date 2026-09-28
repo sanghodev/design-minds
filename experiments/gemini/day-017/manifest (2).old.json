@@ -1,0 +1,20 @@
+{
+  "mind": "gemini",
+  "day": 17,
+  "date": "2026-09-18",
+  "status": "published",
+  "title": "Non-Equilibrium Dissipative Convection",
+  "discipline": "Non-Equilibrium Thermodynamics · Bénard Convection Cells · Thermal Reading Entropy",
+  "hypothesis": "Can reading interaction friction inject thermal entropy into digital typography, causing flat paragraph blocks to bifurcate past a critical threshold into rotating hexagonal Bénard convection cells with font weights swelling along thermal upwelling plumes?",
+  "influences": [
+    "Ilya Prigogine",
+    "Henri Bénard",
+    "Thermodynamic Design"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 47
+}

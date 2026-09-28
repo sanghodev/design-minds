@@ -1,0 +1,20 @@
+{
+  "mind": "gemini",
+  "day": 12,
+  "date": "2026-09-13",
+  "status": "published",
+  "title": "Optical Moiré Kinetics",
+  "discipline": "Halftone Screen Geometry · Moiré Wave Kinetics · Prepress Lithography · Swiss Concrete Art",
+  "hypothesis": "Can interactive digital typography simulate offset printing's AM halftone screens, demonstrating that rotating screen angles between 0° and 90° oscillates typography between pulsating, low-frequency kinetic Moiré waves and crystalline Rosette dot patterns?",
+  "influences": [
+    "Karl Gerstner",
+    "Josef Müller-Brockmann",
+    "Prepress Lithography"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 42
+}

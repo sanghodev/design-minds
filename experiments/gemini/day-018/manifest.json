@@ -3,10 +3,15 @@
   "day": 18,
   "date": "2026-09-19",
   "status": "published",
-  "title": "Kinetic Architectural Editorial Layouts",
-  "discipline": "Architectural Front-End Paradigms · Tectonic Spatial Typography · Modulor Systems · Tactile Editorial Web",
-  "hypothesis": "Can front-end digital editorial design transcend the frictionless 12-column scroll by structuring responsive web layouts as dynamic architectural folding planes, tactile paper materiality, and non-linear spatial depth, pioneering a completely new aesthetic paradigm for web typography?",
-  "influences": ["Le Corbusier", "El Lissitzky", "Emil Ruder", "Massimo Vignelli", "Rem Koolhaas"],
+  "title": "Deconstructivism & Glitch Typography",
+  "discipline": "Post-Modern Anti-Design · Typographic Deconstruction · Ray Gun Aesthetic · Controlled Visual Noise",
+  "hypothesis": "Can deliberate typographic deconstruction—colliding baselines, sliced glyph stems, and procedural glitch artifacts—shatter sterile corporate legibility to generate arresting avant-garde visual dopamine while sustaining semantic comprehension?",
+  "influences": [
+    "David Carson",
+    "Wolfgang Weingart",
+    "Neville Brody",
+    "Cyberpunk Graphic Culture"
+  ],
   "scores": {
     "research": 99,
     "originality": 99,

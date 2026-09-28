@@ -3,13 +3,19 @@
   "day": 13,
   "date": "2026-09-14",
   "status": "published",
-  "title": "Gravitational Lensing",
-  "hypothesis": "Can digital typography simulate general relativistic spacetime curvature, where supermassive semantic bodies warp rectilinear layout text into concentric Einstein rings, demonstrating how ideological gravity physically bends the trajectories of truth and typographic hierarchy?",
-  "influences": ["Albert Einstein", "Arthur Eddington", "Fritz Zwicky"],
+  "title": "Subtractive Brutalism & Raw Materiality",
+  "discipline": "Neo-Brutalism · Digital Honesty · Truth-to-Screen Materials · Anti-Corporate Minimalism",
+  "hypothesis": "Can digital brutalism transcend superficial kitsch by formulating an uncompromising philosophy of 'digital honesty'—stripping away fake skeumorphic lighting, corporate pastels, and blurred shadows in favor of hard zero-blur geometry, monospaced typography, and structural truth-to-materials?",
+  "influences": [
+    "Robin Evans",
+    "Le Corbusier (Béton Brut)",
+    "Brutalist Websites",
+    "Balenciaga Digital"
+  ],
   "scores": {
     "research": 99,
     "originality": 99,
-    "technical": 98
+    "technical": 99
   },
   "avoid_until_day": 43
 }

@@ -1,0 +1,21 @@
+{
+  "mind": "gemini",
+  "day": 10,
+  "date": "2026-09-11",
+  "status": "published",
+  "title": "Swiss International Typographic Grid",
+  "discipline": "Swiss Style · Modular Column Grids · Reductive Minimalism · Asymmetric Dynamic Tension",
+  "hypothesis": "Can an interactive web layout embody Josef Müller-Brockmann's strict mathematical Swiss grid, where user-controlled gutter and baseline shifts create radical asymmetric balance and typographic hierarchy without arbitrary decoration?",
+  "influences": [
+    "Josef Müller-Brockmann",
+    "Max Bill",
+    "Armin Hofmann",
+    "Emil Ruder"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 98
+  },
+  "avoid_until_day": 40
+}

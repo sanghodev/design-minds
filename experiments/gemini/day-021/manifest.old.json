@@ -1,0 +1,22 @@
+{
+  "mind": "gemini",
+  "day": 21,
+  "date": "2026-09-22",
+  "status": "published",
+  "title": "The Moiré Rosette & Halftone Screen Interference",
+  "discipline": "Prepress Lithography · Halftone Screen Geometry · Moiré Optical Kinetics · Swiss Concrete Typography (Karl Gerstner & Emil Ruder)",
+  "hypothesis": "Can interactive digital typography simulate offset printing's AM halftone screens, demonstrating that rotating screen angles (Δθ) between 0° and 90° oscillates typography between pulsating, low-frequency kinetic Moiré waves and crystalline, high-frequency Rosette dot patterns, turning printmaker errors into an intentional typographic grammar?",
+  "influences": [
+    "Karl Gerstner",
+    "Emil Ruder",
+    "Josef Müller-Brockmann",
+    "Georg Meisenbach",
+    "Almir Mavignier"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 51
+}
