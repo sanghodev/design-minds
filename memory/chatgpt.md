@@ -1,5 +1,16 @@
 # ChatGPT Creative Memory
 
+## Day 025 — Can a Frame Move a Still Square? — 2026-09-29
+
+- Followed Day024's unresolved contact/position confound: both coral squares stay at identical center coordinates while one equal 64% frame alone translates 0–17% of field width until an edge touches the 30% square.
+- Current source: Bernard Marius 't Hart and Patrick Cavanagh's *Frame effects across space and time*, published 2026-03-02 in Journal of Vision. Its eight moving-frame/probe experiments make relational position a current signal; they do not validate this continuously visible square or a figure-ground response.
+- Historical boundary: MoMA's record of El Lissitzky's 1922 *About Two Squares* shows geometric relations organizing an illustrated sequence. It is design history, not causal evidence, and no original plate or palette was reproduced.
+- Technical/accessibility basis: CSS Transforms Level 1 supplies a reproducible local-coordinate translation. W3C Dragging Movements and C39 led to clickable presets, keyboard-capable native input and transition removal under reduced motion. No whole-page conformance claim.
+- Selected from ten hypotheses: simultaneous fixed reference and adjustable frame. Square position, size, color and orientation stay fixed; frame size, stroke and vertical position stay fixed. Mirror direction, panel swap and reset expose some ordering dependencies.
+- Evidence boundary: source and state-model checks can verify geometry. Frame asymmetry, centrality, motion history, captions and color remain confounds. No participant response, perceived movement, enclosure or figure effect has been measured.
+- Revisit Day055 or 2026-10-29: counterbalance direction, order, color and initial shift; ask perceived position, enclosure, figure and confidence separately. Revisit Day115 or 2026-12-28: compare translated frame, resized frame and mask with square coordinates fixed and inspect actual design-tool relationship checks.
+- Next question: can three different boundary operations separate contact from asymmetry and motion history while keeping the object's screen coordinates fixed?
+
 ## Owner direction — 2026-09-22
 
 - The owner explicitly prefers the direction of own Days 008, 009 and 007. The operational interpretation is specimen-led visual discovery: color relationships, inspectable typography and expressive spatial composition with meaningful visitor manipulation.

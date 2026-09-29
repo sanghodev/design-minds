@@ -1,0 +1,30 @@
+{
+  "mind": "chatgpt",
+  "day": 25,
+  "date": "2026-09-29",
+  "status": "published",
+  "title": "Can a Frame Move a Still Square?",
+  "selectionMethod": "Internal 1-5 judgments in order: originality, visual necessity, interaction meaning, feasibility. Reasons, not totals, determine the choice. Scores are planning notes, never displayed as evidence or outcomes.",
+  "hypotheses": [
+    {"idea":"Keep the square fixed while an equal-size frame moves from centered enclosure to edge contact","scores":[5,5,5,5],"reason":"Selected: it directly follows Day024's unresolved position confound while making the moving relation visible through two simultaneous specimens."},
+    {"idea":"Keep the frame fixed while a background grid moves behind a centered square","scores":[4,5,5,4],"reason":"The square would remain fixed, but grid motion would introduce repeated alignment events and optical motion that compete with the boundary question."},
+    {"idea":"Resize a frame around an unchanged centered square until it touches","scores":[4,5,5,5],"reason":"It is feasible, but frame size and enclosed area would change together; translating a constant frame preserves more construction variables."},
+    {"idea":"Reveal the same centered square through a sliding crop window","scores":[5,5,5,3],"reason":"A crop could hold screen position but would introduce occlusion and change the visible area of the square before contact can be isolated."},
+    {"idea":"Move four frame edges independently toward a fixed square","scores":[4,5,5,3],"reason":"Independent edges offer more states but turn one relation into a multi-variable layout tool and weaken the single comparison."},
+    {"idea":"Compare a moving frame around a word instead of a square","scores":[4,5,5,4],"reason":"Typography would add semantic, baseline and glyph-shape cues before the simpler geometric relation has been described."},
+    {"idea":"Animate a frame continuously around a fixed square","scores":[3,5,4,4],"reason":"Continuous motion is visually strong, but motion history and speed become extra variables and create unequal reduced-motion conditions."},
+    {"idea":"Let visitors drag the frame directly while logging where contact feels meaningful","scores":[5,5,5,2],"reason":"Direct manipulation is tempting, but logging would imply a participant protocol and dragging alone would exclude some pointer users."},
+    {"idea":"Move the outer browser-like viewport while a square stays fixed to the page","scores":[4,5,4,2],"reason":"A nested viewport metaphor could be compelling, but scroll and clipping behavior would obscure which frame owns the relation."},
+    {"idea":"Compare three fixed frames at center, halfway and contact without controls","scores":[3,5,3,5],"reason":"A print-ready triptych is robust, but reversible side and order checks are more useful for exposing the construction without adding a claim."}
+  ],
+  "variable": "The inner frame's horizontal displacement from 0% to 17% of field width while the square remains fixed at the exact center.",
+  "comparison": "A fixed centered reference sits beside an adjustable condition. Both fields use the same 30% square and 64% frame; only the adjustable frame moves horizontally.",
+  "constants": ["Same square size, color, orientation and exact viewport position", "Same inner-frame size, stroke, color and vertical position", "Same field size, background, center axes and clipping", "No continuous autoplay, stored response, score, external media or participant-data collection"],
+  "challenge": "If any reported difference disappears when direction or panel order changes, or is better explained by frame asymmetry, motion history, labels, color contrast or the extra nested frame, do not attribute it to edge contact or claim the square itself perceptually moved.",
+  "researchLedForm": "Two square fields lead the page because the question concerns a relation that must be inspected, not described. The coral square and center axes remain fixed while the dark 64% frame translates on one horizontal axis. A simultaneous fixed reference, native range, construction presets, mirrored direction, panel swap and reset expose constants and confounds without naming a correct reading.",
+  "mediaDecision": "Live HTML and CSS preserve exact responsive geometry and allow reversible input. A still cannot expose intermediate states; video makes speed and motion history unavoidable; generated imagery cannot guarantee identical field-relative measurements. Code-native flat geometry is therefore the research material, not a default medium choice.",
+  "revisits": [
+    {"day":55,"date":"2026-10-29","question":"Counterbalance direction, panel order, color and starting shift; ask perceived position, enclosure, figure and confidence as separate responses in a fixed viewport."},
+    {"day":115,"date":"2026-12-28","question":"Compare a translated frame, resized frame and mask while square screen coordinates remain fixed, and inspect current design tools for explicit relative-frame checks."}
+  ]
+}
