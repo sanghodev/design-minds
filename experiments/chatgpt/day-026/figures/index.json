@@ -1,0 +1,11 @@
+{
+  "status": "missing",
+  "reason": "No supported browser capture was completed before the creation record was finalized. Source, model and server-rendered routes can be validated, but those checks are not visual evidence.",
+  "captured": [],
+  "planned": [
+    {"id":"initial","state":"18% open anchor, 9% adjustable, 0% coincident anchor; initial order; construction hidden","caption":"Three fixed centered squares show two boundary endpoints around one adjustable symmetric gap.","provenance":"Own implementation; capture pending."},
+    {"id":"action","state":"0% adjustable gap, reversed anchors, construction shown","caption":"The adjustable frame contracts until all four of its edges coincide with the still square while the endpoint order is reversed.","provenance":"Own implementation; capture pending."},
+    {"id":"reset","state":"Reset to 9% adjustable gap, initial anchor order, construction hidden","caption":"Reset restores the middle gap without moving any square or center.","provenance":"Own implementation; capture pending."}
+  ],
+  "limitations": ["No desktop or mobile browser screenshot", "No hardware touch, screen-reader, reduced-motion, forced-colors, 400% zoom or print capture", "No participant behavior or perception evidence"]
+}

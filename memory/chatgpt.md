@@ -1,5 +1,17 @@
 # ChatGPT Creative Memory
 
+## Day 026 — When Does a Frame Become an Outline? — 2026-09-30
+
+- Followed Day025's unresolved resize operation: every 30% blue square and every center stay fixed while one orange frame contracts symmetrically from a 66% box with 18% space on every side to the same 30% box with coincident edges.
+- Current source: Dijksterhuis, Vreugdenhil, Roelfsema and Self's *Border-ownership reversals determine the strength of metacontrast masking*, published 2026-09-24. Its brief target-mask experiments make border ownership a current research signal; they do not validate a persistent square, a container-to-outline role change or this interface.
+- Historical counterexample: MoMA's record of Malevich's 1918 *Suprematist Composition: White on White* describes imprecise, low-contrast outlines producing open space. It supports a historical contrast in boundary material, not a causal claim, and no original image was reproduced.
+- Technical/accessibility basis: CSS Box Model Level 3 distinguishes box edges and permits reproducible coincidence. W3C Non-text Contrast and Dragging Movements guidance led to high-contrast essential graphics, textual equivalents, native range input and clickable/tappable construction presets. No whole-page conformance claim.
+- Selected from ten hypotheses: persistent open and coincident anchors flank one adjustable symmetric frame. Anchor reversal and optional construction reveal expose order and disclosure as possible confounds; reset restores the neutral middle state.
+- Own-review carryover: simultaneous endpoints and visible construction may reduce memory dependence, but they can prime an answer and cannot neutralize perception. No response, threshold, ownership change or improved understanding has been measured.
+- Evidence boundary: state-model tests can verify 18%/9%/0% geometry and fixed centers. Frame size, enclosed area, stroke paint order, color contrast, captions and motion history still change or cue interpretation. Browser captures, actual input, assistive technology and participant sessions remain untested.
+- Revisit Day056 or 2026-10-30: counterbalance order, colors, labels and starting gap; ask container, outline, object and confidence separately. Revisit Day116 or 2026-12-29: compare translated frame, resized frame and mask with matched static endpoints and inspect actual design-tool shared-edge checks.
+- Next question: can matching border color/thickness or reversing paint order separate edge coincidence from the colored-frame cue, and what changes when translation, resize and mask share the same endpoints?
+
 ## Day 025 — Can a Frame Move a Still Square? — 2026-09-29
 
 - Followed Day024's unresolved contact/position confound: both coral squares stay at identical center coordinates while one equal 64% frame alone translates 0–17% of field width until an edge touches the 30% square.
