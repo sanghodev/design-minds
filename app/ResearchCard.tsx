@@ -6,7 +6,7 @@ import type { Experiment } from "@/data/types";
 import type { ResearchNotebook } from "@/data/research-types";
 import s from "./research/archive.module.css";
 
-export type ArchiveEntry = Pick<Experiment, "status" | "day" | "date" | "mind" | "title" | "discipline" | "hypothesis"> & {
+export type ArchiveEntry = Pick<Experiment, "status" | "executable" | "day" | "date" | "mind" | "title" | "discipline" | "hypothesis"> & {
   notebook?: Pick<ResearchNotebook, "category" | "tags" | "summary">;
 };
 
@@ -17,7 +17,8 @@ export default function ResearchCard({ entry: e }: { entry: ArchiveEntry }) {
   const day = String(e.day).padStart(3, "0");
   const path = "/" + e.mind + "/day-" + day;
   const ready = e.status === "published";
-  const entryPath = ready ? path : "/research" + path;
+  const available = ready || e.executable;
+  const entryPath = available ? path : "/research" + path;
 
   useEffect(() => {
     const node = card.current;
@@ -46,7 +47,7 @@ export default function ResearchCard({ entry: e }: { entry: ArchiveEntry }) {
   }, []);
 
   return <article ref={card} className={s.card}>
-    {ready ? <Link prefetch={false} className={s.preview} href={path} aria-label={e.title + " 실험 열기"}>
+    {available ? <Link prefetch={false} className={s.preview} href={path} aria-label={e.title + (ready ? " 실험 열기" : " 실험 미리보기")}>
       <div className={s.previewPlaceholder} aria-hidden="true">
         <span>{e.mind === "chatgpt" ? "ChatGPT" : "Gemini"} · Day {day}</span>
         <strong>{e.title}</strong>
@@ -55,9 +56,9 @@ export default function ResearchCard({ entry: e }: { entry: ArchiveEntry }) {
       <div className={s.frame} aria-hidden="true" inert data-loaded={loaded}>
         {nearby && <iframe src={path} title={e.title + " 실제 페이지 미리보기"} loading="lazy" tabIndex={-1} onLoad={() => setLoaded(true)} />}
       </div>
-      <span className={s.previewLabel}>실험 열기 ↗</span>
+      <span className={s.previewLabel}>{ready ? "실험 열기 ↗" : "미검증 실험 미리보기 ↗"}</span>
     </Link> : <Link prefetch={false} className={s.researchCover} href={entryPath}>
-      <span>{e.mind.toUpperCase()} · RESEARCH NOTE</span><strong>{e.title}</strong><small>연구글 공개 · 실험 검증 대기</small>
+      <span>{e.mind.toUpperCase()} · RESEARCH NOTE</span><strong>{e.title}</strong><small>연구글 공개 · 실행 파일 미전달</small>
     </Link>}
     <div className={s.meta}><span>{e.mind === "chatgpt" ? "ChatGPT" : "Gemini"} · Day {day}</span><time dateTime={e.date}>{e.date}</time></div>
     <p className={s.category}>{e.notebook?.category || e.discipline}</p>
@@ -65,8 +66,8 @@ export default function ResearchCard({ entry: e }: { entry: ArchiveEntry }) {
     <p className={s.summary}>{e.notebook?.summary || e.hypothesis}</p>
     <div className={s.tags}>{(e.notebook?.tags || []).map(t => <span key={t}>{t}</span>)}</div>
     <div className={s.cardLinks}>
-      {ready ? <Link prefetch={false} href={path}>실험하기 ↗</Link> : <Link prefetch={false} href={"/book#" + e.mind + "-day-" + day}>출판 초고 읽기 →</Link>}
-      {e.notebook ? <Link prefetch={false} href={"/research" + path}>연구노트 읽기 →</Link> : <span>연구노트 준비 전</span>}
+      {available ? <Link prefetch={false} href={path}>{ready ? "실험하기 ↗" : "미검증 실험 미리보기 ↗"}</Link> : <Link prefetch={false} href={"/research" + path}>연구노트 읽기 →</Link>}
+      {available && (e.notebook ? <Link prefetch={false} href={"/research" + path}>연구노트 읽기 →</Link> : <span>연구노트 준비 전</span>)}
     </div>
   </article>;
 }

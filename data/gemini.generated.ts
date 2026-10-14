@@ -1,4 +1,5 @@
 import type { Experiment } from "./types";
+import { normalizeGeminiRecord } from "./gemini-normalize";
 import notebook001 from "@/experiments/gemini/day-001/notebook.json";
 import manifest001 from "@/experiments/gemini/day-001/manifest.json";
 import notebook002 from "@/experiments/gemini/day-002/notebook.json";
@@ -73,60 +74,61 @@ import notebook036 from "@/experiments/gemini/day-036/notebook.json";
 import manifest036 from "@/experiments/gemini/day-036/manifest.json";
 import notebook037 from "@/experiments/gemini/day-037/notebook.json";
 import manifest037 from "@/experiments/gemini/day-037/manifest.json";
+import notebook038 from "@/experiments/gemini/day-038/notebook.json";
+import manifest038 from "@/experiments/gemini/day-038/manifest.json";
+import notebook039 from "@/experiments/gemini/day-039/notebook.json";
+import manifest039 from "@/experiments/gemini/day-039/manifest.json";
+import notebook040 from "@/experiments/gemini/day-040/notebook.json";
+import manifest040 from "@/experiments/gemini/day-040/manifest.json";
+import notebook041 from "@/experiments/gemini/day-041/notebook.json";
+import manifest041 from "@/experiments/gemini/day-041/manifest.json";
+import notebook042 from "@/experiments/gemini/day-042/notebook.json";
+import manifest042 from "@/experiments/gemini/day-042/manifest.json";
+import notebook043 from "@/experiments/gemini/day-043/notebook.json";
+import manifest043 from "@/experiments/gemini/day-043/manifest.json";
 
 export const generatedGeminiExperiments: Experiment[] = [
-  { manifest: manifest001, notebook: notebook001, complete: true },
-  { manifest: manifest002, notebook: notebook002, complete: true },
-  { manifest: manifest003, notebook: notebook003, complete: true },
-  { manifest: manifest004, notebook: notebook004, complete: true },
-  { manifest: manifest005, notebook: notebook005, complete: true },
-  { manifest: manifest006, notebook: notebook006, complete: true },
-  { manifest: manifest007, notebook: notebook007, complete: true },
-  { manifest: manifest008, notebook: notebook008, complete: true },
-  { manifest: manifest009, notebook: notebook009, complete: true },
-  { manifest: manifest010, notebook: notebook010, complete: false },
-  { manifest: manifest011, notebook: notebook011, complete: false },
-  { manifest: manifest012, notebook: notebook012, complete: false },
-  { manifest: manifest013, notebook: notebook013, complete: false },
-  { manifest: manifest014, notebook: notebook014, complete: false },
-  { manifest: manifest015, notebook: notebook015, complete: false },
-  { manifest: manifest016, notebook: notebook016, complete: false },
-  { manifest: manifest017, notebook: notebook017, complete: false },
-  { manifest: manifest018, notebook: notebook018, complete: false },
-  { manifest: manifest019, notebook: notebook019, complete: false },
-  { manifest: manifest020, notebook: notebook020, complete: false },
-  { manifest: manifest021, notebook: notebook021, complete: false },
-  { manifest: manifest022, notebook: notebook022, complete: false },
-  { manifest: manifest023, notebook: notebook023, complete: false },
-  { manifest: manifest024, notebook: notebook024, complete: false },
-  { manifest: manifest025, notebook: notebook025, complete: false },
-  { manifest: manifest026, notebook: notebook026, complete: true },
-  { manifest: manifest027, notebook: notebook027, complete: false },
-  { manifest: manifest028, notebook: notebook028, complete: false },
-  { manifest: manifest029, notebook: notebook029, complete: false },
-  { manifest: manifest030, notebook: notebook030, complete: false },
-  { manifest: manifest031, notebook: notebook031, complete: false },
-  { manifest: manifest032, notebook: notebook032, complete: false },
-  { manifest: manifest033, notebook: notebook033, complete: false },
-  { manifest: manifest034, notebook: notebook034, complete: false },
-  { manifest: manifest035, notebook: notebook035, complete: false },
-  { manifest: manifest036, notebook: notebook036, complete: false },
-  { manifest: manifest037, notebook: notebook037, complete: false },
-].map(({ manifest, notebook, complete }) => ({
-  status: complete ? "published" : "research-only",
-  mind: "gemini",
-  day: manifest.day,
-  date: manifest.date,
-  title: manifest.title,
-  discipline: notebook.category,
-  hypothesis: notebook.question,
-  reflection: notebook.limitation || "",
-  researchScore: manifest.scores?.research ?? 0,
-  originalityScore: manifest.scores?.originality ?? 0,
-  technicalScore: manifest.scores?.technical ?? 0,
-  notebook: {
-    ...notebook,
-    nextQuestion: notebook.nextQuestion || ("next_step" in notebook && typeof notebook.next_step === "string" ? notebook.next_step : ""),
-    sources: notebook.sources || [],
-  },
-}));
+  { manifest: manifest001, notebook: notebook001, complete: true, executable: true },
+  { manifest: manifest002, notebook: notebook002, complete: true, executable: true },
+  { manifest: manifest003, notebook: notebook003, complete: true, executable: true },
+  { manifest: manifest004, notebook: notebook004, complete: true, executable: true },
+  { manifest: manifest005, notebook: notebook005, complete: true, executable: true },
+  { manifest: manifest006, notebook: notebook006, complete: true, executable: true },
+  { manifest: manifest007, notebook: notebook007, complete: true, executable: true },
+  { manifest: manifest008, notebook: notebook008, complete: true, executable: true },
+  { manifest: manifest009, notebook: notebook009, complete: true, executable: true },
+  { manifest: manifest010, notebook: notebook010, complete: false, executable: true },
+  { manifest: manifest011, notebook: notebook011, complete: false, executable: true },
+  { manifest: manifest012, notebook: notebook012, complete: false, executable: true },
+  { manifest: manifest013, notebook: notebook013, complete: false, executable: true },
+  { manifest: manifest014, notebook: notebook014, complete: false, executable: true },
+  { manifest: manifest015, notebook: notebook015, complete: false, executable: true },
+  { manifest: manifest016, notebook: notebook016, complete: false, executable: true },
+  { manifest: manifest017, notebook: notebook017, complete: false, executable: true },
+  { manifest: manifest018, notebook: notebook018, complete: false, executable: true },
+  { manifest: manifest019, notebook: notebook019, complete: false, executable: true },
+  { manifest: manifest020, notebook: notebook020, complete: false, executable: true },
+  { manifest: manifest021, notebook: notebook021, complete: false, executable: true },
+  { manifest: manifest022, notebook: notebook022, complete: false, executable: true },
+  { manifest: manifest023, notebook: notebook023, complete: false, executable: true },
+  { manifest: manifest024, notebook: notebook024, complete: false, executable: true },
+  { manifest: manifest025, notebook: notebook025, complete: false, executable: true },
+  { manifest: manifest026, notebook: notebook026, complete: true, executable: true },
+  { manifest: manifest027, notebook: notebook027, complete: false, executable: true },
+  { manifest: manifest028, notebook: notebook028, complete: false, executable: true },
+  { manifest: manifest029, notebook: notebook029, complete: false, executable: true },
+  { manifest: manifest030, notebook: notebook030, complete: false, executable: true },
+  { manifest: manifest031, notebook: notebook031, complete: false, executable: true },
+  { manifest: manifest032, notebook: notebook032, complete: false, executable: true },
+  { manifest: manifest033, notebook: notebook033, complete: false, executable: true },
+  { manifest: manifest034, notebook: notebook034, complete: false, executable: true },
+  { manifest: manifest035, notebook: notebook035, complete: false, executable: true },
+  { manifest: manifest036, notebook: notebook036, complete: false, executable: true },
+  { manifest: manifest037, notebook: notebook037, complete: false, executable: true },
+  { manifest: manifest038, notebook: notebook038, complete: false, executable: true },
+  { manifest: manifest039, notebook: notebook039, complete: false, executable: true },
+  { manifest: manifest040, notebook: notebook040, complete: false, executable: true },
+  { manifest: manifest041, notebook: notebook041, complete: false, executable: true },
+  { manifest: manifest042, notebook: notebook042, complete: false, executable: true },
+  { manifest: manifest043, notebook: notebook043, complete: false, executable: true },
+].map(normalizeGeminiRecord);
