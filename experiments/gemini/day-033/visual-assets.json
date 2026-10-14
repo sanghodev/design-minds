@@ -1,0 +1,59 @@
+{
+  "day": 33,
+  "system_name": "Viscous Surface Tension & Acoustic Caustics Typographic Spec",
+  "palette": {
+    "plaster_ivory": "#FAF8F5",
+    "fluid_shallow": "#F2ECE4",
+    "ink_charcoal": "#1A1816",
+    "caustic_white": "rgba(255, 255, 255, 0.9)",
+    "caustic_cyan": "#0284C7",
+    "caustic_amber": "#D97706",
+    "caustic_violet": "#7C3AED",
+    "fluid_shadow": "rgba(35, 28, 20, 0.35)"
+  },
+  "fluid_presets": [
+    {
+      "id": "zen_stillness",
+      "nameKo": "고요한 수면 (Zen Stillness)",
+      "viscosity": 0.985,
+      "wave_amplitude": 0,
+      "refraction_depth": 1.0,
+      "color_tint": "transparent"
+    },
+    {
+      "id": "capillary_ripples",
+      "nameKo": "모세관 잔물결 (Capillary Ripples)",
+      "viscosity": 0.975,
+      "wave_amplitude": 16,
+      "refraction_depth": 1.15,
+      "color_tint": "rgba(2, 132, 199, 0.12)"
+    },
+    {
+      "id": "viscous_sweep",
+      "nameKo": "고점성 유체 스윕 (Viscous Drag)",
+      "viscosity": 0.945,
+      "wave_amplitude": 38,
+      "refraction_depth": 1.35,
+      "color_tint": "rgba(217, 119, 6, 0.16)"
+    },
+    {
+      "id": "caustic_surge",
+      "nameKo": "코스틱 집중 격랑 (Caustic Surge)",
+      "viscosity": 0.965,
+      "wave_amplitude": 54,
+      "refraction_depth": 1.55,
+      "color_tint": "rgba(124, 58, 237, 0.18)"
+    }
+  ],
+  "fluid_solver": {
+    "grid_resolution": "96x64 2D Heightfield",
+    "wave_speed": "c = 1.0 cell/frame",
+    "viscous_damping": "μ = 0.972 (Alpine Water baseline)",
+    "refractive_index": "n = 1.333 (Snell glassmorphism)",
+    "render_pipeline": "Real-time HTML5 2D Canvas + Double Buffer Wave Propagation"
+  },
+  "generative_prompts": {
+    "midjourney_macro": "Cinematic macro overhead photography of clear shallow alpine water over an ivory plaster gallery floor, delicate serif typography debossed beneath the liquid surface, sunlight refracting through gentle ripples into brilliant golden caustic light webs, subtle cyan and amber prismatic dispersion on letterform edges, minimal Swiss architectural styling, 8k resolution, shot on Hasselblad H6D-100c --ar 16:9 --style raw",
+    "runway_cinematic_motion": "Extreme slow motion 1000fps of a smooth glass stylus brushing across the surface of a shallow pool of pure glycerin, undulating capillary waves refracting bold minimalist typography beneath, glowing caustic web lines focusing and dispersing with liquid grace, settling back into calm glass-like stillness with viscous damping"
+  }
+}

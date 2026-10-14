@@ -1,0 +1,47 @@
+{
+  "day": 40,
+  "system_name": "Phosphorescent Persistent Bento & Luminescent Becquerel Decay Shaders",
+  "palette": {
+    "obsidian_darkroom": "#0B0C0E",
+    "phosphor_strontium_green": "#10B981",
+    "europium_cyan_glow": "#06B6D4",
+    "uv_excitation_violet": "#8B5CF6",
+    "alabaster_matte_stone": "#F3F4F6",
+    "brass_lens_barrel": "#C5A059",
+    "thermal_quench_infrared": "#EF4444",
+    "divider_carbon_seam": "#1F2937"
+  },
+  "phosphor_presets": [
+    {
+      "id": "strontium_aluminate_green",
+      "nameKo": "스트론튬 알루미네이트 그린 (SrAl2O4:Eu,Dy)",
+      "emission_wavelength": "520 nm",
+      "half_life": "18.4 s",
+      "accent_color": "#10B981"
+    },
+    {
+      "id": "europium_sky_cyan",
+      "nameKo": "유로퓸 스카이 시안 (Sr4Al14O25:Eu,Dy)",
+      "emission_wavelength": "490 nm",
+      "half_life": "24.2 s",
+      "accent_color": "#06B6D4"
+    },
+    {
+      "id": "zinc_sulfide_vintage",
+      "nameKo": "클래식 황화아연 (ZnS:Cu)",
+      "emission_wavelength": "530 nm",
+      "half_life": "6.8 s",
+      "accent_color": "#84CC16"
+    }
+  ],
+  "vector_engine": {
+    "solver": "Real-time 2D Becquerel decay shader I(t) = I_0 / (1 + at)^m across 600 phosphorescent canvas nodes",
+    "excitation_brush": "Focused 365nm UV light-pen injecting localized photon flux Φ on touch/mouse scrubbing",
+    "variable_font_axis": "OpenType Weight (wght: 300 to 800) and letter-spacing dynamically coupled to localized luminescence intensity",
+    "sound_synthesis": "Web Audio API mechanical camera shutter snaps, UV charge hum, and pure crystalline resonant bell chimes"
+  },
+  "generative_prompts": {
+    "midjourney_macro": "Cinematic macro overhead architectural studio photography of a minimalist Swiss Bento Grid layout carved into a matte darkroom obsidian plate, glowing ethereal emerald and cyan phosphorescent light trails radiating from a brass UV stylus tip, razor-sharp grotesque typography debossed and emitting soft volumetric luminescence in total darkness, Hasselblad H6D-100c, 8k resolution --ar 16:9 --style raw",
+    "runway_cinematic_motion": "Extreme slow motion 1000fps of a human hand writing with a fine violet UV light pen across an architectural dark obsidian bento grid, depositing glowing bioluminescent green photon energy that slowly decays with authentic Becquerel logarithmic fade, typography swelling in weight before cooling into darkness"
+  }
+}

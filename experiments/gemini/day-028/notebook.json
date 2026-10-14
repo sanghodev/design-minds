@@ -1,0 +1,43 @@
+{
+  "day": 28,
+  "date": "2026-09-29",
+  "title": "The Anatomy of an Entrance: Visual Hierarchy Before Words",
+  "design_intent": {
+    "en": "Grounded in real-world observations from New York streets (as reflected in author interview notes: 'I notice the lighting, the entrance shape, and the awning first; if the door looks inviting, the warmth of the light pulls you in, then the interior composition opens up, and only then do you see the words and menu'), this study examines the chronological sequence of human ocular saccades. Before language is decoded, our sensory system evaluates shelter, color temperature, and tactile threshold materials. By translating this multi-stage architectural arrival into an interactive browser canvas, we demonstrate how visual design establishes trust long before typography begins to speak.",
+    "ko": "뉴욕 거리에서의 실제 관찰 기록(저자 인터뷰 메모: '난 조명, 입구모양과 어닝이 먼저 들어옴. 들어가는 문짝이 이쁘면 한번 보고 조명의 따뜻함에 한번 더 이끌리고 안의 구성이 보이기 시작하고 그다음에 글자와 타이틀, 메뉴 그런 게 들어옴')에 착안하여, 인간 시각 인지의 단계별 시선 흐름(Saccadic Sequence)을 규명합니다. 문자가 해독되기 전에 인간의 감각 기관은 어닝의 실루엣(피난처), 문짝의 물성(촉각적 문턱), 실내에서 흘러나오는 조명의 색온도(정서적 환대)를 먼저 평가합니다. 이 다층적 건축 진입 과정을 웹 인터페이스 상에 인터랙티브하게 구현하여, 시각 디자인이 글자가 말하기 훨씬 이전부터 어떻게 신뢰와 이끌림을 형성하는지 탐구합니다."
+  },
+  "visual_mechanics": [
+    {
+      "name": "Chronological Saccadic Hierarchy (단계별 시선 위계)",
+      "principle": "The four natural stages of architectural approach: Stage 1 (Awning & Canopy Silhouette) -> Stage 2 (Doorway Geometry & Tactile Material) -> Stage 3 (Warm Interior Lighting & Depth) -> Stage 4 (Typography, Title, & Menu)."
+    },
+    {
+      "name": "Color Temperature & Emotional Valence (색온도와 정서적 유인가)",
+      "principle": "Varying interior light between 2200K (candlelight amber, intimate & welcoming) and 5500K (clinical daylight, detached & transactional), showing how lighting alone alters the desire to cross the threshold."
+    },
+    {
+      "name": "Tactile Threshold Materials (문턱의 물성)",
+      "principle": "Juxtaposing organic, tactile materials (solid white oak, brushed brass, matte canvas, textured brick) against sterile flat vectors to evoke somatic reassurance."
+    },
+    {
+      "name": "Warm Paper Canvas (따뜻한 종이 캔버스)",
+      "principle": "An editorial palette of ivory cotton (#FAF8F5), deep umber charcoal (#1E1D1B), terracotta brick (#B85D38), brass ochre (#CFA052), and soft pencil gray (#76736D)."
+    }
+  ],
+  "design_tokens": {
+    "color": {
+      "surface_paper": "#FAF8F5",
+      "surface_card": "#FFFFFF",
+      "border_soft": "#EAE6DE",
+      "ink_primary": "#1E1D1B",
+      "ink_secondary": "#5C5954",
+      "accent_terracotta": "#B85D38",
+      "accent_amber_light": "#F2A93B",
+      "accent_brass": "#CFA052"
+    },
+    "typography": {
+      "serif_editorial": "Newsreader / Georgia / serif",
+      "sans_clean": "Inter / system-ui / sans-serif"
+    }
+  }
+}

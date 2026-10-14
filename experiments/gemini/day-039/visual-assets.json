@@ -1,0 +1,48 @@
+{
+  "day": 39,
+  "system_name": "Triboelectric Electrostatic Bento & Coulomb Surface Potential Shaders",
+  "palette": {
+    "bristol_porcelain": "#FAF8F5",
+    "selenium_substrate": "#141312",
+    "tribo_amber_ionization": "#F59E0B",
+    "carbon_toner_black": "#0F0E0D",
+    "corona_ultraviolet": "#8B5CF6",
+    "dielectric_neutral_stone": "#57534E",
+    "brass_ground_stud": "#C5A059",
+    "ground_wire_emerald": "#10B981",
+    "divider_seam": "#E7E2DA"
+  },
+  "dielectric_presets": [
+    {
+      "id": "selenium_photoconductor",
+      "nameKo": "비정질 셀레늄 감광체 (a-Se)",
+      "dielectric_constant": "6.3 ε_r",
+      "breakdown_voltage": "55 kV",
+      "accent_color": "#F59E0B"
+    },
+    {
+      "id": "porcelain_dielectric",
+      "nameKo": "세라믹 자기 유전체 (Ceramic)",
+      "dielectric_constant": "8.5 ε_r",
+      "breakdown_voltage": "40 kV",
+      "accent_color": "#8B5CF6"
+    },
+    {
+      "id": "teflon_triboelectric",
+      "nameKo": "PTFE 테플론 고분자 (Teflon)",
+      "dielectric_constant": "2.1 ε_r",
+      "breakdown_voltage": "60 kV",
+      "accent_color": "#10B981"
+    }
+  ],
+  "vector_engine": {
+    "solver": "Real-time 2D electrostatic potential V(x,y) and Coulomb gradient field E = -∇V computed across 600 surface nodes",
+    "particle_adhesion": "Coulomb force F = qE driving 300 airborne dry toner particles along field streamlines",
+    "variable_font_axis": "OpenType Weight (wght: 350 to 800) and letter-spacing dynamically coupled to surface potential voltage",
+    "sound_synthesis": "Web Audio API high-voltage corona hiss, toner paper friction, and crisp mechanical capacitor discharge spark snaps"
+  },
+  "generative_prompts": {
+    "midjourney_macro": "Cinematic macro overhead architectural studio photography of a minimalist Swiss Bento Grid layout carved into a dark vitreous selenium plate resting on ivory porcelain, glowing amber electrostatic potential streamlines radiating from a brass stylus tip, fine velvet carbon toner particles perfectly clinging to typographic relief, brass grounding caliper resting beside, Hasselblad H6D-100c, 8k resolution --ar 16:9 --style raw",
+    "runway_cinematic_motion": "Extreme slow motion 1000fps of a human hand dragging a brass friction wand across an architectural Swiss bento grid, depositing glowing amber electrostatic potential on dark glass, airborne carbon toner particles instantly accelerating and clinging along electric field lines to sculpt typography, then a grounding switch triggers a clean blue spark and instant smooth dissipation"
+  }
+}

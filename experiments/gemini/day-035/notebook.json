@@ -1,0 +1,108 @@
+{
+  "day": 35,
+  "date": "2026-10-06",
+  "title": "Hydro-Capillary Bento & Anisotropic Paper Shaders: Micro-Porous Diffusion, Moisture-Activated Variable Typography & Swiss Editorial Tactility",
+  "design_intent": {
+    "en": "On Day 005, our exploration of 'Atmospheric Hygrometry' demonstrated that digital typography could breathe when coupled with environmental moisture. However, Day 005 fell into an aesthetic trap: an unstructured, passive atmospheric blur that smeared letterforms without intentional interaction or architectural hierarchy. Exactly thirty days later, on Day 035, we dismantle this 'environmental blur cliché' by transforming paper porosity from a passive atmospheric filter into an active, tactile, anisotropic capillary medium. When water touches real handmade washi or heavy cotton paper, it does not diffuse in sterile isotropic circles; it wicks along microscopic cellulose fiber grain governed by Lucas-Washburn mechanics (L² = (γ r cosθ / 2μ) t) and anisotropic diffusion tensors. We integrate this living physics directly into a Swiss Bento Monograph layout. In its dry resting state, the layout presents ultra-disciplined Swiss editorial minimalism—basalt ink, milled brass dividers, and terracotta stamps. As the user draws across the paper with a water stylus, the micro-porous fibers absorb moisture: the substrate undergoes hydrochromic translucency, revealing a concealed subterranean editorial blueprint with delicate sumi-e wash halos. Typography resting beneath the moisture dynamically swells in OpenType variable weight (wght: 300 -> 750) and optical size. Over time, natural evaporation gently lifts the moisture, allowing the feathery bleed to crisply recede back into razor-sharp Swiss baseline geometry, uniting organic material decay with architectural permanence.",
+    "ko": "Day 005에서 우리는 '대기 습도 조형학(Atmospheric Hygrometry)'을 통해 디지털 활자가 환경 습도와 맞물려 살아 숨 쉴 수 있음을 증명했습니다. 그러나 당시의 실험은 치명적인 조형적 덫에 빠져 있었습니다. 사용자의 의도적 인터랙션이나 건축적 위계 없이, 화면 전체를 밋밋하게 흐려버리는 '환경 블러 클리셰'에 머물렀던 것입니다. 정확히 30일이 흐른 오늘 Day 035, 우리는 종이의 미세공극성을 단순한 수동적 필터에서 벗어나 능동적이고 촉각적인 '이방성 모세관 매질(Anisotropic Capillary Medium)'로 승화시킴으로써 이 한계를 완벽히 격파합니다. 실제 수제 한지(Washi)나 코튼 판화지에 물이 닿을 때, 수분은 무미건조한 동심원을 그리지 않습니다. 셀룰로오스 섬유의 배열 방향을 따라 루카스-워시번(Lucas-Washburn) 방정식과 이방성 확산 텐서에 의해 붓결처럼 길게 번져나갑니다. 우리는 이 물리학을 스위스 벤토 모노그래프 레이아웃에 직접 이식했습니다. 건조한 평형 상태에서 화면은 현무암 숯빛 활자, 밀드 황동 분할선, 테라코타 인장이 엄격히 정돈된 스위스 미니멀리즘을 과시합니다. 그러나 사용자가 물 브러시로 종이 위를 스칠 때, 미세공극이 수분을 머금으며 종이가 반투명해지는 '수분 감응형 투광성(Hydrochromic Translucency)'이 발현되어, 지하층에 은닉되어 있던 에디토리얼 청사진과 몽환적인 먹물 번짐(Sumi-e Wash Halo)이 수면 위로 피어오릅니다. 수분에 젖은 글자는 가변 서체 굵기(wght: 300 -> 750)로 호흡하며, 증발과 함께 서서히 날카로운 스위스 기저선으로 복원됩니다."
+  },
+  "visual_mechanics": [
+    {
+      "name": "Anisotropic Lucas-Washburn Capillary Diffusion Engine (이방성 루카스-워시번 모세관 확산 해석기)",
+      "principle": "Simulating non-uniform fluid wicking across fibrous cellulose paper: ∂C/∂t = ∇ · (D(φ) ∇C) - k_evap · C, where diffusion tensor D(φ) concentrates capillary flow along the microscopic fiber orientation angle φ."
+    },
+    {
+      "name": "Hydrochromic Subterranean Layer Revelation (수분 감응형 지하층 투광 발현 시스템)",
+      "principle": "Modulating paper optical opacity as a function of local moisture concentration C(x,y): T(C) = T_dry + (T_wet - T_dry) · (C² / (C² + Kh²)). Wetting the paper renders it translucent, exposing submerged drafting notes and architectural diagrams with organic sumi-e ink halos."
+    },
+    {
+      "name": "Moisture-Saturated Variable Typography (수분 포화도 감응형 가변 서체 조율)",
+      "principle": "Dynamically mapping local moisture saturation directly to OpenType variable font weight (wght: 300 to 750), width (wdth: 90% to 110%), and feathered ink dispersion borders, transitioning smoothly between crisp vector serifs and bleeding brush strokes."
+    },
+    {
+      "name": "Tactile Paper Friction & Evaporation Synthesizer (촉각적 종이 마찰음 및 증발 음향 합성기)",
+      "principle": "Synthesizing authentic cotton paper dragging friction, delicate capillary effervescence (micro-bubble hissing), and water droplet impact acoustics via Web Audio API, reacting in real time to stylus velocity and moisture saturation without continuous audio fatigue."
+    }
+  ],
+  "mathematical_models": {
+    "lucas_washburn_capillary_penetration": "L² = (γ · r · cosθ / (2 · μ)) · t",
+    "anisotropic_diffusion_tensor": "D(φ) = R(φ) · diag(D_parallel, D_perpendicular) · R(φ)ᵀ",
+    "hydrochromic_optical_transmittance": "T(C) = T_dry + (T_wet - T_dry) · [C² / (C² + K_h²)]",
+    "opentype_variable_axis_modulation": "wght(C) = wght_base + Δwght_max · tanh(2.5 · C),  opsz(C) = opsz_base + Δopsz · C",
+    "evaporative_drying_kinetics": "dC/dt = -k_evap · (1 - RH / 100) · C"
+  },
+  "paper_substrates": [
+    {
+      "id": "echizen_washi",
+      "name": "Echizen Kozo Washi",
+      "nameKo": "에치젠 닥나무 한지",
+      "fiberLengthMm": 12.5,
+      "anisotropyRatio": 2.8,
+      "porosity": 0.68,
+      "evapRate": 0.012,
+      "surfaceTone": "#FBF9F4",
+      "accentColor": "#C5A059",
+      "inkColor": "#141312",
+      "descKo": "긴 닥나무 섬유가 얽혀 있어 결 방향으로 극적인 붓 번짐 효과와 따뜻하고 깊은 수묵의 농담을 연출합니다."
+    },
+    {
+      "id": "arches_cotton",
+      "name": "Arches Heavy Cotton Rag",
+      "nameKo": "아르쉬 중량 코튼 판화지",
+      "fiberLengthMm": 3.8,
+      "anisotropyRatio": 1.2,
+      "porosity": 0.52,
+      "evapRate": 0.018,
+      "surfaceTone": "#F4EFE6",
+      "accentColor": "#C2410C",
+      "inkColor": "#1E1C1A",
+      "descKo": "순면 100%의 촘촘한 미세공극 구조를 지녀, 수분을 균일하게 흡수하며 우아하고 단단한 스위스 에디토리얼 질감을 제공합니다."
+    },
+    {
+      "id": "cyber_epaper",
+      "name": "Cybernetic Micro-Capsule E-Paper",
+      "nameKo": "사이버네틱 미세캡슐 전자종이",
+      "fiberLengthMm": 0.5,
+      "anisotropyRatio": 1.0,
+      "porosity": 0.35,
+      "evapRate": 0.035,
+      "surfaceTone": "#EAE7E1",
+      "accentColor": "#0284C7",
+      "inkColor": "#0F172A",
+      "descKo": "쌍안정성(Bistable) 전기영동 마이크로캡슐을 모사하여, 초고속 증발 반응과 면도날 같은 네오 브루탈리즘 모노스페이스 선명도를 자랑합니다."
+    }
+  ],
+  "design_tokens": {
+    "color": {
+      "surface_plaster": "#FBF9F4",
+      "surface_paper_bed": "#F4EFE6",
+      "surface_card": "#FFFFFF",
+      "ink_basalt": "#141312",
+      "ink_secondary": "#57534E",
+      "accent_brass": "#C5A059",
+      "accent_terracotta": "#C2410C",
+      "accent_wet_cyan": "#0284C7",
+      "accent_sumi_wash": "rgba(20, 19, 18, 0.45)",
+      "border_subtle": "#E8E2D8",
+      "border_active": "#C5A059"
+    },
+    "typography": {
+      "display_serif": "'Playfair Display', Georgia, serif",
+      "body_sans": "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
+      "code_mono": "'JetBrains Mono', 'SF Mono', monospace",
+      "scale": {
+        "masthead": "clamp(2.5rem, 5.5vw, 4.5rem)",
+        "h1": "clamp(1.75rem, 3vw, 2.5rem)",
+        "h2": "clamp(1.25rem, 2vw, 1.75rem)",
+        "body": "0.95rem",
+        "caption": "0.78rem"
+      }
+    },
+    "capillary_physics": {
+      "grid_resolution": "80x60 cellular diffusion field",
+      "diffusion_rate": 0.42,
+      "evaporation_base": 0.015,
+      "brush_radius_px": 35
+    }
+  }
+}

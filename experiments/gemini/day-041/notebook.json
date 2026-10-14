@@ -1,0 +1,48 @@
+{
+  "day": 41,
+  "date": "2026-10-12",
+  "title": "Anamorphic Spatial Bento & Projective Homography Shaders: Oblique Perspective Distortion, Singular Optical Vantage Alignment & Swiss Cyber-Editorial Architecture",
+  "design_intent": {
+    "en": "On Day 011, our studio explored historical and structural forensics around legendary artifacts. While rigorous, Day 011 fell into the \"historical diorama cliché\"—treating design as a descriptive archaeological report rather than browser-operable, cutting-edge front-end interactive UI design. Exactly thirty days later, on Day 041, we liberate spatial design from this museum diorama trap. We elevate spatial depth into a living, interactive optical architecture: 3D Projective Homography Matrix Calculus (x' = Hx), Non-Linear Anamorphic Viewport Stretching, and Singular Optical Vantage Alignment in modern Swiss Bento Grid architecture. In classical optics and art history, Hans Holbein the Younger (The Ambassadors, 1533) demonstrated that spatial truth depends entirely on vantage point: an elongated, unrecognizable smear viewed obliquely resolves into a razor-sharp symbol of mortality only from an exact, acute optical angle. We map this projective geometry directly to digital interface architecture. Modular Bento cells act as oblique planar facets in 3D projective space. As the user tilts the canvas across Pitch and Yaw angles, typography undergoes severe geometric distortion and projective elongation. Saccadic reading is challenged by extreme slant and foreshortening. However, navigating the camera to the singular Vantage Point Singularity (θ_vantage = 0°, ψ_vantage = 0°) triggers an instantaneous optical collapse: the homography matrix inverts the distortion (H^-1 · H = I), aligning fractured cards into pristine, undeformed Swiss modernist layout stillness, accompanied by mechanical lens detent snaps and crystalline spatial resonance.",
+    "ko": "Day 011에서 우리는 전설적 유물의 역사적·구조적 법의학을 탐구했습니다. 그러나 당시의 시도는 인터페이스 디자인을 실제 조작 가능한 프론트엔드 조형물이 아닌 고고학적 설명문과 정적인 모형에 가두는 '역사적 디오라마 클리셰'에 빠져 있었습니다. 정확히 30일이 흐른 오늘 Day 041, 우리는 이 박물관 디오라마 함정에서 공간 디자인을 완전히 해방시킵니다. 3차원 투영 호모그래피(Projective Homography) 행렬 미적분(x' = Hx), 비선형 왜상(Anamorphic) 뷰포트 신장, 그리고 완벽한 단일 시점 특이점 정렬(Singular Optical Vantage Alignment)을 스위스 벤토 그리드 건축에 전격 이식합니다. 미술사와 기하광학에서 한스 홀바인(대사들, 1533)은 공간의 진실이 관찰자의 시점에 완전히 종속되어 있음을 증명했습니다. 비스듬한 각도에서 길게 늘어나 형체를 알아볼 수 없던 얼룩이 오직 특정한 광학적 시점에 도달할 때만 면도날처럼 날카로운 형상으로 응집하는 왜상 기하학의 원리입니다. 우리는 이 사영기하학을 인터페이스 건축의 뼈대로 삼았습니다. 벤토 카드들은 3차원 투영 공간 속에 비스듬히 기울어진 면으로 배치됩니다. 사용자가 마우스로 피치(Pitch)와 요(Yaw) 각도를 회전시키면, 글자들은 공간 속에서 극단적으로 늘어지고 왜곡되며 흩어집니다. 그러나 사용자의 시선이 정확한 광학적 특이점 시점(θ=0°, ψ=0°)에 도달하는 순간, 역호모그래피 행렬(H^-1 · H = I)에 의해 왜곡이 완벽히 상쇄되며 산산이 흩어졌던 모듈러 카드들이 정갈한 요제프 뮐러-브로크만의 스위스 모더니즘 에디토리얼 그리드로 찰칵 결착됩니다. 기계식 렌즈 조리개 래칫음과 공간 공명음이 결합되어 경이로운 광학적 조형 카타르시스를 선사합니다."
+  },
+  "visual_mechanics": [
+    {
+      "name": "3D Projective Homography Matrix Solver (3차원 사영 호모그래피 행렬 해석기)",
+      "principle": "Computing 3x3 projective transformation matrix H = K [R | t] across 3D viewport planes in real time, calculating coordinate mapping between world space (X, Y, Z) and screen projection (x', y')."
+    },
+    {
+      "name": "Anamorphic Viewport Stretching & Oblique Shear (비선형 왜상 뷰포트 신장 및 사선 전단 역학)",
+      "principle": "Coupling 3D perspective pitch (θ ∈ [-45°, 45°]) and yaw (ψ ∈ [-60°, 60°]) to non-linear typographic baseline elongation, creating dramatic spatial distortion at oblique angles."
+    },
+    {
+      "name": "Singular Vantage Point Collapse & Lock (단일 시점 특이점 결착 및 광학적 복원)",
+      "principle": "Detecting alignment tolerance (|θ - θ_0| < 2.5° and |ψ - ψ_0| < 2.5°), triggering instant homography inversion (H^-1 H = I) that snaps fractured modules into undeformed Swiss grid balance."
+    },
+    {
+      "name": "Vantage-Coupled Variable Typography (원근 특이점 감응형 가변 서체 및 광학 크기)",
+      "principle": "Dynamically compensating perspective foreshortening by coupling variable font weight (wght: 300 to 800) and optical width (wdth: 75% to 125%) to the cosine of the camera view angle."
+    },
+    {
+      "name": "Precision Lens Ratchet Snaps & Crystalline Focal Ring Bells (정밀 렌즈 래칫 틱음 및 초점 벨 음향)",
+      "principle": "Synthesizing authentic optical camera mechanics via Web Audio API: mechanical lens barrel ratchet clicks during rotation, and a pure 1200Hz crystal bell chime upon achieving perfect vantage point lock."
+    }
+  ],
+  "mathematical_models": {
+    "projective_homography_matrix": "x' ~ H · x = [[h11, h12, h13], [h21, h22, h23], [h31, h32, h33]] · [x, y, 1]^T",
+    "perspective_camera_projection": "x_screen = (f_x · X / Z) + c_x, y_screen = (f_y · Y / Z) + c_y",
+    "anamorphic_stretch_factor": "S_anamorphic(θ) = 1 / cos(θ_view)",
+    "vantage_singularity_metric": "Δ_vantage = sqrt((θ - θ_0)² + (ψ - ψ_0)²)",
+    "variable_typography_perspective_coupling": "wght(Δ) = clamp(300 + (1 - min(1, Δ_vantage / 45°)) · 500, 300, 800)"
+  },
+  "color_palette": {
+    "bristol_ivory": "#FAF8F5",
+    "basalt_carbon": "#121110",
+    "anamorphic_ultramarine": "#2563EB",
+    "vantage_lock_amber": "#F59E0B",
+    "optic_singularity_cyan": "#06B6D4",
+    "milled_brass_dial": "#C5A059",
+    "projection_grid_charcoal": "#4B5563",
+    "divider_seam": "#E5E7EB"
+  }
+}

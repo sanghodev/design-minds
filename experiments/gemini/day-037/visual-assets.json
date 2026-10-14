@@ -1,0 +1,50 @@
+{
+  "day": 37,
+  "system_name": "Chromatic Polarization Bento & Optical Retardation Shaders Typographic Spec",
+  "palette": {
+    "bristol_ivory": "#FAF8F5",
+    "basalt_ink": "#141312",
+    "charcoal_secondary": "#57534E",
+    "brass_milled": "#C5A059",
+    "terracotta_stamp": "#C2410C",
+    "fringe_cyan": "#00F0FF",
+    "fringe_magenta": "#E4007F",
+    "fringe_yellow": "#FFED00",
+    "fringe_indigo": "#4F46E5",
+    "dark_field_obsidian": "#0A0908",
+    "divider_linen": "#E7E2DA"
+  },
+  "polarization_presets": [
+    {
+      "id": "crossed_nicol",
+      "nameKo": "직교 니콜 암시야 (Crossed Nicol 90°)",
+      "analyzer_angle": 90,
+      "optical_state": "Zero-lux background extinction with brilliant Brewster isochromatic fringes",
+      "accent_color": "#00F0FF"
+    },
+    {
+      "id": "parallel_field",
+      "nameKo": "평행 편광 명시야 (Parallel Field 0°)",
+      "analyzer_angle": 0,
+      "optical_state": "Pristine Swiss ivory paper baseline with zero chromatic interference",
+      "accent_color": "#C5A059"
+    },
+    {
+      "id": "quarter_wave",
+      "nameKo": "4분위 위상지연 (Quarter-Wave 45°)",
+      "analyzer_angle": 45,
+      "optical_state": "Soft pastel chromatic dispersion across modular card borders",
+      "accent_color": "#E4007F"
+    }
+  ],
+  "photoelastic_engine": {
+    "optical_solver": "Real-time Brewster tensor retardation solver evaluated across RGB wavelengths",
+    "stress_injection": "Direct interactive point-load stylus creating radial principal shear stresses",
+    "variable_font_axis": "OpenType Weight (wght: 350 to 750) and Optical Size (opsz: 12 to 48pt) scaled to |σ1 - σ2|",
+    "sound_synthesis": "Web Audio API quartz crystal bell chimes and mechanical polarizer rotation ratchets"
+  },
+  "generative_prompts": {
+    "midjourney_macro": "Cinematic macro overhead architectural studio photography of a minimalist Swiss Bento Grid layout carved into a sheet of strained photoelastic quartz glass placed between crossed polarizing filters, pitch-black zero-lux background extinction with vibrant iridescent Brewster isochromatic rainbow stress fringe loops glowing along modular grid card seams and debossed serif letterforms, brass optical rotation dial and precision calipers resting nearby, Hasselblad H6D-100c, 8k resolution --ar 16:9 --style raw",
+    "runway_cinematic_motion": "Extreme slow motion 1000fps of a human hand rotating a precision milled brass optical polarizing filter dial across a Swiss editorial monograph, the background smoothly plunging into deep obsidian blackness while mechanical grid borders and typography erupt into brilliant neon cyan, magenta, and amber photoelastic birefringence rings"
+  }
+}

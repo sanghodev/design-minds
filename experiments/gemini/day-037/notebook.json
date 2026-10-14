@@ -1,0 +1,147 @@
+{
+  "day": 37,
+  "date": "2026-10-08",
+  "title": "Chromatic Polarization Bento & Optical Retardation Shaders: Subtractive Spectral Birefringence, Crossed Nicol Filters & Swiss Typographic Architecture",
+  "design_intent": {
+    "en": "On Day 007, our studio investigated 'Chromatic Glassine', exploring whether physical layers of cyan, magenta, and yellow tracing paper could subtractively filter light through the Beer-Lambert law to assemble pitch-black composite typography. While visually intriguing, Day 007 fell into a decorative trap: the 'decorative CMYK separation cliché'—treating subtractive color as a static print-shop process of mechanical layer alignment. Exactly thirty days later, on Day 037, we transcend this print-shop separation trope by introducing genuine Photoelastic Stress Optics, Optical Retardation Tensors, and Crossed-Nicol Polarization Shaders to modern Swiss Bento Grid architecture. In classical physics, David Brewster demonstrated that when transparent anisotropic media undergo mechanical strain, they become birefringent (n1 != n2), splitting polarized light into orthogonal wave components. When viewed between crossed linear polarizers (θ = 90°), complete destructive interference quenches background transmission into zero-lux blackness (Malus' Law: I = I0 cos²θ). However, points of mechanical stress delay specific wavelengths by optical phase retardation δ = (2πd / λ) Δn, causing pure white light to burst into vivid, iridescent isochromatic fringe loops. We map this living optical calculus directly to front-end interface architecture. In Parallel Polarization Mode (θ = 0°), the Bento grid presents pristine Swiss modernist tranquility—ivory substrates, basalt sumi ink, and milled brass calipers. As the user rotates the optical analyzer dial toward 90° or presses the canvas with a tactile stress stylus, background light is subtractively extinguished while grid borders and editorial typography erupt into glowing photoelastic rainbow stress contours. OpenType variable font weight (wght: 350 -> 750) dynamically swells under localized shear stress, accompanied by resonant quartz chimes and mechanical polarizer ratchet clicks.",
+    "ko": "Day 007에서 우리는 '반투명 색채 글라신(Chromatic Glassine)'을 탐구하며, 시안·마젠타·옐로우 반투명 트레이싱지가 겹쳐질 때 베르-람베르트 법칙에 의해 빛을 감산 혼합하여 칠흑 같은 합성 활자를 빚어낼 수 있는지를 실험했습니다. 그러나 당시의 시도는 인쇄소의 3원색 분판 과정을 모사하는 데 그친 '장식적 CMYK 분판 클리셰'에 머물러 있었습니다. 정확히 30일이 흐른 오늘 Day 037, 우리는 이 피상적인 분판 유행을 완전히 뛰어넘어, 물리학의 정통 광탄성 응력 광학(Photoelastic Stress Optics), 광학적 위상 지연 텐서, 그리고 직교 니콜(Crossed Nicol) 편광 셰이더를 스위스 벤토 그리드 건축에 전격 이식합니다. 19세기 데이비드 브루스터(David Brewster)는 투명한 매질이 기계적 응력($\\sigma$)을 받을 때 복굴절($\\Delta n$)을 일으켜 빛의 위상을 쪼갠다는 사실을 발견했습니다. 이를 90도 직교 편광판(Crossed Polarizers) 사이에 넣으면 말루스의 법칙($I = I_0 \\cos^2\theta$)에 의해 배경의 모든 백색광이 완전한 칠흑(Zero-Lux Extinction)으로 소광되지만, 응력이 가해진 지점은 특정 파장이 지연되어 경이롭고 찬란한 무지개 등색선(Isochromatic Fringes)으로 타오릅니다. 우리는 이 순수한 광학 물리학을 인터랙티브 벤토 레이아웃에 직접 연결했습니다. 평행 편광 모드(0°)에서 화면은 고요하고 단정한 상아빛 스위스 모더니즘의 정수를 보여줍니다. 그러나 사용자가 편광자 다이얼을 90도로 돌리거나 캔버스에 터치 압력을 가하는 순간, 배경광은 극적으로 소광되며 모듈러 격자 경계선과 활자가 화려한 광탄성 네온 오로라로 변모합니다. 가변 서체는 응력장에 반응하여 굵기(wght: 350 -> 750)를 팽창시키며, 수정 종소리와 회전 래칫 클릭음이 결합되어 공감각적 조형 카타르시스를 선사합니다."
+  },
+  "visual_mechanics": [
+    {
+      "name": "Photoelastic Stress Birefringence & Retardation Solver (광탄성 응력 복굴절 및 위상 지연 해석기)",
+      "principle": "Simulating Brewster photoelastic stress-optic tensor fields: Δn = C · (σ1 - σ2), where principal stress difference induces wavelength-dependent phase retardation δ(λ) = (2πd / λ) Δn, generating continuous multi-order isochromatic rainbow contours."
+    },
+    {
+      "name": "Crossed Nicol Polarization Field & Malus Law Extinction (직교 니콜 편광장 및 말루스 법칙 소광)",
+      "principle": "Modulating transmitted background field luminance via Malus' Law: I(θ) = I_0 · cos²(θ_analyzer - θ_polarizer). Rotating from 0° (parallel) to 90° (crossed) transitions the viewport seamlessly from warm ivory plaster into a pitch-black zero-lux dark field."
+    },
+    {
+      "name": "Stress-Compensating Variable Typography & Isochromatic Halo (응력 감응형 가변 활자 및 등색선 후광)",
+      "principle": "Mapping localized shear stress tensor |σ1 - σ2| directly to OpenType variable font weight (wght: 350 to 750) and optical size (opsz: 12 to 48pt). Characters in high-stress zones swell with authority and radiate chromatic birefringence halos, while zero-stress areas retain razor-sharp Swiss baseline stillness."
+    },
+    {
+      "name": "Rotatable Optical Analyzer Haptics & Quartz Resonance (회전식 편광 해석기 햅틱스 및 석영 공명음)",
+      "principle": "Synthesizing authentic mechanical optical equipment ratchets (discrete acoustic clicks every 15° of analyzer rotation) paired with high-frequency crystalline quartz chimes and subtle photoelastic stress drone via Web Audio API, reacting in real time without continuous audio fatigue."
+    }
+  ],
+  "mathematical_models": {
+    "malus_polarization_law": "I(θ) = I_0 · cos²(θ_analyzer - θ_polarizer)",
+    "brewster_photoelastic_law": "Δn = n_1 - n_2 = C · (σ_1 - σ_2)",
+    "spectral_phase_retardation": "δ(λ) = (2π · d / λ) · Δn",
+    "isochromatic_intensity_transmission": "I(λ) = I_0 · sin²(2φ) · sin²(δ(λ) / 2)",
+    "opentype_variable_axis_modulation": "wght(σ) = wght_base + Δwght_max · tanh(1.8 · |σ_1 - σ_2|)"
+  },
+  "optical_materials": [
+    {
+      "id": "strained_quartz",
+      "name": "Strained Optical Quartz Glass",
+      "nameKo": "응력 광학 석영 유리",
+      "brewsterConstantC": 3.5e-12,
+      "extinctionPurity": 0.98,
+      "surfaceTone": "#FAF8F5",
+      "cardTone": "#FFFFFF",
+      "textColor": "#141312",
+      "subTextColor": "#57534E",
+      "accentColor": "#C5A059",
+      "borderColor": "#E7E2DA",
+      "darkFieldBg": "#0A0908",
+      "descKo": "극도로 높은 순도의 석영 판재로, 편광 축 회전 시 면도날처럼 날카로운 90도 완전 소광과 선명한 고차 등색선 무지개를 분출합니다."
+    },
+    {
+      "id": "birefringent_glassine",
+      "name": "Birefringent Cellulose Glassine",
+      "nameKo": "복굴절 셀룰로오스 글라신지",
+      "brewsterConstantC": 7.2e-12,
+      "extinctionPurity": 0.85,
+      "surfaceTone": "#F4EFEA",
+      "cardTone": "rgba(255, 255, 255, 0.92)",
+      "textColor": "#1C1A18",
+      "subTextColor": "#524E48",
+      "accentColor": "#C2410C",
+      "borderColor": "#E2DBD0",
+      "darkFieldBg": "#12100E",
+      "descKo": "식물성 섬유의 고유 배향이 빚어내는 유기적 복굴절을 지녀, 부드러운 파스텔톤의 감산 간섭광과 따뜻한 물질적 촉감을 자아냅니다."
+    },
+    {
+      "id": "polarizing_titanium",
+      "name": "Anodized Polarizing Titanium",
+      "nameKo": "아노다이징 편광 티타늄",
+      "brewsterConstantC": 1.8e-12,
+      "extinctionPurity": 0.99,
+      "surfaceTone": "#141312",
+      "cardTone": "#1F1D1B",
+      "textColor": "#FAF8F5",
+      "subTextColor": "#A8A29E",
+      "accentColor": "#4F46E5",
+      "borderColor": "#2E2B28",
+      "darkFieldBg": "#050505",
+      "descKo": "나노 박막 산화 피막에 의한 구조색과 기계적 정밀 힌지를 결합하여, 모놀리식한 사이버 에디토리얼의 위엄을 과시합니다."
+    }
+  ],
+  "optical_presets": [
+    {
+      "id": "crossed_nicol",
+      "nameKo": "직교 니콜 암시야 (Crossed Nicol 90°)",
+      "analyzerAngle": 90,
+      "fieldMode": "Dark Field Extinction",
+      "descKo": "배경광이 완전히 소광되어 칠흑 같은 암흑 속에서 오직 응력선과 활자만이 무지개 등색선으로 발광합니다."
+    },
+    {
+      "id": "parallel_field",
+      "nameKo": "평행 편광 명시야 (Parallel Field 0°)",
+      "analyzerAngle": 0,
+      "fieldMode": "Bright Field Swiss Grid",
+      "descKo": "상아빛 석고 회벽과 현무암 잉크의 완전한 스위스 모더니즘 평형 상태로, 원색의 방해 없이 극도의 가독성을 제공합니다."
+    },
+    {
+      "id": "quarter_wave",
+      "nameKo": "4분위 위상지연 (Quarter-Wave 45°)",
+      "analyzerAngle": 45,
+      "fieldMode": "Elliptical Polarization",
+      "descKo": "타원 편광이 유도되어 은은하고 몽환적인 파스텔톤 스펙트럼 후광이 에디토리얼 카드를 감쌉니다."
+    },
+    {
+      "id": "stress_tensor_map",
+      "nameKo": "촉각 기계응력 모드 (Tactile Stress Map)",
+      "analyzerAngle": 80,
+      "fieldMode": "Dynamic Stress Injection",
+      "descKo": "사용자가 직접 화면을 터치하여 기계적 하중을 가할 때 실시간으로 등색선 루프가 뻗어나가는 인터랙티브 모드입니다."
+    }
+  ],
+  "design_tokens": {
+    "color": {
+      "ivory_substrate": "#FAF8F5",
+      "paper_card": "#FFFFFF",
+      "basalt_ink": "#141312",
+      "charcoal_secondary": "#57534E",
+      "milled_brass": "#C5A059",
+      "terracotta_stamp": "#C2410C",
+      "isochromatic_cyan": "#00F0FF",
+      "isochromatic_magenta": "#E4007F",
+      "isochromatic_yellow": "#FFED00",
+      "isochromatic_indigo": "#4F46E5",
+      "dark_field_void": "#0A0908"
+    },
+    "typography": {
+      "display_serif": "'Playfair Display', Georgia, serif",
+      "body_sans": "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
+      "code_mono": "'JetBrains Mono', 'SF Mono', monospace",
+      "scale": {
+        "masthead": "clamp(2.5rem, 5.5vw, 4.5rem)",
+        "h1": "clamp(1.75rem, 3vw, 2.5rem)",
+        "h2": "clamp(1.25rem, 2vw, 1.75rem)",
+        "body": "0.95rem",
+        "caption": "0.78rem"
+      }
+    },
+    "photoelastic_shader": {
+      "stress_grid_resolution": "80x60 cellular tensor field",
+      "optical_thickness_d": "3.2mm",
+      "spectral_channels": [
+        "Red (650nm)",
+        "Green (532nm)",
+        "Blue (450nm)"
+      ]
+    }
+  }
+}

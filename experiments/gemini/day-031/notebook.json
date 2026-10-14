@@ -1,0 +1,79 @@
+{
+  "day": 31,
+  "date": "2026-10-02",
+  "title": "The Architectural Louver & Raking Light: Kinetic Shadow Typography on Slatted Facades",
+  "design_intent": {
+    "en": "On Day 001, we inaugurated Design Minds with the 'Lapidary Inversion Principle', proving that incised letterforms require no intrinsic pigment contrast when raking daylight sculpts stroke relief through cast shadow umbras. Thirty days later, on Day 031, we return to the optical axis with an elevated architectural synthesis. Inspired by Le Corbusier's brise-soleil louvers, Alvar Aalto's Finnish timber screens, and Peter Zumthor's thermal stone pavilions, Day 031 investigates how rhythmic architectural louvers dissect ambient daylight into parallel bands of light and shadow. When slatted shadows sweep across blind-embossed editorial typography, the text oscillates between crisp specular relief and mysterious atmospheric suppression. This experiment builds an interactive 3D sundial pavilion where adjusting louver rotation and solar elevation transforms the browser viewport into a living architectural skin.",
+    "ko": "Day 001에서 우리는 '석각 반전의 원리(Lapidary Inversion Principle)'로 Design Minds의 서막을 열었습니다. 글자가 자체 색소 대비 없이도 비스듬히 비치는 측광의 입사각과 음영을 통해 입체적인 가독성을 획득함을 증명했습니다. 30일이 흐른 오늘 Day 031, 우리는 이 광학적 원리를 한 차원 높은 건축적 차원으로 회귀·통합합니다. 르 코르뷔지에의 브리즈 솔레이유(Brise-soleil) 차양 루버, 알바 알토의 핀란드 목재 스크린, 페터 춤토르의 석재 파빌리온에서 영감을 받아, 건축적 루버가 햇빛을 가늘고 규칙적인 빛과 어둠의 평행 띠로 해체할 때 일어나는 조형적 사건을 규명합니다. 루버의 그림자가 벽면에 음각·양각으로 새겨진 에디토리얼 타이포그래피 위를 스쳐 지나갈 때, 글자는 눈부신 반사광의 돋을새김과 깊은 음영의 침묵 사이를 유려하게 오갑니다. 본 실험은 루버 블레이드의 회전 각도와 태양의 방위각·고도를 조작하여 브라우저 화면 전체를 살아 숨 쉬는 건축적 해시계 파빌리온으로 탈바꿈시킵니다."
+  },
+  "visual_mechanics": [
+    {
+      "name": "Raking Daylight & Louver Shadow Projection (건축적 루버와 측광 투영)",
+      "principle": "Calculating the projected shadow band width W_shadow = S_pitch * cos(theta_solar) * (1 - sin(alpha_louver)) where rotating horizontal louvers cast alternating zebra-stripes of light across the gallery plane."
+    },
+    {
+      "name": "Blind Emboss Specular Relief (형압 음각 활자의 광학적 돋을새김)",
+      "principle": "Simulating tactile letterform depth using dual opposing drop-shadows (specular highlight umbra L_top = -d * cos(theta), deep cavity shadow L_bottom = d * sin(theta)), sculpting crisp relief without artificial neon pigment."
+    },
+    {
+      "name": "Diurnal Color Temperature Curve (24시간 일영 색온도 변환)",
+      "principle": "Coupling solar elevation to blackbody radiation curves: 2200K warm sunrise amber at dawn (elevation < 18°), transitioning to 5500K pure daylight at zenith (elevation > 70°), and returning to 2700K terracotta dusk."
+    },
+    {
+      "name": "Acoustic Mechanical Slats (루버 목재 틸트 음향 햅틱)",
+      "principle": "Synthesizing authentic mechanical wood slat tilt friction and resonant solar frequency hum via Web Audio API."
+    }
+  ],
+  "mathematical_models": {
+    "shadow_band_pitch": "P_shadow = L_blade * sin(alpha_louver) / tan(theta_elevation)",
+    "emboss_displacement": "Offset_x = Depth * cos(theta_azimuth), Offset_y = Depth * sin(theta_azimuth)",
+    "color_temperature_kelvin": "T(elevation) = 2200 + 3300 * sin(max(0, elevation) * pi / 180)",
+    "saccadic_contrast_ratio": "CR = (L_bright + 0.05) / (L_shadow + 0.05)"
+  },
+  "architectural_materials": [
+    {
+      "id": "hinoki_slats",
+      "name": "Turned Hinoki Wood Louvers",
+      "nameKo": "편백 원목 회전 루버",
+      "color": "#D8C7B0",
+      "blade_width_px": 24,
+      "shadow_opacity": 0.42,
+      "resonanceHz": 280
+    },
+    {
+      "id": "milled_brass",
+      "name": "Architectural Extruded Brass Blades",
+      "nameKo": "압출 성형 황동 차양 블레이드",
+      "color": "#C5A059",
+      "blade_width_px": 18,
+      "shadow_opacity": 0.55,
+      "resonanceHz": 780
+    },
+    {
+      "id": "charcoal_slate",
+      "name": "Honed Dark Basalt Fin Louvers",
+      "nameKo": "연마된 현무암 핀 루버",
+      "color": "#3D3935",
+      "blade_width_px": 28,
+      "shadow_opacity": 0.65,
+      "resonanceHz": 160
+    }
+  ],
+  "design_tokens": {
+    "color": {
+      "surface_plaster": "#FAF8F5",
+      "surface_card": "#FFFFFF",
+      "surface_shadow": "rgba(35, 28, 20, 0.45)",
+      "ink_primary": "#1E1C1A",
+      "ink_secondary": "#57534E",
+      "accent_terracotta": "#B85D38",
+      "accent_brass": "#C5A059",
+      "accent_dawn_amber": "#EFA651"
+    },
+    "typography": {
+      "display_serif": "Newsreader / Georgia / serif",
+      "sans_clean": "Inter / system-ui / -apple-system / sans-serif",
+      "mono_telemetry": "JetBrains Mono / SF Mono / monospace"
+    }
+  }
+}

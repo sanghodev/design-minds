@@ -1,0 +1,83 @@
+{
+  "day": 30,
+  "date": "2026-10-01",
+  "title": "The Architecture of the Spread: 3D Imposition Geometry & Gutter Dynamics",
+  "design_intent": {
+    "en": "In classical European book design (Jan Tschichold, Emil Ruder) and contemporary art monograph publishing, the fundamental atom of human reading is never the solitary, disconnected page; it is the double-page spread (Verso + Recto). Between the two pages lies the Gutter—a physical valley created by thread binding, adhesive imposition, and paper curvature. Digital web design has long suffered from the tyranny of the single infinite vertical scroll, which flattens reading into a disposable receipt tape. Day 30 investigates the spatial architecture of the spread in interactive 3D: simulating the physical opening angle of a bound monograph, the deep shadow well of the gutter, Jan Tschichold's Golden Canon of margins (2:3:4:6), and the asymmetrical cognitive dialogue between the contemplative left plate and the typographic right column.",
+    "ko": "유럽 고전 서양 출판 디자인(얀 치홀트, 에밀 루더)과 현대 미술 전시 도록의 세계에서, 독서 경험의 가장 본질적인 기본 단위는 결코 고립된 낱장이 아닙니다. 그것은 좌우 페이지가 대화를 나누는 양면 펼침면(Verso + Recto)입니다. 두 면 사이에는 실 제본과 풀칠, 종이의 탄성이 빚어내는 물리적 계곡인 '안여백(Gutter)'이 자리합니다. 그동안 웹 디자인은 문서를 끝없이 아래로 흘려보내는 무한 수직 스크롤의 독재에 갇혀 있었으며, 이는 글을 영수증 테이프처럼 소비하게 만들었습니다. Day 30은 3차원 인터랙티브 공간에서 펼침면의 건축학을 탐구합니다: 실제 제본된 도록의 펼침 각도(0°~65°), 안쪽으로 갈수록 깊어지는 그늘진 안여백의 계곡, 얀 치홀트의 황금분할 여백 규범(2:3:4:6), 그리고 좌측의 사색적 도판과 우측의 정갈한 활자 열이 빚어내는 비대칭적 시선의 대화를 브라우저 상에 복원합니다."
+  },
+  "visual_mechanics": [
+    {
+      "name": "3D Gutter Valley & Paper Curvature (3D 배접부 곡률과 안여백 계곡)",
+      "principle": "Simulating the Z-axis displacement and cylindrical fold curvature Z(x) = R * (1 - cos((x / W) * theta)) as the book opens in 3D perspective space."
+    },
+    {
+      "name": "Tschichold Golden Canon Margins (얀 치홀트 황금 여백 규범)",
+      "principle": "Inner, Top, Outer, Bottom margins follow the classic harmonic ratio of 2:3:4:6, ensuring that the inner gutter retains dignified breathing room even under deep binding compression."
+    },
+    {
+      "name": "Ray-Traced Gutter Shadow Well (광학적 안여백 그림자 우물)",
+      "principle": "Dynamic ambient occlusion gradient cast into the central fold I(x) = I_0 * exp(-(|x - spine| / sigma)^2) * sin(theta_fold), creating authentic spatial depth."
+    },
+    {
+      "name": "Substrate Weight & Paper Haptics (지질 두께와 제본 음향 햅틱)",
+      "principle": "Three tactile paper substrates (80gsm bible onion skin with soft show-through, 140gsm tactile unbleached book rag, 280gsm rigid board) synthesized with Web Audio API binding friction."
+    }
+  ],
+  "mathematical_models": {
+    "tschichold_margins": "M_inner : M_top : M_outer : M_bottom = 2 : 3 : 4 : 6",
+    "gutter_shadow": "I(x) = I_0 * exp(-(|x - x_spine| / sigma)^2) * sin(theta_fold)",
+    "page_curl_z": "Z(x) = R * (1 - cos((x / W) * theta_fold))",
+    "saccadic_bridge_latency": "T_bridge = 180ms + (GutterWidth_px / 12)"
+  },
+  "paper_substrates": [
+    {
+      "id": "cotton_rag",
+      "name": "140gsm Unbleached Cotton Book Rag",
+      "nameKo": "140g 무표백 코튼 북래그 면지",
+      "weight_gsm": 140,
+      "color": "#FAF8F5",
+      "spine_stiffness": 0.65,
+      "shadow_depth": 0.32,
+      "resonanceHz": 320
+    },
+    {
+      "id": "onion_skin",
+      "name": "80gsm Translucent Bible Paper",
+      "nameKo": "80g 반투명 성경 박엽지",
+      "weight_gsm": 80,
+      "color": "#FDFBF7",
+      "spine_stiffness": 0.35,
+      "shadow_depth": 0.22,
+      "resonanceHz": 480
+    },
+    {
+      "id": "heavy_board",
+      "name": "280gsm Rigid Archival Board",
+      "nameKo": "280g 중량 보존용 하드보드지",
+      "weight_gsm": 280,
+      "color": "#F3EFEA",
+      "spine_stiffness": 0.95,
+      "shadow_depth": 0.45,
+      "resonanceHz": 180
+    }
+  ],
+  "design_tokens": {
+    "color": {
+      "surface_spread": "#FAF8F5",
+      "surface_table": "#F0EAE1",
+      "surface_spine": "#D5CCC0",
+      "shadow_gutter": "rgba(40, 32, 24, 0.45)",
+      "ink_editorial": "#1E1C1A",
+      "ink_secondary": "#57534E",
+      "ink_caption": "#8A847C",
+      "accent_terracotta": "#B85D38",
+      "accent_brass": "#C5A059"
+    },
+    "typography": {
+      "display_serif": "Newsreader / Georgia / serif",
+      "sans_clean": "Inter / system-ui / -apple-system / sans-serif",
+      "mono_telemetry": "JetBrains Mono / SF Mono / monospace"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "day": 35,
+  "system_name": "Hydro-Capillary Bento & Anisotropic Paper Shaders Typographic Spec",
+  "palette": {
+    "washi_ivory": "#FBF9F4",
+    "cotton_cream": "#F4EFE6",
+    "basalt_ink": "#141312",
+    "charcoal_secondary": "#57534E",
+    "brass_milled": "#C5A059",
+    "terracotta_stamp": "#C2410C",
+    "capillary_cyan": "#0284C7",
+    "sumi_halo": "rgba(20, 19, 18, 0.38)",
+    "subterranean_blueprint": "#3B82F6",
+    "divider_linen": "#E8E2D8"
+  },
+  "paper_presets": [
+    {
+      "id": "echizen_washi",
+      "nameKo": "에치젠 닥나무 한지",
+      "fiber_type": "Mulberry Kozo long fibers",
+      "anisotropy_ratio": 2.8,
+      "accent_color": "#C5A059"
+    },
+    {
+      "id": "arches_cotton",
+      "nameKo": "아르쉬 중량 코튼 판화지",
+      "fiber_type": "100% Pure cotton rag",
+      "anisotropy_ratio": 1.2,
+      "accent_color": "#C2410C"
+    },
+    {
+      "id": "cyber_epaper",
+      "nameKo": "사이버네틱 미세캡슐 전자종이",
+      "fiber_type": "Bistable electronic ink capsules",
+      "anisotropy_ratio": 1.0,
+      "accent_color": "#0284C7"
+    }
+  ],
+  "capillary_engine": {
+    "solver": "Real-time 2D anisotropic tensor diffusion solver (80x60 cellular lattice)",
+    "translucency_pipeline": "Dual-layer compositing: dry paper surface over subterranean blueprint typography",
+    "stylus_modes": [
+      "Water Brush (Capillary Wicking)",
+      "Drying Squeegee (Evaporator)",
+      "Permanent Sumi Stamp"
+    ],
+    "sound_synthesis": "Web Audio API tactile cellulose friction, capillary bubble hiss, and droplet taps"
+  },
+  "generative_prompts": {
+    "midjourney_macro": "Cinematic macro overhead photography of clear water brushing across a thick sheet of off-white Echizen kozo washi paper, microscopic cellulose fibers wicking water along subtle grain directions, water making the paper translucent to reveal concealed minimalist Swiss architectural typography beneath, organic sumi-e black ink feathering into soft capillary halos, brass drafting calipers resting nearby, natural warm studio sidelight, Hasselblad H6D-100c, 8k resolution --ar 16:9 --style raw",
+    "runway_cinematic_motion": "Extreme slow motion 1000fps of a moist bamboo water brush drawing a single calligraphic line across textured cotton paper, the clear liquid soaking into porous fibers and turning the opaque paper transparent to expose hidden blue cyanotype architectural text underneath, soft capillary ink bleed creeping into fibrous margins before evaporating gracefully into dry stillness"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "day": 33,
+  "date": "2026-10-04",
+  "title": "Viscous Surface Tension & Acoustic Caustics: Liquid Editorial Typography on Responsive Fluid Canvases",
+  "design_intent": {
+    "en": "On Day 003, we explored 'Chromatic Viscosity', hypothesizing that typographic density could behave like a viscous fluid under surface tension. While groundbreaking, Day 003 was constrained to 1D velocity-to-tracking compression. Exactly thirty days later, on Day 033, we transcend linear glyph tracking by engineering a full 2D continuous viscous liquid viewport governed by shallow-water wave equations (∂²h/∂t² = c²∇²h - μ∂h/∂t) and optical caustic refraction. Instead of static glassmorphism with invariant backdrop blur, the digital page becomes a shallow pool of high-refraction optical fluid. When the user sweeps the cursor or triggers acoustic impulses, surface capillary waves ripple across the layout. Letterforms resting beneath the fluid surface act as optical objects: their baselines refract dynamically along wave normal vectors (Snell's Law: n1 sin θ1 = n2 sin θ2), chromatic dispersion splits white specular edges into cyan/amber fringes (±4px), and variable font axes dynamically swell in response to fluid pressure. When interaction ceases, viscous damping dissipates the kinetic waves in 400ms, gently settling the composition into pristine, motionless Swiss typography.",
+    "ko": "Day 003에서 우리는 '색채 점성학(Chromatic Viscosity)'을 탐구하며, 활자의 밀도가 표면장력을 지닌 유체처럼 응축되고 이완될 수 있음을 증명했습니다. 그러나 당시의 실험은 1차원적인 커서 속도와 자간(Tracking) 압축에 머물렀다는 조형적 한계가 있었습니다. 정확히 30일이 흐른 오늘 Day 033, 우리는 1차원 자간 변형을 넘어 2차원 얕은 물 표면장력 파동 방정식(∂²h/∂t² = c²∇²h - μ∂h/∂t)과 광학 코스틱 굴절을 결합한 완전한 2차원 점성 액체 뷰포트를 구축합니다. 단순한 정적 블러에 머무는 기존 글래스모피즘 대신, 화면 전체가 높은 굴절률을 지닌 맑고 점성 있는 액체 수조가 됩니다. 사용자의 커서 스윕이나 음향 펄스가 수면에 닿을 때, 정교한 모세관 파동(Capillary Waves)이 레이아웃 전역으로 번져나갑니다. 액체 아래에 잠긴 활자는 실시간 굴절 렌즈 효과를 받아 스넬의 법칙에 따라 유려하게 휘어지고, 모서리는 시안과 호박색의 미세한 색분산을 일으키며, 유체 압력에 연동되어 가변 서체의 광학 크기(opsz)와 굵기(wght)가 호흡합니다. 인터랙션이 멈추면 점성 감쇠를 거쳐 400밀리초 만에 파동이 고요히 잦아들며 단정하고 면도날처럼 날카로운 스위스 국제주의 그리드로 복원됩니다."
+  },
+  "visual_mechanics": [
+    {
+      "name": "2D Navier-Stokes Shallow Water Ripple Engine (2차원 얕은 물 표면장력 파동 해석기)",
+      "principle": "Simulating dynamic fluid heightfields via discretized wave equations: h(x,y,t+1) = [h(x-1,y) + h(x+1,y) + h(x,y-1) + h(x,y+1)] / 2 - h(x,y,t-1), multiplied by viscous damping factor μ (0.92 to 0.985) to emulate varied fluid viscosities."
+    },
+    {
+      "name": "Caustic Network Projection & Snell Refraction (코스틱 광학 그물망 투영 및 스넬 굴절)",
+      "principle": "Computing surface normal vectors (nx = -∂h/∂x, ny = -∂h/∂y, nz = 1) across the heightfield, projecting focused sunlight concentrations (caustic bright lines) where wave concavity converges light rays, while refracting underlying editorial text by Δx = nx * (1 - 1/n) * d."
+    },
+    {
+      "name": "Kinetic Variable Fluid Typography (유체 압력 감응형 가변 타이포그래피)",
+      "principle": "Dynamically modulating OpenType variable font axes (Weight wght: 300 to 850, Optical Size opsz: 8 to 72pt) in real-time correlation with localized surface wave curvature and hydrostatic pressure gradients."
+    },
+    {
+      "name": "Acoustic Fluid Droplet & Liquid Drone Synthesizer (음향 유체 액적 및 글래스 하모닉 공명음)",
+      "principle": "Synthesizing authentic fluid droplet surface impacts, liquid ripple glissandos, and an immersive resonant glass harmonic drone via Web Audio API coupled to total kinetic fluid energy."
+    }
+  ],
+  "mathematical_models": {
+    "shallow_water_wave_equation": "∂²h/∂t² = c² (∂²h/∂x² + ∂²h/∂y²) - μ (∂h/∂t)",
+    "caustic_intensity_focus": "I(x,y) = I_0 * |det(J)|⁻¹ where J = I - d * ∇²h / (n - 1)",
+    "snell_refraction_displacement": "Δr = d * ∇h * (1 - 1/n) / sqrt(1 + |∇h|²)",
+    "chromatic_dispersion_delta": "δ_rgb = (n_blue - n_red) * ∇h * d = 0.024 * ∇h * d"
+  },
+  "liquid_substrates": [
+    {
+      "id": "glycerin",
+      "name": "Viscous Pure Glycerin",
+      "nameKo": "고점성 순수 글리세린",
+      "viscosity": 0.955,
+      "refractionIndex": 1.474,
+      "surfaceTension": 0.063,
+      "resonanceHz": 220,
+      "accentColor": "#D97706",
+      "descKo": "묵직하고 유려한 점성을 지녀 커서가 지나간 자리에 깊고 완만한 파동과 따스한 호박색 굴절광을 남깁니다."
+    },
+    {
+      "id": "water",
+      "name": "Alpine Spring Water",
+      "nameKo": "맑은 알프스 천연수",
+      "viscosity": 0.982,
+      "refractionIndex": 1.333,
+      "surfaceTension": 0.072,
+      "resonanceHz": 440,
+      "accentColor": "#0284C7",
+      "descKo": "극도로 맑고 즉각적인 모세관 파동을 일으키며, 면도날처럼 선명한 코스틱 그물망과 청량한 청색 굴절광을 분출합니다."
+    },
+    {
+      "id": "mineral_oil",
+      "name": "Optical Silicone Oil",
+      "nameKo": "광학용 실리콘 오일",
+      "viscosity": 0.935,
+      "refractionIndex": 1.515,
+      "surfaceTension": 0.045,
+      "resonanceHz": 180,
+      "accentColor": "#7C3AED",
+      "descKo": "높은 굴절률과 강한 감쇠율을 지녀, 글자를 돋보기처럼 극적으로 왜곡하면서도 파동을 부드럽게 흡수합니다."
+    }
+  ],
+  "design_tokens": {
+    "color": {
+      "surface_plaster": "#FAF8F5",
+      "surface_fluid_bed": "#F2ECE4",
+      "surface_card": "#FFFFFF",
+      "ink_charcoal": "#1A1816",
+      "ink_secondary": "#524E48",
+      "accent_amber": "#D97706",
+      "accent_caustic_cyan": "#0284C7",
+      "accent_caustic_violet": "#7C3AED",
+      "caustic_highlight": "rgba(255, 255, 255, 0.85)"
+    },
+    "typography": {
+      "display_serif": "Newsreader / Georgia / serif",
+      "sans_clean": "Inter / system-ui / -apple-system / sans-serif",
+      "mono_telemetry": "JetBrains Mono / SF Mono / monospace"
+    }
+  }
+}

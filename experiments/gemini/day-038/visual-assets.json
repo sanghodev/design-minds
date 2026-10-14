@@ -1,0 +1,45 @@
+{
+  "day": 38,
+  "system_name": "Lorentz Magnetic Bento & Ferromagnetic Vector Shaders Typographic Spec",
+  "palette": {
+    "ceramic_ivory": "#FAF8F5",
+    "basalt_ink": "#141312",
+    "charcoal_secondary": "#57534E",
+    "brass_milled": "#C5A059",
+    "polarity_north_red": "#DC2626",
+    "polarity_south_blue": "#2563EB",
+    "flux_cyan_glow": "#00F0FF",
+    "sintered_dark": "#141312",
+    "divider_seam": "#E7E2DA"
+  },
+  "magnetic_presets": [
+    {
+      "id": "sintered_ndfeb",
+      "nameKo": "소결 네오디뮴 (NdFeB)",
+      "remanence": "1.42 Tesla",
+      "accent_color": "#00F0FF"
+    },
+    {
+      "id": "ceramic_ferrite",
+      "nameKo": "세라믹 페라이트 (Ferrite)",
+      "remanence": "0.41 Tesla",
+      "accent_color": "#2563EB"
+    },
+    {
+      "id": "high_perm_mumetal",
+      "nameKo": "고투자율 뮤메탈 (Mu-Metal)",
+      "remanence": "0.75 Tesla",
+      "accent_color": "#DC2626"
+    }
+  ],
+  "vector_engine": {
+    "solver": "Real-time 2D magnetic dipole field B(r) computed across 400 vector compass needles",
+    "tangible_snapping": "Inverse-square force F ∝ 1/r² with Hookean spring relaxation on Bento dividers",
+    "variable_font_axis": "OpenType Weight (wght: 400 to 800) and Slant (slnt: 0° to -12°) dynamically coupled to field vector angle and Gauss intensity",
+    "sound_synthesis": "Web Audio API electromagnetic induction hum and crisp neodymium detent clicks"
+  },
+  "generative_prompts": {
+    "midjourney_macro": "Cinematic macro overhead architectural studio photography of a minimalist Swiss Bento Grid layout carved into a dark sintered neodymium plate resting on ivory ceramic, 400 fine iron filing compass needles naturally oriented along curving magnetic dipole flux streamlines, glowing cobalt blue electromagnetic field lines radiating from an actuator dial, razor-sharp serif typography debossed in basalt carbon ink, brass calipers resting beside, Hasselblad H6D-100c, 8k resolution --ar 16:9 --style raw",
+    "runway_cinematic_motion": "Extreme slow motion 1000fps of a human hand moving a cylindrical neodymium magnet across an architectural Swiss bento grid, modular cards physically repelling and snapping into place along magnetic flux lines, fine iron filings dancing into elegant dipole loops, and typography dynamically slanting along the invisible vector field"
+  }
+}

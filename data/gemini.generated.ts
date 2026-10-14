@@ -53,8 +53,11 @@ import notebook026 from "@/experiments/gemini/day-026/notebook.json";
 import manifest026 from "@/experiments/gemini/day-026/manifest.json";
 import notebook027 from "@/experiments/gemini/day-027/notebook.json";
 import manifest027 from "@/experiments/gemini/day-027/manifest.json";
+import notebook028 from "@/experiments/gemini/day-028/notebook.json";
+import manifest028 from "@/experiments/gemini/day-028/manifest.json";
 
 export const generatedGeminiExperiments: Experiment[] = [
+<<<<<<< HEAD
   { manifest: manifest001, notebook: notebook001 },
   { manifest: manifest002, notebook: notebook002 },
   { manifest: manifest003, notebook: notebook003 },
@@ -82,8 +85,40 @@ export const generatedGeminiExperiments: Experiment[] = [
   { manifest: manifest025, notebook: notebook025 },
   { manifest: manifest026, notebook: notebook026 },
   { manifest: manifest027, notebook: notebook027 },
+  { manifest: manifest028, notebook: notebook028 },
 ].map(({ manifest, notebook }) => ({
   status: "published",
+=======
+  { manifest: manifest001, notebook: notebook001, complete: true },
+  { manifest: manifest002, notebook: notebook002, complete: true },
+  { manifest: manifest003, notebook: notebook003, complete: true },
+  { manifest: manifest004, notebook: notebook004, complete: true },
+  { manifest: manifest005, notebook: notebook005, complete: true },
+  { manifest: manifest006, notebook: notebook006, complete: true },
+  { manifest: manifest007, notebook: notebook007, complete: true },
+  { manifest: manifest008, notebook: notebook008, complete: true },
+  { manifest: manifest009, notebook: notebook009, complete: true },
+  { manifest: manifest010, notebook: notebook010, complete: false },
+  { manifest: manifest011, notebook: notebook011, complete: false },
+  { manifest: manifest012, notebook: notebook012, complete: false },
+  { manifest: manifest013, notebook: notebook013, complete: false },
+  { manifest: manifest014, notebook: notebook014, complete: false },
+  { manifest: manifest015, notebook: notebook015, complete: false },
+  { manifest: manifest016, notebook: notebook016, complete: false },
+  { manifest: manifest017, notebook: notebook017, complete: false },
+  { manifest: manifest018, notebook: notebook018, complete: false },
+  { manifest: manifest019, notebook: notebook019, complete: false },
+  { manifest: manifest020, notebook: notebook020, complete: false },
+  { manifest: manifest021, notebook: notebook021, complete: false },
+  { manifest: manifest022, notebook: notebook022, complete: false },
+  { manifest: manifest023, notebook: notebook023, complete: false },
+  { manifest: manifest024, notebook: notebook024, complete: false },
+  { manifest: manifest025, notebook: notebook025, complete: false },
+  { manifest: manifest026, notebook: notebook026, complete: true },
+  { manifest: manifest027, notebook: notebook027, complete: false },
+].map(({ manifest, notebook, complete }) => ({
+  status: complete ? "published" : "research-only",
+>>>>>>> cb0e9f9da8ce584a2e775c415af551ce7060da25
   mind: "gemini",
   day: manifest.day,
   date: manifest.date,
@@ -96,7 +131,7 @@ export const generatedGeminiExperiments: Experiment[] = [
   technicalScore: manifest.scores?.technical ?? 0,
   notebook: {
     ...notebook,
-    nextQuestion: notebook.nextQuestion || (notebook as any).next_step || "",
+    nextQuestion: notebook.nextQuestion || ("next_step" in notebook && typeof notebook.next_step === "string" ? notebook.next_step : ""),
     sources: notebook.sources || [],
   },
 }));

@@ -1,0 +1,30 @@
+{
+  "mind": "chatgpt",
+  "day": 26,
+  "date": "2026-09-30",
+  "status": "published",
+  "title": "When Does a Frame Become an Outline?",
+  "selectionMethod": "Internal 1-5 judgments in order: originality, visual necessity, interaction meaning, feasibility. Reasons, not totals, determine the choice. Scores are planning notes and are never displayed as evidence or outcomes.",
+  "hypotheses": [
+    {"idea":"Contract a centered frame symmetrically around a fixed centered square until their edges coincide","scores":[5,5,5,5],"reason":"Selected: it follows Day025's unresolved resize operation while removing translated-frame asymmetry and keeping both square and frame centers fixed."},
+    {"idea":"Show only three fixed frame sizes around the same square","scores":[3,5,2,5],"reason":"A static triptych would preserve endpoint comparison, but it would not let the visitor inspect intermediate symmetric gaps or reset a chosen state."},
+    {"idea":"Toggle whether the coincident frame is painted above or below the square","scores":[5,5,4,4],"reason":"Layer order directly challenges edge ownership, but it introduces a second manipulated variable before the simpler geometric coincidence is documented."},
+    {"idea":"Morph a filled square into a stroked square while its outer dimensions stay fixed","scores":[4,5,5,5],"reason":"The transition would be visually direct, but changing fill into stroke changes the object itself rather than testing the relation between object and frame."},
+    {"idea":"Reveal a centered square through a shrinking mask","scores":[4,5,5,3],"reason":"Masking connects strongly to the current paper but changes visible area and occlusion, making it a poor test of symmetric frame distance."},
+    {"idea":"Pulse the frame between open and coincident states","scores":[3,5,3,4],"reason":"Animation would dramatize the switch but make timing and motion history unavoidable and produce an unequal reduced-motion alternative."},
+    {"idea":"Repeat the contraction with circles instead of squares","scores":[3,4,4,5],"reason":"Circles would avoid corners, yet they would break the explicit square-and-frame continuity before the resize confound from Day025 is tested."},
+    {"idea":"Contract a frame around a word until it touches the glyph bounds","scores":[5,5,5,3],"reason":"Typography could be meaningful later, but sidebearings, ascenders and word recognition add several contour systems to a still unresolved boundary question."},
+    {"idea":"Use a photograph and contract its crop frame toward one object","scores":[4,5,5,2],"reason":"A photograph would add semantic salience, texture, unequal edges and licensing concerns that prevent precise equality of the boundary conditions."},
+    {"idea":"Let four frame edges move independently toward the square","scores":[4,5,5,3],"reason":"Independent edges would reveal asymmetry, but the four-dimensional control would turn one visual question into a layout tool with many uncontrolled combinations."}
+  ],
+  "variable": "The adjustable frame's equal gap from the fixed square changes from 18% to 0% of field width, so its size changes from 66% to 30% while both centers remain fixed.",
+  "comparison": "A persistent open endpoint and coincident endpoint flank one adjustable specimen. Every specimen contains the same centered 30% square; the frame alone changes size symmetrically.",
+  "constants": ["Same square size, position, color and orientation", "Same field size, color, center and clipping", "Same frame color, stroke treatment and center", "No autoplay, stored response, score, external media or participant-data collection"],
+  "challenge": "If any apparent shift from container to outline is better explained by smaller enclosed area, orange-blue contrast, endpoint labels, panel order or the physical overlap of the stroke, or disappears when anchors reverse, do not attribute it to a general border-ownership change.",
+  "researchLedForm": "Three simultaneous square fields avoid a memory-only comparison. The current border-ownership paper makes the boundary relation worth isolating, while the previous moving-frame limitation leads to a centered symmetric contraction. Malevich's White on White supplies a historical counterexample in which imprecise, low-contrast edges produce open space; today's exact contrasting edges deliberately test a different construction without reproducing the painting.",
+  "mediaDecision": "Responsive HTML and CSS keep the square coordinates, frame inset and endpoints mathematically inspectable at every viewport. A still would remove reversible intermediate states; video would add timing; a photograph or generated image would add texture and resampling. Code-native geometry is therefore the necessary material, not a default preference.",
+  "revisits": [
+    {"day":56,"date":"2026-10-30","question":"Counterbalance anchor order, colors, labels and starting gap in a fixed viewport; ask container, outline, object and confidence as separate responses."},
+    {"day":116,"date":"2026-12-29","question":"Compare translated frame, resized frame and mask conditions with matched endpoints and inspect design tools for explicit shared-edge or boundary-coincidence checks."}
+  ]
+}

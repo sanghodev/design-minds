@@ -1,0 +1,155 @@
+{
+  "day": 34,
+  "date": "2026-10-05",
+  "title": "Chladni Modal Bento & Acoustic Tensor Grid: 2D Standing Wave Resonance, Dynamic Modular Nodal Snapping & Kinetic Swiss Typography",
+  "design_intent": {
+    "en": "On Day 004, our research explored 'Cymatic Resonance', testing whether typographical stroke widths could vibrate in sympathetic resonance with audio frequencies and lock into legibility at integer harmonic nodes. While revolutionary, Day 004 suffered from two severe limitations: a persistent single-tone frequency hum that created auditory fatigue, and an unstructured 1D vibrational blur that dissolved letters without architectural cohesion. Exactly thirty days later, on Day 034, we transcend 1D acoustic blur by constructing a 2D Chladni Modal Bento Architecture. In classical acoustics, Ernst Chladni demonstrated that when a metal plate vibrates at specific frequencies, sand particles scatter away from violent antinodal zones and settle peacefully along stationary nodal lines (w(x,y) = 0), revealing crystalline geometric figures. We map this 2D acoustic physics directly to front-end Bento Grid architecture. Rather than static rectangular cards, modular cell boundaries are treated as elastic physical tension strings. Sweeping acoustic frequencies (55Hz–880Hz) or selecting modal integer pairs (m, n) causes the Bento layout to dynamically morph, bifurcate, and snap to 2D Chladni nodal curves. Typography resting upon nodal silence achieves supreme Swiss clarity (Inter / Playfair Display / JetBrains Mono at wght: 450), while antinodal zones exhibit subtle kinetic oscillation and variable font weight expansion. Crucially, auditory fatigue is eliminated: continuous drones are replaced with tactile polyphonic string plucks and pure crystalline bell chimes that sound only during active user interaction and modal snapping.",
+    "ko": "Day 004에서 우리는 '키매틱 공명(Cymatic Resonance)'을 탐구하며 활자의 획이 음향 주파수와 공명하고 정수 배음 마디에서 가독성을 회복하는 원리를 실험했습니다. 그러나 당시의 탐구는 두 가지 뼈아픈 한계를 남겼습니다. 지속적인 단일 톤의 윙윙거림이 사용자에게 극심한 청각적 피로를 유발했고, 1차원적인 진동 블러가 건축적 위계 없이 글자 윤곽을 무분별하게 뭉개버렸습니다. 정확히 30일이 흐른 오늘 Day 034, 우리는 1차원 음향 블러를 넘어 2차원 클라드니 음향 평판(Chladni Plate) 물리학을 이식한 '모달 벤토 그리드(Modal Bento Grid)' 건축을 완성합니다. 18세기 물리학자 에른스트 클라드니(Ernst Chladni)는 진동하는 금속판 위에 모래를 뿌렸을 때, 모래가 격렬히 요동치는 배(Antinodes)를 떠나 진동 변위가 0인 평온한 마디선(Nodal Lines, w(x,y)=0)으로 스스로 모여들어 우아한 기하학적 도형을 이룬다는 사실을 증명했습니다. 우리는 이 2차원 음향 역학을 현대 프론트엔드 벤토 레이아웃의 골격에 직접 연결합니다. 굳어버린 정적 카드 대신, 모듈러 셀 경계를 탄성 장력 스프링 현으로 정의합니다. 사용자가 주파수(55Hz~880Hz)를 조율하거나 모달 정수 쌍(m, n)을 선택하면, 벤토 그리드의 분할선과 카드들이 2차원 클라드니 정상파의 기하학적 마디선으로 유기적으로 변형되며 자석처럼 달라붙습니다. 무진동 마디선 위에 안착한 활자는 완벽한 정적과 면도날 같은 스위스 미니멀 가독성(wght: 450)을 발현하고, 진동하는 영역의 활자는 미세한 키네틱 변조와 굵기 팽창을 겪습니다. 무엇보다 지속적인 소음 공해를 완전히 철폐하고, 사용자가 모듈러 경계를 손가락으로 튕기거나 모드에 안착할 때만 영롱하게 울려 퍼지는 다성 현악 피치와 크리스털 벨 차임 웹 오디오 엔진을 탑재하여 깊은 촉각적·공감각적 만족감을 선사합니다."
+  },
+  "visual_mechanics": [
+    {
+      "name": "2D Chladni Modal Plate Solver (2차원 클라드니 정재파 마디 방정식 해석기)",
+      "principle": "Real-time analytical evaluation of 2D rectangular plate standing waves: w(x, y) = a · sin(nπx / L) · sin(mπy / H) - b · sin(mπx / L) · sin(nπy / H). Zero-crossing contours (w(x, y) = 0) define the dynamic nodal lines that attract sand particles and dictate Bento modular divider snapping."
+    },
+    {
+      "name": "Elastic Bento Boundary Tension Springs (탄성 벤토 경계 텐서 스프링)",
+      "principle": "Governing modular cell borders via 4th-order Hookean spring-damper dynamics (F = -k · Δx - c · v). Users can grab and deflect vertical or horizontal dividers; releasing them triggers damped harmonic oscillation and polyphonic string-pluck acoustics via Web Audio API before settling into modal equilibrium."
+    },
+    {
+      "name": "Nodal Silence vs. Antinodal Perturbation Typography (마디 침묵 대 진동 배역 가변 서체 제어)",
+      "principle": "Evaluating localized vibration amplitude |w(x, y)| beneath each editorial block. Typography resting on nodal silence (|w| < 0.08) exhibits crystalline Swiss contrast, neutral kerning, and crisp contours; typography in antinodal zones (|w| > 0.45) undergoes subtle parametric kinetic breathing, variable font weight swelling (wght: 450 -> 780), and harmonic violet micro-halos."
+    },
+    {
+      "name": "Zero-Fatigue Polyphonic Web Audio Synthesizer (비피로성 다성 현악 및 크리스털 벨 음향 엔진)",
+      "principle": "Synthesizing authentic plate acoustics exclusively during physical interactions and modal phase locks: high-tension plucked string envelopes (karplus-strong decay), crystalline bell chimes upon integer modal snaps, and subtle spatial air resonance tailored to plate material density (Brass, Basalt, Glass)."
+    }
+  ],
+  "mathematical_models": {
+    "chladni_plate_nodal_equation": "w(x, y) = a · sin(nπx / L) · sin(mπy / H) - b · sin(mπx / L) · sin(nπy / H) = 0",
+    "hookean_boundary_spring_tensor": "F_i = -k · (x_i - x_target) - c · v_i + F_user",
+    "nodal_proximity_damping": "D(x, y) = 1.0 - min(1.0, |w(x, y)| / w_threshold)",
+    "opentype_variable_axis_modulation": "wght = wght_base + (1 - D) · Δwght_max,  slnt = slnt_base + (1 - D) · 12°",
+    "modal_frequency_scaling": "f(m, n) = (π · h / 2) · sqrt(E / (12 · ρ · (1 - ν²))) · ((m / L)² + (n / H)²)"
+  },
+  "plate_materials": [
+    {
+      "id": "milled_brass",
+      "name": "Milled Architectural Brass",
+      "nameKo": "밀드 황동 건축 평판",
+      "densityKgM3": 8500,
+      "youngsModulusGpa": 105,
+      "poissonRatio": 0.34,
+      "baseFrequencyHz": 440,
+      "accentColor": "#C5A059",
+      "surfaceTone": "#FAF6EE",
+      "descKo": "높은 탄성률과 찬란한 황금빛 금속 광택을 지니며, 경계를 튕길 때 맑고 영롱한 고주파 배음 벨 차임을 분출합니다."
+    },
+    {
+      "id": "honed_basalt",
+      "name": "Honed Basalt Slate",
+      "nameKo": "연마된 현무암 슬레이트",
+      "densityKgM3": 2900,
+      "youngsModulusGpa": 65,
+      "poissonRatio": 0.25,
+      "baseFrequencyHz": 180,
+      "accentColor": "#C2410C",
+      "surfaceTone": "#1C1A18",
+      "descKo": "극도의 묵직한 질량과 높은 내부 감쇠율을 지니며, 깊고 웅장한 저음의 마림바 타격음과 묵직한 다크 모드 텍토닉을 형성합니다."
+    },
+    {
+      "id": "frosted_glass",
+      "name": "Frosted Acoustic Glass",
+      "nameKo": "음향 프로스티드 글래스",
+      "densityKgM3": 2500,
+      "youngsModulusGpa": 70,
+      "poissonRatio": 0.22,
+      "baseFrequencyHz": 528,
+      "accentColor": "#4F46E5",
+      "surfaceTone": "#FAF8F5",
+      "descKo": "순백의 회벽 미장 질감 위에 은은한 반투명 뎁스를 더해, 고요한 솔페지오 528Hz 치유 공명음과 청아한 크리스털 울림을 선사합니다."
+    }
+  ],
+  "chladni_modes": [
+    {
+      "m": 1,
+      "n": 1,
+      "freqHz": 110,
+      "nameKo": "기본 대칭 모드 (Fundamental Nodal Cross)",
+      "bentoLayout": "4등분 대칭 모듈 (2x2 Balanced Split)",
+      "descKo": "중앙 직교 마디선이 교차하며 4개의 안정적인 대형 에디토리얼 셀을 형성합니다."
+    },
+    {
+      "m": 2,
+      "n": 1,
+      "freqHz": 220,
+      "nameKo": "종방향 분절 모드 (Longitudinal Bipartition)",
+      "bentoLayout": "1:2 비대칭 3단 분할 (Hero + Dual Stack)",
+      "descKo": "수직 주 마스트헤드와 우측 2단 정보 모듈이 비대칭 황금비 균형을 이룹니다."
+    },
+    {
+      "m": 2,
+      "n": 2,
+      "freqHz": 330,
+      "nameKo": "대각선 마디 루프 (Diagonal Nodal Ring)",
+      "bentoLayout": "마름모 초점 벤토 (Diamond Core + Quadrant Margins)",
+      "descKo": "중앙 마름모형 초점 모듈을 4개의 코너 메타데이터 카드가 둘러싸는 아방가르드 구도입니다."
+    },
+    {
+      "m": 3,
+      "n": 2,
+      "freqHz": 440,
+      "nameKo": "하모닉 메쉬 모드 (Harmonic Matrix 3:2)",
+      "bentoLayout": "스위스 모더니즘 6셀 벤토 (3x2 Dense Grid)",
+      "descKo": "뮐러-브로크만 격자 시스템에 조응하는 6개의 정밀 모듈러 셀이 완벽한 정돈을 이룹니다."
+    },
+    {
+      "m": 3,
+      "n": 3,
+      "freqHz": 550,
+      "nameKo": "동심원 격자 모드 (Concentric Nodal Petals)",
+      "bentoLayout": "9분할 컴팩트 벤토 (3x3 Kinetic Dashboard)",
+      "descKo": "꽃잎처럼 펼쳐지는 9개의 고밀도 정보 큐브가 실시간 음향 스펙트로그램과 연동됩니다."
+    },
+    {
+      "m": 4,
+      "n": 2,
+      "freqHz": 660,
+      "nameKo": "복합 정상파 패턴 (Complex Cymatic Tapestry)",
+      "bentoLayout": "비대칭 사이버 에디토리얼 (Complex Multi-Ratio)",
+      "descKo": "고주파 정상파 곡선들이 빚어내는 역동적이고 감각적인 비대칭 레이아웃을 전개합니다."
+    }
+  ],
+  "design_tokens": {
+    "color": {
+      "surface_plaster": "#FAF8F5",
+      "surface_sand_bed": "#F4EFEA",
+      "surface_card": "#FFFFFF",
+      "ink_basalt": "#141312",
+      "ink_secondary": "#57534E",
+      "accent_brass": "#C5A059",
+      "accent_terracotta": "#C2410C",
+      "accent_phosphor_node": "#10B981",
+      "accent_antinode_violet": "#4F46E5",
+      "border_spring": "#E7E2DA",
+      "border_spring_active": "#C5A059"
+    },
+    "typography": {
+      "display_serif": "'Playfair Display', Georgia, serif",
+      "body_sans": "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
+      "code_mono": "'JetBrains Mono', 'SF Mono', monospace",
+      "scale": {
+        "masthead": "clamp(2.5rem, 5.5vw, 4.5rem)",
+        "h1": "clamp(1.75rem, 3vw, 2.5rem)",
+        "h2": "clamp(1.25rem, 2vw, 1.75rem)",
+        "body": "0.95rem",
+        "caption": "0.78rem"
+      }
+    },
+    "spring_physics": {
+      "stiffness_k": 220,
+      "damping_c": 18,
+      "mass_m": 1.2,
+      "snap_threshold_px": 28
+    }
+  }
+}

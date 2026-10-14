@@ -1,0 +1,48 @@
+{
+  "day": 42,
+  "date": "2026-10-13",
+  "title": "Relativistic Spacetime Bento & Gravitational Lensing Shaders: Geodesic Metric Curvature, Einstein Ring Singularity & Swiss Cyber-Editorial Architecture",
+  "design_intent": {
+    "en": "On Day 012, our studio explored \"Powers of Ten\", examining scale invariance from subatomic quarks to cosmic superclusters. While conceptually ambitious, Day 012 fell into the \"micro-macro zoom cliché\"—treating cosmic scale as a linear logarithmic camera slider without spatial curvature, gravitational mass tension, or non-Euclidean interactive kinetics. Exactly thirty days later, on Day 042, we liberate cosmological design from this flat camera zoom trap. We elevate cosmic physics into an active, structural interface medium: 2D Schwarzschild Spacetime Metric Calculus, Einstein Gravitational Deflection Shaders (α = 4GM / c²b), and Concentric Einstein Ring Singularities in modern Swiss Bento Grid architecture. In general relativity, Albert Einstein proved that mass curves spacetime itself: light rays traveling near massive bodies follow curved null geodesics rather than straight lines. We map this relativistic geometry directly to digital interface architecture. Modular Bento cells act as cosmic mass nodes embedded within a 2D stress-energy fabric. The user's cursor acts as a movable gravitational singularity possessing compact mass (M ∈ [0, 50 Solar Masses]). As the singularity sweeps across the viewport, rectilinear coordinate grid lines bend along geodesic trajectories. Background editorial typography refracts around the singularity, splitting into multiple relativistic lensed images and forming an ethereal, luminous Einstein Ring when aligned directly behind the mass core. Rather than destructive distortion, typography dynamically compensates through gravitational redshift: font weight swells (wght: 300 -> 800) and optical width expands in high-curvature gravity wells, while resetting to zero mass instantly restores pristine, undeformed Swiss modernist baseline stillness, accompanied by gravitational wave chirp glissandos and deep spacetime metric resonance.",
+    "ko": "Day 012에서 우리는 '10의 거듭제곱(Powers of Ten)'을 탐구하며 소립자에서 은하단까지의 척도 불변성을 추적했습니다. 그러나 당시의 시도는 우주적 스케일을 그저 선형적인 로그 카메라 줌 슬라이더로만 소비하는 '미시-거시 줌 클리셰'에 갇혀 있었습니다. 공간 자체의 곡률도, 중력 질량에 의한 시공간 왜곡도 없이 그저 확대·축소만 반복하는 일회성 다이어그램에 불과했던 것입니다. 정확히 30일이 흐른 오늘 Day 042, 우리는 이 평면적 카메라 줌 함정을 완전히 뛰어넘어, 일반상대성이론의 슈바르츠실트 시공간 계량 텐서, 아인슈타인 중력 렌즈 편향각 셰이더(α = 4GM / c²b), 그리고 동심원 아인슈타인 링(Einstein Ring) 특이점을 스위스 벤토 그리드 건축에 전격 이식합니다. 아인슈타인은 질량이 시공간 자체를 구부리며, 빛은 직진하는 것이 아니라 휘어진 영 측지선(Null Geodesic)을 따라 여행한다는 것을 증명했습니다. 우리는 이 상대론적 기하학을 인터페이스 건축의 뼈대로 삼았습니다. 벤토 카드들은 에너지-운동량 텐서 직물 위에 놓인 거대한 천체 질량 패싯으로 변모합니다. 사용자의 커서는 0~50 태양 질량을 지닌 콤팩트 블랙홀 특이점이 되어 화면을 유영합니다. 특이점이 접근함에 따라 정갈한 직교 그리드는 중력 측지선을 따라 장엄하게 휘어지고, 배후의 에디토리얼 활자는 중력 렌즈 효과에 의해 분할되며 마침내 특이점 정면 배후에 위치할 때 눈부신 동심원 아인슈타인 링의 광채로 타오릅니다. 글자는 중력 적색편이(Gravitational Redshift)에 감응하여 굵기(wght: 300 -> 800)와 자간을 유기적으로 팽창시키며, 질량을 0으로 해제하면 즉각 완벽한 요제프 뮐러-브로크만의 스위스 모더니즘 직립 평형으로 회귀합니다. 중력파 첩(Chirp) 글리산도와 시공간 기저 험이 결합되어 공감각적 조형 카타르시스를 선사합니다."
+  },
+  "visual_mechanics": [
+    {
+      "name": "2D Schwarzschild Spacetime Geodesic Solver (2차원 슈바르츠실트 측지선 텐서 해석기)",
+      "principle": "Computing relativistic photon deflection α(b) = 4GM / (c²b) across a 600-node spacetime mesh in real time, simulating null geodesic paths and non-Euclidean coordinate curvature around mass cores."
+    },
+    {
+      "name": "Concentric Einstein Ring Ray-Tracer (동심원 아인슈타인 링 광선 추적 셰이더)",
+      "principle": "Analytically solving the gravitational lens equation θ_image - θ_source = θ_Einstein² / θ_image, projecting background editorial cards into luminous circular Einstein arcs at θ_E = sqrt(4GM D_LS / c² D_L D_S)."
+    },
+    {
+      "name": "Gravitational Redshift Variable Typography (중력 적색편이 감응형 가변 서체 및 광학 팽창)",
+      "principle": "Coupling localized gravitational potential Φ(r) = -GM/r directly to OpenType variable font weight (wght: 300 to 800) and optical tracking, visually demonstrating gravitational dilation on letterform stems."
+    },
+    {
+      "name": "Zero-Mass Flat Metric Restitution (질량 소광 및 민코프스키 평탄 시공간 복원)",
+      "principle": "Instantaneous mass discharge (M -> 0), collapsing curved geodesics back into orthogonal Euclidean straight lines and resetting typography to disciplined Swiss modernist baseline stillness."
+    },
+    {
+      "name": "Gravitational Wave Chirp Glissando & Spacetime Drone (중력파 첩 글리산도 및 시공간 음향 드론)",
+      "principle": "Synthesizing authentic relativistic astrophysics acoustics via Web Audio API: LIGO-style inspiral chirp glissandos (35Hz to 250Hz upward sweep), frame-dragging hum, and crystal resonance upon Einstein ring alignment."
+    }
+  ],
+  "mathematical_models": {
+    "einstein_deflection_angle": "α(b) = (4 · G · M) / (c² · b)",
+    "einstein_angular_radius": "θ_E = sqrt((4 · G · M / c²) · (D_LS / (D_L · D_S)))",
+    "gravitational_time_dilation": "Δt_r = Δt_0 · sqrt(1 - 2GM / (c² · r))",
+    "gravitational_redshift_z": "1 + z = (1 - r_s / r)^(-1/2)",
+    "variable_typography_metric_coupling": "wght(r) = clamp(300 + (1 - min(1, r / r_warp)) · 500, 300, 800)"
+  },
+  "color_palette": {
+    "deep_singularity_black": "#07080A",
+    "spacetime_grid_charcoal": "#1E232D",
+    "photon_sphere_amber": "#F59E0B",
+    "einstein_ring_cyan": "#00F0FF",
+    "accretion_disk_violet": "#8B5CF6",
+    "bristol_ivory_text": "#FAF8F5",
+    "milled_brass_reticle": "#C5A059",
+    "metric_divider_seam": "#28303F"
+  }
+}

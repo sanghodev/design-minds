@@ -1,0 +1,47 @@
+{
+  "day": 42,
+  "system_name": "Relativistic Spacetime Bento & Gravitational Lensing Shaders",
+  "palette": {
+    "deep_singularity_black": "#07080A",
+    "spacetime_grid_charcoal": "#1E232D",
+    "photon_sphere_amber": "#F59E0B",
+    "einstein_ring_cyan": "#00F0FF",
+    "accretion_disk_violet": "#8B5CF6",
+    "bristol_ivory_text": "#FAF8F5",
+    "milled_brass_reticle": "#C5A059",
+    "metric_divider_seam": "#28303F"
+  },
+  "singularity_presets": [
+    {
+      "id": "supermassive_kerr_core",
+      "nameKo": "초거대 회전 블랙홀 모드 (42 M☉)",
+      "mass_solar": 42,
+      "warp_radius_px": 140,
+      "accent_color": "#00F0FF"
+    },
+    {
+      "id": "einstein_ring_critical",
+      "nameKo": "임계 아인슈타인 링 정렬 모드 (28 M☉)",
+      "mass_solar": 28,
+      "warp_radius_px": 95,
+      "accent_color": "#F59E0B"
+    },
+    {
+      "id": "minkowski_flat_space",
+      "nameKo": "민코프스키 평탄 시공간 모드 (0 M☉)",
+      "mass_solar": 0,
+      "warp_radius_px": 0,
+      "accent_color": "#8B5CF6"
+    }
+  ],
+  "vector_engine": {
+    "solver": "Real-time 2D Schwarzschild null geodesic ray-tracing solver deflecting coordinates across 600 spacetime mesh nodes",
+    "ring_renderer": "Sub-pixel Einstein ring arc generator with photon sphere chromatic dispersion (cyan-amber split)",
+    "variable_font_axis": "OpenType Weight (wght: 300 to 800) and optical width dynamically coupled to gravitational redshift potential",
+    "sound_synthesis": "Web Audio API LIGO inspiral gravitational wave chirp sweep (35Hz-250Hz) and spacetime metric hum"
+  },
+  "generative_prompts": {
+    "midjourney_macro": "Cinematic macro overhead architectural studio photography of a minimalist Swiss Bento Grid layout carved into a dark vitreous obsidian spacetime plate, coordinate lines curving along extreme relativistic Schwarzschild gravitational geodesics around a glowing black hole core, razor-sharp serif typography warping into glowing cyan and amber Einstein rings, soft studio edge lighting, Hasselblad H6D-100c, 8k resolution --ar 16:9 --style raw",
+    "runway_cinematic_motion": "Extreme slow motion 1000fps of a gravitational mass singularity orbiting an architectural Swiss bento grid, coordinate grid lines warping into curved spacetime geodesics, background typography bending and erupting into a magnificent circular Einstein ring of pure light with gravitational wave audio synthesis"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "day": 31,
+  "system_name": "Architectural Louver & Kinetic Shadow Typography Spec",
+  "palette": {
+    "plaster_ivory": "#FAF8F5",
+    "slat_shadow": "rgba(35, 28, 20, 0.45)",
+    "ink_charcoal": "#1E1C1A",
+    "dawn_amber": "#EFA651",
+    "noon_white": "#FFFDF9",
+    "dusk_terracotta": "#B85D38",
+    "brass_accent": "#C5A059"
+  },
+  "louver_presets": [
+    {
+      "id": "dawn_raking",
+      "nameKo": "새벽의 긴 측광 (Dawn Grazing 14°)",
+      "solar_elevation": 14,
+      "solar_azimuth": 35,
+      "louver_angle": 30,
+      "color_temp_k": 2350
+    },
+    {
+      "id": "zenith_open",
+      "nameKo": "정오의 개방형 루버 (Zenith Open 75°)",
+      "solar_elevation": 75,
+      "solar_azimuth": 180,
+      "louver_angle": 80,
+      "color_temp_k": 5400
+    },
+    {
+      "id": "golden_hour",
+      "nameKo": "황금빛 차양 (Golden Hour 26°)",
+      "solar_elevation": 26,
+      "solar_azimuth": 245,
+      "louver_angle": 45,
+      "color_temp_k": 2800
+    },
+    {
+      "id": "intimate_sconce",
+      "nameKo": "실내 조명과 닫힌 루버 (Night Sconce)",
+      "solar_elevation": 10,
+      "solar_azimuth": 100,
+      "louver_angle": 10,
+      "color_temp_k": 2100
+    }
+  ],
+  "relief_specs": {
+    "emboss_type": "Dual Vector Umbra / Penumbra",
+    "depth_scale": "2px to 8px dynamic displacement",
+    "light_reactivity": "Lambertian cosine law"
+  }
+}

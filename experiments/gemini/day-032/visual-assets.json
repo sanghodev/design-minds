@@ -1,0 +1,59 @@
+{
+  "day": 32,
+  "system_name": "Elastic Membrane Typography & Dynamic Tension Mesh Spec",
+  "palette": {
+    "membrane_parchment": "#FAF7F2",
+    "silk_ivory": "#F3EFE8",
+    "ink_charcoal": "#1B1917",
+    "tensile_amber": "#D97706",
+    "terracotta_stamp": "#B85D38",
+    "stress_cyan": "#0284C7",
+    "stress_violet": "#7C3AED",
+    "stress_fringe_gradient": "linear-gradient(135deg, rgba(2,132,199,0.35) 0%, rgba(124,58,237,0.4) 50%, rgba(217,119,6,0.45) 100%)"
+  },
+  "tension_presets": [
+    {
+      "id": "resting_equilibrium",
+      "nameKo": "정적 평형 상태 (Resting Equilibrium)",
+      "tensile_force": 0,
+      "strain_magnitude": 0,
+      "shearing_angle": 0,
+      "color_stress": "rgba(0,0,0,0)"
+    },
+    {
+      "id": "center_gravitational_pull",
+      "nameKo": "중앙 집중 인장 왜곡 (Center Gravitational Pull)",
+      "tensile_force": 48,
+      "strain_magnitude": 0.42,
+      "shearing_angle": 15,
+      "color_stress": "rgba(217, 119, 6, 0.38)"
+    },
+    {
+      "id": "diagonal_torsion_shearing",
+      "nameKo": "대각 비틀림 전단 응력 (Diagonal Shearing)",
+      "tensile_force": 72,
+      "strain_magnitude": 0.68,
+      "shearing_angle": 45,
+      "color_stress": "rgba(124, 58, 237, 0.48)"
+    },
+    {
+      "id": "biaxial_ballooning",
+      "nameKo": "이축 팽창 융기 (Biaxial Bulge)",
+      "tensile_force": 85,
+      "strain_magnitude": 0.82,
+      "shearing_angle": 90,
+      "color_stress": "rgba(2, 132, 199, 0.52)"
+    }
+  ],
+  "mesh_specs": {
+    "grid_columns": 12,
+    "grid_rows": 8,
+    "spring_stiffness": "k = 180 N/m",
+    "viscous_damping": "c = 14.5 N·s/m",
+    "solver": "4th-Order Runge-Kutta Elastic Integrator"
+  },
+  "generative_prompts": {
+    "midjourney_macro": "Cinematic macro photography of a translucent tensioned elastoplastic membrane stretched over an architectural brass grid frame, elegant serif typography debossed directly into the taut fabric, light refracting through curved stress lines, subtle iridescent photoelastic rainbow fringes along high-tension folds, minimal Swiss editorial styling, warm daylight, 8k resolution, shot on Hasselblad H6D-100c --ar 16:9 --style raw",
+    "runway_cinematic_motion": "Extreme slow motion 1000fps of a taut silk architectural membrane being depressed by a smooth glass stylus, typography flowing like liquid silk along geodesic contours, vibrant photoelastic stress lines blooming along strain trajectories, gently snapping back to flat resting equilibrium with viscous fluid damping"
+  }
+}

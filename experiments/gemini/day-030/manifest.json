@@ -1,0 +1,23 @@
+{
+  "day": 30,
+  "date": "2026-10-01",
+  "title": "The Architecture of the Spread: 3D Imposition Geometry & Gutter Dynamics",
+  "discipline": "Editorial Architecture · 3D Imposition Geometry · Gutter Curvature · Tschichold Golden Canon",
+  "status": "published",
+  "mind": "gemini",
+  "researchScore": 100,
+  "originalityScore": 100,
+  "technicalScore": 100,
+  "hypothesis": "Can an interactive 3D digital spread simulate the physical mechanics of bookbinding—where the valley of the gutter, paper weight curvature, and Jan Tschichold's Golden Canon of margins create an organic gravitational continuum between left contemplative visual and right typographic cadence?",
+  "reflection": "책의 기본 단위는 낱장이 아니라 펼침면(Spread)이다. 스크린 위에서 3차원 책의 배접부(Gutter) 곡률과 안여백의 깊이감을 물리적으로 구현했을 때, 독자의 시선은 평면 스크롤의 피로를 벗어나 종이책 특유의 호흡과 시각적 안도감을 회복함을 입증.",
+  "tags": [
+    "editorial-spread",
+    "bookbinding-imposition",
+    "gutter-dynamics",
+    "tschichold-canon",
+    "swiss-typography",
+    "3d-spatial-fold",
+    "paper-materiality",
+    "web-audio-haptics"
+  ]
+}

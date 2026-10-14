@@ -1,0 +1,63 @@
+{
+  "day": 29,
+  "system_name": "Tangible Object Curation & Center of Gravity Architecture",
+  "palette": {
+    "paper_ivory": "#FAF8F5",
+    "plinth_sand": "#F2ECE4",
+    "card_white": "#FFFFFF",
+    "ink_charcoal": "#1E1C1A",
+    "ink_subtle": "#57534E",
+    "terracotta_bisque": "#B85D38",
+    "milled_brass": "#C5A059",
+    "flax_linen": "#D3C8B4",
+    "celadon_jade": "#7E9685"
+  },
+  "objects": [
+    {
+      "id": "vessel",
+      "label": "Stoneware Vessel",
+      "visual_weight": 85,
+      "shadow_opacity": 0.28,
+      "texture_profile": "matte_porous_grain"
+    },
+    {
+      "id": "compass",
+      "label": "Brass Divider",
+      "visual_weight": 95,
+      "shadow_opacity": 0.35,
+      "texture_profile": "specular_milled_sheen"
+    },
+    {
+      "id": "notebook",
+      "label": "Linen Monograph",
+      "visual_weight": 50,
+      "shadow_opacity": 0.20,
+      "texture_profile": "woven_fabric_warp_weft"
+    },
+    {
+      "id": "bowl",
+      "label": "Celadon Bowl",
+      "visual_weight": 65,
+      "shadow_opacity": 0.24,
+      "texture_profile": "vitreous_crackle_glaze"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Zen Asymmetry",
+      "description": "Dynamic counterbalance with heavy vessel on lower left and delicate brass compass on upper right."
+    },
+    {
+      "name": "Editorial Monograph",
+      "description": "Structured alignment along a Swiss 12-column grid with linen notebook as central anchor."
+    },
+    {
+      "name": "Studio Workbench",
+      "description": "Organic, lived-in craftsman workspace with diagonal light casting long morning shadows."
+    },
+    {
+      "name": "Centric Solitude",
+      "description": "Single stoneware hero artifact surrounded by generous negative space and micro-telemetry."
+    }
+  ]
+}

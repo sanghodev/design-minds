@@ -1,0 +1,54 @@
+{
+  "day": 43,
+  "system_name": "Cellular Syntactic Bento & Emergent Conway Ecosystem Shaders",
+  "palette": {
+    "bristol_ivory": "#FAF8F5",
+    "slate_basalt": "#111318",
+    "conway_emerald_active": "#10B981",
+    "cellular_glider_cyan": "#00F0FF",
+    "mitotic_amber_birth": "#F59E0B",
+    "sterile_charcoal_grid": "#262D3D",
+    "milled_brass_reticle": "#C5A059",
+    "divider_seam": "#E2E8F0"
+  },
+  "ecosystem_presets": [
+    {
+      "id": "glider_migration_stream",
+      "nameKo": "글라이더 공간 이주 모드 (Glider Migration)",
+      "initial_density": 0.18,
+      "speed_hz": 15,
+      "accent_color": "#10B981"
+    },
+    {
+      "id": "pulsar_oscillator_colony",
+      "nameKo": "펄서 주기 진동 군락 (Pulsar Oscillators)",
+      "initial_density": 0.26,
+      "speed_hz": 12,
+      "accent_color": "#00F0FF"
+    },
+    {
+      "id": "edge_of_chaos_soup",
+      "nameKo": "혼돈의 가장자리 원시 수프 (Langton λ ≈ 0.273)",
+      "initial_density": 0.35,
+      "speed_hz": 20,
+      "accent_color": "#F59E0B"
+    },
+    {
+      "id": "sterile_swiss_baseline",
+      "nameKo": "멸균 스위스 모더니즘 정적 모드 (Sterile Grid)",
+      "initial_density": 0.0,
+      "speed_hz": 0,
+      "accent_color": "#8B5CF6"
+    }
+  ],
+  "vector_engine": {
+    "solver": "Real-time 2D toroidal Conway Life engine (B3/S23) computed across 1,600 cells at 60fps",
+    "glider_spawner": "Interactive brush injecting gliders, blinkers, and block seeds on click and drag",
+    "variable_font_axis": "OpenType Weight (wght: 300 to 800) and optical width dynamically coupled to local alive cell density",
+    "sound_synthesis": "Web Audio API pentatonic generative arpeggios keyed to mitotic cell births and crystal bell on reset"
+  },
+  "generative_prompts": {
+    "midjourney_macro": "Cinematic macro overhead architectural studio photography of a minimalist Swiss Bento Grid layout carved into a dark slate basalt substrate on ivory porcelain, glowing emerald and cyan square micro-cells forming living Conway cellular patterns across the typography, brass calipers and sterile grid coordinate markings, Hasselblad H6D-100c, 8k resolution --ar 16:9 --style raw",
+    "runway_cinematic_motion": "Extreme slow motion 1000fps of living glowing green Conway cellular gliders crawling across an architectural Swiss bento grid, crossing between editorial cards and causing typography to organically swell in weight before a sterile switch clears the grid to pristine white"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "day": 40,
+  "date": "2026-10-11",
+  "title": "Phosphorescent Persistent Bento & Luminescent Becquerel Decay Shaders: Photonic Latency, Tangible UV Light-Pen Inscription & Swiss Cyber-Editorial Architecture",
+  "design_intent": {
+    "en": "On Day 010, our studio investigated \"Phosphorescent Persistence\", examining whether temporal light-typography could simulate photon excitation and radioactive half-life decay under UV light pens. While visually startling, Day 010 fell into the \"glow-in-the-dark novelty cliché\"—treating phosphorescence as a superficial neon glow stick trick without architectural modular layout discipline, spatial energy hierarchy, or functional UI kinetics. Exactly thirty days later, on Day 040, we liberate luminescence from this novelty trap. We elevate phosphorescent persistence from a passive green novelty into a rigorous structural interface medium: Quantum Trap State Kinetics, 2D Becquerel Power-Law Decay Shaders (I(t) = I_0 / (1 + at)^m), and Tangible UV Inscription in modern Swiss Bento Grid architecture. In classical photophysics, Edmond Becquerel demonstrated that phosphorescence is not simple instant fluorescence; it is a time-delayed release of trapped electrons, creating an authentic temporal memory of touch. We map this physical latency directly to interface architecture. Modular Bento cells act as strontium aluminate crystal substrates possessing quantum trap depth and decay half-lives. The user's cursor or stylus acts as a focused UV Light-Pen (365nm, photon flux Φ ∈ [0, 100%]), depositing intense latent phosphorescence upon tactile scrubbing. As photon density accumulates, modular cards radiate volumetric green-cyan glow, while typography dynamically couples to localized photon intensity: font weight swells (wght: 300 -> 800), stroke apertures dilate, and temporal trails record the velocity of reading saccades. Over time, the typography gently cools, relaxing back into razor-sharp Swiss grotesque stillness, or instantly quenched via Infrared Thermal Flash, accompanied by optical shutter detents and resonant crystal bell acoustics.",
+    "ko": "Day 010에서 우리는 '인광성 잔광(Phosphorescent Persistence)'을 탐구하며, 자외선 라이트 펜 아래에서 시간적 빛-타이포그래피가 광자 여기와 방사성 반감기 감쇠를 시뮬레이션할 수 있는지를 실험했습니다. 그러나 당시의 시도는 인광을 그저 어둠 속에서 번지는 형광 막대기 같은 시각적 효과로 소비하는 '야광 노벨티 클리셰'에 갇혀 있었습니다. 건축적 레이아웃의 규율도, 공간적 에너지 위계도, 기능적인 UI 동역학도 없이 그저 녹색 빛을 뿜어내는 일회성 트릭에 불과했던 것입니다. 정확히 30일이 흐른 오늘 Day 040, 우리는 이 피상적인 야광 유행을 완전히 뛰어넘어, 양자 트랩 준위 동역학, 2차원 베크렐 멱법칙 감쇠 셰이더(I(t) = I_0 / (1 + at)^m), 그리고 촉각적 UV 광자 잠상 각인(Tangible UV Inscription)을 스위스 벤토 그리드 건축에 전격 이식합니다. 에드몽 베크렐은 인광이 단순한 즉각 형광이 아니라, 결정 격자 트랩에 갇힌 전자가 시간을 두고 서서히 방출되는 영속적 시간의 흔적임을 증명했습니다. 우리는 이 광학적 지연 시간을 인터페이스 건축의 뼈대로 삼았습니다. 벤토 카드들은 양자 트랩 깊이와 반감기를 지닌 알루민산 스트론튬 결정판으로 변모합니다. 사용자의 커서는 365nm UV 라이트 펜이 되어 화면 위를 문지를 때 강력한 잠상 인광 에너지를 증착합니다. 광자 밀도가 축적됨에 따라 벤토 카드는 입체적인 청록빛 인광을 방출하고, 활자는 국소 광자 강도에 실시간 감응하여 굵기(wght: 300 -> 800)와 획을 팽창시키며 사용자의 시선과 스크롤 속도를 빛의 궤적으로 영구히 기록합니다. 시간이 흐르면 베크렐 감쇠에 따라 서체는 다시 차분하게 식어가며 정갈한 스위스 그로테스크의 고요로 회귀하고, 적외선 열 소광(Thermal Quenching) 버튼으로 즉각적인 암시야 리셋이 가능하며, 광학 셔터 틱음과 수정 공명 차임이 결합되어 공감각적 조형 카타르시스를 선사합니다."
+  },
+  "visual_mechanics": [
+    {
+      "name": "2D Becquerel Power-Law Decay Shader (2차원 베크렐 멱법칙 감쇠 셰이더)",
+      "principle": "Analytically computing phosphorescent luminescence decay I(t) = I_0 / (1 + a·t)^m across 600 surface photon nodes in real time, simulating persistent quantum trap states and electron de-trapping kinetics."
+    },
+    {
+      "name": "Tangible UV Light-Pen Inscription (촉각적 365nm UV 광자 잠상 각인)",
+      "principle": "Coupling cursor dragging speed and dwell time to local photon excitation, painting glowing green/cyan energy trails on dark photo-excitable Bento plates with realistic saturation ceilings."
+    },
+    {
+      "name": "Luminescence-Coupled Variable Typography (인광 밀도 감응형 가변 서체 및 광학 팽창)",
+      "principle": "Mapping localized photon intensity I(x,y) directly to OpenType variable font weight (wght: 300 to 800) and letterform glow blur radius, visually demonstrating energy emission from letterform stems."
+    },
+    {
+      "name": "Infrared Thermal Quenching & Shutter Snap (적외선 열 소광 및 즉각적 암시야 리셋)",
+      "principle": "Triggering thermal lattice vibration that instantly de-excites all trapped electrons, quenching luminescence to absolute zero and restoring pristine Swiss modernist baseline stillness."
+    },
+    {
+      "name": "Camera Shutter Mechanical Snaps & Quartz Resonant Bell (카메라 셔터 기계음 및 석영 수정 공명 차임)",
+      "principle": "Synthesizing authentic darkroom optics acoustics via Web Audio API: crisp mechanical focal-plane shutter clicks, UV phosphor charge hum, and crystalline resonant bells upon thermal quenching."
+    }
+  ],
+  "mathematical_models": {
+    "becquerel_phosphorescence_decay": "I(t) = I_0 / (1 + a · t)^m (where m ≈ 1.2, a is trapping coefficient)",
+    "photon_flux_excitation": "ΔI(x,y) = Φ_UV · (1 - exp(-v_pen · Δt / τ_excite))",
+    "luminescent_energy_density": "u_ph = h · ν · n_trapped(x,y)",
+    "thermal_quenching_rate": "k_quench = s · exp(-ΔE / k_B T)",
+    "variable_typography_flux_coupling": "wght(I) = clamp(300 + (I / I_max) · 500, 300, 800)"
+  },
+  "color_palette": {
+    "obsidian_darkroom": "#0B0C0E",
+    "phosphor_strontium_green": "#10B981",
+    "europium_cyan_glow": "#06B6D4",
+    "uv_excitation_violet": "#8B5CF6",
+    "alabaster_matte_stone": "#F3F4F6",
+    "brass_lens_barrel": "#C5A059",
+    "thermal_quench_infrared": "#EF4444",
+    "divider_carbon_seam": "#1F2937"
+  }
+}

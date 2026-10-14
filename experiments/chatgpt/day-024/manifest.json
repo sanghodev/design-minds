@@ -1,0 +1,30 @@
+{
+  "mind": "chatgpt",
+  "day": 24,
+  "date": "2026-09-28",
+  "status": "published",
+  "title": "How Much Space Makes a Figure?",
+  "selectionMethod": "Internal 1-5 judgments in order: originality, visual necessity, interaction meaning, feasibility. Reasons, not totals, determine the choice. Scores are planning notes, never displayed as evidence or outcomes.",
+  "hypotheses": [
+    {"idea":"Move one fixed square from frame contact to the center beside an identical centered reference","scores":[5,5,5,5],"reason":"Selected: shape, area, perimeter, orientation and color stay fixed while a simultaneous reference makes the changing margin directly inspectable."},
+    {"idea":"Move a disk from frame contact to the center beside a fixed disk","scores":[3,5,5,5],"reason":"The control is equally clear, but Day024 should answer Day023 with the same square geometry rather than introducing curvature as a new visual cue."},
+    {"idea":"Increase padding around a fixed word until it appears like a label","scores":[4,5,5,4],"reason":"Editorially relevant, but language, legibility and semantic enclosure would compete with the narrower figure-ground question."},
+    {"idea":"Slide a square across all four frame edges on a two-dimensional pad","scores":[4,5,5,3],"reason":"It would reveal more positions but would make direct keyboard parity and a legible one-variable sequence less precise than a linear margin control."},
+    {"idea":"Compare equal squares at the corner, edge midpoint and center","scores":[3,5,4,5],"reason":"Three simultaneous states are printable, but a continuous visitor-controlled margin better exposes where contact ends without pretending to locate a threshold."},
+    {"idea":"Add a second frame around the same square while preserving its position","scores":[4,5,4,4],"reason":"Nested framing could be visually rich, but frame weight and enclosure count would change while the unresolved contact question remained indirect."},
+    {"idea":"Move an equal square behind and in front of a frame stroke","scores":[4,5,5,4],"reason":"Layer order would become the dominant cue and would shift the inquiry toward occlusion rather than spacing from a boundary."},
+    {"idea":"Let visitors draw the smallest gap that feels separated","scores":[5,4,5,2],"reason":"A threshold response would be interesting, but recording it would imply measurement and introduce privacy, protocol and participant requirements not met today."},
+    {"idea":"Animate the square away from the frame and stop at random margins","scores":[3,5,4,4],"reason":"Motion history and timing would become extra variables, and reduced-motion visitors would receive a structurally different experiment."},
+    {"idea":"Compare the same square on calibrated and uncalibrated color pairs","scores":[3,4,4,2],"reason":"Display calibration cannot be verified remotely and would distract from the geometric control while overstating color precision."}
+  ],
+  "variable": "The adjustable square's horizontal margin from its selected frame edge, from 0% contact to the mathematically centered 33% position.",
+  "comparison": "A fixed centered reference and an adjustable condition show squares that are both 34% of field width and height, with identical color, area, perimeter and orientation.",
+  "constants": ["Equal square field dimensions in the same viewport", "Same 34% by 34% square geometry in both fields", "Same two opaque sRGB color values and full opacity", "Same vertical center, frame stroke and square orientation", "No stored response, score, external media or participant-data collection"],
+  "challenge": "If judgments vary, reverse with color or side, or are better explained by centrality, position, frame terminology or display conditions, do not attribute a general figure-ground effect to margin or edge contact. The implementation cannot separate contact from horizontal position.",
+  "researchLedForm": "Two equal fields lead the page. The reference square remains centered while the matching square travels on one horizontal axis from touching the frame to occupying the same centered position. A native range, three semantic presets, side mirror, color swap and reset expose the construction without naming a correct answer.",
+  "mediaDecision": "Responsive HTML and CSS keep two exact square geometries synchronized and let keyboard, pointer and touch users inspect continuous margin states. A still freezes the variable; video adds timing; generated imagery cannot guarantee exact responsive insets or flat color. No external image, video, audio or generated asset is used.",
+  "revisits": [
+    {"day":54,"date":"2026-10-28","question":"Counterbalance side, color, order and starting margin; ask contact, figure, dominance and confidence separately without presenting the center as an answer."},
+    {"day":114,"date":"2026-12-27","question":"Compare edge contact with position held closer to constant through masking or moving frames, and inspect whether shipping design tools expose relational spacing without reducing perception to a score."}
+  ]
+}

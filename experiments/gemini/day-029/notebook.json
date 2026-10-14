@@ -1,0 +1,95 @@
+{
+  "day": 29,
+  "date": "2026-09-30",
+  "title": "The Weight of the Object: Asymmetrical Spatial Balance & Tangible Curation",
+  "design_intent": {
+    "en": "In classical Japanese aesthetics (Ma and Wabi-sabi), mid-century Nordic industrial design, and Swiss modernist catalog layouts, empty space is never passive vacuum; it is the invisible counter-lever that supports the physical weight of an object. Following the architectural entrance study of Day 28, Day 29 steps inside the workshop and gallery space to investigate the relationship between material physicality and editorial balance. When an unglazed ceramic vessel, a solid brass divider, or a rough linen monograph is set down upon a plinth, its physical mass creates an immediate gravitational pull across the page. This experiment models visual center-of-gravity dynamics on an asymmetrical 12-column grid: as physical artifacts are curated across space, the surrounding typography, margins, and negative intervals dynamically re-balance themselves, achieving a profound sense of tactile stillness.",
+    "ko": "일본의 전통 여백 미학(마, 間), 북유럽 미드센추리 공예 디자인, 그리고 스위스 모더니즘 전시 도록의 레이아웃에서 여백은 결코 수동적으로 비어 있는 진공이 아닙니다. 여백은 사물의 물리적 무게를 떠받치는 보이지 않는 지렛대입니다. Day 28의 입구 조형학에 이어, Day 29는 공방과 갤러리의 실내로 들어서 사물의 물성(Material Physicality)과 에디토리얼 균형의 역학을 탐구합니다. 유약을 바르지 않은 소박한 도기 잔, 단단하게 깎아낸 황동 디바이더, 거친 촉감의 린넨 장정 노트가 좌대 위에 놓일 때, 사물이 지닌 질감과 중량은 지면 전체에 즉각적인 시각적 중력장을 형성합니다. 본 실험은 비대칭 12열 모듈러 그리드 위에서 물리적 시각 무게중심(Center of Visual Gravity)을 실시간으로 연산하여, 사물이 이동할 때 주변의 활자, 마진, 여백이 스스로 호흡하며 균형을 맞추는 고요한 조형적 평형 상태를 구현합니다."
+  },
+  "visual_mechanics": [
+    {
+      "name": "Visual Center of Gravity (시각적 무게중심 역학)",
+      "principle": "Calculating the 2D visual centroid C = (Σ m_i * r_i) / (Σ m_i) where each artifact has an intrinsic visual mass based on physical material density, chromatic saturation, and shadow area."
+    },
+    {
+      "name": "Adaptive Typographic Counter-Balance (적응형 활자 반작용 균형)",
+      "principle": "Surrounding editorial headlines and commentary adjust their tracking (letter-spacing), margins, and optical weight inversely to object displacement, acting as typographic counterweights."
+    },
+    {
+      "name": "Raking Light Material Shading (측광 조명과 표면 질감 음영)",
+      "principle": "Directional daylight angle (θ) and elevation (φ) dynamically cast soft ambient occlusion and directional umbras, sculpting the distinct tactile surfaces of rough matte ceramic, specular brass, and porous woven linen."
+    },
+    {
+      "name": "Acoustic Material Haptics (물성 기반 공명 음향 햅틱)",
+      "principle": "Synthesizing discrete acoustic frequencies via Web Audio API: 180Hz muted clay resonance for stoneware, 880Hz ringing chime for brass, and 420Hz soft friction whisper for linen paper."
+    }
+  ],
+  "physical_equations": {
+    "centroid_x": "C_x = (sum(m_i * x_i)) / sum(m_i)",
+    "centroid_y": "C_y = (sum(m_i * y_i)) / sum(m_i)",
+    "shadow_vector": "S = [L_len * cos(theta_azimuth), L_len * sin(theta_azimuth)], where L_len = height / tan(phi_elevation)",
+    "typographic_counter_offset": "Delta_T = -k * (C - C_ideal)"
+  },
+  "curated_artifacts": [
+    {
+      "id": "vessel",
+      "name": "Hand-Formed Bisque Stoneware Vessel",
+      "name_ko": "수제 비스크 소결 도기 잔",
+      "material": "Unglazed Terracotta & Coarse Feldspar Clay",
+      "visual_mass": 85,
+      "base_color": "#C06C4E",
+      "accent_color": "#D48B70",
+      "resonance_hz": 180
+    },
+    {
+      "id": "compass",
+      "name": "Milled Solid Brass Drafting Divider",
+      "name_ko": "황동 정밀 절삭 디바이더",
+      "material": "C36000 Free-Machining Solid Brass",
+      "visual_mass": 95,
+      "base_color": "#C5A059",
+      "accent_color": "#E5C888",
+      "resonance_hz": 880
+    },
+    {
+      "id": "notebook",
+      "name": "Bound Raw Linen Monograph",
+      "name_ko": "원사 린넨 제본 디자인 도록",
+      "material": "Unbleached Flax Fiber & 140gsm Cotton Rag",
+      "visual_mass": 50,
+      "base_color": "#D3C8B4",
+      "accent_color": "#EFE8DA",
+      "resonance_hz": 420
+    },
+    {
+      "id": "bowl",
+      "name": "Celadon Crackle-Glazed Tea Bowl",
+      "name_ko": "청자 빙렬 유약 완",
+      "material": "Iron-Bearing Celadon Glaze over White Porcelain",
+      "visual_mass": 65,
+      "base_color": "#94A89A",
+      "accent_color": "#B8CABF",
+      "resonance_hz": 640
+    }
+  ],
+  "design_tokens": {
+    "color": {
+      "surface_paper": "#FAF8F5",
+      "surface_plinth": "#F2ECE4",
+      "surface_card": "#FFFFFF",
+      "border_soft": "#E3DCD2",
+      "border_strong": "#C5BCAD",
+      "ink_primary": "#1E1C1A",
+      "ink_secondary": "#57534E",
+      "ink_muted": "#8A847C",
+      "accent_terracotta": "#B85D38",
+      "accent_brass": "#C5A059",
+      "accent_celadon": "#7E9685"
+    },
+    "typography": {
+      "display_serif": "Newsreader / Georgia / serif",
+      "sans_clean": "Inter / system-ui / -apple-system / sans-serif",
+      "mono_telemetry": "JetBrains Mono / SF Mono / Consolas / monospace"
+    }
+  }
+}

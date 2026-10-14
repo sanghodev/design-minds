@@ -1,0 +1,69 @@
+{
+  "day": 34,
+  "system_name": "Chladni Modal Bento & Acoustic Tensor Grid Typographic Spec",
+  "palette": {
+    "plaster_ivory": "#FAF8F5",
+    "sand_bed": "#F4EFEA",
+    "ink_basalt": "#141312",
+    "ink_secondary": "#57534E",
+    "brass_milled": "#C5A059",
+    "brass_specular": "#E5C887",
+    "terracotta_stamp": "#C2410C",
+    "nodal_emerald": "#10B981",
+    "antinodal_violet": "#4F46E5",
+    "spring_divider": "#E7E2DA",
+    "spring_active": "#C5A059"
+  },
+  "chladni_plate_presets": [
+    {
+      "id": "fundamental_cross",
+      "nameKo": "기본 직교 마디 (Fundamental Cross)",
+      "mode_m": 1,
+      "mode_n": 1,
+      "frequencyHz": 110,
+      "nodal_curves": "2 orthogonal center axes",
+      "bento_morphology": "Balanced 2x2 Quadrant split",
+      "accent_color": "#10B981"
+    },
+    {
+      "id": "asymmetric_triptych",
+      "nameKo": "비대칭 3단 트립틱 (Asymmetric Triptych)",
+      "mode_m": 2,
+      "mode_n": 1,
+      "frequencyHz": 220,
+      "nodal_curves": "2 vertical + 1 horizontal nodal spines",
+      "bento_morphology": "Hero 2-column + Dual Card Stack",
+      "accent_color": "#C5A059"
+    },
+    {
+      "id": "harmonic_matrix",
+      "nameKo": "하모닉 모더니즘 매트릭스 (Harmonic Matrix 3:2)",
+      "mode_m": 3,
+      "mode_n": 2,
+      "frequencyHz": 440,
+      "nodal_curves": "Josef Müller-Brockmann 6-cell geometric mesh",
+      "bento_morphology": "3x2 Precision Swiss Bento",
+      "accent_color": "#4F46E5"
+    },
+    {
+      "id": "concentric_sanctuary",
+      "nameKo": "동심원 정상파 성소 (Concentric Petal Bento)",
+      "mode_m": 3,
+      "mode_n": 3,
+      "frequencyHz": 550,
+      "nodal_curves": "Concentric ring loops with radial nodal arms",
+      "bento_morphology": "3x3 High-Density Audio-Responsive Matrix",
+      "accent_color": "#C2410C"
+    }
+  ],
+  "acoustic_spring_engine": {
+    "chladni_solver": "Real-time analytical 2D standing wave field w(x,y) evaluated on 1200 sand particles",
+    "boundary_springs": "Interactive 4th-order Hookean tension lines (F = -k·Δx - c·v)",
+    "sound_synthesis": "Web Audio API Karplus-Strong string pluck + resonant metal plate modal chime (zero continuous drone)",
+    "variable_font_axis": "OpenType Weight (wght: 300 to 850) and Slant (slnt: 0° to -10°) inversely scaled to |w(x,y)|"
+  },
+  "generative_prompts": {
+    "midjourney_macro": "Cinematic overhead studio photography of an architectural Swiss Bento Grid layout carved into a milled brass plate resting on honed ivory plaster, fine white quartz sand naturally accumulated along sharp Chladni standing wave nodal curves, tactile mechanical spring dividers separating modular editorial typographic cards, razor-sharp serif and mono typography debossed in basalt carbon ink, warm grazing daylight casting delicate shadow relief, Hasselblad H6D-100c, 8k resolution, minimalist architectural design monograph --ar 16:9 --style raw",
+    "runway_cinematic_motion": "Extreme slow motion 1000fps of a human finger plucking a taut brass spring divider across a minimalist architectural bento grid, the boundary oscillating with elastic Hookean tension, fine sand particles vibrating violently and dancing into perfect geometric Chladni nodal lines, typography on the nodal lines remaining immovably sharp and serene while surrounding areas shimmer with acoustic resonance"
+  }
+}

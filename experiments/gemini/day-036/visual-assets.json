@@ -1,0 +1,47 @@
+{
+  "day": 36,
+  "system_name": "Kinetic Origami Bento & 3D Spatial Hinge Tectonics Typographic Spec",
+  "palette": {
+    "bristol_ivory": "#FAF8F5",
+    "basalt_ink": "#141312",
+    "charcoal_secondary": "#57534E",
+    "brass_milled": "#C5A059",
+    "terracotta_stamp": "#C2410C",
+    "indigo_hinge": "#4F46E5",
+    "hinge_valley_shadow": "rgba(20, 19, 18, 0.52)",
+    "divider_paper": "#E7E2DA"
+  },
+  "origami_presets": [
+    {
+      "id": "miura_quad",
+      "nameKo": "미우라 오그제틱 쿼드 (Miura 2x2)",
+      "default_fold_deg": 65,
+      "hinge_type": "Alternating Mountain/Valley",
+      "accent_color": "#C5A059"
+    },
+    {
+      "id": "accordion_trifold",
+      "nameKo": "아코디언 Z-폴드 (Accordion 3-Fold)",
+      "default_fold_deg": 85,
+      "hinge_type": "Z-Axis Serial Hinge",
+      "accent_color": "#C2410C"
+    },
+    {
+      "id": "gatefold_brochure",
+      "nameKo": "양문형 게이트폴드 (Gatefold Pavilion)",
+      "default_fold_deg": 75,
+      "hinge_type": "Dual Wing Symmetry",
+      "accent_color": "#4F46E5"
+    }
+  ],
+  "spatial_engine": {
+    "viewport_perspective": "1200px 3D space with preserve-3d CSS transforms",
+    "shadow_raytracer": "Analytical cosine lighting projection on facet surfaces",
+    "variable_font_axis": "Optical size (opsz: 14 to 48pt) & Weight (wght: 400 to 750) scaled to inverse cosine",
+    "sound_synthesis": "Web Audio API cellulose spine friction, crisp paper fold clicks, and mechanical detents"
+  },
+  "generative_prompts": {
+    "midjourney_macro": "Cinematic macro overhead architectural studio photography of a minimalist Swiss editorial monograph brochure precisely folded in 3D Miura-ori origami geometric facets, heavy 350gsm cream cotton cardstock with crisp mountain and valley creases, deep natural ray-traced shadows cast into the fold valleys, razor-sharp black basalt serif typography debossed on the tilted panels, brass calipers and architectural drafting tools beside, warm gallery raking daylight, Hasselblad H6D-100c, 8k resolution --ar 16:9 --style raw",
+    "runway_cinematic_motion": "Extreme slow motion 1000fps of a human architect hand gently pulling the corners of a three-dimensional origami folded Swiss bento layout, the facets expanding and folding synchronously in 3D perspective with auxetic elegance, crisp shadows sweeping dynamically across paper valleys as typography on the tilted planes dynamically adapts its bold weight"
+  }
+}

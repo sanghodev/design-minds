@@ -1,11 +1,46 @@
 # ChatGPT Creative Memory
 
+## Day 026 — When Does a Frame Become an Outline? — 2026-09-30
+
+- Followed Day025's unresolved resize operation: every 30% blue square and every center stay fixed while one orange frame contracts symmetrically from a 66% box with 18% space on every side to the same 30% box with coincident edges.
+- Current source: Dijksterhuis, Vreugdenhil, Roelfsema and Self's *Border-ownership reversals determine the strength of metacontrast masking*, published 2026-09-24. Its brief target-mask experiments make border ownership a current research signal; they do not validate a persistent square, a container-to-outline role change or this interface.
+- Historical counterexample: MoMA's record of Malevich's 1918 *Suprematist Composition: White on White* describes imprecise, low-contrast outlines producing open space. It supports a historical contrast in boundary material, not a causal claim, and no original image was reproduced.
+- Technical/accessibility basis: CSS Box Model Level 3 distinguishes box edges and permits reproducible coincidence. W3C Non-text Contrast and Dragging Movements guidance led to high-contrast essential graphics, textual equivalents, native range input and clickable/tappable construction presets. No whole-page conformance claim.
+- Selected from ten hypotheses: persistent open and coincident anchors flank one adjustable symmetric frame. Anchor reversal and optional construction reveal expose order and disclosure as possible confounds; reset restores the neutral middle state.
+- Own-review carryover: simultaneous endpoints and visible construction may reduce memory dependence, but they can prime an answer and cannot neutralize perception. No response, threshold, ownership change or improved understanding has been measured.
+- Evidence boundary: state-model tests can verify 18%/9%/0% geometry and fixed centers. Frame size, enclosed area, stroke paint order, color contrast, captions and motion history still change or cue interpretation. Browser captures, actual input, assistive technology and participant sessions remain untested.
+- Revisit Day056 or 2026-10-30: counterbalance order, colors, labels and starting gap; ask container, outline, object and confidence separately. Revisit Day116 or 2026-12-29: compare translated frame, resized frame and mask with matched static endpoints and inspect actual design-tool shared-edge checks.
+- Next question: can matching border color/thickness or reversing paint order separate edge coincidence from the colored-frame cue, and what changes when translation, resize and mask share the same endpoints?
+
+## Day 025 — Can a Frame Move a Still Square? — 2026-09-29
+
+- Followed Day024's unresolved contact/position confound: both coral squares stay at identical center coordinates while one equal 64% frame alone translates 0–17% of field width until an edge touches the 30% square.
+- Current source: Bernard Marius 't Hart and Patrick Cavanagh's *Frame effects across space and time*, published 2026-03-02 in Journal of Vision. Its eight moving-frame/probe experiments make relational position a current signal; they do not validate this continuously visible square or a figure-ground response.
+- Historical boundary: MoMA's record of El Lissitzky's 1922 *About Two Squares* shows geometric relations organizing an illustrated sequence. It is design history, not causal evidence, and no original plate or palette was reproduced.
+- Technical/accessibility basis: CSS Transforms Level 1 supplies a reproducible local-coordinate translation. W3C Dragging Movements and C39 led to clickable presets, keyboard-capable native input and transition removal under reduced motion. No whole-page conformance claim.
+- Selected from ten hypotheses: simultaneous fixed reference and adjustable frame. Square position, size, color and orientation stay fixed; frame size, stroke and vertical position stay fixed. Mirror direction, panel swap and reset expose some ordering dependencies.
+- Evidence boundary: source and state-model checks can verify geometry. Frame asymmetry, centrality, motion history, captions and color remain confounds. No participant response, perceived movement, enclosure or figure effect has been measured.
+- Revisit Day055 or 2026-10-29: counterbalance direction, order, color and initial shift; ask perceived position, enclosure, figure and confidence separately. Revisit Day115 or 2026-12-28: compare translated frame, resized frame and mask with square coordinates fixed and inspect actual design-tool relationship checks.
+- Next question: can three different boundary operations separate contact from asymmetry and motion history while keeping the object's screen coordinates fixed?
+
 ## Owner direction — 2026-09-22
 
 - The owner explicitly prefers the direction of own Days 008, 009 and 007. The operational interpretation is specimen-led visual discovery: color relationships, inspectable typography and expressive spatial composition with meaningful visitor manipulation.
 - Carry that experiential priority, not their palettes, page shells or repeated mechanisms. Avoid defaulting to workflow/status demonstrations where the main action only changes a label. Day019 remains an authored study, not the template for future work.
 - The actionable selection and review gate is in `creative-system/CHATGPT.md`, section `Owner direction: visual discovery first`. Creation and review handoffs reference it. Keep new UI English, canonical publication prose Korean, and evidence distinct from interpretation.
 - This is an owner preference and process correction, not a tested improvement in perception, comprehension or design quality. Existing experiments and Gemini creative instructions are unchanged.
+
+## Day 024 — How Much Space Makes a Figure? — 2026-09-28
+
+- Followed Day023's largest unresolved confound without inheriting its strip-versus-square form. Both specimens are now the same 34% square with equal area, perimeter, color and orientation; only the adjustable horizontal margin changes from frame contact to the centered position.
+- Current source: Yip, Moroze, Nishina and Yazdanbakhsh's Frontiers in Psychology article published 2026-02-27. Its CNN results make contour context and junction geometry relevant computational signals, not human evidence for this page.
+- Historical boundary: Kandinsky's 1926 *Point and Line to Plane* treats relations on the plane as material for analysis. The Bauhaus-Archiv interpretation and Met 1928-edition record provide context, not proof of a margin effect.
+- Technical/accessibility basis: CSS Positioned Layout WD 2025-10-07 supplies reproducible logical insets; W3C Target Size and Reflow guidance shaped large equivalent controls and the stacked narrow layout. No whole-page conformance claim.
+- Selected from ten hypotheses: fixed centered reference beside one matching square that travels 0–33% from either edge. Touch, Separate and Center are construction presets, not perceptual thresholds.
+- Own-review carryover: disclosure and a persistent reference do not neutralize perception. The centered reference may itself prime a preferred answer; source labels and color can also cue judgment.
+- Evidence boundary: implementation and model behavior are verifiable. Browser captures, actual touch, screen reader, forced colors, 400% zoom, print, calibrated displays and participant responses remain untested.
+- Revisit Day054 or 2026-10-28: counterbalance side, color, order and initial margin and separate contact, figure, dominance and confidence questions. Revisit Day114 or 2026-12-27: hold apparent position closer to constant with a moving frame or mask and inspect real design-tool relationship checks.
+- Next question: if the frame moves while the square stays in the same apparent position, does contact still change how the boundary is assigned?
 
 ## Day 019 — Accepted Is Not Finished — 2026-09-20
 

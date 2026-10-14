@@ -1,0 +1,47 @@
+{
+  "day": 41,
+  "system_name": "Anamorphic Spatial Bento & Projective Homography Shaders",
+  "palette": {
+    "bristol_ivory": "#FAF8F5",
+    "basalt_carbon": "#121110",
+    "anamorphic_ultramarine": "#2563EB",
+    "vantage_lock_amber": "#F59E0B",
+    "optic_singularity_cyan": "#06B6D4",
+    "milled_brass_dial": "#C5A059",
+    "projection_grid_charcoal": "#4B5563",
+    "divider_seam": "#E5E7EB"
+  },
+  "anamorphic_presets": [
+    {
+      "id": "holbein_skull_oblique",
+      "nameKo": "한스 홀바인 대사들 왜상 모드 (38° Oblique)",
+      "pitch_deg": 28,
+      "yaw_deg": -42,
+      "accent_color": "#2563EB"
+    },
+    {
+      "id": "vantage_singularity_lock",
+      "nameKo": "정면 특이점 정렬 모드 (0° Singular Vantage)",
+      "pitch_deg": 0,
+      "yaw_deg": 0,
+      "accent_color": "#F59E0B"
+    },
+    {
+      "id": "extreme_spatial_ribbon",
+      "nameKo": "극단 사선 투영 리본 모드 (-35° Pitch, 50° Yaw)",
+      "pitch_deg": -35,
+      "yaw_deg": 50,
+      "accent_color": "#06B6D4"
+    }
+  ],
+  "vector_engine": {
+    "solver": "Real-time 3x3 projective homography matrix solver calculating 3D perspective transformation across 6 Bento modular cards",
+    "vantage_tracker": "Sub-degree focal angle tracker monitoring observer pitch/yaw and snapping into singular vantage lock",
+    "variable_font_axis": "OpenType Weight (wght: 300 to 800) and optical width dynamically compensating angle foreshortening",
+    "sound_synthesis": "Web Audio API camera lens ratchet clicks during rotation, and pure 1200Hz crystal bell upon vantage lock"
+  },
+  "generative_prompts": {
+    "midjourney_macro": "Cinematic macro architectural studio photography of a minimalist Swiss Bento Grid layout constructed from heavy ivory cardstock and milled brass calipers, cards floating in extreme 3D anamorphic perspective with severe optical stretching, aligning into razor-sharp black serif typography when viewed from an exact singular vantage angle, soft directional studio daylight, Hasselblad H6D-100c, 8k resolution --ar 16:9 --style raw",
+    "runway_cinematic_motion": "Extreme slow motion 1000fps of a camera orbiting an architectural Swiss bento grid in 3D space, distorted typography stretching across extreme oblique angles, then as camera passes through the singular vantage point, all fractured words instantly snap into perfect legibility with a mechanical camera shutter sound"
+  }
+}

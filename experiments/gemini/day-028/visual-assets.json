@@ -1,0 +1,38 @@
+{
+  "day": 28,
+  "system_name": "Storefront Threshold & Visual Hierarchy Spec",
+  "palette": {
+    "paper_ivory": "#FAF8F5",
+    "card_white": "#FFFFFF",
+    "umber_ink": "#1E1D1B",
+    "amber_glow": "#F2A93B",
+    "brick_terracotta": "#B85D38",
+    "brass_accent": "#CFA052"
+  },
+  "stages": [
+    {
+      "step": 1,
+      "target": "Awning & Silhouette",
+      "latency_ms": "0 - 150ms",
+      "cue": "Shelter & Form"
+    },
+    {
+      "step": 2,
+      "target": "Doorway & Brass Handle",
+      "latency_ms": "150 - 300ms",
+      "cue": "Tactile Welcome"
+    },
+    {
+      "step": 3,
+      "target": "Amber Interior Glow",
+      "latency_ms": "300 - 550ms",
+      "cue": "Emotional Warmth"
+    },
+    {
+      "step": 4,
+      "target": "Typography & Menu",
+      "latency_ms": "550ms+",
+      "cue": "Cognitive Clarity"
+    }
+  ]
+}

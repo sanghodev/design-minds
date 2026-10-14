@@ -1,0 +1,140 @@
+{
+  "day": 36,
+  "date": "2026-10-07",
+  "title": "Kinetic Origami Bento & 3D Spatial Hinge Tectonics: Non-Euclidean Crease Tessellations, Adaptive Dual-Screen Folding & Swiss Editorial Architecture",
+  "design_intent": {
+    "en": "On Day 006, our studio investigated 'Tectonic Creasing', testing whether acute mechanical folding could physically fracture printed ink along crease apexes. While structurally evocative, Day 006 fell into a destructive aesthetic trap: paper was treated as an irreparably fractured barrier, severing typographic stems into opposing planes without architectural cohesion or adaptive layout intelligence. Exactly thirty days later, on Day 036, we transcend this destructive tear cliché by introducing Rigid Origami Tessellation (Miura-Ori) and 3D Spatial Hinge Ergonomics to modern Bento Grid architecture. Rather than destroying typography across a brutal fold, the digital interface becomes a multi-faceted 3D folding pavilion. Drawing inspiration from Josef Albers' Bauhaus paper folding Vorkurs and Koryo Miura's space-structure origami, modular Bento cards act as rigid geometric facets connected by elastic mountain-and-valley hinges. As the user folds the canvas (0° to 165°), adjacent facets rotate in genuine 3D perspective. Typographic margins autonomously retreat away from the mechanical hinge crease line to protect reading comfort. Furthermore, typography on tilted facets applies foreshortening-compensation calculus, dynamically scaling OpenType variable font weight (wght: 400 -> 750) and optical size so that letters angled sharply away from the viewer appear optically upright, crisp, and commanding. Tactile Web Audio API paper creasing and spine-flexing friction provide visceral physical delight.",
+    "ko": "Day 006에서 우리는 '구조적 접힘(Tectonic Creasing)'을 탐구하며, 종이가 예각으로 접힐 때 발생하는 인장 응력에 의해 잉크가 균열을 일으키고 갈라지는 물리적 파단을 실험했습니다. 그러나 당시의 시도는 종이를 돌이킬 수 없이 훼손하는 '파괴적 종이 찢기 클리셰'에 갇혀 있었습니다. 활자의 획이 갈가리 찢어지고 단절되어, 건축적인 구조적 통합이나 적응형 레이아웃의 지능을 보여주지 못했던 것입니다. 정확히 30일이 흐른 오늘 Day 036, 우리는 이 파괴적 파단을 극복하고, 우주 구조공학에 쓰이는 미우라 접기(Miura-Ori) 강체 오리가미 테셀레이션과 차세대 3D 공간 힌지 인체공학을 스위스 벤토 그리드에 전격 이식합니다. 활자를 찢어버리는 대신, 화면 전체를 3차원 공간 속에서 유기적으로 접히고 펼쳐지는 다면체 건축 파빌리온으로 재창조합니다. 바우하우스 요제프 알버스(Josef Albers)의 종이 접기 조형 연습과 미우라 코료의 오그제틱(Auxetic) 메타물질에서 영감을 얻어, 벤토 카드들은 산(Mountain)과 골(Valley)의 접힘선으로 연결된 3D 강체 면으로 거듭납니다. 사용자가 화면을 접을 때(0°~165°), 인접한 면들이 입체적으로 회전하며 깊은 계곡 그림자를 투영합니다. 본문 여백은 기계적 힌지 응력선으로부터 스스로 물러서며 가독성을 보호하고, 원근에 의해 기운 면 위의 활자는 원근 단축 보상(Foreshortening Compensation) 수식에 의해 가변 서체 굵기(wght: 400 -> 750)를 스스로 증폭시켜 왜곡 없이 선명한 시각적 권위를 유지합니다."
+  },
+  "visual_mechanics": [
+    {
+      "name": "Miura-Ori Rigid Origami Kinematics (미우라 강체 오리가미 운동학)",
+      "principle": "Governing modular 3D Bento facets via dihedral angle coupling: cos(θ_v) = cos(θ_u) · cos(γ) / sqrt(1 - sin²(θ_u) sin²(γ)). Dragging along a single axis simultaneously rotates all adjacent panels with Poisson ratio ν < 0 (auxetic metamaterial expansion)."
+    },
+    {
+      "name": "Dynamic Hinge Margin Relief (기계적 힌지 응력선 여백 회피 역학)",
+      "principle": "Autonomously expanding typographic margins away from the central crease as fold angle θ deepens: Δmargin = max(12px, 48px · sin(θ / 2)). Text never falls into the shadow valley or suffers visual collision across the hinge seam."
+    },
+    {
+      "name": "Foreshortening-Compensating Variable Typography (원근 단축 보상형 가변 타이포그래피)",
+      "principle": "Dynamically scaling OpenType variable font weight (wght: 400 to 750) and optical size (opsz: 14 to 48pt) proportionally to the facet tilt angle: wght(θ) = wght_base + Δwght · (1 - cos(θ_facet)). Letterforms angled sharply away from the user retain crisp optical weight and readability."
+    },
+    {
+      "name": "Ray-Traced Crease Valley Shadows & Spine Acoustic Haptics (계곡 그림자 투영 및 척추 마찰 음향)",
+      "principle": "Rendering authentic gradient shadow umbras within fold valleys (W_shadow = H_facet · sin(θ) · cot(α_light)), paired with Web Audio API physical paper friction and mechanical hinge detent clicks synchronized to rotational velocity."
+    }
+  ],
+  "mathematical_models": {
+    "miura_dihedral_angle_relation": "cos(θ_v) = cos(θ_u) · cos(γ) / sqrt(1 - sin²(θ_u) · sin²(γ))",
+    "foreshortening_optical_compensation": "scale_y = 1.0 / max(0.25, cos(θ_facet)),  wght(θ) = wght_base + Δwght_max · (1 - cos(θ_facet))",
+    "crease_valley_shadow_width": "W_shadow = H_facet · sin(θ_fold) · cot(α_light)",
+    "hinge_clearance_margin_relief": "Δmargin(θ) = margin_base + 36px · sin(θ_fold / 2)"
+  },
+  "facet_materials": [
+    {
+      "id": "bristol_ivory",
+      "name": "Heavy Cotton Bristol Cardstock",
+      "nameKo": "중량 코튼 브리스톨지",
+      "weightGsm": 350,
+      "creaseRadiusMm": 0.8,
+      "surfaceTone": "#FAF8F5",
+      "cardTone": "#FFFFFF",
+      "textColor": "#141312",
+      "subTextColor": "#57534E",
+      "accentColor": "#C5A059",
+      "borderColor": "#E7E2DA",
+      "valleyShadow": "rgba(20, 19, 18, 0.45)",
+      "descKo": "350gsm 고밀도 순면 브리스톨지로, 접힐 때 둔탁하고 묵직한 종이 등뼈 마찰음과 우아한 크림빛 그림자 계곡을 형성합니다."
+    },
+    {
+      "id": "anodized_titanium",
+      "name": "Anodized Architectural Titanium",
+      "nameKo": "아노다이징 티타늄 패널",
+      "weightGsm": 1800,
+      "creaseRadiusMm": 0.2,
+      "surfaceTone": "#141312",
+      "cardTone": "#1F1D1B",
+      "textColor": "#FAF8F5",
+      "subTextColor: ": "#A8A29E",
+      "accentColor": "#C2410C",
+      "borderColor": "#2E2B28",
+      "valleyShadow": "rgba(0, 0, 0, 0.75)",
+      "descKo": "1.2mm 극도로 정밀한 금속성 힌지 메커니즘을 모사하여, 각도가 꺾일 때 면도날처럼 날카로운 스펙큘러 리플렉션과 기계식 클릭음을 뿜어냅니다."
+    },
+    {
+      "id": "frosted_glassine",
+      "name": "Translucent Folded Glassine",
+      "nameKo": "반투명 접이식 글라신지",
+      "weightGsm": 90,
+      "creaseRadiusMm": 0.4,
+      "surfaceTone": "#FAF6EE",
+      "cardTone": "rgba(255, 255, 255, 0.82)",
+      "textColor": "#141312",
+      "subTextColor": "#64748B",
+      "accentColor": "#4F46E5",
+      "borderColor": "#E2E8F0",
+      "valleyShadow": "rgba(79, 70, 229, 0.28)",
+      "descKo": "빛을 은은하게 여과하는 반투명 양피지로, 3D 접힘 속에서 면과 면이 겹치며 감산혼합적인 광학적 뎁스를 자아냅니다."
+    }
+  ],
+  "fold_presets": [
+    {
+      "id": "miura_quad",
+      "nameKo": "미우라 오그제틱 쿼드 (Miura 2x2)",
+      "targetAngle": 65,
+      "layoutMode": "2x2 Alternating 3D Mountain/Valley",
+      "descKo": "산과 골이 교차하며 4개의 모듈러 카드가 동시에 중심을 향해 수축·팽창합니다."
+    },
+    {
+      "id": "accordion_trifold",
+      "nameKo": "아코디언 Z-폴드 브로슈어 (Accordion 3-Fold)",
+      "targetAngle": 85,
+      "layoutMode": "3-Panel Z-Fold Horizontal Accordion",
+      "descKo": "3장의 독립된 에디토리얼 칼럼이 지그재그 병풍 형태로 접히며 입체적 서사를 전개합니다."
+    },
+    {
+      "id": "gatefold_brochure",
+      "nameKo": "양문형 게이트폴드 파빌리온 (Gatefold Pavilion)",
+      "targetAngle": 75,
+      "layoutMode": "Dual Symmetrical Wing Doors",
+      "descKo": "좌우 날개 패널이 문처럼 열리고 닫히며 중앙의 장엄한 마스트헤드를 극적으로 드러냅니다."
+    },
+    {
+      "id": "flat_swiss",
+      "nameKo": "완전 전개 스위스 그리드 (Flat Coplanar 0°)",
+      "targetAngle": 0,
+      "layoutMode": "Flat 2D Modular Grid",
+      "descKo": "0도 완전 전개 상태에서 요제프 뮐러-브로크만의 완벽한 2차원 평면 그리드로 안착합니다."
+    }
+  ],
+  "design_tokens": {
+    "color": {
+      "surface_ivory": "#FAF8F5",
+      "surface_card": "#FFFFFF",
+      "ink_basalt": "#141312",
+      "ink_secondary": "#57534E",
+      "accent_brass": "#C5A059",
+      "accent_terracotta": "#C2410C",
+      "accent_indigo": "#4F46E5",
+      "hinge_seam": "#D5CEBF",
+      "valley_umbra": "rgba(20, 19, 18, 0.45)"
+    },
+    "typography": {
+      "display_serif": "'Playfair Display', Georgia, serif",
+      "body_sans": "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
+      "code_mono": "'JetBrains Mono', 'SF Mono', monospace",
+      "scale": {
+        "masthead": "clamp(2.5rem, 5.5vw, 4.5rem)",
+        "h1": "clamp(1.75rem, 3vw, 2.5rem)",
+        "h2": "clamp(1.25rem, 2vw, 1.75rem)",
+        "body": "0.95rem",
+        "caption": "0.78rem"
+      }
+    },
+    "spatial_transforms": {
+      "perspective": "1200px",
+      "transform_style": "preserve-3d",
+      "max_fold_angle": 165
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "day": 30,
+  "system_name": "Editorial Spread Architecture & Gutter Dynamics Spec",
+  "palette": {
+    "spread_ivory": "#FAF8F5",
+    "reading_table": "#F0EAE1",
+    "ink_charcoal": "#1E1C1A",
+    "ink_subtle": "#57534E",
+    "terracotta_stamp": "#B85D38",
+    "brass_ruler": "#C5A059",
+    "gutter_shadow_well": "rgba(40, 32, 24, 0.45)"
+  },
+  "spread_proportions": {
+    "verso": "Left Plate Page (Hero Visual & Solitary Plate)",
+    "recto": "Right Text Page (Swiss 6-Column Typographic Cadence)",
+    "gutter": "Central Binding Valley with Optical Shadow & Z-Displacement",
+    "canon": "Jan Tschichold 2:3:4:6 Golden Canon"
+  },
+  "interactive_controls": [
+    {
+      "control": "Spread Fold Angle (0° to 60°)",
+      "description": "Adjusts the 3D perspective dihedral angle between Verso and Recto pages."
+    },
+    {
+      "control": "Gutter Depth Compression (12px to 64px)",
+      "description": "Simulates thread-stitched vs glued adhesive spine tension."
+    },
+    {
+      "control": "Paper Stock Selector",
+      "description": "Switches between 140gsm Cotton Rag, 80gsm Bible Onion Skin, and 280gsm Rigid Archival Board."
+    },
+    {
+      "control": "Tschichold Margin Blueprint Overlay",
+      "description": "Visualizes the diagonal construction lines and 2:3:4:6 margin ratios."
+    }
+  ]
+}

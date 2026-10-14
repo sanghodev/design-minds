@@ -1,0 +1,87 @@
+{
+  "day": 32,
+  "date": "2026-10-03",
+  "title": "Elastic Membrane Typography: Non-Rigid Tension Meshes & Continuous Spatial Curvature",
+  "design_intent": {
+    "en": "On Day 002, we investigated 'Discontinuous Grids', demonstrating that directional cast shadows could suture fractured layout planes across rigid Z-elevations. However, the limitation remained that stepped cards treated information as rigid monolithic bricks. Exactly thirty days later, on Day 032, we liberate the layout from rigid Cartesian rigidity through the principles of architectural tensile membranes inspired by Frei Otto (1972 Munich Olympic tensile structures) and Buckminster Fuller. Instead of rigid rectangular cards, the viewport is modeled as an interactive continuous elastoplastic membrane. When the user interacts via drag or touch gestures, the underlying tension mesh deforms according to Hookean 2D elasticity (F = -kΔx - cv). Typography ceases to be static glyphs placed on a flat plane; it flows along geodesic curvature lines, stretching and bulging organically under tensile stress. At high strain concentrations, the membrane exhibits photoelastic birefringence—radiating iridescent spectral fringes along stress contours—before smoothly dissipating kinetic energy into viscous fluid damping and returning to pristine Swiss modernist alignment.",
+    "ko": "Day 002에서 우리는 '불연속 단절 그리드(Discontinuous Grids)'를 탐구하며, 방향성 있는 그림자가 단단한 Z축 단차를 가로질러 분절된 레이아웃을 봉합할 수 있음을 증명했습니다. 그러나 계단식 카드가 정보를 여전히 '단단한 벽돌'처럼 취급한다는 한계가 있었습니다. 정확히 30일이 흐른 오늘 Day 032, 우리는 프라이 오토(Frei Otto)의 1972 뮌헨 올림픽 텐실 막구조와 벅민스터 풀러의 장력 원리에서 영감을 받아, 경직된 데카르트 직각 그리드로부터 레이아웃을 완전히 해방시킵니다. 직사각형 상자 대신 브라우저 뷰포트 전체를 상호작용 가능한 연속 탄성 멤브레인(Elastoplastic Membrane)으로 모델링합니다. 사용자가 마우스나 터치로 화면을 잡아당길 때, 기저의 인장 메시는 2차원 후크 탄성 방정식(F = -kΔx - cv)에 따라 유기적으로 늘어납니다. 글자는 더 이상 평면에 인쇄된 박제된 기호가 아니라, 측지선(Geodesic) 곡률을 따라 유연하게 호흡하며 흐릅니다. 국소적 인장 응력이 집중되는 영역에서는 편광 필터 아래의 투명 고무처럼 무지개빛 광탄성 응력 띠(Photoelastic Birefringence)가 피어나고, 손을 놓는 순간 점성 감쇠를 통해 우아한 스위스 모더니즘 그리드로 완벽히 복원됩니다."
+  },
+  "visual_mechanics": [
+    {
+      "name": "Hookean 2D Tensile Membrane Mesh (2차원 후크 법칙 인장 멤브레인 메시)",
+      "principle": "Simulating a continuous 2D elastic lattice governed by coupled spring-damper equations: d²x_i/dt² = (1/m) * [sum_j k_ij * (||r_j - r_i|| - L_0) * (r_j - r_i)/||r_j - r_i|| - c * v_i + F_ext], resolving dynamic strain propagation across adjacent editorial cells."
+    },
+    {
+      "name": "Geodesic Typographic Flow & Vector Shearing (측지선 곡률 기반 가변 타이포그래피 유동)",
+      "principle": "Mapping editorial letterform baselines and bounding boxes along deformed mesh vector fields, dynamically deforming font weight (wght: 300 to 900) and optical width (wdth: 75 to 125) in proportion to localized principal tensile strain."
+    },
+    {
+      "name": "Photoelastic Stress Birefringence (광탄성 응력 편광 무지개 줄무늬)",
+      "principle": "Visualizing mechanical stress tensors through optical birefringence (Brewster's Law: Δn = C * (sigma_1 - sigma_2)), rendering subtle chromatic rainbow fringes along high-shear tensile streamlines."
+    },
+    {
+      "name": "Tympanic Membrane Acoustic Haptics (텐실 멤브레인 공명 탄성 음향)",
+      "principle": "Synthesizing tactile string plucks, tensile membrane displacement drones, and air-cushion viscous relaxation whooshes in real-time via Web Audio API coupled to mesh kinetic energy."
+    }
+  ],
+  "mathematical_models": {
+    "tensile_stress_tensor": "sigma_ij = E / (1 + nu) * [epsilon_ij + (nu / (1 - 2*nu)) * tr(epsilon) * delta_ij]",
+    "photoelastic_fringe_order": "N = (d / f_sigma) * (sigma_1 - sigma_2)",
+    "rayleigh_viscous_damping": "D = alpha_m * M + beta_k * K, where zeta = 0.42 for critical organic settling",
+    "geodesic_font_weight_modulation": "wght(epsilon) = clamp(300 + 600 * tanh(2.4 * epsilon_principal), 300, 900)"
+  },
+  "membrane_materials": [
+    {
+      "id": "tensile_silk",
+      "name": "Tensile Silk Organza",
+      "nameKo": "인장 실크 오간자",
+      "substrateColor": "#FAF7F2",
+      "meshColor": "rgba(180, 165, 145, 0.35)",
+      "youngsModulus": 0.45,
+      "dampingRatio": 0.32,
+      "resonanceHz": 340,
+      "descKo": "극도로 가볍고 섬세한 텍스처로, 미세한 커서 제스처에도 부드러운 물결 파동과 넓은 곡면 변형을 일으킵니다."
+    },
+    {
+      "id": "architectural_silicone",
+      "name": "Translucent Architectural Silicone",
+      "nameKo": "반투명 건축 실리콘 시트",
+      "substrateColor": "#F3EFE8",
+      "meshColor": "rgba(130, 145, 160, 0.4)",
+      "youngsModulus": 0.78,
+      "dampingRatio": 0.55,
+      "resonanceHz": 190,
+      "descKo": "묵직한 점성과 탄성을 지닌 실리콘 멤브레인으로, 강한 인장력에 저항하며 묵직하고 절제된 복원력을 제공합니다."
+    },
+    {
+      "id": "latex_film",
+      "name": "Photoelastic Latex Film",
+      "nameKo": "광탄성 편광 라텍스 필름",
+      "substrateColor": "#F5EBE6",
+      "meshColor": "rgba(217, 119, 6, 0.35)",
+      "youngsModulus": 0.62,
+      "dampingRatio": 0.25,
+      "resonanceHz": 480,
+      "descKo": "응력 집중 부위에서 선명한 무지개빛 광탄성 간섭 무늬를 분출하며 즉각적이고 생생한 햅틱 텐션을 발산합니다."
+    }
+  ],
+  "design_tokens": {
+    "color": {
+      "surface_membrane": "#FAF7F2",
+      "surface_card": "#FFFFFF",
+      "surface_subtle": "#F3EFE8",
+      "ink_primary": "#1B1917",
+      "ink_secondary": "#57534E",
+      "ink_tertiary": "#8A847C",
+      "accent_amber": "#D97706",
+      "accent_terracotta": "#B85D38",
+      "accent_stress_violet": "#7C3AED",
+      "accent_stress_cyan": "#0284C7"
+    },
+    "typography": {
+      "display_serif": "Newsreader / Georgia / serif",
+      "sans_clean": "Inter / system-ui / -apple-system / sans-serif",
+      "mono_telemetry": "JetBrains Mono / SF Mono / monospace"
+    }
+  }
+}
