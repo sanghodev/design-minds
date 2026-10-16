@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useRef } from "react";
 
 type StageStep = 1 | 2 | 3 | 4;

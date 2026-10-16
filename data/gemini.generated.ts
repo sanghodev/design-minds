@@ -70,22 +70,14 @@ import notebook034 from "@/experiments/gemini/day-034/notebook.json";
 import manifest034 from "@/experiments/gemini/day-034/manifest.json";
 import notebook035 from "@/experiments/gemini/day-035/notebook.json";
 import manifest035 from "@/experiments/gemini/day-035/manifest.json";
-import notebook036 from "@/experiments/gemini/day-036/notebook.json";
-import manifest036 from "@/experiments/gemini/day-036/manifest.json";
-import notebook037 from "@/experiments/gemini/day-037/notebook.json";
-import manifest037 from "@/experiments/gemini/day-037/manifest.json";
-import notebook038 from "@/experiments/gemini/day-038/notebook.json";
-import manifest038 from "@/experiments/gemini/day-038/manifest.json";
-import notebook039 from "@/experiments/gemini/day-039/notebook.json";
-import manifest039 from "@/experiments/gemini/day-039/manifest.json";
-import notebook040 from "@/experiments/gemini/day-040/notebook.json";
-import manifest040 from "@/experiments/gemini/day-040/manifest.json";
-import notebook041 from "@/experiments/gemini/day-041/notebook.json";
-import manifest041 from "@/experiments/gemini/day-041/manifest.json";
-import notebook042 from "@/experiments/gemini/day-042/notebook.json";
-import manifest042 from "@/experiments/gemini/day-042/manifest.json";
-import notebook043 from "@/experiments/gemini/day-043/notebook.json";
-import manifest043 from "@/experiments/gemini/day-043/manifest.json";
+import notebook036 from "@/experiments/gemini/day-037/notebook.json";
+import manifest036 from "@/experiments/gemini/day-037/manifest.json";
+import notebook037 from "@/experiments/gemini/day-039/notebook.json";
+import manifest037 from "@/experiments/gemini/day-039/manifest.json";
+import notebook038 from "@/experiments/gemini/day-044/notebook.json";
+import manifest038 from "@/experiments/gemini/day-044/manifest.json";
+import notebook039 from "@/experiments/gemini/day-045/notebook.json";
+import manifest039 from "@/experiments/gemini/day-045/manifest.json";
 
 export const generatedGeminiExperiments: Experiment[] = [
   { manifest: manifest001, notebook: notebook001, complete: true, executable: true },
@@ -114,21 +106,17 @@ export const generatedGeminiExperiments: Experiment[] = [
   { manifest: manifest024, notebook: notebook024, complete: false, executable: true },
   { manifest: manifest025, notebook: notebook025, complete: false, executable: true },
   { manifest: manifest026, notebook: notebook026, complete: true, executable: true },
-  { manifest: manifest027, notebook: notebook027, complete: false, executable: true },
-  { manifest: manifest028, notebook: notebook028, complete: false, executable: true },
-  { manifest: manifest029, notebook: notebook029, complete: false, executable: true },
-  { manifest: manifest030, notebook: notebook030, complete: false, executable: true },
-  { manifest: manifest031, notebook: notebook031, complete: false, executable: true },
-  { manifest: manifest032, notebook: notebook032, complete: false, executable: true },
-  { manifest: manifest033, notebook: notebook033, complete: false, executable: true },
-  { manifest: manifest034, notebook: notebook034, complete: false, executable: true },
-  { manifest: manifest035, notebook: notebook035, complete: false, executable: true },
-  { manifest: manifest036, notebook: notebook036, complete: false, executable: true },
-  { manifest: manifest037, notebook: notebook037, complete: false, executable: true },
-  { manifest: manifest038, notebook: notebook038, complete: false, executable: true },
-  { manifest: manifest039, notebook: notebook039, complete: false, executable: true },
-  { manifest: manifest040, notebook: notebook040, complete: false, executable: true },
-  { manifest: manifest041, notebook: notebook041, complete: false, executable: true },
-  { manifest: manifest042, notebook: notebook042, complete: false, executable: true },
-  { manifest: manifest043, notebook: notebook043, complete: false, executable: true },
+  { manifest: manifest027, notebook: notebook027, complete: true, executable: true },
+  { manifest: manifest028, notebook: notebook028, complete: false, executable: false },
+  { manifest: manifest029, notebook: notebook029, complete: true, executable: true },
+  { manifest: manifest030, notebook: notebook030, complete: true, executable: true },
+  { manifest: manifest031, notebook: notebook031, complete: true, executable: true },
+  { manifest: manifest032, notebook: notebook032, complete: true, executable: true },
+  { manifest: manifest033, notebook: notebook033, complete: false, executable: false },
+  { manifest: manifest034, notebook: notebook034, complete: true, executable: true },
+  { manifest: manifest035, notebook: notebook035, complete: true, executable: true },
+  { manifest: manifest036, notebook: notebook036, complete: true, executable: true },
+  { manifest: manifest037, notebook: notebook037, complete: true, executable: true },
+  { manifest: manifest038, notebook: notebook038, complete: true, executable: true },
+  { manifest: manifest039, notebook: notebook039, complete: true, executable: true },
 ].map(normalizeGeminiRecord);

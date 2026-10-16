@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
+"use client";
 
+import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 
 // --- TYPES & INTERFACES ---
 interface MagneticMaterial {
@@ -19,7 +20,6 @@ interface MagneticMaterial {
   descKo: string;
 }
 
-
 interface PolarityPreset {
   id: string;
   nameKo: string;
@@ -27,7 +27,6 @@ interface PolarityPreset {
   polarity: 'N' | 'S' | 'N-S';
   descKo: string;
 }
-
 
 const MATERIALS: MagneticMaterial[] = [
   {
@@ -80,7 +79,6 @@ const MATERIALS: MagneticMaterial[] = [
   }
 ];
 
-
 const PRESETS: PolarityPreset[] = [
   {
     id: 'north_repulsion',
@@ -112,7 +110,6 @@ const PRESETS: PolarityPreset[] = [
   }
 ];
 
-
 export default function LorentzMagneticBentoExperiment() {
   // --- STATE ---
   const [selectedMaterial, setSelectedMaterial] = useState<MagneticMaterial>(MATERIALS[1]); // Default Ceramic Ferrite (Swiss Ivory)
@@ -124,15 +121,12 @@ export default function LorentzMagneticBentoExperiment() {
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
   const [streamlineDensity, setStreamlineDensity] = useState<number>(18); // 8 to 32 lines
 
-
   // Card Magnetic Repulsion Displacements
   const [cardOffset1, setCardOffset1] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
   const [cardOffset2, setCardOffset2] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
 
-
   // 3D Perspective Tilt on Stage
   const [stageTilt, setStageTilt] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
-
 
   // References
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -141,7 +135,6 @@ export default function LorentzMagneticBentoExperiment() {
   const isDraggingActuatorRef = useRef<boolean>(false);
   const inductionHumOscRef = useRef<OscillatorNode | null>(null);
   const inductionHumGainRef = useRef<GainNode | null>(null);
-
 
   // --- AUDIO SYNTHESIZER ENGINE ---
   const initAudio = useCallback(() => {
@@ -154,7 +147,6 @@ export default function LorentzMagneticBentoExperiment() {
     }
   }, []);
 
-
   // Crisp neodymium mechanical snap click
   const playMagneticSnapSound = useCallback((intensity: number = 1.0) => {
     if (isAudioMuted) return;
@@ -162,27 +154,22 @@ export default function LorentzMagneticBentoExperiment() {
     const ctx = audioCtxRef.current;
     if (!ctx) return;
 
-
     const now = ctx.currentTime;
     const osc = ctx.createOscillator();
     const gain = ctx.createGain();
-
 
     osc.type = 'triangle';
     osc.frequency.setValueAtTime(1250, now);
     osc.frequency.exponentialRampToValueAtTime(140, now + 0.08);
 
-
     gain.gain.setValueAtTime(0.35 * intensity, now);
     gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.12);
-
 
     osc.connect(gain);
     gain.connect(ctx.destination);
     osc.start(now);
     osc.stop(now + 0.15);
   }, [initAudio, isAudioMuted]);
-
 
   // Electromagnetic induction hum pitch sweep
   const updateInductionHum = useCallback((gauss: number) => {
@@ -191,7 +178,6 @@ export default function LorentzMagneticBentoExperiment() {
     const ctx = audioCtxRef.current;
     if (!ctx) return;
 
-
     if (!inductionHumOscRef.current) {
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
@@ -199,26 +185,21 @@ export default function LorentzMagneticBentoExperiment() {
       osc.frequency.setValueAtTime(60, ctx.currentTime);
       gain.gain.setValueAtTime(0.0001, ctx.currentTime);
 
-
       osc.connect(gain);
       gain.connect(ctx.destination);
       osc.start();
-
 
       inductionHumOscRef.current = osc;
       inductionHumGainRef.current = gain;
     }
 
-
     const now = ctx.currentTime;
     const targetFreq = 55 + (gauss / 120) * 165; // 55Hz to 220Hz
     const targetGain = Math.min(0.08, (gauss / 120) * 0.08);
 
-
     inductionHumOscRef.current.frequency.setTargetAtTime(targetFreq, now, 0.05);
     inductionHumGainRef.current?.gain.setTargetAtTime(targetGain, now, 0.05);
   }, [initAudio, isAudioMuted]);
-
 
   useEffect(() => {
     updateInductionHum(actuatorGauss);
@@ -229,7 +210,6 @@ export default function LorentzMagneticBentoExperiment() {
     };
   }, [actuatorGauss, updateInductionHum]);
 
-
   // --- KINETIC VARIABLE TYPOGRAPHY FORMULAS ---
   // Magnetic field intensity at card 1 center
   const card1CenterDist = useMemo(() => {
@@ -238,17 +218,14 @@ export default function LorentzMagneticBentoExperiment() {
     return Math.max(0.08, Math.sqrt(dx * dx + dy * dy));
   }, [actuatorPos]);
 
-
   const localBFlux = useMemo(() => {
     return Math.round((actuatorGauss / Math.pow(card1CenterDist * 2.5, 2)));
   }, [actuatorGauss, card1CenterDist]);
-
 
   const dynamicFontWeight = useMemo(() => {
     // Weight swells from 400 up to 800 in high flux
     return Math.min(800, Math.round(400 + Math.tanh(localBFlux / 80) * 400));
   }, [localBFlux]);
-
 
   const dynamicFontSlant = useMemo(() => {
     // Slant inclines up to -12° along field vector
@@ -259,7 +236,6 @@ export default function LorentzMagneticBentoExperiment() {
     return Math.round(Math.max(-12, Math.min(12, (angle / 180) * 12 * sign)));
   }, [actuatorPos, actuatorPolarity]);
 
-
   // --- 2D CANVAS MAGNETIC VECTOR FIELD SIMULATION ---
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -267,22 +243,17 @@ export default function LorentzMagneticBentoExperiment() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-
     let isRunning = true;
-
 
     const render = () => {
       if (!isRunning) return;
 
-
       const w = canvas.width;
       const h = canvas.height;
-
 
       // 1. Clear background
       ctx.fillStyle = selectedMaterial.surfaceTone;
       ctx.fillRect(0, 0, w, h);
-
 
       // 2. Draw Subterranean Coordinate Grid
       ctx.strokeStyle = selectedMaterial.borderColor;
@@ -301,7 +272,6 @@ export default function LorentzMagneticBentoExperiment() {
         ctx.stroke();
       }
 
-
       // 3. Render 400 Ferromagnetic Vector Compasses (20x20 Grid)
       const cols = 20;
       const rows = 15;
@@ -310,7 +280,6 @@ export default function LorentzMagneticBentoExperiment() {
       const mPol = actuatorPolarity === 'N' ? 1 : -1;
       const gFactor = actuatorGauss / 100;
 
-
       for (let r = 0; r < rows; r++) {
         for (let c = 0; c < cols; c++) {
           const nx = (c + 0.5) / cols;
@@ -318,21 +287,17 @@ export default function LorentzMagneticBentoExperiment() {
           const px = nx * w;
           const py = ny * h;
 
-
           const dx = px - ax;
           const dy = py - ay;
           const dist = Math.max(25, Math.sqrt(dx * dx + dy * dy));
-
 
           // Dipole field B(r) vector direction
           const angle = Math.atan2(dy, dx) + (mPol === 1 ? 0 : Math.PI);
           const needleLen = Math.min(14, Math.max(6, (120 / dist) * 12 * gFactor));
 
-
           ctx.save();
           ctx.translate(px, py);
           ctx.rotate(angle);
-
 
           // Draw North (Red) and South (Blue) needle poles
           ctx.lineWidth = 1.5;
@@ -342,24 +307,20 @@ export default function LorentzMagneticBentoExperiment() {
           ctx.lineTo(needleLen, 0);
           ctx.stroke();
 
-
           ctx.strokeStyle = '#2563EB'; // South tail
           ctx.beginPath();
           ctx.moveTo(0, 0);
           ctx.lineTo(-needleLen * 0.7, 0);
           ctx.stroke();
 
-
           ctx.restore();
         }
       }
-
 
       // 4. Render Magnetic Flux Streamlines radiating from Actuator
       ctx.strokeStyle = selectedMaterial.fluxStreamline;
       ctx.lineWidth = 1.2;
       ctx.globalAlpha = 0.65;
-
 
       for (let s = 0; s < streamlineDensity; s++) {
         const theta0 = (s / streamlineDensity) * Math.PI * 2;
@@ -368,17 +329,14 @@ export default function LorentzMagneticBentoExperiment() {
         let curY = ay + Math.sin(theta0) * 20;
         ctx.moveTo(curX, curY);
 
-
         for (let stepIdx = 0; stepIdx < 45; stepIdx++) {
           const rdx = curX - ax;
           const rdy = curY - ay;
           const rdist = Math.max(10, Math.sqrt(rdx * rdx + rdy * rdy));
           const stepAngle = Math.atan2(rdy, rdx) + (mPol === 1 ? 0.08 : -0.08);
 
-
           curX += Math.cos(stepAngle) * 8 * mPol;
           curY += Math.sin(stepAngle) * 8 * mPol;
-
 
           ctx.lineTo(curX, curY);
           if (curX < 0 || curX > w || curY < 0 || curY > h) break;
@@ -387,11 +345,9 @@ export default function LorentzMagneticBentoExperiment() {
       }
       ctx.globalAlpha = 1.0;
 
-
       // 5. Draw Actuator Magnet Core on Canvas
       ctx.save();
       ctx.translate(ax, ay);
-
 
       // Magnetic Glow Aura
       const glowR = 25 + (actuatorGauss / 120) * 25;
@@ -403,7 +359,6 @@ export default function LorentzMagneticBentoExperiment() {
       ctx.arc(0, 0, glowR, 0, Math.PI * 2);
       ctx.fill();
 
-
       // Physical Actuator Ring
       ctx.strokeStyle = '#FFFFFF';
       ctx.lineWidth = 2.5;
@@ -413,7 +368,6 @@ export default function LorentzMagneticBentoExperiment() {
       ctx.fill();
       ctx.stroke();
 
-
       // Polarity Text
       ctx.fillStyle = '#FFFFFF';
       ctx.font = 'bold 12px monospace';
@@ -421,35 +375,28 @@ export default function LorentzMagneticBentoExperiment() {
       ctx.textBaseline = 'middle';
       ctx.fillText(actuatorPolarity, 0, 0);
 
-
       ctx.restore();
-
 
       // 6. Draw Field Calibration Text
       ctx.fillStyle = selectedMaterial.accentColor;
       ctx.font = "bold 13px 'JetBrains Mono', monospace";
       ctx.fillText(`[LORENTZ VECTOR FIELD: B=${actuatorGauss} GAUSS (${actuatorPolarity}-POLE)]`, 24, 38);
 
-
       ctx.font = "11px 'JetBrains Mono', monospace";
       ctx.fillStyle = selectedMaterial.textColor;
       ctx.fillText("B(r) = (μ₀/4π) · (1/r³) · [3(m·r̂)r̂ - m] · Magnetic Dipole Law", 24, 60);
       ctx.fillText(`LOCAL FLUX DENSITY: ${localBFlux} G · F_LORENTZ ∝ 1/r²`, 24, 80);
 
-
       animFrameRef.current = requestAnimationFrame(render);
     };
 
-
     render();
-
 
     return () => {
       isRunning = false;
       if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
     };
   }, [actuatorPos, actuatorPolarity, actuatorGauss, selectedMaterial, streamlineDensity, localBFlux]);
-
 
   // Handle Preset Change
   const handleSelectPreset = (preset: PolarityPreset) => {
@@ -461,7 +408,6 @@ export default function LorentzMagneticBentoExperiment() {
     playMagneticSnapSound(1.2);
   };
 
-
   // Canvas Mouse Dragging of Neodymium Actuator
   const handleCanvasInteraction = (clientX: number, clientY: number) => {
     const canvas = canvasRef.current;
@@ -470,9 +416,7 @@ export default function LorentzMagneticBentoExperiment() {
     const nx = Math.max(0.08, Math.min(0.92, (clientX - rect.left) / rect.width));
     const ny = Math.max(0.08, Math.min(0.92, (clientY - rect.top) / rect.height));
 
-
     setActuatorPos({ x: nx, y: ny });
-
 
     // Dynamic magnetic repulsion pushing cards
     const dx = nx - 0.5;
@@ -480,16 +424,13 @@ export default function LorentzMagneticBentoExperiment() {
     const repX = (dx > 0 ? -1 : 1) * Math.min(22, (actuatorGauss / 120) * 24);
     const repY = (dy > 0 ? -1 : 1) * Math.min(22, (actuatorGauss / 120) * 24);
 
-
     setCardOffset1({ x: repX, y: repY });
     setCardOffset2({ x: -repX * 0.7, y: -repY * 0.7 });
-
 
     if (Math.random() < 0.25) {
       playMagneticSnapSound(0.5);
     }
   };
-
 
   return (
     <div
@@ -534,7 +475,6 @@ export default function LorentzMagneticBentoExperiment() {
           </div>
         </div>
 
-
         {/* Global Controls & Tools */}
         <div className="flex items-center gap-3 flex-wrap">
           {/* Substrate Selector */}
@@ -559,7 +499,6 @@ export default function LorentzMagneticBentoExperiment() {
             ))}
           </div>
 
-
           {/* Sound Toggle */}
           <button
             onClick={() => setIsAudioMuted(!isAudioMuted)}
@@ -570,7 +509,6 @@ export default function LorentzMagneticBentoExperiment() {
             <span>{isAudioMuted ? "🔇" : "🔊"}</span>
             <span className="hidden sm:inline">{isAudioMuted ? "MUTED" : "COIL SOUND"}</span>
           </button>
-
 
           {/* Fullscreen Toggle */}
           <button
@@ -588,13 +526,11 @@ export default function LorentzMagneticBentoExperiment() {
         </div>
       </header>
 
-
       {/* MAIN CONTAINER */}
       <main className={`w-full mx-auto p-4 md:p-8 transition-all ${isFullscreen ? 'max-w-full' : 'max-w-7xl'}`}>
         
         {/* BENTO GRID ARCHITECTURE (6 INTERACTIVE MODULAR CELLS) */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch relative">
-
 
           {/* CELL 1: MONUMENTAL MONOGRAPH MASTHEAD (Span 8 Cols) */}
           <div
@@ -622,7 +558,6 @@ export default function LorentzMagneticBentoExperiment() {
               </div>
             </div>
 
-
             {/* Giant Display Typography with Magnetic Slant & Weight Swelling */}
             <div className="my-auto py-4">
               <span className="text-xs uppercase font-mono tracking-widest block mb-2 opacity-60">
@@ -642,7 +577,6 @@ export default function LorentzMagneticBentoExperiment() {
                 혼돈의 액체 가시돌기 클리셰를 폐기하고, 2차원 자기 쌍극자 벡터장과 역제곱 인력·척력(F ∝ 1/r²)을 스위스 벤토 그리드에 이식한 살아 숨 쉬는 전자기 에디토리얼 파빌리온.
               </p>
             </div>
-
 
             {/* Bottom Coordinate Bar & Dynamic Metrics */}
             <div className="pt-6 border-t mt-6 flex flex-wrap items-center justify-between gap-4 text-xs font-mono" style={{ borderColor: selectedMaterial.borderColor }}>
@@ -664,7 +598,6 @@ export default function LorentzMagneticBentoExperiment() {
             </div>
           </div>
 
-
           {/* CELL 2: MAGNETIC ACTUATOR & POLARITY CONTROLS (Span 4 Cols) */}
           <div
             className="md:col-span-4 rounded-2xl border p-6 flex flex-col justify-between shadow-sm relative transition-transform duration-200"
@@ -684,7 +617,6 @@ export default function LorentzMagneticBentoExperiment() {
                 </span>
               </div>
 
-
               {/* Gauss Intensity Slider */}
               <div className="mb-4">
                 <div className="flex justify-between text-xs font-mono mb-1.5 opacity-70">
@@ -700,7 +632,6 @@ export default function LorentzMagneticBentoExperiment() {
                   className="w-full accent-blue-600 cursor-pointer"
                 />
               </div>
-
 
               {/* Polarity Switcher (North vs South) */}
               <div className="mb-4">
@@ -735,7 +666,6 @@ export default function LorentzMagneticBentoExperiment() {
                 </div>
               </div>
 
-
               {/* Streamline Density Slider */}
               <div className="mb-4">
                 <div className="flex justify-between text-xs font-mono mb-1.5 opacity-70">
@@ -751,7 +681,6 @@ export default function LorentzMagneticBentoExperiment() {
                   className="w-full accent-blue-600 cursor-pointer"
                 />
               </div>
-
 
               {/* Presets Grid */}
               <div className="space-y-1.5">
@@ -780,12 +709,10 @@ export default function LorentzMagneticBentoExperiment() {
               </div>
             </div>
 
-
             <div className="pt-3 border-t mt-3 text-[11px] font-mono opacity-60" style={{ borderColor: selectedMaterial.borderColor }}>
               💡 캔버스 위의 자석 코어를 드래그하여 전자기장을 직접 연주하세요.
             </div>
           </div>
-
 
           {/* CELL 3: 2D MAGNETIC VECTOR CANVAS VIEWPORT (Span 7 Cols) */}
           <div
@@ -813,7 +740,6 @@ export default function LorentzMagneticBentoExperiment() {
                 </span>
               </div>
 
-
               {/* Viewport Reset */}
               <div className="flex items-center gap-2 text-xs font-mono">
                 <button
@@ -830,7 +756,6 @@ export default function LorentzMagneticBentoExperiment() {
                 </button>
               </div>
             </div>
-
 
             {/* Interactive Vector Canvas */}
             <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border my-2 shadow-inner" style={{ borderColor: selectedMaterial.borderColor }}>
@@ -858,7 +783,6 @@ export default function LorentzMagneticBentoExperiment() {
                 }}
               />
 
-
               {/* Overlay Readout */}
               <div
                 className="absolute bottom-3 left-3 px-3 py-1.5 rounded-lg border backdrop-blur-md text-[11px] font-mono flex items-center gap-2 shadow-sm"
@@ -872,14 +796,12 @@ export default function LorentzMagneticBentoExperiment() {
               </div>
             </div>
 
-
             {/* Bottom Caption */}
             <div className="flex items-center justify-between text-xs font-mono opacity-60 pt-3">
               <span>DRAG NEODYMIUM ACTUATOR ACROSS FIELD</span>
               <span>B(r) = (μ₀/4πr³)·[3(m·r̂)r̂ - m]</span>
             </div>
           </div>
-
 
           {/* CELL 4: FLUX-COUPLED TYPOGRAPHIC MONOGRAPH (Span 5 Cols) */}
           <div
@@ -898,7 +820,6 @@ export default function LorentzMagneticBentoExperiment() {
                   wght: {dynamicFontWeight}
                 </span>
               </div>
-
 
               <div
                 className="p-4 rounded-xl border mb-4 relative overflow-hidden"
@@ -925,7 +846,6 @@ export default function LorentzMagneticBentoExperiment() {
                 </div>
               </div>
 
-
               {/* Stress Retardation Axis Inspector */}
               <div className="space-y-3 font-mono text-xs">
                 <div>
@@ -944,7 +864,6 @@ export default function LorentzMagneticBentoExperiment() {
                   </div>
                 </div>
 
-
                 <div>
                   <div className="flex justify-between text-[11px] mb-1 opacity-70">
                     <span>Field Vector Slant Angle</span>
@@ -960,13 +879,11 @@ export default function LorentzMagneticBentoExperiment() {
               </div>
             </div>
 
-
             <div className="pt-4 border-t mt-4 flex items-center justify-between text-xs font-mono opacity-60" style={{ borderColor: selectedMaterial.borderColor }}>
               <span>MICHAEL FARADAY</span>
               <span>1831 ELECTROMAGNETIC LINES</span>
             </div>
           </div>
-
 
           {/* CELL 5: MAGNETIC SUBSTRATE SPECIFICATIONS (Span 6 Cols) */}
           <div
@@ -986,11 +903,9 @@ export default function LorentzMagneticBentoExperiment() {
                 </span>
               </div>
 
-
               <p className="text-xs font-sans opacity-80 leading-relaxed mb-4">
                 {selectedMaterial.descKo}
               </p>
-
 
               {/* Material Physics Parameters Table */}
               <div className="grid grid-cols-3 gap-3 font-mono text-xs">
@@ -1000,13 +915,11 @@ export default function LorentzMagneticBentoExperiment() {
                   <div className="text-[10px] opacity-50">Tesla</div>
                 </div>
 
-
                 <div className="p-3 rounded-xl border" style={{ borderColor: selectedMaterial.borderColor }}>
                   <div className="text-[10px] opacity-60">COERCIVITY (H_c)</div>
                   <div className="text-base font-bold mt-0.5">{selectedMaterial.coercivityKaM}</div>
                   <div className="text-[10px] opacity-50">kA/m</div>
                 </div>
-
 
                 <div className="p-3 rounded-xl border" style={{ borderColor: selectedMaterial.borderColor }}>
                   <div className="text-[10px] opacity-60">ENERGY (BH_max)</div>
@@ -1016,7 +929,6 @@ export default function LorentzMagneticBentoExperiment() {
               </div>
             </div>
 
-
             <div className="pt-4 border-t mt-4 flex items-center justify-between text-xs font-mono" style={{ borderColor: selectedMaterial.borderColor }}>
               <span className="opacity-60">TANGIBLE FORCE FIELDS</span>
               <span className="font-bold" style={{ color: selectedMaterial.accentColor }}>
@@ -1024,7 +936,6 @@ export default function LorentzMagneticBentoExperiment() {
               </span>
             </div>
           </div>
-
 
           {/* CELL 6: TACTILE ELECTROMAGNETIC SOUNDBOARD (Span 6 Cols) */}
           <div
@@ -1044,11 +955,9 @@ export default function LorentzMagneticBentoExperiment() {
                 </span>
               </div>
 
-
               <p className="text-xs font-sans opacity-70 mb-4">
                 가우스 자기장 세기에 비례하는 유도 코일 험, 쇳가루 자침들의 회전 마찰음, 그리고 카드 결착 시의 묵직한 네오디뮴 클릭음을 연주하세요.
               </p>
-
 
               {/* Soundboard Buttons Matrix */}
               <div className="grid grid-cols-4 gap-2 mb-4">
@@ -1078,16 +987,13 @@ export default function LorentzMagneticBentoExperiment() {
               </div>
             </div>
 
-
             <div className="pt-3 border-t flex items-center justify-between text-[11px] font-mono opacity-60" style={{ borderColor: selectedMaterial.borderColor }}>
               <span>Low-Frequency Induction Hum + Mechanical Magnetic Snaps</span>
               <span>Zero-Fatigue Tactile Haptics</span>
             </div>
           </div>
 
-
         </div>
-
 
         {/* FOOTER EDITORIAL SUMMARY */}
         <footer
@@ -1103,7 +1009,6 @@ export default function LorentzMagneticBentoExperiment() {
             <span>AESTHETIC PARADIGM: LORENTZ MAGNETIC BENTO</span>
           </div>
         </footer>
-
 
       </main>
     </div>

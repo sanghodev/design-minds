@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
+"use client";
 
+import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 
 // --- TYPES & INTERFACES ---
 interface DielectricSubstrate {
@@ -18,7 +19,6 @@ interface DielectricSubstrate {
   descKo: string;
 }
 
-
 interface ElectrostaticPreset {
   id: string;
   nameKo: string;
@@ -27,7 +27,6 @@ interface ElectrostaticPreset {
   tonerDensity: number;
   descKo: string;
 }
-
 
 interface TonerParticle {
   x: number;
@@ -38,7 +37,6 @@ interface TonerParticle {
   alpha: number;
   charge: number;
 }
-
 
 const SUBSTRATES: DielectricSubstrate[] = [
   {
@@ -88,7 +86,6 @@ const SUBSTRATES: DielectricSubstrate[] = [
   }
 ];
 
-
 const PRESETS: ElectrostaticPreset[] = [
   {
     id: 'high_charge_corona',
@@ -124,7 +121,6 @@ const PRESETS: ElectrostaticPreset[] = [
   }
 ];
 
-
 export default function TriboelectricElectrostaticBentoExperiment() {
   // --- STATE ---
   const [selectedSubstrate, setSelectedSubstrate] = useState<DielectricSubstrate>(SUBSTRATES[1]); // Porcelain default
@@ -137,7 +133,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
   const [frictionWandPos, setFrictionWandPos] = useState<{ x: number; y: number }>({ x: 0.5, y: 0.5 });
   const [stageTilt, setStageTilt] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
 
-
   // References
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const audioCtxRef = useRef<AudioContext | null>(null);
@@ -146,10 +141,8 @@ export default function TriboelectricElectrostaticBentoExperiment() {
   const coronaHissGainRef = useRef<GainNode | null>(null);
   const lastMousePosRef = useRef<{ x: number; y: number; time: number }>({ x: 0, y: 0, time: 0 });
 
-
   // 300 Toner Particles Array
   const particlesRef = useRef<TonerParticle[]>([]);
-
 
   // Initialize Particles
   useEffect(() => {
@@ -168,7 +161,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
     particlesRef.current = p;
   }, []);
 
-
   // --- AUDIO SYNTHESIS ENGINE ---
   const initAudio = useCallback(() => {
     if (!audioCtxRef.current) {
@@ -180,7 +172,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
     }
   }, []);
 
-
   // Crisp Capacitor Spark Snap Sound
   const playCapacitorSparkSound = useCallback((intensity: number = 1.0) => {
     if (isAudioMuted) return;
@@ -188,27 +179,22 @@ export default function TriboelectricElectrostaticBentoExperiment() {
     const ctx = audioCtxRef.current;
     if (!ctx) return;
 
-
     const now = ctx.currentTime;
     const osc = ctx.createOscillator();
     const gain = ctx.createGain();
-
 
     osc.type = 'sawtooth';
     osc.frequency.setValueAtTime(1850, now);
     osc.frequency.exponentialRampToValueAtTime(180, now + 0.06);
 
-
     gain.gain.setValueAtTime(0.4 * intensity, now);
     gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.09);
-
 
     osc.connect(gain);
     gain.connect(ctx.destination);
     osc.start(now);
     osc.stop(now + 0.1);
   }, [initAudio, isAudioMuted]);
-
 
   // High-voltage Ionization Corona Hiss
   const updateCoronaHiss = useCallback((voltage: number) => {
@@ -217,7 +203,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
     const ctx = audioCtxRef.current;
     if (!ctx) return;
 
-
     if (!coronaHissOscRef.current) {
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
@@ -225,26 +210,21 @@ export default function TriboelectricElectrostaticBentoExperiment() {
       osc.frequency.setValueAtTime(120, ctx.currentTime);
       gain.gain.setValueAtTime(0.0001, ctx.currentTime);
 
-
       osc.connect(gain);
       gain.connect(ctx.destination);
       osc.start();
-
 
       coronaHissOscRef.current = osc;
       coronaHissGainRef.current = gain;
     }
 
-
     const now = ctx.currentTime;
     const targetFreq = 120 + (voltage / 60) * 240; // 120Hz to 360Hz harmonic buzz
     const targetGain = Math.min(0.06, (voltage / 60) * 0.06);
 
-
     coronaHissOscRef.current.frequency.setTargetAtTime(targetFreq, now, 0.05);
     coronaHissGainRef.current?.gain.setTargetAtTime(targetGain, now, 0.05);
   }, [initAudio, isAudioMuted]);
-
 
   useEffect(() => {
     updateCoronaHiss(surfaceVoltageKv);
@@ -255,19 +235,16 @@ export default function TriboelectricElectrostaticBentoExperiment() {
     };
   }, [surfaceVoltageKv, updateCoronaHiss]);
 
-
   // --- KINETIC VARIABLE TYPOGRAPHY FORMULAS ---
   const dynamicFontWeight = useMemo(() => {
     // 350 (zero field) up to 800 (60 kV saturation)
     return Math.min(800, Math.round(350 + (surfaceVoltageKv / 60) * 450));
   }, [surfaceVoltageKv]);
 
-
   const dynamicTracking = useMemo(() => {
     // Expands tracking up to +0.06em under electrostatic charge repulsion
     return (surfaceVoltageKv / 60) * 0.06;
   }, [surfaceVoltageKv]);
-
 
   // Ground Discharge Trigger
   const handleGroundDischarge = useCallback(() => {
@@ -279,7 +256,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
     }, 400);
   }, [playCapacitorSparkSound]);
 
-
   // Preset Selection
   const handleSelectPreset = useCallback((preset: ElectrostaticPreset) => {
     setSelectedPreset(preset);
@@ -288,7 +264,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
     playCapacitorSparkSound(0.8);
   }, [playCapacitorSparkSound]);
 
-
   // --- 2D CANVAS ELECTROSTATIC SIMULATION (60FPS) ---
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -296,22 +271,17 @@ export default function TriboelectricElectrostaticBentoExperiment() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-
     let isRunning = true;
-
 
     const render = () => {
       if (!isRunning) return;
 
-
       const w = canvas.width;
       const h = canvas.height;
-
 
       // 1. Clear background
       ctx.fillStyle = selectedSubstrate.surfaceTone;
       ctx.fillRect(0, 0, w, h);
-
 
       // 2. Draw Dielectric Coordinate Grid
       ctx.strokeStyle = selectedSubstrate.borderColor;
@@ -330,24 +300,20 @@ export default function TriboelectricElectrostaticBentoExperiment() {
         ctx.stroke();
       }
 
-
       // 3. Draw Latent Potential Gradient Circles
       const wandX = frictionWandPos.x * w;
       const wandY = frictionWandPos.y * h;
       const maxRadius = Math.max(20, (surfaceVoltageKv / 60) * 160);
-
 
       const radialGrad = ctx.createRadialGradient(wandX, wandY, 5, wandX, wandY, maxRadius);
       radialGrad.addColorStop(0, selectedSubstrate.accentColor + '88');
       radialGrad.addColorStop(0.5, selectedSubstrate.accentColor + '22');
       radialGrad.addColorStop(1, 'transparent');
 
-
       ctx.fillStyle = radialGrad;
       ctx.beginPath();
       ctx.arc(wandX, wandY, maxRadius, 0, Math.PI * 2);
       ctx.fill();
-
 
       // 4. Draw Equipotential Contour Lines
       ctx.strokeStyle = selectedSubstrate.accentColor;
@@ -360,15 +326,12 @@ export default function TriboelectricElectrostaticBentoExperiment() {
       }
       ctx.setLineDash([]);
 
-
       // 5. Update & Render 300 Airborne Carbon Toner Particles
       const particles = particlesRef.current;
       const qSign = polarity === '+' ? 1 : -1;
 
-
       for (let i = 0; i < particles.length; i++) {
         const p = particles[i];
-
 
         // Coulomb force F = q * E towards / away from wand
         const dx = wandX - p.x;
@@ -376,30 +339,24 @@ export default function TriboelectricElectrostaticBentoExperiment() {
         const distSq = Math.max(100, dx * dx + dy * dy);
         const dist = Math.sqrt(distSq);
 
-
         // Electric field magnitude E ~ V / r^2
         const force = (surfaceVoltageKv * 0.08 * p.charge * qSign) / distSq;
 
-
         p.vx += (dx / dist) * force;
         p.vy += (dy / dist) * force;
-
 
         // Viscous damping
         p.vx *= 0.94;
         p.vy *= 0.94;
 
-
         p.x += p.vx;
         p.y += p.vy;
-
 
         // Boundary bounce
         if (p.x < 0) { p.x = 0; p.vx *= -0.5; }
         if (p.x > w) { p.x = w; p.vx *= -0.5; }
         if (p.y < 0) { p.y = 0; p.vy *= -0.5; }
         if (p.y > h) { p.y = h; p.vy *= -0.5; }
-
 
         // Render Toner Particle
         ctx.fillStyle = selectedSubstrate.id === 'selenium_photoconductor' ? '#FAF8F5' : '#0F0E0D';
@@ -410,7 +367,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
         ctx.globalAlpha = 1.0;
       }
 
-
       // 6. Draw Friction Wand Stylus Tip
       ctx.fillStyle = polarity === '+' ? '#F59E0B' : '#8B5CF6';
       ctx.beginPath();
@@ -420,16 +376,13 @@ export default function TriboelectricElectrostaticBentoExperiment() {
       ctx.lineWidth = 2;
       ctx.stroke();
 
-
       // Wand Readout Tag
       ctx.fillStyle = selectedSubstrate.textColor;
       ctx.font = '10px monospace';
       ctx.fillText(`${polarity}${surfaceVoltageKv} kV`, wandX + 12, wandY - 12);
 
-
       requestAnimationFrame(render);
     };
-
 
     const animId = requestAnimationFrame(render);
     return () => {
@@ -437,7 +390,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
       cancelAnimationFrame(animId);
     };
   }, [frictionWandPos, surfaceVoltageKv, polarity, selectedSubstrate]);
-
 
   // Handle Canvas Mouse Scrubbing Friction
   const handleCanvasInteraction = (clientX: number, clientY: number) => {
@@ -447,17 +399,14 @@ export default function TriboelectricElectrostaticBentoExperiment() {
     const nx = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
     const ny = Math.max(0, Math.min(1, (clientY - rect.top) / rect.height));
 
-
     const now = performance.now();
     const dt = Math.max(1, now - lastMousePosRef.current.time);
     const dx = nx - lastMousePosRef.current.x;
     const dy = ny - lastMousePosRef.current.y;
     const speed = Math.sqrt(dx * dx + dy * dy) / dt; // Speed factor
 
-
     lastMousePosRef.current = { x: nx, y: ny, time: now };
     setFrictionWandPos({ x: nx, y: ny });
-
 
     // Scrubbing friction increases surface potential
     if (isScrubbingRef.current && speed > 0.0005) {
@@ -467,7 +416,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
       });
     }
   };
-
 
   return (
     <div
@@ -512,7 +460,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
           </div>
         </div>
 
-
         {/* Global Controls & Tools */}
         <div className="flex items-center gap-3 flex-wrap">
           {/* Substrate Selector */}
@@ -537,7 +484,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
             ))}
           </div>
 
-
           {/* Sound Toggle */}
           <button
             onClick={() => setIsAudioMuted(!isAudioMuted)}
@@ -548,7 +494,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
             <span>{isAudioMuted ? "🔇" : "⚡"}</span>
             <span className="hidden sm:inline">{isAudioMuted ? "MUTED" : "CORONA SOUND"}</span>
           </button>
-
 
           {/* Fullscreen Toggle */}
           <button
@@ -566,13 +511,11 @@ export default function TriboelectricElectrostaticBentoExperiment() {
         </div>
       </header>
 
-
       {/* MAIN CONTAINER */}
       <main className={`w-full mx-auto p-4 md:p-8 transition-all ${isFullscreen ? 'max-w-full' : 'max-w-7xl'}`}>
         
         {/* BENTO GRID ARCHITECTURE (6 INTERACTIVE MODULAR CELLS) */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch relative">
-
 
           {/* CELL 1: MONUMENTAL MONOGRAPH MASTHEAD (Span 8 Cols) */}
           <div
@@ -599,7 +542,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
               </div>
             </div>
 
-
             {/* Display Typography with Variable Weight & Tracking Expansion */}
             <div className="my-auto py-4">
               <span className="text-xs uppercase font-mono tracking-widest block mb-2 opacity-60">
@@ -619,7 +561,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
                 정전기 흡착 노벨티 클리셰를 극복하고, 푸아송-볼츠만 표면 전위 미적분과 쿨롱 전기장 벡터 셰이더를 스위스 벤토 그리드 건축에 전격 이식한 살아 숨 쉬는 전하 파빌리온.
               </p>
             </div>
-
 
             {/* Bottom Coordinate Bar & Dynamic Metrics */}
             <div className="pt-6 border-t mt-6 flex flex-wrap items-center justify-between gap-4 text-xs font-mono" style={{ borderColor: selectedSubstrate.borderColor }}>
@@ -641,7 +582,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
             </div>
           </div>
 
-
           {/* CELL 2: CHARGE ACCUMULATION CONTROLS & GROUND SWITCH (Span 4 Cols) */}
           <div
             className="md:col-span-4 rounded-2xl border p-6 flex flex-col justify-between shadow-sm relative transition-all duration-300"
@@ -660,7 +600,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
                 </span>
               </div>
 
-
               {/* Surface Potential Slider */}
               <div className="mb-4">
                 <div className="flex justify-between text-xs font-mono mb-1.5 opacity-70">
@@ -676,7 +615,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
                   className="w-full accent-amber-500 cursor-pointer"
                 />
               </div>
-
 
               {/* Polarity Switcher (+ vs -) */}
               <div className="mb-4">
@@ -711,7 +649,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
                 </div>
               </div>
 
-
               {/* GROUND CIRCUIT DISCHARGE BUTTON */}
               <div className="mb-4">
                 <button
@@ -725,7 +662,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
                   <span>TRIGGER GROUND DISCHARGE (0 kV)</span>
                 </button>
               </div>
-
 
               {/* Presets Grid */}
               <div className="space-y-1.5">
@@ -754,12 +690,10 @@ export default function TriboelectricElectrostaticBentoExperiment() {
               </div>
             </div>
 
-
             <div className="pt-3 border-t mt-3 text-[11px] font-mono opacity-60" style={{ borderColor: selectedSubstrate.borderColor }}>
               💡 캔버스 위를 빠르게 드래그하여 마찰 대전 전하를 증착하세요.
             </div>
           </div>
-
 
           {/* CELL 3: 2D ELECTROSTATIC SIMULATION VIEWPORT (Span 7 Cols) */}
           <div
@@ -787,7 +721,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
                 </span>
               </div>
 
-
               {/* Reset Wand */}
               <div className="flex items-center gap-2 text-xs font-mono">
                 <button
@@ -802,7 +735,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
                 </button>
               </div>
             </div>
-
 
             {/* Interactive Canvas */}
             <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border my-2 shadow-inner" style={{ borderColor: selectedSubstrate.borderColor }}>
@@ -832,7 +764,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
                 onTouchEnd={() => { isScrubbingRef.current = false; }}
               />
 
-
               {/* Overlay Readout */}
               <div
                 className="absolute bottom-3 left-3 px-3 py-1.5 rounded-lg border backdrop-blur-md text-[11px] font-mono flex items-center gap-2 shadow-sm"
@@ -846,14 +777,12 @@ export default function TriboelectricElectrostaticBentoExperiment() {
               </div>
             </div>
 
-
             {/* Bottom Caption */}
             <div className="flex items-center justify-between text-xs font-mono opacity-60 pt-3">
               <span>SCRUB FAST TO DEPOSIT LATENT CHARGE</span>
               <span>E = -∇V = (1/4πε₀) ∑(q/r²) r̂</span>
             </div>
           </div>
-
 
           {/* CELL 4: VOLTAGE-COUPLED VARIABLE TYPOGRAPHY (Span 5 Cols) */}
           <div
@@ -872,7 +801,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
                   wght: {dynamicFontWeight}
                 </span>
               </div>
-
 
               <div
                 className="p-4 rounded-xl border mb-4 relative overflow-hidden"
@@ -899,7 +827,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
                 </div>
               </div>
 
-
               {/* Voltage & Tracking Axis Inspectors */}
               <div className="space-y-3 font-mono text-xs">
                 <div>
@@ -918,7 +845,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
                   </div>
                 </div>
 
-
                 <div>
                   <div className="flex justify-between text-[11px] mb-1 opacity-70">
                     <span>Coulomb Repulsion Tracking</span>
@@ -934,13 +860,11 @@ export default function TriboelectricElectrostaticBentoExperiment() {
               </div>
             </div>
 
-
             <div className="pt-4 border-t mt-4 flex items-center justify-between text-xs font-mono opacity-60" style={{ borderColor: selectedSubstrate.borderColor }}>
               <span>CHARLES-AUGUSTIN DE COULOMB</span>
               <span>1785 ELECTRIC INVERSE-SQUARE</span>
             </div>
           </div>
-
 
           {/* CELL 5: DIELECTRIC SUBSTRATE SPECIFICATIONS (Span 6 Cols) */}
           <div
@@ -960,11 +884,9 @@ export default function TriboelectricElectrostaticBentoExperiment() {
                 </span>
               </div>
 
-
               <p className="text-xs font-sans opacity-80 leading-relaxed mb-4">
                 {selectedSubstrate.descKo}
               </p>
-
 
               {/* Material Physics Parameters Table */}
               <div className="grid grid-cols-3 gap-3 font-mono text-xs">
@@ -974,13 +896,11 @@ export default function TriboelectricElectrostaticBentoExperiment() {
                   <div className="text-[10px] opacity-50">Dielectric Const</div>
                 </div>
 
-
                 <div className="p-3 rounded-xl border" style={{ borderColor: selectedSubstrate.borderColor }}>
                   <div className="text-[10px] opacity-60">BREAKDOWN (V_max)</div>
                   <div className="text-base font-bold mt-0.5">{selectedSubstrate.breakdownKv}</div>
                   <div className="text-[10px] opacity-50">Kilovolts</div>
                 </div>
-
 
                 <div className="p-3 rounded-xl border" style={{ borderColor: selectedSubstrate.borderColor }}>
                   <div className="text-[10px] opacity-60">SURFACE STATE</div>
@@ -990,7 +910,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
               </div>
             </div>
 
-
             <div className="pt-4 border-t mt-4 flex items-center justify-between text-xs font-mono" style={{ borderColor: selectedSubstrate.borderColor }}>
               <span className="opacity-60">CAPACITIVE COUPLING RESOLVED</span>
               <span className="font-bold text-emerald-500">
@@ -998,7 +917,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
               </span>
             </div>
           </div>
-
 
           {/* CELL 6: TACTILE CORONA SOUNDBOARD (Span 6 Cols) */}
           <div
@@ -1018,11 +936,9 @@ export default function TriboelectricElectrostaticBentoExperiment() {
                 </span>
               </div>
 
-
               <p className="text-xs font-sans opacity-70 mb-4">
                 고전압 오존 이온화 히스, 마찰 대전 시의 카본 토너 종이 마찰음, 그리고 접지 스위치를 내렸을 때의 명징한 커패시터 방전 스파크 틱음을 연주하세요.
               </p>
-
 
               {/* Soundboard Buttons Matrix */}
               <div className="grid grid-cols-4 gap-2 mb-4">
@@ -1052,16 +968,13 @@ export default function TriboelectricElectrostaticBentoExperiment() {
               </div>
             </div>
 
-
             <div className="pt-3 border-t flex items-center justify-between text-[11px] font-mono opacity-60" style={{ borderColor: selectedSubstrate.borderColor }}>
               <span>High-Voltage Ionization Hiss + Capacitor Discharge Snaps</span>
               <span>Zero-Fatigue Tactile Haptics</span>
             </div>
           </div>
 
-
         </div>
-
 
         {/* FOOTER EDITORIAL SUMMARY */}
         <footer
@@ -1077,7 +990,6 @@ export default function TriboelectricElectrostaticBentoExperiment() {
             <span>AESTHETIC PARADIGM: TRIBOELECTRIC BENO</span>
           </div>
         </footer>
-
 
       </main>
     </div>

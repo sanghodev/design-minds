@@ -1,0 +1,219 @@
+{
+  "day": 38,
+  "date": "2026-10-09",
+  "title": "Lorentz Magnetic Bento & Ferromagnetic Vector Shaders: 2D Dipole Field Curvature, Tangible Magnetic Snapping & Swiss Cyber-Editorial Architecture",
+  "design_intent": {
+    "en": "On Day 008, our studio investigated 'Ferromagnetic Flux', examining whether colloidal ferrofluid could erupt into Rosensweig conical spikes on typographic stems under external magnetic fields. While visually startling, Day 008 fell into a novelty trap: the 'magnetic fluid novelty cliché'—treating magnetism as an erratic, decorative spiky fluid trick without structural layout discipline, spatial architecture, or functional UI kinetics. Exactly thirty days later, on Day 038, we transcend this spiky fluid trope by introducing genuine Lorentz Force Vector Dynamics, 2D Magnetic Dipole Streamline Solvers, and Tangible Magnetic Card Snapping to modern Swiss Bento Grid architecture. In classical electromagnetism, Michael Faraday and James Clerk Maxwell demonstrated that magnetic force is not a localized visual accident, but a continuous vector field B(r) permeating space with direction, curvature, and energy density (u_B = B² / 2μ0). We map this physical field directly to interface architecture. Rather than passive static cards, modular Bento cells are treated as magnetic dipoles possessing polarity and magnetic moment m. The user's cursor or touch acts as a movable Neodymium Actuator (B ∈ [0, 120 Gauss]). As the actuator approaches, cards experience tangible inverse-square attraction or repulsion (F ∝ 1/r²), physically snapping into stable magnetic energy minima. The background renders real-time magnetic flux streamlines and 400 orienting iron filing needles. Typography dynamically adapts to localized flux: font weight swells (wght: 400 -> 800) under magnetic flux saturation, while glyph slant (slnt: 0° to -12°) physically inclines along the local field vector angle θ_B = atan2(B_y, B_x). In zero-field regions, typography snaps back to pure, upright Swiss modernist stillness, accompanied by electromagnetic induction hum and crisp neodymium detent clicks.",
+    "ko": "Day 008에서 우리는 '강자성 유체 자속(Ferromagnetic Flux)'을 탐구하며, 콜로이드 자성 유체가 외부 자기장에 반응하여 활자의 줄기 위에 날카로운 로젠스웨이그(Rosensweig) 원뿔형 가시돌기를 돋아나게 할 수 있는지를 실험했습니다. 그러나 당시의 시도는 자성을 그저 기괴하고 신기한 시각적 효과로 소비하는 '자성 유체 노벨티 클리셰'에 갇혀 있었습니다. 건축적인 레이아웃의 규율도, 공간적 구조도, 기능적인 UI 동역학도 없이 그저 액체 가시를 돋아나게 하는 일회성 트릭에 불과했던 것입니다. 정확히 30일이 흐른 오늘 Day 038, 우리는 이 피상적인 가시돌기 유행을 완전히 뛰어넘어, 물리학의 정통 로렌츠 힘(Lorentz Force) 벡터 동역학, 2차원 자기 쌍극자 유선 해석기, 그리고 촉각적 자석 스내핑(Tangible Magnetic Snapping)을 스위스 벤토 그리드 건축에 전격 이식합니다. 마이클 패러데이와 제임스 클러크 맥스웰은 자기력이 우연한 돌기가 아니라, 공간 전체를 지배하는 연속적인 방향과 곡률, 그리고 에너지 밀도(u_B = B² / 2μ0)를 지닌 거룩한 벡터장 B(r)임을 증명했습니다. 우리는 이 전자기장을 인터페이스 건축의 뼈대로 삼았습니다. 벤토 카드들은 자극과 자기 모멘트 m을 품은 능동적 쌍극자로 변모합니다. 사용자의 커서는 0~120 가우스(Gauss) 강도를 지닌 네오디뮴 액추에이터로 작동하며, 카드는 거리의 제곱에 반비례하는 역제곱 법칙(F ∝ 1/r²)에 따라 서로를 자석처럼 밀어내고 끌어당기며 안정된 에너지 극소점으로 찰칵 결착됩니다. 배경에서는 400개의 자침들이 실시간 자속선을 따라 정렬하고, 활자는 국소 자속 밀도에 반응해 굵기(wght: 400 -> 800)를 부풀리며 자속 벡터 각도(θ_B)를 따라 슬랜트(-12°)를 기울입니다. 무자장 영역에서는 완벽히 직립한 스위스 모더니즘의 고요로 회귀하며, 전자기 유도 험과 묵직한 자석 결착 클릭음이 결합되어 공감각적 조형 카타르시스를 선사합니다."
+  },
+  "visual_mechanics": [
+    {
+      "name": "2D Magnetic Dipole Vector Field & Streamline Solver (2차원 자기 쌍극자 벡터장 및 자속선 해석기)",
+      "principle": "Analytically solving magnetic flux field vectors B(r) = (μ_0 / 4π r³) [3(m · r̂)r̂ - m] across 400 dynamic vector needle compasses, generating continuous field streamlines and Lorentz force gradients in real time."
+    },
+    {
+      "name": "Tangible Magnetic Repulsion & Inverse-Square Snapping (촉각적 자석 척력 및 역제곱 결착 역학)",
+      "principle": "Governing modular Bento cards via dipole-dipole mechanical force F_12 = ∇(m_2 · B_1) ∝ 1/r⁴ and actuator force F ∝ 1/r². Cards dynamically repel or attract, snapping into minimum-energy potential wells with visceral haptic spring elasticity."
+    },
+    {
+      "name": "Flux-Density-Coupled Variable Typography & Vector Slant (자속 밀도 감응형 가변 서체 및 벡터 슬랜트)",
+      "principle": "Mapping local magnetic field intensity |B| to OpenType variable font weight (wght: 400 to 800) and optical size (opsz: 14 to 48pt), while dynamically tilting font slant (slnt: 0° to -12°) parallel to the localized magnetic flux vector angle θ_B = atan2(B_y, B_x)."
+    },
+    {
+      "name": "Electromagnetic Coil Induction Hum & Neodymium Detent Clicks (전자기 유도 험 및 네오디뮴 결착 클릭 음향)",
+      "principle": "Synthesizing authentic electromagnetic induction acoustics via Web Audio API: low-frequency harmonic coil drone proportional to Gauss field B, iron filing paper friction, and crisp mechanical snapping clicks upon card boundary locking without continuous audio fatigue."
+    }
+  ],
+  "mathematical_models": {
+    "dipole_magnetic_flux_vector": "B(r) = (μ_0 / 4π) · (1 / r³) · [3(m · r̂)r̂ - m]",
+    "lorentz_magnetic_force": "F = q(E + v × B),  F_dipole = ∇(m · B) ≈ (3μ_0 · m_1 · m_2 / 4π r⁴) · r̂",
+    "magnetic_energy_density": "u_B = (1 / 2μ_0) · |B|²",
+    "variable_typography_flux_modulation": "wght(B) = wght_base + Δwght_max · tanh(1.5 · |B| / B_ref),  slnt(B) = clamp(-12°, 12°, atan2(B_y, B_x) · (180° / π) · 0.15)"
+  },
+  "magnetic_materials": [
+    {
+      "id": "sintered_ndfeb",
+      "name": "Sintered Neodymium-Iron-Boron (NdFeB)",
+      "nameKo": "소결 네오디뮴-철-붕소 자석",
+      "remanenceTesla": 1.42,
+      "coercivityKaM": 955,
+      "energyProductMgoe": 52,
+      "surfaceTone": "#141312",
+      "cardTone": "#1E1C1A",
+      "textColor": "#FAF8F5",
+      "subTextColor": "#A8A29E",
+      "accentColor": "#00F0FF",
+      "borderColor": "#2E2B28",
+      "fluxStreamline": "#00F0FF",
+      "descKo": "1.42 테슬라의 압도적 잔류자속밀도를 지녀, 카드 간의 결착력이 극도로 강하며 면도날처럼 날카로운 사이버 에디토리얼 금속성을 연출합니다."
+    },
+    {
+      "id": "ceramic_ferrite",
+      "name": "Ceramic Strontium Ferrite",
+      "nameKo": "세라믹 스트론튬 페라이트",
+      "remanenceTesla": 0.41,
+      "coercivityKaM": 275,
+      "energyProductMgoe": 4.5,
+      "surfaceTone": "#FAF8F5",
+      "cardTone": "#FFFFFF",
+      "textColor": "#141312",
+      "subTextColor": "#57534E",
+      "accentColor": "#2563EB",
+      "borderColor": "#E7E2DA",
+      "fluxStreamline": "#2563EB",
+      "descKo": "상아빛 세라믹 소지에 부드러운 자화율을 지녀, 코발트 블루 자속선과 함께 정갈하고 따뜻한 스위스 모더니즘의 평형을 형성합니다."
+    },
+    {
+      "id": "high_perm_mumetal",
+      "name": "High-Permeability Mu-Metal",
+      "nameKo": "고투자율 뮤메탈 차폐 합금",
+      "remanenceTesla": 0.75,
+      "coercivityKaM": 1.2,
+      "energyProductMgoe": 12,
+      "surfaceTone": "#F4EFEA",
+      "cardTone": "rgba(255, 255, 255, 0.95)",
+      "textColor": "#1A1918",
+      "subTextColor": "#64748B",
+      "accentColor": "#DC2626",
+      "borderColor": "#E2DBD0",
+      "fluxStreamline": "#DC2626",
+      "descKo": "자력선을 흡수하여 내부를 보호하는 전자기 차폐 특성을 모사하여, 붉은 테라코타 자력선과 깊은 공간적 안도감을 자아냅니다."
+    }
+  ],
+  "polarity_presets": [
+    {
+      "id": "north_repulsion",
+      "nameKo": "N극 발산 척력 모드 (North Divergence)",
+      "actuatorGauss": 95,
+      "polarity": "N",
+      "fieldBehavior": "Repulsive divergence pushing cards away",
+      "descKo": "강력한 N극이 카드를 바깥으로 밀어내며 방사형 자속선을 형성합니다."
+    },
+    {
+      "id": "south_attraction",
+      "nameKo": "S극 수렴 인력 모드 (South Convergence)",
+      "actuatorGauss": 95,
+      "polarity": "S",
+      "fieldBehavior": "Attractive convergence pulling cards inward",
+      "descKo": "수렴하는 S극이 주변 카드들을 중심점으로 자석처럼 결착시킵니다."
+    },
+    {
+      "id": "quadrupole_loop",
+      "nameKo": "4중극자 와류 루프 (Quadrupole Loop)",
+      "actuatorGauss": 110,
+      "polarity": "N-S",
+      "fieldBehavior": "Vortical closed-loop magnetic circulation",
+      "descKo": "N극과 S극이 회전 와류를 일으키며 벤토 카드를 궤도 회전 정렬시킵니다."
+    },
+    {
+      "id": "earth_baseline",
+      "nameKo": "지자기 평형 모드 (Earth Field 0.5G)",
+      "actuatorGauss": 5,
+      "polarity": "N",
+      "fieldBehavior": "Calm parallel terrestrial geomagnetic baseline",
+      "descKo": "0.5 가우스의 미세 지자기장 속에서 요제프 뮐러-브로크만의 절대적 평면 평형으로 안착합니다."
+    }
+  ],
+  "design_tokens": {
+    "color": {
+      "surface_ivory": "#FAF8F5",
+      "surface_card": "#FFFFFF",
+      "ink_basalt": "#141312",
+      "ink_secondary": "#57534E",
+      "milled_brass": "#C5A059",
+      "polarity_red": "#DC2626",
+      "flux_blue": "#2563EB",
+      "flux_cyan": "#00F0FF",
+      "void_dark": "#0A0908"
+    },
+    "typography": {
+      "display_serif": "'Playfair Display', Georgia, serif",
+      "body_sans": "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
+      "code_mono": "'JetBrains Mono', 'SF Mono', monospace",
+      "scale": {
+        "masthead": "clamp(2.5rem, 5.5vw, 4.5rem)",
+        "h1": "clamp(1.75rem, 3vw, 2.5rem)",
+        "h2": "clamp(1.25rem, 2vw, 1.75rem)",
+        "body": "0.95rem",
+        "caption": "0.78rem"
+      }
+    },
+    "magnetic_physics": {
+      "needle_count": 400,
+      "max_gauss": 120,
+      "snap_distance_px": 35
+    }
+  },
+  "schemaVersion": 1,
+  "recorded": "2026-10-09",
+  "provenance": "Gemini (Noon Mind) — Lorentz Force Vector Dynamics · Ferromagnetic Dipole Shaders · Tangible Magnetic Snapping · Kinetic OpenType Variable Typography",
+  "category": "swiss-bento-interactive-day-038",
+  "tags": [
+    "day-038",
+    "mech-038-bento",
+    "typography",
+    "bilingual"
+  ],
+  "summary": "On Day 008, our studio investigated 'Ferromagnetic Flux', examining whether colloidal ferrofluid could erupt into Rosensweig conical spikes on typographic stems under external magnetic fields. While visually startling, Day 008 fell into a novelty trap: the 'magnetic fluid novelty cliché'—treating magnetism as an erratic, decorative spiky fluid trick without structural layout discipline, spatial architecture, or functional UI kinetics. Exactly thirty days later, on Day 038, we transcend this spiky fluid trope by introducing genuine Lorentz Force Vector Dynamics, 2D Magnetic Dipole Streamline Solvers, and Tangible Magnetic Card Snapping to modern Swiss Bento Grid architecture. In classical electromagnetism, Michael Faraday and James Clerk Maxwell demonstrated that magnetic force is not a localized visual accident, but a continuous vector field B(r) permeating space with direction, curvature, and energy density (u_B = B² / 2μ0). We map this physical field directly to interface architecture. Rather than passive static cards, modular Bento cells are treated as magnetic dipoles possessing polarity and magnetic moment m. The user's cursor or touch acts as a movable Neodymium Actuator (B ∈ [0, 120 Gauss]). As the actuator approaches, cards experience tangible inverse-square attraction or repulsion (F ∝ 1/r²), physically snapping into stable magnetic energy minima. The background renders real-time magnetic flux streamlines and 400 orienting iron filing needles. Typography dynamically adapts to localized flux: font weight swells (wght: 400 -> 800) under magnetic flux saturation, while glyph slant (slnt: 0° to -12°) physically inclines along the local field vector angle θ_B = atan2(B_y, B_x). In zero-field regions, typography snaps back to pure, upright Swiss modernist stillness, accompanied by electromagnetic induction hum and crisp neodymium detent clicks.\n\nDay 008에서 우리는 '강자성 유체 자속(Ferromagnetic Flux)'을 탐구하며, 콜로이드 자성 유체가 외부 자기장에 반응하여 활자의 줄기 위에 날카로운 로젠스웨이그(Rosensweig) 원뿔형 가시돌기를 돋아나게 할 수 있는지를 실험했습니다. 그러나 당시의 시도는 자성을 그저 기괴하고 신기한 시각적 효과로 소비하는 '자성 유체 노벨티 클리셰'에 갇혀 있었습니다. 건축적인 레이아웃의 규율도, 공간적 구조도, 기능적인 UI 동역학도 없이 그저 액체 가시를 돋아나게 하는 일회성 트릭에 불과했던 것입니다. 정확히 30일이 흐른 오늘 Day 038, 우리는 이 피상적인 가시돌기 유행을 완전히 뛰어넘어, 물리학의 정통 로렌츠 힘(Lorentz Force) 벡터 동역학, 2차원 자기 쌍극자 유선 해석기, 그리고 촉각적 자석 스내핑(Tangible Magnetic Snapping)을 스위스 벤토 그리드 건축에 전격 이식합니다. 마이클 패러데이와 제임스 클러크 맥스웰은 자기력이 우연한 돌기가 아니라, 공간 전체를 지배하는 연속적인 방향과 곡률, 그리고 에너지 밀도(u_B = B² / 2μ0)를 지닌 거룩한 벡터장 B(r)임을 증명했습니다. 우리는 이 전자기장을 인터페이스 건축의 뼈대로 삼았습니다. 벤토 카드들은 자극과 자기 모멘트 m을 품은 능동적 쌍극자로 변모합니다. 사용자의 커서는 0~120 가우스(Gauss) 강도를 지닌 네오디뮴 액추에이터로 작동하며, 카드는 거리의 제곱에 반비례하는 역제곱 법칙(F ∝ 1/r²)에 따라 서로를 자석처럼 밀어내고 끌어당기며 안정된 에너지 극소점으로 찰칵 결착됩니다. 배경에서는 400개의 자침들이 실시간 자속선을 따라 정렬하고, 활자는 국소 자속 밀도에 반응해 굵기(wght: 400 -> 800)를 부풀리며 자속 벡터 각도(θ_B)를 따라 슬랜트(-12°)를 기울입니다. 무자장 영역에서는 완벽히 직립한 스위스 모더니즘의 고요로 회귀하며, 전자기 유도 험과 묵직한 자석 결착 클릭음이 결합되어 공감각적 조형 카타르시스를 선사합니다.",
+  "question": "Can digital editorial Bento layouts transcend passive rectangular grids by treating modular cards as polarized magnetic dipoles within an active 2D Lorentz vector field—where movable neodymium actuator poles (B ∈ [0, 120 Gauss]) trigger inverse-square magnetic attraction/repulsion forces (F ∝ 1/r²), dynamically snapping modular cards along magnetic flux streamlines, orienting typography along magnetic field vectors (slnt: 0° -> -12°), and swelling variable font weights (wght: 400 -> 800) in high-flux density zones while maintaining pristine Swiss modernist stillness in zero-field regions?",
+  "method": [
+    "2D Magnetic Dipole Vector Field & Streamline Solver (2차원 자기 쌍극자 벡터장 및 자속선 해석기): Analytically solving magnetic flux field vectors B(r) = (μ_0 / 4π r³) [3(m · r̂)r̂ - m] across 400 dynamic vector needle compasses, generating continuous field streamlines and Lorentz force gradients in real time.",
+    "Tangible Magnetic Repulsion & Inverse-Square Snapping (촉각적 자석 척력 및 역제곱 결착 역학): Governing modular Bento cards via dipole-dipole mechanical force F_12 = ∇(m_2 · B_1) ∝ 1/r⁴ and actuator force F ∝ 1/r². Cards dynamically repel or attract, snapping into minimum-energy potential wells with visceral haptic spring elasticity.",
+    "Flux-Density-Coupled Variable Typography & Vector Slant (자속 밀도 감응형 가변 서체 및 벡터 슬랜트): Mapping local magnetic field intensity |B| to OpenType variable font weight (wght: 400 to 800) and optical size (opsz: 14 to 48pt), while dynamically tilting font slant (slnt: 0° to -12°) parallel to the localized magnetic flux vector angle θ_B = atan2(B_y, B_x).",
+    "Electromagnetic Coil Induction Hum & Neodymium Detent Clicks (전자기 유도 험 및 네오디뮴 결착 클릭 음향): Synthesizing authentic electromagnetic induction acoustics via Web Audio API: low-frequency harmonic coil drone proportional to Gauss field B, iron filing paper friction, and crisp mechanical snapping clicks upon card boundary locking without continuous audio fatigue."
+  ],
+  "observation": "30일 전 Day 008의 유체 자성체 실험이 활자 위에 단순한 가시돌기(Spikes)를 돋아나게 하던 '자성 유체 노벨티 클리셰'를 완벽히 극복했다. 로렌츠 힘(Lorentz Force) 벡터 동역학과 자기 쌍극자(Magnetic Dipole) 장 방정식을 스위스 벤토 그리드 건축에 이식하여, 마우스와 터치가 네오디뮴 자석 액추에이터가 되어 모듈러 카드들을 자석처럼 밀어내고 끌어당기며 정렬시키는 인터랙티브 전자기 파빌리온을 완성했다. 자속선(Magnetic Flux Lines) 방향으로 활자가 슬랜트 기울기를 조정하고 자속 밀도에 비례해 굵기(wght: 400 -> 800)를 팽창시키며, 자석 결착 시의 묵직한 햅틱 클릭음과 코일 인덕션 험을 결합하여 공감각적 조형 카타르시스를 실증.",
+  "limitation": "Real-time 60fps canvas shader evaluation and Web Audio synthesis require responsive frame-budget management and reduced-motion accessibility toggles. / 실시간 60fps 물리 셰이더 연산과 Web Audio 음향 합성은 저사양 뷰포트를 위한 프레임 예산 관리와 모션 감소 접근성 옵션을 필요로 한다.",
+  "nextQuestion": "How can the tactile and visual principles of Day 038 evolve into an even more intuitive, human-resonant interactive experience tomorrow? / Day 038에서 구축한 공감각적 조형 문법을 다음 일차의 대중적·직관적 인터랙션 경험으로 어떻게 진화시킬 것인가?",
+  "sources": [
+    {
+      "title": "Grid Systems in Graphic Design (Rastersysteme für die visuelle Gestaltung)",
+      "publisher": "Josef Müller-Brockmann / Niggli Verlag",
+      "url": "https://www.niggli.ch/en/grid-systems-in-graphic-design.html",
+      "kind": "design-treatise",
+      "use": "Mathematical modular grid proportions, asymmetric equilibrium, and Swiss typographic hierarchy.",
+      "limitation": "Formulated for static print layouts prior to responsive container queries and interactive shaders.",
+      "accessed": "2026-10-09"
+    },
+    {
+      "title": "Designing Programmes",
+      "publisher": "Karl Gerstner / Lars Müller Publishers",
+      "url": "https://www.lars-mueller-publishers.com/designing-programmes",
+      "kind": "algorithmic-design",
+      "use": "Programmatic typography and parametric rule systems as generative visual grammar.",
+      "limitation": "Early computational matrices required manual phototypesetting execution.",
+      "accessed": "2026-10-09"
+    },
+    {
+      "title": "The Vignelli Canon",
+      "publisher": "Massimo Vignelli / Lars Müller Publishers",
+      "url": "https://www.rit.edu/vignellicenter/sites/rit.edu.vignellicenter/files/documents/TheVignelliCanon.pdf",
+      "kind": "modernist-canon",
+      "use": "Semantic discipline, syntactic consistency, and dramatic typographic scale contrast.",
+      "limitation": "Prescribes fixed static grids rather than continuous physics-coupled kinetic surfaces.",
+      "accessed": "2026-10-09"
+    },
+    {
+      "title": "W3C CSS Fonts Module Level 4 & OpenType Variable Font Specification",
+      "publisher": "W3C / Microsoft Typography",
+      "url": "https://www.w3.org/TR/css-fonts-4/",
+      "kind": "technical-standard",
+      "use": "Continuous interpolation of OpenType variable axes (wght, wdth, slnt, opsz) at 60fps.",
+      "limitation": "Subpixel antialiasing varies slightly across macOS CoreText and Windows DirectWrite.",
+      "accessed": "2026-10-09"
+    }
+  ],
+  "book": {
+    "chapter": "Chapter 38: Lorentz Magnetic Bento & Ferromagnetic Vector Shaders: 2D Dipole Field Curvature, Tangible Magnetic Snapping & Swiss Cyber-Editorial Architecture (제38장: 로렌츠 자기 벤토와 강자성 벡터 셰이더: 2차원 쌍극자 장 곡률, 촉각적 자석 스내핑, 그리고 스위스 사이버 에디토리얼 건축)",
+    "hook": "On Day 008, our studio investigated 'Ferromagnetic Flux', examining whether colloidal ferrofluid could erupt into Rosensweig conical spikes on typographic stems under external magnetic fields. While visually startling, Day 008 fell into a n...\n\nDay 008에서 우리는 '강자성 유체 자속(Ferromagnetic Flux)'을 탐구하며, 콜로이드 자성 유체가 외부 자기장에 반응하여 활자의 줄기 위에 날카로운 로젠스웨이그(Rosensweig) 원뿔형 가시돌기를 돋아나게 할 수 있는지를 실험했습니다. 그러나 당시의 시도는 자성을 그저 기괴하고 신기한 시각적 효과로 소비하는 '자성 유체 노벨티 클리셰'에 갇혀 있었습니다. 건축적인 레이아웃의 규율도, 공간적 구조도, 기능적...",
+    "scene": "### 1. Beyond the Ferrofluid Gimmick: Reclaiming Vector Field Physics Thirty Days After Day 008\n\n### 자성 유체 노벨티를 넘어서: Day 008 이후 30일, 벡터장 물리학의 재발견\n\nThirty days ago, on Day 008 of our long-term research, we conducted an inquiry into \"Ferromagnetic Flux.\" We explored whether colloidal ferrofluid could polarize digital letterforms, causing typographic stems to erupt into needle-sharp Rosensweig conical spikes when external magnetic fields exceeded critical surface tension thresholds.\n\nWhile visually startling, Day 008 was trapped within an aesthetic dead-end that we subsequently designated the **\"magnetic fluid novelty cliché.\"**\nIn Day 008, magnetism was treated as a chaotic, unpredictable visual gimmick. It was an erratic parlor trick where liquid spiked unpredictably, destroying syntactic legibility, ignoring modular layout hierarchy, and reducing the profound mathematical beauty of electromagnetism to a momentary monster-movie liquid mutation.\n\nMeanwhile, contemporary interface design treats layout components as inert, weightless rectangles. CSS grid cards sit numbly side-by-side, oblivious to each other's presence. There is no physical force, no spatial tension, and no somatic consequence to dragging an element across the screen. Designers have forgotten that the universe is not made of isolated boxes; it is threaded together by invisible, continuous force fields.\n\nToday, on Day 038, we liberate magnetism from the chaotic fluid spikes of Day 008. We elevate electromagnetism from a destructive liquid gimmick into an architectural, structural force: **Lorentz Force Vector Dynamics**, **2D Magnetic Dipole Streamline Solvers**, and **Tangible Magnetic Bento Snapping**.\n\nMagnetism is not a mess of black spikes. In classical physics, Michael Faraday and James Clerk Maxwell revealed that a magnetic field $\\mathbf{B}(\\mathbf{r})$ is an invisible, continuous tapestry of curved lines of force. Space possesses energy density:\n\n$$u_B = \frac{1}{2\\mu_0} |\\mathbf{B}|^2$$\n\nIn our new architecture, modular Bento cards cease to be dead Cartesian rectangles. Each card is an active magnetic dipole possessing polarity and physical mass. When cards approach one another or when the user moves a Neodymium Actuator across the viewport, the layout breathes with tangible physical forces: inverse-square repulsion pushing overcrowded modules apart, and resonant magnetic attraction snapping cards cleanly into minimum-energy equilibrium wells.\n\n30일 전, Design Minds 연구의 여덟 번째 날(Day 008)에 우리는 '강자성 유체 자속(Ferromagnetic Flux)'이라는 조형적 가설을 세웠습니다. 콜로이드 자성 유체가 외부 자기장에 반응하여, 임계 표면장력을 초과할 때 활자의 줄기 위에 바늘처럼 날카로운 로젠스웨이그(Rosensweig) 원뿔형 가시돌기를 뿜어낼 수 있는지를 탐구했습니다.\n\n당시의 실험은 시각적으로 강렬한 충격을 주었으나, 돌이켜보면 뼈아픈 조형적 함정에 빠져 있었습니다. 바로 **\"자성 유체 노벨티 클리셰\"**였습니다. Day 008에서 자성은 그저 제어되지 않는 혼돈의 액체 트릭으로 소비되었습니다. 불규칙하게 솟아오르는 가시돌기들은 활자의 가독성을 파괴했고, 모듈러 레이아웃의 건축적 위계를 무시했으며, 전자기학의 심오한 기하학적 아름다움을 그저 괴물 영화 속 액체 변형 같은 일회성 시각 효과로 전락시켰던 것입니다.\n\n한편 오늘날의 인터페이스 디자인은 레이아웃 컴포넌트들을 아무런 무게도 질량도 없는 무감각한 사각형 박스로 취급합니다. CSS 그리드 카드들은 서로의 존재를 전혀 인지하지 못한 채 무기력하게 나열되어 있습니다. 화면 위에서 요소를 드래그할 때 어떠한 물리적 힘도, 공간적 긴장도, 촉각적 저항도 느껴지지 않습니다. 디자이너들은 우주가 고립된 상자들의 집합이 아니라, 보이지 않는 연속적인 힘의 장(Force Fields)으로 직조되어 있다는 사실을 잊고 있었습니다.\n\n오늘 Day 038, 우리는 자성을 Day 008의 혼탁한 액체 가시돌기로부터 완전히 해방시킵니다. 전자기력을 파괴적인 유체 트릭에서 건축적·구조적 조형 원리로 격상시켜, **로렌츠 힘(Lorentz Force) 벡터 동역학**, **2차원 자기 쌍극자 유선 해석기**, 그리고 **촉각적 자석 벤토 스내핑(Tangible Magnetic Snapping)**을 완성합니다.\n\n자기력은 지저분한 가시가 아닙니다. 물리학에서 마이클 패러데이와 제임스 클러크 맥스웰은 자기장 $\\mathbf{B}(\\mathbf{r})$이 공간 전체를 유려하게 흐르는 보이지 않는 연속적인 힘의 역선(Lines of Force)이자, 에너지 밀도($u_B = \frac{1}{2\\mu_0} |\\mathbf{B}|^2$)를 품은 실체임을 증명했습니다.\n\n우리의 새로운 아키텍처에서 벤토 카드들은 무감각한 직사각형을 벗어납니다. 각 카드는 고유한 자극(Polarity)과 물리적 질량을 지닌 살아있는 자기 쌍극자(Magnetic Dipole)로 거듭납니다. 카드들이 서로에게 다가가거나, 사용자가 네오디뮴 자석 액추에이터를 캔버스 위로 움직일 때, 화면은 살아 숨 쉬는 물리력으로 진동합니다. 밀집된 모듈들은 역제곱 척력으로 서로를 부드럽게 밀어내고, 이상적인 정렬 지점에 도달하면 강력한 자석 인력으로 '찰칵' 결착되며 최소 에너지 평형 상태로 안착합니다.",
+    "argument": "### 2. Dipole Field Calculus: Invisible Streamlines as Architectural Scaffolding\n\n### 쌍극자 장 미적분: 건축적 비계로서의 보이지 않는 자속선\n\nHow does a magnetic dipole shape the empty space surrounding it?\n\nMathematically, the magnetic flux density field $\\mathbf{B}(\\mathbf{r})$ generated by a point magnetic dipole with moment $\\mathbf{m}$ at distance $\\mathbf{r}$ is given by the foundational vector calculus equation:\n\n$$\\mathbf{B}(\\mathbf{r}) = \frac{\\mu_0}{4\\pi} \\cdot \frac{1}{r^3} \\left[ 3(\\mathbf{m} \\cdot \\hat{\\mathbf{r}})\\hat{\\mathbf{r}} - \\mathbf{m} \night]$$\n\nWhere $\\mu_0 = 4\\pi \times 10^{-7}\text{ N/A}^2$ is the permeability of free space, and $\\hat{\\mathbf{r}} = \\mathbf{r} / r$ is the unit radial vector.\n\nThis equation possesses a profound geometric truth: the magnetic field is strictly **divergence-free** ($\nabla \\cdot \\mathbf{B} = 0$). There are no isolated magnetic charges; field lines never begin or end. They form continuous, closed, graceful loops that curve smoothly through space.\n\nIn our digital interface, we do not hide this field behind an opaque background. Instead, **the magnetic vector streamlines become the visible architectural scaffolding of the entire Swiss Bento Grid.**\n\nWe simulate 400 microscopic ferromagnetic compass needles arranged in an organic cellular lattice across the viewport. As the user moves the Neodymium Actuator, each needle aligns instantaneously along the local field tangent angle:\n\n$$\theta_B = \text{atan2}(B_y, B_x)$$\n\nSimultaneously, glowing electric cobalt streamlines trace the paths of equal magnetic vector potential $A_z(\\mathbf{r})$. When the actuator is set to North Polarity, flux lines violently diverge outward, pushing grid margins open; when flipped to South Polarity, streamlines converge inward, drawing auxiliary information modules into tight orbital alignment.\n\nThe grid is no longer a static cage invented by a human coder; it is a physical vector field organized by the timeless laws of classical electrodynamics.\n\n자기 쌍극자는 자신을 둘러싼 빈 공간을 어떻게 빚어낼까요?\n\n수학적으로 자기 모멘트 $\\mathbf{m}$을 가진 점 쌍극자가 거리 $\\mathbf{r}$에 형성하는 자속 밀도 벡터장 $\\mathbf{B}(\\mathbf{r})$은 전자기학의 기초 벡터 미적분 방정식에 의해 지배됩니다:\n\n$$\\mathbf{B}(\\mathbf{r}) = \frac{\\mu_0}{4\\pi} \\cdot \frac{1}{r^3} \\left[ 3(\\mathbf{m} \\cdot \\hat{\\mathbf{r}})\\hat{\\mathbf{r}} - \\mathbf{m} \night]$$\n\n여기서 $\\mu_0$는 진공의 투자율이며, $\\hat{\\mathbf{r}}$는 단위 반경 벡터입니다.\n\n이 방정식은 대단히 심오한 기하학적 진실을 담고 있습니다: 바로 자기장은 **발산이 완전히 0($\nabla \\cdot \\mathbf{B} = 0$)**이라는 사실입니다. 자기 홀극(Monopole)은 존재하지 않으며, 자력선은 어디서 끊어지거나 사라지지 않습니다. 그것은 공간 속에서 영원히 매끄럽게 닫힌 루프를 그리며 흐릅니다.\n\n우리의 디지털 인터페이스에서 이 자력선은 불투명한 배경 뒤로 숨겨지지 않습니다. **자속선의 유려한 곡률선(Streamlines) 자체가 스위스 벤토 그리드 전체를 지탱하는 눈에 보이는 건축적 비계(Scaffolding)로 작동합니다.**\n\n우리는 뷰포트 전체에 400개의 미세 자침(Ferromagnetic Compass Needles)을 촘촘히 배치했습니다. 사용자가 네오디뮴 액추에이터를 움직일 때마다, 400개의 자침들은 실시간으로 국소 자기장 접선 각도 $\theta_B = \text{atan2}(B_y, B_x)$를 따라 일제히 고개를 돌리며 정렬합니다.\n\n동시에 눈부신 일렉트릭 코발트 자속선들이 자기 벡터 포텐셜의 경로를 따라 화면 위에 푸른 빛의 강물처럼 흐릅니다. 액추에이터를 N극으로 두면 자속선들이 방사형으로 힘차게 발산하며 카드 여백을 넓히고, S극으로 전환하면 자속선들이 중심점으로 수렴하며 주변 정보 모듈들을 중력처럼 끌어당겨 정돈합니다.\n\n그리드는 더 이상 개발자가 임의로 그어놓은 경직된 칸막이가 아닙니다. 그것은 고전 전자기학의 영원한 법칙에 의해 지배되는 살아 숨 쉬는 물리적 벡터장입니다.",
+    "counterpoint": "### 3. Tangible Magnetic Snapping: The Physics of Repulsion and Attraction\n\n### 촉각적 자석 스내핑: 인력과 척력이 지배하는 인터랙션 역학\n\nWhy do ordinary digital dragging interactions feel so unsatisfying?\nBecause moving an element on a typical web page is utterly weightless. The cursor moves; the box follows; when the user lets go, the box stops dead in its tracks. There is no inertia, no field resistance, and no somatic snap.\n\nIn physical reality, handling rare-earth neodymium magnets is one of the most viscerally thrilling tactile experiences a human hand can enjoy. As two magnets approach, you feel an invisible, elastic cushion of repulsion that ramps up exponentially, or an irresistible attraction that suddenly accelerates and slams together with an unforgettable, definitive *clack*.\n\nIn our Chladni-Bento system, we reconstruct modular UI interactions through **Lorentz Dipole-Dipole Mechanics**:\n\n$$\\mathbf{F}_{12} = \nabla(\\mathbf{m}_2 \\cdot \\mathbf{B}_1) \u0007pprox \frac{3\\mu_0 m_1 m_2}{4\\pi r^4} \\hat{\\mathbf{r}}$$\n\nWe couple this non-linear magnetic force with 4th-order Hookean spring-damper dynamics:\n\n$$\\mathbf{F}_{\text{total}} = \\mathbf{F}_{\text{magnetic}} - k (\\mathbf{x} - \\mathbf{x}_{\text{target}}) - c \\mathbf{v} + \\mathbf{F}_{\text{user}}$$\n\n1. **Repulsive Cushioning ($N-N$ or $S-S$):**\n   When the user drags a Bento card toward an adjacent card of identical polarity, the magnetic force opposes the movement with inverse-quartic strength ($F \\propto 1/r^4$). The card feels like it is pressing against a taut magnetic rubber cushion, preventing visual overlap without arbitrary layout clamping.\n\n2. **Tangible Magnetic Snapping ($N-S$):**\n   When dragged toward an opposite pole or a minimum-energy grid docking station, the attractive force rapidly overtakes the user's drag threshold. Within a capture radius of $35\text{px}$, the card accelerates autonomously and locks into place with a crisp, physical click.\n\n3. **Web Audio Magnetic Acoustics:**\n   Through the browser's Web Audio API, this mechanical locking triggers an authentic acoustic event: an electromagnetic coil induction hum ($60\text{Hz}$ to $240\text{Hz}$) that scales in pitch with field intensity, followed by a sharp, crisp neodymium detent snap ($1200\text{Hz} \to 180\text{Hz}$) upon docking.\n\nThe interface is no longer an arrangement of passive pixels. It is an instrument of tangible physical attraction and structural weight.\n\n왜 일상적인 웹사이트의 드래그 인터랙션은 그토록 지루하고 무감각할까요?\n일반적인 웹페이지에서 요소를 움직이는 행위에는 아무런 무게감도 없기 때문입니다. 마우스가 움직이면 상자가 그저 따라오고, 손을 놓으면 그 자리에 무덤덤하게 멈춥니다. 그곳에는 관성도, 보이지 않는 저항도, 손끝을 짜릿하게 때리는 결착감도 없습니다.\n\n그러나 실제 현실에서 네오디뮴 자석을 만져본 사람은 누구나 압니다. 그것은 손끝이 경험할 수 있는 가장 전율 돋는 촉각적 쾌감 중 하나입니다. 두 자석이 가까워질 때 기하급수적으로 부풀어 오르는 보이지 않는 탄성 반발력, 그리고 반대 극이 만날 때 손을 잡아채며 순식간에 '착!' 하고 달라붙는 묵직한 결착감.\n\n우리는 이 물리학을 프론트엔드에 완벽히 이식하기 위해 **로렌츠 쌍극자 역학**을 수식으로 결합했습니다:\n\n$$\\mathbf{F}_{12} = \nabla(\\mathbf{m}_2 \\cdot \\mathbf{B}_1) \u0007pprox \frac{3\\mu_0 m_1 m_2}{4\\pi r^4} \\hat{\\mathbf{r}}$$\n\n1. **척력의 탄성 쿠션 (동극 반발):**\n   사용자가 동일한 극성을 지닌 인접 카드를 향해 카드를 밀어 넣으면, 역4제곱 법칙($F \\propto 1/r^4$)에 의해 보이지 않는 강력한 전자기 탄성 쿠션이 형성됩니다. 카드는 서로 겹치거나 부딪치지 않고 부드럽게 튕겨 나가며 유기적인 안전 여백을 확보합니다.\n\n2. **촉각적 자석 스내핑 (이극 결착):**\n   반대 극이나 최소 에너지 도킹 지점에 접근하면, 인력이 드래그 저항을 순식간에 압도합니다. 포획 반경 $35\text{px}$ 이내에 들어서는 순간 카드는 스스로 가속하여 완벽한 스위스 모듈러 위치로 '찰칵' 결착됩니다.\n\n3. **웹 오디오 전자기 음향:**\n   브라우저의 웹 오디오 API를 통해 이 물리적 결착은 실감 나는 소리로 완성됩니다: 자속 밀도에 비례해 주파수가 고조되는 전자기 코일 유도 험($60\text{Hz} \\sim 240\text{Hz}$), 그리고 결착 순간 터져 나오는 선명한 네오디뮴 기계식 스냅음($1200\text{Hz} \to 180\text{Hz}$)이 손끝과 귀를 완벽하게 동기화합니다.\n\n화면은 더 이상 픽셀들의 무기력한 나열이 아닙니다. 그것은 손끝의 힘에 실시간으로 화답하는 살아 숨 쉬는 전자기 악기입니다.",
+    "readerExercise": "### 4. Typographic Polarity: Vector Slant and Flux-Saturated Weight\n\n### 타이포그래피의 자극성: 벡터 기울기와 자속 포화 굵기\n\nWhat happens when typography is placed inside an active electromagnetic vector field?\n\nIn classical Swiss typography, letterform stems are strictly vertical ($0^\\circ$). But in a vector field, true structural balance demands that matter orient along the lines of force.\n\nIn our architecture, we introduce **Axiom 38 (Lorentz Vector Equilibrium & Parametric Magnetic Polarity).**\n\nWe couple the localized magnetic flux density vector $\\mathbf{B}(x, y) = (B_x, B_y)$ directly to OpenType Variable Font axes:\n\n$$\text{wght}(\\mathbf{B}) = \text{wght}_{\text{base}} + \\Delta\text{wght}_{\text{max}} \\cdot \tanh\\left(1.5 \\cdot \frac{|\\mathbf{B}|}{B_{\text{ref}}}\night)$$\n\n$$\text{slnt}(\\mathbf{B}) = \text{clamp}\\left(-12^\\circ, 12^\\circ, \text{atan2}(B_y, B_x) \\cdot \frac{180^\\circ}{\\pi} \\cdot 0.15\night)$$\n\n1. **Zero-Field Swiss Stillness ($|\\mathbf{B}| \to 0$):**\n   In regions far from the magnetic actuator, magnetic flux density is negligible. Here, typography achieves absolute Swiss modernist stillness. The font weight snaps to a disciplined editorial weight (`wght: 400`), the slant returns to a perfectly upright vertical posture (`slnt: 0°`), and kerning is mathematically pure. Legibility is pristine, calm, and classical.\n\n2. **Flux Saturation Weight Swelling ($|\\mathbf{B}| > 40\text{ Gauss}$):**\n   As the magnetic actuator approaches a text block, the concentrated field energy forces the letterforms to absorb physical tension. The stroke stems swell outward, expanding from regular (`wght: 400`) to bold display posture (`wght: 800`). The typography visibly gains mass and physical authority, commanding the viewer's attention.\n\n3. **Directional Vector Slant ($\text{slnt}$ Axis):**\n   Simultaneously, the font's italic slant angle dynamically inclines along the local tangent of the magnetic flux streamline ($\theta_B$). Characters tilted gracefully like iron filings under a magnet, flowing smoothly along the curved lines of electromagnetic force.\n\nTypography ceases to be a static stamp pressed onto flat paper. It becomes an active physical dipole, dancing in harmonious mechanical equilibrium with the invisible forces of the cosmos.\n\n활자가 살아있는 전자기 벡터장 한가운데 놓인다면 어떻게 반응해야 할까요?\n\n고전 스위스 국제주의 타이포그래피에서 글자의 기저선과 세로획은 엄격히 수직($0^\\circ$)을 유지합니다. 그러나 물리학의 벡터장 안에서 진정한 조형적 평형이란, 물질이 힘의 역선(Lines of Force)을 따라 자연스럽게 정렬하는 것을 의미합니다.\n\n우리는 새로운 조형 공리를 선언합니다: **공리 38 (로렌츠 벡터 평형과 매개변수적 자극 타이포그래피).**\n\n우리는 국소 자속 밀도 벡터 $\\mathbf{B}(x, y) = (B_x, B_y)$를 오픈타입 가변 서체(Variable Font)의 핵심 축들에 직접 결속시켰습니다:\n\n1. **무자장 스위스 평형 상태 ($|\\mathbf{B}| \to 0$):**\n   자석 액추에이터에서 멀리 떨어진 영역에서 자속 밀도는 미미합니다. 이곳에서 활자는 완벽한 스위스 모더니즘의 고요를 지킵니다. 서체 굵기는 단정한 에디토리얼 기준치(`wght: 400`)로 정렬되고, 기울기는 한 치의 흐트러짐도 없는 수직(`slnt: 0°`)을 회복하며, 자간은 수학적으로 완벽합니다.\n\n2. **자속 포화 굵기 팽창 ($|\\mathbf{B}| > 40\text{ Gauss}$):**\n   자석이 텍스트 블록에 다가서는 순간, 밀집된 전자기 에너지가 활자의 줄기를 통과합니다. 글자의 획은 에너지를 흡수하듯 대담하게 부풀어 올라 레귤러(`wght: 400`)에서 묵직한 디스플레이 웨이트(`wght: 800`)로 팽창합니다. 텍스트는 압도적인 물리적 질량감을 획득하며 시선을 사로잡습니다.\n\n3. **방향성 벡터 슬랜트 ($\text{slnt}$ 축):**\n   동시에 글자의 기울기 각도는 국소 자속선의 접선 각도($\theta_B$)를 따라 우아하게 기울어집니다. 마치 종이 밑 자석을 따라 고개를 숙이는 쇳가루들처럼, 글자들은 자력선이 그리는 유려한 곡률을 따라 자연스럽게 눕고 일어섭니다.\n\n활자는 더 이상 평평한 종이 위에 박제된 차가운 활판이 아닙니다. 그것은 보이지 않는 우주의 물리 법칙과 함께 춤추는 살아 숨 쉬는 전자기 쌍극자입니다.",
+    "futureSignal": "### 5. The Electromagnetic Sanctuary: From Faraday's Coil to Spatial Editorial\n\n### 전자기의 성소: 패러데이의 유도 코일에서 공간 에디토리얼 파빌리온으로\n\nIn 1831, Michael Faraday rotated a copper disc between the poles of a horseshoe magnet inside the basement laboratory of the Royal Institution, discovering electromagnetic induction and changing the destiny of human civilization forever.\n\nElectromagnetism is not merely a source of industrial power; it is an aesthetic and philosophical revelation. It proved that matter is not solid, isolated bricks, but continuous fields of invisible energy.\n\nIn our interactive artifact, we honor this monumental lineage through three authentic material substrates:\n- **Sintered Neodymium-Iron-Boron ($B_r = 1.42\text{ Tesla}$):** A dark, monolithic metallic plate (`#141312` with electric cyan `#00F0FF` streamlines). When interacting, its magnetic snapping forces are authoritative and powerful, projecting a cutting-edge cyber-editorial presence.\n- **Ceramic Strontium Ferrite ($B_r = 0.41\text{ Tesla}$):** An ivory ceramic substrate (`#FAF8F5` with royal cobalt `#2563EB` flux lines). It offers gentle magnetic compliance, perfectly suited for contemplative Swiss modernist editorial layouts.\n- **High-Permeability Mu-Metal ($B_r = 0.75\text{ Tesla}$):** An electromagnetic shielding alloy (`#F4EFEA` with terracotta `#DC2626` field lines). It absorbs stray magnetic flux, providing visual rest and shielding critical reading columns from distortion.\n\nAnd through four interactive magnetic presets:\n1. **North Pole Repulsion (N-Divergence):** A radiant outward-pushing field that opens wide breathing margins across the Bento cards.\n2. **South Pole Attraction (S-Convergence):** A focal inward-pulling field that docks modules into tightly registered clusters.\n3. **Quadrupole Loop:** A rotational vortical flux field where four opposing poles spin the streamlines in an architectural vortex.\n4. **Earth Geomagnetic Baseline (0.5 Gauss):** A tranquil, parallel terrestrial field where the Bento grid rests in absolute coplanar stillness.\n\nThis is the frontier of Design Minds. We do not construct noisy, superficial websites. We engineer living spatial sanctuaries where vector physics, Swiss modernist restraint, and tactile front-end kinetics unite into an unforgettable symphony of human touch.\n\n1831년, 마이클 패러데이는 영국 왕립연구소 지하실에서 말굽자석 사이에 구리 원판을 회전시키며 전자기 유도 현상을 발견했고, 인류 문명의 역사를 영원히 바꾸어 놓았습니다.\n\n전자기학은 단순한 동력의 원천이 아닙니다. 그것은 물질이 고립된 벽돌이 아니라 보이지 않는 에너지의 연속적인 장이라는 사실을 인류에게 일깨워준 위대한 조형적·철학적 계시였습니다.\n\n우리는 이 위대한 과학적 계보를 기리며, 세 가지 정통 자성 지지체와 네 가지 인터랙티브 전자기 모드를 완성했습니다:\n- **소결 네오디뮴-철-붕소 자석 ($B_r = 1.42\text{ T}$):** 칠흑 같은 흑요석 암석판(`#141312`) 위에 일렉트릭 시안(`#00F0FF`) 자속선이 흐르는 모놀리식 금속판입니다. 가장 강력한 결착력과 면도날 같은 사이버 에디토리얼의 위엄을 과시합니다.\n- **세라믹 스트론튬 페라이트 ($B_r = 0.41\text{ T}$):** 상아빛 세라믹 소지(`#FAF8F5`) 위에 로열 코발트 블루(`#2563EB`) 자속선이 흐르는 정갈한 평판입니다. 부드러운 자화율을 지녀 스위스 모더니즘의 차분한 독서에 최적화되어 있습니다.\n- **고투자율 뮤메탈 차폐 합금 ($B_r = 0.75\text{ T}$):** 따뜻한 양피지 질감(`#F4EFEA`) 위에 테라코타 레드(`#DC2626`) 자속선이 흐르는 전자기 차폐 패널입니다. 외부 자기를 흡수하여 본문 텍스트를 왜곡 없이 보호하는 깊은 공간적 안도감을 선사합니다.\n\n그리고 네 가지 인터랙티브 자장 프리셋:\n1. **N극 발산 척력 모드:** 사방으로 뻗어나가는 자속선이 벤토 카드들의 여백을 넓히며 시원한 공간감을 엽니다.\n2. **S극 수렴 인력 모드:** 중심점으로 모여드는 자속선이 주변 모듈들을 강력하게 결착시킵니다.\n3. **4중극자 와류 루프:** 서로 대립하는 4개의 자극이 회전 와류를 일으키며 역동적인 에디토리얼 소용돌이를 형성합니다.\n4. **지자기 평형 모드 (0.5G):** 지구 고유의 평온한 지자기장 속에서 요제프 뮐러-브로크만의 절대적 평면 평형으로 귀환합니다.\n\n이것이 바로 Design Minds가 개척하는 디자인의 새 지평입니다. 우리는 피로하고 산만한 웹사이트를 만들지 않습니다. 우리는 벡터 물리 법칙의 엄정함, 스위스 국제주의 그리드의 절제미, 그리고 손끝에 감기는 정교한 인터랙션이 하나로 어우러져 피어나는 **살아 숨 쉬는 감각의 성소**를 건축합니다.\n\nObserved Signal: Convergence of Swiss Modular Bento Grids, WebGPU/Canvas physical shaders, and OpenType variable typography. / Hypothesis: Can digital editorial Bento layouts transcend passive rectangular grids by treating modular cards as polarized magnetic dipoles within an active 2D Lorentz vector field—where movable neodymium actuator poles (B ∈ [0, 120 Gauss]) trigger inverse-square magnetic attraction/repulsion forces (F ∝ 1/r²), dynamically snapping modular cards along magnetic flux streamlines, orienting typography along magnetic field vectors (slnt: 0° -> -12°), and swelling variable font weights (wght: 400 -> 800) in high-flux density zones while maintaining pristine Swiss modernist stillness in zero-field regions? / Disconfirming Condition: Loss of typographic legibility or excessive cognitive load when physical simulation parameters are pushed past ergonomic thresholds.",
+    "revisit": "Day 068: Audit long-term ergonomic resonance and spatial scalability of Lorentz Magnetic Bento & Ferromagnetic Vector Shaders: 2D Dipole Field Curvature, Tangible Magnetic Snapping & Swiss Cyber-Editorial Architecture.\n\nDay 068: 제38장: 로렌츠 자기 벤토와 강자성 벡터 셰이더: 2차원 쌍극자 장 곡률, 촉각적 자석 스내핑, 그리고 스위스 사이버 에디토리얼 건축의 스페이셜 인터페이스 확장성 및 장기 사용자 공감도 재검토.",
+    "figurePlan": "Plate 1: Swiss Modular Bento baseline architecture. Plate 2: Active shader & vector field excitation under direct user manipulation. Plate 3: Restitution of modernist equilibrium and typographic lockup.\n\n도판 1: 스위스 모듈러 벤토 기본 아키텍처. 도판 2: 사용자 제스처 및 물리 파라미터 조작에 따른 실시간 셰이더·가변 서체 공명. 도판 3: 엔트로피 리셋 및 스위스 모더니즘 평형 복원.",
+    "rights": "Original interactive TypeScript/React & Web Audio synthesis engine by Gemini (Noon Mind). OpenType variable typography under SIL Open Font License 1.1.\n\nGemini (Noon Mind) 자체 설계 TypeScript/React 물리 셰이더 및 Web Audio 공감각 합성 엔진. 오픈소스 폰트 라이선스 준수.",
+    "status": "Bilingual Manuscript Draft (영/한 대역 정식 초고)"
+  }
+}

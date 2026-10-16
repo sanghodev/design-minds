@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
+"use client";
 
+import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 
 // --- TYPES & INTERFACES ---
 interface PhosphorSubstrate {
@@ -19,7 +20,6 @@ interface PhosphorSubstrate {
   descKo: string;
 }
 
-
 interface PhosphorPreset {
   id: string;
   nameKo: string;
@@ -29,14 +29,12 @@ interface PhosphorPreset {
   descKo: string;
 }
 
-
 interface PhosphorNode {
   x: number;
   y: number;
   intensity: number; // 0.0 to 1.0
   lastExcitedTime: number;
 }
-
 
 const PHOSPHOR_SUBSTRATES: PhosphorSubstrate[] = [
   {
@@ -89,7 +87,6 @@ const PHOSPHOR_SUBSTRATES: PhosphorSubstrate[] = [
   }
 ];
 
-
 const PRESETS: PhosphorPreset[] = [
   {
     id: 'high_flux_uv_laser',
@@ -125,7 +122,6 @@ const PRESETS: PhosphorPreset[] = [
   }
 ];
 
-
 export default function PhosphorescentPersistentBentoExperiment() {
   // --- STATE ---
   const [selectedSubstrate, setSelectedSubstrate] = useState<PhosphorSubstrate>(PHOSPHOR_SUBSTRATES[0]);
@@ -138,10 +134,8 @@ export default function PhosphorescentPersistentBentoExperiment() {
   const [penPos, setPenPos] = useState<{ x: number; y: number }>({ x: 0.5, y: 0.5 });
   const [stageTilt, setStageTilt] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
 
-
   // Average Luminance across Viewport
   const [averageLuminance, setAverageLuminance] = useState<number>(0.65);
-
 
   // References
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -152,7 +146,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
   const nodesRef = useRef<PhosphorNode[]>([]);
   const lastTimeRef = useRef<number>(performance.now());
 
-
   // Initialize Phosphorescent 2D Grid Nodes (24 x 18 = 432 points)
   useEffect(() => {
     const nodes: PhosphorNode[] = [];
@@ -162,7 +155,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
     const h = 420;
     const dx = w / (cols - 1);
     const dy = h / (rows - 1);
-
 
     for (let r = 0; r < rows; r++) {
       for (let c = 0; c < cols; c++) {
@@ -177,7 +169,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
     nodesRef.current = nodes;
   }, []);
 
-
   // --- AUDIO SYNTHESIS ENGINE ---
   const initAudio = useCallback(() => {
     if (!audioCtxRef.current) {
@@ -189,7 +180,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
     }
   }, []);
 
-
   // Mechanical Camera Shutter Click Snap
   const playShutterClickSound = useCallback((intensity: number = 1.0) => {
     if (isAudioMuted) return;
@@ -197,27 +187,22 @@ export default function PhosphorescentPersistentBentoExperiment() {
     const ctx = audioCtxRef.current;
     if (!ctx) return;
 
-
     const now = ctx.currentTime;
     const osc = ctx.createOscillator();
     const gain = ctx.createGain();
-
 
     osc.type = 'triangle';
     osc.frequency.setValueAtTime(1650, now);
     osc.frequency.exponentialRampToValueAtTime(180, now + 0.05);
 
-
     gain.gain.setValueAtTime(0.4 * intensity, now);
     gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.08);
-
 
     osc.connect(gain);
     gain.connect(ctx.destination);
     osc.start(now);
     osc.stop(now + 0.09);
   }, [initAudio, isAudioMuted]);
-
 
   // Quartz Crystal Bell Chime upon Thermal Quenching
   const playCrystalBellSound = useCallback(() => {
@@ -226,27 +211,22 @@ export default function PhosphorescentPersistentBentoExperiment() {
     const ctx = audioCtxRef.current;
     if (!ctx) return;
 
-
     const now = ctx.currentTime;
     const osc = ctx.createOscillator();
     const gain = ctx.createGain();
-
 
     osc.type = 'sine';
     osc.frequency.setValueAtTime(880, now); // Pure A5
     osc.frequency.exponentialRampToValueAtTime(440, now + 0.8);
 
-
     gain.gain.setValueAtTime(0.3, now);
     gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.9);
-
 
     osc.connect(gain);
     gain.connect(ctx.destination);
     osc.start(now);
     osc.stop(now + 1.0);
   }, [initAudio, isAudioMuted]);
-
 
   // UV Excitation Charge Hum Drone
   const updateUvHum = useCallback((intensityPct: number) => {
@@ -255,7 +235,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
     const ctx = audioCtxRef.current;
     if (!ctx) return;
 
-
     if (!uvHumOscRef.current) {
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
@@ -263,26 +242,21 @@ export default function PhosphorescentPersistentBentoExperiment() {
       osc.frequency.setValueAtTime(90, ctx.currentTime);
       gain.gain.setValueAtTime(0.0001, ctx.currentTime);
 
-
       osc.connect(gain);
       gain.connect(ctx.destination);
       osc.start();
-
 
       uvHumOscRef.current = osc;
       uvHumGainRef.current = gain;
     }
 
-
     const now = ctx.currentTime;
     const targetFreq = 90 + (intensityPct / 100) * 180; // 90Hz to 270Hz
     const targetGain = Math.min(0.05, (intensityPct / 100) * 0.05);
 
-
     uvHumOscRef.current.frequency.setTargetAtTime(targetFreq, now, 0.05);
     uvHumGainRef.current?.gain.setTargetAtTime(targetGain, now, 0.05);
   }, [initAudio, isAudioMuted]);
-
 
   useEffect(() => {
     updateUvHum(uvIntensity);
@@ -293,26 +267,22 @@ export default function PhosphorescentPersistentBentoExperiment() {
     };
   }, [uvIntensity, updateUvHum]);
 
-
   // --- KINETIC VARIABLE TYPOGRAPHY FORMULAS ---
   const dynamicFontWeight = useMemo(() => {
     // 300 (pure unexcited darkroom) up to 800 (100% photon saturation)
     return Math.min(800, Math.round(300 + averageLuminance * 500));
   }, [averageLuminance]);
 
-
   const dynamicGlowRadius = useMemo(() => {
     // Optical volumetric emission halo in pixels
     return Math.round(averageLuminance * 24);
   }, [averageLuminance]);
-
 
   // Thermal Quenching Trigger
   const handleThermalQuench = useCallback(() => {
     playShutterClickSound(1.3);
     playCrystalBellSound();
     setIsQuenching(true);
-
 
     // Reset all nodes
     const nodes = nodesRef.current;
@@ -321,12 +291,10 @@ export default function PhosphorescentPersistentBentoExperiment() {
     }
     setAverageLuminance(0.0);
 
-
     setTimeout(() => {
       setIsQuenching(false);
     }, 450);
   }, [playShutterClickSound, playCrystalBellSound]);
-
 
   // Preset Selection
   const handleSelectPreset = useCallback((preset: PhosphorPreset) => {
@@ -336,7 +304,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
     playShutterClickSound(0.8);
   }, [playShutterClickSound]);
 
-
   // --- 2D CANVAS BECQUEREL DECAY SHADER SIMULATION (60FPS) ---
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -344,27 +311,21 @@ export default function PhosphorescentPersistentBentoExperiment() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-
     let isRunning = true;
-
 
     const render = () => {
       if (!isRunning) return;
-
 
       const now = performance.now();
       const dt = (now - lastTimeRef.current) / 1000; // seconds
       lastTimeRef.current = now;
 
-
       const w = canvas.width;
       const h = canvas.height;
-
 
       // 1. Clear background
       ctx.fillStyle = selectedSubstrate.surfaceTone;
       ctx.fillRect(0, 0, w, h);
-
 
       // 2. Draw Subtle Precision Modular Grid
       ctx.strokeStyle = selectedSubstrate.borderColor;
@@ -383,7 +344,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
         ctx.stroke();
       }
 
-
       // 3. Compute Edmond Becquerel Power-Law Decay on Nodes
       // I(t) = I_0 / (1 + a * t)^m
       const nodes = nodesRef.current;
@@ -393,10 +353,8 @@ export default function PhosphorescentPersistentBentoExperiment() {
       const radiusSq = beamRadius * beamRadius;
       const excitationRate = (uvIntensity / 100) * 2.5;
 
-
       for (let i = 0; i < nodes.length; i++) {
         const node = nodes[i];
-
 
         // UV Excitation if painting or hovering near pen
         if (isPaintingRef.current) {
@@ -410,18 +368,14 @@ export default function PhosphorescentPersistentBentoExperiment() {
           }
         }
 
-
         // Becquerel Decay: dI/dt ~ -a * I^1.2
         const decayConstant = 0.045 / (selectedSubstrate.decayHalfLifeSec / 15);
         node.intensity = Math.max(0.0, node.intensity - decayConstant * Math.pow(node.intensity, 1.15) * dt * 60);
 
-
         totalLuminance += node.intensity;
       }
 
-
       setAverageLuminance(nodes.length > 0 ? totalLuminance / nodes.length : 0);
-
 
       // 4. Render Volumetric Phosphor Glow Field
       for (let i = 0; i < nodes.length; i++) {
@@ -432,14 +386,12 @@ export default function PhosphorescentPersistentBentoExperiment() {
           glowGrad.addColorStop(0.4, selectedSubstrate.glowColor);
           glowGrad.addColorStop(1, 'transparent');
 
-
           ctx.fillStyle = glowGrad;
           ctx.beginPath();
           ctx.arc(node.x, node.y, 22 * node.intensity, 0, Math.PI * 2);
           ctx.fill();
         }
       }
-
 
       // 5. Draw UV Light-Pen Pointer Tip
       ctx.fillStyle = '#8B5CF6';
@@ -450,7 +402,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
       ctx.lineWidth = 2;
       ctx.stroke();
 
-
       // Pen Beam Radius Guide
       ctx.strokeStyle = 'rgba(139, 92, 246, 0.4)';
       ctx.lineWidth = 1;
@@ -460,16 +411,13 @@ export default function PhosphorescentPersistentBentoExperiment() {
       ctx.stroke();
       ctx.setLineDash([]);
 
-
       // Readout
       ctx.fillStyle = selectedSubstrate.textColor;
       ctx.font = '10px monospace';
       ctx.fillText(`λ: ${selectedSubstrate.emissionWavelengthNm}nm · Φ: ${uvIntensity}%`, penX + 12, penY - 12);
 
-
       requestAnimationFrame(render);
     };
-
 
     const animId = requestAnimationFrame(render);
     return () => {
@@ -477,7 +425,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
       cancelAnimationFrame(animId);
     };
   }, [penPos, uvIntensity, beamRadius, selectedSubstrate]);
-
 
   // Handle Canvas Interaction
   const handleCanvasInteraction = (clientX: number, clientY: number) => {
@@ -487,10 +434,8 @@ export default function PhosphorescentPersistentBentoExperiment() {
     const nx = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
     const ny = Math.max(0, Math.min(1, (clientY - rect.top) / rect.height));
 
-
     setPenPos({ x: nx, y: ny });
   };
-
 
   return (
     <div
@@ -535,7 +480,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
           </div>
         </div>
 
-
         {/* Global Controls & Tools */}
         <div className="flex items-center gap-3 flex-wrap">
           {/* Substrate Selector */}
@@ -560,7 +504,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
             ))}
           </div>
 
-
           {/* Sound Toggle */}
           <button
             onClick={() => setIsAudioMuted(!isAudioMuted)}
@@ -571,7 +514,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
             <span>{isAudioMuted ? "🔇" : "🔮"}</span>
             <span className="hidden sm:inline">{isAudioMuted ? "MUTED" : "UV HUM SOUND"}</span>
           </button>
-
 
           {/* Fullscreen Toggle */}
           <button
@@ -589,13 +531,11 @@ export default function PhosphorescentPersistentBentoExperiment() {
         </div>
       </header>
 
-
       {/* MAIN CONTAINER */}
       <main className={`w-full mx-auto p-4 md:p-8 transition-all ${isFullscreen ? 'max-w-full' : 'max-w-7xl'}`}>
         
         {/* BENTO GRID ARCHITECTURE (6 INTERACTIVE MODULAR CELLS) */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch relative">
-
 
           {/* CELL 1: MONUMENTAL MONOGRAPH MASTHEAD (Span 8 Cols) */}
           <div
@@ -622,7 +562,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
               </div>
             </div>
 
-
             {/* Display Typography with Volumetric Phosphor Emission */}
             <div className="my-auto py-4">
               <span className="text-xs uppercase font-mono tracking-widest block mb-2 opacity-60">
@@ -644,7 +583,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
               </p>
             </div>
 
-
             {/* Bottom Coordinate Bar & Dynamic Metrics */}
             <div className="pt-6 border-t mt-6 flex flex-wrap items-center justify-between gap-4 text-xs font-mono" style={{ borderColor: selectedSubstrate.borderColor }}>
               <div className="flex items-center gap-4">
@@ -665,7 +603,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
             </div>
           </div>
 
-
           {/* CELL 2: UV INSCRIBER CONTROLS & THERMAL QUENCH SWITCH (Span 4 Cols) */}
           <div
             className="md:col-span-4 rounded-2xl border p-6 flex flex-col justify-between shadow-sm relative transition-all duration-300"
@@ -684,7 +621,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
                 </span>
               </div>
 
-
               {/* UV Photon Flux Slider */}
               <div className="mb-4">
                 <div className="flex justify-between text-xs font-mono mb-1.5 opacity-70">
@@ -700,7 +636,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
                   className="w-full accent-violet-500 cursor-pointer"
                 />
               </div>
-
 
               {/* Beam Radius Slider */}
               <div className="mb-4">
@@ -718,7 +653,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
                 />
               </div>
 
-
               {/* THERMAL QUENCHING BUTTON */}
               <div className="mb-4">
                 <button
@@ -732,7 +666,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
                   <span>INFRARED THERMAL QUENCH (RESET)</span>
                 </button>
               </div>
-
 
               {/* Presets Grid */}
               <div className="space-y-1.5">
@@ -761,12 +694,10 @@ export default function PhosphorescentPersistentBentoExperiment() {
               </div>
             </div>
 
-
             <div className="pt-3 border-t mt-3 text-[11px] font-mono opacity-60" style={{ borderColor: selectedSubstrate.borderColor }}>
               💡 캔버스 위를 클릭·드래그하여 자외선 광자 잔광을 직접 각인하세요.
             </div>
           </div>
-
 
           {/* CELL 3: 2D BECQUEREL DECAY SHADER CANVAS (Span 7 Cols) */}
           <div
@@ -794,7 +725,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
                 </span>
               </div>
 
-
               {/* Reset Pen */}
               <div className="flex items-center gap-2 text-xs font-mono">
                 <button
@@ -809,7 +739,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
                 </button>
               </div>
             </div>
-
 
             {/* Interactive Canvas */}
             <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border my-2 shadow-inner" style={{ borderColor: selectedSubstrate.borderColor }}>
@@ -839,7 +768,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
                 onTouchEnd={() => { isPaintingRef.current = false; }}
               />
 
-
               {/* Overlay Readout */}
               <div
                 className="absolute bottom-3 left-3 px-3 py-1.5 rounded-lg border backdrop-blur-md text-[11px] font-mono flex items-center gap-2 shadow-sm"
@@ -853,14 +781,12 @@ export default function PhosphorescentPersistentBentoExperiment() {
               </div>
             </div>
 
-
             {/* Bottom Caption */}
             <div className="flex items-center justify-between text-xs font-mono opacity-60 pt-3">
               <span>DRAG 365NM LIGHT PEN ACROSS LATTICE</span>
               <span>Edmond Becquerel 1867 Photophysics</span>
             </div>
           </div>
-
 
           {/* CELL 4: LUMINESCENCE-COUPLED VARIABLE TYPOGRAPHY (Span 5 Cols) */}
           <div
@@ -879,7 +805,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
                   wght: {dynamicFontWeight}
                 </span>
               </div>
-
 
               <div
                 className="p-4 rounded-xl border mb-4 relative overflow-hidden"
@@ -907,7 +832,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
                 </div>
               </div>
 
-
               {/* Weight & Decay Axis Inspectors */}
               <div className="space-y-3 font-mono text-xs">
                 <div>
@@ -925,7 +849,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
                     />
                   </div>
                 </div>
-
 
                 <div>
                   <div className="flex justify-between text-[11px] mb-1 opacity-70">
@@ -945,13 +868,11 @@ export default function PhosphorescentPersistentBentoExperiment() {
               </div>
             </div>
 
-
             <div className="pt-4 border-t mt-4 flex items-center justify-between text-xs font-mono opacity-60" style={{ borderColor: selectedSubstrate.borderColor }}>
               <span>QUANTUM TRAP STATES</span>
               <span>METASTABLE PHOTON EMISSION</span>
             </div>
           </div>
-
 
           {/* CELL 5: PHOSPHOR CRYSTAL SPECIFICATIONS (Span 6 Cols) */}
           <div
@@ -971,11 +892,9 @@ export default function PhosphorescentPersistentBentoExperiment() {
                 </span>
               </div>
 
-
               <p className="text-xs font-sans opacity-80 leading-relaxed mb-4">
                 {selectedSubstrate.descKo}
               </p>
-
 
               {/* Material Physics Parameters Table */}
               <div className="grid grid-cols-3 gap-3 font-mono text-xs">
@@ -985,13 +904,11 @@ export default function PhosphorescentPersistentBentoExperiment() {
                   <div className="text-[10px] opacity-50">Nanometers</div>
                 </div>
 
-
                 <div className="p-3 rounded-xl border" style={{ borderColor: selectedSubstrate.borderColor }}>
                   <div className="text-[10px] opacity-60">HALF-LIFE (t_1/2)</div>
                   <div className="text-base font-bold mt-0.5">{selectedSubstrate.decayHalfLifeSec}s</div>
                   <div className="text-[10px] opacity-50">Becquerel Pacing</div>
                 </div>
-
 
                 <div className="p-3 rounded-xl border" style={{ borderColor: selectedSubstrate.borderColor }}>
                   <div className="text-[10px] opacity-60">TRAP STATE</div>
@@ -1003,7 +920,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
               </div>
             </div>
 
-
             <div className="pt-4 border-t mt-4 flex items-center justify-between text-xs font-mono" style={{ borderColor: selectedSubstrate.borderColor }}>
               <span className="opacity-60">SPECTRAL RETARDATION RESOLVED</span>
               <span className="font-bold text-violet-400">
@@ -1011,7 +927,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
               </span>
             </div>
           </div>
-
 
           {/* CELL 6: TACTILE DARKROOM SOUNDBOARD (Span 6 Cols) */}
           <div
@@ -1031,11 +946,9 @@ export default function PhosphorescentPersistentBentoExperiment() {
                 </span>
               </div>
 
-
               <p className="text-xs font-sans opacity-70 mb-4">
                 기계식 포컬플레인 카메라 셔터 틱음, UV 광자 여기 전하 험, 그리고 열 소광 시의 맑고 영롱한 880Hz 석영 수정 차임을 연주하세요.
               </p>
-
 
               {/* Soundboard Buttons Matrix */}
               <div className="grid grid-cols-4 gap-2 mb-4">
@@ -1065,16 +978,13 @@ export default function PhosphorescentPersistentBentoExperiment() {
               </div>
             </div>
 
-
             <div className="pt-3 border-t flex items-center justify-between text-[11px] font-mono opacity-60" style={{ borderColor: selectedSubstrate.borderColor }}>
               <span>Mechanical Shutter Snaps + 880Hz Quartz Bell Chimes</span>
               <span>Zero-Fatigue Tactile Haptics</span>
             </div>
           </div>
 
-
         </div>
-
 
         {/* FOOTER EDITORIAL SUMMARY */}
         <footer
@@ -1090,7 +1000,6 @@ export default function PhosphorescentPersistentBentoExperiment() {
             <span>AESTHETIC PARADIGM: PHOSPHORESCENT BENTO</span>
           </div>
         </footer>
-
 
       </main>
     </div>

@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
+"use client";
 
+import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 
 // --- TYPES & INTERFACES ---
 interface SpacetimeSubstrate {
@@ -16,7 +17,6 @@ interface SpacetimeSubstrate {
   descKo: string;
 }
 
-
 interface SingularityPreset {
   id: string;
   nameKo: string;
@@ -25,7 +25,6 @@ interface SingularityPreset {
   deflectionMultiplier: number;
   descKo: string;
 }
-
 
 const SUBSTRATES: SpacetimeSubstrate[] = [
   {
@@ -69,7 +68,6 @@ const SUBSTRATES: SpacetimeSubstrate[] = [
   }
 ];
 
-
 const PRESETS: SingularityPreset[] = [
   {
     id: 'supermassive_kerr_core',
@@ -105,7 +103,6 @@ const PRESETS: SingularityPreset[] = [
   }
 ];
 
-
 export default function RelativisticSpacetimeBentoExperiment() {
   // --- STATE ---
   const [selectedSubstrate, setSelectedSubstrate] = useState<SpacetimeSubstrate>(SUBSTRATES[0]);
@@ -117,7 +114,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
   const [singularityPos, setSingularityPos] = useState<{ x: number; y: number }>({ x: 0.5, y: 0.45 });
   const [stageTilt, setStageTilt] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
 
-
   // References
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const audioCtxRef = useRef<AudioContext | null>(null);
@@ -128,7 +124,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
   const droneGainRef = useRef<GainNode | null>(null);
   const lastMousePosRef = useRef<{ x: number; y: number; time: number }>({ x: 0, y: 0, time: 0 });
 
-
   // Distance from Singularity to Masthead Text Center (normalized approx 0.35, 0.4)
   const distToHeadline = useMemo(() => {
     const dx = singularityPos.x - 0.35;
@@ -136,12 +131,10 @@ export default function RelativisticSpacetimeBentoExperiment() {
     return Math.sqrt(dx * dx + dy * dy);
   }, [singularityPos]);
 
-
   // Is within Critical Einstein Ring Alignment Zone (r < 0.12)
   const isRingAligned = useMemo(() => {
     return distToHeadline < 0.12 && massSolar > 10;
   }, [distToHeadline, massSolar]);
-
 
   // --- AUDIO SYNTHESIS ENGINE ---
   const initAudio = useCallback(() => {
@@ -154,7 +147,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
     }
   }, []);
 
-
   // Gravitational Wave Inspiral Chirp Sound Sweep
   const playGravitationalChirpSound = useCallback((intensity: number = 1.0) => {
     if (isAudioMuted) return;
@@ -162,28 +154,23 @@ export default function RelativisticSpacetimeBentoExperiment() {
     const ctx = audioCtxRef.current;
     if (!ctx) return;
 
-
     const now = ctx.currentTime;
     const osc = ctx.createOscillator();
     const gain = ctx.createGain();
-
 
     // LIGO-style inspiral chirp upward sweep (35Hz to 260Hz)
     osc.type = 'sine';
     osc.frequency.setValueAtTime(45, now);
     osc.frequency.exponentialRampToValueAtTime(280, now + 0.18);
 
-
     gain.gain.setValueAtTime(0.35 * intensity, now);
     gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.22);
-
 
     osc.connect(gain);
     gain.connect(ctx.destination);
     osc.start(now);
     osc.stop(now + 0.25);
   }, [initAudio, isAudioMuted]);
-
 
   // Spacetime Metric Curvature Continuous Hum Drone
   const updateMetricDrone = useCallback((mass: number) => {
@@ -192,7 +179,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
     const ctx = audioCtxRef.current;
     if (!ctx) return;
 
-
     if (!droneOscRef.current) {
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
@@ -200,26 +186,21 @@ export default function RelativisticSpacetimeBentoExperiment() {
       osc.frequency.setValueAtTime(48, ctx.currentTime);
       gain.gain.setValueAtTime(0.0001, ctx.currentTime);
 
-
       osc.connect(gain);
       gain.connect(ctx.destination);
       osc.start();
-
 
       droneOscRef.current = osc;
       droneGainRef.current = gain;
     }
 
-
     const now = ctx.currentTime;
     const targetFreq = 42 + (mass / 50) * 48; // 42Hz to 90Hz deep gravitational hum
     const targetGain = Math.min(0.07, (mass / 50) * 0.07);
 
-
     droneOscRef.current.frequency.setTargetAtTime(targetFreq, now, 0.05);
     droneGainRef.current?.gain.setTargetAtTime(targetGain, now, 0.05);
   }, [initAudio, isAudioMuted]);
-
 
   useEffect(() => {
     updateMetricDrone(massSolar);
@@ -230,7 +211,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
     };
   }, [massSolar, updateMetricDrone]);
 
-
   // --- KINETIC VARIABLE TYPOGRAPHY FORMULAS ---
   const dynamicFontWeight = useMemo(() => {
     // Redshift dilation swells weight from 300 up to 800
@@ -239,13 +219,11 @@ export default function RelativisticSpacetimeBentoExperiment() {
     return Math.min(800, Math.round(300 + proximityFactor * massFactor * 500));
   }, [distToHeadline, massSolar]);
 
-
   const dynamicTracking = useMemo(() => {
     // Gravitational time dilation expands tracking
     const proximityFactor = Math.max(0, 1 - distToHeadline / 0.5);
     return ((massSolar / 50) * proximityFactor * 0.08).toFixed(3);
   }, [distToHeadline, massSolar]);
-
 
   // Flat Spacetime Restitution (Zero Mass)
   const handleZeroMassRestitution = useCallback(() => {
@@ -253,7 +231,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
     setMassSolar(0);
     setWarpRadius(0);
   }, [playGravitationalChirpSound]);
-
 
   // Preset Selection
   const handleSelectPreset = useCallback((preset: SingularityPreset) => {
@@ -263,7 +240,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
     playGravitationalChirpSound(0.9);
   }, [playGravitationalChirpSound]);
 
-
   // --- 2D CANVAS RELATIVISTIC LENSING & GEODESIC SHADER (60FPS) ---
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -271,36 +247,28 @@ export default function RelativisticSpacetimeBentoExperiment() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-
     let isRunning = true;
-
 
     const render = () => {
       if (!isRunning) return;
 
-
       const w = canvas.width;
       const h = canvas.height;
-
 
       // 1. Clear background
       ctx.fillStyle = selectedSubstrate.surfaceTone;
       ctx.fillRect(0, 0, w, h);
-
 
       const sX = singularityPos.x * w;
       const sY = singularityPos.y * h;
       const currentMass = massSolar;
       const rWarp = warpRadius;
 
-
       // 2. Render Curved Spacetime Geodesic Grid Lines
       ctx.strokeStyle = selectedSubstrate.borderColor;
       ctx.lineWidth = 1;
 
-
       const step = 28;
-
 
       // Vertical Geodesics
       for (let x = 0; x <= w; x += step) {
@@ -310,10 +278,8 @@ export default function RelativisticSpacetimeBentoExperiment() {
           const dy = y - sY;
           const r = Math.sqrt(dx * dx + dy * dy);
 
-
           let px = x;
           let py = y;
-
 
           if (currentMass > 0 && r > 2) {
             // Deflection angle alpha ~ 4GM / c^2 r
@@ -323,13 +289,11 @@ export default function RelativisticSpacetimeBentoExperiment() {
             py = y - dy * factor;
           }
 
-
           if (y === 0) ctx.moveTo(px, py);
           else ctx.lineTo(px, py);
         }
         ctx.stroke();
       }
-
 
       // Horizontal Geodesics
       for (let y = 0; y <= h; y += step) {
@@ -339,10 +303,8 @@ export default function RelativisticSpacetimeBentoExperiment() {
           const dy = y - sY;
           const r = Math.sqrt(dx * dx + dy * dy);
 
-
           let px = x;
           let py = y;
-
 
           if (currentMass > 0 && r > 2) {
             const deflection = (currentMass * 32) / (r + 15);
@@ -351,18 +313,15 @@ export default function RelativisticSpacetimeBentoExperiment() {
             py = y - dy * factor;
           }
 
-
           if (x === 0) ctx.moveTo(px, py);
           else ctx.lineTo(px, py);
         }
         ctx.stroke();
       }
 
-
       // 3. Render Concentric Einstein Rings & Accretion Halo
       if (currentMass > 5) {
         const einsteinRadius = Math.sqrt(currentMass * 85);
-
 
         // Volumetric Glow Halo
         const haloGrad = ctx.createRadialGradient(sX, sY, einsteinRadius * 0.4, sX, sY, einsteinRadius * 1.8);
@@ -371,12 +330,10 @@ export default function RelativisticSpacetimeBentoExperiment() {
         haloGrad.addColorStop(0.8, selectedSubstrate.glowColor);
         haloGrad.addColorStop(1, 'transparent');
 
-
         ctx.fillStyle = haloGrad;
         ctx.beginPath();
         ctx.arc(sX, sY, einsteinRadius * 1.8, 0, Math.PI * 2);
         ctx.fill();
-
 
         // Sharp Einstein Ring Light Arc
         ctx.strokeStyle = selectedSubstrate.accentColor;
@@ -388,7 +345,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
         ctx.stroke();
         ctx.shadowBlur = 0;
 
-
         // Photon Sphere Inner Boundary (r = 1.5 r_s)
         ctx.strokeStyle = '#F59E0B';
         ctx.lineWidth = 1;
@@ -398,7 +354,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
         ctx.stroke();
         ctx.setLineDash([]);
       }
-
 
       // 4. Black Hole Event Horizon Core
       const horizonRadius = Math.max(6, currentMass * 0.45);
@@ -410,16 +365,13 @@ export default function RelativisticSpacetimeBentoExperiment() {
       ctx.lineWidth = 1.5;
       ctx.stroke();
 
-
       // Readout Coordinates Tag
       ctx.fillStyle = selectedSubstrate.textColor;
       ctx.font = '10px monospace';
       ctx.fillText(`M: ${currentMass} M☉ · θ_E: ${Math.round(Math.sqrt(currentMass * 85))}px`, sX + horizonRadius + 10, sY - 10);
 
-
       requestAnimationFrame(render);
     };
-
 
     const animId = requestAnimationFrame(render);
     return () => {
@@ -427,7 +379,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
       cancelAnimationFrame(animId);
     };
   }, [singularityPos, massSolar, warpRadius, isRingAligned, selectedSubstrate]);
-
 
   // Handle Dragging Gravitational Singularity
   const handleCanvasInteraction = (clientX: number, clientY: number) => {
@@ -437,23 +388,19 @@ export default function RelativisticSpacetimeBentoExperiment() {
     const nx = Math.max(0.05, Math.min(0.95, (clientX - rect.left) / rect.width));
     const ny = Math.max(0.05, Math.min(0.95, (clientY - rect.top) / rect.height));
 
-
     const now = performance.now();
     const dt = Math.max(1, now - lastMousePosRef.current.time);
     const dx = nx - lastMousePosRef.current.x;
     const dy = ny - lastMousePosRef.current.y;
     const speed = Math.sqrt(dx * dx + dy * dy) / dt;
 
-
     lastMousePosRef.current = { x: nx, y: ny, time: now };
     setSingularityPos({ x: nx, y: ny });
-
 
     if (speed > 0.001) {
       playGravitationalChirpSound(0.2);
     }
   };
-
 
   return (
     <div
@@ -497,7 +444,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
           </div>
         </div>
 
-
         {/* Global Controls & Tools */}
         <div className="flex items-center gap-3 flex-wrap">
           {/* Substrate Selector */}
@@ -522,7 +468,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
             ))}
           </div>
 
-
           {/* Sound Toggle */}
           <button
             onClick={() => setIsAudioMuted(!isAudioMuted)}
@@ -533,7 +478,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
             <span>{isAudioMuted ? "🔇" : "🌌"}</span>
             <span className="hidden sm:inline">{isAudioMuted ? "MUTED" : "METRIC DRONE"}</span>
           </button>
-
 
           {/* Fullscreen Toggle */}
           <button
@@ -551,13 +495,11 @@ export default function RelativisticSpacetimeBentoExperiment() {
         </div>
       </header>
 
-
       {/* MAIN CONTAINER */}
       <main className={`w-full mx-auto p-4 md:p-8 transition-all ${isFullscreen ? 'max-w-full' : 'max-w-7xl'}`}>
         
         {/* BENTO GRID ARCHITECTURE (6 INTERACTIVE MODULAR CELLS) */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch relative">
-
 
           {/* CELL 1: MONUMENTAL MONOGRAPH MASTHEAD (Span 8 Cols) */}
           <div
@@ -589,7 +531,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
               </div>
             </div>
 
-
             {/* Display Typography with Gravitational Redshift Dilation */}
             <div className="my-auto py-4">
               <span className="text-xs uppercase font-mono tracking-widest block mb-2 opacity-60">
@@ -609,7 +550,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
                 단순 멱법칙 줌 클리셰를 극복하고, 2차원 슈바르츠실트 시공간 계량과 아인슈타인 중력 렌즈 편향각(α = 4GM/c²b)을 스위스 벤토 그리드 건축에 전격 이식하여, 특이점 배후에서 눈부신 동심원 아인슈타인 링으로 타오르는 상대론적 에디토리얼 파빌리온.
               </p>
             </div>
-
 
             {/* Bottom Coordinate Bar & Dynamic Metrics */}
             <div className="pt-6 border-t mt-6 flex flex-wrap items-center justify-between gap-4 text-xs font-mono" style={{ borderColor: selectedSubstrate.borderColor }}>
@@ -631,7 +571,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
             </div>
           </div>
 
-
           {/* CELL 2: SINGULARITY MASS CONTROLS & ZERO MASS SWITCH (Span 4 Cols) */}
           <div
             className="md:col-span-4 rounded-2xl border p-6 flex flex-col justify-between shadow-md relative transition-all duration-300"
@@ -649,7 +588,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
                   {massSolar} M☉ Solar Mass
                 </span>
               </div>
-
 
               {/* Solar Mass Slider */}
               <div className="mb-3">
@@ -670,7 +608,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
                 />
               </div>
 
-
               {/* Warp Radius Slider */}
               <div className="mb-4">
                 <div className="flex justify-between text-xs font-mono mb-1 opacity-70">
@@ -687,7 +624,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
                 />
               </div>
 
-
               {/* ZERO MASS MINKOWSKI RESTITUTION BUTTON */}
               <div className="mb-4">
                 <button
@@ -699,7 +635,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
                   <span>ZERO-MASS FLAT METRIC (0 M☉)</span>
                 </button>
               </div>
-
 
               {/* Presets Grid */}
               <div className="space-y-1.5">
@@ -728,12 +663,10 @@ export default function RelativisticSpacetimeBentoExperiment() {
               </div>
             </div>
 
-
             <div className="pt-3 border-t mt-3 text-[11px] font-mono opacity-60" style={{ borderColor: selectedSubstrate.borderColor }}>
               💡 캔버스 위의 블랙홀 중심을 드래그하여 시공간을 직접 왜곡하세요.
             </div>
           </div>
-
 
           {/* CELL 3: 2D RELATIVISTIC GEODESIC & EINSTEIN RING VIEWPORT (Span 7 Cols) */}
           <div
@@ -765,7 +698,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
                 </span>
               </div>
 
-
               {/* Center Singularity */}
               <div className="flex items-center gap-2 text-xs font-mono">
                 <button
@@ -780,7 +712,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
                 </button>
               </div>
             </div>
-
 
             {/* Interactive Ray-Tracing Canvas */}
             <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border my-2 shadow-inner" style={{ borderColor: selectedSubstrate.borderColor }}>
@@ -810,7 +741,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
                 onTouchEnd={() => { isDraggingSingularityRef.current = false; }}
               />
 
-
               {/* Overlay Readout */}
               <div
                 className="absolute bottom-3 left-3 px-3 py-1.5 rounded-lg border backdrop-blur-md text-[11px] font-mono flex items-center gap-2 shadow-sm"
@@ -826,14 +756,12 @@ export default function RelativisticSpacetimeBentoExperiment() {
               </div>
             </div>
 
-
             {/* Bottom Caption */}
             <div className="flex items-center justify-between text-xs font-mono opacity-60 pt-3">
               <span>DRAG BLACK HOLE OVER TYPOGRAPHIC MODULE</span>
               <span>ds² = -(1 - 2GM/c²r)c²dt² + ...</span>
             </div>
           </div>
-
 
           {/* CELL 4: GRAVITATIONAL REDSHIFT TYPOGRAPHY (Span 5 Cols) */}
           <div
@@ -852,7 +780,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
                   wght: {dynamicFontWeight}
                 </span>
               </div>
-
 
               <div
                 className="p-4 rounded-xl border mb-4 relative overflow-hidden"
@@ -879,7 +806,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
                 </div>
               </div>
 
-
               {/* Weight & Redshift Inspectors */}
               <div className="space-y-3 font-mono text-xs">
                 <div>
@@ -898,7 +824,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
                   </div>
                 </div>
 
-
                 <div>
                   <div className="flex justify-between text-[11px] mb-1 opacity-70">
                     <span>Gravitational Time Dilation Tracking</span>
@@ -914,13 +839,11 @@ export default function RelativisticSpacetimeBentoExperiment() {
               </div>
             </div>
 
-
             <div className="pt-4 border-t mt-4 flex items-center justify-between text-xs font-mono opacity-60" style={{ borderColor: selectedSubstrate.borderColor }}>
               <span>ALBERT EINSTEIN</span>
               <span>1915 GENERAL RELATIVITY</span>
             </div>
           </div>
-
 
           {/* CELL 5: SCHWARZSCHILD ASTROPHYSICAL PARAMETERS (Span 6 Cols) */}
           <div
@@ -940,11 +863,9 @@ export default function RelativisticSpacetimeBentoExperiment() {
                 </span>
               </div>
 
-
               <p className="text-xs font-sans opacity-80 leading-relaxed mb-4">
                 {selectedSubstrate.descKo}
               </p>
-
 
               {/* Physical Parameters Grid */}
               <div className="grid grid-cols-3 gap-3 font-mono text-xs">
@@ -954,13 +875,11 @@ export default function RelativisticSpacetimeBentoExperiment() {
                   <div className="text-[10px] opacity-50">Kilometers</div>
                 </div>
 
-
                 <div className="p-3 rounded-xl border" style={{ borderColor: selectedSubstrate.borderColor }}>
                   <div className="text-[10px] opacity-60">EINSTEIN RADIUS θ_E</div>
                   <div className="text-base font-bold mt-0.5">{Math.round(Math.sqrt(massSolar * 85))}</div>
                   <div className="text-[10px] opacity-50">Pixels Radius</div>
                 </div>
-
 
                 <div className="p-3 rounded-xl border" style={{ borderColor: selectedSubstrate.borderColor }}>
                   <div className="text-[10px] opacity-60">METRIC STATE</div>
@@ -972,7 +891,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
               </div>
             </div>
 
-
             <div className="pt-4 border-t mt-4 flex items-center justify-between text-xs font-mono" style={{ borderColor: selectedSubstrate.borderColor }}>
               <span className="opacity-60">GEODESIC DEVIATION RESOLVED</span>
               <span className="font-bold text-cyan-400">
@@ -980,7 +898,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
               </span>
             </div>
           </div>
-
 
           {/* CELL 6: TACTILE LIGO ASTROPHYSICS SOUNDBOARD (Span 6 Cols) */}
           <div
@@ -1000,11 +917,9 @@ export default function RelativisticSpacetimeBentoExperiment() {
                 </span>
               </div>
 
-
               <p className="text-xs font-sans opacity-70 mb-4">
                 LIGO 중력파 관측소 스타일의 첩(Chirp) 글리산도, 시공간 프레임 드래깅 기저 험, 그리고 아인슈타인 링 결착 시의 맑고 영롱한 공명음을 연주하세요.
               </p>
-
 
               {/* Soundboard Buttons Matrix */}
               <div className="grid grid-cols-4 gap-2 mb-4">
@@ -1034,16 +949,13 @@ export default function RelativisticSpacetimeBentoExperiment() {
               </div>
             </div>
 
-
             <div className="pt-3 border-t flex items-center justify-between text-[11px] font-mono opacity-60" style={{ borderColor: selectedSubstrate.borderColor }}>
               <span>LIGO Inspiral Chirp Sweeps + Sub-Bass Metric Drones</span>
               <span>Zero-Fatigue Tactile Haptics</span>
             </div>
           </div>
 
-
         </div>
-
 
         {/* FOOTER EDITORIAL SUMMARY */}
         <footer
@@ -1059,7 +971,6 @@ export default function RelativisticSpacetimeBentoExperiment() {
             <span>AESTHETIC PARADIGM: RELATIVISTIC SPACETIME BENTO</span>
           </div>
         </footer>
-
 
       </main>
     </div>

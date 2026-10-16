@@ -1,0 +1,31 @@
+{
+  "day": 44,
+  "date": "2026-10-15",
+  "title": "Steamy Window Bento & Condensation Fluid Shaders: Tactile Finger Tracing, Droplet Coalescence Kinetics & Swiss Cyber-Editorial Architecture",
+  "palette": {
+    "frost_obsidian": "#0A0D14",
+    "mist_basalt": "#121824",
+    "condensation_cyan": "#00F0FF",
+    "thermal_coil_orange": "#FF4500",
+    "bristol_ivory": "#FAF8F5",
+    "droplet_specular": "rgba(255, 255, 255, 0.85)",
+    "milled_brass": "#C5A059",
+    "steamy_glass_blur": "rgba(230, 240, 250, 0.45)"
+  },
+  "ai_image_prompts": [
+    {
+      "id": "steamy_window_bento_macro",
+      "prompt": "Macro architectural studio photograph of a cold, condensation-streaked glass window, human fingertip wiping a clear rectangular aperture through the fog, revealing sharp Swiss International Typographic Style layout beneath with black ink and international orange accents, tiny water droplets beading and trickling down the glass, soft volumetric morning daylight, shot on Hasselblad H6D-100c, 8K resolution, museum lighting, ultra-realistic texture."
+    },
+    {
+      "id": "droplet_coalescence_detail",
+      "prompt": "Extreme macro close-up of water droplets coalescing on cold float glass, refractive caustic reflections of minimalist Swiss typography, high surface tension curvature, pristine editorial lighting, hyper-detailed, depth of field."
+    }
+  ],
+  "motion_blueprints": [
+    {
+      "id": "droplet_gravity_runoff",
+      "description": "Simulating Rayleigh-Plateau fluid instability where water droplets at the upper edge of cleared glass exceed the critical capillary pinning force (F_cap < F_grav) and slide downward along the vertical card borders at 60fps."
+    }
+  ]
+}

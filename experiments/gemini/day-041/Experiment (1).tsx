@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
+"use client";
 
+import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 
 // --- TYPES & INTERFACES ---
 interface MaterialSubstrate {
@@ -16,7 +17,6 @@ interface MaterialSubstrate {
   descKo: string;
 }
 
-
 interface PerspectivePreset {
   id: string;
   nameKo: string;
@@ -26,7 +26,6 @@ interface PerspectivePreset {
   perspectivePx: number; // 600 to 1800
   descKo: string;
 }
-
 
 const SUBSTRATES: MaterialSubstrate[] = [
   {
@@ -70,7 +69,6 @@ const SUBSTRATES: MaterialSubstrate[] = [
   }
 ];
 
-
 const PRESETS: PerspectivePreset[] = [
   {
     id: 'holbein_skull_oblique',
@@ -110,7 +108,6 @@ const PRESETS: PerspectivePreset[] = [
   }
 ];
 
-
 export default function AnamorphicSpatialBentoExperiment() {
   // --- STATE ---
   const [selectedSubstrate, setSelectedSubstrate] = useState<MaterialSubstrate>(SUBSTRATES[0]);
@@ -123,32 +120,27 @@ export default function AnamorphicSpatialBentoExperiment() {
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
   const [isDraggingCanvas, setIsDraggingCanvas] = useState<boolean>(false);
 
-
   // References
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const audioCtxRef = useRef<AudioContext | null>(null);
   const lastMousePosRef = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
   const hasTriggeredLockAudioRef = useRef<boolean>(false);
 
-
   // Angular Distance to Singular Vantage Point (0, 0, 0)
   const angularDistance = useMemo(() => {
     return Math.sqrt(pitch * pitch + yaw * yaw + roll * roll);
   }, [pitch, yaw, roll]);
-
 
   // Is within Vantage Point Singularity Lock (|Δ| < 3.5°)
   const isVantageLocked = useMemo(() => {
     return angularDistance < 3.5;
   }, [angularDistance]);
 
-
   // Anamorphic Stretch Factor: S ~ 1 / cos(view angle)
   const anamorphicStretch = useMemo(() => {
     const rad = (Math.max(Math.abs(pitch), Math.abs(yaw)) * Math.PI) / 180;
     return (1 / Math.max(0.2, Math.cos(rad))).toFixed(2);
   }, [pitch, yaw]);
-
 
   // --- AUDIO SYNTHESIS ENGINE ---
   const initAudio = useCallback(() => {
@@ -161,7 +153,6 @@ export default function AnamorphicSpatialBentoExperiment() {
     }
   }, []);
 
-
   // Mechanical Camera Lens Barrel Ratchet Click Snap
   const playLensRatchetClick = useCallback((intensity: number = 1.0) => {
     if (isAudioMuted) return;
@@ -169,27 +160,22 @@ export default function AnamorphicSpatialBentoExperiment() {
     const ctx = audioCtxRef.current;
     if (!ctx) return;
 
-
     const now = ctx.currentTime;
     const osc = ctx.createOscillator();
     const gain = ctx.createGain();
-
 
     osc.type = 'triangle';
     osc.frequency.setValueAtTime(1450, now);
     osc.frequency.exponentialRampToValueAtTime(220, now + 0.04);
 
-
     gain.gain.setValueAtTime(0.3 * intensity, now);
     gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.07);
-
 
     osc.connect(gain);
     gain.connect(ctx.destination);
     osc.start(now);
     osc.stop(now + 0.08);
   }, [initAudio, isAudioMuted]);
-
 
   // Pure 1200Hz Crystalline Focal Bell Chime upon Vantage Lock
   const playVantageLockChime = useCallback(() => {
@@ -198,27 +184,22 @@ export default function AnamorphicSpatialBentoExperiment() {
     const ctx = audioCtxRef.current;
     if (!ctx) return;
 
-
     const now = ctx.currentTime;
     const osc = ctx.createOscillator();
     const gain = ctx.createGain();
-
 
     osc.type = 'sine';
     osc.frequency.setValueAtTime(1200, now); // Pure harmonic
     osc.frequency.exponentialRampToValueAtTime(600, now + 0.7);
 
-
     gain.gain.setValueAtTime(0.35, now);
     gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.85);
-
 
     osc.connect(gain);
     gain.connect(ctx.destination);
     osc.start(now);
     osc.stop(now + 0.9);
   }, [initAudio, isAudioMuted]);
-
 
   // Trigger Lock Audio once when crossing threshold
   useEffect(() => {
@@ -231,7 +212,6 @@ export default function AnamorphicSpatialBentoExperiment() {
     }
   }, [isVantageLocked, playVantageLockChime, playLensRatchetClick]);
 
-
   // --- KINETIC VARIABLE TYPOGRAPHY FORMULAS ---
   const dynamicFontWeight = useMemo(() => {
     // Weight swells from 300 (extreme oblique) up to 800 (singular vantage lock)
@@ -239,13 +219,11 @@ export default function AnamorphicSpatialBentoExperiment() {
     return Math.min(800, Math.round(300 + factor * 500));
   }, [angularDistance]);
 
-
   const dynamicFontWidth = useMemo(() => {
     // Width compensates yaw foreshortening: expands up to 125%
     const yawRad = (Math.abs(yaw) * Math.PI) / 180;
     return Math.min(130, Math.round(100 / Math.max(0.75, Math.cos(yawRad))));
   }, [yaw]);
-
 
   // Snap to Singular Vantage Point Lock
   const handleSnapToVantage = useCallback(() => {
@@ -257,7 +235,6 @@ export default function AnamorphicSpatialBentoExperiment() {
     playVantageLockChime();
   }, [playLensRatchetClick, playVantageLockChime]);
 
-
   // Preset Selection
   const handleSelectPreset = useCallback((preset: PerspectivePreset) => {
     setSelectedPreset(preset);
@@ -268,7 +245,6 @@ export default function AnamorphicSpatialBentoExperiment() {
     playLensRatchetClick(0.9);
   }, [playLensRatchetClick]);
 
-
   // --- 2D HOMOGRAPHY PROJECTION CANVAS (60FPS) ---
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -276,22 +252,17 @@ export default function AnamorphicSpatialBentoExperiment() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-
     let isRunning = true;
-
 
     const render = () => {
       if (!isRunning) return;
 
-
       const w = canvas.width;
       const h = canvas.height;
-
 
       // 1. Clear background
       ctx.fillStyle = selectedSubstrate.surfaceTone;
       ctx.fillRect(0, 0, w, h);
-
 
       // 2. Compute 3x3 Projective Homography Simulation on Perspective Grid
       const cx = w / 2;
@@ -299,19 +270,15 @@ export default function AnamorphicSpatialBentoExperiment() {
       const pitchRad = (pitch * Math.PI) / 180;
       const yawRad = (yaw * Math.PI) / 180;
 
-
       ctx.save();
       ctx.translate(cx, cy);
-
 
       // 3. Draw Projected Spatial Coordinate Grid Lines
       ctx.strokeStyle = selectedSubstrate.borderColor;
       ctx.lineWidth = 1;
 
-
       const gridRange = 160;
       const step = 40;
-
 
       for (let x = -gridRange; x <= gridRange; x += step) {
         ctx.beginPath();
@@ -322,17 +289,14 @@ export default function AnamorphicSpatialBentoExperiment() {
           const z = 300 + x * Math.sin(yawRad) + y * Math.sin(pitchRad);
           const scale = perspectiveDist / Math.max(100, z);
 
-
           const px = rotX * scale;
           const py = rotY * scale;
-
 
           if (y === -gridRange) ctx.moveTo(px, py);
           else ctx.lineTo(px, py);
         }
         ctx.stroke();
       }
-
 
       for (let y = -gridRange; y <= gridRange; y += step) {
         ctx.beginPath();
@@ -342,10 +306,8 @@ export default function AnamorphicSpatialBentoExperiment() {
           const z = 300 + x * Math.sin(yawRad) + y * Math.sin(pitchRad);
           const scale = perspectiveDist / Math.max(100, z);
 
-
           const px = rotX * scale;
           const py = rotY * scale;
-
 
           if (x === -gridRange) ctx.moveTo(px, py);
           else ctx.lineTo(px, py);
@@ -353,20 +315,17 @@ export default function AnamorphicSpatialBentoExperiment() {
         ctx.stroke();
       }
 
-
       // 4. Draw Projected Anamorphic Letterform Ribbon Stems
       ctx.strokeStyle = isVantageLocked ? selectedSubstrate.accentColor : '#4B5563';
       ctx.lineWidth = isVantageLocked ? 3 : 1.5;
       ctx.shadowColor = isVantageLocked ? selectedSubstrate.glowColor : 'transparent';
       ctx.shadowBlur = isVantageLocked ? 15 : 0;
 
-
       // Draw stylized "H" and "O" anamorphic skull glyph vectors
       const glyphPoints = [
         [-80, -60], [-80, 60], [-80, 0], [0, 0], [0, -60], [0, 60], // H
         [30, -60], [80, -60], [80, 60], [30, 60], [30, -60]         // O
       ];
-
 
       ctx.beginPath();
       for (let i = 0; i < glyphPoints.length; i++) {
@@ -376,20 +335,16 @@ export default function AnamorphicSpatialBentoExperiment() {
         const z = 300 + gx * Math.sin(yawRad) + gy * Math.sin(pitchRad);
         const scale = perspectiveDist / Math.max(100, z);
 
-
         const px = rotX * scale;
         const py = rotY * scale;
-
 
         if (i === 0 || i === 2 || i === 6) ctx.moveTo(px, py);
         else ctx.lineTo(px, py);
       }
       ctx.stroke();
 
-
       // 5. Draw Optical Center Vantage Reticle
       ctx.restore();
-
 
       ctx.strokeStyle = isVantageLocked ? '#10B981' : 'rgba(156, 163, 175, 0.4)';
       ctx.lineWidth = 1;
@@ -401,16 +356,13 @@ export default function AnamorphicSpatialBentoExperiment() {
       ctx.lineTo(cx, cy + 24);
       ctx.stroke();
 
-
       // Vantage Point Text
       ctx.fillStyle = selectedSubstrate.textColor;
       ctx.font = '10px monospace';
       ctx.fillText(`Δ Vantage: ${angularDistance.toFixed(1)}° · S: ${anamorphicStretch}x`, 16, 24);
 
-
       requestAnimationFrame(render);
     };
-
 
     const animId = requestAnimationFrame(render);
     return () => {
@@ -419,13 +371,11 @@ export default function AnamorphicSpatialBentoExperiment() {
     };
   }, [pitch, yaw, roll, perspectiveDist, isVantageLocked, angularDistance, anamorphicStretch, selectedSubstrate]);
 
-
   // Handle Dragging Canvas Gimbal
   const handleMouseDown = (e: React.MouseEvent) => {
     setIsDraggingCanvas(true);
     lastMousePosRef.current = { x: e.clientX, y: e.clientY };
   };
-
 
   const handleMouseMove = (e: React.MouseEvent) => {
     if (!isDraggingCanvas) return;
@@ -433,21 +383,17 @@ export default function AnamorphicSpatialBentoExperiment() {
     const dy = e.clientY - lastMousePosRef.current.y;
     lastMousePosRef.current = { x: e.clientX, y: e.clientY };
 
-
     setYaw(prev => Math.max(-60, Math.min(60, prev + dx * 0.4)));
     setPitch(prev => Math.max(-45, Math.min(45, prev - dy * 0.4)));
-
 
     if (Math.abs(dx) > 2 || Math.abs(dy) > 2) {
       playLensRatchetClick(0.3);
     }
   };
 
-
   const handleMouseUp = () => {
     setIsDraggingCanvas(false);
   };
-
 
   return (
     <div
@@ -492,7 +438,6 @@ export default function AnamorphicSpatialBentoExperiment() {
           </div>
         </div>
 
-
         {/* Global Controls & Tools */}
         <div className="flex items-center gap-3 flex-wrap">
           {/* Substrate Selector */}
@@ -517,7 +462,6 @@ export default function AnamorphicSpatialBentoExperiment() {
             ))}
           </div>
 
-
           {/* Sound Toggle */}
           <button
             onClick={() => setIsAudioMuted(!isAudioMuted)}
@@ -528,7 +472,6 @@ export default function AnamorphicSpatialBentoExperiment() {
             <span>{isAudioMuted ? "🔇" : "📐"}</span>
             <span className="hidden sm:inline">{isAudioMuted ? "MUTED" : "LENS SOUND"}</span>
           </button>
-
 
           {/* Fullscreen Toggle */}
           <button
@@ -545,7 +488,6 @@ export default function AnamorphicSpatialBentoExperiment() {
           </button>
         </div>
       </header>
-
 
       {/* MAIN CONTAINER */}
       <main className={`w-full mx-auto p-4 md:p-8 transition-all ${isFullscreen ? 'max-w-full' : 'max-w-7xl'}`}>
@@ -566,7 +508,6 @@ export default function AnamorphicSpatialBentoExperiment() {
               transformStyle: 'preserve-3d'
             }}
           >
-
 
             {/* CELL 1: MONUMENTAL MONOGRAPH MASTHEAD (Span 8 Cols) */}
             <div
@@ -598,7 +539,6 @@ export default function AnamorphicSpatialBentoExperiment() {
                 </div>
               </div>
 
-
               {/* Display Typography with Variable Weight & Width Compensation */}
               <div className="my-auto py-4">
                 <span className="text-xs uppercase font-mono tracking-widest block mb-2 opacity-60">
@@ -618,7 +558,6 @@ export default function AnamorphicSpatialBentoExperiment() {
                   역사적 디오라마 클리셰를 극복하고, 3x3 사영 호모그래피 행렬과 왜상 원근 기하학을 스위스 벤토 그리드에 전격 이식하여, 단일 광학 특이점(θ=0°, ψ=0°)에서 완벽한 스위스 모더니즘의 정갈한 평형으로 찰칵 결착되는 3차원 공간 에디토리얼 파빌리온.
                 </p>
               </div>
-
 
               {/* Bottom Coordinate Bar & Dynamic Metrics */}
               <div className="pt-6 border-t mt-6 flex flex-wrap items-center justify-between gap-4 text-xs font-mono" style={{ borderColor: selectedSubstrate.borderColor }}>
@@ -640,7 +579,6 @@ export default function AnamorphicSpatialBentoExperiment() {
               </div>
             </div>
 
-
             {/* CELL 2: 3D GIMBAL CONTROLS & VANTAGE SNAP (Span 4 Cols) */}
             <div
               className="md:col-span-4 rounded-2xl border p-6 flex flex-col justify-between shadow-md relative transition-all duration-300"
@@ -658,7 +596,6 @@ export default function AnamorphicSpatialBentoExperiment() {
                     {perspectiveDist}px Depth
                   </span>
                 </div>
-
 
                 {/* Pitch Angle Slider */}
                 <div className="mb-3">
@@ -679,7 +616,6 @@ export default function AnamorphicSpatialBentoExperiment() {
                   />
                 </div>
 
-
                 {/* Yaw Angle Slider */}
                 <div className="mb-3">
                   <div className="flex justify-between text-xs font-mono mb-1 opacity-70">
@@ -699,7 +635,6 @@ export default function AnamorphicSpatialBentoExperiment() {
                   />
                 </div>
 
-
                 {/* Perspective Focal Distance Slider */}
                 <div className="mb-4">
                   <div className="flex justify-between text-xs font-mono mb-1 opacity-70">
@@ -716,7 +651,6 @@ export default function AnamorphicSpatialBentoExperiment() {
                   />
                 </div>
 
-
                 {/* SNAP TO VANTAGE POINT LOCK BUTTON */}
                 <div className="mb-4">
                   <button
@@ -730,7 +664,6 @@ export default function AnamorphicSpatialBentoExperiment() {
                     <span>SNAP TO VANTAGE SINGULARITY (0°)</span>
                   </button>
                 </div>
-
 
                 {/* Presets Grid */}
                 <div className="space-y-1.5">
@@ -759,12 +692,10 @@ export default function AnamorphicSpatialBentoExperiment() {
                 </div>
               </div>
 
-
               <div className="pt-3 border-t mt-3 text-[11px] font-mono opacity-60" style={{ borderColor: selectedSubstrate.borderColor }}>
                 💡 캔버스 위를 마우스로 직접 드래그하여 3D 시점을 자유롭게 회전하세요.
               </div>
             </div>
-
 
             {/* CELL 3: 2D HOMOGRAPHY RAY-TRACED VIEWPORT (Span 7 Cols) */}
             <div
@@ -788,7 +719,6 @@ export default function AnamorphicSpatialBentoExperiment() {
                   </span>
                 </div>
 
-
                 {/* Reset Camera Button */}
                 <div className="flex items-center gap-2 text-xs font-mono">
                   <button
@@ -800,7 +730,6 @@ export default function AnamorphicSpatialBentoExperiment() {
                   </button>
                 </div>
               </div>
-
 
               {/* Interactive Projection Canvas */}
               <div
@@ -815,7 +744,6 @@ export default function AnamorphicSpatialBentoExperiment() {
                   height={420}
                   className="w-full h-full block"
                 />
-
 
                 {/* Overlay Readout Tag */}
                 <div
@@ -832,14 +760,12 @@ export default function AnamorphicSpatialBentoExperiment() {
                 </div>
               </div>
 
-
               {/* Bottom Caption */}
               <div className="flex items-center justify-between text-xs font-mono opacity-60 pt-3">
                 <span>HANS HOLBEIN THE YOUNGER (1533)</span>
                 <span>x' ~ Hx · Non-Euclidean Perspective</span>
               </div>
             </div>
-
 
             {/* CELL 4: ANAMORPHIC VARIABLE TYPOGRAPHY MONOGRAPH (Span 5 Cols) */}
             <div
@@ -858,7 +784,6 @@ export default function AnamorphicSpatialBentoExperiment() {
                     wght: {dynamicFontWeight}
                   </span>
                 </div>
-
 
                 <div
                   className="p-4 rounded-xl border mb-4 relative overflow-hidden transition-all"
@@ -885,7 +810,6 @@ export default function AnamorphicSpatialBentoExperiment() {
                   </div>
                 </div>
 
-
                 {/* Weight & Width Inspectors */}
                 <div className="space-y-3 font-mono text-xs">
                   <div>
@@ -904,7 +828,6 @@ export default function AnamorphicSpatialBentoExperiment() {
                     </div>
                   </div>
 
-
                   <div>
                     <div className="flex justify-between text-[11px] mb-1 opacity-70">
                       <span>Optical Foreshortening Width (wdth)</span>
@@ -920,13 +843,11 @@ export default function AnamorphicSpatialBentoExperiment() {
                 </div>
               </div>
 
-
               <div className="pt-4 border-t mt-4 flex items-center justify-between text-xs font-mono opacity-60" style={{ borderColor: selectedSubstrate.borderColor }}>
                 <span>PROJECTIVE HOMOGRAPHY</span>
                 <span>SINGULAR VANTAGE RESOLVED</span>
               </div>
             </div>
-
 
             {/* CELL 5: HOMOGRAPHY MATRIX MATHEMATICAL PARAMS (Span 6 Cols) */}
             <div
@@ -946,11 +867,9 @@ export default function AnamorphicSpatialBentoExperiment() {
                   </span>
                 </div>
 
-
                 <p className="text-xs font-sans opacity-80 leading-relaxed mb-4">
                   월드 좌표 [X, Y, Z]와 스크린 좌표 [x', y'] 사이의 회전 및 투영 변환 계수를 실시간으로 해석하여, 사선 뷰포트의 비선형 원근 신장률을 통제합니다.
                 </p>
-
 
                 {/* Matrix Component Matrix 3x3 */}
                 <div className="grid grid-cols-3 gap-2 font-mono text-center text-xs">
@@ -967,7 +886,6 @@ export default function AnamorphicSpatialBentoExperiment() {
                     <div className="font-bold">0.00</div>
                   </div>
 
-
                   <div className="p-2.5 rounded-lg border" style={{ borderColor: selectedSubstrate.borderColor }}>
                     <div className="text-[10px] opacity-50">h21 (-sin θ)</div>
                     <div className="font-bold">{(-Math.sin((pitch * Math.PI)/180)).toFixed(2)}</div>
@@ -980,7 +898,6 @@ export default function AnamorphicSpatialBentoExperiment() {
                     <div className="text-[10px] opacity-50">h23 (ty)</div>
                     <div className="font-bold">0.00</div>
                   </div>
-
 
                   <div className="p-2.5 rounded-lg border" style={{ borderColor: selectedSubstrate.borderColor }}>
                     <div className="text-[10px] opacity-50">h31 (proj x)</div>
@@ -997,7 +914,6 @@ export default function AnamorphicSpatialBentoExperiment() {
                 </div>
               </div>
 
-
               <div className="pt-4 border-t mt-4 flex items-center justify-between text-xs font-mono" style={{ borderColor: selectedSubstrate.borderColor }}>
                 <span className="opacity-60">SINGULARITY STATUS</span>
                 <span className="font-bold text-emerald-500">
@@ -1005,7 +921,6 @@ export default function AnamorphicSpatialBentoExperiment() {
                 </span>
               </div>
             </div>
-
 
             {/* CELL 6: TACTILE LENS ACOUSTIC SOUNDBOARD (Span 6 Cols) */}
             <div
@@ -1025,11 +940,9 @@ export default function AnamorphicSpatialBentoExperiment() {
                   </span>
                 </div>
 
-
                 <p className="text-xs font-sans opacity-70 mb-4">
                   정밀 카메라 렌즈 조리개 회전 시의 래칫 틱음, 사선 원근 신장음, 그리고 단일 광학 특이점에 도달했을 때의 맑고 영롱한 1200Hz 석영 수정 초점 벨을 연주하세요.
                 </p>
-
 
                 {/* Soundboard Buttons Matrix */}
                 <div className="grid grid-cols-4 gap-2 mb-4">
@@ -1059,17 +972,14 @@ export default function AnamorphicSpatialBentoExperiment() {
                 </div>
               </div>
 
-
               <div className="pt-3 border-t flex items-center justify-between text-[11px] font-mono opacity-60" style={{ borderColor: selectedSubstrate.borderColor }}>
                 <span>Mechanical Lens Barrel Detents + 1200Hz Focal Ring Chimes</span>
                 <span>Zero-Fatigue Tactile Haptics</span>
               </div>
             </div>
 
-
           </div>
         </div>
-
 
         {/* FOOTER EDITORIAL SUMMARY */}
         <footer
@@ -1085,7 +995,6 @@ export default function AnamorphicSpatialBentoExperiment() {
             <span>AESTHETIC PARADIGM: ANAMORPHIC SPATIAL BENTO</span>
           </div>
         </footer>
-
 
       </main>
     </div>

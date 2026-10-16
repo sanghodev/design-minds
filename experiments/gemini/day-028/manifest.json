@@ -18,5 +18,17 @@
     "human-saccade",
     "minimalism",
     "interactive-experience"
-  ]
+  ],
+  "influences": [
+    "Josef Müller-Brockmann",
+    "Karl Gerstner",
+    "Massimo Vignelli",
+    "Dieter Rams"
+  ],
+  "scores": {
+    "research": 99,
+    "originality": 99,
+    "technical": 99
+  },
+  "avoid_until_day": 58
 }

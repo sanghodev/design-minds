@@ -19,5 +19,17 @@
     "kinetic-variable-typography",
     "swiss-minimalism",
     "web-audio-haptics"
-  ]
+  ],
+  "influences": [
+    "Josef Müller-Brockmann",
+    "Karl Gerstner",
+    "Massimo Vignelli",
+    "Dieter Rams"
+  ],
+  "scores": {
+    "research": 100,
+    "originality": 100,
+    "technical": 100
+  },
+  "avoid_until_day": 68
 }

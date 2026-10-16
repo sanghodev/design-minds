@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
+"use client";
 
+import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 
 // --- TYPES & INTERFACES ---
 interface CellularSubstrate {
@@ -16,7 +17,6 @@ interface CellularSubstrate {
   descKo: string;
 }
 
-
 interface EcosystemPreset {
   id: string;
   nameKo: string;
@@ -25,7 +25,6 @@ interface EcosystemPreset {
   spawnPattern: 'glider' | 'pulsar' | 'soup' | 'clear';
   descKo: string;
 }
-
 
 const SUBSTRATES: CellularSubstrate[] = [
   {
@@ -69,7 +68,6 @@ const SUBSTRATES: CellularSubstrate[] = [
   }
 ];
 
-
 const PRESETS: EcosystemPreset[] = [
   {
     id: 'glider_migration',
@@ -105,11 +103,9 @@ const PRESETS: EcosystemPreset[] = [
   }
 ];
 
-
 // Grid dimensions: 48 columns x 36 rows = 1,728 cells
 const COLS = 48;
 const ROWS = 36;
-
 
 export default function CellularSyntacticBentoExperiment() {
   // --- STATE ---
@@ -124,7 +120,6 @@ export default function CellularSyntacticBentoExperiment() {
   const [brushMode, setBrushMode] = useState<'glider' | 'blinker' | 'single'>('glider');
   const [stageTilt, setStageTilt] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
 
-
   // Grid Buffer (Uint8Array for raw performance)
   const gridRef = useRef<Uint8Array>(new Uint8Array(COLS * ROWS));
   const nextGridRef = useRef<Uint8Array>(new Uint8Array(COLS * ROWS));
@@ -133,12 +128,10 @@ export default function CellularSyntacticBentoExperiment() {
   const isMouseDownRef = useRef<boolean>(false);
   const lastCellCoordRef = useRef<{ c: number; r: number }>({ c: -1, r: -1 });
 
-
   // Initialize Cellular Grid Pattern
   const initPattern = useCallback((pattern: 'glider' | 'pulsar' | 'soup' | 'clear') => {
     const grid = gridRef.current;
     grid.fill(0);
-
 
     if (pattern === 'soup') {
       for (let i = 0; i < grid.length; i++) {
@@ -175,15 +168,12 @@ export default function CellularSyntacticBentoExperiment() {
       });
     }
 
-
     setGenerationCount(0);
   }, []);
-
 
   useEffect(() => {
     initPattern('glider');
   }, [initPattern]);
-
 
   // --- AUDIO SYNTHESIS ENGINE ---
   const initAudio = useCallback(() => {
@@ -196,7 +186,6 @@ export default function CellularSyntacticBentoExperiment() {
     }
   }, []);
 
-
   // Pentatonic Cell Birth Note
   const playCellNote = useCallback((pitchIndex: number = 0) => {
     if (isAudioMuted) return;
@@ -204,24 +193,19 @@ export default function CellularSyntacticBentoExperiment() {
     const ctx = audioCtxRef.current;
     if (!ctx) return;
 
-
     // Pentatonic scale frequencies (C5, D5, E5, G5, A5, C6)
     const notes = [523.25, 587.33, 659.25, 783.99, 880.00, 1046.50];
     const freq = notes[pitchIndex % notes.length];
-
 
     const now = ctx.currentTime;
     const osc = ctx.createOscillator();
     const gain = ctx.createGain();
 
-
     osc.type = 'sine';
     osc.frequency.setValueAtTime(freq, now);
 
-
     gain.gain.setValueAtTime(0.08, now);
     gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.12);
-
 
     osc.connect(gain);
     gain.connect(ctx.destination);
@@ -229,14 +213,12 @@ export default function CellularSyntacticBentoExperiment() {
     osc.stop(now + 0.15);
   }, [initAudio, isAudioMuted]);
 
-
   // Crisp Relay Snap & Crystal Bell upon Sterile Reset
   const playSterileResetChime = useCallback(() => {
     if (isAudioMuted) return;
     initAudio();
     const ctx = audioCtxRef.current;
     if (!ctx) return;
-
 
     const now = ctx.currentTime;
     // 1. Relay Click
@@ -252,7 +234,6 @@ export default function CellularSyntacticBentoExperiment() {
     clickOsc.start(now);
     clickOsc.stop(now + 0.07);
 
-
     // 2. Crystal Bell (880Hz)
     const bellOsc = ctx.createOscillator();
     const bellGain = ctx.createGain();
@@ -267,7 +248,6 @@ export default function CellularSyntacticBentoExperiment() {
     bellOsc.stop(now + 0.9);
   }, [initAudio, isAudioMuted]);
 
-
   // --- CELLULAR ENGINE STEP LOOP (CONWAY B3/S23) ---
   const stepGeneration = useCallback(() => {
     const current = gridRef.current;
@@ -275,16 +255,13 @@ export default function CellularSyntacticBentoExperiment() {
     let alive = 0;
     let birthCount = 0;
 
-
     for (let r = 0; r < ROWS; r++) {
       const rUp = (r - 1 + ROWS) % ROWS;
       const rDown = (r + 1) % ROWS;
 
-
       for (let c = 0; c < COLS; c++) {
         const cLeft = (c - 1 + COLS) % COLS;
         const cRight = (c + 1) % COLS;
-
 
         // Count 8 Moore neighbors
         const n =
@@ -297,10 +274,8 @@ export default function CellularSyntacticBentoExperiment() {
           current[rDown * COLS + c] +
           current[rDown * COLS + cRight];
 
-
         const state = current[r * COLS + c];
         let nextState = 0;
-
 
         // B3 / S23 Rules
         if (state === 1 && (n === 2 || n === 3)) {
@@ -310,27 +285,22 @@ export default function CellularSyntacticBentoExperiment() {
           birthCount++;
         }
 
-
         next[r * COLS + c] = nextState;
         if (nextState === 1) alive++;
       }
     }
 
-
     // Swap buffers
     gridRef.current = next;
     nextGridRef.current = current;
 
-
     setGenerationCount(prev => prev + 1);
     setAliveCount(alive);
-
 
     if (birthCount > 0 && Math.random() < 0.25) {
       playCellNote(birthCount);
     }
   }, [playCellNote]);
-
 
   // Main Generation Interval
   useEffect(() => {
@@ -339,10 +309,8 @@ export default function CellularSyntacticBentoExperiment() {
       stepGeneration();
     }, tickSpeed);
 
-
     return () => clearInterval(timer);
   }, [isRunning, tickSpeed, stepGeneration]);
-
 
   // --- KINETIC VARIABLE TYPOGRAPHY FORMULAS ---
   // Living biomass density factor (0.0 to 1.0)
@@ -350,18 +318,15 @@ export default function CellularSyntacticBentoExperiment() {
     return Math.min(1.0, aliveCount / 350);
   }, [aliveCount]);
 
-
   const dynamicFontWeight = useMemo(() => {
     // 300 up to 800
     return Math.min(800, Math.round(300 + biomassDensity * 500));
   }, [biomassDensity]);
 
-
   const dynamicTracking = useMemo(() => {
     // Tracking dilates up to +0.06em under cellular reproduction
     return (biomassDensity * 0.06).toFixed(3);
   }, [biomassDensity]);
-
 
   // Sterile Grid Reset Handler
   const handleSterileReset = useCallback(() => {
@@ -372,7 +337,6 @@ export default function CellularSyntacticBentoExperiment() {
     setGenerationCount(0);
   }, [playSterileResetChime]);
 
-
   // Preset Selection Handler
   const handleSelectPreset = useCallback((preset: EcosystemPreset) => {
     setSelectedPreset(preset);
@@ -380,7 +344,6 @@ export default function CellularSyntacticBentoExperiment() {
     initPattern(preset.spawnPattern);
     playCellNote(2);
   }, [initPattern, playCellNote]);
-
 
   // Inject Pattern at Grid Coordinate (c, r)
   const injectPatternAt = useCallback((c: number, r: number, mode: 'glider' | 'blinker' | 'single') => {
@@ -406,7 +369,6 @@ export default function CellularSyntacticBentoExperiment() {
     playCellNote(mode === 'glider' ? 4 : 1);
   }, [playCellNote]);
 
-
   // --- 2D CANVAS RENDERING LOOP (60FPS) ---
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -414,9 +376,7 @@ export default function CellularSyntacticBentoExperiment() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-
     let animId: number;
-
 
     const render = () => {
       const w = canvas.width;
@@ -425,16 +385,13 @@ export default function CellularSyntacticBentoExperiment() {
       const cellH = h / ROWS;
       const grid = gridRef.current;
 
-
       // 1. Clear background
       ctx.fillStyle = selectedSubstrate.surfaceTone;
       ctx.fillRect(0, 0, w, h);
 
-
       // 2. Draw Subtle Cellular Mesh Lines
       ctx.strokeStyle = selectedSubstrate.borderColor;
       ctx.lineWidth = 0.5;
-
 
       for (let c = 0; c <= COLS; c++) {
         ctx.beginPath();
@@ -449,7 +406,6 @@ export default function CellularSyntacticBentoExperiment() {
         ctx.stroke();
       }
 
-
       // 3. Render Living Cells with Volumetric Glow
       ctx.fillStyle = selectedSubstrate.accentColor;
       for (let r = 0; r < ROWS; r++) {
@@ -461,21 +417,17 @@ export default function CellularSyntacticBentoExperiment() {
             const sw = cellW - 2;
             const sh = cellH - 2;
 
-
             ctx.fillRect(px, py, sw, sh);
           }
         }
       }
 
-
       animId = requestAnimationFrame(render);
     };
-
 
     animId = requestAnimationFrame(render);
     return () => cancelAnimationFrame(animId);
   }, [selectedSubstrate]);
-
 
   // Handle Canvas Mouse Clicks & Dragging
   const handleCanvasInteraction = (clientX: number, clientY: number) => {
@@ -485,17 +437,14 @@ export default function CellularSyntacticBentoExperiment() {
     const x = clientX - rect.left;
     const y = clientY - rect.top;
 
-
     const c = Math.max(0, Math.min(COLS - 1, Math.floor((x / rect.width) * COLS)));
     const r = Math.max(0, Math.min(ROWS - 1, Math.floor((y / rect.height) * ROWS)));
-
 
     if (lastCellCoordRef.current.c !== c || lastCellCoordRef.current.r !== r) {
       lastCellCoordRef.current = { c, r };
       injectPatternAt(c, r, brushMode);
     }
   };
-
 
   return (
     <div
@@ -540,7 +489,6 @@ export default function CellularSyntacticBentoExperiment() {
           </div>
         </div>
 
-
         {/* Global Controls & Tools */}
         <div className="flex items-center gap-3 flex-wrap">
           {/* Substrate Selector */}
@@ -565,7 +513,6 @@ export default function CellularSyntacticBentoExperiment() {
             ))}
           </div>
 
-
           {/* Sound Toggle */}
           <button
             onClick={() => setIsAudioMuted(!isAudioMuted)}
@@ -577,7 +524,6 @@ export default function CellularSyntacticBentoExperiment() {
             <span className="hidden sm:inline">{isAudioMuted ? "MUTED" : "ORGANIC SOUND"}</span>
           </button>
 
-
           {/* Play/Pause Toggle */}
           <button
             onClick={() => setIsRunning(!isRunning)}
@@ -587,7 +533,6 @@ export default function CellularSyntacticBentoExperiment() {
             <span>{isRunning ? "⏸️" : "▶️"}</span>
             <span className="hidden sm:inline">{isRunning ? "PAUSE CLOCK" : "START CLOCK"}</span>
           </button>
-
 
           {/* Fullscreen Toggle */}
           <button
@@ -605,13 +550,11 @@ export default function CellularSyntacticBentoExperiment() {
         </div>
       </header>
 
-
       {/* MAIN CONTAINER */}
       <main className={`w-full mx-auto p-4 md:p-8 transition-all ${isFullscreen ? 'max-w-full' : 'max-w-7xl'}`}>
         
         {/* BENTO GRID ARCHITECTURE (6 INTERACTIVE MODULAR CELLS) */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch relative">
-
 
           {/* CELL 1: MONUMENTAL MONOGRAPH MASTHEAD (Span 8 Cols) */}
           <div
@@ -638,7 +581,6 @@ export default function CellularSyntacticBentoExperiment() {
               </div>
             </div>
 
-
             {/* Display Typography with Biomass Dilation & Tracking */}
             <div className="my-auto py-4">
               <span className="text-xs uppercase font-mono tracking-widest block mb-2 opacity-60">
@@ -658,7 +600,6 @@ export default function CellularSyntacticBentoExperiment() {
                 광학 왜곡 필터 클리셰를 극복하고, 존 콘웨이의 라이프 게임 세포 자동자와 랭턴의 혼돈의 가장자리 상전이를 스위스 벤토 그리드 건축에 전격 이식하여, 스스로 증식하고 이주하는 세포 군락과 공생하는 자율적 인터페이스 파빌리온.
               </p>
             </div>
-
 
             {/* Bottom Coordinate Bar & Dynamic Metrics */}
             <div className="pt-6 border-t mt-6 flex flex-wrap items-center justify-between gap-4 text-xs font-mono" style={{ borderColor: selectedSubstrate.borderColor }}>
@@ -680,7 +621,6 @@ export default function CellularSyntacticBentoExperiment() {
             </div>
           </div>
 
-
           {/* CELL 2: CELLULAR SPAWNER & STERILE RESET SWITCH (Span 4 Cols) */}
           <div
             className="md:col-span-4 rounded-2xl border p-6 flex flex-col justify-between shadow-md relative transition-all duration-300"
@@ -698,7 +638,6 @@ export default function CellularSyntacticBentoExperiment() {
                   {aliveCount} Active
                 </span>
               </div>
-
 
               {/* Seed Injection Tool Modes */}
               <div className="mb-4">
@@ -723,7 +662,6 @@ export default function CellularSyntacticBentoExperiment() {
                 </div>
               </div>
 
-
               {/* Clock Tick Speed Slider */}
               <div className="mb-4">
                 <div className="flex justify-between text-xs font-mono mb-1.5 opacity-70">
@@ -740,7 +678,6 @@ export default function CellularSyntacticBentoExperiment() {
                 />
               </div>
 
-
               {/* STERILE RESET BUTTON */}
               <div className="mb-4">
                 <button
@@ -752,7 +689,6 @@ export default function CellularSyntacticBentoExperiment() {
                   <span>STERILE GRID RESET (0 CELLS)</span>
                 </button>
               </div>
-
 
               {/* Presets Grid */}
               <div className="space-y-1.5">
@@ -781,12 +717,10 @@ export default function CellularSyntacticBentoExperiment() {
               </div>
             </div>
 
-
             <div className="pt-3 border-t mt-3 text-[11px] font-mono opacity-60" style={{ borderColor: selectedSubstrate.borderColor }}>
               💡 캔버스 위를 클릭하거나 드래그하여 글라이더 군락을 직접 파종하세요.
             </div>
           </div>
-
 
           {/* CELL 3: 2D CONWAY LIFE MATRIX SIMULATION VIEWPORT (Span 7 Cols) */}
           <div
@@ -814,7 +748,6 @@ export default function CellularSyntacticBentoExperiment() {
                 </span>
               </div>
 
-
               {/* Step Manual Generation */}
               <div className="flex items-center gap-2 text-xs font-mono">
                 <button
@@ -826,7 +759,6 @@ export default function CellularSyntacticBentoExperiment() {
                 </button>
               </div>
             </div>
-
 
             {/* Interactive Canvas Grid */}
             <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border my-2 shadow-inner" style={{ borderColor: selectedSubstrate.borderColor }}>
@@ -856,7 +788,6 @@ export default function CellularSyntacticBentoExperiment() {
                 onTouchEnd={() => { isMouseDownRef.current = false; lastCellCoordRef.current = { c: -1, r: -1 }; }}
               />
 
-
               {/* Overlay Readout */}
               <div
                 className="absolute bottom-3 left-3 px-3 py-1.5 rounded-lg border backdrop-blur-md text-[11px] font-mono flex items-center gap-2 shadow-sm"
@@ -870,14 +801,12 @@ export default function CellularSyntacticBentoExperiment() {
               </div>
             </div>
 
-
             {/* Bottom Caption */}
             <div className="flex items-center justify-between text-xs font-mono opacity-60 pt-3">
               <span>DRAG TO SEED LIVING CELLULAR COLONIES</span>
               <span>B3/S23 · John Horton Conway 1970</span>
             </div>
           </div>
-
 
           {/* CELL 4: BIOMASS-COUPLED VARIABLE TYPOGRAPHY (Span 5 Cols) */}
           <div
@@ -896,7 +825,6 @@ export default function CellularSyntacticBentoExperiment() {
                   wght: {dynamicFontWeight}
                 </span>
               </div>
-
 
               <div
                 className="p-4 rounded-xl border mb-4 relative overflow-hidden"
@@ -923,7 +851,6 @@ export default function CellularSyntacticBentoExperiment() {
                 </div>
               </div>
 
-
               {/* Weight & Density Inspectors */}
               <div className="space-y-3 font-mono text-xs">
                 <div>
@@ -942,7 +869,6 @@ export default function CellularSyntacticBentoExperiment() {
                   </div>
                 </div>
 
-
                 <div>
                   <div className="flex justify-between text-[11px] mb-1 opacity-70">
                     <span>Metabolic Tracking Expansion</span>
@@ -958,13 +884,11 @@ export default function CellularSyntacticBentoExperiment() {
               </div>
             </div>
 
-
             <div className="pt-4 border-t mt-4 flex items-center justify-between text-xs font-mono opacity-60" style={{ borderColor: selectedSubstrate.borderColor }}>
               <span>CHRISTOPHER LANGTON</span>
               <span>1990 EDGE OF CHAOS</span>
             </div>
           </div>
-
 
           {/* CELL 5: COMPLEX ECOSYSTEM PARAMETERS (Span 6 Cols) */}
           <div
@@ -984,11 +908,9 @@ export default function CellularSyntacticBentoExperiment() {
                 </span>
               </div>
 
-
               <p className="text-xs font-sans opacity-80 leading-relaxed mb-4">
                 {selectedSubstrate.descKo}
               </p>
-
 
               {/* Parameters Grid */}
               <div className="grid grid-cols-3 gap-3 font-mono text-xs">
@@ -998,13 +920,11 @@ export default function CellularSyntacticBentoExperiment() {
                   <div className="text-[10px] opacity-50">Conway Standard</div>
                 </div>
 
-
                 <div className="p-3 rounded-xl border" style={{ borderColor: selectedSubstrate.borderColor }}>
                   <div className="text-[10px] opacity-60">GENERATIONS</div>
                   <div className="text-base font-bold mt-0.5">{generationCount}</div>
                   <div className="text-[10px] opacity-50">Epochs</div>
                 </div>
-
 
                 <div className="p-3 rounded-xl border" style={{ borderColor: selectedSubstrate.borderColor }}>
                   <div className="text-[10px] opacity-60">SYSTEM STATE</div>
@@ -1016,7 +936,6 @@ export default function CellularSyntacticBentoExperiment() {
               </div>
             </div>
 
-
             <div className="pt-4 border-t mt-4 flex items-center justify-between text-xs font-mono" style={{ borderColor: selectedSubstrate.borderColor }}>
               <span className="opacity-60">COMPLEXITY EQUILIBRIUM</span>
               <span className="font-bold text-emerald-500">
@@ -1024,7 +943,6 @@ export default function CellularSyntacticBentoExperiment() {
               </span>
             </div>
           </div>
-
 
           {/* CELL 6: TACTILE GENERATIVE SOUNDBOARD (Span 6 Cols) */}
           <div
@@ -1044,11 +962,9 @@ export default function CellularSyntacticBentoExperiment() {
                 </span>
               </div>
 
-
               <p className="text-xs font-sans opacity-70 mb-4">
                 새로 태어난 세포들의 5음계 아르페지오, 글라이더 이주 신호음, 그리고 멸균 스위치를 조작했을 때의 맑은 880Hz 석영 수정 차임을 연주하세요.
               </p>
-
 
               {/* Soundboard Buttons Matrix */}
               <div className="grid grid-cols-4 gap-2 mb-4">
@@ -1078,16 +994,13 @@ export default function CellularSyntacticBentoExperiment() {
               </div>
             </div>
 
-
             <div className="pt-3 border-t flex items-center justify-between text-[11px] font-mono opacity-60" style={{ borderColor: selectedSubstrate.borderColor }}>
               <span>Generative Pentatonic Arpeggios + 880Hz Quartz Bells</span>
               <span>Zero-Fatigue Tactile Haptics</span>
             </div>
           </div>
 
-
         </div>
-
 
         {/* FOOTER EDITORIAL SUMMARY */}
         <footer
@@ -1103,7 +1016,6 @@ export default function CellularSyntacticBentoExperiment() {
             <span>AESTHETIC PARADIGM: CELLULAR SYNTACTIC BENTO</span>
           </div>
         </footer>
-
 
       </main>
     </div>

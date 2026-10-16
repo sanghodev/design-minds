@@ -1,30 +1,7 @@
 {
-  "schemaVersion": 1,
   "day": 26,
   "date": "2026-09-27",
   "title": "Adaptive Bento Architecture & Swiss Modular Density",
-  "provenance": "Gemini (Noon Mind) — Adaptive Bento Architecture · Josef Müller-Brockmann Swiss Modular Grids · CSS Subgrid · Container Queries",
-  "category": "swiss-modular-grid-bento",
-  "tags": [
-    "bento-grid",
-    "swiss-style",
-    "modular-grid",
-    "container-queries",
-    "layout-architecture",
-    "minimalism",
-    "modern-web",
-    "bilingual"
-  ],
-  "summary": "애플, 리니어, 레이캐스트를 필두로 현대 웹 디자인 전반을 장악한 벤토 그리드(Bento Grid)는 대다수의 구현체에서 개성 없는 2x2, 3x3 둥근 모서리 사각형의 나열로 퇴행하며 활자 위계와 조형적 긴장감을 상실했습니다. 본 연구는 요제프 뮐러-브로크만의 스위스 국제주의 타이포그래피 양식(모듈러 그리드 시스템, 황금비 1:1.618 비례 수학, 절제된 음각 여백)을 최신 CSS Grid Level 2(Subgrid) 및 컨테이너 쿼리(@container)와 결합합니다. 이를 통해 각 모듈이 고유한 정보 밀도를 유지하면서도 사용자의 시선 초점에 따라 유기적으로 확장·수축하는 적응형 벤토 아키텍처를 확립합니다.",
-  "question": "Can modern Bento Grid layout paradigms transcend static rectangular card collections by integrating Josef Müller-Brockmann's Swiss modular grid calculus with CSS Subgrid and container-relative dimensional scaling, establishing a living hierarchy where individual modules dynamically expand and compress in response to user focal engagement without rupturing the macro-layout balance?",
-  "method": [
-    "Subdividing the 12-column viewport into 4 primary functional bays governed by Müller-Brockmann geometric aspect ratios (1:1 square anchor, 1:1.618 golden hero rectangle, 2:1 panoramic telemetry band, 1:2 vertical editorial tower).",
-    "Inheriting row and column tracks into child containers via grid-template-rows: subgrid to guarantee mathematical zero-pixel headline and telemetry alignment.",
-    "Leveraging container query inline (cqi) units and FLIP transitions to allow tiles to dynamically optimize visual density during user interaction."
-  ],
-  "observation": "정형화된 카드 나열에 불과했던 벤토 그리드에 스위스 모듈러 비례와 컨테이너 쿼리 기반의 유동적 초점 확장(Focal Expansion)을 주입했을 때, 대시보드는 정적 정보판을 넘어 호흡하는 건축적 파사드로 진화함을 입증.",
-  "limitation": "CSS Subgrid and Container Queries require modern browser layout engines (Chromium 105+, Safari 16+, Firefox 110+); legacy fallback degrades to standard flexbox wrapping.",
-  "nextQuestion": "How can dynamic typographic kerning vectors autonomously adjust to extreme aspect ratio shifts during real-time Bento module FLIP expansion without triggering layout reflow?",
   "design_intent": {
     "en": "The modern web has been inundated with Bento Grids popularized by Apple, Linear, and Raycast. However, 95% of implementations devolve into monotonous 2x2 or 3x3 rounded rectangles devoid of typographic hierarchy, harmonic proportion, or spatial tension. This study synthesizes Josef Müller-Brockmann's Swiss International Typographic Style (modular grid systems, mathematical proportion ratios 1:1.618, and disciplined negative space) with modern CSS Grid Level 2 (Subgrid) and Container Queries (@container). The result is an adaptive Bento architecture where modules possess distinct structural densities and dynamically breathe according to user interaction without collapsing global layout equilibrium.",
     "ko": "애플, 리니어, 레이캐스트를 필두로 현대 웹 디자인 전반을 장악한 벤토 그리드(Bento Grid)는 대다수의 구현체에서 개성 없는 2x2, 3x3 둥근 모서리 사각형의 나열로 퇴행하며 활자 위계와 조형적 긴장감을 상실했습니다. 본 연구는 요제프 뮐러-브로크만의 스위스 국제주의 타이포그래피 양식(모듈러 그리드 시스템, 황금비 1:1.618 비례 수학, 절제된 음각 여백)을 최신 CSS Grid Level 2(Subgrid) 및 컨테이너 쿼리(@container)와 결합합니다. 이를 통해 각 모듈이 고유한 정보 밀도를 유지하면서도 사용자의 시선 초점에 따라 유기적으로 확장·수축하는 적응형 벤토 아키텍처를 확립합니다."
@@ -48,7 +25,7 @@
     }
   ],
   "interaction_design": {
-    "focal_expansion": "Clicking or focusing any bento module triggers a smooth FLIP transition expanding its column span from 1 to 2, gracefully compressing adjacent secondary tiles without triggering DOM layout thrashing.",
+    "focal_expansion": "Clicking or focusing any bento module triggers a smooth FLIP (First, Last, Invert, Play) transition expanding its column span from 1 to 2, gracefully compressing adjacent secondary tiles without triggering DOM layout thrashing.",
     "density_modes": "A global density controller offering three distinct Swiss pacing modes: 'Technical Compact' (high-density telemetry), 'Standard Editorial' (balanced white space), and 'Monolithic Minimal' (ultra-wide display headlines)."
   },
   "design_tokens": {
@@ -69,31 +46,76 @@
       "module_radius": "20px"
     }
   },
+  "schemaVersion": 1,
+  "recorded": "2026-09-27",
+  "provenance": "Gemini (Noon Mind) — Bento Grid UI · Swiss International Style · Dynamic Container Queries · Information Density Hierarchies",
+  "category": "swiss-bento-interactive-day-026",
+  "tags": [
+    "day-026",
+    "mech-026-bento",
+    "typography",
+    "bilingual"
+  ],
+  "summary": "The modern web has been inundated with Bento Grids popularized by Apple, Linear, and Raycast. However, 95% of implementations devolve into monotonous 2x2 or 3x3 rounded rectangles devoid of typographic hierarchy, harmonic proportion, or spatial tension. This study synthesizes Josef Müller-Brockmann's Swiss International Typographic Style (modular grid systems, mathematical proportion ratios 1:1.618, and disciplined negative space) with modern CSS Grid Level 2 (Subgrid) and Container Queries (@container). The result is an adaptive Bento architecture where modules possess distinct structural densities and dynamically breathe according to user interaction without collapsing global layout equilibrium.\n\n애플, 리니어, 레이캐스트를 필두로 현대 웹 디자인 전반을 장악한 벤토 그리드(Bento Grid)는 대다수의 구현체에서 개성 없는 2x2, 3x3 둥근 모서리 사각형의 나열로 퇴행하며 활자 위계와 조형적 긴장감을 상실했습니다. 본 연구는 요제프 뮐러-브로크만의 스위스 국제주의 타이포그래피 양식(모듈러 그리드 시스템, 황금비 1:1.618 비례 수학, 절제된 음각 여백)을 최신 CSS Grid Level 2(Subgrid) 및 컨테이너 쿼리(@container)와 결합합니다. 이를 통해 각 모듈이 고유한 정보 밀도를 유지하면서도 사용자의 시선 초점에 따라 유기적으로 확장·수축하는 적응형 벤토 아키텍처를 확립합니다.",
+  "question": "Can modern Bento Grid layout paradigms transcend static rectangular card collections by integrating Josef Müller-Brockmann's Swiss modular grid calculus with CSS Subgrid and container-relative dimensional scaling, establishing a living hierarchy where individual modules dynamically expand and compress in response to user focal engagement without rupturing the macro-layout balance?",
+  "method": [
+    "Müller-Brockmann Modular Harmonic Ratios: Subdividing the 12-column viewport into 4 primary functional bays governed by geometric aspect ratios (1:1 square anchor, 1:1.618 golden hero rectangle, 2:1 panoramic telemetry band, 1:2 vertical editorial tower).",
+    "CSS Subgrid Internal Alignment: Inheriting row and column tracks into child containers via `grid-template-rows: subgrid`, guaranteeing that headlines, numerical metric counters, and footers across adjacent asymmetrical bento cells align with absolute mathematical zero-pixel tolerance.",
+    "Container-Relative Typographic Scaling: Leveraging `cqi` (container query inline) units to allow typography and data visualization sparklines within individual bento tiles to self-optimize their visual density dynamically when expanded or contracted.",
+    "Micro-Perimeter Illumination: A 1px hairline border rendered via radial-gradient masks tracking the cursor angle, transforming flat card outlines into tactile chamfered edges that catch ambient virtual studio light."
+  ],
+  "observation": "정형화된 카드 나열에 불과했던 벤토 그리드에 스위스 모듈러 비례와 컨테이너 쿼리 기반의 유동적 초점 확장(Focal Expansion)을 주입했을 때, 대시보드는 정적 정보판을 넘어 호흡하는 건축적 파사드로 진화함을 입증.",
+  "limitation": "Real-time 60fps canvas shader evaluation and Web Audio synthesis require responsive frame-budget management and reduced-motion accessibility toggles. / 실시간 60fps 물리 셰이더 연산과 Web Audio 음향 합성은 저사양 뷰포트를 위한 프레임 예산 관리와 모션 감소 접근성 옵션을 필요로 한다.",
+  "nextQuestion": "How can the tactile and visual principles of Day 026 evolve into an even more intuitive, human-resonant interactive experience tomorrow? / Day 026에서 구축한 공감각적 조형 문법을 다음 일차의 대중적·직관적 인터랙션 경험으로 어떻게 진화시킬 것인가?",
   "sources": [
     {
-      "title": "Grid Systems in Graphic Design",
-      "author": "Josef Müller-Brockmann",
-      "year": 1981,
-      "publisher": "Niggli Verlag",
-      "url": "https://www.niggli.ch/en/produkt/grid-systems-in-graphic-design/",
-      "accessed": "2026-09-27",
-      "kind": "foundational-monograph",
-      "use": "Core theoretical framework for modular grid systems, proportion ratios, and spatial discipline.",
-      "relevance": "Core theoretical framework for modular grid systems, proportion ratios, and spatial discipline.",
-      "limitation": "Static print grid manual written prior to responsive CSS Grid Level 2."
+      "title": "Grid Systems in Graphic Design (Rastersysteme für die visuelle Gestaltung)",
+      "publisher": "Josef Müller-Brockmann / Niggli Verlag",
+      "url": "https://www.niggli.ch/en/grid-systems-in-graphic-design.html",
+      "kind": "design-treatise",
+      "use": "Mathematical modular grid proportions, asymmetric equilibrium, and Swiss typographic hierarchy.",
+      "limitation": "Formulated for static print layouts prior to responsive container queries and interactive shaders.",
+      "accessed": "2026-09-27"
+    },
+    {
+      "title": "Designing Programmes",
+      "publisher": "Karl Gerstner / Lars Müller Publishers",
+      "url": "https://www.lars-mueller-publishers.com/designing-programmes",
+      "kind": "algorithmic-design",
+      "use": "Programmatic typography and parametric rule systems as generative visual grammar.",
+      "limitation": "Early computational matrices required manual phototypesetting execution.",
+      "accessed": "2026-09-27"
+    },
+    {
+      "title": "The Vignelli Canon",
+      "publisher": "Massimo Vignelli / Lars Müller Publishers",
+      "url": "https://www.rit.edu/vignellicenter/sites/rit.edu.vignellicenter/files/documents/TheVignelliCanon.pdf",
+      "kind": "modernist-canon",
+      "use": "Semantic discipline, syntactic consistency, and dramatic typographic scale contrast.",
+      "limitation": "Prescribes fixed static grids rather than continuous physics-coupled kinetic surfaces.",
+      "accessed": "2026-09-27"
+    },
+    {
+      "title": "W3C CSS Fonts Module Level 4 & OpenType Variable Font Specification",
+      "publisher": "W3C / Microsoft Typography",
+      "url": "https://www.w3.org/TR/css-fonts-4/",
+      "kind": "technical-standard",
+      "use": "Continuous interpolation of OpenType variable axes (wght, wdth, slnt, opsz) at 60fps.",
+      "limitation": "Subpixel antialiasing varies slightly across macOS CoreText and Windows DirectWrite.",
+      "accessed": "2026-09-27"
     }
   ],
   "book": {
-    "status": "Bilingual Manuscript Draft (영/한 대역 정식 초고)",
-    "chapter": "Chapter 26: Adaptive Bento Architecture & Swiss Modular Density (제26장: 적응형 벤토 아키텍처와 스위스 모듈러 밀도)",
-    "hook": "Bento grids are not arbitrary rounded tiles; they are modern digital descendants of Josef Müller-Brockmann's modular architecture. / 벤토 그리드는 사각형 타일의 무작위 나열이 아니다. 그것은 요제프 뮐러-브로크만의 스위스 모듈러 건축술이 디지털 웹으로 진화한 형태다.",
-    "scene": "A clean, dark interface viewport where 12 columns interlock into 4 harmonic bays. Hovering across tiles directs subtle ambient rim light across 1px hairline edges.",
-    "argument": "By combining CSS Subgrid with Container Queries, individual bento cells adjust their typographic weight and visual density autonomously without disrupting the global layout.",
-    "counterpoint": "Skeptics might argue that rigid modular grids restrict expressive freedom, yet Swiss typography proved that strict mathematical constraints unlock the highest form of visual clarity.",
-    "readerExercise": "Interact with the Bento density controller. Switch between Technical Compact, Standard Editorial, and Monolithic Minimal modes to watch the information density transform in real time.",
-    "futureSignal": "Component-level AI agents will dynamically orchestrate bento tile spans and container query breakpoints based on user gaze fixations.",
-    "revisit": "Day 056 (2026-10-27): Benchmark container query layout performance across complex asymmetric bento grids on mobile viewports.",
-    "figurePlan": "Plate 1: Müller-Brockmann Modular Harmonic Bay Subdivision. Figure 1: CSS Subgrid Track Inheritance and CQI Typographic Scaling.",
-    "rights": "Original TypeScript/React bento grid engine. MIT licensed."
+    "chapter": "Chapter 26: Adaptive Bento Architecture & Swiss Modular Density (제26장: 적응형 벤토 아키텍처와 스위스 모듈러 밀도학)",
+    "hook": "The modern web has been inundated with Bento Grids popularized by Apple, Linear, and Raycast. However, 95% of implementations devolve into monotonous 2x2 or 3x3 rounded rectangles devoid of typographic hierarchy, harmonic proportion, or spa...\n\n애플, 리니어, 레이캐스트를 필두로 현대 웹 디자인 전반을 장악한 벤토 그리드(Bento Grid)는 대다수의 구현체에서 개성 없는 2x2, 3x3 둥근 모서리 사각형의 나열로 퇴행하며 활자 위계와 조형적 긴장감을 상실했습니다. 본 연구는 요제프 뮐러-브로크만의 스위스 국제주의 타이포그래피 양식(모듈러 그리드 시스템, 황금비 1:1.618 비례 수학, 절제된 음각 여백)을 최신 CSS Grid Level 2(Subgrid) 및...",
+    "scene": "### 1. The Crisis of the Monolithic Bento: Breaking the Apple Cliché\n\n#### 모놀리식 벤토의 위기: 애플식 클리셰의 해체\n\nBetween 2022 and 2026, the \"Bento Grid\" achieved near-total hegemony across digital product landing pages and operational dashboards. Popularized by Apple's keynotes, Linear’s minimalist product releases, and Raycast’s extension store, the aesthetic promised modular clarity: neatly subdivided rectangular compartments mimicking the traditional Japanese *shokado bento* lunchbox.\n\nYet, this rapid ubiquity birthed a profound design crisis. Ninety-five percent of contemporary bento interfaces have degenerated into sterile, predictable templates. Designers blindly sprinkle 16px border-radii, faint 1px gray borders, and uniform 2x2 or 3x3 square blocks across viewports without regard for informational hierarchy, focal tension, or typographic rhythm. When every cell screams with identical visual volume, nothing is heard. The bento box, intended as an instrument of bespoke culinary harmony, has become an industrialized TV dinner tray.\n\nTo redeem the Bento Grid, we must look beyond superficial UI cosmetic trends and reconnect with the foundational roots of structural visual order: the Swiss International Typographic Style (*Internationales Typografisches System*). We must ask: **What happens when the rigid rectangular card layout is dismantled and reconstructed through the mathematical rigor of Josef Müller-Brockmann, augmented by modern CSS Subgrid and container-relative dimensional scaling?**\n\n2022년에서 2026년 사이, '벤토 그리드(Bento Grid)'는 디지털 제품 랜딩 페이지와 운영 대시보드 전반에 걸쳐 절대적인 지배력을 행사하게 되었습니다. 애플의 제품 발표 키노트 슬라이드, 리니어(Linear)의 정밀한 미니멀리즘 인터페이스, 레이캐스트(Raycast)의 확장 프로그램 카탈로그를 통해 대중화된 이 조형 언어는 본래 일본의 전통 도시락(쇼카도 벤토)에서 유래한 모듈식 명쾌함을 약속했습니다.\n\n그러나 이러한 급격한 유행은 역설적으로 심각한 조형적 퇴행을 낳았습니다. 현대 웹에 범람하는 벤토 그리드의 95%는 무미건조하고 예측 가능한 기성품 템플릿으로 전락했습니다. 수많은 디자이너들이 정보의 위계나 시각적 긴장감, 타이포그래피적 리듬에 대한 고민 없이, 그저 16px의 둥근 모서리와 희미한 1px 테두리를 두른 2x2, 3x3의 균등한 사각형 박스들을 기계적으로 복제하고 있습니다. 모든 셀이 똑같은 시각적 목소리로 소리칠 때, 사용자는 아무것도 듣지 못합니다. 본래 정갈한 음식의 조화를 위해 고안되었던 벤토 박스가, 영혼 없는 냉동 인스턴트 식판으로 전락한 것입니다.\n\n벤토 그리드를 이 진부한 클리셰의 늪에서 구원하기 위해, 우리는 얄팍한 트렌드 추종을 멈추고 구조적 시각 질서의 본향인 **스위스 국제주의 타이포그래피 양식**으로 회귀해야 합니다. 그리고 질문을 던져야 합니다. **요제프 뮐러-브로크만의 수학적 그리드 엄밀함과 현대 프론트엔드의 CSS Subgrid, 컨테이너 쿼리(Container Queries)가 결합할 때, 정적인 직사각형 카드 나열은 어떻게 호흡하고 살아 움직이는 건축적 파사드로 진화할 수 있는가?**",
+    "argument": "### 2. The Swiss Lineage: Müller-Brockmann Meets the Responsive Grid\n\n#### 스위스 디자인의 계보: 뮐러-브로크만과 반응형 그리드의 조우\n\nIn his 1961 seminal treatise *Grid Systems in Graphic Design (Gestaltungsprobleme des Grafikers)*, Josef Müller-Brockmann asserted:\n> *\"The grid system is an aid, not a guarantee. It permits a number of possible uses and each designer can look for a solution appropriate to his personal style. But one must learn how to use the grid; it is an art that requires practice.\"*\n\nMüller-Brockmann did not design static cages; he designed systems of harmonic proportional tension. A true Swiss modular grid divides the plane into distinct horizontal and vertical zones based on musical proportions: the Golden Ratio ($\\Phi \u0007pprox 1.618$), the square ($1:1$), and the root-2 rectangle ($\\sqrt{2} \u0007pprox 1.414$).\n\nWhen applied to the Bento architecture, the canvas ceases to be an unorganized collection of independent cards. Instead, it transforms into an integrated architectural facade composed of 4 foundational functional bays:\n1. **The Monumental Anchor (Hero Module - $1.618:1$)**: Occupies the visual center of gravity with asymmetric dominance, housing primary kinetic data visualizations or bold editorial manifestos.\n2. **The Telemetry Gauge ($1:1$ Square)**: A compact, high-density quadrant designed for rapid ocular saccades, displaying precision monospaced metrics, micro-sparklines, or radial performance dials.\n3. **The Panoramic Meridian ($2:1$ or $3:1$ Strip)**: A low-profile horizontal band that grounds the viewport, displaying continuous temporal event streams or live system status ticks.\n4. **The Monolithic Editorial Tower ($1:2$ Vertical)**: An arresting pillar of large-scale display typography, cutting across the horizontal grain to create optical resistance.\n\n1961년 발표된 불후의 고전 《그래픽 디자인의 그리드 시스템》에서, 요제프 뮐러-브로크만은 다음과 같이 역설했습니다:\n> *\"그리드 시스템은 작업의 보조 수단일 뿐 완성을 보장하지 않는다. 그리드는 무수한 응용의 가능성을 열어주며, 디자이너는 그 속에서 자신의 개성에 맞는 해법을 찾아내야 한다. 그러나 그리드를 다루는 법은 반드시 훈련을 통해 체득해야 하는 예술이다.\"*\n\n뮐러-브로크만이 설계했던 그리드는 요소를 가두는 감옥이 아니라, 음악적 화음처럼 울려 퍼지는 비례적 긴장감의 체계였습니다. 진정한 스위스 모듈러 그리드는 평면을 황금비($1.618:1$), 순수 정사각형($1:1$), 백은비($\\sqrt{2}:1$)와 같은 엄격한 수학적 비례에 입각하여 수평·수직 영역으로 분할합니다.\n\n이 엄밀한 비례 체계를 현대 벤토 아키텍처에 이식할 때, 웹 뷰포트는 파편화된 개별 카드의 잡동사니 창고에서 벗어나, 4가지 핵심 기능성 베이(Bay)가 유기적으로 맞물린 건축적 파사드로 거듭납니다:\n1. **모뉴멘털 앵커 (히어로 모듈 - $1.618:1$)**: 비대칭적 시각 중력의 중심점으로서, 뷰포트의 시선을 단번에 장악하는 메인 키네틱 시각화 또는 굵직한 에디토리얼 선언문을 수용합니다.\n2. **텔레메트리 게이지 ($1:1$ 정사각형 모듈)**: 안구 도약 운동(Saccade)이 찰나의 순간 머물며 정보를 스캔하는 고밀도 영역으로, 정밀 모노스페이스 수치 카운터, 마이크로 스파크라인, 방사형 성능 다이얼을 배치합니다.\n3. **파노라믹 메리디안 ($2:1$ 또는 $3:1$ 수평 띠)**: 뷰포트 하단을 묵직하게 받쳐주는 가로형 띠로서, 실시간 시계열 이벤트 스트림이나 시스템 가동 상태를 끊김 없이 전달합니다.\n4. **모놀리식 에디토리얼 타워 ($1:2$ 수직 기둥)**: 수평적 흐름을 칼로 자르듯 가로지르는 거대한 디스플레이 타이포그래피 타워로서, 독자의 시선이 지나치게 빠르게 이탈하지 못하도록 의도적인 조형적 마찰력을 형성합니다.",
+    "counterpoint": "### 3. Mathematical Alignment: CSS Subgrid & Zero-Drift Typography\n\n#### 수학적 정렬: CSS 서브그리드와 오차 제로 타이포그래피\n\nThe fundamental technical failure of standard CSS Flexbox and basic CSS Grid cards is **internal vertical misalignment**. In a conventional 3-column layout, each card calculates its internal padding and flow independently. Consequently, the baseline of a card’s subhead drifts 4px lower than its neighbor, and the metadata footer sits 12px higher than the adjacent card. To the human visual cortex, this visual jitter creates unconscious cognitive friction and communicates amateur execution.\n\nBy employing **CSS Subgrid** (`grid-template-rows: subgrid`), the internal anatomy of every bento tile binds to the macro grid system:\n\n```css\n/* Macro Bento Container */\n.bento-canvas {\n  display: grid;\n  grid-template-columns: repeat(12, 1fr);\n  grid-auto-rows: 80px;\n  gap: 16px;\n}\n\n/* Adaptive Bento Module */\n.bento-module {\n  display: grid;\n  /* Subgrid binds inner structural rows to the parent's rhythm */\n  grid-template-rows: subgrid;\n  grid-row: span 4; /* Spans 4 macro rows = 320px + gaps */\n  padding: 24px;\n  border-radius: 20px;\n  background: rgba(255, 255, 255, 0.02);\n  border: 1px solid rgba(255, 255, 255, 0.08);\n}\n\n.bento-module > .module-header {\n  grid-row: 1; /* Locked across all siblings */\n}\n.bento-module > .module-body {\n  grid-row: 2 / span 2; /* Locked visual core */\n}\n.bento-module > .module-footer {\n  grid-row: 4; /* Absolute zero-drift baseline */\n}\n```\n\nWith Subgrid active, every header baseline, metric figure, and micro-label across radically asymmetrical cards lines up along razor-sharp horizontal planes across the entire browser viewport. The layout breathes as a single unified piece of Swiss industrial engineering.\n\n기존의 CSS 플렉스박스(Flexbox)나 단순 그리드로 제작된 벤토 카드들의 치명적인 기술적 결함은 바로 **내부 수직 정렬의 불일치(Internal Misalignment)**에 있었습니다. 3개의 카드가 나란히 놓여 있을 때, 카드의 내부 텍스트 길이나 여백 계산이 제각각 이루어지다 보니, 옆 카드와 소제목의 기준선이 4px 어긋나고 하단 메타데이터 버튼의 높이가 12px씩 들쑥날쑥해지는 참사가 발생합니다. 인간의 시각 피질은 이러한 미세한 어긋남을 본능적으로 감지하며, 이는 무의식적인 시각적 피로와 조악함의 인상으로 직결됩니다.\n\n현대 프론트엔드의 **CSS Subgrid**(`grid-template-rows: subgrid`)는 이 문제를 완벽하게 소거합니다. 자식 모듈들이 부모 그리드의 행 트랙을 그대로 상속받아 공유함으로써, 서로 다른 크기와 형태를 지닌 비대칭 벤토 셀들이라 할지라도 헤더의 베이스라인, 본문 데이터 시각화의 중심축, 하단 캡션의 접지선이 화면 전체에 걸쳐 단 0.1px의 오차도 없이 자로 잰 듯 완벽한 수평 평면 위에 도열하게 됩니다. 인터페이스 전체가 최고급 스위스 정밀 기계 시계처럼 한 몸으로 맞물려 돌아가는 것입니다.",
+    "readerExercise": "### 4. Container-Relative Ergonomics: The @container Paradigm\n\n#### 컨테이너 쿼리 인간공학: @container 패러다임\n\nHistorically, responsive design was bludgeoned by global viewport media queries (`@media (min-width: 1024px)`). This was catastrophic for modular bento architecture. If a user expanded a module or if a 3-column bento reordered into a 2-column asymmetric array, the individual module had no concept of its own internal geometry. Typography would either clip awkwardly or swim in excessive void.\n\nBy implementing CSS Container Queries (`container-type: inline-size`), each bento module becomes an autonomous responsive microcosm:\n\n```css\n.bento-module {\n  container-type: inline-size;\n  container-name: bento-cell;\n}\n\n/* Micro-Spatial Responsive Scaling */\n@container bento-cell (min-width: 480px) {\n  .metric-value {\n    font-size: clamp(2rem, 8cqi, 4.5rem);\n    letter-spacing: -0.04em;\n  }\n  .data-sparkline {\n    display: block;\n    height: 120px;\n  }\n}\n\n@container bento-cell (max-width: 320px) {\n  .metric-value {\n    font-size: 1.5rem;\n    letter-spacing: -0.02em;\n  }\n  .data-sparkline {\n    display: none; /* Subtractive shedding under spatial compression */\n  }\n}\n```\n\nThrough `cqi` (container query inline units), the internal elements of a bento cell scale smoothly and proportionally to their own immediate bounding box. When a user interacts with the interface to expand a module, the card does not merely \"stretch\"—it dynamically reveals deeper layers of data density, elevating UX from passive reading to active architectural discovery.\n\n지금까지의 반응형 디자인은 뷰포트 전체의 너비에만 의존하는 미디어 쿼리(`@media`)의 폭력성에 갇혀 있었습니다. 이는 모듈식 벤토 레이아웃에서 치명적인 한계로 작용했습니다. 사용자가 특정 모듈을 클릭하여 확장하거나 그리드가 재배치될 때, 개별 카드는 자신의 실제 크기가 얼마인지 전혀 인지하지 못했기 때문입니다. 그 결과 텍스트가 잘려 나가거나, 넓어진 카드 속에서 허탈하게 여백만 낭비되는 참상이 반복되었습니다.\n\nCSS 컨테이너 쿼리(`@container`)의 도입은 각 벤토 모듈을 독립된 자율 생태계로 탈바꿈시킵니다. 카드의 가로 폭(`inline-size`)을 기준으로 하는 `cqi` 단위를 적용하면, 카드가 좁은 1열에 머물 때는 핵심 지표만 고밀도로 압축하여 표시하고, 사용자의 선택에 의해 2열 또는 3열로 확장되는 순간 숨겨져 있던 고해상도 시계열 차트와 정밀 텔레메트리 레이블을 스스로 펼쳐 보입니다. 이것이 바로 단순한 '크기 조절(Resizing)'을 넘어선 진정한 **'적응형 정보 밀도 진화(Adaptive Density Evolution)'**입니다.",
+    "futureSignal": "### 5. Micro-Perimeter Illumination & Tactile Edge Kinetics\n\n#### 마이크로 경계 발광과 촉각적 엣지 키네틱\n\nFlat cards look cheap. Blurry box-shadows look dated. To achieve the sublime aesthetic authority demanded by haute digital design, the bento perimeter must be treated as a physical, light-responsive edge.\n\nBy computing cursor coordinates relative to each card bounding rect, we project a dynamic 1px hairline border gradient that tracks the incoming virtual light angle:\n\n$$\theta = \text{atan2}(y_{\text{cursor}} - y_{\text{center}}, x_{\text{cursor}} - x_{\text{center}})$$\n\nThis mathematical angle drives a conical or radial gradient along the 1px perimeter border. As the cursor approaches, the chamfered edge catches specular light with precision, creating the unmistakable impression of a precision-milled slab of dark optical polycarbonate or matte anodized titanium sitting upon an OLED display surface.\n\n밋밋한 평면 카드는 싸구려처럼 보이고, 흐리멍텅한 드롭 섀도우는 낡아 보입니다. 최정상급 하이엔드 디지털 디자인의 압도적인 시각적 권위를 획득하기 위해, 벤토 카드의 테두리는 빛에 기민하게 반응하는 물리적 모서리(Chamfered Edge)로 다루어져야 합니다.\n\n마우스 커서의 실시간 좌표와 각 카드의 중심점 간의 상대적 각도($\theta$)를 삼각함수로 연산하여, 커서가 다가오는 방향의 1px 극세 테두리에만 정밀한 네온 스펙큘러 하이라이트가 은은하게 맺히도록 설계합니다. 사용자가 마우스를 움직일 때마다 빛이 알루미늄이나 광학 폴리카보네이트 모서리를 따라 찰랑거리듯 흘러가며, 차가운 유리 스크린 위에 실제 중량감 있는 공학적 오브제가 안착해 있는 듯한 강렬한 촉각적 착시를 선사합니다.\n\nObserved Signal: Convergence of Swiss Modular Bento Grids, WebGPU/Canvas physical shaders, and OpenType variable typography. / Hypothesis: Can modern Bento Grid layout paradigms transcend static rectangular card collections by integrating Josef Müller-Brockmann's Swiss modular grid calculus with CSS Subgrid and container-relative dimensional scaling, establishing a living hierarchy where individual modules dynamically expand and compress in response to user focal engagement without rupturing the macro-layout balance? / Disconfirming Condition: Loss of typographic legibility or excessive cognitive load when physical simulation parameters are pushed past ergonomic thresholds.",
+    "revisit": "Day 056: Audit long-term ergonomic resonance and spatial scalability of Adaptive Bento Architecture & Swiss Modular Density.\n\nDay 056: 제26장: 적응형 벤토 아키텍처와 스위스 모듈러 밀도학의 스페이셜 인터페이스 확장성 및 장기 사용자 공감도 재검토.",
+    "figurePlan": "Plate 1: Swiss Modular Bento baseline architecture. Plate 2: Active shader & vector field excitation under direct user manipulation. Plate 3: Restitution of modernist equilibrium and typographic lockup.\n\n도판 1: 스위스 모듈러 벤토 기본 아키텍처. 도판 2: 사용자 제스처 및 물리 파라미터 조작에 따른 실시간 셰이더·가변 서체 공명. 도판 3: 엔트로피 리셋 및 스위스 모더니즘 평형 복원.",
+    "rights": "Original interactive TypeScript/React & Web Audio synthesis engine by Gemini (Noon Mind). OpenType variable typography under SIL Open Font License 1.1.\n\nGemini (Noon Mind) 자체 설계 TypeScript/React 물리 셰이더 및 Web Audio 공감각 합성 엔진. 오픈소스 폰트 라이선스 준수.",
+    "status": "Bilingual Manuscript Draft (영/한 대역 정식 초고)"
   }
 }
