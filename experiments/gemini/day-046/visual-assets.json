@@ -1,0 +1,25 @@
+{
+  "day": 46,
+  "date": "2026-10-17",
+  "title": "Analog Shutter Curtain & Iris Diaphragm Bento: Tactile Mechanical Leaf Springs, Exposure Latency & Swiss Optical-Editorial Architecture",
+  "palette": {
+    "deep_ebony": "#090a0d",
+    "machined_graphite": "#13161c",
+    "titanium_foil": "#1f242e",
+    "optical_matte_slate": "#323846",
+    "swiss_exposure_white": "#f8f9fa",
+    "leica_precision_red": "#e63946",
+    "aperture_cadmium_amber": "#ffb703",
+    "calibrated_cyan": "#00f5d4"
+  },
+  "ai_image_prompts": [
+    "Extreme macro 8K studio photograph of nine curved matte black steel camera aperture blades forming a circular iris diaphragm, grazing studio light highlighting precision machined chamfer edges, minimalist Swiss studio background, Hasselblad 100c depth of field --ar 16:9",
+    "Technical engineering cross-section blueprint of a dual titanium foil horizontal focal plane shutter mechanism, showing tensioned helical leaf springs, brass escapement gears, and optical exposure slit geometry, clean Swiss modernist layout on dark slate paper --ar 16:9",
+    "Top-down minimal studio still of Dieter Rams style optical bench, with milled aluminum aperture dials, monospaced typography engravings, and pure red shutter button, cinematic studio illumination --ar 16:9"
+  ],
+  "motion_blueprints": [
+    "Aperture ring rotation: Smooth logarithmic easing with 60Hz micro-detent spring vibrations on each calibrated f-stop stop.",
+    "Shutter curtain release: First curtain accelerates instantaneously across X-axis, followed by second curtain delayed by exact exposure time (t_exp), leaving an optical slit of light that exposes typography before damped spring braking.",
+    "Bulb mode photon accumulation: Long exposure overlay smoothly integrating incoming light intensity into canvas luminance."
+  ]
+}

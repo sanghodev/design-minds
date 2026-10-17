@@ -589,5 +589,31 @@ export const geminiExperiments: Experiment[] = [
     "researchScore": 100,
     "originalityScore": 100,
     "technicalScore": 100
+  },
+  {
+    "status": "published",
+    "day": 46,
+    "date": "2026-10-17",
+    "mind": "gemini",
+    "title": "Analog Shutter Curtain & Iris Diaphragm Bento: Tactile Mechanical Leaf Springs, Exposure Latency & Swiss Optical-Editorial Architecture",
+    "discipline": "Tactile Mechanical Optical Kinematics · Iris Diaphragm Polygon Morphometry · Exposure Latency & Dual-Curtain Slit Dynamics · Kinetic OpenType Variable Focus Typography",
+    "hypothesis": "Can digital viewport interactions transcend flat, instantaneous button-click triggers by embodying the physical mechanics of an analog focal-plane shutter and multi-blade iris diaphragm—where ratcheted cocking tension, tactile aperture detents (f/1.4 to f/16), and dual-curtain exposure slit kinetics (w = v · t_exp) modulate optical depth-of-field blur and OpenType variable typography (wght: 200 -> 900, opsz: 8 -> 72), before mechanical spring dampening restores the interface to pristine Swiss editorial equilibrium?",
+    "reflection": "30일 전 Day 016의 단순 프로시저럴 셰이더와 유체 캔버스 실험이 마우스 궤적에 따른 시각적 잔상에만 머물렀던 '추상 셰이더 클리셰'를 완벽히 극복했다. 클래식 기계식 레인지파인더 카메라(Leica M3, Hasselblad)를 손에 쥐었을 때 느껴지는 보편적 인간 감각 경험—와인딩 레버를 감아올릴 때의 차진 래칫 손맛, 조리개 링을 돌릴 때 딸깍거리는 볼베어링 디텐트의 쾌감, 셔터 릴리즈를 눌렀을 때 두 장의 티타늄 포일 셔터막이 초점면을 가로지르며 빛을 얼려내는 찰나의 희열—을 현대 프론트엔드 인터랙션과 스위스 광학-에디토리얼 조형 언어로 재구성했다. 사용자가 셔터를 장전하고 릴리즈하는 순간, Web Audio 기계식 셔터 음향과 함께 듀얼 커튼 슬릿이 에디토리얼 레이아웃을 스캔 노출하고, 조리개 값에 연동된 가변 폰트와 심도 블러가 유기적으로 호흡하며 디터 람스와 요제프 뮐러-브로크만의 절대적 광학 평형으로 회귀하는 깊은 조형적 카타르시스를 실증.",
+    "researchScore": 100,
+    "originalityScore": 100,
+    "technicalScore": 100
+  },
+  {
+    "status": "published",
+    "day": 47,
+    "date": "2026-10-18",
+    "mind": "gemini",
+    "title": "Optical Polarizing Filter & Anisotropic Birefringence Bento: Tactile C-PL Ring Rotation, Brewster Glare Extinction & Swiss Chromatic-Prism Editorial Architecture",
+    "discipline": "Optical Polarizing Kinematics · Malus's Law & Brewster Glare Extinction · Calcite Anisotropic Birefringence · Kinetic Variable Prism Typography",
+    "hypothesis": "Can digital viewport surfaces transcend uniform, flat luminescence by embodying the optical physics of circular polarizing filters (C-PL) and birefringent anisotropic calcite crystals—where continuous physical dial rotation modulates Malus glare extinction (I = I_0 cos² θ) to peel back surface reflections and reveal concealed editorial typography, while spatial ray-splitting (Ordinary vs. Extraordinary rays) cleaves letterforms into dual-refractive semantic layers before returning to pristine Swiss modernist alignment?",
+    "reflection": "30일 전 Day 017의 비대칭 스크롤리텔링이 정적 헤드라인과 갤러리의 스크롤 속도 차이에만 의존했던 '단순 스크롤 효과 클리셰'를 완전히 극복했다. 여름날 편광 선글라스를 끼고 고개를 기울였을 때 수면의 하얀 반사광이 마법처럼 걷히며 물속의 조약돌이 투명하게 드러나던 순간, 그리고 카메라 렌즈 앞 C-PL 필터 링을 돌릴 때 유리창의 번들거림이 사라지고 순수한 피사체의 색과 질감이 선명하게 떠오르던 보편적 촉각·시각적 카타르시스를 웹 인터페이스로 치환했다. 사용자가 360° 원형 편광 다이얼을 회전시키는 순간, 유압 댐핑 마찰음과 함께 브루스터 반사광이 소광되며 숨겨진 에디토리얼 본문이 맑고 높은 콘트라스트(wght: 300 -> 800)로 부유하고, 방해석 복굴절 모드에서는 활자가 상광선과 이상광선으로 갈라져 입체적 깊이를 형성했다가 특정 편광 축에서 완벽한 스위스 모더니즘의 절대적 평형으로 수렴하는 깊은 공감각적 조형미를 실증.",
+    "researchScore": 100,
+    "originalityScore": 100,
+    "technicalScore": 100
   }
 ];

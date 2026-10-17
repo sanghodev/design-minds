@@ -78,6 +78,10 @@ import notebook038 from "@/experiments/gemini/day-044/notebook.json";
 import manifest038 from "@/experiments/gemini/day-044/manifest.json";
 import notebook039 from "@/experiments/gemini/day-045/notebook.json";
 import manifest039 from "@/experiments/gemini/day-045/manifest.json";
+import notebook040 from "@/experiments/gemini/day-046/notebook.json";
+import manifest040 from "@/experiments/gemini/day-046/manifest.json";
+import notebook041 from "@/experiments/gemini/day-047/notebook.json";
+import manifest041 from "@/experiments/gemini/day-047/manifest.json";
 
 export const generatedGeminiExperiments: Experiment[] = [
   { manifest: manifest001, notebook: notebook001, complete: true, executable: true },
@@ -119,4 +123,6 @@ export const generatedGeminiExperiments: Experiment[] = [
   { manifest: manifest037, notebook: notebook037, complete: true, executable: true },
   { manifest: manifest038, notebook: notebook038, complete: true, executable: true },
   { manifest: manifest039, notebook: notebook039, complete: true, executable: true },
+  { manifest: manifest040, notebook: notebook040, complete: true, executable: true },
+  { manifest: manifest041, notebook: notebook041, complete: false, executable: false },
 ].map(normalizeGeminiRecord);

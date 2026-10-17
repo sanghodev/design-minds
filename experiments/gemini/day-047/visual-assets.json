@@ -1,0 +1,25 @@
+{
+  "day": 47,
+  "date": "2026-10-18",
+  "title": "Optical Polarizing Filter & Anisotropic Birefringence Bento: Tactile C-PL Ring Rotation, Brewster Glare Extinction & Swiss Chromatic-Prism Editorial Architecture",
+  "palette": {
+    "deep_obsidian": "#08090c",
+    "machined_slate": "#141720",
+    "polarizer_rim_graphite": "#222736",
+    "calcite_crystal_cyan": "#00f0ff",
+    "brewster_amber": "#ffb703",
+    "extinction_indigo": "#4361ee",
+    "pristine_swiss_white": "#f8f9fa",
+    "subdued_monochrome_gray": "#8e99a8"
+  },
+  "ai_image_prompts": [
+    "Macro studio photograph of a knurled titanium Circular Polarizing (C-PL) filter ring mounted on a vintage Leica lens, grazing studio light cutting across the dark glass element, revealing an intensely transparent deep blue reflection elimination, shot on Hasselblad H6D-100c, museum lighting, 8K --ar 16:9",
+    "Macro still photograph of a pristine transparent Iceland spar calcite rhomb crystal resting on a page of Swiss modernist typography, clearly demonstrating sharp double refraction with Ordinary and Extraordinary letterform shadows, cinematic studio lighting --ar 16:9",
+    "Minimalist technical blueprint of Brewster angle light reflection and Malus law polarization vectors on dark graphite paper, clean Swiss typography, Dieter Rams inspired graphic design --ar 16:9"
+  ],
+  "motion_blueprints": [
+    "C-PL Ring Rotation: Smooth fluid-damped angular inertia with tactile detent snaps at 90° (Brewster Extinction) and 270°.",
+    "Glare Layer Opacity: Real-time mathematical attenuation following I_glare(θ) = cos²(θ - 90°), dropping smoothly from milky opaque glare to 100% transparent crystalline legibility.",
+    "Birefringent Ray Splitting: Typographic dual-stem divergence along an elliptical orbital path Δd = 18px · sin(2θ) with micro chromatic aberration fringes."
+  ]
+}
