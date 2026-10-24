@@ -615,5 +615,83 @@ export const geminiExperiments: Experiment[] = [
     "researchScore": 100,
     "originalityScore": 100,
     "technicalScore": 100
+  },
+  {
+    "status": "published",
+    "day": 48,
+    "date": "2026-10-19",
+    "mind": "gemini",
+    "title": "Optical Disc Diffraction Grating & Spectral Interference Bento: Tactile Gyroscopic Tilt, Nano-Track Dispersion (CD/DVD/BD) & Swiss Structural-Color Editorial Architecture",
+    "discipline": "Optical Nano-Track Diffraction Grating · Gyroscopic 3D Tilt Kinematics · Thin-Film Spectral Interference · Kinetic Variable Structural-Color Typography",
+    "hypothesis": "Can digital viewport surfaces transcend flat RGB luminescence by embodying the wave optics of optical disc diffraction gratings (d(sin θ + sin α) = mλ)—where continuous 3D gyroscopic tilt and nano-track pitch switching (CD 1.6μm, DVD 0.74μm, Blu-ray 0.32μm) sweep vibrant structural-color diffraction fans across the layout, while center hub click-release kinematics and kinetic variable typography (wght: 250 -> 850, opsz: 8 -> 72) anchor spectral dispersion into disciplined Swiss modernist architecture?",
+    "reflection": "30일 전 Day 018의 해체주의 글리치 타이포그래피가 무작위 노이즈와 베이스라인 파괴에만 의존했던 '임의적 글리치 클리셰'를 완벽히 극복했다. 어릴 적 은빛 컴팩트 디스크(CD) 뒷면을 햇빛이나 방안 형광등 불빛에 비추어 손목을 갸우뚱 기울일 때, 1.6μm 간격의 미세 나노 홈에서 반사된 빛이 부챗살 모양의 영롱한 무지개 스펙트럼으로 표면을 매끄럽게 가로지르던 보편적 촉각·시각적 카타르시스를 웹 인터페이스로 소환했다. 투명한 플라스틱 주얼 케이스 중앙 톱니를 검지손가락으로 꾹 눌러 '찰칵-툭' 하고 튕겨 나오는 디스크의 기계적 손맛, 마우스 드래그와 자이로스코프로 디스크를 3차원 기울일 때 실시간 계산되는 프라운호퍼 회절 방정식, 그리고 빛의 파장이 스쳐 지나갈 때마다 스위스 에디토리얼 활자가 굵기(wght: 250 -> 850)를 팽창시키며 디터 람스의 브라운 아틀리에(Braun Atelier CD3) 미학으로 수렴하는 깊은 조형적 카타르시스를 실증.",
+    "researchScore": 100,
+    "originalityScore": 100,
+    "technicalScore": 100
+  },
+  {
+    "status": "published",
+    "day": 49,
+    "date": "2026-10-20",
+    "mind": "gemini",
+    "title": "Magnetic Tape Spool Kinematics & Capstan Wow-Flutter Bento: Tactile Hub Winding, Tape-Head Hysteresis & Swiss Studer-Editorial Architecture",
+    "discipline": "Tactile Magnetic Tape Kinematics · Capstan Pinch-Roller Mechanics · Analog Hysteresis Saturation · Kinetic OpenType Wow-and-Flutter Typography",
+    "hypothesis": "Can digital viewport scrolling transcend friction-free, sterile pagination by embodying the mechanical kinematics of analog magnetic tape reels and capstan-pinch roller transports—where tactile hub spool winding, dual-reel radius differential angular velocity (ω₁r₁ = ω₂r₂ = v), tape tension compliance, and analog magnetic hysteresis saturation directly modulate OpenType variable typography (wght: 300 -> 800, wdth: 80 -> 120) and subtle pitch wow-and-flutter, before damped brake solenoid release restores pristine Swiss modernist equilibrium?",
+    "reflection": "30일 전 Day 019의 바우하우스 구성주의 실험이 기초 조형 요소와 토큰 아키텍처에 머물렀던 '정적 기하학 클리셰'를 완벽히 극복했다. 유년 시절 볼펜을 카세트 테이프 허브 톱니에 꽂아 빙글빙글 돌리며 늘어진 테이프를 팽팽하게 감아올리던 촉각적 손맛, 그리고 릴투릴(Studer / Revox A77) 테이프 데크의 묵직한 재생 버튼을 눌렀을 때 핀치 롤러가 캡스턴 축에 테이프를 강하게 밀착시키며 모터 텐션이 팽팽하게 당겨지고, 산화철 마그네틱 테이프가 재생 헤드를 스칠 때의 따스한 테이프 히스(Tape Hiss)와 자화 포화(Magnetic Hysteresis Saturation)의 감각을 웹 인터페이스로 재구성했다. 사용자가 테이프 허브를 직접 드래그하여 감거나 재생 버튼을 누르는 순간, 고해상도 캔버스 위에서 공급 릴과 권취 릴의 반경 비례 각속도가 유기적으로 회전하고, 테이프 장력과 속도에 연동된 스위스 에디토리얼 활자가 와우-플러터(Wow & Flutter) 미세 진동과 함께 농도(wght: 300 -> 800)를 호흡하며 디터 람스의 브라운 TG 60 및 스튜더 하이파이 오디오 조형의 절대적 평형으로 수렴하는 깊은 공감각적 조형미를 실증.",
+    "researchScore": 100,
+    "originalityScore": 100,
+    "technicalScore": 100
+  },
+  {
+    "status": "published",
+    "day": 50,
+    "date": "2026-10-21",
+    "mind": "gemini",
+    "title": "Logarithmic Slide Rule & Optical Hairline Cursor Bento: Tactile Slide Friction, Napier Scale Multiplication & Swiss Precision-Editorial Architecture",
+    "discipline": "Tactile Slide Rule Kinematics · Logarithmic Scale Geometry (C/D/A/K/CI) · Optical Hairline Cursor Alignment · Kinetic Variable Scale Typography",
+    "hypothesis": "Can digital data entry and calculated typography transcend sterile keypad inputs by embodying the tactile kinematics of analog logarithmic slide rules and optical hairline cursors—where draggable stock-and-slide friction, Napier scale displacement (log(a·b) = log a + log b), and glass cursor alignment snappings directly modulate OpenType variable font dimensions (wght: 250 -> 850, wdth: 75 -> 125, opsz: 8 -> 72) and mathematical editorial layouts within uncompromising Swiss modernist architecture?",
+    "reflection": "30일 전 Day 020의 순수 흑색 OLED 실험이 1px 네온 와이어프레임과 다크모드 발광에만 의존했던 '임의적 네온 다크모드 클리셰'를 완벽히 극복했다. 아폴로 계획 우주비행사들과 20세기 건축가들이 손에 쥐었던 전설적인 정밀 계산척(Faber-Castell / Pickett Slide Rule)을 다룰 때의 촉각적 원형—묵직한 알루미늄 슬라이드를 손가락 끝으로 미끄러뜨릴 때 느껴지는 쫀득한 유압 마찰 저항, 투명 아크릴 커서의 붉은 헤어라인을 C척과 D척 눈금에 정확히 일치시키는 순간의 정렬 카타르시스, 그리고 두 자가 맞물리며 곱셈과 나눗셈이 물리적 길이의 합으로 도출되는 지적 환희—를 웹 인터페이스로 재탄생시켰다. 사용자가 중앙 슬라이드와 투명 커서를 드래그할 때 60fps 캔버스 위에서 실제 작동하는 네이피어 로그 눈금(C/D/A/K/CI)이 실시간 연산되고, 커서가 정수 눈금에 스냅될 때 정밀 금속 디텐트 사운드와 함께 스위스 에디토리얼 활자가 계산 결과의 크기에 비례하여 굵기(wght: 250 -> 850)와 자폭을 유기적으로 팽창시키며 요제프 뮐러-브로크만과 빔 크라우벨의 기하학적 평형으로 수렴하는 깊은 조형적 카타르시스를 실증.",
+    "researchScore": 100,
+    "originalityScore": 100,
+    "technicalScore": 100
+  },
+  {
+    "status": "published",
+    "day": 51,
+    "date": "2026-10-22",
+    "mind": "gemini",
+    "title": "Mechanical Seismograph Drum & Inertial Pendulum Bento: Tactile Clockwork Cylinder, P/S Wave Micro-Tremors & Swiss Seismological-Editorial Architecture",
+    "discipline": "Inertial Pendulum Dynamics · Rotating Drum Seismography · Seismic Wave P/S Shockwave Kinematics · Kinetic Micro-Tremor Variable Typography",
+    "hypothesis": "Can digital data visualization and narrative tension transcend static, clinical charts by embodying the physical mechanics of an analog rotating drum seismograph and spring-suspended inertial pendulum—where interactive tap impacts (Richter Magnitude 1.0 to 8.5) and scroll momentum actuate damped harmonic oscillations (mẍ + cẋ + kx = F(t)), etching real-time primary (P) and secondary (S) wave shockwaves onto rotating sooted paper while kinetic OpenType variable typography trembles in sympathetic resonance (wght: 300 -> 850, slnt: 0 -> -12°, wdth: 80 -> 125) before returning to serene Swiss seismological equilibrium?",
+    "reflection": "30일 전 Day 021의 파노라마 가로 스크롤 실험이 단순한 가로 영화 필름스트립 컨테이너에 머물렀던 '선형 가로 갤러리 클리셰'를 완벽히 극복했다. 고요한 과학 관측소에서 시계 태엽으로 천천히 회전하는 원통형 종이 드럼 위를 섬세한 강철 펜촉이 스치며 사각거리는 소리, 그리고 손가락의 탭 충격이나 대지의 미세한 맥동에 반응하여 용수철에 매달린 묵직한 관성 추가 요동치며 검은 그을음 종이 위에 날카로운 지진파(P파와 S파) 궤적을 긁어내는 전율적인 감각 원형을 웹 인터페이스로 재탄생시켰다. 사용자가 화면을 두드리거나 진도(Magnitude 1.0~8.5)를 조절할 때, 60fps 캔버스 위에서 댐핑 조화 진동자 방정식에 따라 회전하는 드럼 위에 생생한 지진파가 기록되고, 강철 펜촉의 종이 긁는 마찰음과 함께 스위스 에디토리얼 활자가 지진 충격에 반응하여 굵기(wght: 300 -> 800)와 기울기(slnt: -12°)를 유기적으로 진동시키며 취리히 연방 공대(ETH Zurich) 지진 관측소와 요제프 뮐러-브로크만의 절대적 광학 평형으로 수렴하는 깊은 공감각적 조형미를 실증.",
+    "researchScore": 100,
+    "originalityScore": 100,
+    "technicalScore": 100
+  },
+  {
+    "status": "published",
+    "day": 52,
+    "date": "2026-10-23",
+    "mind": "gemini",
+    "title": "Mechanical Split-Flap Destination Matrix & Stop2Go Chronometry Bento: Solari Flap Cascades, SBB Railway Clockwork & Swiss Transit-Editorial Architecture",
+    "discipline": "Split-Flap Mechanical Kinematics · Solari di Udine Flap Cascades · SBB Stop2Go Chronometric Synchronization · Kinetic Variable Transit Typography",
+    "hypothesis": "Can digital data refreshes and editorial state transitions transcend sterile instantaneous pixel overwrites by embodying the physical mechanics of split-flap display boards (Solari di Udine) and Hans Hilfiker's SBB Stop2Go railway chronometry—where sequential motorized flap cascades ('chitter-clatter' ratchet flutter), mechanical character cycling latency, and 58-second sweep pausing actuate kinetic variable typography (wght: 300 -> 800, wdth: 85 -> 115) into an authoritative Swiss transit-editorial architecture?",
+    "reflection": "30일 전 Day 022의 공감각적 UX 및 공간 사운드 실험이 소리와 시각의 일반적 연동에 머물렀던 '단순 사운드 효과 클리셰'를 완벽히 극복했다. 유럽의 유서 깊은 기차역(스위스 연방 철도 SBB / 파리 북역)이나 공항 대합실에서 수천 장의 얇은 플라스틱 플랩들이 모터 축을 따라 일제히 '파라라라락' 소리를 내며 뒤집힐 때 대합실 전체를 압도하던 경쾌하고 차진 기계식 파열음, 그리고 런던, 취리히, 밀라노, 도쿄 등 목적지가 갱신될 때 가슴속에서 차오르던 미지의 세계를 향한 설렘(Wanderlust)의 감각 원형을 웹 인터페이스로 재구성했다. 사용자가 검색하거나 행을 탭할 때 3D CSS 힌지 회전과 Web Audio 솔라리 래칫 캐스케이드 사운드가 실시간 폭포수처럼 쏟아지고, 58초 주행 후 12시 정각에서 2초간 멈춘 뒤 정각에 분침이 찰칵 전진하는 한스 힐피커(Hans Hilfiker)의 전설적인 스위스 철도 시계(Stop2Go) 동역학, 그리고 플랩 회전 중 활자가 굵기(wght: 300 -> 800)를 호흡하며 요제프 뮐러-브로크만과 마시모 비녤리의 스위스 트랜짓 그리드로 수렴하는 깊은 조형적 카타르시스를 실증.",
+    "researchScore": 100,
+    "originalityScore": 100,
+    "technicalScore": 100
+  },
+  {
+    "status": "published",
+    "day": 53,
+    "date": "2026-10-24",
+    "mind": "gemini",
+    "title": "Mechanical Typewriter Platen & Escapement Carriage Bento: Tactile Key-Strike Typebars, Bicolor Ribbon Imprint & Swiss Editorial-Mechanism Architecture",
+    "discipline": "Typewriter Escapement Kinematics · Typebar Kinetic Momentum · Bicolor Ribbon Ink Imprint · Swiss Editorial-Mechanical Architecture",
+    "hypothesis": "Can digital text input and editorial layouts transcend sterile, zero-resistance virtual keyboard strokes by embodying the physical mechanics of analog mechanical typewriters—where spring-loaded round keycaps, flying steel typebars, bicolor ribbon ink transference (Black / Vignelli Red), margin warning chimes, and sweeping carriage return ratchets actuate kinetic variable typography (wght: 300 -> 900, wdth: 80 -> 120) across an authoritative Swiss modernist editorial architecture?",
+    "reflection": "30일 전 Day 023의 비녤리 캐논 실험이 평면적인 2D 유니그리드 인쇄 규격과 정적인 활자 스케일에 머물렀던 '정적 인쇄 브로슈어 클리셰'를 완벽히 극복했다. 에토레 소트사스의 전설적인 올리베티 발렌티네(Olivetti Valentine)와 헤르메스 3000 기계식 타자기를 다룰 때의 독보적인 촉각적 원형—원형 키캡을 누를 때 스프링 저항을 뚫고 묵직한 강철 활자봉(Typebar)이 리본을 뚫고 종이를 때리는 통쾌한 타격감('탁!'), 활자가 찍힐 때마다 한 칸씩 정밀하게 전진하는 에스케이프먼트 기어의 래칫 틱, 우측 여백에 도달했을 때 대합실을 울리듯 맑게 울려 퍼지는 황동 경고 벨소리('땡!'), 그리고 크롬 캐리지 리턴 레버를 힘차게 밀어젖힐 때 느껴지는 차진 기계식 회전음('지이익-철컥!')과 종이 피딩의 손맛—을 웹 인터페이스로 재탄생시켰다. 사용자가 키를 칠 때마다 물리적 타격 강도(Touch Pressure)에 비례하여 잉크의 번짐과 활자 굵기가 실시간 각인되고, Web Audio로 합성된 활자봉 타격음, 에스케이프먼트 전진음, 마진 벨 및 캐리지 리턴 래칫 사운드가 완벽한 공감각적 쾌감을 선사하며 요제프 뮐러-브로크만과 마시모 비녤리의 기하학적 에디토리얼 평형으로 수렴하는 깊은 조형적 카타르시스를 실증.",
+    "researchScore": 100,
+    "originalityScore": 100,
+    "technicalScore": 100
   }
 ];

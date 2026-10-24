@@ -1,0 +1,25 @@
+{
+  "day": 50,
+  "date": "2026-10-21",
+  "title": "Logarithmic Slide Rule & Optical Hairline Cursor Bento: Tactile Slide Friction, Napier Scale Multiplication & Swiss Precision-Editorial Architecture",
+  "palette": {
+    "chassis_slate": "#12151c",
+    "slide_celluloid_ivory": "#f4f1ea",
+    "engraved_scale_black": "#0f1117",
+    "inverse_scale_crimson": "#dc2626",
+    "optical_hairline_red": "#ef4444",
+    "precision_cyan": "#00f0ff",
+    "calibration_amber": "#ffb703",
+    "swiss_pure_white": "#f8f9fa"
+  },
+  "ai_image_prompts": [
+    "Extreme macro 8K studio still photograph of a vintage Faber-Castell 2/83N precision slide rule, clear acrylic runner cursor with an ultra-fine red hairline aligned over engraved black logarithmic scales, grazing architectural studio lighting, Swiss modernist composition --ar 16:9",
+    "Top-down close-up macro photograph of John Napier's logarithmic scale engraved on an anodized titanium ruler, sharp black and crimson division lines, resting on Wim Crouwel typographic grid paper, museum lighting --ar 16:9",
+    "Technical engineering cross-section blueprint of a Mannheim slide rule tongue-and-groove slider mechanism with optical magnifying cursor assembly, minimalist white and cyan lines on dark slate paper --ar 16:9"
+  ],
+  "motion_blueprints": [
+    "Tactile Tongue-and-Groove Friction: Smooth linear translation of central slide with viscous friction resistance and spring-damped momentum.",
+    "Optical Hairline Snapping: Micro-spring snap when cursor hairline enters ±2px proximity of integer or major constant nodes (π, e).",
+    "Logarithmic Typographic Swell: Variable font weight expanding from 250 to 850 in direct logarithmic proportion to the calculated product."
+  ]
+}

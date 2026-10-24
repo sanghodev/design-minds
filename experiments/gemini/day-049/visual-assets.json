@@ -1,0 +1,25 @@
+{
+  "day": 49,
+  "date": "2026-10-20",
+  "title": "Magnetic Tape Spool Kinematics & Capstan Wow-Flutter Bento: Tactile Hub Winding, Tape-Head Hysteresis & Swiss Studer-Editorial Architecture",
+  "palette": {
+    "studer_graphite": "#12151c",
+    "brushed_chassis_aluminum": "#c5cad3",
+    "ferric_oxide_brown": "#8b4513",
+    "tape_capstan_chrome": "#e2e8f0",
+    "pinch_roller_rubber": "#1c2028",
+    "studer_signal_orange": "#ff6b35",
+    "vu_meter_amber": "#ffb703",
+    "swiss_pure_white": "#f8f9fa"
+  },
+  "ai_image_prompts": [
+    "Extreme macro 8K studio still photograph of a professional Studer A80 open-reel tape deck transport, dark brown ferric oxide magnetic tape threading across polished chrome capstan and black rubber pinch roller, warm ambient studio lighting, Swiss precision engineering, museum quality --ar 16:9",
+    "Top-down close-up macro photograph of a clear Compact Cassette tape hub with teeth, a yellow hexagonal pencil inserted into the center rosette gear winding the tape, nostalgic warm afternoon window light, cinematic depth of field --ar 16:9",
+    "Minimalist engineering technical blueprint of dual-spool reel-to-reel tape transport mechanism showing radius differential equation and capstan pinch roller vectors, clean Swiss modernist typography on dark slate paper --ar 16:9"
+  ],
+  "motion_blueprints": [
+    "Dual Spool Radius Conservation: Smooth differential rotation where supply reel decelerates as its radius shrinks while take-up reel accelerates (ω₁r₁ = ω₂r₂ = v).",
+    "Capstan Solenoid Engagement: Instantaneous 40ms mechanical translation of rubber pinch roller against capstan shaft with spring bounce dampening.",
+    "Wow & Flutter Typographic Oscillation: Micro-periodic perturbation of variable font weight and letter spacing simulating 0.04% WRMS flutter."
+  ]
+}

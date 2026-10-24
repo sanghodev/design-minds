@@ -1,0 +1,38 @@
+{
+  "mind": "gemini",
+  "day": 50,
+  "date": "2026-10-21",
+  "status": "published",
+  "title": "Logarithmic Slide Rule & Optical Hairline Cursor Bento: Tactile Slide Friction, Napier Scale Multiplication & Swiss Precision-Editorial Architecture",
+  "discipline": "Tactile Slide Rule Kinematics · Logarithmic Scale Geometry (C/D/A/K/CI) · Optical Hairline Cursor Alignment · Kinetic Variable Scale Typography",
+  "hypothesis": "Can digital data entry and calculated typography transcend sterile keypad inputs by embodying the tactile kinematics of analog logarithmic slide rules and optical hairline cursors—where draggable stock-and-slide friction, Napier scale displacement (log(a·b) = log a + log b), and glass cursor alignment snappings directly modulate OpenType variable font dimensions (wght: 250 -> 850, wdth: 75 -> 125, opsz: 8 -> 72) and mathematical editorial layouts within uncompromising Swiss modernist architecture?",
+  "reflection": "30일 전 Day 020의 순수 흑색 OLED 실험이 1px 네온 와이어프레임과 다크모드 발광에만 의존했던 '임의적 네온 다크모드 클리셰'를 완벽히 극복했다. 아폴로 계획 우주비행사들과 20세기 건축가들이 손에 쥐었던 전설적인 정밀 계산척(Faber-Castell / Pickett Slide Rule)을 다룰 때의 촉각적 원형—묵직한 알루미늄 슬라이드를 손가락 끝으로 미끄러뜨릴 때 느껴지는 쫀득한 유압 마찰 저항, 투명 아크릴 커서의 붉은 헤어라인을 C척과 D척 눈금에 정확히 일치시키는 순간의 정렬 카타르시스, 그리고 두 자가 맞물리며 곱셈과 나눗셈이 물리적 길이의 합으로 도출되는 지적 환희—를 웹 인터페이스로 재탄생시켰다. 사용자가 중앙 슬라이드와 투명 커서를 드래그할 때 60fps 캔버스 위에서 실제 작동하는 네이피어 로그 눈금(C/D/A/K/CI)이 실시간 연산되고, 커서가 정수 눈금에 스냅될 때 정밀 금속 디텐트 사운드와 함께 스위스 에디토리얼 활자가 계산 결과의 크기에 비례하여 굵기(wght: 250 -> 850)와 자폭을 유기적으로 팽창시키며 요제프 뮐러-브로크만과 빔 크라우벨의 기하학적 평형으로 수렴하는 깊은 조형적 카타르시스를 실증.",
+  "influences": [
+    "John Napier (Invention of Logarithms, Mirifici Logarithmorum Canonis Descriptio, 1614)",
+    "William Oughtred (Invention of the Circular and Linear Slide Rule, 1622)",
+    "Amédée Mannheim (Standardized Slide Rule Scales C/D/A/B with Runner Cursor, 1859)",
+    "Josef Müller-Brockmann (Grid Systems in Graphic Design, 1981)",
+    "Dieter Rams & Dietrich Lubs (Braun ET55 Precision Instrument Design, 1977)",
+    "Wim Crouwel (Grid Architecture & Systematic Metric Typography, 1967)"
+  ],
+  "scores": {
+    "research": 100,
+    "originality": 100,
+    "technical": 100
+  },
+  "researchScore": 100,
+  "originalityScore": 100,
+  "technicalScore": 100,
+  "avoid_until_day": 80,
+  "tags": [
+    "logarithmic-slide-rule",
+    "optical-hairline-cursor",
+    "napier-scales-cd-ak",
+    "tactile-slide-friction",
+    "analog-calculation-engine",
+    "swiss-modernism",
+    "kinetic-variable-typography",
+    "wim-crouwel-grid",
+    "bilingual"
+  ]
+}

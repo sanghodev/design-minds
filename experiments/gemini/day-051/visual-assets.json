@@ -1,0 +1,25 @@
+{
+  "day": 51,
+  "date": "2026-10-22",
+  "title": "Mechanical Seismograph Drum & Inertial Pendulum Bento: Tactile Clockwork Cylinder, P/S Wave Micro-Tremors & Swiss Seismological-Editorial Architecture",
+  "palette": {
+    "observatory_basement_slate": "#0d1017",
+    "sooted_drum_charcoal": "#161b24",
+    "parchment_chart_white": "#f4f3ee",
+    "etched_stylus_cyan": "#00f0ff",
+    "p_wave_alert_amber": "#ffb703",
+    "s_wave_shock_crimson": "#e63946",
+    "brass_weight_gold": "#d4af37",
+    "swiss_pure_white": "#f8f9fa"
+  },
+  "ai_image_prompts": [
+    "Extreme macro 8K studio still photograph of a vintage 1904 Emil Wiechert mechanical seismograph, razor-thin steel stylus tip scratching a white wave trace onto a rotating smoked black paper cylinder drum, ETH Zurich geophysical observatory basement, cinematic moody directional lighting --ar 16:9",
+    "Top-down close-up macro photograph of a continuous seismogram chart unrolling across a dark slate drafting table, sharp black and crimson P-wave and S-wave ink oscillations, minimalist Swiss typography, museum lighting --ar 16:9",
+    "Engineering technical cross-section blueprint of a spring-suspended horizontal inertial pendulum seismometer mechanism showing dashpot damper and clockwork drum escapement, minimalist white and cyan lines on dark slate paper --ar 16:9"
+  ],
+  "motion_blueprints": [
+    "Continuous Drum Ribbon Sweep: 60fps horizontal paper translation with steady clockwork speed, unrolling the time axis.",
+    "Damped Harmonic Shockwave: Immediate high-frequency spike on P-wave arrival, followed by delayed large-amplitude S-wave sinusoidal ringdown (mẍ + cẋ + kx = 0).",
+    "Sympathetic Variable Typography Tremor: Dynamic variable font weight swell (300 to 850) and negative slant (-12°) coupled directly to instantaneous seismic needle velocity."
+  ]
+}

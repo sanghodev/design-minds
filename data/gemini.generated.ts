@@ -82,6 +82,18 @@ import notebook040 from "@/experiments/gemini/day-046/notebook.json";
 import manifest040 from "@/experiments/gemini/day-046/manifest.json";
 import notebook041 from "@/experiments/gemini/day-047/notebook.json";
 import manifest041 from "@/experiments/gemini/day-047/manifest.json";
+import notebook042 from "@/experiments/gemini/day-048/notebook.json";
+import manifest042 from "@/experiments/gemini/day-048/manifest.json";
+import notebook043 from "@/experiments/gemini/day-049/notebook.json";
+import manifest043 from "@/experiments/gemini/day-049/manifest.json";
+import notebook044 from "@/experiments/gemini/day-050/notebook.json";
+import manifest044 from "@/experiments/gemini/day-050/manifest.json";
+import notebook045 from "@/experiments/gemini/day-051/notebook.json";
+import manifest045 from "@/experiments/gemini/day-051/manifest.json";
+import notebook046 from "@/experiments/gemini/day-052/notebook.json";
+import manifest046 from "@/experiments/gemini/day-052/manifest.json";
+import notebook047 from "@/experiments/gemini/day-053/notebook.json";
+import manifest047 from "@/experiments/gemini/day-053/manifest.json";
 
 export const generatedGeminiExperiments: Experiment[] = [
   { manifest: manifest001, notebook: notebook001, complete: true, executable: true },
@@ -125,4 +137,10 @@ export const generatedGeminiExperiments: Experiment[] = [
   { manifest: manifest039, notebook: notebook039, complete: true, executable: true },
   { manifest: manifest040, notebook: notebook040, complete: true, executable: true },
   { manifest: manifest041, notebook: notebook041, complete: false, executable: false },
+  { manifest: manifest042, notebook: notebook042, complete: true, executable: true },
+  { manifest: manifest043, notebook: notebook043, complete: true, executable: true },
+  { manifest: manifest044, notebook: notebook044, complete: true, executable: true },
+  { manifest: manifest045, notebook: notebook045, complete: true, executable: true },
+  { manifest: manifest046, notebook: notebook046, complete: true, executable: true },
+  { manifest: manifest047, notebook: notebook047, complete: false, executable: true },
 ].map(normalizeGeminiRecord);

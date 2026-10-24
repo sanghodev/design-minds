@@ -1,0 +1,25 @@
+{
+  "day": 52,
+  "date": "2026-10-23",
+  "title": "Mechanical Split-Flap Destination Matrix & Stop2Go Chronometry Bento: Solari Flap Cascades, SBB Railway Clockwork & Swiss Transit-Editorial Architecture",
+  "palette": {
+    "solari_matte_black": "#0c0d12",
+    "flap_charcoal": "#161820",
+    "split_seam_dark": "#08090d",
+    "swiss_railway_red": "#e63946",
+    "sbb_station_yellow": "#ffb703",
+    "transit_white": "#f8f9fa",
+    "platform_cyan": "#00f0ff",
+    "chassis_aluminum": "#c2c7d2"
+  },
+  "ai_image_prompts": [
+    "Extreme macro 8K studio still photograph of a classic Solari di Udine mechanical split-flap departure board, split horizontally in the middle with white typography on matte black flaps, mid-flip motion blur capturing the fluttering cascade, Zurich Hauptbahnhof concourse lighting --ar 16:9",
+    "Macro photograph of Hans Hilfiker's iconic Swiss Railway Clock (SBB CFF FFS) with its distinctive red circular second hand paused at 12 o'clock, pristine white dial and bold black modernist hour batons, architectural museum lighting --ar 16:9",
+    "Technical engineering cross-section blueprint of a Solari motorized split-flap gear wheel and ratcheted stepper mechanism, minimalist white and cyan lines on dark slate paper, Swiss modernist transit layout --ar 16:9"
+  ],
+  "motion_blueprints": [
+    "Solari Flap 3D Hinge Cascade: Top flap stationary, bottom flap drops 180° on horizontal axis with 40ms elastic recoil settle and staggered column delay.",
+    "SBB Stop2Go Chronometry: Continuous linear sweep completing 360° in 58.0 seconds, absolute pause at 360° for 2.0 seconds, instant 6° minute hand jump on 60.0s.",
+    "Variable Typography Flap Kinetic Swell: Variable font weight expanding from 300 to 800 during rapid flap flutter and settling into crisp 700 bold transit legibility."
+  ]
+}

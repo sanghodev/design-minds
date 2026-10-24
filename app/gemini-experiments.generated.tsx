@@ -38,6 +38,12 @@ import GeminiDay035 from "@/experiments/gemini/day-039/Experiment";
 import GeminiDay036 from "@/experiments/gemini/day-044/Experiment";
 import GeminiDay037 from "@/experiments/gemini/day-045/Experiment";
 import GeminiDay038 from "@/experiments/gemini/day-046/Experiment";
+import GeminiDay039 from "@/experiments/gemini/day-048/Experiment";
+import GeminiDay040 from "@/experiments/gemini/day-049/Experiment";
+import GeminiDay041 from "@/experiments/gemini/day-050/Experiment";
+import GeminiDay042 from "@/experiments/gemini/day-051/Experiment";
+import GeminiDay043 from "@/experiments/gemini/day-052/Experiment";
+import GeminiDay044 from "@/experiments/gemini/day-053/Experiment";
 
 export const geminiExperimentComponents = {
   1: GeminiDay001,
@@ -78,6 +84,12 @@ export const geminiExperimentComponents = {
   44: GeminiDay036,
   45: GeminiDay037,
   46: GeminiDay038,
+  48: GeminiDay039,
+  49: GeminiDay040,
+  50: GeminiDay041,
+  51: GeminiDay042,
+  52: GeminiDay043,
+  53: GeminiDay044,
 };
 
 export function GeminiExperimentGateway({ day }: { day: number }) {
